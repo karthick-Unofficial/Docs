@@ -1,0 +1,17 @@
+1. Quill focus loss issues:
+https://stackoverflow.com/questions/63978426/react-quill-loses-focus-when-onchange-is-called
+
+2. react-router-dom v6 params not passed to ownProps issues:
+https://stackoverflow.com/questions/71725652/cant-get-parameters-from-url-with-redux-ownprops
+
+3. How-to-prevent-react-from-re-rendering-the-whole-component
+https://stackoverflow.com/questions/41763031/how-to-prevent-react-from-re-rendering-the-whole-component
+
+4. why-is-react-component-rerendering-when-props-has-not-changed
+https://stackoverflow.com/questions/61301937/why-is-react-component-rerendering-when-props-has-not-changed
+
+5. react-mapbox-gl-rtl-styling-for-icon-lables-in-layers
+https://stackoverflow.com/questions/72485167/react-mapbox-gl-rtl-styling-for-icon-lables-in-layers
+
+6. lodash-difference-between-extend-assign-and-merge
+https://stackoverflow.com/questions/19965844/lodash-difference-between-extend-assign-and-merge
