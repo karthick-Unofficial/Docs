@@ -15,3 +15,15 @@ https://stackoverflow.com/questions/72485167/react-mapbox-gl-rtl-styling-for-ico
 
 6. lodash-difference-between-extend-assign-and-merge
 https://stackoverflow.com/questions/19965844/lodash-difference-between-extend-assign-and-merge
+
+7. deploy docs
+https://create-react-app.dev/docs/deployment/
+
+8. Microsoft cmds:
+https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/dir
+
+9. npm CLI:
+https://docs.npmjs.com/cli/v8/commands 
+
+10. Rethink docs:
+https://rethinkdb.com/api/javascript/pluck
