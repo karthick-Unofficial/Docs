@@ -27,6 +27,15 @@ git stash pop
    # merge local branch called branch_name into your current branch
    git merge branch_name
 
+7. Get reflog info
+git reflog
+
+8. Revert a merge:
+   # before commit:
+   git reset --hard <merge hash>
+
+   #after commit:
+   git revert -m 1 <merge commit hash>
 
 NPM:
 1. Get version list of installed packages:
@@ -43,3 +52,6 @@ npm list --depth=0 -g
    - npm install
    - npm run prelink
    - npm link
+
+5. find the path to your global node_modules directory
+npm root -g
