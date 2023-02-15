@@ -11,8 +11,15 @@ git reset --soft HEAD~1
 4. Revert commit without changes:
 git reset --hard HEAD~1
 
-5. Revert recent stash:
-git stash pop
+5. GIT Stash:
+   # Revert recent stash:
+   git stash pop
+    
+   # Stash Untracked changes:
+   git stash -k
+
+   # Keep stash memory and pop:
+   git stash apply
 
 6. GIT Branches:
    # rename branch called old_name to new_name
@@ -37,6 +44,13 @@ git reflog
    #after commit:
    git revert -m 1 <merge commit hash>
 
+9. Revert local git commit:
+git reset HEAD~1
+
+10. View last commit when a file got deleted:
+git log --full-history -1 -- [file path]
+
+
 NPM:
 1. Get version list of installed packages:
 npm list --depth=0
@@ -55,3 +69,41 @@ npm list --depth=0 -g
 
 5. find the path to your global node_modules directory
 npm root -g
+
+
+KUBERNETES:
+   - minikube version
+   - minikube start
+   - kubectl version
+   - kubectl get nodes
+   - kubectl create deployment {full repo url}
+   - kubectl get deployments
+   - kubectl get pods
+   - kubectl describe pods
+   - kubectl proxy
+   - kubectl exec {pod name} -- env
+   - kubectl get services
+   - kubectl delete service -l app={name}
+   - kubectl get rs
+
+
+redis-cli:
+   - redis-cli GET
+   - redis-cli SET
+   - redis-cli KEYS * || redis-cli KEYS \*
+   - redis-cli SELECT {dbname}
+   - redis-cli CONFIG GET DATABASES
+   - redis-cli INFO keyspace
+   - redis-cli CLIENT LIST
+   - redis-cli flushAll
+
+
+ports:
+   - elastic-search - localhost:5601 && localhost:9200
+   - rethinkdb - localhost:8080
+   - redis - localhost:8081
+
+Docker:
+   - docker version
+   - docker images
+   - docker build -t <imageName> <path> - "docker build -t commandbridge_compose_ecosystem ."
