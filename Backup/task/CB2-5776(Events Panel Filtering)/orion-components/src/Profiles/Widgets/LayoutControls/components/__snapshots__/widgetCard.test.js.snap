@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WidgetCard renders 1`] = `
+<ForwardRef(ListItem)
+  disablePadding={true}
+  style={
+    Object {
+      "backgroundColor": "#1F1F21",
+      "margin": ".25rem .5rem",
+      "width": "95.5%",
+      "zIndex": "999999",
+    }
+  }
+>
+  <ForwardRef(ListItemButton)>
+    <ForwardRef(ListItemIcon)>
+      <Memo(ForwardRef(ReorderIcon))
+        sx={
+          Object {
+            "color": "#FFF",
+          }
+        }
+      />
+    </ForwardRef(ListItemIcon)>
+    <ForwardRef(ListItemText)
+      primary="Alerts"
+      sx={
+        Object {
+          "color": "#fff",
+        }
+      }
+    />
+    <ForwardRef(ListItemIcon)>
+      <ForwardRef(IconButton)
+        onClick={[Function]}
+        style={
+          Object {
+            "marginLeft": "auto",
+          }
+        }
+      >
+        <Memo(ForwardRef(RemoveCircleIcon))
+          sx={
+            Object {
+              "color": "#E85858",
+            }
+          }
+        />
+      </ForwardRef(IconButton)>
+    </ForwardRef(ListItemIcon)>
+  </ForwardRef(ListItemButton)>
+</ForwardRef(ListItem)>
+`;

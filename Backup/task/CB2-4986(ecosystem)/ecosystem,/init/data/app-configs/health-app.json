@@ -1,0 +1,27 @@
+{
+    "processes": [
+        {
+            "id": "health-collector",
+            "name": "Health Collector",
+            "entrypoint": "health-collector.js",
+            "args": {}
+        },
+        {
+            "id": "log-monitor",
+            "name": "Log Monitor",
+            "entrypoint": "log-monitor.js",
+            "args": {}
+        }
+    ],
+    "mailServerOptions" : {
+        "host": "smtp",
+        "port": "25"
+    },
+    "healthMonitorCheckOptions": {
+        "sampleInterval": 2,
+        "minScanCount": 1,
+        "fromEmail": "system@cb2-dev.commandbridge.com",
+        "toEmail": "shuey@aressecuritycorp.com,lclarkson@aressecuritycorp.com",
+        "subject": "AvertC2 Health Monitor Notification"
+    }
+}

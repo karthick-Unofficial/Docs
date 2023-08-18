@@ -1,0 +1,11 @@
+{
+	"appId": "facilities-app",
+	"externalEcoPermissionOptions": [],
+	"id": "bc6ab401-d0ac-4225-a465-e9a496777063",
+	"name": "accessPoint",
+	"permissionOptions": [
+	  "manage",
+	  "control"
+	],
+	"sourceTable": "sys_accessPoints"
+  }

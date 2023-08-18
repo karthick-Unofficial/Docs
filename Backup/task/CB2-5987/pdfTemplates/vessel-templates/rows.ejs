@@ -1,0 +1,16 @@
+<tr>
+	<% columns.map((column, index)=> { %>
+		<% const prop=column.property; %>
+			<% if (prop==="timestamp" || prop==="entered" ) { %>
+				<td class="<%= locale === 'ar' ? 'rightAlign' : '' %>">
+					<%= moment.tz(row[prop], timezone).format(`MM/DD/YYYY ${timeFormatPreference==="24-hour" ? "HH:mm z"
+						: "hh:mm A z" }`); %>
+
+				</td>
+				<% } else { %>
+					<td class="<%= locale === 'ar' ? 'rightAlign' : '' %>">
+						<%= row[prop] %>
+					</td>
+					<% } %>
+						<% }) %>
+</tr>

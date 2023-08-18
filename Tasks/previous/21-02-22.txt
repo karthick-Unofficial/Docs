@@ -1,0 +1,6 @@
+Today's Task:
+- Worked on below Jira Bug fixes:
+    - CB2-5201 Arabic - Berth app - Arabic locale - On daily agenda, the days ago field is not translated and is displayed incorrectly
+    - CB2-5206 Berth app - Arabic locale - Berth group panel/right panel is not displayed completely. Rearrange Berth group is not functional
+    - CB2-5205 Berth app - Arabic locale - Alignment of pending berth request on timeline
+- Went through Access point Task overview and Worked on adding Access point feed in settings app.

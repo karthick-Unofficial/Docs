@@ -1,0 +1,116 @@
+.add-to-dock-placeholder {
+  padding: 20%;
+  text-align: center;
+  background-color: #1f1f21;
+  border: 2px dashed #fff;
+}
+
+.overlay-text {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 11;
+}
+
+.camera-overlay {
+  position: relative;
+  border: 2px dashed #fff;
+  z-index: 10;
+
+  ::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(31, 31, 33, 0.25);
+  }
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  align-items: center;
+  place-content: center;
+}
+
+// div around all 3 cameras/controls
+.docked-camera-wrapper {
+  margin: auto;
+  width: 90%;
+  height: 25%;
+  margin-top: 8%;
+}
+
+.dashed-border {
+  border: 2px dashed #41454a;
+}
+
+.camera-dock-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 200px;
+}
+
+.camera-header {
+  display: flex;
+  width: 100%;
+  // justify-content: space-between;
+  background-color: #1f1f21;
+  align-items: center;
+
+  // div {
+  //   height: 38px;
+  // }
+
+  .docked-target-icon {
+    margin-left: 10px;
+    height: 38px;
+    flex-grow: 1;
+  }
+
+  .docked-camera-remove {
+    margin-right: 10px;
+    // flex-grow: 0;
+    height: auto;
+  }
+
+  .camera-title {
+    color: #35b7f3;
+    flex-grow: 10;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+  }
+}
+
+.camera-footer {
+  display: flex;
+  width: 100%;
+  background-color: #1f1f21;
+  flex-direction: column;
+}
+
+.expanded-docked-camera-title {
+  margin-bottom: 4px;
+}
+
+.camera-in-use {
+  max-height: 50%;
+  width: 100%;
+  background-color: black;
+  // margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25%;
+}

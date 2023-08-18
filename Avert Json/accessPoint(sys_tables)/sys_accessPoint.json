@@ -1,0 +1,31 @@
+{
+  "entityData": {
+    "displayType": "map",
+    "geometry": {
+      "coordinates": [
+        -82.44289829683733,
+        28.06923716382326
+      ],
+      "type": "Point"
+    },
+    "properties": {
+      "description": "Steel door at front entrance",
+      "features": [
+        "open",
+        "close",
+        "lock",
+        "unlock"
+      ],
+      "id": "25b59eab-47bd-48a1-9683-1d3065d13789",
+      "name": "Front Entrance",
+      "type": "Door"
+    }
+  },
+  "entityType": "accessPoint",
+  "feedId": "accessPoint",
+  "id": "25b59eab-47bd-48a1-9683-1d3065d13789",
+  "isDeleted": false,
+  "isPublic": true,
+  "owner": "5e92e447-41b3-4bc1-9b18-3518cf3b8e30",
+  "ownerOrg": "ares_security_corporation_08036d96-9079-49a3-b0c3-95886daf55cd"
+}

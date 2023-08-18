@@ -1,0 +1,33 @@
+{
+    "name": "Cameras App",
+    "clientId": "350441e0-d44a-422c-bd6e-032fd85ae513",
+    "clientSecret": "a0259d8b-0539-42e2-be47-5f83660b3a88",
+    "debugPort": 5884,
+    "properties": {
+        "natsServer": "nats://phoenix-nats:4222",
+        "rethinkServer": "phoenix-rethinkdb:28015"
+    },
+    "clientConfig": {
+        "supportEmail": {
+            "address": "c2support@aressecuritycorp.com",
+            "subject": "Avert C2 Support Issue",
+            "body": "[Use this space to describe the issue you are experiencing.]"
+        },
+        "mapSettings": {
+            "AERIS_API_KEY": "cq4vb4g7DW4d3H6pbWGSG_Hc2AQ3xUuCjOoqJMahZuCeZfbKtoJFLbqPkt4M8n",
+            "zoom": 3,
+            "center": [
+                -98.2015,
+                39.4346
+            ]
+        }
+    },
+    "processes": [
+        {
+            "id": "slew-lock-manager",
+            "name": "Slew Lock Manager",
+            "entrypoint": "slewLockManager.js",
+            "args": {}
+        }
+    ]
+}

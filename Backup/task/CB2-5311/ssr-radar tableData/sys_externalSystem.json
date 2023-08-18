@@ -1,0 +1,71 @@
+{
+    "config": {
+      "apiManager": "ssr-radar",
+      "baseUrl": " https://mis.ssreng.com/api",
+      "feedId": "accessPoint",
+      "headers": {
+        "Authorization": "Basic Z3Vlc3Q6Z3Vlc3Qtb2Ytc3Ny"
+      },
+      "health": {
+        "avgLatencyMax": 5000,
+        "avgLatencySamplePeriod": 1,
+        "custom": {
+          "heartbeat": {
+            "app": "edge-app",
+            "failMessage": "Cannot reach feed source.",
+            "label": "heartbeats",
+            "samplePeriod": 5,
+            "threshold": 5,
+            "type": "lt-count"
+          },
+          "msgcount": {
+            "app": "integration-app",
+            "label": "message count",
+            "samplePeriod": 5,
+            "threshold": 25,
+            "type": "lt-count"
+          }
+        },
+        "includeAverageLatency": true,
+        "includeTotalTxns": true,
+        "includeTxnsPerSec": false,
+        "totalTxnsMinCount": 1,
+        "totalTxnsSamplePeriod": 5,
+        "txnsPerSecMinRate": 5,
+        "txnsPerSecSamplePeriod": 5
+      }
+    },
+    "edge": [
+      {
+        "args": {
+          "CLIENT_NAME": "radars-client",
+          "HEADERS": {
+            "Authorization": "Basic Z3Vlc3Q6Z3Vlc3Qtb2Ytc3Ny"
+          },
+          "INITIAL_TIME_OFFSET": 1,
+          "METHOD": "GET",
+          "POLLING_ENDPOINT": "https://mis.ssreng.com:443/api/radars?expand=control",
+          "POLLING_INTERVAL": 600,
+          "unsafeHttps": true
+        },
+        "processEntrypoint": "rest-polling-client.js",
+        "processId": "ssr-radars-polling-client",
+        "processName": "SSR RADAR Poller (Access Point)"
+      }
+    ],
+    "enabled": true,
+    "externalSystemId": "ssr-radar",
+    "feedId": "ssr",
+    "id": "7fd3fc62-0319-4075-9400-f3d666524313",
+    "identity": {
+      "orgId": "ares_security_corporation_825da144-0510-43e8-b6e9-a03d2540d2a9",
+      "userId": "5187723d-e2b6-4c4a-b6e2-1f24e7267398"
+    },
+    "name": "SSR-RADAR",
+    "transform": {
+      "args": {},
+      "processEntrypoint": "ssr-radars-transformer.js",
+      "processId": "ssr-radars-transformer",
+      "processName": "SSR RADARS Transformer"
+    }
+  }

@@ -1,0 +1,37 @@
+{
+	"index_patterns": "snapshot-*",
+	"settings": {
+		"number_of_shards": 1,
+		"number_of_replicas": 0,
+		"refresh_interval": "1s",
+		"sort.field": "snapshotDate",
+		"sort.order": "desc"
+	},
+	"mappings": {
+		"dynamic": false,
+		"properties": {
+			"snapshotDate": {
+				"type": "date"
+			},
+			"feedId": {
+				"type": "keyword"
+			},
+			"entity": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "keyword"
+					},
+					"entityData": {
+						"type": "object",
+						"properties": {
+							"geometry": {
+								"type": "geo_shape"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

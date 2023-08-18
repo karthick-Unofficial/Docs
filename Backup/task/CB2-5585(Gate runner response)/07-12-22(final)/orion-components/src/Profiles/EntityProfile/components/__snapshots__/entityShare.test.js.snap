@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntityShare renders 1`] = `
+<Dialog
+  actions={
+    Array [
+      <FlatButton
+        disabled={false}
+        fullWidth={false}
+        keyboardFocused={true}
+        label="Share"
+        labelPosition="after"
+        labelStyle={Object {}}
+        onClick={undefined}
+        onKeyboardFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onTouchStart={[Function]}
+        primary={true}
+        secondary={false}
+      />,
+      <FlatButton
+        disabled={false}
+        fullWidth={false}
+        label="Cancel"
+        labelPosition="after"
+        labelStyle={Object {}}
+        onClick={undefined}
+        onKeyboardFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onTouchStart={[Function]}
+        primary={true}
+        secondary={false}
+      />,
+    ]
+  }
+  autoDetectWindowHeight={true}
+  autoScrollBodyContent={false}
+  className="share-dialog"
+  modal={false}
+  repositionOnUpdate={true}
+>
+  <p>
+    Are you sure you want to share this item? Sharing this item will make it available to your organization and to any organization in the ecosystem with an active sharing policy enabled. Any organization user with appropriate permissions can view, contribute, and edit this item.
+  </p>
+</Dialog>
+`;

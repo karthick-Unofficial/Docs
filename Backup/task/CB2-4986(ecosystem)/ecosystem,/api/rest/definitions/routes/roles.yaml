@@ -1,0 +1,200 @@
+roles:
+  /roles:
+    post:
+      description: Create a role
+      operationId: create
+      tags:
+        - Roles
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                role:
+                  type: object
+                  properties:
+                    organization:
+                      type: object
+                      properties:
+                        canShare:
+                          type: boolean
+                        canContribute:
+                          type: boolean
+                        canEdit:
+                          type: boolean
+                        canView:
+                          type: boolean
+                    orgId:
+                      type: string
+                    roleId:
+                      type: string
+                    ecosystem:
+                      type: object
+                      properties:
+                        canShare:
+                          type: boolean
+                        canContribute:
+                          type: boolean
+                        canView:
+                          type: boolean
+                    title:
+                      type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  title:
+                    type: string
+    put:
+      description: Update multiple roles
+      operationId: upsertBulk
+      tags:
+        - Roles
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                roles:
+                  type: array
+                  items: 
+                    type: object
+                    properties:
+                      organization:
+                        type: object
+                        properties:
+                          canShare:
+                            type: boolean
+                          canContribute:
+                            type: boolean
+                          canEdit:
+                            type: boolean
+                          canView:
+                            type: boolean
+                      orgId:
+                        type: string
+                      roleId:
+                        type: string
+                      ecosystem:
+                        type: object
+                        properties:
+                          canShare:
+                            type: boolean
+                          canContribute:
+                            type: boolean
+                          canView:
+                            type: boolean
+                      title:
+                        type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+  /roles/{roleId}:
+    put:
+      description: Update a role by ID
+      operationId: update
+      tags:
+        - Roles
+      parameters:
+        - name: roleId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                role:
+                  type: object
+                  properties:
+                    organization:
+                      type: object
+                      properties:
+                        canShare:
+                          type: boolean
+                        canContribute:
+                          type: boolean
+                        canEdit:
+                          type: boolean
+                        canView:
+                          type: boolean
+                    orgId:
+                      type: string
+                    roleId:
+                      type: string
+                    ecosystem:
+                      type: object
+                      properties:
+                        canShare:
+                          type: boolean
+                        canContribute:
+                          type: boolean
+                        canView:
+                          type: boolean
+                    title:
+                      type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      description: Delete a role by ID
+      operationId: delete
+      tags:
+        - Roles
+      parameters:
+        - name: roleId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+  /roles/{orgId}:
+    get:
+      description: Get a role by organization ID
+      operationId: getByOrg
+      tags:
+        - Roles
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object

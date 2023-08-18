@@ -1,0 +1,20 @@
+
+.replay-type-card {
+	text-align: center;
+	align-items: center;
+	width: 266px;
+	height: 211px;
+	padding: 35px;
+	justify-content: space-evenly;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(65, 69, 74);
+}
+
+.replay-type-card:hover {
+	background-color: #4eb5f3;
+	p {
+		color: white
+	}
+}

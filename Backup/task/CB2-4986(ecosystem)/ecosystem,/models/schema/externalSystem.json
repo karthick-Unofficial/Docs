@@ -1,0 +1,19 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"id": "http://commandbridge.com/ecosystem/externalSystem.json",
+	"type": "object",
+	"required": ["name", "externalSystemId", "config"],
+	"additionalProperties": false,
+	"properties": {
+		"externalSystemId": {
+			"type": "string"
+		},
+		"name": {
+			"description": "",
+			"type": "string"
+		},
+		"config": {
+            "type": "object"
+        }
+	}
+}

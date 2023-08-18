@@ -1,0 +1,17 @@
+{
+    "clientConfig": {
+      "supportEmail": {
+        "address": "c2support@aressecuritycorp.com",
+        "subject": "Avert C2 Support Issue",
+        "body": "[Use this space to describe the issue you are experiencing.]"
+      },
+      "mapSettings": {
+        "AERIS_API_KEY": "break-key_cq4vb4g7DW4d3H6pbWGSG_Hc2AQ3xUuCjOoqJMahZuCeZfbKtoJFLbqPkt4M8n",
+        "zoom": 3,
+        "center": [
+          -98.2015,
+          39.4346
+        ]
+      }
+    }
+  }

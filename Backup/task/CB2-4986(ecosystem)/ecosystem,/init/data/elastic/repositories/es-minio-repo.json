@@ -1,0 +1,9 @@
+{
+    "type": "s3",
+    "settings": {
+        "bucket": "elasticsearch-backup-v7",
+        "path_style_access": "true",
+        "endpoint": "http://traefik:9001",
+        "protocol": "http"
+    }
+}

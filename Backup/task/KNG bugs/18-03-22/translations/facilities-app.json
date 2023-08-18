@@ -1,0 +1,225 @@
+{
+    "appId": "facilities-app",    
+    "locales": "en",
+    "translations": {
+      "ar": {
+        "appBar": {
+          "title": "الكاميرات"
+        },
+        "drawingPanel": {
+          "accessPointForm": {
+            "accessPoints": "نقطة وصول",
+            "addAccessPoint": "أضف نقطة الوصول إلى %{count}",
+            "cancel": "إلغاء",
+            "clickToPlaceAP": "انقر على الخريطة لوضع نقطة الوصول",
+            "createAP": "أنشئ نقطة وصول",
+            "editAP": "تحرير نقطة الوصول",
+            "fieldLabel": {
+              "desc": "الوصف",
+              "name": "الاسم"
+            },
+            "save": "حفظ"
+          },
+          "cameraForm": {
+            "addCamera": "%{count} أضف الكاميرا إلى",
+            "cameras": "الكاميرات",
+            "cancel": "إلغاء",
+            "clickToPlaceCam": "انقر على الخريطة لوضع الكاميرا",
+            "noCameras": "لا الكاميرات المتاحة.",
+            "save": "حفظ"
+          },
+          "facilityForm": {
+            "cancel": "إلغاء",
+            "clickToPlaceFac": "انقر على الخريطة لوضع المرفق",
+            "createFacility": "إنشاء مرفق",
+            "editFacility": "تحرير مرفق",
+            "fieldLabel": {
+              "desc": "الوصف",
+              "name": "الاسم"
+            },
+            "save": "حفظ"
+          },
+          "floorPlanForm": {
+            "cancel": "إلغاء",
+            "createFloorPlan": "إنشاء مخطط الطابق",
+            "delete": "حذف",
+            "dialog": {
+              "cancel": "إلغاء",
+              "confirm": "تأكيد",
+              "confirmationText": "هل أنت متأكد أنك تريد حذف مخطط المبنى هذا؟ أي عنصر يتم وضعه في مخطط الطابق هذا سيفقد موقعه."
+            },
+            "editFloorPlan": "تحرير مخطط الطابق",
+            "fieldLabel": {
+              "name": "الاسم"
+            },
+            "save": "حفظ",
+            "uploadFloorPlan": "تحميل مخطط الطابق"
+          }
+        },
+        "facilityMap": {
+          "mapControls": {
+          "facilityMenu": {
+            "addAccessPointToFloor": "أضف نقطة وصول إلى مخطط الطابق",
+            "addCamToFloor": "أضف الكاميرا إلى مخطط الأرضية",
+            "addFloorPlan": "أضف مخطط المبنى",
+            "addNewFac": "إضافة منشأة جديدة",
+            "editFacLocation": "تحرير موقع المنشأة",
+            "editFloorPlan": "تعديل مخطط الطابق"
+          }
+        }
+        },
+        "listPanel": {
+          "importFac": {
+            "dialog": {
+              "cancel": "إلغاء",
+              "close": "إغلاق",
+              "title": "تسهيلات الاستيراد",
+              "uploadFile": "تحميل ملف الاستيراد"
+            },
+            "errorMessage": {
+              "imageNotFound": "خطأ: لم يتم العثور على صورة مخطط الطابق في القطران",
+              "malformed": "خطأ: كائن المنشأة مشوه",
+              "missingFloorPlanGeo": "خطأ: هندسة مخطط الطوابق مفقودة",
+              "missingFloorPlanImgName": "خطأ: اسم صورة مخطط الطابق مفقود في التكوين",
+              "missingFloorPlanName": "خطأ: اسم مخطط الطابق مفقود",
+              "missingFloorPlanOrder": "خطأ: طلب مخطط الطابق مفقود",
+              "missingGeo": "خطأ: هندسة المرفق مفقودة",
+              "missingName": "خطأ: اسم المرفق مفقود"
+            }
+          },
+          "main": {
+            "fieldLabel": {
+              "searchFac": "تسهيلات البحث ..."
+            },
+            "importFac": "تسهيلات الاستيراد",
+            "myFac": "مرافق بلدي",
+            "newFac": "منشأة جديدة",
+            "noFacAvail": "لا توجد مرافق متاحة. انقر فوق الزر + أعلاه أو على الخريطة لإضافة منشأة."
+          }
+        },
+        "settingsMenu": {
+          "main": {
+            "fieldLabel": {
+              "mapLabels": "تسميات الخريطة",
+              "nauticalChart": "مخططات بحرية",
+              "roadsLabel": "الطرق ولتسميات",
+              "weatherRadar": "رادار الطقس"
+            }
+          },
+          "tileOptions": {
+            "baseMap": "الخريطة الأساسية"
+          }
+        }
+      },
+      "en": {
+        "appBar": {
+          "title": "Facilities"
+        },
+        "drawingPanel": {
+          "accessPointForm": {
+            "accessPoints": "Access Points",
+            "addAccessPoint": "Add Access Point to %{count}",
+            "cancel": "Cancel",
+            "clickToPlaceAP": "Click on the map to place access point",
+            "createAP": "Create Access Point",
+            "editAP": "Edit Access Point",
+            "fieldLabel": {
+              "desc": "Description",
+              "name": "Name"
+            },
+            "save": "Save"
+          },
+          "cameraForm": {
+            "addCamera": "Add Camera to %{count}",
+            "cameras": "Cameras",
+            "cancel": "Cancel",
+            "clickToPlaceCam": "Click on the map to place the camera",
+            "noCameras": "No cameras available.",
+            "save": "Save"
+          },
+          "facilityForm": {
+            "cancel": "Cancel",
+            "clickToPlaceFac": "Click on the map to place the facility",
+            "createFacility": "Create Facility",
+            "editFacility": "Edit Facility",
+            "fieldLabel": {
+              "desc": "Description",
+              "name": "Name"
+            },
+            "save": "Save"
+          },
+          "floorPlanForm": {
+            "cancel": "Cancel",
+            "createFloorPlan": "Create Floor Plan",
+            "delete": "Delete",
+            "dialog": {
+              "cancel": "Cancel",
+              "confirm": "Confirm",
+              "confirmationText": "Are you sure you want to delete this floor plan? Any item placed on this floor plan will lose its location.",
+              "title": "Delete FloorPlan"
+            },
+            "editFloorPlan": "Edit Floor Plan",
+            "fieldLabel": {
+              "name": "Name"
+            },
+            "save": "Save",
+            "uploadFloorPlan": "Upload Floor Plan"
+          }
+        },
+        "facilityMap": {
+          "mapControls": {
+            "facilityMenu": {
+              "addAccessPointToFloor": "Add access point to floorplan",
+              "addCamToFloor": "Add camera to floorplan",
+              "addFloorPlan": "Add floor plan",
+              "addNewFac": "Add new facility",
+              "editFacLocation": "Edit facility location",
+              "editFloorPlan": "Edit floor plan"
+            }
+          }
+        },
+        "listPanel": {
+          "importFac": {
+            "dialog": {
+              "cancel": "Cancel",
+              "close": "Close",
+              "title": "Import Facilities",
+              "uploadFile": "Upload Import File"
+            },
+            "errorMessage": {
+              "imageNotFound": "ERROR: Floorplan image not found in tar",
+              "malformed": "ERROR: Facility object is malformed",
+              "missingFloorPlanGeo": "ERROR: Floorplan geometry is missing",
+              "missingFloorPlanImgName": "ERROR: Floorplan image name is missing in configuration",
+              "missingFloorPlanName": "ERROR: Floorplan name is missing",
+              "missingFloorPlanOrder": "ERROR: Floorplan order is missing",
+              "missingGeo": "ERROR: Facility geometry is missing",
+              "missingName": "ERROR: Facility name is missing"
+            }
+          },
+          "main": {
+            "fieldLabel": {
+              "searchFac": "Search facilities..."
+            },
+            "importFac": "Import Facilities",
+            "myFac": "My Facilities",
+            "newFac": "New Facility",
+            "noFacAvail": "No facilities available. Click the + button above or on the map to add a facility."
+          }
+        },
+        "settingsMenu": {
+          "main": {
+            "fieldLabel": {
+              "mapLabels": "Map Labels",
+              "nauticalChart": "Nautical Charts",
+              "roadsLabel": "Roads and Labels",
+              "weatherRadar": "Weather Radar"
+            }
+          },
+          "tileOptions": {
+            "baseMap": "BASE MAP"
+          }
+        }
+      }
+    }
+  }

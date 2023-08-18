@@ -1,0 +1,11 @@
+// .content-wrapper {
+// 	padding: 6rem 4.5rem;
+// }
+
+#scaffold-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	h2 {
+		padding: 0 0 1rem 0;
+	}
+}

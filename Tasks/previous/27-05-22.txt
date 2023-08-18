@@ -1,0 +1,10 @@
+Today's Task:
+CB2-5272 - Arabic Translations
+- System-Health:
+  - Worked on adding translations json for healthCheckMapping in ecosystem/global.json.
+  - Worked on replacing static texts with translation mapping in health-app/healthCheckMapping.js
+  - Worked on localizing dynamic translation data in orion-components/SystemHealth.
+
+CB2-5339 - Facilities - Facility icon not displayed in camera entity profile when camera is placed on the floor plan
+- Worked on sorting out main cause of missing facility icon issue in cameraProfile's SummaryWidget.
+- Worked on replacing duplicate result const variable with response in ecosystem/facilityModel.

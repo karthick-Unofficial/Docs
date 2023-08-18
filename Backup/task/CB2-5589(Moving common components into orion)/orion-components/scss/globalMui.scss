@@ -1,0 +1,125 @@
+.customActionButton {
+	min-width: 88px;
+	padding: 0;
+	line-height: 36px;
+	letter-spacing: 0;
+	font-weight: bold;
+}
+
+.customPopOver {
+	top: 0px !important;
+	left: unset !important;
+	max-width: unset;
+	border-radius: unset;
+
+	li {
+		padding: 0;
+		width: 100% !important;
+	}
+}
+
+.themedCheckBox {
+	svg {
+		fill: rgb(181, 185, 190);
+	}
+
+	.Mui-checked {
+		svg {
+			fill: rgb(0, 188, 212);
+		}
+	}
+}
+
+.alertProfileTabIcons {
+	color: #686B6F;
+
+	&:hover {
+		color: #fff
+	}
+}
+
+.MuiTableCell-root {
+	border-bottom: 1px solid #4B4D4F;
+}
+
+/* Status Card Styles */
+.status-card-header-div:hover::-webkit-scrollbar {
+	display: block !important;
+	width: 2px;
+}
+
+.status-card-header-div::-webkit-scrollbar-thumb {
+	border: solid 2px #B5B9BE;
+}
+
+.textAreaWrapper {
+	height: 100%
+}
+
+.textEditor {
+	padding-left: 15px;
+	padding-right: 15px
+}
+
+.textEditorRTL {
+	padding-left: 15px;
+	padding-right: 15px
+}
+
+.rdw-editor-main {
+	color: white;
+	min-height: 300px;
+}
+
+.public-DraftEditor-content {
+	min-height: 300px;
+	overflow: auto;
+}
+
+.textEditorRTL .public-DraftStyleDefault-ltr {
+	text-align: right !important;
+	direction: rtl !important;
+}
+
+.fontDropdown {
+	color: black;
+}
+
+.statusCardCheckbox {
+	svg {
+		fill: rgba(255, 255, 255, 0.3);
+	}
+
+	.Mui-checked {
+		svg {
+			fill: rgb(78, 181, 243);
+		}
+	}
+}
+
+//material-icons
+.material-icons {
+	font-family: "Material Icons";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	/* Preferred icon size */
+	display: inline;
+	line-height: 1;
+	text-transform: underline;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Support for IE. */
+	font-feature-settings: "liga";
+}

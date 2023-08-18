@@ -1,0 +1,11 @@
+Today's Task:
+CB2-5346 - Camera - Spotlight flickering issue
+- Worked on figuring out the main cause of spotlight flickering issues in camerasMap.
+- Went through react official docs to sort out alternate possiblities to implement shouldComponentUpdate in functional component.
+- Worked on wrapping CamerasMapLayer Component with React memo to restrict component rerenders.
+
+CB2-5333 - Map - Events - Slew slow to respond
+- Went through exact scenarios as mentioned and tested workflow of SlewLock in local and release environments.
+
+CB2-5343 - Camera app - UI issue when Weather radar overlay is turned on
+- Working on sorting out ways to fix flickering issues in weather Layer in camerasMap.

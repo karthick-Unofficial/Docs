@@ -1,0 +1,125 @@
+{
+	"appId": "reports-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"components": {
+				"notFound": {
+					"errorMessage": "الموارد غير موجود",
+					"goBack": "عد",
+					"pageError": "الصفحة المطلوبة غير متوفرة أو غير موجودة"
+				}
+			},
+			"mainpage": {
+				"list": {
+					"vessel-report": "تقارير السفن",
+					"event-report": "تقارير الأحداث",
+					"driveCamTitle": "Drive-Cam",
+					"driveCamDesc": "تقارير لأحداث Drive-Cam.",
+					"dwellDesc": "المدة الزمنية للسفن في المناطق.",
+					"dwellTitle": "تقرير الوقت يسكن",
+					"eventDesc": "تقرير عن حالة الأحداث.",
+					"eventTitle": "حدث سيتريب",
+					"eventLogTitle": "سجل الأحداث",
+					"eventLogDesc": "ملخص رفيع المستوى لجميع الأحداث.",
+					"threadTitle": "المواضيع",
+					"threadDesc": "تقارير للخيوط.",
+					"tripDesc": "بيانات السفن التي تعبر أسلاك التعثر.",
+					"tripTitle": "تقرير الشرارة",
+					"vesselDesc": "جميع البيانات الموضعية لمجموعة مختارة من الكيانات.",
+					"vesselTitle": "تقرير موقف السفينة",
+					"zoneDesc": "بيانات دخول / خروج السفن التي تسافر عبر المناطق.",
+					"zoneTitle": "تقرير نشاط المنطقة",
+					"events": "الأحداث",
+					"eventCreatedBy": "الحدث الذي أنشأه",
+					"eventSharing": "مشاركة الحدث",
+					"startDate": "تاريخ البدء",
+					"startTime": "وقت البدء",
+					"closeDate": "تاريخ قريب",
+					"closeTime": "وقت الاغلاق",
+					"eventDescription": "وصف الحدث",
+					"notes": "ملحوظات",
+					"pinnedItems": "العناصر المثبتة",
+					"activities": "أنشطة",
+					"lists": "القوائم",
+					"files": "الملفات"
+				},
+				"reports": {
+					"entities": "اختر الكيانات الخاصة بك",
+					"event": "اختر حدثًا",
+					"lines": "اختر خطك (خطوطك)",
+					"zone": "اختر منطقتك (مناطقك)"
+				}
+			},
+			"reportBuilder": {
+				"components": {
+					"field": {
+						"search": "بحث...",
+						"selectAll": "اختر الكل"
+					},
+					"multiReport": {
+						"downloadPdf": "تحميل PDF",
+						"list": "قائمة"
+					}
+				},
+				"reportBuilder_reports": {
+					"report": {
+						"cancel": "يلغي",
+						"close": "قريب",
+						"downloadCsv": "قم بتنزيل ملف CSV",
+						"downloadPdf": "تحميل PDF",
+						"errorMessage": "تم استلام طلبك. من المفترض أن تتلقى بريدًا إلكترونيًا قريبًا.",
+						"noResult": "لا نتائج",
+						"reportMessage": "هذا التقرير كبير جدًا ولا يمكن تنزيله. يمكنك طلب معالجتها وإرسالها إليك بالبريد. قد يستغرق هذا ما يصل إلى ساعة.",
+						"request": "طلب",
+						"requestCsv": "طلب CSV",
+						"requestPdf": "طلب ملف PDF",
+						"displayName": {
+							"vesselName": "اسم السفينة",
+							"mmsid": "م م س أنا د",
+							"imo": "أنامۆ",
+							"callSign": "علامة إتصال",
+							"entryTime": "وقت دخول",
+							"dwellDuration": "مدة الإقامة",
+							"positionDateTime": "موضع التاريخ / الوقت",
+							"speed": "السرعة",
+							"heading": "العنوان",
+							"course": "الدورة",
+							"latitude": "خط العرض",
+							"longitude": "خط الطول",
+							"event": "حدث",
+							"eventName": "اسم الحدث",
+							"desc": "وصف",
+							"start": "يبدأ",
+							"end": "نهاية",
+							"template": "قالب",
+							"createdBy": "انشأ من قبل",
+							"status": "حالة",
+							"checkListProgress": "تقدم قائمة التحقق",
+							"posted": "تم النشر",
+							"postedBy": "منشور من طرف",
+							"name": "اسم",
+							"type": "يكتب"
+						}
+					}
+				},
+				"reportBuilders": {
+					"loading": "جار التحميل",
+					"requestCsv": "طلب CSV",
+					"requestMessage": "هذا التقرير للتحميل فقط. حدد السفينة (السفن) والإطار الزمني للتقرير. سيتم إرسال رابط تنزيل التقرير بالبريد الإلكتروني إلى حسابك بعد تقديم الطلب. قد تستغرق هذه العملية ما يصل إلى ساعة حتى تكتمل.",
+					"submit": "إرسال",
+					"submitMessage": "تقديم الطلب",
+					"submitQuery": "يرجى تقديم استعلام تقرير.",
+					"completeAllFields": "رجاءا اكمل جميع الحقول",
+					"validTimeRange": "الرجاء تحديد نطاق زمني صالح"
+				}
+			},
+			"reports": {
+				"typeAhead": {
+					"cancel": "إلغاء",
+					"search": "بحث"
+				}
+			}
+		}
+	}
+}

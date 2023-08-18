@@ -1,0 +1,6 @@
+Today's Task:
+CB2-4986
+- Worked on removing unused callbacks in some of ecosystem models.
+- Worked on adding missing catch blocks and fixing unhandledRejection errors in ecosystem.
+- Went through CB2-4986 implementations and worked on minor response fixes in ecosystem.
+- Worked on testing ecosystem workflow on account of async/await implementations.

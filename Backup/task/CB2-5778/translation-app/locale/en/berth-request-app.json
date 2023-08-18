@@ -1,0 +1,135 @@
+{
+	"appId": "berth-request-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"berthRequestForm": {
+				"CBDialog": {
+					"confirmDel": "Confirm Delete"
+				},
+				"bargeFields": {
+					"addBargeBtn": "Add Barge",
+					"fieldLabel": {
+						"bargeIMO": "Barge IMO / Official Num",
+						"bargeName": "Barge Name",
+						"bargeType": "Barge Type",
+						"loa": "LOA (ft)"
+					}
+				},
+				"cargoTable": {
+					"addCargoBtn": "Add Cargo",
+					"fieldLabel": {
+						"inward": "Inward",
+						"outward": "Outward"
+					},
+					"table": {
+						"head": {
+							"cargo": "Cargo*",
+							"delete": "Delete",
+							"direction": "Direction",
+							"shipper": "Shipper / Receiver",
+							"weight": "Weight (Lb)"
+						}
+					}
+				},
+				"main": {
+					"dialog": {
+						"cancel": "Cancel",
+						"confirm": "Confirm",
+						"textContent": "The use of the facilities under the jurisdiction of the Galveston Wharves shall constitute a consent to the terms and conditions of this Tariff and evidences an agreement on the part of all vessels, their owners, agents and other “users” of such facilities to pay all charges specified in this Tariff, to be governed by all rules and regulations herein contained, to abide by the local rules and regulations as set forth by the Board of Trustees of the Galveston Wharves and to be responsible for the disciplining of any infractions thereof by such person and / or such firms and their employees, and all claims, damages …et. cetera.",
+						"title": "Consent to the Terms of the Tariff (N) Item 107"
+					},
+					"fieldLabel": {
+						"agentEmail": "Agent Email*",
+						"agentName": "Agent Name*",
+						"agentPhone": "Agent Phone",
+						"berthName": "Berth Name",
+						"company": "Company",
+						"contactEmail": "Contact Email*",
+						"contactPhone": "Contact Phone",
+						"draft": "Draft (ft)",
+						"imoNumber": "IMO / Official Number",
+						"inward": "Inward",
+						"loa": "LOA (ft)",
+						"mmsiNumber": "MMSI Number",
+						"outward": "Outward",
+						"primaryActivity": "Primary Vessel Activity",
+						"requestedBy": "Requested By*",
+						"selectAgent": "Please select an Agent*",
+						"selectRequestor": "Please select a Requester*",
+						"vesselName": "Vessel or Tug Name",
+						"vesselType": "Vessel Type",
+						"voyageNumber": "Voyage Number"
+					},
+					"submitReq": "Submit Request",
+					"title": {
+						"additionalInfo": "Additional Information",
+						"agent": "Agent",
+						"bargeInfo": "Barge Information",
+						"berth": "Berth",
+						"cargo": "Cargo",
+						"requestedBy": "Requested By",
+						"schedule": "Schedule",
+						"services": "Services",
+						"vesselInfo": "Vessel Information"
+					}
+				},
+				"notesField": {
+					"fieldLabel": {
+						"additionalInfo": "Additional Information"
+					}
+				},
+				"servicesField": {
+					"comments": "Comments"
+				},
+				"typeAhead": {
+					"noResults": "No Results"
+				}
+			},
+			"vesselReport": {
+				"main": {
+					"certifyStmt": "I hereby certify that the above statement is true and correct.",
+					"fieldLabel": {
+						"agent": "Agent:",
+						"arrivalDate": "Arrival Date:",
+						"berth": "Berth:",
+						"date": "Date:",
+						"departureDate": "Departure Date:",
+						"length": "Length (in feet):",
+						"nationality": "Nationality/Flag:",
+						"owner": "Owner:",
+						"phone": "Phone No.*:",
+						"registryNum": "Registry No.:",
+						"stevedore": "Stevedore:",
+						"submittedBy": "Submitted by*:",
+						"title": "Title*:",
+						"vessel": "Vessel:",
+						"vesselType": "Vessel Type:",
+						"voyageNum": "Voyage Number:"
+					},
+					"submitRequest": "Submit Request",
+					"vesselManifest": "VESSEL MANIFEST",
+					"vesselReceived": "Thank you, your vessel report has been received.",
+					"vesselReport": "VESSEL REPORT"
+				},
+				"vesselReportCargoTable": {
+					"addCargoBtn": "Add Cargo",
+					"fieldLabel": {
+						"inward": "Inward",
+						"outward": "Outward"
+					},
+					"table": {
+						"head": {
+							"cargo": "Cargo",
+							"delete": "Delete",
+							"inboundOutbound": "Inbound/Outbound",
+							"totalCargoWeight": "TOTAL CARGO WEIGHT",
+							"weight": "Weight (Lb)"
+						}
+					},
+					"totalPounds": "TOTAL POUNDS"
+				}
+			}
+		}
+	}
+}

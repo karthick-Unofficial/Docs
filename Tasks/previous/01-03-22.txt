@@ -1,0 +1,5 @@
+Today's Task:
+- Worked on adding accessPoint stream in contextualData reducer functions and also added supporting changes in orion-components.
+- Worked on implementing add accessPoint to FloorPlan support changes in facilities app.
+- Worked on adding "streamAccessPointByDisplayEntity" backend implementations to load accessPoint by FloorPlan.
+- Worked on adding support for streamAccessPoint in client-app-core.

@@ -1,0 +1,64 @@
+.cameras-list-panel {
+	#cameras-list-wrapper {
+		#cameras-list {
+			padding: 0.5rem 1rem;
+			.list-controls {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.search-field {
+					flex-grow: 1;
+				}
+				> button {
+					flex-grow: 1;
+					white-space: nowrap;
+				}
+				i {
+					color: $transWhite;
+					font-size: 24px;
+					margin-left: 0.5rem;
+				}
+			}
+			.list-header {
+				padding: 1rem 0 0.5rem 0;
+			}
+		}
+	}
+
+	#camera-list {
+		height: calc(100% - 60px);
+		overflow: scroll;
+		padding-top: 1.5rem;
+		i {
+			font-size: 2rem;
+		}
+	}
+}
+
+#filter-toggles {
+	display: flex;
+	justify-content: space-between;
+}
+
+.search-field {
+	display: flex;
+	align-items: center;
+	i {
+		color: $transWhite;
+		font-size: 24px;
+		margin-left: 0.5rem;
+	}
+	input::-ms-clear {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+}
+
+.targetingLine {
+	position: fixed;
+	top: 0;
+	left: 6px; // <--- accounting for padding...
+	pointer-events: none;
+	z-index: 9999999999999999999; // always on top of everything...
+}

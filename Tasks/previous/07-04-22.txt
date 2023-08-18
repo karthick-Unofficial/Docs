@@ -1,0 +1,4 @@
+Today's Task: 
+- Went through cameras-app and ecosystem to sort out work flow implementation of link Items widget in camerasProfile.
+- Worked on CB2-5228 -> Camera app - Unable to link facility to camera, Facility not found.
+- Working on CB2-5034 -> Events - Pinned Items Not Removing From Map.

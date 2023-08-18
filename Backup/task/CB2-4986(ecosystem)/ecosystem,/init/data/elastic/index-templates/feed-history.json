@@ -1,0 +1,65 @@
+{
+    "index_patterns": "feed-history-*",
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 0,
+        "refresh_interval": "1s"
+    },
+    "mappings": {
+        "dynamic": false,
+        "properties": {
+            "collectedDate": {
+                "type": "date"
+            },
+            "feedIds": {
+                "type": "keyword"
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+                "entityId": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "collectedItem": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "keyword"
+                  },
+                  "acquisitionTime": {
+                      "type": "date"
+                  },
+                  "extSysId": {
+                    "type": "keyword"
+                  },
+                  "feedId": {
+                    "type": "keyword"
+                  },
+                  "sourceId": {
+                    "type": "keyword"
+                  },
+                  "entityType": {
+                    "type": "keyword"
+                  },
+                  "entityData": {
+                    "type": "object",
+                    "properties": { 
+                      "properties.name": {
+                        "type": "keyword"
+                      },
+                      "geometry": {
+                        "type": "geo_shape"
+                      }
+                    }
+                  }
+                }
+            },
+            "transactionTime": {
+              "type": "alias",
+              "path": "collectedItem.acquisitionTime"
+            }
+        }
+    }
+}

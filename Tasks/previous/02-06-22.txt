@@ -1,0 +1,15 @@
+Today's Task:
+CB2-5368 - New account email shows 'Undefined'
+- Went through exact scenarios and worked on sorting out main causes of Undefined issues in email generation.
+- Replaced mismatching translation mapping with the right one in ecosystem/html.pug.
+
+CB2-5367 - Change password is not responding
+- Worked on adding errorMessage to errorMsg state when the password and confirmPassword fields does'nt match.
+
+CB2-5373 - Events - User with permission doesnt't see share button on the template
+- Worked on figuring out the causes of missing share icon issues in eventTemplate.
+- Seems like Event Templates do not have share functionality by default.
+
+CB2-5336 - Events - List - Rows not added to the list
+- Went through ListWidget workflow in events app to sort out the causes of Rows not updating issues in EventProfile.
+- Worked on adding a condition to add rows property if not available in ContextualData reducer and tested workflow.

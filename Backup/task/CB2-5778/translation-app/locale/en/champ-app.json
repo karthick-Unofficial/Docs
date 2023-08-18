@@ -1,0 +1,71 @@
+{
+	"appId": "champ-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"appBar": {
+				"title": "CHAMP"
+			},
+			"customers": {
+				"instanceCard": {
+					"disconnected": "Disconnected",
+					"sslExpirationBadge": {
+						"expiredDaysAgo": "SSL certificate expired %{count} days ago!",
+						"expiresToday": "SSL certificate expires today!",
+						"expiresInDays": "SSL certificate expires in %{count} days."
+					}
+				},
+				"instanceProfile": {
+					"activeUsers": "Active Users",
+					"buttons": {
+						"restartEco": "Restart Ecosystem",
+						"restartInt": "Restart Integration",
+						"restartOther": "Restart Other Service"
+					},
+					"dialog": {
+						"title": "Restart Service"
+					},
+					"disconnected": " (Disconnected)",
+					"good": "Good",
+					"healthChecks": "Health Checks",
+					"invalidInstance": "Invalid Instance",
+					"lastUpdate": "Last Update:",
+					"quickFix": "Quick Fix",
+					"systems": "Systems",
+					"sslExpiration": {
+						"header": "SSL Expiration",
+						"day": "day",
+						"days": "days",
+						"daysAgo": "days ago",
+						"unavailable": "Unavailable"
+					}
+				},
+				"manageCustomers": {
+					"clickCustomer": "Click a customer to see details",
+					"customerDashboard": "Customer Dashboard",
+					"systemHealth": "System Health"
+				},
+				"userManagement": {
+					"active": "Active (%{count} sessions)",
+					"adminTooltip": "Admin User",
+					"dialog": {
+						"cancel": "CANCEL",
+						"confirm": "CONFIRM",
+						"confirmation": "Are you sure you want to log out user:",
+						"title": "Log Out User"
+					},
+					"inactive": "Inactive",
+					"instance": "Instance",
+					"logOut": "Log Out",
+					"userMangtitle": "User Management",
+					"users": "Users"
+				}
+			},
+			"sideNav": {
+				"configManagement": "Configuration Management",
+				"deploymentManagement": "Deployment Management",
+				"systemHealth": "System Health"
+			}
+		}
+	}
+}

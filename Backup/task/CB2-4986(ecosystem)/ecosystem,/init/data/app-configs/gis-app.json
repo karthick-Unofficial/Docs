@@ -1,0 +1,13 @@
+{
+	"gisLayers": [
+		{
+			"name": "Structure_Poly",
+			"id": "5",
+			"endpoint": "https://arcgis4.roktech.net/arcgis/rest/services/marinergroup/Port_of_Baton_Rouge_Server/FeatureServer/4",
+			"username": "pgbruser",
+			"password": "pgbr8994"
+		}
+	],
+	"resultRecordCount": 50,
+	"layerDataCleanupInterval": 60
+}

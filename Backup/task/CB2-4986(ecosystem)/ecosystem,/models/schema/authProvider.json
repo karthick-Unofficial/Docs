@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/authProvider.json",
+  "type": "object",
+  "required": [ "providerId", "orgId" ],
+  "additionalProperties": false,
+  "properties": {
+    "description": {"description": "","type": "string"},
+    "providerId": {"description": "","type": "string"},
+    "orgId": {"description": "","type": "string"},
+    "deleted": { "description": "", "type": "boolean" },    
+    "connection": {
+      "type": "object",
+      "properties": {
+        "host": {"description": "","type": "string"  },
+        "port": {"description": "","type": "string"  },
+        "adminUser": {"description": "","type": "string"  },
+        "adminPassword": {"description": "","type": "string"  },
+        "baseDN": {"description": "","type": "string"  },
+        "groupName": {"description": "","type": "string"  },
+        "sync": {"description": "", "type": "boolean"}
+      }
+    },
+    "createdDate": {"minimum": 1,"date": true},
+    "lastModifiedDate": {"minimum": 1,"date": true}
+  }
+} 
+
+

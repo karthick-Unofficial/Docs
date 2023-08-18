@@ -1,0 +1,114 @@
+GIT:
+1. Reset a branch to a particular time:
+git reset --hard branchName@{"X Minutes ago"}
+
+2. Check remote repo url:
+git config --get remote.origin.url
+
+3. Revert commit with changes:
+git reset --soft HEAD~1
+
+4. Revert commit without changes:
+git reset --hard HEAD~1
+
+5. GIT Stash:
+   # Revert recent stash:
+   git stash pop
+    
+   # Stash Untracked changes:
+   git stash -k
+
+   # Keep stash memory and pop:
+   git stash apply
+
+6. GIT Branches:
+   # rename branch called old_name to new_name
+   git branch -m old_name new_name
+
+   # rename current branch to new_name
+   git branch -m new_name
+
+   # remove local branch called branch_name
+   git branch -d branch_name
+
+   # merge local branch called branch_name into your current branch
+   git merge branch_name
+
+7. Get reflog info
+git reflog
+
+8. Revert a merge:
+   # before commit:
+   git reset --hard <merge hash>
+
+   #after commit:
+   git revert -m 1 <merge commit hash>
+
+9. Revert local git commit:
+git reset HEAD~1
+
+10. View last commit when a file got deleted:
+git log --full-history -1 -- [file path]
+
+
+NPM:
+1. Get version list of installed packages:
+npm list --depth=0
+
+2. Get list of outdated packges:
+npm outdated --depth=0
+
+3. Get list of global packages with version:
+npm list --depth=0 -g
+
+4. creating a dependency library:
+   - npm init
+   - npm install
+   - npm run prelink
+   - npm link
+
+5. find the path to your global node_modules directory
+npm root -g
+
+
+KUBERNETES:
+   - minikube version
+   - minikube start
+   - kubectl version
+   - kubectl get nodes
+   - kubectl create deployment {full repo url}
+   - kubectl get deployments
+   - kubectl get pods
+   - kubectl describe pods
+   - kubectl proxy
+   - kubectl exec {pod name} -- env
+   - kubectl get services
+   - kubectl delete service -l app={name}
+   - kubectl get rs
+
+
+redis-cli:
+   - redis-cli GET
+   - redis-cli SET
+   - redis-cli KEYS * || redis-cli KEYS \*
+   - redis-cli SELECT {dbname}
+   - redis-cli CONFIG GET DATABASES
+   - redis-cli INFO keyspace
+   - redis-cli CLIENT LIST
+   - redis-cli flushAll
+
+elastic:
+   - http://localhost:9200/_cat/allocation?v
+   - http://localhost:9200/_cat/indices?v
+   - http://localhost:9200/_aliases
+
+
+ports:
+   - elastic-search - localhost:5601 && localhost:9200
+   - rethinkdb - localhost:8080
+   - redis - localhost:8081
+
+Docker:
+   - docker version
+   - docker images
+   - docker build -t <imageName> <path> - "docker build -t commandbridge_compose_ecosystem ."

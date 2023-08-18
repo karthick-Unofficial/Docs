@@ -1,0 +1,320 @@
+{
+  "appId": "lists-app",
+  "locales": "en",
+  "translations": {
+    "ar": {
+      "appBar": {
+        "title": "القوائم"
+      },
+      "listPanel": {
+        "categoryManager": {
+          "cancel": "إلغاء",
+          "fieldLabel": {
+            "addCategory": "إضافة فئة جديدة"
+          },
+          "ok": "حسنا",
+          "remove": "إزالة"
+        },
+        "createList": {
+          "dialog": {
+            "cancel": "إلغاء",
+            "create": "إنشاء",
+            "textFooter": "ستتم إضافة جميع المحتويات إلى قائمتك الجديدة."
+          },
+          "fieldLabel": {
+            "addCategory": "إضافة فئة جديدة",
+            "chooseCategory": "اختر فئة القائمة (اختياري)",
+            "generateRow": "توليد صف أنشطة",
+            "listName": "اسم القائمة",
+            "paginate": "ترقيم"
+          }
+        },
+        "main": {
+          "clickToCreate": "ليس لديك حاليا أي قوائم متاحة. انقر فوق الزر أعلاه لإنشاء واحدة جديدة.",
+          "fieldLabel": {
+            "searchList": "قوائم البحث ..."
+          },
+          "items": "البنود %{count}",
+          "list": "قائمة %{count}",
+          "lists": "القوائم %{count}",
+          "listsShared": "القوائم المشتركة معي",
+          "manage": "إدارة الفئات",
+          "myLists": "قوائمي",
+          "newList": "قائمة جديدة",
+          "noItems": "0 العناصر",
+          "oneItem": "1 البند",
+          "showPanel": "إظهار لوحة القائمة",
+          "showPinned": "إظهار القوائم المثبتة",
+          "uncategorized": "قوائم غير مصنفة"
+        }
+      },
+      "listView": {
+        "columnAdd": {
+          "dialog": {
+            "cancel": "إلغاء",
+            "create": "إنشاء"
+          },
+          "fieldLabel": {
+            "chooseColumnType": "اختر نوع العمود",
+            "chooseLookupType": "اختر نوع البحث",
+            "columnAleadyExist": "العمود موجود بالفعل",
+            "columnName": "اسم العمود",
+            "defaultValue": "القيمة الافتراضية",
+            "showTime": "موعد العرض؟",
+            "showUser": "إظهار المستخدم؟",
+            "user": "مستخدم"
+          },
+          "menuItem": {
+            "checkbox": "خانة اختيار",
+            "choice": "خيار",
+            "dateTime": "التاريخ و الوقت",
+            "lookup": "ابحث عن",
+            "notes": "ملحوظات",
+            "text": "نص",
+            "user": "مستخدم"
+          }
+        },
+        "columnDelete": {
+          "dialog": {
+            "cancel": "إلغاء",
+            "deleteSelected": "حذف الأعمدة المحددة",
+            "title": "اختر العمود (الأعمدة) المراد حذفها."
+          }
+        },
+        "columnOrder": {
+          "dialog": {
+            "cancel": "إلغاء",
+            "ok": "حسنا"
+          }
+        },
+        "editList": {
+          "dialog": {
+            "cancel": "إلغاء",
+            "save": "حفظ"
+          },
+          "fieldLabel": {
+            "addCategory": "إضافة فئة جديدة",
+            "chooseColumn": "اختر العمود",
+            "defaultValue": "القيمة الافتراضية",
+            "generateRow": "توليد صف أنشطة",
+            "listCategory": "فئة القائمة",
+            "listName": "اسم القائمة",
+            "name": "الاسم",
+            "paginate": "ترقيم"
+          }
+        },
+        "listCard": {
+          "add": "أضف",
+          "cancel": "إلغاء",
+          "remove": "إزالة"
+        },
+        "listMenu": {
+          "menuItem": {
+            "addColumn": "أضف عمود",
+            "columnOrder": "ترتيب العمود",
+            "deleteColumns": "حذف الأعمدة",
+            "deleteList": "قائمة الحذف",
+            "duplicateList": "قائمة مكررة",
+            "editList": "تحرير القائمة"
+          }
+        },
+        "listOrder": {
+          "dialog": {
+            "cancel": "إلغاء",
+            "ok": "حسنا"
+          }
+        },
+        "main": {
+          "changeOrder": "تغيير الترتيب",
+          "dialog": {
+            "cancel": "إلغاء",
+            "delete": "حذف",
+            "textContent": "سيتم إزالة كافة المحتويات بشكل دائم",
+            "title": "هل أنت متأكد أنك تريد حذف هذه القائمة؟"
+          },
+          "emptyMessage": "لم يتم اختيار أي قوائم. اختر من اللوحة اليسرى.",
+          "removeAll": "إزالة الكل"
+        }
+      },
+      "shared": {
+        "choiceColumn": {
+          "fieldLabel": {
+            "addNewChoice": "أضف خيارًا جديدًا",
+            "defaultValue": "القيمة الافتراضية",
+            "none": "لا شيء",
+            "remove": "إزالة",
+            "unableToEdit": "تعذر تحرير الاختيارات المعينة بالفعل للصفوف"
+          }
+        },
+        "dateTimeColumn": {
+          "fieldLabel": {
+            "example": "مثال:",
+            "includeTime": "تضمين الوقت؟"
+          }
+        },
+        "textColumn": {
+          "fieldLabel": {
+            "defaultValue": "القيمة الافتراضية"
+          }
+        }
+      }
+    },
+    "en": {
+      "appBar": {
+        "title": "Lists"
+      },
+      "listPanel": {
+        "categoryManager": {
+          "cancel": "Cancel",
+          "fieldLabel": {
+            "addCategory": "Add new category"
+          },
+          "ok": "Ok",
+          "remove": "remove"
+        },
+        "createList": {
+          "dialog": {
+            "cancel": "Cancel",
+            "create": "Create",
+            "textFooter": "All contents will be added to your new list."
+          },
+          "fieldLabel": {
+            "addCategory": "Add new category",
+            "chooseCategory": "Choose List Category (optional)",
+            "generateRow": "Generate Row Activities",
+            "listName": "List Name",
+            "paginate": "Paginate"
+          }
+        },
+        "main": {
+          "clickToCreate": "You currently have no lists available. Click the button above to create a new one.",
+          "fieldLabel": {
+            "searchList": "Search lists..."
+          },
+          "items": "%{count} Items",
+          "list": "%{count} List",
+          "lists": "%{count} Lists",
+          "listsShared": "Lists Shared with Me",
+          "manage": "Manage Categories",
+          "myLists": "My Lists",
+          "newList": "New List",
+          "noItems": "0 Items",
+          "oneItem": "1 item",
+          "showPanel": "Show List Panel",
+          "showPinned": "Show Pinned Lists",
+          "uncategorized": "Uncategorized Lists"
+        }
+      },
+      "listView": {
+        "columnAdd": {
+          "dialog": {
+            "cancel": "Cancel",
+            "create": "Create"
+          },
+          "fieldLabel": {
+            "chooseColumnType": "Choose Column Type",
+            "chooseLookupType": "Choose Lookup Type",
+            "columnAleadyExist": "Column Already Exists",
+            "columnName": "Column Name",
+            "defaultValue": "Default Value",
+            "showTime": "Show Time?",
+            "showUser": "Show User?",
+            "user": "User"
+          },
+          "menuItem": {
+            "checkbox": "Checkbox",
+            "choice": "Choice",
+            "dateTime": "Date and Time",
+            "lookup": "Lookup",
+            "notes": "Notes",
+            "text": "Text",
+            "user": "User"
+          }
+        },
+        "columnDelete": {
+          "dialog": {
+            "cancel": "Cancel",
+            "deleteSelected": "Delete Selected Columns",
+            "title": "Choose column(s) to be deleted."
+          }
+        },
+        "columnOrder": {
+          "dialog": {
+            "cancel": "Cancel",
+            "ok": "Ok"
+          }
+        },
+        "editList": {
+          "dialog": {
+            "cancel": "Cancel",
+            "save": "Save"
+          },
+          "fieldLabel": {
+            "addCategory": "Add new category",
+            "chooseColumn": "Choose Column",
+            "defaultValue": "Default Value",
+            "generateRow": "Generate Row Activities",
+            "listCategory": "List Category",
+            "listName": "List Name",
+            "name": "Name",
+            "paginate": "Paginate"
+          }
+        },
+        "listCard": {
+          "add": "Add",
+          "cancel": "Cancel",
+          "remove": "Remove"
+        },
+        "listMenu": {
+          "menuItem": {
+            "addColumn": "Add Column",
+            "columnOrder": "Column Order",
+            "deleteColumns": "Delete Columns",
+            "deleteList": "Delete List",
+            "duplicateList": "Duplicate List",
+            "editList": "Edit List"
+          }
+        },
+        "listOrder": {
+          "dialog": {
+            "cancel": "Cancel",
+            "ok": "Ok"
+          }
+        },
+        "main": {
+          "changeOrder": "Change Order",
+          "dialog": {
+            "cancel": "Cancel",
+            "delete": "Delete",
+            "textContent": "All content will be permanently removed",
+            "title": "Are you sure you want to delete this list?"
+          },
+          "emptyMessage": "No lists selected. Choose from left panel.",
+          "removeAll": "Remove All"
+        }
+      },
+      "shared": {
+        "choiceColumn": {
+          "fieldLabel": {
+            "addNewChoice": "Add new choice",
+            "defaultValue": "Default Value",
+            "none": "None",
+            "remove": "remove",
+            "unableToEdit": "Unable to edit choices already assigned to rows"
+          }
+        },
+        "dateTimeColumn": {
+          "fieldLabel": {
+            "example": "Example:",
+            "includeTime": "Include time?"
+          }
+        },
+        "textColumn": {
+          "fieldLabel": {
+            "defaultValue": "Default Value"
+          }
+        }
+      }
+    }
+  }
+}

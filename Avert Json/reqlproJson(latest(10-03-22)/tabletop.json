@@ -1,0 +1,1059 @@
+{
+  "appId": "tabletop-app",
+  "id": "5699919a-4d36-4868-8476-e0d29470b5e5",
+  "locales": "en",
+  "translations": {
+    "ar": {
+      "appBar": {
+        "title": "منضدية"
+      },
+      "shared": {
+        "components": {
+          "confirmationDialog": {
+            "cancel": "إلغاء",
+            "ok": "حسنا"
+          },
+          "errorBoundary": {
+            "Error": "خطأ",
+            "error": "حدث خطأ في عرض هذا المكون",
+            "ok": "موافق"
+          },
+          "exerciseContainer": {
+            "defaultHeader": "هذا هو العنوان الرئيسي"
+          },
+          "t2IconButton": {
+            "none": "لا شيء"
+          }
+        }
+      },
+      "tableopSession": {
+        "controls": {
+          "dock": {
+            "close": "إغلاق",
+            "dockLeft": "قفص الاتهام اليسار",
+            "dockRight": "قفص الاتهام الحق"
+          },
+          "mapFloorPlan": {
+            "close": "إغلاق",
+            "mapFloorPlanSettings": {
+              "dock": "قفص الاتهام "
+            },
+            "settings": "الإعدادات"
+          },
+          "notifications": {
+            "a": "أ ",
+            "by": " بواسطة ",
+            "equipSharedFor": "المعدات المشتركة ل ",
+            "equipUncovered": "معدات مكشوفة ل",
+            "eventShared": "الحدث مشترك بواسطة "
+          },
+          "playback": {
+            "closeTimeline": "إغلاق الجدول الزمني",
+            "pause": "وقفة",
+            "play": "يلعب",
+            "playBackSettings": {
+              "errorText": {
+                "greaterThan": "الرجاء إدخال قيمة أكبر من 0",
+                "valueLessThan": "الرجاء إدخال قيمة أقل من أو تساوي %{count}"
+              },
+              "team": "%{primaryValue}%{secondaryValue} فريق"
+            },
+            "simEnded": "انتهت المحاكاة.",
+            "simPaused": "تم إيقاف المحاكاة مؤقتًا.",
+            "simPlaying": "تشغيل المحاكاة ...",
+            "stepAhead": "خطوة للأمام",
+            "stepBack": "خطوة للخلف",
+            "timelineSettings": "اعدادات الخط الزمني"
+          },
+          "simulationTree": {
+            "dialog": {
+              "textContent": "هل أنت متأكد من أنك ترغب في حذف المحاكاة %{count}?"
+            },
+            "modificationTimer": {
+              "min": "الدقائق",
+              "modActive": "التعديلات نشطة"
+            }
+          }
+        },
+        "main": {
+          "sessionStatus": "هذا التمرين لم يعد نشطًا بعد الآن. بعد فترة وجيزة ، ستتم إعادة توجيهك مرة أخرى إلى الصفحة الرئيسية على سطح الطاولة حيث يمكنك الانضمام إلى أي تمرين نشط جديد (إن أمكن)."
+        },
+        "mapBase": {
+          "contextMenu": {
+            "createObj": "إنشاء الهدف",
+            "facProfile": "الملف الشخصي للمنشأة",
+            "floorPlanControl": "التحكم في مخطط الأرضية",
+            "floorPlans": "مخططات الطوابق",
+            "mapLayers": "طبقات الخريطة",
+            "modifyActions": "تعديل الإجراءات",
+            "noActions": "لا توجد إجراءات متاحة",
+            "openFloorPlan": "افتح مخطط الطابق",
+            "showHideActivated": "إظهار / إخفاء مخططات الطوابق المفعلة",
+            "showHideDisabled": "إظهار / إخفاء كل اللاعبين المعاقين",
+            "showHideFOV": "إظهار / إخفاء مجال الرؤية",
+            "showHideTrackHist": "إظهار / إخفاء محفوظات المسار",
+            "timelineControl": "التحكم في الجدول الزمني",
+            "uploadGuardOrders": {
+              "uploadComplete": "اكتمل التحميل !!!",
+              "uploadFailed": "التحميل فشل!!!"
+            },
+            "uploadOrders": "تحميل الطلبات",
+            "viewDetails": "عرض التفاصيل",
+            "viewOrders": "عرض الطلبات"
+          },
+          "layerSources": {
+            "main": {
+              "lastSeen": "اخر ظهور في الوقت"
+            },
+            "mapLayer": {
+              "locationHistInfo": {
+                "time": "زمن: "
+              }
+            }
+          }
+        },
+        "mapBase_contextMenu": {
+          "uploadGuard": {
+            "cancel": "إلغاء",
+            "close": "أغلق",
+            "delete": "حذف",
+            "order": "أوامر موجودة بالفعل لهذا الحارس",
+            "select": "حدد الملف للتحميل له",
+            "upload": "تحميل ملف PDF",
+            "view": "رأي"
+          }
+        },
+        "mapFloor": {
+          "cancel": "يلغي",
+          "ok": "موافق"
+        },
+        "panels": {
+          "events": {
+            "blueTeam": "فريق أزرق",
+            "eventSharing": {
+              "cancel": "إلغاء",
+              "chooseCommDevices": "اختر أجهزة الاتصال وأبلغ الفريق.",
+              "choosePlayers": "اختر اللاعبين لإخطارهم.",
+              "comm": "بالاتصالات",
+              "device": "جهاز",
+              "notify": "يخطر",
+              "owner": "صاحب",
+              "player": "لاعب",
+              "recipients": "المستلمون",
+              "team": "فريق",
+              "time": "زمن",
+              "viewRecipients": "عرض المستلمين"
+            },
+            "events": "%{count} الأحداث",
+            "notify": "يخطر",
+            "redTeam": "الفريق الأحمر",
+            "searchEvents": "أحداث البحث ..",
+            "shareInfoToTeam": "مشاركة معلومات الحدث مع الفريق"
+          },
+          "excerciseSettings": {
+            "controller": "المراقب المالي",
+            "enableWeaponFire": "تفعيل صوت إطلاق الأسلحة",
+            "events": "الأحداث",
+            "mapDisplaySett": "إعدادات عرض الخريطة",
+            "mapMarkers": "محددات الخرائط (المرافق ، النقاط ، الأهداف)",
+            "mapSymbolSize": "حجم رمز الخريطة",
+            "modifySim": "تعديل فترة المحاكاة",
+            "playback": "تشغيل",
+            "setTraceDisplay": "ضبط مدة عرض التتبع (بالثواني)",
+            "simMode": "وضع المحاكاة",
+            "simTimePrecision": "دقة وقت سيم (المنازل العشرية)",
+            "simulation": "محاكاة"
+          },
+          "facilities": {
+            "facility": {
+              "floors": "%{count} طوابق",
+              "title": "جميع المرافق"
+            },
+            "facilityList": {
+              "noFac": "لم يتم إعداد أية مرافق"
+            }
+          },
+          "mapLayers": {
+            "floorPlanControl": "التحكم في مخطط الأرضية",
+            "timelineControl": "التحكم في الجدول الزمني"
+          },
+          "modifications": {
+            "modificationEditor": {
+              "barrierSelector": {
+                "barrier": "الحاجز"
+              },
+              "main": {
+                "addMod": "إضافة تعديل",
+                "behaviour": "سلوك",
+                "editMod": "تحرير التعديل",
+                "save": "حفظ"
+              },
+              "mapObjectSelector": {
+                "chooseIntSide": "اختر موقع الحظر",
+                "chooseItem": "اختر البند في الموقع الهدف",
+                "chooseItemTarget": "اختر البند في الموقع الهدف",
+                "chooseLocation": "اختيار موقع",
+                "chooseObjective": "اختر الهدف",
+                "choosePlayer": "اختر لاعب",
+                "selectOnMap": "حدد على الخريطة"
+              },
+              "objectiveEditor": {
+                "addObj": "إضافة الهدف",
+                "cancel": "إلغاء",
+                "chooseLocation": "اختر موقع الهدف",
+                "editObj": "تحرير الهدف",
+                "objName": "اسم الهدف",
+                "save": "حفظ"
+              },
+              "text": {
+                "enterDynamic": "الرجاء الدخول %{count}",
+                "valueGreater": "الرجاء إدخال قيمة أكبر من 0"
+              }
+            },
+            "modificationEntry": {
+              "addComment": "أضف تعليق…",
+              "pending": "قيد الانتظار..."
+            },
+            "modificationHistory": {
+              "currentExercise": "التمرين الحالي",
+              "export": "تصدير إلى PDF",
+              "modHistReport": "تقرير تاريخ التعديل",
+              "reportDate": "تاريخ التقرير: %{count}",
+              "time": "زمن:"
+            },
+            "modifyExercise": {
+              "acceptedRejectedMod": "التعديلات المقبولة / المرفوضة",
+              "contEnded": "أنهت وحدة التحكم عملية التعديلات لهذا التمرين.  n لا يجوز إرسال المزيد من التعديلات.",
+              "contPaused": "أوقفت وحدة التحكم التمرين الحالي لإجراء تعديلات مؤقتًا.  n الرجاء إرسال تعديلاتك.",
+              "contRestarted": "أعادت وحدة التحكم عملية التعديلات لهذا التمرين.  n الرجاء إرسال التعديلات الخاصة بك.",
+              "controller": "%{count} (المراقب المالي)",
+              "dialogContent": "التعديلات التي لم يتم تقديمها موجودة. هل أنت متأكد أنك تريد إلغاء؟",
+              "generateNewExercise": "قم بإنشاء تمرين جديد",
+              "myMod": "تعديلاتي",
+              "newExerciseName": "اسم تمرين جديد",
+              "noModTxt": "لا توجد تعديلات لتقديمها في هذا الوقت.",
+              "noPlayerTxt": "لا توجد تعديلات مرسلة من قبل لاعب في الوقت الحالي.",
+              "pendingMod": "التعديلات المعلقة الخاصة بي",
+              "startTime": "وقت البدء (ثانية)",
+              "submitMod": "إرسال التعديلات"
+            }
+          },
+          "roster": {
+            "equipmentSharing": {
+              "cancel": "إلغاء",
+              "chooseCommDevices": "اختر أجهزة الاتصال وأبلغ الفريق.",
+              "choosePlayers": "اختر اللاعبين لإخطارهم.",
+              "chooseWeapons": "اختر الأسلحة والمعدات المرصودة لـ %{count}",
+              "comm": "بالاتصالات",
+              "device": "جهاز",
+              "notify": "يخطر",
+              "owner": "صاحب",
+              "player": "لاعب",
+              "recipients": "المستلمون",
+              "team": "فريق",
+              "time": "زمن",
+              "viewRecipients": "عرض المستلمين",
+              "viewTimes": "عرض الأوقات"
+            },
+            "main": {
+              "blueTeam": "فريق أزرق",
+              "redTeam": "الفريق الأحمر",
+              "shareEquip": "مشاركة المعدات",
+              "shareToTeam": "مشاركة ملاحظات المعدات مع الفريق",
+              "trackHist": "تتبع التاريخ",
+              "vieworders": "عرض الطلبات"
+            }
+          },
+          "userMapping": {
+            "noMappings": "لا توجد تعيينات لاعب لعرضها.",
+            "playerCan": "يمكن للاعب إرسال الأوامر والمهام إلى",
+            "playersPrimaryRole": "الأدوار الأساسية للاعب",
+            "team": "فريق"
+          }
+        },
+        "playBack": {
+          "playBackSettings": {
+            "all": "الجميع",
+            "cancel": "إلغاء",
+            "ok": "موافق",
+            "playBack": "سرعة التشغيل",
+            "setStep": "تعيين حجم الخطوة (ثانية)",
+            "start": "وقت لاذع (ثانية)",
+            "title": "اضبط وقت البدء وسرعة التشغيل للتمرين"
+          }
+        },
+        "shared": {
+          "detected": "تم العثور",
+          "disabled": "عاجز",
+          "neutralized": "محايد",
+          "undetected": "غير مكتشف",
+          "unknown": "مجهول"
+        },
+        "simulation": {
+          "modification": {
+            "add10": "أضف 10 دقائق",
+            "add15": "أضف 15 دقيقة",
+            "add2": "أضف دقيقتين",
+            "add5": "أضف 5 دقائق",
+            "player": "إنهاء كافة تعديلات المشغل",
+            "restart": "أعد تشغيل تعديلات المشغل"
+          },
+          "simulationTree": {
+            "current": "المحاكاة الحالية",
+            "exercise": "تاريخ التمرين",
+            "load": "محاكاة الحمل",
+            "loading": "جار التحميل...",
+            "mark": "وضع علامة فشل",
+            "modify": "تمرين التعديل",
+            "running": "ادارة..."
+          }
+        },
+        "widgets": {
+          "events": {
+            "blueTeam": "فريق أزرق",
+            "eventSharing": {
+              "cancel": "إلغاء",
+              "chooseCommDevices": "اختر أجهزة الاتصال وأبلغ الفريق.",
+              "choosePlayers": "اختر اللاعبين لإخطارهم.",
+              "comm": "بالاتصالات",
+              "device": "جهاز",
+              "notify": "يخطر",
+              "owner": "صاحب",
+              "player": "لاعب",
+              "recipients": "المستلمون",
+              "team": "فريق",
+              "time": "زمن",
+              "viewRecipients": "عرض المستلمين"
+            },
+            "events": "%{count} الأحداث",
+            "notify": "يخطر",
+            "redTeam": "الفريق الأحمر",
+            "searchEvents": "أحداث البحث ..",
+            "shareInfoToTeam": "مشاركة معلومات الحدث مع الفريق"
+          },
+          "excerciseSettings": {
+            "controller": "المراقب المالي",
+            "enableWeaponFire": "تفعيل صوت إطلاق الأسلحة",
+            "events": "الأحداث",
+            "mapDisplaySett": "إعدادات عرض الخريطة",
+            "mapMarkers": "محددات الخرائط (المرافق ، النقاط ، الأهداف)",
+            "mapSymbolSize": "حجم رمز الخريطة",
+            "modifySim": "تعديل فترة المحاكاة",
+            "playback": "تشغيل",
+            "setTraceDisplay": "ضبط مدة عرض التتبع (بالثواني)",
+            "simMode": "وضع المحاكاة",
+            "simTimePrecision": "دقة وقت سيم (المنازل العشرية)",
+            "simulation": "محاكاة"
+          },
+          "facilities": {
+            "facility": {
+              "floors": "%{count} طوابق",
+              "title": "جميع المرافق"
+            },
+            "facilityList": {
+              "noFac": "لم يتم إعداد أية مرافق"
+            }
+          },
+          "mapLayers": {
+            "floorPlanControl": "التحكم في مخطط الأرضية",
+            "timelineControl": "التحكم في الجدول الزمني"
+          },
+          "modifications": {
+            "modificationEditor": {
+              "barrierSelector": {
+                "barrier": "الحاجز"
+              },
+              "main": {
+                "addMod": "إضافة تعديل",
+                "behaviour": "سلوك",
+                "editMod": "تحرير التعديل",
+                "save": "حفظ"
+              },
+              "mapObjectSelector": {
+                "chooseIntSide": "اختر موقع الحظر",
+                "chooseItem": "اختر البند في الموقع الهدف",
+                "chooseItemTarget": "اختر البند في الموقع الهدف",
+                "chooseLocation": "اختيار موقع",
+                "chooseObjective": "اختر الهدف",
+                "choosePlayer": "اختر لاعب",
+                "selectOnMap": "حدد على الخريطة"
+              },
+              "objectiveEditor": {
+                "addObj": "إضافة الهدف",
+                "cancel": "إلغاء",
+                "chooseLocation": "اختر موقع الهدف",
+                "editObj": "تحرير الهدف",
+                "objName": "اسم الهدف",
+                "save": "حفظ"
+              },
+              "text": {
+                "enterDynamic": "الرجاء الدخول %{count}",
+                "valueGreater": "الرجاء إدخال قيمة أكبر من 0"
+              }
+            },
+            "modificationEntry": {
+              "addComment": "أضف تعليق…",
+              "pending": "قيد الانتظار..."
+            },
+            "modificationHistory": {
+              "currentExercise": "التمرين الحالي",
+              "export": "تصدير إلى PDF",
+              "modHistReport": "تقرير تاريخ التعديل",
+              "reportDate": "تاريخ التقرير: %{count}",
+              "time": "زمن:"
+            },
+            "modifyExercise": {
+              "acceptedRejectedMod": "التعديلات المقبولة / المرفوضة",
+              "contEnded": "أنهت وحدة التحكم عملية التعديلات لهذا التمرين.  n لا يجوز إرسال المزيد من التعديلات.",
+              "contPaused": "أوقفت وحدة التحكم التمرين الحالي لإجراء تعديلات مؤقتًا.  n الرجاء إرسال تعديلاتك.",
+              "contRestarted": "أعادت وحدة التحكم عملية التعديلات لهذا التمرين.  n الرجاء إرسال التعديلات الخاصة بك.",
+              "controller": "%{count} (المراقب المالي)",
+              "dialogContent": "التعديلات التي لم يتم تقديمها موجودة. هل أنت متأكد أنك تريد إلغاء؟",
+              "generateNewExercise": "قم بإنشاء تمرين جديد",
+              "myMod": "تعديلاتي",
+              "newExerciseName": "اسم تمرين جديد",
+              "noModTxt": "لا توجد تعديلات لتقديمها في هذا الوقت.",
+              "noPlayerTxt": "لا توجد تعديلات مرسلة من قبل لاعب في الوقت الحالي.",
+              "pendingMod": "التعديلات المعلقة الخاصة بي",
+              "startTime": "وقت البدء (ثانية)",
+              "submitMod": "إرسال التعديلات"
+            }
+          },
+          "roster": {
+            "equipmentSharing": {
+              "cancel": "إلغاء",
+              "chooseCommDevices": "اختر أجهزة الاتصال وأبلغ الفريق.",
+              "choosePlayers": "اختر اللاعبين لإخطارهم.",
+              "chooseWeapons": "اختر الأسلحة والمعدات المرصودة لـ %{count}",
+              "comm": "بالاتصالات",
+              "device": "جهاز",
+              "notify": "يخطر",
+              "owner": "صاحب",
+              "player": "لاعب",
+              "recipients": "المستلمون",
+              "team": "فريق",
+              "time": "زمن",
+              "viewRecipients": "عرض المستلمين",
+              "viewTimes": "عرض الأوقات"
+            },
+            "main": {
+              "blueTeam": "فريق أزرق",
+              "redTeam": "الفريق الأحمر",
+              "shareEquip": "مشاركة المعدات",
+              "shareToTeam": "مشاركة ملاحظات المعدات مع الفريق",
+              "trackHist": "تتبع التاريخ",
+              "vieworders": "عرض الطلبات"
+            }
+          },
+          "userMapping": {
+            "noMappings": "لا توجد تعيينات لاعب لعرضها.",
+            "playerCan": "يمكن للاعب إرسال الأوامر والمهام إلى",
+            "playersPrimaryRole": "الأدوار الأساسية للاعب",
+            "team": "فريق"
+          }
+        }
+      },
+      "tableopsessionList": {
+        "createSession": {
+          "base": "اختر Base Simulation",
+          "desc": "اختر محاكاة أساسية لإنشاء تمرين جديد.",
+          "message": "بدء جلسة للقراءة فقط (يجب أن يكون النموذج قد تم تحميله مسبقًا)",
+          "overwrite": "الكتابة فوق",
+          "overwritetext": "الكتابة فوق النتائج الموجودة (في حالة وجود نتائج)",
+          "setup": "تمرين الإعداد",
+          "syn": "تقرير مقاييس المزامنة (سيستغرق المزيد من الوقت)",
+          "synlabel": "تقرير مقاييس المزامنة (التشخيص)",
+          "title": "قم بإنشاء تمرين جديد",
+          "view": "للاطلاع فقط"
+        },
+        "joinActive": {
+          "alert": "لا توجد تمارين نشطة في هذا الوقت.",
+          "by": "بواسطة",
+          "created": "خلقت",
+          "date": "تاريخ",
+          "delete": "حذف العناصر المحددة",
+          "desc": "أدخل لعرض والمشاركة في التمرين المنشط.",
+          "enterLoaded": "أدخل التمرين المحملة.",
+          "enterToView": "أدخل لعرض والمشاركة في التمرين المنشط.",
+          "exercise": "أدخل التمرين",
+          "name": "اسم",
+          "participant": "أنت لست مشاركا في هذا التمرين.",
+          "search": "البحث في المكتبة ..",
+          "simulation": "محاكاة القاعدة",
+          "status": "حالة",
+          "title": "أدخل التمرين النشط"
+        },
+        "loadprogress": {
+          "loading": "جار التحميل..."
+        },
+        "playerSelection": {
+          "Player": "لاعب",
+          "cancel": "يلغي",
+          "primary": "دور (أدوار) اللاعب الأساسي",
+          "save": "يحفظ",
+          "save_add": "احفظ وأضف آخر",
+          "sendOrder": "يمكن للاعب إرسال الأوامر والمهام لهذه الأدوار"
+        },
+        "sessionLibrary": {
+          "Created": "خلقت",
+          "Date": "تاريخ",
+          "Name": "اسم",
+          "Start": "يبدأ",
+          "Status": "حالة",
+          "by": "بواسطة",
+          "created": "خلقت",
+          "delete": "حذف العناصر المحددة",
+          "desc": "بحث وتحميل التمرين المحفوظ.",
+          "search": "البحث في المكتبة ..",
+          "title": "مكتبة التمرين"
+        },
+        "userMappings": {
+          "Controller": "مراقب",
+          "addPlayers": "أضف %{count} لاعب فريق(ق)",
+          "cancel": "يلغي",
+          "confirmText": {
+            "backText": "هل تريد بالتأكيد العودة؟  n لن تتمكن من إجراء أي تغييرات أخرى على تعيينات اللاعب.",
+            "cancelText": "هل تريد بالتأكيد الإلغاء؟  n لن تتمكن من إجراء أي تغييرات أخرى على تعيينات اللاعب."
+          },
+          "desc": "اختر محاكاة أساسية ، وقم بتكوين لاعبي الفريق وابدأ تمرينًا جديدًا",
+          "editplayers": "حرر %{count} لاعب فريق(ق)",
+          "save": "حفظ",
+          "start": "ابدأ التمرين",
+          "title": "تمرين الإعداد"
+        },
+        "usermapping_Excercise": {
+          "Player": "لاعب",
+          "content": "هل أنت متأكد أنك تريد إزالة لاعب من التمرين؟",
+          "primaryroles": "الأدوار الأساسية للاعبين",
+          "tasking": "يمكن للاعبين إرسال الأوامر والمهام لهذه الأدوار"
+        }
+      }
+    },
+    "en": {
+      "appBar": {
+        "title": "Tabletop"
+      },
+      "shared": {
+        "components": {
+          "confirmationDialog": {
+            "cancel": "Cancel",
+            "ok": "OK"
+          },
+          "errorBoundary": {
+            "Error": "Error",
+            "error": "An error has occurred in displaying this component",
+            "ok": "OK"
+          },
+          "exerciseContainer": {
+            "defaultHeader": "This is a header title"
+          },
+          "t2IconButton": {
+            "none": "None"
+          }
+        }
+      },
+      "tableopSession": {
+        "controls": {
+          "dock": {
+            "close": "Close",
+            "dockLeft": "Dock Left",
+            "dockRight": "Dock Right"
+          },
+          "mapFloorPlan": {
+            "close": "Close",
+            "mapFloorPlanSettings": {
+              "dock": "Dock "
+            },
+            "settings": "Settings"
+          },
+          "notifications": {
+            "a": "A ",
+            "by": " by ",
+            "equipSharedFor": "Equipment shared for ",
+            "equipUncovered": "Equipment uncovered for",
+            "eventShared": "Event is shared by "
+          },
+          "playback": {
+            "closeTimeline": "Close Timeline",
+            "pause": "Pause",
+            "play": "Play",
+            "playBackSettings": {
+              "errorText": {
+                "greaterThan": "Please enter a value greater than 0",
+                "valueLessThan": "Please enter a value less than or equal to %{count}"
+              },
+              "team": "%{primaryValue}%{secondaryValue} Team"
+            },
+            "simEnded": "Simulation Ended.",
+            "simPaused": "Simulation Paused.",
+            "simPlaying": "Simulation Playing...",
+            "stepAhead": "Step ahead",
+            "stepBack": "Step back",
+            "timelineSettings": "Timeline Settings"
+          },
+          "simulationTree": {
+            "dialog": {
+              "textContent": "Are you sure you would like to delete the simulation %{count}?"
+            },
+            "modificationTimer": {
+              "min": "min",
+              "modActive": "Modifications Active"
+            }
+          }
+        },
+        "main": {
+          "sessionStatus": "This exercise is not active anymore. Shortly, you will be redirected back to the Tabletop home page from where you can join any new active exercise (if applicable)."
+        },
+        "mapBase": {
+          "contextMenu": {
+            "createObj": "Create Objective",
+            "facProfile": "Facility Profile",
+            "floorPlanControl": "Floor Plan Control",
+            "floorPlans": "Floor Plans",
+            "mapLayers": "Map Layers",
+            "modifyActions": "Modify Actions",
+            "noActions": "No Actions Available",
+            "openFloorPlan": "Open Floor Plan",
+            "showHideActivated": "Show/Hide Activated Floor Plans",
+            "showHideDisabled": "Show/Hide All Disabled Players",
+            "showHideFOV": "Show/Hide Field of View",
+            "showHideTrackHist": "Show/Hide Track History",
+            "timelineControl": "Timeline Control",
+            "uploadGuardOrders": {
+              "uploadComplete": "Upload Completed !!!",
+              "uploadFailed": "Upload Failed !!!"
+            },
+            "uploadOrders": "Upload Orders",
+            "viewDetails": "View Details",
+            "viewOrders": "View Orders"
+          },
+          "layerSources": {
+            "main": {
+              "lastSeen": "Last seen at time"
+            },
+            "mapLayer": {
+              "locationHistInfo": {
+                "time": "Time: "
+              }
+            }
+          }
+        },
+        "mapBase_contextMenu": {
+          "uploadGuard": {
+            "cancel": "cancel",
+            "close": "close",
+            "delete": "Delete",
+            "order": "Orders already exist for this guard",
+            "select": "Select file to upload for",
+            "upload": "Upload PDF File",
+            "view": "view"
+          }
+        },
+        "mapFloor": {
+          "cancel": "Cancel",
+          "ok": "ok"
+        },
+        "panels": {
+          "events": {
+            "blueTeam": "Blue Team",
+            "eventSharing": {
+              "cancel": "Cancel",
+              "chooseCommDevices": "Choose communication devices and notify team.",
+              "choosePlayers": "Choose players to notify.",
+              "comm": "Comm",
+              "device": "Device",
+              "notify": "Notify",
+              "owner": "Owner",
+              "player": "Player",
+              "recipients": "Recipients",
+              "team": "Team",
+              "time": "Time",
+              "viewRecipients": "View Recipients"
+            },
+            "events": "%{count} Events",
+            "notify": "Notify",
+            "redTeam": "Red Team",
+            "searchEvents": "Search Events..",
+            "shareInfoToTeam": "Share Event Information to Team"
+          },
+          "excerciseSettings": {
+            "controller": "Controller",
+            "enableWeaponFire": "Enable Weapon Fire Audio",
+            "events": "Events",
+            "mapDisplaySett": "Map Display Settings",
+            "mapMarkers": "Map Markers (Facilities, Points, Objectives)",
+            "mapSymbolSize": "Map Symbol Size",
+            "modifySim": "Modify Simulation Duration Interval",
+            "playback": "Playback",
+            "setTraceDisplay": "Set Trace Display Duration (in seconds)",
+            "simMode": "Simulation Mode",
+            "simTimePrecision": "Sim Time Precision (decimal places)",
+            "simulation": "Simulation"
+          },
+          "facilities": {
+            "facility": {
+              "floors": "%{count} floors",
+              "title": "All Facilities"
+            },
+            "facilityList": {
+              "noFac": "No facilities have been setup"
+            }
+          },
+          "mapLayers": {
+            "floorPlanControl": "Floor Plan Control",
+            "timelineControl": "Timeline Control"
+          },
+          "modifications": {
+            "modificationEditor": {
+              "barrierSelector": {
+                "barrier": "Barrier"
+              },
+              "main": {
+                "addMod": "Add Modification",
+                "behaviour": "Behavior",
+                "editMod": "Edit Modification",
+                "save": "Save"
+              },
+              "mapObjectSelector": {
+                "chooseIntSide": "Choose Interdiction Site",
+                "chooseItem": "Choose item at target location",
+                "chooseItemTarget": "Choose item at target location",
+                "chooseLocation": "Choose Location",
+                "chooseObjective": "Choose Objective",
+                "choosePlayer": "Choose Player",
+                "selectOnMap": "Select On Map"
+              },
+              "objectiveEditor": {
+                "addObj": "Add Objective",
+                "cancel": "Cancel",
+                "chooseLocation": "Choose location of Objective",
+                "editObj": "Edit Objective",
+                "objName": "Objective Name",
+                "save": "Save"
+              },
+              "text": {
+                "enterDynamic": "Please enter %{count}",
+                "valueGreater": "Please enter a value greater than 0"
+              }
+            },
+            "modificationEntry": {
+              "addComment": "Add comment…",
+              "pending": "Pending..."
+            },
+            "modificationHistory": {
+              "currentExercise": "Current Exercise",
+              "export": "Export to PDF",
+              "modHistReport": "Modification History Report",
+              "reportDate": "Report Date: %{count}",
+              "time": "Time:"
+            },
+            "modifyExercise": {
+              "acceptedRejectedMod": "Accepted/Rejected Modifications",
+              "contEnded": "The Controller has ended the modifications process for this exercise.\\n No further modifications may be submitted.",
+              "contPaused": "The Controller has paused the current exercise for modifications.\\n Please submit your modifications.",
+              "contRestarted": "The Controller has restarted the modifications process for this exercise.\\n Please submit your modifications.",
+              "controller": "%{count} (CONTROLLER)",
+              "dialogContent": "Unsubmitted modifications exist. Are you sure you want to cancel?",
+              "generateNewExercise": "Generate New Exercise",
+              "myMod": "My Modifications",
+              "newExerciseName": "New Exercise Name",
+              "noModTxt": "There are no modifications to submit at this time.",
+              "noPlayerTxt": "There are no Player submitted modifications at this time.",
+              "pendingMod": "My Pending Modifications",
+              "startTime": "Start time (sec)",
+              "submitMod": "Submit Modifications"
+            }
+          },
+          "roster": {
+            "equipmentSharing": {
+              "cancel": "Cancel",
+              "chooseCommDevices": "Choose communication devices and notify team.",
+              "choosePlayers": "Choose players to notify.",
+              "chooseWeapons": "Choose observed weapons and equipment for %{count}",
+              "comm": "Comm",
+              "device": "Device",
+              "notify": "Notify",
+              "owner": "Owner",
+              "player": "Player",
+              "recipients": "Recipients",
+              "team": "Team",
+              "time": "Time",
+              "viewRecipients": "View Recipients",
+              "viewTimes": "View Times"
+            },
+            "main": {
+              "blueTeam": "Blue Team",
+              "redTeam": "Red Team",
+              "shareEquip": "Share Equipment",
+              "shareToTeam": "Share Equipment Observations to Team",
+              "trackHist": "Track History",
+              "vieworders": "View orders"
+            }
+          },
+          "userMapping": {
+            "noMappings": "No player mappings to display.",
+            "playerCan": "Player can send orders and tasking to",
+            "playersPrimaryRole": "Player’s primary roles",
+            "team": "Team"
+          }
+        },
+        "playBack": {
+          "playBackSettings": {
+            "all": "All",
+            "cancel": "cancel",
+            "ok": "ok",
+            "playBack": "Playback speed",
+            "setStep": "Set step size (sec)",
+            "start": "Start time (sec)",
+            "title": "Set start time and playback speed for exercise"
+          }
+        },
+        "shared": {
+          "detected": "Detected",
+          "disabled": "Disabled",
+          "neutralized": "Neutralized",
+          "undetected": "Undetected",
+          "unknown": "Unknown"
+        },
+        "simulation": {
+          "modification": {
+            "add10": "Add 10 min",
+            "add15": "Add 15 min",
+            "add2": "Add 2 min",
+            "add5": "Add 5 min",
+            "player": "End All Player Modifications",
+            "restart": "Restart Player Modifications"
+          },
+          "simulationTree": {
+            "current": "Current Simulation",
+            "exercise": "Exercise History",
+            "load": "Load Simulation",
+            "loading": "Loading...",
+            "mark": "Mark Failed",
+            "modify": "Modify Exercise",
+            "running": "Running..."
+          }
+        },
+        "widgets": {
+          "events": {
+            "blueTeam": "Blue Team",
+            "eventSharing": {
+              "cancel": "Cancel",
+              "chooseCommDevices": "Choose communication devices and notify team.",
+              "choosePlayers": "Choose players to notify.",
+              "comm": "Comm",
+              "device": "Device",
+              "notify": "Notify",
+              "owner": "Owner",
+              "player": "Player",
+              "recipients": "Recipients",
+              "team": "Team",
+              "time": "Time",
+              "viewRecipients": "View Recipients"
+            },
+            "events": "%{count} Events",
+            "notify": "Notify",
+            "redTeam": "Red Team",
+            "searchEvents": "Search Events..",
+            "shareInfoToTeam": "Share Event Information to Team"
+          },
+          "excerciseSettings": {
+            "controller": "Controller",
+            "enableWeaponFire": "Enable Weapon Fire Audio",
+            "events": "Events",
+            "mapDisplaySett": "Map Display Settings",
+            "mapMarkers": "Map Markers (Facilities, Points, Objectives)",
+            "mapSymbolSize": "Map Symbol Size",
+            "modifySim": "Modify Simulation Duration Interval",
+            "playback": "Playback",
+            "setTraceDisplay": "Set Trace Display Duration (in seconds)",
+            "simMode": "Simulation Mode",
+            "simTimePrecision": "Sim Time Precision (decimal places)",
+            "simulation": "Simulation"
+          },
+          "facilities": {
+            "facility": {
+              "floors": "%{count} floors",
+              "title": "All Facilities"
+            },
+            "facilityList": {
+              "noFac": "No facilities have been setup"
+            }
+          },
+          "mapLayers": {
+            "floorPlanControl": "Floor Plan Control",
+            "timelineControl": "Timeline Control"
+          },
+          "modifications": {
+            "modificationEditor": {
+              "barrierSelector": {
+                "barrier": "Barrier"
+              },
+              "main": {
+                "addMod": "Add Modification",
+                "behaviour": "Behavior",
+                "editMod": "Edit Modification",
+                "save": "Save"
+              },
+              "mapObjectSelector": {
+                "chooseIntSide": "Choose Interdiction Site",
+                "chooseItem": "Choose item at target location",
+                "chooseItemTarget": "Choose item at target location",
+                "chooseLocation": "Choose Location",
+                "chooseObjective": "Choose Objective",
+                "choosePlayer": "Choose Player",
+                "selectOnMap": "Select On Map"
+              },
+              "objectiveEditor": {
+                "addObj": "Add Objective",
+                "cancel": "Cancel",
+                "chooseLocation": "Choose location of Objective",
+                "editObj": "Edit Objective",
+                "objName": "Objective Name",
+                "save": "Save"
+              },
+              "text": {
+                "enterDynamic": "Please enter %{count}",
+                "valueGreater": "Please enter a value greater than 0"
+              }
+            },
+            "modificationEntry": {
+              "addComment": "Add comment…",
+              "pending": "Pending..."
+            },
+            "modificationHistory": {
+              "currentExercise": "Current Exercise",
+              "export": "Export to PDF",
+              "modHistReport": "Modification History Report",
+              "reportDate": "Report Date: %{count}",
+              "time": "Time:"
+            },
+            "modifyExercise": {
+              "acceptedRejectedMod": "Accepted/Rejected Modifications",
+              "contEnded": "The Controller has ended the modifications process for this exercise.\\n No further modifications may be submitted.",
+              "contPaused": "The Controller has paused the current exercise for modifications.\\n Please submit your modifications.",
+              "contRestarted": "The Controller has restarted the modifications process for this exercise.\\n Please submit your modifications.",
+              "controller": "%{count} (CONTROLLER)",
+              "dialogContent": "Unsubmitted modifications exist. Are you sure you want to cancel?",
+              "generateNewExercise": "Generate New Exercise",
+              "myMod": "My Modifications",
+              "newExerciseName": "New Exercise Name",
+              "noModTxt": "There are no modifications to submit at this time.",
+              "noPlayerTxt": "There are no Player submitted modifications at this time.",
+              "pendingMod": "My Pending Modifications",
+              "startTime": "Start time (sec)",
+              "submitMod": "Submit Modifications"
+            }
+          },
+          "roster": {
+            "equipmentSharing": {
+              "cancel": "Cancel",
+              "chooseCommDevices": "Choose communication devices and notify team.",
+              "choosePlayers": "Choose players to notify.",
+              "chooseWeapons": "Choose observed weapons and equipment for %{count}",
+              "comm": "Comm",
+              "device": "Device",
+              "notify": "Notify",
+              "owner": "Owner",
+              "player": "Player",
+              "recipients": "Recipients",
+              "team": "Team",
+              "time": "Time",
+              "viewRecipients": "View Recipients",
+              "viewTimes": "View Times"
+            },
+            "main": {
+              "blueTeam": "Blue Team",
+              "redTeam": "Red Team",
+              "shareEquip": "Share Equipment",
+              "shareToTeam": "Share Equipment Observations to Team",
+              "trackHist": "Track History",
+              "vieworders": "View orders"
+            }
+          },
+          "userMapping": {
+            "noMappings": "No player mappings to display.",
+            "playerCan": "Player can send orders and tasking to",
+            "playersPrimaryRole": "Player’s primary roles",
+            "team": "Team"
+          }
+        }
+      },
+      "tableopsessionList": {
+        "createSession": {
+          "base": "Choose Base Simulation",
+          "desc": "Choose a base simulation to create a new exercise.",
+          "message": "Initialize a read-only session (model must have been previously loaded",
+          "overwrite": "Overwrite",
+          "overwritetext": "Overwrite existing results (if results exist)",
+          "setup": "Setup Exercise",
+          "syn": "Sync Metrics report (will take more time)",
+          "synlabel": "Sync Metrics Report (Diagnostics)",
+          "title": "Create New Exercise",
+          "view": "View Only"
+        },
+        "joinActive": {
+          "alert": "There are no active exercises at this time.",
+          "by": "by",
+          "created": "Created",
+          "date": "date",
+          "delete": "delete selected items",
+          "desc": "Enter to view and participate in the activated exercise.",
+          "enterLoaded": "Enter loaded exercise.",
+          "enterToView": "Enter to view and participate in the activated exercise.",
+          "exercise": "Enter Exercise",
+          "name": "Name",
+          "participant": "You are not a participant in this exercise.",
+          "search": "Search Library..",
+          "simulation": "Base simulation",
+          "status": "Status",
+          "title": "Enter Active Exercise"
+        },
+        "loadprogress": {
+          "loading": "Loading..."
+        },
+        "playerSelection": {
+          "Player": "Player",
+          "cancel": "Cancel",
+          "primary": "Player's primary role(s)",
+          "save": "Save",
+          "save_add": "Save and add another",
+          "sendOrder": "Player can send orders and tasking to these roles"
+        },
+        "sessionLibrary": {
+          "Created": "Created",
+          "Date": "Date",
+          "Name": "Name",
+          "Start": "Start",
+          "Status": "Status",
+          "by": "by",
+          "created": "created",
+          "delete": "delete selected items",
+          "desc": "Search and load saved exercise.",
+          "search": "Search Library..",
+          "title": "Exercise Library"
+        },
+        "userMappings": {
+          "Controller": "Controller",
+          "addPlayers": "Add %{count} Team Player(s)",
+          "cancel": "cancel",
+          "confirmText": {
+            "backText": "Are you sure you want to go back?\\nYou would not be able to make any further changes to Player Mappings.",
+            "cancelText": "Are you sure you want to cancel?\\nYou would not be able to make any further changes to Player Mappings."
+          },
+          "desc": "Choose a base simulation, configure team players and start a new exercise",
+          "editplayers": "Edit %{count} Team Player(s)",
+          "save": "Save",
+          "start": "Start Exercise",
+          "title": "Setup Exercise"
+        },
+        "usermapping_Excercise": {
+          "Player": "Player",
+          "content": "Are you sure you would like to remove player from the exercise?",
+          "primaryroles": "Players primary roles",
+          "tasking": "Players can send orders and tasking to these roles"
+        }
+      }
+    }
+  }
+}

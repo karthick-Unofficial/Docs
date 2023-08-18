@@ -1,0 +1,60 @@
+#event-card {
+	> div:first-of-type {
+		display: flex !important;
+	}
+	#event-card-header {
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		&.expired,
+		&.emergent,
+		&.future {
+			width: 100%;
+		}
+		&.planned {
+			width: 90%;
+		}
+		> div:first-of-type {
+			display: flex;
+			padding-right: 0 !important;
+		}
+		div {
+			padding-right: 0 !important;
+			max-width: 50%;
+			span {
+				width: 100%;
+				word-wrap: break-word;
+			}
+		}
+		#comment-count {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-left: auto;
+			i {
+				color: $textGray;
+			}
+			span {
+				position: relative;
+				color: black;
+				font-size: 0.75rem;
+				bottom: .1rem;
+				right: 50%;
+				width: auto;
+			}
+		}
+	}
+	#day-count {
+		background-color: rgba(65, 69, 74, 0.5);
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		display: flex;
+		width: 10%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.75rem;
+		p {
+			margin: 0;
+		}
+	}
+}

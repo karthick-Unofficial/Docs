@@ -1,0 +1,408 @@
+{
+	"appId": "rules-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"alertGenerator": {
+				"alertFields": {
+					"summary": "موجز*"
+				},
+				"alertTable": {
+					"emails": "رسائل البريد الإلكتروني",
+					"priority": "أفضلية",
+					"system": "نظام",
+					"whoGetsAlert": "من الذي يتلقى التنبيهات؟"
+				},
+				"escalationEvent": {
+					"title": "حدث التصعيد"
+				},
+				"locationSelection": {
+					"lat": "خط العرض",
+					"location": "موقع",
+					"lon": "خط الطول"
+				},
+				"main": {
+					"demoAlert": "تنبيه تجريبي",
+					"loiterRule": "قاعدة التسكع",
+					"zoneEntry": "دخول المنطقة",
+					"zoneExit": "خروج المنطقة"
+				},
+				"objectSelection": {
+					"object": "كائن"
+				},
+				"searchField": {
+					"search": "بحث..."
+				},
+				"submitControls": {
+					"generate": "توليد",
+					"reset": "إعادة ضبط"
+				},
+				"targetSelection": {
+					"target": "استهداف"
+				}
+			},
+			"appBar": {
+				"title": "قواعد"
+			},
+			"createEditRule": {
+				"alarm": {
+					"chooseAlarmSubType": "اختر نوعًا فرعيًا للإنذار للتصفية وفقًا له. (اختياري)",
+					"chooseAlarmType": "اختر نوع التنبيه للتصفية من خلاله.",
+					"chooseFeed": "اختر تغذية لمراقبتها.",
+					"ruleStates": "تنص القاعدة ..."
+				},
+				"components": {
+					"alertTable": {
+						"emails": "رسائل البريد الإلكتروني",
+						"priority": "أفضلية",
+						"system": "نظام",
+						"whoGetsAlert": "من الذي يتلقى التنبيهات؟"
+					},
+					"audioSettings": {
+						"example": "مثال: تنبيه ، تنبيه: حدث انتهاك في منطقة الأمان الرئيسية.",
+						"note": "ملاحظة: إذا تم تحديد كلا الخيارين أعلاه ، فسيتم إلحاق نص تنبيه التنبيه بأكمله بنص التنبيه الذي أدخله المستخدم.",
+						"selectingThisRule": "سيؤدي تحديد هذا الخيار إلى نطق نص إشعار التنبيه بالكامل من قاعدة التنبيه أعلاه.",
+						"speakAlertNotification": "نطق نص إشعار التنبيه",
+						"speakAlertText": "نطق نص التنبيه"
+					},
+					"dismissSettings": {
+						"dismissAlertsForAll": "رفض التنبيهات لجميع المستخدمين في المؤسسة",
+						"dismissAlertsUser": "رفض التنبيهات من قبل المستخدم",
+						"useForEntireOrg": "استخدم هذا الخيار للسماح لأي مستخدم مشترك برفض تنبيهات الأولوية أو النظام للمؤسسة بأكملها.",
+						"useToSubscIndividually": "استخدم هذا الخيار للسماح لأي مستخدم مشترك برفض تنبيهات الأولوية أو النظام بشكل فردي."
+					},
+					"ruleFields": {
+						"descNotes": "الوصف / الملاحظات (اختياري)",
+						"ruleName": "اسم القاعدة*"
+					},
+					"submitControls": {
+						"cancel": "إلغاء",
+						"save": "حفظ"
+					}
+				},
+				"conditions": {
+					"conditionDialog": {
+						"add": "أضف",
+						"addCondition": "أضف الشرط",
+						"allDay": "طوال اليوم",
+						"cancel": "إلغاء",
+						"dateRange": "نطاق التاريخ :",
+						"days": "أيام:",
+						"dialogError": {
+							"atLeastOneDay": "يجب تحديد يوم واحد على الأقل من أيام الأسبوع حتى تكون الحالة نشطة.",
+							"atLeastOneLimitingFactor": "يجب أن يكون لحالتك عامل مقيد واحد على الأقل.",
+							"fallAfterStart": "يجب أن يقع تاريخ الانتهاء بعد تاريخ البدء المحدد.",
+							"fasterThanGreater": "يجب أن تكون سرعة السفر أسرع من أكبر من سرعة السفر أبطأ من",
+							"onlyOneAllowed": "يسمح فقط بشرط مرة واحدة لكل قاعدة.",
+							"onlyOneDuration": "يُسمح بشرط مدة واحدة فقط لكل قاعدة.",
+							"selectAColl": "الرجاء تحديد مجموعة.",
+							"slowerFasterThanVal": "الرجاء إدخال قيمة السرعة السفر أبطأ من السرعة أو السفر أسرع من",
+							"startBeforeEndTime": "يجب أن يكون وقت البدء قبل وقت الانتهاء.",
+							"startEndTimeDiff": "يجب أن يكون وقت البدء ووقت الانتهاء مختلفين.",
+							"validTimeValue": "الرجاء إدخال قيمة وقت صالحة."
+						},
+						"duration": "Duration",
+						"inCollection": "في المجموعة ...",
+						"indefinite": "لأجل غير مسمى",
+						"kn": "كيلونيوتن",
+						"kph": "كيلومتر في الساعة",
+						"minute": "دقيقة",
+						"minutes": "الدقائق",
+						"mph": "ميلا في الساعة",
+						"notInCollection": "ليس في المجموعة ...",
+						"selectCollection": "حدد مجموعة",
+						"selectCondition": "حدد الشرط",
+						"setPeriod": "تعيين الفترة",
+						"setRange": "مجموعة مجموعة",
+						"speed": "سرعة",
+						"time": "زمن",
+						"timeAllowed": "الوقت المسموح به",
+						"timePeriod": "فترة زمنية:",
+						"to": "إلى",
+						"travelingFasterThan": "السفر أسرع من:",
+						"travelingSlowerThan": "السفر أبطأ من:",
+						"unit": "وحدة",
+						"update": "تحديث",
+						"direction": {
+							"title": "اتجاه",
+							"tripwireDirection": "اتجاه سلك التعثر"
+						}
+					},
+					"main": {
+						"addACondition": "إضافة شرط ...",
+						"addAnother": "أضف آخر...",
+						"addCondition": "أضف الشرط",
+						"cancel": "إلغاء",
+						"condition": "%{count} حالة",
+						"inCollection": "في المجموعة (%{count})",
+						"notInCollection": "ليس في المجموعة (%{count})",
+						"title": "الشروط"
+					}
+				},
+				"createEvent": {
+					"eventSubType": "اختر نوع الحدث الفرعي لمراقبته.",
+					"eventTemplate": "اختر قالب حدث لمراقبته.",
+					"eventType": "اختر نوع الحدث المراد مراقبته.",
+					"ruleStates": "تنص القاعدة ..."
+				},
+				"escalations": {
+					"chooseTemp": "اختر قالبًا ...",
+					"escalationDialog": {
+						"add": "أضف",
+						"cancel": "إلغاء",
+						"noEventTemp": "ليس لديك أي قوالب للأحداث. يرجى إنشاء قالب الحدث للتحديد.",
+						"wantToFind": "انا اريد ان اجد..."
+					},
+					"title": "حدث التصعيد"
+				},
+				"genericAttribute": {
+					"multiSelection": {
+						"addAnother": "أضف آخر...",
+						"addDynamic": "يضيف %{count}...",
+						"multiSelectionDialog": {
+							"addItem": "اضافة عنصر",
+							"cancel": "إلغاء",
+							"wantToFind": "انا اريد ان اجد..."
+						}
+					},
+					"singleSelection": {
+						"addDynamic": "يضيف %{count}...",
+						"singleSelectionDialog": {
+							"addItem": "اضافة عنصر",
+							"cancel": "إلغاء",
+							"wantToFind": "انا اريد ان اجد..."
+						}
+					},
+					"type": {
+						"feed": "يطعم",
+						"filterType": "نوع فلتر",
+						"filterSubType": "نوع الفلتر الفرعي",
+						"conditions": "الشروط",
+						"template": "قالب",
+						"type": "نوع",
+						"subType": "النوع الفرعي",
+						"berthSelection": "اختيار المرسى",
+						"none": "لا شيء"
+					}
+				},
+				"main": {
+					"errorText": {
+						"alertTextReq": "نص التنبيه مطلوب إذا تم تحديد خيار نص التنبيه.",
+						"atLeastTwo": "يجب تحديد خيار واحد على الأقل من الخيارين."
+					}
+				},
+				"subject": {
+					"subjectAttributes": {
+						"addAnother": "أضف آخر...",
+						"addEntity": "إضافة كيان ...",
+						"addFeed": "أضف مرشح التغذية",
+						"anyTrack": "أي مسار",
+						"editFeed": "تحرير مرشح التغذية",
+						"selectTracks": "حدد المسار (المسارات)",
+						"title": "الموضوع",
+						"tracks": "المسار (ق) التي يمكن أن ترتكب الزناد."
+					},
+					"subjectDialog": {
+						"addItem": "إضافة عناصر",
+						"cancel": "إلغاء",
+						"errorOccured": "حدث خطأ.",
+						"searchField": {
+							"searchTracks": "البحث عن المسارات ..."
+						},
+						"wantToFind": "انا اريد ان اجد..."
+					},
+					"subjectFeedDialog": {
+						"addItem": "إضافة عناصر",
+						"cancel": "إلغاء",
+						"noAdditional": "لا يغذي إضافية المتاحة.",
+						"noFeeds": "لا يغذي المتاحة."
+					}
+				},
+				"systemHealth": {
+					"ruleStates": "تنص القاعدة ..."
+				},
+				"trackMovement": {
+					"ruleStates": "تنص القاعدة ..."
+				},
+				"trigger": {
+					"actionThatFires": "الإجراء الذي يطلق التنبيه.",
+					"addAnother": "أضف آخر...",
+					"any": {
+						"polygon": "أي مضلع",
+						"system": "أي نظام"
+					},
+					"anyDots": {
+						"polygon": "أي مضلع...",
+						"system": "أي نظام..."
+					},
+					"anyDynamic": "أي %{count}",
+					"anyDynamicdots": "أي %{count}...",
+					"anyLine": "أي خط",
+					"select": {
+						"polygon": "حدد المضلع (المضلعات)",
+						"system": "حدد النظام (الأنظمة)"
+					},
+					"selectDynamic": "اختر %{count}(s)",
+					"selectLine": "حدد الخط",
+					"title": "الزناد",
+					"triggerDialog": {
+						"addItem": "إضافة عناصر",
+						"cancel": "إلغاء",
+						"errorOccured": "حدث خطأ.",
+						"wantToFind": "انا اريد ان اجد..."
+					}
+				},
+				"vesselEvents": {
+					"ruleStates": "تنص القاعدة ...",
+					"selectBerth": "اختر الولادات.",
+					"selectRuleType": "حدد نوع القاعدة.",
+					"newReq": "طلب جديد",
+					"requestApproval": "طلب الموافقة",
+					"berthUpdates": "تحديثات الرصيف",
+					"arrivals": "القادمون",
+					"departures": "المغادرة",
+					"secViolation": "المخالفات الأمنية"
+				}
+			},
+			"main": {
+				"components": {
+					"ruleItem": {
+						"actions": {
+							"label": {
+								"cancel": "يلغي",
+								"unsubscribe": "إلغاء الاشتراك"
+							}
+						},
+						"ruleItem": {
+							"priority": "أفضلية"
+						},
+						"unsubscribeTarget": {
+							"dialog": {
+								"children": "هل أنت متأكد أنك تريد إلغاء الاشتراك من %{count}?",
+								"title": "إلغاء الاشتراك؟"
+							},
+							"unsubscribe": "إلغاء الاشتراك"
+						}
+					}
+				},
+				"mainJsx": {
+					"actions": {
+						"label": {
+							"cancel": "يلغي",
+							"delete": "نعم ، احذف"
+						}
+					},
+					"createButton": {
+						"createNewRule": "إنشاء قاعدة جديدة ⏷"
+					},
+					"rulesFilters": {
+						"dialog": {
+							"content": "هل أنت متأكد أنك تريد حذف هذه القاعدة؟",
+							"title": "حذف القاعدة"
+						},
+						"filterBy": "مصنف بواسطة...",
+						"listItem": {
+							"createdBy": {
+								"primaryText": "انشأ من قبل"
+							},
+							"triggerList": {
+								"nestedItems": {
+									"checkbox": {
+										"label": {
+											"arrivals": "الوصول",
+											"berthUpdates": "تحديثات الرصيف",
+											"cross": "تعبر",
+											"departures": "المغادرين",
+											"enter": "يدخل",
+											"exit": "مخرج",
+											"loiter": "لوتر",
+											"newRequest": "طلب جديد",
+											"requestApproval": "طلب الموافقة",
+											"securityViolations": "الانتهاكات الأمنية"
+										}
+									}
+								},
+								"primaryText": "اثار"
+							}
+						},
+						"rulesAreas": {
+							"TypeAheadFilterContainer": {
+								"placeholder": "انا اريد ان اجد..."
+							},
+							"rulesSectionWrapper": {
+								"noRules": "لا توجد اشتراكات قواعد مشتركة معك في الوقت الحالي.",
+								"ruleSectionTitle": "القاعدة أنا خلقت (%{count})",
+								"ruleShared": "حكم مشتركة معي (%{count})",
+								"rulesContainer": "لا توجد اشتراكات قواعد مشتركة معك في الوقت الحالي.",
+								"rulesSectionTitle": "صنعت (%{count})",
+								"rulesShared": "القواعد المشتركة معي (%{count})"
+							}
+						}
+					},
+					"rulesOptions": {
+						"label": {
+							"alarmRule": "حكم الإنذار",
+							"eventCreated": "تم إنشاء الحدث",
+							"trackMovement": "تتبع الحركة",
+							"vesselEventRule": "قاعدة حدث السفينة"
+						}
+					}
+				}
+			},
+			"viewRule": {
+				"actions": {
+					"flatButtonLabel": {
+						"cancel": "يلغي",
+						"yesDelete": "نعم ، احذف"
+					}
+				},
+				"alertAudio": {
+					"alert": "انذار",
+					"followedBy": "متبوعًا بنص إشعار التنبيه.",
+					"speak": "يتكلم",
+					"speakAlert": "نطق نص إشعار التنبيه."
+				},
+				"alertTable": {
+					"alertAudio": "صوت التنبيه",
+					"alertDismissRule": "تنبيه رفض القاعدة",
+					"raisedButton": {
+						"save": "يحفظ"
+					},
+					"tbody": {
+						"unsharedRuleMessage": {
+							"rule": "لا يتم حاليًا مشاركة هذه القاعدة مع مستخدمين آخرين.",
+							"whoGetsAlerts": "من الذي يتلقى التنبيهات؟"
+						}
+					},
+					"thead": {
+						"emails": "رسائل البريد الإلكتروني",
+						"priority": "أفضلية",
+						"system": "نظام",
+						"whoGetsAlerts": "من الذي يتلقى التنبيهات؟"
+					}
+				},
+				"dialog": {
+					"content": "هل أنت متأكد أنك تريد حذف هذه القاعدة؟",
+					"title": "حذف القاعدة"
+				},
+				"dismissText": {
+					"dismissAlertsOrg": "رفض التنبيهات لجميع المستخدمين في المؤسسة.",
+					"dismissAlertsUser": "رفض التنبيهات من قبل المستخدم."
+				},
+				"ruleOperations": {
+					"delete": "حذف",
+					"edit": "تعديل"
+				},
+				"ruleStates": {
+					"theRuleStates": "تنص القاعدة ..."
+				},
+				"viewRuleAttribute": {
+					"alertDismissRule": "تنبيه رفض القاعدة"
+				},
+				"viewTitling": {
+					"createdBy": "انشأ من قبل %{count}"
+				}
+			}
+		}
+	}
+}

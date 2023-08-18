@@ -1,0 +1,73 @@
+{
+	"appId": "camera-wall-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "جدار الكاميرا"
+			},
+			"cameraWall": {
+				"cameraSlot": {
+					"cameraControls": {
+						"hideControls": "إخفاء الضوابط",
+						"showControls": "إظهار الضوابط"
+					},
+					"emptySlot": {
+						"noResult": "لا نتائج",
+						"placeholder": "البحث عن الكاميرا"
+					}
+				},
+				"toolBar": {
+					"copy": "نسخ إلى مجموعات الكاميرا الخاصة بي",
+					"copyDialog": {
+						"cancel": "إلغاء",
+						"create": "إنشاء",
+						"fieldLabel": {
+							"cameraGroup": "اسم مجموعة الكاميرا"
+						}
+					},
+					"edit": "تحرير",
+					"editGroupDialog": {
+						"cancel": "إلغاء",
+						"confirm": "تأكيد",
+						"fieldLabel": {
+							"cameraGroup": "اسم مجموعة الكاميرا"
+						},
+						"removeCameraGrp": "إزالة مجموعة الكاميرا",
+						"save": "حفظ",
+						"textContent": "ستتم إزالة تخطيط المجموعة المحفوظة",
+						"title": "هل أنت متأكد أنك تريد إزالة هذه المجموعة؟"
+					},
+					"newGroupDialog": {
+						"cancel": "إلغاء",
+						"fieldLabel": {
+							"cameraGroup": "اسم مجموعة الكاميرا"
+						},
+						"save": "حفظ"
+					},
+					"pin": "دبوس إلى البنود بلدي",
+					"save": "حفظ"
+				}
+			},
+			"listPanel": {
+				"cameraGroup": {
+					"cameraPlural": "%{count} الكاميرات",
+					"cameraSingular": "%{count} الة تصوير"
+				},
+				"myCamGroups": "مجموعات الكاميرا الخاصة بي",
+				"newCamGroup": "مجموعة الكاميرا الجديدة",
+				"noGroupText": "ليس لديك حاليا أي مجموعات الكاميرا. انقر فوق الزر أعلاه لإنشاء مجموعة جديدة ، أو ابحث عن مجموعة سياقية.",
+				"pinnedItemJSX": {
+					"cameraPlural": "%{primaryValue} - %{secondaryValue} الكاميرات",
+					"cameraSingular": "%{primaryValue} - %{secondaryValue} الة تصوير"
+				},
+				"pinnedItems": "العناصر المثبتة",
+				"searchField": {
+					"noResults": "لا نتائج",
+					"recentlySelected": "تم تحديده مؤخرًا",
+					"search": "بحث..."
+				}
+			}
+		}
+	}
+}

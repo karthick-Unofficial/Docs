@@ -1,0 +1,11 @@
+Today's Task:
+CB2-5277
+- Worked on understanding dynamic state declaration and updated as single parent state object in BerthRequestForm and VesselReport.
+- Worked on testing Functional Component Implementation workflow in berth-request app.
+- Worked on fixing uncontrolled component issues in VesselReport and added minor fixes as well.
+- Worked on testing Functional Component Implementation workflow in cameras-app.
+- Worked on class to functional component conversion for the following in orion-components:
+   - Profiles/EntityProfile/components/EntityShare.jsx
+   - Profiles/Widgets/GenericDetails/GenericDetailsWidget.jsx
+
+   

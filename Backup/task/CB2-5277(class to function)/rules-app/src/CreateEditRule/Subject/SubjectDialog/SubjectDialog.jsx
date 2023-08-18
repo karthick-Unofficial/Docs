@@ -1,0 +1,187 @@
+import React, { useEffect, useState } from "react";
+
+// Error Handling
+import ErrorBoundary from "orion-components/ErrorBoundary";
+
+// material-ui
+import FlatButton from "material-ui/FlatButton";
+import List, { ListItem } from "material-ui/List";
+import Dialog from "material-ui/Dialog";
+import CircularProgress from "material-ui/CircularProgress";
+
+// components
+import TypeAheadFilterContainer from "../../../TypeAheadFilter/TypeAheadFilterContainer";
+import SearchField from "./components/SearchField";
+
+// misc
+import _ from "lodash";
+
+//virtualized list
+import { List as VirtList, AutoSizer } from "react-virtualized";
+import { Translate, getTranslation } from "orion-components/i18n/I18nContainer";
+
+const html = document.getElementsByTagName("html")[0];
+
+const SubjectDialog = ({ addSubjects, typeAheadFilter, toggleDialog, styles, subject, trackList, isQuerying, error, isOpen, queryTracks }) => {
+	const [selectedTracks, setSelectedTracks] = useState([]);
+
+	useEffect(() => {
+		// Prevent background scrolling when dialog is open.
+		html.style.position = "fixed";
+		html.style.width = "100%";
+		document.addEventListener("keydown", _handleKeyDown);
+		return () => {
+			// Allow background scrolling on dialog close
+			html.style.position = "static";
+			html.style.width = "auto";
+		};
+	}, []);
+
+	// Enter to submit
+	const _handleKeyDown = (event) => {
+		if (event.key === "Enter" && isOpen) {
+			handleSaveClick();
+		}
+	};
+
+	const handleSaveClick = () => {
+		const trimmedTracks = selectedTracks.map((track) => {
+			return {
+				id: track.id,
+				name: track.entityData.properties.name || track.feedId + track.name,
+				feedId: track.feedId
+			};
+		});
+		addSubjects(trimmedTracks);
+		setSelectedTracks([]);
+		typeAheadFilter("");
+		document.removeEventListener("keydown", _handleKeyDown);
+		toggleDialog();
+	};
+
+	const handleCancelClick = () => {
+		setSelectedTracks([]);
+		typeAheadFilter("");
+		document.removeEventListener("keydown", _handleKeyDown);
+		toggleDialog();
+	};
+
+	const _capitalize = (string) => {
+		return string.slice(0, 1).toUpperCase() + string.slice(1, string.length);
+	};
+
+	const handleEntitySelect = (track) => {
+		const tArray = selectedTracks;
+		const index = tArray.indexOf(track);
+		tArray.indexOf(track) > -1 ?
+			tArray.splice(index, 1)
+			:
+			tArray.push(track);
+		setSelectedTracks(tArray);
+	};
+
+	const tracksAddActions = [
+		<FlatButton
+			style={styles.buttonStyles}
+			label={getTranslation("createEditRule.subject.subjectDialog.cancel")}
+			onClick={handleCancelClick}
+			primary={true}
+		/>,
+		<FlatButton
+			style={styles.buttonStyles}
+			label={getTranslation("createEditRule.subject.subjectDialog.addItem")}
+			onClick={() => handleSaveClick()}
+			primary={true}
+		/>
+	];
+
+
+	const subjectIds = subject.map((track) => track.id);
+
+	const dialogTracks = trackList.filter((track) => {
+		return !subjectIds.includes(track.id);
+	});
+
+	// react-virtualized
+	// We are virtualized rendered lists of tracks so they don't slow down the app
+	// this is a conditional because the map is a huge hit on performance when the dialog isn't open
+
+	let renderedTracks;
+	if (isOpen) {
+		renderedTracks = dialogTracks.map((track) => {
+			return (
+				<ListItem
+					className={`${selectedTracks.indexOf(track) > -1 ? "selected" : "unselected"}`}
+					style={styles.listItemStyles}
+					key={track.id}
+					primaryText={track.entityData.properties.name}
+					onClick={() => handleEntitySelect(track)}
+				/>
+			);
+		}
+		);
+	}
+
+	const rowRenderer = ({
+		key,
+		index,
+		isScrolling,
+		isVisible,
+		style
+	}) => {
+		return (
+			<div key={key} style={style}>
+				{renderedTracks[index]}
+			</div>
+		);
+	};
+
+	return (
+		<Dialog
+			paperClassName='rule-dialog'
+			open={isOpen}
+			onRequestClose={handleCancelClick}
+			actions={tracksAddActions}
+		>
+			<List
+				className='rule-attributes-list'
+			>
+				<ErrorBoundary>
+					<SearchField
+						width="100%"
+						updateSearch={queryTracks}
+						className="typeAheadFilter"
+						placeholder={getTranslation("createEditRule.subject.subjectDialog.wantToFind")}
+					/>
+				</ErrorBoundary>
+				{isQuerying ?
+					<div className="circular-progress">
+						<CircularProgress size={60} thickness={5} />
+					</div>
+					: error ?
+						<div className="error-message">
+							<p><Translate vlaue="createEditRule.subject.subjectDialog.errorOccured" /></p>
+						</div>
+						: trackList ? <AutoSizer disableHeight>
+							{({ width }) => (
+								<VirtList
+									rowCount={dialogTracks.length}
+									autoContainerWidth={true}
+									rowHeight={68}
+									width={width}
+									height={700}
+									rowRenderer={rowRenderer}
+									overscanRowCount={1}
+								/>
+							)}
+						</AutoSizer>
+							: null
+				}
+
+			</List>
+		</Dialog>
+	);
+};
+
+
+export default SubjectDialog;

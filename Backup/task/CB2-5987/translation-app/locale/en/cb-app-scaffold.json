@@ -1,0 +1,15 @@
+{
+	"appId": "cb-app-scaffold",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"appBar": {
+				"title": "App Scaffold"
+			},
+			"appJSX": {
+				"textContent": "Please consult the README for step-by-step instructions on how to set up a new app.",
+				"title": "App Scaffold"
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+Today's Task:
+- Worked on implementing rules-app theme based styles to new CBDatepicker in rules-app.
+- Worked on handling localization issues faced in ConditionalDialog datepicker.
+- Worked on date format and arabic date parsing issues in CBDatepicker in rules-app.

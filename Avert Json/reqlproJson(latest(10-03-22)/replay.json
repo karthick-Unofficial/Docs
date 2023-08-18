@@ -1,0 +1,229 @@
+{
+    "appId": "replay-app",
+    "id": "6eb4de11-a62e-40d4-ae46-729f5a03754f",
+    "locales": "en",
+    "translations": {
+      "ar": {
+        "newReplay": {
+          "newEventReplay": {
+            "cancel": "يلغي",
+            "loadReplay": "تحميل الإعادة",
+            "search": "بحث",
+            "title": "ابحث وحدد حدث"
+          },
+          "newMapReplay": {
+            "cancel": "يلغي",
+            "clipDuration": "مدة المقطع",
+            "contextMenu": {
+              "noActions": "لا توجد إجراءات متاحة"
+            },
+            "duration": "مدة",
+            "endDate": "تاريخ / وقت الانتهاء",
+            "loadReplay": "تحميل الإعادة",
+            "minutes": "الدقائق",
+            "replayFrame": "إعادة الإطار",
+            "startDate": "تاريخ / وقت البدء",
+            "title": "اختر معلمات الوقت. تكبير / عرض الخريطة لضبط منطقة اختيار إعادة التشغيل"
+          },
+          "newTrackReplay": {
+            "buffer": "حدد المسار وحدد المسافة العازلة",
+            "cancel": "يلغي",
+            "clipDuration": "مدة المقطع",
+            "dateRange": "نطاق الموعد",
+            "duration": "مدة",
+            "endDate": "تاريخ / وقت الانتهاء",
+            "loadReplay": "تحميل الإعادة",
+            "replayFrame": "إعادة الإطار",
+            "search": "بحث",
+            "startDate": "تاريخ / وقت البدء",
+            "timeParams": "أدخل معلمات الوقت",
+            "trackDistance": "تتبع مسافة العازلة"
+          },
+          "newZoneReplay": {
+            "cancel": "يلغي",
+            "clip": "مدة المقطع",
+            "duration": "مدة",
+            "load": "تحميل الإعادة",
+            "params": "أدخل معلمات الوقت",
+            "replay": "إعادة الإطار",
+            "search": "بحث",
+            "start": "تاريخ / وقت البدء",
+            "title": "حدد المنطقة وقم بتعيين محددات الوقت"
+          },
+          "replay": {
+            "description": "إنشاء إعادة جديدة من تحديد منطقة الخريطة.",
+            "newReplay": "إعادة جديدة",
+            "startingPoint": "اختر نقطة البداية لإنشاء إعادة جديدة أو البحث في ملفات إعادة التشغيل المؤرشفة.",
+            "title": "تحديد الخريطة"
+          },
+          "replayArchive": {
+            "cancel": "إلغاء",
+            "confirm": "تؤكد",
+            "delete": "حذف العناصر",
+            "deleteReplay": {
+              "title": {
+                "areYouSure": "هل أنت متأكد أنك تريد حذف ملف",
+                "s": "س",
+                "selectedReplay": "اعادتها المختارة"
+              }
+            },
+            "download": "تحميل",
+            "downloadReplay": "قد يستغرق الأمر بعض الوقت لإكمال طلبك. ستتلقى إشعارًا به ارتباط للتنزيل عند توفر إعادة التشغيل.",
+            "load": "حمل",
+            "manage": "إدارة وعرض الإعادة المحفوظة.",
+            "ok": "موافق",
+            "replay": "إعادة الأرشيف",
+            "saved": "لم يتم العثور على إعادات محفوظة"
+          }
+        },
+        "replay": {
+          "replayCamera": {
+            "loadAudio": "تحميل الصوت",
+            "loading": "تحميل الصوت ...",
+            "mute": "كتم الصوت",
+            "replayCamera": "إعادة تشغيل الكاميرات",
+            "unmute": "إعادة الصوت"
+          },
+          "replayToBar": {
+            "cancel": "يلغي",
+            "edit": "تعديل",
+            "mins": "الدقائق",
+            "name": "اسم",
+            "replayHelperText": "يجب أن يكون للإعادة اسم",
+            "save": "يحفظ",
+            "saveReplay": "احفظ الإعادة",
+            "title": "اعادتها",
+            "to": "إلى"
+          },
+          "settingsMenu": {
+            "TileOptions": {
+              "base": "الخريطة الأساسية"
+            },
+            "settings": {
+              "camera": "FOVs الكاميرا",
+              "charts": "مخططات بحرية",
+              "events": "الأحداث",
+              "feeds": "الأعلاف",
+              "lines": "خطوط",
+              "map": "تسميات الخريطة",
+              "overlays": "تراكبات الخريطة",
+              "points": "نقاط",
+              "polygons": "المضلعات",
+              "road": "الطرق والتسميات"
+            }
+          }
+        }
+      },
+      "en": {
+        "newReplay": {
+          "newEventReplay": {
+            "cancel": "Cancel",
+            "loadReplay": "Load Replay",
+            "search": "Search",
+            "title": "Search and select Event"
+          },
+          "newMapReplay": {
+            "cancel": "Cancel",
+            "clipDuration": "Clip Duration",
+            "contextMenu": {
+              "noActions": "No actions available"
+            },
+            "duration": "Duration",
+            "endDate": "End Date/Time",
+            "loadReplay": "Load Replay",
+            "minutes": "minutes",
+            "replayFrame": "Replay Frame",
+            "startDate": "Start Date/Time",
+            "title": "Choose time parameters. Zoom/Pan map to set Replay selection area"
+          },
+          "newTrackReplay": {
+            "buffer": "Select track and set distance buffer",
+            "cancel": "Cancel",
+            "clipDuration": "Clip Duration",
+            "dateRange": "Date Range",
+            "duration": "Duration",
+            "endDate": "End Date/Time",
+            "loadReplay": "Load Replay",
+            "replayFrame": "Replay Frame",
+            "search": "Search",
+            "startDate": "Start Date/Time",
+            "timeParams": "Enter time parameters",
+            "trackDistance": "Track distance buffer"
+          },
+          "newZoneReplay": {
+            "cancel": "Cancel",
+            "clip": "Clip Duration",
+            "duration": "Duration",
+            "load": "Load Replay",
+            "params": "Enter time parameters",
+            "replay": "Replay Frame",
+            "search": "Search",
+            "start": "Start Date/Time",
+            "title": "Select zone and set time paramerters"
+          },
+          "replay": {
+            "description": "Generate new Replay from map area selection.",
+            "newReplay": "New Replay",
+            "startingPoint": "Choose starting point to generate new Replay or search archived Replay files.",
+            "title": "Map Selection"
+          },
+          "replayArchive": {
+            "cancel": "CANCEL",
+            "confirm": "CONFIRM",
+            "delete": "Delete Items",
+            "deleteReplay": {
+              "title": {
+                "areYouSure": "Are you sure you want to delete the ",
+                "s": "s",
+                "selectedReplay": "selected replay"
+              }
+            },
+            "download": "Download",
+            "downloadReplay": "It may take some time to complete your request. You will receive a notification with a link to download when the replay is available.",
+            "load": "Load",
+            "manage": "Manage and view saved Replays.",
+            "ok": "Ok",
+            "replay": "Replay Archive",
+            "saved": "No Saved Replays Found"
+          }
+        },
+        "replay": {
+          "replayCamera": {
+            "loadAudio": "Load Audio",
+            "loading": "Loading Audio...",
+            "mute": "Mute Audio",
+            "replayCamera": "Replay Cameras",
+            "unmute": "Unmute Audio"
+          },
+          "replayToBar": {
+            "cancel": "Cancel",
+            "edit": "Edit",
+            "mins": "mins",
+            "name": "Name",
+            "replayHelperText": "The Replay must have a name",
+            "save": "Save",
+            "saveReplay": "Save the Replay",
+            "title": "Replay",
+            "to": "to"
+          },
+          "settingsMenu": {
+            "TileOptions": {
+              "base": "BASE MAP"
+            },
+            "settings": {
+              " charts": "Nautical Charts",
+              " points": "Points",
+              "camera": "Camera FOVs",
+              "events": "Events",
+              "feeds": "FEEDS",
+              "lines": "Lines",
+              "map": "Map Labels",
+              "overlays": "MAP OVERLAYS",
+              "polygons": "Polygons",
+              "road": "Roads and Labels"
+            }
+          }
+        }
+      }
+    }
+  }

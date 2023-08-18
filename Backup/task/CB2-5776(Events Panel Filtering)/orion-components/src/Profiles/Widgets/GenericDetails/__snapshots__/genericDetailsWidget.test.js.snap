@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsWidget renders 1`] = `
+<div
+  className="details-widget"
+>
+  <WithStyles(CBKvpDisplay)
+    keyValuePairs={
+      Array [
+        Object {
+          "key": "test key",
+          "value": "test value",
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`DetailsWidget renders with display props 1`] = `
+<div
+  className="details-widget"
+>
+  <WithStyles(CBKvpDisplay)
+    keyValuePairs={
+      Array [
+        Object {
+          "key": "change key",
+          "value": "test value",
+        },
+      ]
+    }
+  />
+</div>
+`;

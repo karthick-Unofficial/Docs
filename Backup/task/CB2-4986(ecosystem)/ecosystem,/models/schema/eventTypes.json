@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/eventTypes.json",
+  "type": "object",
+  "required": ["name", "widgets", "eventTypeId"],
+  "additionalProperties": false,
+  "properties": {
+    "eventTypeId": {
+      "type": "string"
+    },
+    "name": {
+      "description": "",
+      "type": "string"
+    },
+    "subtypes": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "subtypeRequired": { "type": "boolean" },
+    "widgets": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

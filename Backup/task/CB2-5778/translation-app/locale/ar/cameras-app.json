@@ -1,0 +1,72 @@
+{
+	"appId": "cameras-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "كاميرات"
+			},
+			"cameraView": {
+				"linkItems": "عناصر الارتباط",
+				"mapLocation": "الموقع على الخريطة ومجال الرؤية",
+				"pinItem": "دبوس البند"
+			},
+			"camerasListPanel": {
+				"allCams": "جميع الكاميرات",
+				"allAccessPoints": "جميع نقاط الوصول",
+				"cameraCollection": {
+					"item": "البند ",
+					"items": "البنود "
+				},
+				"noCamerasAvailable": "لا توجد كاميرات متاحة",
+				"noAccessPointsAvailable": "لا توجد نقاط وصول متاحة",
+				"placeholder": {
+					"searchColl": "مجموعات البحث ..."
+				}
+			},
+			"camerasMapLayers": {
+				"facilityCamDialog": {
+					"cancel": "إلغاء",
+					"continue": "تابع",
+					"continuingText": "سيؤدي الاستمرار إلى إزالة الكاميرا من مخطط الأرضية هذا.",
+					"hiddenText": "يقع في منشأة مخفية حاليًا %{count}",
+					"locatedText": "يقع في %{count}",
+					"title": "كاميرا منشأة"
+				},
+				"listItemText": {
+					"deleteFOV": "حذف مجال الرؤية بالكاميرا",
+					"drawFOV": "ارسم مجال الرؤية بالكاميرا",
+					"editFOV": "تحرير مجال الرؤية الخاص بالكاميرا",
+					"editLocation": "تحرير موقع الكاميرا",
+					"editSpotlight": "تحرير أضواء الكاميرا",
+					"resetSpotlight": "إعادة تعيين أضواء الكاميرا"
+				},
+				"stageDeleteDialog": {
+					"cancel": "إلغاء",
+					"confirm": "تأكيد",
+					"textContent": "?%{secondaryValue} هذه الكاميرا %{primaryValue} هل أنت متأكد أنك تريد",
+					"title": {
+						"deleteFOV": "حذف مجال الرؤية",
+						"resetSpotlight": "إعادة تعيين الأضواء"
+					}
+				}
+			},
+			"accessPointMapLayers": {
+				"facilityAPDialog": {
+					"cancel": "إلغاء",
+					"continue": "تابع",
+					"hiddenText": "يقع في منشأة مخفية حاليًا %{count}",
+					"locatedText": "يقع في %{count}",
+					"continuingText": "ستؤدي المتابعة إلى إزالة نقطة الوصول من مخطط المبنى هذا.",
+					"title": "نقطة وصول المنشأة"
+				},
+				"listItemText": {
+					"editLocation": "تحرير موقع نقطة الوصول"
+				},
+				"stageDeleteDialog": {
+					"textContent": "هل أنت متأكد من أنك تريد %{primaryValue} نقطة الوصول هذه %{secondaryValue}?"
+				}
+			}
+		}
+	}
+}

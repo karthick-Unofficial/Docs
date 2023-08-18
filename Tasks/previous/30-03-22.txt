@@ -1,0 +1,4 @@
+Today's Task:
+CB2-4964 - Worked on testing facilities-app accessPoints implementation in dev environment and tested possibilities to overcome accessPointProfile issues.
+CB2-5170 - Worked on handling intersecting FOV's by disabling FAB icon in camera's app.
+

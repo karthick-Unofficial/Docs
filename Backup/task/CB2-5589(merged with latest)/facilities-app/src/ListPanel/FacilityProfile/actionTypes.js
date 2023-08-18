@@ -1,0 +1,2 @@
+export const FLOOR_PLAN_SELECT = "FLOOR_PLAN_SELECT";
+export const FLOOR_PLANS_SET = "FLOOR_PLANS_SET";

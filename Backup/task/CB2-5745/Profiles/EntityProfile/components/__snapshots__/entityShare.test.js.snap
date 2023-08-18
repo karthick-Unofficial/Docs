@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntityShare renders 1`] = `
+<ForwardRef(Dialog)
+  actions={
+    Array [
+      <ForwardRef(Button)
+        color="primary"
+        variant="text"
+      >
+        share
+      </ForwardRef(Button)>,
+      <ForwardRef(Button)
+        color="primary"
+        variant="text"
+      >
+        cancel
+      </ForwardRef(Button)>,
+    ]
+  }
+  className="share-dialog"
+>
+  <p>
+    <Translator
+      value="global.profiles.entityProfile.entityShare.confirmationText"
+    />
+  </p>
+</ForwardRef(Dialog)>
+`;

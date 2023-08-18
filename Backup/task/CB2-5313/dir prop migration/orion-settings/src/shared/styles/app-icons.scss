@@ -1,0 +1,33 @@
+span.app-icon {
+	width: 36px;
+	height: 36px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+
+
+.app-icon-cameras {	background-image: url('../../static/app-icons/app.cameras.png');}
+.app-icon-emissions {	background-image: url('../../static/app-icons/app.emissions.png');}
+.app-icon-facilities {	background-image: url('../../static/app-icons/app.facilities.png');}
+.app-icon-map {	background-image: url('../../static/app-icons/app.map.png');}
+.app-icon-notifications {	background-image: url('../../static/app-icons/app.notifications.png');}
+.app-icon-places {	background-image: url('../../static/app-icons/app.places.png');}
+.app-icon-reports {	background-image: url('../../static/app-icons/app.reports.png');}
+.app-icon-rules {	background-image: url('../../static/app-icons/app.rules.png');}
+.app-icon-settings {	background-image: url('../../static/app-icons/app.settings.png');}
+.app-icon-vehicles {	background-image: url('../../static/app-icons/app.vehicles.png');}
+.app-icon-collections {	background-image: url('../../static/app-icons/app.collections.png');}
+.app-icon-replay {	background-image: url('../../static/app-icons/app.replay.png');}
+.app-icon-events {	background-image: url('../../static/app-icons/app.events.png');}
+.app-icon-support {	background-image: url('../../static/app-icons/app.support.png');}
+.app-icon-lists { background-image: url('../../static/app-icons/app.lists.png');}
+.app-icon-camera-wall { background-image: url('../../static/app-icons/app.camera-wall.png');}
+
+.greyed {
+	opacity: .2;
+	cursor: not-allowed;
+}

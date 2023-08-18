@@ -1,0 +1,99 @@
+activities:
+  /activities: 
+    post: 
+      description: Adds an activity to the activity queue
+      operationId: queueActivity
+      tags:
+        - Activities
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                activity:
+                  type: object
+                  properties: 
+                    id: 
+                      type: string
+                    name: 
+                      type: string
+                    type: 
+                      type: string
+                    url: 
+                      type: string
+                app:
+                  type: object
+                  properties: 
+                    feedId: 
+                      type: string
+                    id: 
+                      type: string
+                    filename: 
+                      type: string
+                    url: 
+                      type: string
+                    type: 
+                      type: string
+                type:
+                  type: string
+                summary:
+                  type: string
+      responses: 
+        '200': 
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                # need more here
+        default:
+          description: An error occured
+          content:
+            application/json:
+              schema:
+                type: object
+                #need more here
+  /activities?entityType={entityType}&entityId={entityId}&page={page}:
+    get:
+      description: Gets activities by entity type, entity id, and page
+      operationId: getActivitiesByEntity
+      tags:
+        - Activities
+      parameters:
+        - name: userId
+          in: query
+          description: ID of the logged in user
+          required: true
+          type: string
+        - name: entityType
+          in: query
+          description: Type of Entity
+          required: true
+          type: string
+        - name: entityId
+          in: query
+          description: Unique ID of Entity
+          required: true
+          type: string
+        - name: page
+          in: query
+          description: The page you want returned
+          required: false
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                #need more here
+        default:
+          description: An error occured
+          content:
+            application/json:
+              schema:
+                type: object
+                #need more here

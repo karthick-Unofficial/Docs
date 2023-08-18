@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/dailyBrief.json",
+  "type": "object",
+  "required": [ "author", "authorId", "endDate", "endTime", "orgId", "startDate", "startTime", "title" ],
+  "additionalProperties": false,
+  "properties": {
+    "attachments": {
+      "type": "array",
+      "items": { 
+        "type": "object", 
+        "properties": { "preview": { "description": "" , "type": "string" } } 
+      }
+    },
+    "author": { "description": "", "type": "string"},
+    "authorId": { "description": "", "type": "string" },
+    "deleted": { "description": "", "type": "boolean" },
+    "description": { "description": "", "type": "string" },
+    "orgId": { "description": "", "type": "string" },
+    "title": { "description": "", "type": "string" },
+    "createdDate": { "description": "", "date": true},
+    "lastModifiedDate": { "description": "", "date": true},
+    "endDate": { "description": "", "type": "string" },
+    "endTime": { "description": "", "type": "string" },
+    "startTime": { "description": "", "type": "string" },
+    "startDate": { "description": "", "type": "string"}
+  }
+}

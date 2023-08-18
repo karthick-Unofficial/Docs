@@ -1,0 +1,16 @@
+@media (max-width: 600px) {
+	.app {
+		width: 100%;
+		margin-left: -50%;
+		margin-top: -180px;
+		min-width: 300px;
+	}
+
+	.login-subheader {
+		min-width: 200px;
+	}
+
+	.form-container {
+		width: 90%;
+	}
+}

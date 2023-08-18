@@ -1,0 +1,55 @@
+{
+	"appId": "events-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "الأحداث"
+			},
+			"eventListPanel": {
+				"filterDialog": {
+					"active": "نشيط",
+					"byStatus": "حسب الحالة",
+					"byTemplate": "حسب القالب",
+					"cancel": "إلغاء",
+					"closed": "مغلق",
+					"filter": "فلتر %{count}",
+					"save": "حفظ",
+					"upcoming": "القادمة"
+				},
+				"main": {
+					"clickToCreate": "انقر فوق حدث جديد أعلاه لإنشاء حدث",
+					"clickToCreateTemplate": "انقر فوق قالب جديد أعلاه لإنشاء نموذج حدث",
+					"eventTemplates": "قوالب الحدث",
+					"events": "الأحداث",
+					"eventsShared": "الأحداث المشتركة معي",
+					"myEvents": "أحداثي",
+					"newEvent": "حدث جديد",
+					"newTemplate": "قالب جديد",
+					"searchItems": "البحث في الأحداث ...",
+					"searchTemplates": "قوالب البحث ...",
+					"templates": "القوالب",
+					"templatesShared": "القوالب المشتركة معي"
+				},
+				"eventFilters": {
+					"active": "نشيط",
+					"scheduled": "المقرر",
+					"closed": "مغلق",
+					"noActive": "لا توجد أحداث نشطة.",
+					"noScheduled": "لا توجد أحداث مجدولة.",
+					"noClosed": "لا توجد أحداث مغلقة.",
+					"noResults": "لم يتم العثور على نتائج.",
+					"noTemplates": "لا توجد قوالب محددة."
+				}
+			},
+			"eventView": {
+				"addList": "إضافة قائمة",
+				"cancel": "إلغاء",
+				"createProxZone": "إنشاء منطقة القرب",
+				"mapPlanner": "مخطط الخريطة",
+				"pinItem": "دبوس البند",
+				"save": "حفظ"
+			}
+		}
+	}
+}

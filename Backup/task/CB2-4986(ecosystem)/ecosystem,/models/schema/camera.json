@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/camera.json",
+  "type": "object",
+  "required": [ "name", "entityData" ],
+  "additionalProperties": false,
+  "properties": {
+    "cameraSystem": { "type": "string" },
+    "connection": { "type": "object" },
+    "controls": { "type": "boolean" },
+    "entityData": { "type": "object" },
+    "entityType": { "type": "string" },
+    "feedId": { "type": "string" },
+    "fov": { "type": ["string", "null"] },
+    "isDeleted": { "type": "boolean" },
+    "isPublic": { "type": "boolean" },
+    "lastModifiedBy": { "type": "string" },
+    "lastModifiedDate": { "date": true },
+    "ownerOrg": { "type": "string" },
+    "player": { "type": "object" },
+    "slewLock": { "type": ["string", "null"] },
+    "spotlightShape": { "type": "object" },
+    "video": { "type": "object" },
+    "displayType": { "type": "string" },
+    "displayTargetId": { "type": "string" }
+  }
+}

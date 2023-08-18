@@ -1,0 +1,25 @@
+{
+    "name": "Integration App",
+    "clientId": "df516f60-190f-4e70-9520-9c12c121475a",
+    "clientSecret": "363b4412-2f68-4769-8f49-c3606071a74c",
+    "debugPort": 5879,
+    "properties": {
+      "natsServer": "nats://phoenix-nats:4222"
+    },
+    "minio": {
+      "connection": {
+        "endPoint": "minio-1",
+        "port": 9000,
+        "useSSL": false,
+        "accessKey": "SOME_ACCESS_KEY",
+        "secretKey": "SOME_SECRET"
+      },
+      "buckets": {
+        "attachmentBucket": {
+          "region": "us-east-1",
+          "name": "cb2-attachment"
+        }
+      }
+    },
+    "processes": []
+  }

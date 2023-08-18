@@ -1,0 +1,14 @@
+Today's Task:
+CB2-5277
+- Worked on below items in orion-components:
+  - ListWidget:
+      - Worked on sorting out forceUpdate issues and ref handling issues. 
+      - Added forwardRef wrapping around component fixes as well.
+  - DistanceTool: 
+      - Worked on state value updation issues in handleDraw and similar functions. 
+      - Replaced Ref values with state values for currentPath value. Working on Path mismatch issues in DistanceTool.
+  - TimeNotificationGroup: 
+      - Working on sorting out ways to implement forceUpdate in functional component.
+  - AccessPointProfile: 
+      - Added equivalent steps to implement componentWillMount in functional component.
+  - Worked on removing unused Component Declarations and added minor changes as well.

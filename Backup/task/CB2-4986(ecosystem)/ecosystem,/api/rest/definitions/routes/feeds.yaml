@@ -1,0 +1,164 @@
+feeds:
+  /feeds:
+    get:
+      description: Get all feeds
+      operationId: getAll
+      tags:
+        - Feeds
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+    post:
+      description: Create new feed
+      operationId: create
+      tags:
+        - Feeds
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                feed:
+                  type: object
+                  properties:
+                    appId:
+                      type: string
+                    entityType:
+                      type: string
+                    feedId:
+                      type: string
+                    isShareable:
+                      type: boolean
+                    labels:
+                      type: object
+                      properties:
+                        displayName:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              prefix:
+                                type: string
+                              property:
+                                type: string
+                    metadata:
+                      type: object
+                      properties:
+                        for:
+                          type: string
+                    name:
+                      type: string
+                    ownerOrg:
+                      type: string
+                    source:
+                      type: string
+                    ttl:
+                      type: number
+    responses:
+      '200':
+        description: OK
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                inserted:
+                  type: number
+                errors:
+                  type: number
+  /feeds/{feedId}/entities:
+    post:
+      description: Create a new feed entity in feed
+      operationId: upsertEntity
+      tags:
+        - Feeds
+      parameters:
+        - name: feedId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                geometry:
+                  type: object
+                properties:
+                  type: object
+                  properties:
+                    sourceId:
+                      type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+  /feeds/{feedId}:
+    get:
+      description: Get feed by ID
+      operationId: getFeedProfile
+      tags:
+        - Feeds
+      parameters:
+        - name: feedId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /feeds/search-by-type/{type}:
+    get:
+      description: Get feeds by type
+      operationId: getUserFeedEntityListByType
+      tags:
+        - Feeds
+      parameters:
+        - name: type
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:  
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+  /feeds/{feedId}/shareProfile:
+    get:
+      description: Get share profile
+      operationId: getShareProfile
+      tags:
+        - Feeds
+      parameters:
+        - name: feedId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK

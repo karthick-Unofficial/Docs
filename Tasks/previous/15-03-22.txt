@@ -1,0 +1,7 @@
+Today's Task:
+- Worked on below Jira Bug fixes:
+    - CB2-5236 List app - Arabic locale - Incorrect date/time format when adding a date/time column
+    - CB2-5097 Events - UI - Arabic - Alignment issue in template dialog
+    - CB2-5239 Replay app - Arabic locale - UI Issue when entity profile is displayed.
+    - CB2-5237 Map app - Arabic locale - Data in the details widget is not right aligned
+- Working on localizing material-ui datepicker's days and timepicker RTL in KNG Advancements.

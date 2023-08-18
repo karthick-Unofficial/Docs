@@ -1,0 +1,5 @@
+Today's Task:
+- Worked on Jira Bug Fixes
+    - CB2-5155 --->Settings - Arabic locale - The alignment of section header and the contents on the manage feed sharing page needs to be corrected
+   - CB2-5128 - Rules app - Arabic locale - Unable to set the time duration in the Time constraint dialog
+- Worked on sorting out _UNSAFE_componentWillReceiveProps issue in CB2-5119 Id.

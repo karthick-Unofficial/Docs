@@ -1,0 +1,9 @@
+Today's Task:
+CB2-5277 - Convert Class Components To Functional Components
+
+- Worked on sorting out zoom functionality issues caused by shouldComponentUpdate in Cameras-app Map layers and added fixes as well.
+- Worked on cameras and accessPoints filter functionality issues in MapFilter.
+- Worked on testing functional component implementation workflow in cameras-app.
+- Worked on converting class component into functional component in berth-request-app/VesselReports.
+
+

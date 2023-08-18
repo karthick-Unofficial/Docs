@@ -1,0 +1,9 @@
+Today's Task:
+CB2-5277
+- Went through Functional Component Implementation codeflow and tested workflow in berth-request-app.
+- Worked on class to functional component conversion for the following in orion-components:
+     - Profiles/Widgets/RespondingUnits/RespondingUnitsWidget.jsx
+     - Profiles/Widgets/ShieldGroup/SGSettings.jsx
+     - Profiles/EntityProfile/components/ShapeAssociation.jsx
+     - Profiles/Widgets/PTZControls/VideoIntegratedControls.jsx
+     - CBComponents\CBAppBar\AppBar.jsx

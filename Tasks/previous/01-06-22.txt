@@ -1,0 +1,10 @@
+Today's Task:
+CB2-5343 - Camera app - UI issue when Weather radar overlay is turned on
+- Worked on handling shouldComponentUpdate issues in camerasMapLayer and worked on sorting alternate approaches.
+- Worked on converting camerasMapLayer component into a Pure Component by wrapping with memo.
+- Worked on adding condition to ignore unwanted rerender of profileIconTemplates prop on store update.
+- Worked on testing flickering workflow in cameras-app/camerasMap.
+
+CB2-5348 - Rules - Add TIME condition - UI Issue , Calendar looks disabled
+- Worked on sorting out disabled UI issues in Datepicker component.
+- Worked on adding custom styles in rules-app/base.css to override MuiPaper styles.

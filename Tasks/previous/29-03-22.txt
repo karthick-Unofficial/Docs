@@ -1,0 +1,5 @@
+
+Today's Task:
+- CB2-5139 - Worked on fixing Datepicker localization issues faced in rules-app(arabic locale).
+- CB2-5170 - Working on Self Intersecting FOV's Confirm Disable functionality in camera's app.
+- CB2-4964 - Worked on sorting out the causes for accessPointProfile loading issues in Facilities-app on dev environment.

@@ -1,0 +1,27 @@
+<div class="table-container">
+	<div class="table-data-container">
+		<table>
+			<thead>
+				<tr>
+					<% data.columns.map(column=> {%>
+						<td class="<%= data.locale === 'ar' ? 'rightAlign' : '' %>">
+							<%= data.reportBuilder_reports.report.displayName[column.displayName] %>
+						</td>
+						<% }) %>
+				</tr>
+			</thead>
+			<tbody>
+				<% data.groups.map(group=> { %>
+					<% if (data.groupedResults) { %>
+						<%- include('group-rows', {group: group, columns: data.columns}); %>
+							<% } %>
+								<% group.rows.forEach((row, index)=> { %>
+									<%- include('rows', {row: row, columns: data.columns, moment: moment, timezone:
+										data.timezone, timeFormatPreference: data.timeFormatPreference, locale:
+										data.locale}); %>
+										<% }); %>
+											<% }) %>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+- CB2-5277 Orion components, worked on class to functional component conversion for the following:
+ -> Profiles\CameraProfile\CameraProfile.jsx
+ -> Profiles\CameraProfile\components\CameraDialog.jsx
+ -> Profiles\Widgets\LiveCamera\LiveCameraWidget.jsx
+ -> AppMenu\AppMenuWrapper.jsx
+ -> AppMenu\AppMenu.jsx
+ -> Profiles\Widgets\Rules\RulesWidget.jsx
+ -> Profiles\Widgets\Notes\NotesWidget.jsx
+
+ 

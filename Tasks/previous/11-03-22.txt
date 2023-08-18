@@ -1,0 +1,6 @@
+Today's Task:
+- Worked on fixing accessPoint location issues faced while updating in cameras-app client request.
+- Worked on feedIcon multi-case handling in settings-app utitlity.
+- Worked on PinToDialog localization fixes in orion-components.
+- Went through online sources to sort out ways to localize numbers and worked on localizing numbers in cameras app.
+

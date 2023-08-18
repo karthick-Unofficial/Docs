@@ -1,0 +1,30 @@
+.textAreaWrapper {
+    height: 100%
+}
+
+.textEditor {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.textEditorRTL {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.rdw-editor-main {
+    color: white;
+    min-height: 300px;
+}
+
+.public-DraftEditor-content {
+    min-height: 300px;
+    overflow: auto;
+}
+
+.textEditorRTL .public-DraftStyleDefault-ltr{
+    text-align: right!important;
+    direction:  rtl!important;
+}
+
+.fontDropdown { color: black; }

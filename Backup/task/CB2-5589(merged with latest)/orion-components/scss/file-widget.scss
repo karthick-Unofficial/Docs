@@ -1,0 +1,182 @@
+.ep-files {
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .file-item {
+    display: flex;
+    margin: 0.25rem 0;
+    align-items: center;
+
+    .filename {
+      font-size: 0.75rem;
+      color: #fff;
+      text-align: center;
+      margin: 0 auto 0 0;
+    }
+    .delete-button {
+      font-size: 16px;
+      color: $textGray;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Moved to top level to allow access from RowEdit dialog
+.fileicon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  padding: 0;
+  &.image,
+  &.png,
+  &.jpg,
+  &.jpeg {
+    background-size: contain;
+  }
+}
+
+.dropzone {
+  border: none;
+  background-color: transparent;
+  color: $link;
+  font-size: 14px;
+}
+
+.defaultImg {
+  position: absolute !important;
+	color: #4eb5f3 !important;
+}
+
+.generic-fallback {
+  background-image: url("../../static/file-icon/generic_file_icon.png");
+}
+.pdf {
+  background-image: url("../../static/file-icon/pdf-128_32.png");
+}
+.accdb {
+  background-image: url("../../static/file-icon/accdb-128_32.png");
+}
+.avi {
+  background-image: url("../../static/file-icon/avi-128_32.png");
+}
+.bmp {
+  background-image: url("../../static/file-icon/bmp-128_32.png");
+}
+.css {
+  background-image: url("../../static/file-icon/css-128_32.png");
+}
+.docx,
+.doc {
+  background-image: url("../../static/file-icon/docx_mac-128_32.png");
+}
+.eml {
+  background-image: url("../../static/file-icon/eml-128_32.png");
+}
+.eps {
+  background-image: url("../../static/file-icon/eps-128_32.png");
+}
+.fla {
+  background-image: url("../../static/file-icon/fla-128_32.png");
+}
+.gif {
+  background-image: url("../../static/file-icon/gif-128_32.png");
+}
+.html,
+.htm {
+  background-image: url("../../static/file-icon/html-128_32.png");
+}
+.ind {
+  background-image: url("../../static/file-icon/ind-128_32.png");
+}
+.ini {
+  background-image: url("../../static/file-icon/ini-128_32.png");
+}
+.jpeg,
+.jpg {
+  background-image: url("../../static/file-icon/jepg-128_32.png");
+}
+.jsf {
+  background-image: url("../../static/file-icon/jsf-128_32.png");
+}
+.midi {
+  background-image: url("../../static/file-icon/midi-128_32.png");
+}
+.mov {
+  background-image: url("../../static/file-icon/mov-128_32.png");
+}
+.mp3 {
+  background-image: url("../../static/file-icon/mp3-128_32.png");
+}
+.mpeg,
+.mpg {
+  background-image: url("../../static/file-icon/mpeg-128_32.png");
+}
+.png {
+  background-image: url("../../static/file-icon/png-128_32.png");
+}
+.pptx,
+.ppt {
+  background-image: url("../../static/file-icon/pptx_mac-128_32.png");
+}
+.proj {
+  background-image: url("../../static/file-icon/proj-128_32.png");
+}
+.psd {
+  background-image: url("../../static/file-icon/psd-128_32.png");
+}
+.pst {
+  background-image: url("../../static/file-icon/pst-128_32.png");
+}
+.pub {
+  background-image: url("../../static/file-icon/pub-128_32.png");
+}
+.rar {
+  background-image: url("../../static/file-icon/rar-128_32.png");
+}
+.readme,
+.me,
+.md {
+  background-image: url("../../static/file-icon/readme-128_32.png");
+}
+.config {
+  background-image: url("../../static/file-icon/settings-128_32.png");
+}
+.txt,
+.plain {
+  background-image: url("../../static/file-icon/text-128_32.png");
+}
+.tiff {
+  background-image: url("../../static/file-icon/tiff-128_32.png");
+}
+.url {
+  background-image: url("../../static/file-icon/url-128_32.png");
+}
+.vsd {
+  background-image: url("../../static/file-icon/vsd-128_32.png");
+}
+.wav {
+  background-image: url("../../static/file-icon/wav-128_32.png");
+}
+.wma {
+  background-image: url("../../static/file-icon/wma-128_32.png");
+}
+.wmv {
+  background-image: url("../../static/file-icon/wmv-128_32.png");
+}
+.xlsx,
+.xls {
+  background-image: url("../../static/file-icon/xlsx_mac-128_32.png");
+}
+.zip {
+  background-image: url("../../static/file-icon/zip-128_32.png");
+}

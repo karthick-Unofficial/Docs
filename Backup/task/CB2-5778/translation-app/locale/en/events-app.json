@@ -1,0 +1,55 @@
+{
+	"appId": "events-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"appBar": {
+				"title": "Events"
+			},
+			"eventListPanel": {
+				"filterDialog": {
+					"active": "Active",
+					"byStatus": "By Status",
+					"byTemplate": "By Template",
+					"cancel": "Cancel",
+					"closed": "Closed",
+					"filter": "Filter %{count}",
+					"save": "Save",
+					"upcoming": "Upcoming"
+				},
+				"main": {
+					"clickToCreate": "Click New Event above to create an event",
+					"clickToCreateTemplate": "Click New Template above to create an event template",
+					"eventTemplates": "Event Templates",
+					"events": "Events",
+					"eventsShared": "Events Shared with Me",
+					"myEvents": "My Events",
+					"newEvent": "New Event",
+					"newTemplate": "New Template",
+					"searchItems": "Search Events...",
+					"searchTemplates": "Search Templates...",
+					"templates": "Templates",
+					"templatesShared": "Templates Shared with Me"
+				},
+				"eventFilters": {
+					"active": "Active",
+					"scheduled": "Scheduled",
+					"closed": "Closed",
+					"noActive": "No active events.",
+					"noScheduled": "No scheduled events.",
+					"noClosed": "No closed events.",
+					"noResults": "No results found.",
+					"noTemplates": "There are no templates defined."
+				}
+			},
+			"eventView": {
+				"addList": "Add List",
+				"cancel": "Cancel",
+				"createProxZone": "Create Proximity Zone",
+				"mapPlanner": "Map Planner",
+				"pinItem": "Pin Item",
+				"save": "Save"
+			}
+		}
+	}
+}

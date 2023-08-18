@@ -1,0 +1,25 @@
+#pinned-item-name.active-item {
+	color: #35b7f3;
+}
+
+#pinned-item-name.inactive-item {
+	color: #FFF;
+}
+
+.expanded {
+	#pinned-item-name {
+		width: 50%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		padding-right: 0.5rem;
+	}
+}
+
+.unavailable {
+	background-color: rgba(100, 100, 100, 0.2);
+	#pinned-item-name,
+	#pinned-item-type {
+		opacity: 0.5;
+	}
+}

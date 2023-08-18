@@ -1,0 +1,5 @@
+Today's Task:
+- Worked on CB2-5034- Events - Pinned Items Not Removing From Map.
+- Worked on CB2-4625- Settings - New org dialog doesn't close after creating new org.
+- CB2-4986 -> Worked on replacing bluebird with async/await method and removed callbacks in ecosystem/applicationModel.
+- CB2-4986 -> Removed callback functions to model and added async/await method in api/rest/applications.

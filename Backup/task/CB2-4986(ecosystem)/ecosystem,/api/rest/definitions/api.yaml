@@ -1,0 +1,95 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: CommandBridge2
+  description: API enpoints for CommandBridge 2
+servers:
+  - url: https://cb2-dev.commandbridge.com
+basePath: /ecosystem/api
+tags:
+    - {name: Activities, description: 'Activities routes'}
+    - {name: Applications, description: 'Appliations routes'}
+    - {name: Attachments, description: 'Attachments routes'}
+    - {name: Auth, description: 'Auth routes'}
+    - {name: Daily Brief, description: 'Daily Brief routes'}
+    - {name: Entities, description: 'Entities routes'}
+    - {name: Entity Collections, description: 'Entity Collections routes'}
+    - {name: Events, description: 'Events routes'}
+    - {name: EventTypes, description: 'EventTypes routes'}
+    - {name: Feeds, description: 'Feed routes'}
+    - {name: Lists, description: 'List routes'}
+    - {name: Notifications, description: 'Notification routes'}
+    - {name: Organizations, description: 'Organizations routes'}
+    - {name: Roles, description: 'Roles routes'}
+    - {name: User Devices, description: 'User Devices routes'}
+    - {name: Users, description: 'User routes'}
+paths: 
+  $ref: "routes/activities.yaml#/activities"
+  $ref: "routes/applications.yaml#/applications"
+  $ref: "routes/attachments.yaml#/attachments"
+  $ref: "routes/auth.yaml#/auth"
+  $ref: "routes/dailyBrief.yaml#/dailyBrief"
+  $ref: "routes/entities.yaml#/entities"
+  $ref: "routes/entityCollections.yaml#/entityCollections"
+  $ref: "routes/events.yaml#/events"
+  $ref: "routes/eventTypes.yaml#/eventTypes"
+  $ref: "routes/feeds.yaml#/feeds"
+  $ref: "routes/notifications.yaml#/notifications"
+  $ref: "routes/organizations.yaml#/organizations"
+  $ref: "routes/roles.yaml#/roles"
+  $ref: "routes/userDevices.yaml#/userDevices"
+  $ref: "routes/users.yaml#/users"
+
+
+  
+  
+  
+  
+  
+  
+    
+                    
+
+
+
+  
+          
+
+
+
+      
+      
+
+  
+          
+
+
+    
+  
+  
+
+      
+
+                  
+      
+
+
+
+
+                  
+  
+
+
+
+  
+
+
+                    
+          
+
+  
+          
+
+
+
+

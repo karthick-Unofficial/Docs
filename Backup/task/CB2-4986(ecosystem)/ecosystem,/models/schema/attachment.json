@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/attachment.json",
+  "type": "object",
+  "required": [ "createdBy", "filename", "handle", "mimeType" ],
+  "additionalProperties": false,
+  "properties": {
+    "createdBy": { "description": "", "type": "string" },
+    "createdDate": { "minimum": 1, "date": true },
+    "filename": { "description": "", "type": "string" },
+    "handle": { "description": "", "type": "string" },
+    "mimeType": { "description": "", "type": "string" },
+    "source": { "description": "", "type": "string" },
+    "expiration": { "description": "", "type": "string" }
+  }
+}

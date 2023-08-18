@@ -1,0 +1,5 @@
+Today's Task:
+- Cameras-app - Worked on adding unlink functionality to deleted Linked Items in cameraProfile.
+- Replay-app - Implemented getSnapShot method in accessPointModel 
+- Replay-app - Worked on Implementing access point support  in lib/snapShot.js generate method.
+

@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoenixDropzone renders 1`] = `
+<div>
+  <Dropzone
+    disabled={false}
+    getFilesFromEvent={[Function]}
+    maxFiles={0}
+    maxSize={Infinity}
+    minSize={0}
+    multiple={true}
+    noClick={false}
+    noDrag={false}
+    noDragEventsBubbling={false}
+    noKeyboard={false}
+    onDrop={[Function]}
+    preventDropOnDocument={true}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    useFsAccessApi={true}
+    validator={null}
+  >
+    <Component />
+  </Dropzone>
+  <ForwardRef(Button)
+    color="primary"
+    onClick={[Function]}
+    variant="text"
+  >
+    uploadFiles
+  </ForwardRef(Button)>
+</div>
+`;

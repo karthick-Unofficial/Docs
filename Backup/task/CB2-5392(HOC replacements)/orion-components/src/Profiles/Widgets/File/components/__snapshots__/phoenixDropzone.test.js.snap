@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoenixDropzone renders 1`] = `
+<div>
+  <t
+    disableClick={false}
+    disablePreview={false}
+    disabled={false}
+    maxSize={Infinity}
+    minSize={0}
+    multiple={true}
+    onDrop={[Function]}
+    preventDropOnDocument={true}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+  />
+  <FlatButton
+    disabled={false}
+    fullWidth={false}
+    label="Upload Files"
+    labelPosition="after"
+    labelStyle={Object {}}
+    onClick={[Function]}
+    onKeyboardFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onTouchStart={[Function]}
+    primary={true}
+    secondary={false}
+  />
+</div>
+`;

@@ -1,0 +1,1163 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes alert {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.7);
+  }
+  74% {
+    // transform: translateY(0);
+  }
+  77%,
+  79%,
+  83%,
+  91% {
+    // transform: translateY(0);
+  }
+  76% {
+    // transform: translateY(48px);
+  }
+  78% {
+    // transform: translateY(24px);
+  }
+  81% {
+    // transform: translateY(12px);
+  }
+  87% {
+    // transform: translateY(6px);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45%,
+  55%,
+  65%,
+  75%,
+  85%,
+  95% {
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+  }
+  8%,
+  18%,
+  28%,
+  38%,
+  48%,
+  58%,
+  68%,
+  78%,
+  88%,
+  98% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+  11%,
+  21%,
+  31%,
+  41%,
+  51%,
+  61%,
+  71%,
+  81%,
+  91% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    // transform: translateY(0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes error {
+  0% {
+    background-color: #6f7279;
+    transform: translateX(0%);
+  }
+  12% {
+    transform: translateX(-2.5%);
+    background-color: $alert;
+  }
+  25% {
+    transform: translateX(2.5%);
+  }
+  37% {
+    transform: translateX(-2.5%);
+  }
+  50% {
+    background-color: #6f7279;
+    transform: translateX(2.5%);
+  }
+  62% {
+    transform: translateX(-2.5%);
+    background-color: $alert;
+  }
+  75% {
+    transform: translateX(2.5%);
+  }
+  87% {
+    transform: translateX(-2.5%);
+  }
+  100% {
+    background-color: #6f7279;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes errorBar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 2rem;
+  }
+}
+
+@keyframes errorMsg {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  37% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  62% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  87% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes clearItemRight {
+  0% {
+    max-height: 800px;
+  }
+  50% {
+    max-height: 400px;
+  }
+  100% {
+    transform: translateX(300%);
+    max-height: 0px;
+  }
+}
+
+@keyframes clearItemLeft {
+  0% {
+    max-height: 800px;
+  }
+  50% {
+    max-height: 400px;
+  }
+  100% {
+    transform: translateX(-300%);
+    max-height: 0px;
+  }
+}
+
+@keyframes clearEach {
+  50% {
+    max-height: 70px;
+  }
+  100% {
+    height: 0;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(200%);
+  }
+  8% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  88% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  88% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.appBarWrapperRight {
+  display: flex;
+}
+
+.alert-bar-overlay {
+  position: fixed;
+  background-color: $alert;
+  width: 100vw;
+  height: 48px;
+  left: 0;
+  z-index: -1;
+}
+
+// A lot of these styles have had to have been tweaked in order to display correctly in IE
+.alert-sidebar-tray {
+  position: relative;
+  height: 48px;
+  display: flex;
+  &.empty {
+    background-color: transparent;
+  }
+  // for some reason the daily brief icon isn't styling correctly. fix for now
+  .db-icon-wrapper {
+    @include flex-center;
+    height: 30px;
+    width: 30px;
+    margin: 12px 0.5vw;
+    cursor: pointer;
+    margin-left: 1vw;
+    align-self: center;
+    .calendar-icon {
+      height: 80% !important;
+      position: relative; // <--- fix for calendar icon width
+      top: 2px;
+    }
+  }
+  .link-wrapper {
+    @include flex-center;
+    height: 30px;
+    width: 30px;
+    width: 30px;
+    margin: 12px 0.5vw;
+    cursor: pointer;
+    align-self: center;
+    > div {
+      height: 48px;
+      padding: 0px 0px 0px 0px !important;
+      > span {
+        top: 6px !important;
+        right: -9px !important;
+      }
+    }
+    &:last-of-type {
+      margin-right: 1vw;
+    }
+    &.alert-wrapper {
+      display: flex;
+      position: fixed;
+      left: calc(50vw - 42px);
+      margin: 0 auto;
+      align-items: center;
+      height: 48px;
+      @media (max-width: 600px) {
+        position: static;
+      }
+      span {
+        position: relative;
+        left: 10px;
+        color: #fff !important;
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+    }
+    .calendar-icon,
+    .chat-icon,
+    .info-icon {
+      height: 80% !important;
+    }
+
+    .info-icon {
+      vertical-align: middle;
+    }
+
+    .tray-icon {
+      // min-width: 80%;
+      max-height: 80%;
+      @include flex-center;
+      border-radius: 25%;
+      background-color: gray;
+      &.alert-icon {
+        height: 24px;
+        background-color: darken($alert, 15%);
+        border: 2px solid #fff;
+        border-radius: 30px;
+        animation: alert 20s infinite;
+        display: inline-block;
+        .item-info {
+          min-width: 20px;
+          line-height: 20px;
+          margin: 0;
+          text-align: center;
+          padding: 0 5px;
+        }
+        &:hover {
+          animation: none;
+        }
+      }
+    }
+    .item-info {
+      font-size: 75%;
+      margin: 0 5px;
+      color: #fff;
+    }
+    .chat-icon {
+      position: relative;
+      top: 5%;
+      + .item-info {
+        position: absolute;
+        margin: 0;
+      }
+    }
+    .calendar-icon {
+      position: relative; // <--- fix for calendar icon width
+      right: -10px;
+    }
+    .feed-icon {
+      position: relative; // <--- fix for feed icon width
+      right: -5px;
+      top: 6px;
+    }
+  }
+  .tray-divider {
+    width: 1px;
+    height: 60%;
+    background-color: $textGray;
+    margin: 0 1vw;
+  }
+}
+
+.alert-sidebar-trayRTL {
+  position: relative;
+  height: 48px;
+  display: flex;
+  &.empty {
+    background-color: transparent;
+  }
+  // for some reason the daily brief icon isn't styling correctly. fix for now
+  .db-icon-wrapper {
+    @include flex-center;
+    height: 30px;
+    width: 30px;
+    margin: 12px 0.5vw;
+    cursor: pointer;
+    margin-right: 1vw;
+    align-self: center;
+    .calendar-icon {
+      height: 80% !important;
+      position: relative; // <--- fix for calendar icon width
+      top: 2px;
+    }
+  }
+  .link-wrapper {
+    @include flex-center;
+    height: 30px;
+    width: 30px;
+    width: 30px;
+    margin: 12px 0.5vw;
+    cursor: pointer;
+    align-self: center;
+    > div {
+      height: 48px;
+      padding: 0px 0px 0px 0px !important;
+      > span {
+        top: 6px !important;
+        left: -9px !important;
+      }
+    }
+    &:last-of-type {
+      margin-left: 1vw;
+    }
+    &.alert-wrapper {
+      display: flex;
+      position: fixed;
+      right: calc(50vw - 42px);
+      margin: 0 auto;
+      align-items: center;
+      height: 48px;
+      @media (max-width: 600px) {
+        position: static;
+      }
+      span {
+        position: relative;
+        right: 10px;
+        color: #fff !important;
+        @media (max-width: 600px) {
+          display: none;
+        }
+      }
+    }
+    .calendar-icon,
+    .chat-icon,
+    .info-icon {
+      height: 80% !important;
+    }
+
+    .info-icon {
+      vertical-align: middle;
+    }
+
+    .tray-icon {
+      // min-width: 80%;
+      max-height: 80%;
+      @include flex-center;
+      border-radius: 25%;
+      background-color: gray;
+      &.alert-icon {
+        height: 24px;
+        background-color: darken($alert, 15%);
+        border: 2px solid #fff;
+        border-radius: 30px;
+        animation: alert 20s infinite;
+        display: inline-block;
+        .item-info {
+          min-width: 20px;
+          line-height: 20px;
+          margin: 0;
+          text-align: center;
+          padding: 0 5px;
+        }
+        &:hover {
+          animation: none;
+        }
+      }
+    }
+    .item-info {
+      font-size: 75%;
+      margin: 0 5px;
+      color: #fff;
+    }
+    .chat-icon {
+      position: relative;
+      top: 5%;
+      + .item-info {
+        position: absolute;
+        margin: 0;
+      }
+    }
+    .calendar-icon {
+      position: relative; // <--- fix for calendar icon width
+      left: -10px;
+    }
+    .feed-icon {
+      position: relative; // <--- fix for feed icon width
+      left: -5px;
+      top: 6px;
+    }
+  }
+  .tray-divider {
+    width: 1px;
+    height: 60%;
+    background-color: $textGray;
+    margin: 0 1vw;
+  }
+}
+.new-alerts {
+  position: absolute;
+  right: -40px;
+  top: 60px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  .notification-item {
+    height: 70px;
+    background-color: #6f7279;
+    padding: 10px 30px 10px 10px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    animation: 5s ease-in-out 1 slideIn;
+    animation-fill-mode: both;
+    .icon-container {
+      flex: 1;
+      height: 100%;
+      margin-right: 0.5rem;
+    }
+    .info-icon-wrapper {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      i {
+        font-size: 26px;
+        cursor: pointer;
+      }
+    }
+    &.is-priority {
+      background-color: $alert;
+    }
+    &.feedback {
+      background-color: desaturate(lighten(#35b7f3, 0.5), 60%);
+      opacity: 1;
+    }
+    &.undone {
+      opacity: 0.75;
+      background-color: desaturate(lighten(#35b7f3, 0.75), 100%);
+      transition: opacity 0.25s ease-in-out;
+      animation-play-state: paused;
+      animation: 5s ease-in-out 1 slideOut;
+    }
+    .close {
+      display: none;
+    }
+    .text-wrapper {
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 70px;
+      overflow: hidden;
+      .message {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0.25rem 0 0.5rem 0;
+        height: 35px;
+      }
+      .time {
+        font-style: italic;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 4px;
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+// Force drawer to sit under menu bar
+.drawer-container {
+  position: fixed !important;
+  height: calc(100vh - 48px) !important;
+  top: 48px !important;
+  overflow: visible !important;
+}
+
+#notification-tab-wrapper {
+  height: 100%;
+  overflow: auto;
+  // padding-top: 70px;   <-- add this back for absolutely positioned control bar
+  &.adjusted {
+    padding-top: 96px !important;
+  }
+}
+
+#controls-wrapper {
+  // position: absolute;  <-- add this back for absolutely positioned control bar
+  // top: 2px;            <-- add this back for absolutely positioned control bar
+  width: 100%;
+  padding: 10px 15px 15px 0 !important;
+  // background-color: $darkGray2;
+  // background: linear-gradient($darkGray2 60%, transparent);
+  z-index: 99;
+}
+
+// Is this doing anything significant? Toggle back on if necessary
+// #sidebar-inner-wrapper * {
+//     margin: 0;
+//     padding: 0;
+// }
+
+#sidebar-inner-wrapper {
+  height: 100%;
+  // overflow: scroll;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  // padding: 8px 12px; -- this is needed in every place but cameras, find solution
+
+  .tab-root > div {
+    justify-content: space-around;
+  }
+
+  .tab-button {
+    width: auto !important;
+    padding: 0 1rem !important;
+  }
+  // override mat ui
+  button:hover {
+    opacity: 1 !important;
+  }
+
+  .inkbar-full-length {
+    left: 0%;
+    width: 100%;
+    bottom: 0px;
+    display: block;
+    background-color: grey;
+    opacity: 0.2;
+    height: 2px;
+    margin-top: -2px;
+    position: relative;
+    transition: none;
+  }
+
+  .sorry-header {
+    margin-top: 30px;
+    text-align: center;
+    color: $textGray;
+    font-size: 0.8em;
+    &.loading {
+      font-size: 1em;
+    }
+  }
+
+  .margin-container {
+    height: calc(100% - 60px);
+    padding: 0.8rem;
+  }
+}
+
+@keyframes slideOutADButton {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(450px);
+  }
+}
+@keyframes slideInADButton {
+  0% {
+    transform: translateX(450px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.close-alert-drawer {
+  position: absolute !important;
+  left: -30px;
+  display: flex !important;
+  justify-content: center;
+  // top: 48px;
+  width: 30px !important;
+  background-color: $darkGray !important;
+  z-index: 999;
+  &:hover {
+    background-color: $mediumGray !important;
+  }
+  &.ad-closed {
+    display: none !important;
+  }
+  @media (max-width: 750px) {
+    display: none !important;
+  }
+}
+
+.ad-toggle-mobile {
+  background-color: #242426;
+  // padding: 0.3rem 0 0.5rem 0;
+
+  a {
+    cursor: pointer;
+    .close-ad-text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1rem 1rem 1rem 0;
+    }
+    .close-ad-textRTL {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 1rem 0 1rem 1rem;
+    }
+  }
+}
+
+/* entire container, keeps perspective */
+// .flip-container {
+//   perspective: 1000px;
+// }
+
+.flip-container,
+.front,
+.back {
+  width: 100%;
+  height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.4s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  transition: 0.2s;
+}
+
+.flip-container.flip .flipper {
+  transition: 0.4s;
+  transform: rotateY(180deg);
+}
+
+.flip-container.half-flip .flipper {
+  transition: 0.2s;
+  transform: rotateY(90deg);
+}
+
+.news-iframe,
+.facebook-iframe {
+  height: 800px;
+  width: 100%;
+  border: none;
+}
+
+.sidebar-news-feed-selection {
+  padding: 10px 15px 15px 0;
+  display: flex;
+  justify-content: flex-end;
+  .sidebar-news-feed-option {
+    color: $textGray;
+    cursor: pointer;
+    padding-left: 1rem !important;
+    font-size: 14px;
+    font-weight: bold;
+    &.selected {
+      color: #29b6f6;
+    }
+  }
+}
+
+/// DAILY BRIEF ///
+
+/// STYLE OVERRIDES FOR MAT UI ///
+
+@mixin db-material-icon {
+  font-size: 24px !important;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.daily-brief-dialog {
+  .db-date-picker-wrapper h3,
+  .db-time-picker-wrapper h3 {
+    color: $textGray !important;
+  }
+  button span {
+    color: #35b7f3 !important;
+  }
+}
+
+.daily-brief-wrapper {
+  padding-top: 1.5rem;
+  overflow: scroll;
+  max-height: 100%;
+  line-height: normal;
+  .daily-brief-controls {
+    display: flex;
+    justify-content: space-between;
+    .db-new-post {
+      padding: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      h4 {
+        margin-left: 0.5rem !important;
+        margin-bottom: 0 !important;
+      }
+    }
+    .db-archive-selection.db-sidebar > a {
+      color: #29b6f6;
+      cursor: pointer;
+      padding-right: 1rem !important;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  .daily-brief-content {
+    min-height: calc(100vh - 225px);
+    max-height: calc(100vh - 225px);
+    overflow: scroll;
+  }
+  .daily-brief-item {
+    padding: 1rem;
+    margin: 1rem 0;
+    // border-bottom: 1px solid $textGray;
+    background-color: #41444a;
+    border-radius: 5px;
+    .db-subject-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      .db-subject {
+        margin-right: 0.5rem;
+      }
+    }
+    .db-author {
+      // font-family: 'robotolight_italic';
+      font-size: 0.75rem;
+    }
+    .db-subheader {
+      display: flex;
+    }
+    .db-timestamp {
+      margin: 0.25rem 0;
+      color: lighten($textGray, 20%);
+    }
+    .db-description {
+      margin-top: 1rem;
+    }
+    .db-show-attachments {
+      cursor: pointer;
+    }
+    .db-attachments {
+      list-style-type: none;
+      border: 1px dotted lighten($textGray, 20%);
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      .db-attachment-item {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 0.5rem;
+        a {
+          color: lighten(#29b6f6, 5%);
+          font-size: 0.75rem;
+          text-decoration: none;
+        }
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.db-attachments {
+  list-style-type: none;
+  border: 1px dotted $textGray;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  .db-attachment-item {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    a {
+      color: #29b6f6;
+      font-size: 0.75rem;
+    }
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+    &.db-dialog {
+      p {
+        font-weight: 300;
+        span {
+          font-size: 0.75rem;
+          padding-left: 1rem;
+        }
+      }
+      button {
+        padding: 0 12px 0 12px !important;
+        height: auto !important;
+        width: auto !important;
+        span {
+          height: auto !important;
+          width: auto !important;
+        }
+      }
+    }
+  }
+}
+
+.db-attachment {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.db-date-picker-wrapper,
+.db-time-picker-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  align-items: center;
+  // justify-content: space-between;
+  h3 {
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
+  .db-selector-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    @media (max-width: 767px) {
+      justify-content: flex-start;
+    }
+    .db-picker {
+      @media (max-width: 767px) {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.db-error-message {
+  color: $alert;
+  float: right;
+}
+
+.post-delete {
+  position: absolute;
+  right: 1rem;
+  @include db-material-icon;
+}
+
+.targeting-icon {
+  background-image: url("../../static/icons/targeting-icon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+}
+
+#notification-tab-wrapper {
+  .error-message-banner {
+    @include flex-center;
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    right: 0px;
+    background-color: $alert;
+    animation: 0.5s ease-in-out 1 0s errorBar;
+    animation-fill-mode: both;
+    z-index: 99;
+    p {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.25rem;
+      animation-fill-mode: both;
+    }
+  }
+
+  #controls-wrapper {
+    display: block;
+    text-align: right;
+    a {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 0 8px;
+      color: #29b6f6;
+      user-select: none;
+      text-decoration: none;
+      cursor: pointer;
+      &.unavailable {
+        cursor: auto;
+        color: grey;
+      }
+      &.unavailable:hover {
+        text-decoration: none;
+      }
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .notification-group {
+    transition: all 0.3s;
+    &.animating-right {
+      animation: 0.5s ease-in-out 1 clearItemRight;
+    }
+    &.animating-left {
+      animation: 0.5s ease-in-out 1 clearItemLeft;
+    }
+    &.animating {
+      // animation-delay: .25s;
+      animation-fill-mode: both;
+      .day-category,
+      .notification-item,
+      .notification-item * {
+        animation: 0.25s ease-in-out 1 clearEach;
+        animation-delay: 0.75s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    .day-category {
+      position: relative;
+      .close {
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        top: 14px;
+        right: 6px;
+      }
+    }
+
+    .notification-item {
+      width: 100%;
+      height: 70px;
+      background-color: #41444a;
+      padding: 10px 30px 10px 10px;
+      margin-bottom: 14px;
+      border-radius: 5px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: all 0.2s;
+      &.has-error {
+        animation: 1s ease-in-out 1 0s error;
+      }
+      .close {
+        font-size: 18px;
+        cursor: pointer;
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        opacity: 0.5;
+      }
+      .close:hover {
+        opacity: 1;
+      }
+      // .target-container {
+      //   flex: 0.85;
+      //   height: 100%;
+      //   .target {
+      //     display: flex;
+      //     height: 100%;
+      //     align-items: center;
+      //   }
+      // }
+      .icon-container {
+        flex: 1;
+        height: 100%;
+      }
+      .target-icon-wrapper,
+      .info-icon-wrapper {
+        display: flex;
+        // width: 80px;
+        height: 100%;
+        align-items: center;
+        i {
+          font-size: 26px;
+          cursor: pointer;
+        }
+      }
+      .info-icon-wrapper > svg {
+        color: $infoIconGray;
+      }
+      .text-wrapper {
+        padding: 0 6px;
+        flex: 8;
+        display: block;
+        .message {
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom: 0.25rem;
+        }
+        .time {
+          font-style: italic;
+          font-size: 12px;
+          line-height: 16px;
+          margin-top: 4px;
+        }
+      }
+      @media (min-width: 340px) {
+        .text-wrapper {
+          flex: 8;
+        }
+      }
+      &.animating {
+        transform: scale(0);
+        height: 0px;
+        min-height: 0px;
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        z-index: 100;
+      }
+    }
+  }
+
+  .page-loading-container {
+    text-align: center;
+    height: 90px;
+  }
+}
+
+.sorry-header {
+  margin-top: 30px;
+  text-align: center;
+  color: $textGray;
+  font-size: 0.8em;
+  &.loading {
+    font-size: 1em;
+  }
+}

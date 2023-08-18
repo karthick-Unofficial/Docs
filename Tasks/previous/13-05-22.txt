@@ -1,0 +1,12 @@
+Today's Task:
+CB2-5277
+- Worked on Functional Component Conversion Implementation in below files of orion-components:
+    - DockControl/DockControl.jsx
+    - Map/Layers/Alerts/AlertLayer.jsx
+    - Map/Layers/BasicLayer.jsx
+    - Map/Tools/components/ShapeSelect.jsx
+    - Profiles/Widgets/Notes/NotesWidget.jsx
+- Worked on sorting out React-Quill Focus Loss issues in notes widget. Worked on adding below fixes to quill:
+    - Replaced value prop with defaultValue prop in ReactQuill component.
+    - Addressed current state value issues by replacing with Ref values.
+    - Cleared innerHTML of quill editor in cancelEdit.

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  // color: $white;
+}
+
+.appBarWrapperRight button svg {
+  color: white !important;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+body {
+  background-color: $darkGray2;
+  overflow: hidden;
+}
+
+// TODO: Trash once new component created
+.search-field {
+  display: flex;
+  align-items: center;
+  i {
+    color: $transWhite;
+    font-size: 24px;
+    margin-left: 0.5rem;
+  }
+}

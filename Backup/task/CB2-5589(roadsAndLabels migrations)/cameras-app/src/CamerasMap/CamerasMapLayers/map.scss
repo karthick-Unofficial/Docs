@@ -1,0 +1,49 @@
+.distance-tool-wrapper {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	z-index: 1;
+}
+
+.dt-path-info-wrapper {
+	position: absolute;
+	bottom: 1.25rem;
+	right: 9.75rem;
+	display: flex;
+	width: calc(100% - 230px);
+	background-color: rgba(
+		0,
+		0,
+		0,
+		0
+	); // Added a transparent background to prevent unintentional zooming when focused on scrolling chips
+	height: auto;
+	overflow-x: scroll;
+	padding: 0.5rem 1rem;
+	&.mobile {
+		bottom: 3.5rem;
+		width: calc(100% - 60px);
+		right: 70px;
+	}
+	.dt-path-info-tray {
+		width: 100%;
+		display: flex;
+		&.dock-open,
+		&.profile-open {
+			width: calc(100% - 290px); // offsets for ListPanel/EntityProfile
+		}
+		&.dock-open.profile-open {
+			width: calc(100% - 700px); // offsets for ListPanel/EntityProfile
+		}
+	}
+	&.dock-open {
+		width: calc(100% - 535px);
+		// offsets for ListPanel/EntityProfile
+	}
+	&.profile-open {
+		width: calc(100% - 580px); // offsets for ListPanel/EntityProfile
+	}
+	&.dock-open.profile-open {
+		width: calc(100% - 895px); // offsets for ListPanel/EntityProfile
+	}
+}

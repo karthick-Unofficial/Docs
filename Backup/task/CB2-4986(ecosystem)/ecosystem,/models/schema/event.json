@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/event.json",
+  "type": "object",
+  "required": [ "name", "owner", "ownerOrg", "isPublic", "startDate", "sharedWith" ],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "description": "", "type": "string" },
+    "desc": { "Description": "", "type": "string"},
+    "type": { "description": "", "type": "string" },
+    "subtype": { "description": "", "type": "string" },
+    "secureShareSettings": { "type": "object"},
+    "owner": { "description": "", "type": "string" },
+    "ownerOrg": { "description": "", "type": "string" },
+    "isPublic": { "description": "", "type": "boolean" },
+    "sharedWith": { "description": "", "type": "array" },
+    "isTemplate": { "description": "", "type": "boolean" },
+    "startDate": { "description": "", "date": true },
+    "endDate": { "description": "", "date": true },
+    "entityType": { "description": "", "type": "string" },
+    "notes": {"description": "", "type": "string"},
+    "proximities": { "description": "", "type": "array" },
+    "template": {"description": "", "type": "string"},
+    "disabled": { "description": "", "type": "boolean" },
+    "entityData": {
+      "Description": "Variable Data",
+      "type": "object"
+    }
+  }
+}

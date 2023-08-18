@@ -1,0 +1,6 @@
+Today's Task:
+CB2-5277
+- Worked on testing Functional Component Implementations workflow in cameras-app and added minor fixes as well.
+- Worked on fixing mapbox "styledata" event prop issues using ref hook in CamerasMapLayers.jsx.
+- Working on sorting out zoom functionality issues in Cameras-app Map layers.
+- Working on Map filter functionality issues in CamerasListPanel.

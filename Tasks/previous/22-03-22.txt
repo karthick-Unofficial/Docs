@@ -1,0 +1,6 @@
+
+Today's Task:
+- Worked on changes mentioned in Pull Request comments in ecosystem and events-app.
+- Worked on testing api worflow after implementing PR changes in ecosystem.
+- Worked on KNG advancement fixes in Reports-app: "primarily" text and  Column titles localization.
+- Working on material-ui table pagination localization changes in Lists app.

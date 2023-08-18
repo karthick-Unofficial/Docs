@@ -1,0 +1,27 @@
+.rules-widget {
+  .notify-types {
+    padding-top: 5px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    .priority {
+      text-transform: uppercase;
+      color: $alert;
+      font-size: 12px;
+      margin: 0 12px 0 0;
+      font-weight: bold;
+    }
+    i.material-icons {
+      font-size: 15px;
+      margin: 0 2px;
+      color: $transWhite2;
+    }
+  }
+  .rule-info {
+    padding: 0 16px 16px 16px;
+    #rule-statement {
+      padding-top: 16px;
+      line-height: 2;
+    }
+  }
+}

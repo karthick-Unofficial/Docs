@@ -1,0 +1,30 @@
+@import "../node_modules/orion-components/scss/vars.scss";
+@import "../node_modules/orion-components/scss/fonts.scss";
+@import "../node_modules/orion-components/scss/orion-base-styles.scss";
+
+@import "./shared/styles/base.scss";
+@import "../node_modules/orion-components/scss/alert-sidebar.scss";
+@import "../node_modules/orion-components/scss/app-menu.scss";
+@import "../node_modules/orion-components/scss/ptz-controls.scss";
+@import "../node_modules/orion-components/scss/camera-dock.scss";
+@import "../node_modules/orion-components/scss/widgets.scss";
+@import "../node_modules/orion-components/scss/activities.scss";
+@import "../node_modules/orion-components/scss/file-widget.scss";
+@import "../node_modules/orion-components/scss/pinned-items.scss";
+
+@import "./shared/styles/material-icons.scss";
+@import "./shared/styles/widgets.scss";
+@import "./shared/styles/Apps.scss";
+@import "./shared/styles/app-icons.scss";
+@import "./shared/styles/integrations.scss";
+@import "./shared/styles/members.scss";
+@import "./shared/styles/forms.scss";
+@import "./shared/styles/notfound.scss";
+@import "./Organization/org-profile.scss";
+@import "./AppBar/styles/settingsAppBar.scss";
+
+.login-app {
+  @import "./Login/scss/app.scss";
+  @import "./Login/scss/form.scss";
+  @import "./Login/scss/media-q.scss";
+}

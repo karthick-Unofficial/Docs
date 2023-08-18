@@ -1,0 +1,12 @@
+Today's Task:
+CB2-5297 - Login - No message on UI when password has expired
+- Worked on sorting out reasons for No Error Message Displaying in orion-settings/LoginPage.
+- Added relevant hook for componentdidUpdate cycle to populate error message.
+- Updated useOutletContext variable condition with state condition for conditional rendering issues.
+
+CB2-5300 - Rules app - On clicking select track, earlier added entity is removed
+- Worked on replacing individual state objects with single parent state object to overcome state updation issues in rules-app.
+- Worked on fixing removable entity on same tab click issues in TrackMovement/toggleSubject method.
+
+CB2-5299 - Rules app - Crash on refreshing the create rule page
+- Went through exact scenarios to repopulate crash issues faced in create rule page and worked on testing workflow as well.

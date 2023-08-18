@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntityEdit renders 1`] = `
+<a>
+  <i
+    className="material-icons"
+  >
+    edit
+  </i>
+  <span>
+    Edit
+  </span>
+</a>
+`;

@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "http://commandbridge.com/ecosystem/facility.json",
+    "type": "object",
+    "required": [ "entityData", "owner", "ownerOrg", "isPublic" ],
+    "additionalProperties": false,
+    "properties": {
+        "owner": { "type": "string"},
+        "ownerOrg": { "type": "string" },
+        "entityType": { "type": "string"},
+        "feedId": { "type": "string"},
+        "entityData": { "type": "object", 
+            "properties": {
+                "geometry": {
+                    "type": "object",
+                    "properties": {
+                        "coordinates": {
+                            "type": "array"
+                        },
+                        "type": {
+                            "type": "string"
+                        }
+                    }
+                },
+                "properties": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "type": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "isPublic": { "type": "boolean"},
+        "isDeleted": { "type": "boolean"},
+        "createdDate": { "minimum": 1, "date": true },
+        "lastModifiedDate": { "minimum": 1, "date": true }
+    }
+}
+  

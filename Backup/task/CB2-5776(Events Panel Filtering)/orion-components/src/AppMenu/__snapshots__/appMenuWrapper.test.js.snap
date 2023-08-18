@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppMenuWrapper renders 1`] = `
+<div
+  style={
+    Object {
+      "height": 48,
+    }
+  }
+>
+  <AudioAlertPlayer
+    activeAlerts={Object {}}
+    isInitialBatch={true}
+    tts={
+      Object {
+        "enabled": false,
+      }
+    }
+  />
+  <ForwardRef(IconButton)
+    onClick={[Function]}
+    sx={
+      Object {
+        "height": 48,
+        "width": 48,
+      }
+    }
+  >
+    <Memo(ForwardRef(AppsIcon))
+      sx={
+        Object {
+          "color": "#FFF",
+        }
+      }
+    />
+  </ForwardRef(IconButton)>
+</div>
+`;

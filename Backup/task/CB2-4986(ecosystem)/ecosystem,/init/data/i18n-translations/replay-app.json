@@ -1,0 +1,252 @@
+{
+    "appId": "replay-app",
+    "locales": "en",
+    "translations": {
+        "ar": {
+            "newReplay": {
+                "newEventReplay": {
+                    "cancel": "يلغي",
+                    "loadReplay": "تحميل الإعادة",
+                    "search": "بحث في الأرشيف",
+                    "title": "ابحث وحدد حدث"
+                },
+                "newMapReplay": {
+                    "minutes": "الدقائق",
+                    "cancel": "يلغي",
+                    "clipDuration": "مدة المقطع",
+                    "contextMenu": {
+                        "noActions": "لا توجد إجراءات متاحة"
+                    },
+                    "duration": "مدة",
+                    "endDate": "تاريخ / وقت الانتهاء",
+                    "loadReplay": "تحميل الإعادة",
+                    "replayFrame": "إعادة الإطار",
+                    "startDate": "تاريخ / وقت البدء",
+                    "title": "اختر معلمات الوقت. تكبير / عرض الخريطة لضبط منطقة اختيار إعادة التشغيل"
+                },
+                "newTrackReplay": {
+                    "buffer": "حدد المسار وحدد المسافة العازلة",
+                    "cancel": "يلغي",
+                    "clipDuration": "مدة المقطع",
+                    "dateRange": "نطاق الموعد",
+                    "duration": "مدة",
+                    "endDate": "تاريخ / وقت الانتهاء",
+                    "loadReplay": "تحميل الإعادة",
+                    "replayFrame": "إعادة الإطار",
+                    "search": "بحث",
+                    "startDate": "تاريخ / وقت البدء",
+                    "timeParams": "أدخل معلمات الوقت",
+                    "trackDistance": "تتبع مسافة العازلة"
+                },
+                "newZoneReplay": {
+                    "cancel": "يلغي",
+                    "clip": "مدة المقطع",
+                    "duration": "مدة",
+                    "load": "تحميل الإعادة",
+                    "params": "أدخل معلمات الوقت",
+                    "replay": "إعادة الإطار",
+                    "search": "بحث",
+                    "start": "تاريخ / وقت البدء",
+                    "title": "حدد المنطقة وقم بتعيين محددات الوقت"
+                },
+                "replayArchive": {
+                    "searchArchive": "بحث في الأرشيف",
+                    "delete": "حذف العناصر",
+                    "download": "تحميل",
+                    "load": "حمل",
+                    "manage": "إدارة وعرض الإعادة المحفوظة.",
+                    "replay": "إعادة الأرشيف",
+                    "saved": "لم يتم العثور على إعادات محفوظة",
+                    "cancel": "إلغاء",
+                    "confirm": "تؤكد",
+                    "ok": "موافق",
+					"clear":"صافي",
+                    "tableHeaders": {
+                        "type": "اكتب",
+                        "name": "اسم",
+                        "created": "خلقت",
+                        "createdBy": "انشأ من قبل"
+                    },
+                    "deleteReplay": {
+                        "title": {
+                            "areYouSure": "هل أنت متأكد أنك تريد حذف ملف",
+                            "selectedReplay": "اعادتها المختارة",
+                            "s": "س"
+                        }
+                    },
+                    "downloadReplay": "قد يستغرق الأمر بعض الوقت لإكمال طلبك. ستتلقى إشعارًا به ارتباط للتنزيل عند توفر إعادة التشغيل."
+                },
+                "replay": {
+                    "title": "تحديد الخريطة",
+                    "description": "إنشاء إعادة جديدة من تحديد منطقة الخريطة.",
+                    "newReplay": "إعادة جديدة",
+                    "startingPoint": "اختر نقطة البداية لإنشاء إعادة جديدة أو البحث في ملفات إعادة التشغيل المؤرشفة."
+                }
+            },
+            "replay": {
+                "replayCamera": {
+                    "loadAudio": "تحميل الصوت",
+                    "loading": "تحميل الصوت ...",
+                    "mute": "كتم الصوت",
+                    "replayCamera": "إعادة تشغيل الكاميرات",
+                    "unmute": "إعادة الصوت"
+                },
+                "replayToBar": {
+                    "cancel": "يلغي",
+                    "edit": "تعديل",
+                    "name": "اسم",
+                    "save": "يحفظ",
+                    "saveReplay": "احفظ الإعادة",
+                    "replayHelperText": "يجب أن يكون للإعادة اسم",
+                    "title": "اعادتها",
+                    "to": "إلى",
+                    "mins": "الدقائق"
+                },
+                "settingsMenu": {
+                    "TileOptions": {
+                        "base": "الخريطة الأساسية"
+                    },
+                    "settings": {
+                        "camera": "FOVs الكاميرا",
+                        "charts": "مخططات بحرية",
+                        "events": "الأحداث",
+                        "feeds": "الأعلاف",
+                        "lines": "خطوط",
+                        "map": "تسميات الخريطة",
+                        "overlays": "تراكبات الخريطة",
+                        "points": "نقاط",
+                        "polygons": "المضلعات",
+                        "road": "الطرق والتسميات"
+                    }
+				},
+				"replayScreen": {
+					"ok": "موافق",
+					"transactionErrorMessage": "معذرةً ، لم نتمكن من العثور على أي بيانات لإعادة العرض هذه. إذا كنت تعتقد أن هذا خطأ ، فيرجى الاتصال بالدعم."
+                }
+            }
+        },
+        "en": {
+            "newReplay": {
+                "newEventReplay": {
+                    "cancel": "Cancel",
+                    "loadReplay": "Load Replay",
+                    "search": "Search Archieve",
+                    "title": "Search and select Event"
+                },
+                "newMapReplay": {
+                    "minutes": "minutes",
+                    "cancel": "Cancel",
+                    "clipDuration": "Clip Duration",
+                    "contextMenu": {
+                        "noActions": "No actions available"
+                    },
+                    "duration": "Duration",
+                    "endDate": "End Date/Time",
+                    "loadReplay": "Load Replay",
+                    "replayFrame": "Replay Frame",
+                    "startDate": "Start Date/Time",
+                    "title": "Choose time parameters. Zoom/Pan map to set Replay selection area"
+                },
+                "newTrackReplay": {
+                    "buffer": "Select track and set distance buffer",
+                    "cancel": "Cancel",
+                    "clipDuration": "Clip Duration",
+                    "duration": "Duration",
+                    "endDate": "End Date/Time",
+                    "loadReplay": "Load Replay",
+                    "replayFrame": "Replay Frame",
+                    "search": "Search",
+                    "startDate": "Start Date/Time",
+                    "timeParams": "Enter time parameters",
+                    "trackDistance": "Track distance buffer",
+                    "dateRange": "Date Range"
+                },
+                "newZoneReplay": {
+                    "cancel": "Cancel",
+                    "clip": "Clip Duration",
+                    "duration": "Duration",
+                    "load": "Load Replay",
+                    "params": "Enter time parameters",
+                    "replay": "Replay Frame",
+                    "search": "Search",
+                    "start": "Start Date/Time",
+                    "title": "Select zone and set time paramerters"
+                },
+                "replayArchive": {
+                    "searchArchive": "Search Archive",
+                    "delete": "Delete Items",
+                    "download": "Download",
+                    "load": "Load",
+                    "manage": "Manage and view saved Replays.",
+                    "replay": "Replay Archive",
+                    "saved": "No Saved Replays Found",
+                    "cancel": "CANCEL",
+                    "confirm": "CONFIRM",
+                    "ok": "Ok",
+					"clear" : "Clear",
+                    "tableHeaders": {
+                        "type": "Type",
+                        "name": "Name",
+                        "created": "Created",
+                        "createdBy": "Created by"
+                    },
+                    "deleteReplay": {
+                        "title": {
+                            "areYouSure": "Are you sure you want to delete the ",
+                            "selectedReplay": "selected replay",
+                            "s": "s"
+                        }
+                    },
+                    "downloadReplay": "It may take some time to complete your request. You will receive a notification with a link to download when the replay is available."
+                },
+                "replay": {
+                    "title": "Map Selection",
+                    "description": "Generate new Replay from map area selection.",
+                    "newReplay": "New Replay",
+                    "startingPoint": "Choose starting point to generate new Replay or search archived Replay files."
+                }
+            },
+            "replay": {
+                "replayToBar": {
+                    "edit": "Edit",
+                    "save": "Save",
+                    "saveReplay": "Save the Replay",
+                    "name": "Name",
+                    "cancel": "Cancel",
+                    "replayHelperText": "The Replay must have a name",
+                    "title": "Replay",
+                    "to": "to",
+                    "mins": "mins"
+                },
+                "replayCamera": {
+                    "replayCamera": "Replay Cameras",
+                    "loadAudio": "Load Audio",
+                    "loading": "Loading Audio...",
+                    "unmute": "Unmute Audio",
+                    "mute": "Mute Audio"
+                },
+                "settingsMenu": {
+                    "TileOptions": {
+                        "base": "BASE MAP"
+                    },
+                    "settings": {
+                        "map": "Map Labels",
+                        "camera": "Camera FOVs",
+                        "overlays": "MAP OVERLAYS",
+                        " charts": "Nautical Charts",
+                        "road": "Roads and Labels",
+                        "feeds": "FEEDS",
+                        "events": "Events",
+                        " points": "Points",
+                        "polygons": "Polygons",
+                        "lines": "Lines"
+                    }
+				},
+				"replayScreen": {
+					"ok": "Ok",
+					"transactionErrorMessage": "Sorry, we were unable to find any data for this replay. If you believe this is an error, please contact support."
+                }
+            }
+        }
+    }
+}

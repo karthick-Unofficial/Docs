@@ -1,0 +1,11 @@
+{
+    "appId": "terminal-app",
+    "config": {
+        "clientConfig": {},
+        "clientId": "5a34ed7c-6e7f-429c-bceb-6ba37afc31b0",
+        "clientSecret": "03c06006-608a-430d-a2be-0e44317b0469",
+        "processes": [],
+        "name": "Terminal App"
+    },
+    "id": "e8048ad3-e4b1-4b11-bf44-e06ed6a78197"
+}

@@ -1,0 +1,381 @@
+.widgets-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	.widget-wrapper {
+		background-color: $darkGray2;
+	}
+
+	.activity-list-wrapper {
+		background-color: $darkGray2;
+	}
+}
+
+.widget-wrapper {
+	// background-color: $darkGray2;
+	// height: 100%;
+	margin-top: 0.25rem;
+	border-radius: 5px;
+	padding: 10px;
+
+	.widget-header {
+		display: flex;
+		align-items: center;
+		min-height: 48px;
+
+		.widget-icon {
+			margin-right: 1rem;
+
+			i {
+				font-size: 2rem;
+			}
+		}
+
+		.widget-header-buttons {
+			margin-left: auto;
+			display: flex;
+		}
+
+		.widget-expand-button {
+			button {
+				color: #fff;
+
+				&:hover {
+					background: transparent;
+				}
+			}
+		}
+	}
+
+	.widget-content {
+		height: 100%;
+		flex-direction: column;
+	}
+
+	.widget-item {
+		margin-bottom: 0.75rem;
+	}
+
+	&.expanded {
+		background-color: transparent;
+		max-height: calc(100vh - 48px);
+		overflow: scroll;
+
+		height: calc(100% - 76px);
+		;
+	}
+}
+
+.video-player-wrapper {
+	&.large {
+		max-height: 100%;
+		height: 100%;
+	}
+}
+
+.maintain-width-aspect-ratio-box {
+	height: 0;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 56.25%;
+	background: #000;
+	position: relative;
+
+	.aspect-ratio-box-inside {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.maintain-height-aspect-ratio-box {
+	height: 100%;
+	overflow: hidden;
+	background: #000;
+	position: relative;
+
+	.aspect-ratio-helper {
+		display: block;
+		width: auto;
+		height: 100%;
+	}
+
+	.aspect-ratio-box-inside {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@for $i from 1 through 100 {
+	.index-#{$i} {
+		order: $i;
+	}
+}
+
+.target {
+	height: 24px; // fix for irregular height on targeting icon
+}
+
+// Placing DetailWidget styles here until CSS refactor
+.details-widget {
+	flex-grow: 0 !important;
+	display: flex;
+	flex-direction: column;
+
+	.track-details-list {
+		list-style-type: none;
+		padding-left: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-bottom: 1rem;
+
+		.track-detail-item {
+			margin: 6px 0;
+			// min-width: 33%;
+			max-width: 33%;
+			display: flex;
+			flex-direction: column;
+			padding: 0 0.5rem;
+
+			* {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			.detail-key {
+				margin: 0;
+				font-size: 0.75rem;
+				color: $textGray;
+			}
+
+			.detail-value {
+				margin: 0;
+				color: #fff;
+				font-size: 1.75rem;
+				font-weight: 300;
+
+				span {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+
+	.flag-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+
+		.flag {
+			height: 20px;
+			width: 28px;
+			z-index: 9999;
+			position: relative;
+			top: 0.5rem;
+		}
+
+		.country-code {
+			position: relative;
+			top: 0.5rem;
+		}
+
+		.country-tooltip {
+			position: absolute;
+			top: -2.5rem;
+			font-size: 0.75rem;
+			background-color: $darkGray;
+			color: #fff;
+			padding: 0.25rem;
+			border: 1px solid #fff;
+		}
+	}
+
+	.track-details-table {
+		margin-bottom: 1rem;
+	}
+
+	.ep-load-more {
+		align-self: flex-end;
+		font-size: 14px;
+	}
+}
+
+//condition-dialog and setSchedule-dialog 
+
+.condition-dialog-wrapper,
+.schedule-dialog-wrapper {
+	padding: 0px 24px 24px;
+	overflow-y: auto;
+}
+
+
+.condition-dialog hr,
+.schedule-dialog hr {
+	display: none;
+}
+
+.condition-dialog,
+.schedule-dialog {
+	min-height: 180px;
+	max-width: 600px;
+
+	p {
+		font-style: italic;
+		display: inline-block;
+		color: white;
+		font-family: 'roboto';
+		font-size: 14px;
+	}
+
+	h4 {
+		font-style: italic;
+		color: white;
+		font-size: 14px;
+		display: inline-block;
+	}
+
+	.dialog-error {
+		color: red;
+		display: block;
+		margin: 10px 0;
+	}
+
+	.speed-wrapper {
+		display: flex;
+		align-items: center
+	}
+
+	.speed-units {
+		display: inline-block;
+		color: white;
+	}
+
+	.collection-select,
+	.condition-select {
+		width: 100% !important;
+	}
+
+	.time-condition {
+		padding: 14px 0;
+	}
+
+	.condition-subheader {
+		margin-top: 25px;
+		margin-bottom: 12px;
+	}
+
+	.weekday-selector {
+		padding: 0 0 20px 0;
+		margin-bottom: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		-webkit-flex-flow: row wrap;
+		justify-content: flex-start;
+
+		.weekday {
+			background: transparent;
+			margin: 5px 0;
+			border-radius: 100%;
+			border: 1px solid $textGray;
+			line-height: 3rem;
+			height: 48px;
+			width: 48px;
+			cursor: pointer;
+			margin-right: .5rem;
+			color: $textGray;
+			font-weight: bold;
+			font-size: 1em;
+			text-align: center;
+
+			&:hover {
+				border: 1px solid #00bcd4;
+				color: #00bcd4;
+			}
+
+			&.toggled,
+			&.toggled:hover {
+				background: #00bcd4;
+				border: none;
+				color: #fff;
+			}
+		}
+	}
+
+
+	.time-of-day-container {
+		padding: 10px 0;
+
+		&.disabled {
+			opacity: .4;
+		}
+	}
+
+
+	.time-wrapper,
+	.date-wrapper {
+		opacity: 1;
+		transition: opacity .2s;
+		color: #fff;
+
+		&.disabled {
+			opacity: .4;
+		}
+
+		span {
+			margin-right: 6px;
+		}
+
+		input {
+			color: #fff !important;
+		}
+
+		>div {
+			margin-top: 8px !important;
+			margin-left: 0 !important;
+		}
+	}
+
+
+	.time-input-wrapper {
+		background-color: #1F1F21;
+		border: none;
+		position: relative;
+		display: inline-flex;
+		color: white;
+		width: 90px;
+		height: 36px;
+		margin: 16px 6px;
+		font-family: 'roboto';
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+
+
+		.time-input {
+			text-align: center;
+			font-family: 'roboto';
+			width: 26px;
+			background-color: #1F1F21;
+			border: none;
+			color: white;
+		}
+
+	}
+
+}

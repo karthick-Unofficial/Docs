@@ -1,0 +1,5 @@
+Today's Task:
+- Worked on localizing Rule Statement in ViewRules page and worked on fixing Object issues faced while rendering Rules statement.
+- Worked on fixing Date/time locale issues faced in Replay app PlayBarContainer.
+- Worked on sorting ways to implement CBComponent Datepicker for material-ui(v.0.2) replacement in Rules app.
+- Analyzing code flow & main cause of issues faced in Alert profile escalate functionality.

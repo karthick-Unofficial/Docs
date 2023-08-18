@@ -1,0 +1,61 @@
+#root {
+	height: 100vh;
+	overflow: hidden;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+	// color: $white;
+}
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto";
+}
+
+a {
+	color: $link;
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+:focus {
+	outline: 0;
+}
+
+//// Sidebar tweak
+
+#sidebar-inner-wrapper h4 {
+	margin: 0 0 0.25rem 0;
+}
+
+.scrollbar:-webkit-scrollbar-track {
+	-webkit-box-shadow: none;
+	background-color: $darkGray;
+}
+
+.scrollbar::-webkit-scrollbar {
+	width: 6px;
+	background-color: $darkGray;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+	background-color: #41454a;
+	border-radius: 10px;
+}

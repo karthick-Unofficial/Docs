@@ -1,0 +1,138 @@
+{
+	"appId": "map-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"listPanel": {
+				"entityCollection": {
+					"entityCollectionEdit": {
+						"copyToNew": "Copy to New Collection",
+						"deleteDialog": {
+							"confirmText": "Are you sure that you want to delete this collection?",
+							"title": "DELETE COLLECTION?"
+						},
+						"dockItemLabel": "My Items",
+						"emptyColl": "Collection is Empty",
+						"flatButtonLabel": {
+							"cancel": "Cancel",
+							"confirm": "Confirm",
+							"delete": "DELETE"
+						}
+					},
+					"item": "%{count} Item",
+					"items": "%{count} Items",
+					"manage": "Manage",
+					"sharedWithMe": "Shared with Me"
+				},
+				"entityProfile": {
+					"phoenixDropzone": {
+						"addFilesBtn": "Add Files"
+					}
+				},
+				"hiddenEntityDialog": {
+					"cancel": "Cancel",
+					"event": "Event",
+					"save": "Save",
+					"title": "Hidden Items"
+				},
+				"listPanel": {
+					"collectionsShared": "Collections Shared with Me",
+					"eventsShared": "Events Shared with Me",
+					"hiddenItems": "Hidden Items",
+					"item": "1 Item",
+					"items": "%{count} Items",
+					"manageBtn": "Manage",
+					"myCollections": "My Collections",
+					"myEvents": "My Events",
+					"placeholder": {
+						"searchColl": "Search Collections...",
+						"searchEvents": "Search Events...",
+						"wantToFind": "I want to find..."
+					},
+					"tabLabel": {
+						"collections": "Collections",
+						"events": "Events",
+						"search": "Search"
+					},
+					"eventFilters": {
+						"active": "Active",
+						"scheduled": "Scheduled",
+						"closed": "Closed",
+						"noActive": "No active events.",
+						"noScheduled": "No scheduled events.",
+						"noClosed": "No closed events.",
+						"noResults": "No results found."
+					}
+				},
+				"listPanelMobileToggle": {
+					"openListPanel": "OPEN LIST PANEL",
+					"viewMap": "VIEW MAP"
+				},
+				"searchResults": {
+					"matchingResult": "%{count} Matching Result",
+					"matchingResults": "%{count} Matching Results",
+					"unknown": "Unknown"
+				}
+			},
+			"mapAppBar": {
+				"listItem": {
+					"cameraFOV": "Camera FOVs",
+					"events": "Events",
+					"lines": "Lines",
+					"mapLabels": "Map Labels",
+					"nauticalCharts": "Nautical Charts",
+					"points": "Points",
+					"polygons": "Polygons",
+					"roadsLabels": "Roads and Labels",
+					"ssrRadar": "SSR Radar",
+					"weatherRadar": "Weather Radar"
+				},
+				"subHeader": {
+					"baseMap": "BASE MAP",
+					"feeds": "FEEDS",
+					"mapOverlays": "MAP OVERLAYS"
+				},
+				"tileHeader": {
+					"color": "Color",
+					"grayScale": "Grayscale",
+					"night": "Night",
+					"satellite": "Satellite"
+				},
+				"title": "Map"
+			},
+			"mapBase": {
+				"contextMenu": {
+					"appContextMenu": {
+						"createEvent": "Create Event",
+						"initiateSpotlight": "Initiate Spotlight",
+						"toggleHistory": "Toggle History"
+					},
+					"newEventContextMenu": {
+						"newEvent": "New Event",
+						"noTemplate": "New Event (No Template)"
+					}
+				}
+			},
+			"shared": {
+				"dockItemAdd": {
+					"addBox": "add_box",
+					"check": "check"
+				},
+				"dockItemRemove": {
+					"close": "close"
+				}
+			},
+			"spotLight": {
+				"resumeSpotlightDialog": {
+					"close": "Close",
+					"spotlight": "Spotlight %{count}",
+					"textContent": "Active spotlight(s) found. Please select any spotlights you'd like to resume.",
+					"title": "Resume Spotlight(s)"
+				},
+				"spotLightWindow": {
+					"spotlight": "Spotlight"
+				}
+			}
+		}
+	}
+}

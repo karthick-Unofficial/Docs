@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton renders 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "border": "none",
+      "color": "white",
+    }
+  }
+>
+  <i
+    className="material-icons"
+  />
+</button>
+`;

@@ -1,0 +1,13 @@
+Today's Task:
+CB2-5277
+- Worked on testing code flow and handling issues in functional component implementation on below files of orion-components:
+    - Map\Tools\DistanceTool\DistanceTool.jsx
+    - Profiles\AccessPointProfile\AccesPointProfile.jsx
+    - Profiles\AlertProfile\AlertProfile.jsx
+    - Profiles\EntityProfile\components\ShapeAssociation.jsx
+    - Profiles\Widgets\Cameras\components\CameraCard.jsx
+    - Profiles\Widgets\Hrms\EquipmentWidget.jsx
+    - Profiles\Widgets\Hrms\ResourceWidget.jsx
+    - Profiles\Widgets\List\ListWidget.jsx
+CB2-5293
+- Working on User Profile Not Loading issues in orion-settings app.

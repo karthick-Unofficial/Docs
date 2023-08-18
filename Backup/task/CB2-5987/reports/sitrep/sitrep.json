@@ -1,0 +1,147 @@
+{
+	"name": "mainpage.list.eventTitle",
+	"id": "sitrep",
+	"queryScript": "sitrep.js",
+	"pdfOnly": true,
+	"desc": "mainpage.list.eventDesc",
+	"category": "event-report",
+	"groupedResults": false,
+	"fields": [
+		{
+			"name": "events",
+			"type": "drop-down-menu",
+			"desc": "Choose an event",
+			"noMultiple": true,
+			"endpoint": {
+				"basePath": "ecosystem/api/events",
+				"template": null,
+				"debounce": false
+			}
+		}
+	],
+	"type": {
+		"multi": [
+			{
+				"type": "field",
+				"property": "owner",
+				"header": "eventCreatedBy"
+			},
+			{
+				"type": "field",
+				"property": "shares",
+				"header": "eventSharing"
+			},
+			{
+				"type": "field",
+				"property": "startDate",
+				"header": "startDate"
+			},
+			{
+				"type": "field",
+				"property": "startTime",
+				"header": "startTime"
+			},
+			{
+				"type": "field",
+				"property": "closeDate",
+				"header": "closeDate"
+			},
+			{
+				"type": "field",
+				"property": "closeTime",
+				"header": "closeTime"
+			},
+			{
+				"type": "long-field",
+				"property": "desc",
+				"header": "eventDescription"
+			},
+			{
+				"type": "long-field",
+				"property": "notes",
+				"header": "notes"
+			},
+			{
+				"type": "table",
+				"property": "pinnedItems",
+				"header": "pinnedItems",
+				"columns": [
+					{
+						"property": "item",
+						"displayName": "Item",
+						"width": 1,
+						"sortable": true
+					},
+					{
+						"property": "pinnedBy",
+						"displayName": "Pinned by",
+						"width": 1,
+						"sortable": true
+					}
+				]
+			},
+			{
+				"type": "table",
+				"property": "activities",
+				"header": "activities",
+				"columns": [
+					{
+						"property": "desc",
+						"displayName": "desc",
+						"width": 1,
+						"sortable": true
+					},
+					{
+						"property": "time",
+						"displayName": "posted",
+						"width": 1,
+						"sortable": true
+					},
+					{
+						"property": "createdBy",
+						"displayName": "postedBy",
+						"width": 1,
+						"sortable": true
+					}
+				]
+			},
+			{
+				"type": "table",
+				"property": "lists",
+				"header": "lists"
+			},
+			{
+				"type": "table",
+				"property": "files",
+				"header": "files",
+				"columns": [
+					{
+						"property": "name",
+						"displayName": "name",
+						"width": 1,
+						"sortable": true
+					},
+					{
+						"property": "type",
+						"displayName": "type",
+						"width": 1,
+						"sortable": true
+					}
+				]
+			},
+			{
+				"type": "table",
+				"property": "cameras",
+				"header": "cameras",
+				"columns": [
+					{
+						"property": "name",
+						"displayName": "name",
+						"width": 1,
+						"sortable": true
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,147 @@
+{
+	"name": "mainpage.list.threadTitle",
+	"id": "thread-report",
+	"queryScript": "thread-report.js",
+	"pdfOnly": true,
+	"desc": "mainpage.list.threadDesc",
+	"category": "event-report",
+	"groupedResults": false,
+	"fields": [
+		{
+			"name": "events",
+			"type": "drop-down-menu",
+			"desc": "Choose a thread",
+			"noMultiple": true,
+			"endpoint": {
+				"basePath": "ecosystem/api/events/eventType/sc_thread",
+				"template": null,
+				"debounce": false
+			}
+		}
+	],
+	"type": {
+		"multi": [
+			{
+				"type": "field",
+				"property": "owner",
+				"header": "Thread Created By"
+			},
+			{
+				"type": "field",
+				"property": "pointsOfContact",
+				"header": "Points of Contact"
+			},
+			{
+				"type": "field",
+				"property": "startDate",
+				"header": "Start Date"
+			},
+			{
+				"type": "field",
+				"property": "startTime",
+				"header": "Start Time"
+			},
+			{
+				"type": "field",
+				"property": "closeDate",
+				"header": "Close Date"
+			},
+			{
+				"type": "field",
+				"property": "closeTime",
+				"header": "Close Time"
+			},
+			{
+				"type": "long-field",
+				"property": "desc",
+				"header": "Description"
+			},
+			{
+				"type": "long-field",
+				"property": "notes",
+				"header": "Notes"
+			},
+			{
+				"type": "table",
+				"property": "pinnedItems",
+				"header": "Pinned Items",
+				"columns": [
+					{
+						"property": "item",
+						"displayName": "Item",
+						"width": 1,
+						"sortable": true
+					},
+					{
+						"property": "pinnedBy",
+						"displayName": "Pinned by",
+						"width": 1,
+						"sortable": true
+					}
+				]
+			},
+			{
+				"type": "table",
+				"property": "activities",
+				"header": "Activities",
+				"columns": [
+					{
+						"property": "desc",
+						"displayName": "Description",
+						"width": 1,
+						"sortable": true
+					},
+					{
+						"property": "time",
+						"displayName": "Posted",
+						"width": 1,
+						"sortable": true
+					},
+					{
+						"property": "createdBy",
+						"displayName": "Posted by",
+						"width": 1,
+						"sortable": true
+					}
+				]
+			},
+			{
+				"type": "table",
+				"property": "lists",
+				"header": "Lists"
+			},
+			{
+				"type": "table",
+				"property": "files",
+				"header": "Files",
+				"columns": [
+					{
+						"property": "name",
+						"displayName": "Name",
+						"width": 1,
+						"sortable": true
+					},
+					{
+						"property": "type",
+						"displayName": "Type",
+						"width": 1,
+						"sortable": true
+					}
+				]
+			},
+			{
+				"type": "table",
+				"property": "cameras",
+				"header": "Cameras",
+				"columns": [
+					{
+						"property": "name",
+						"displayName": "Name",
+						"width": 1,
+						"sortable": true
+					}
+				]
+			}
+		]
+	}
+}

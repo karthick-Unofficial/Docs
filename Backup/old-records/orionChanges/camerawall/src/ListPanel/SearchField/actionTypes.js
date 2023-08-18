@@ -1,0 +1,1 @@
+export const SET_STAGED_ITEM = "SET_STAGED_ITEM";

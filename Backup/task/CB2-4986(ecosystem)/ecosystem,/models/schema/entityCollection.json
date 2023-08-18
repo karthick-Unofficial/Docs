@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/entityCollections.json",
+  "type": "object",
+  "required": [ "entities", "name", "owner", "ownerOrg", "sharedWith" ],
+  "additionalProperties": false,
+  "properties": {
+    "createdDate": { "minimum": 1, "type": "number" },
+    "isDeleted": { "description": "", "type": "boolean" },
+    "entityType": {"type": "string", "description": ""},
+    "name": { "description": "", "type": "string" },
+    "owner": { "description": "", "type": "string" },
+    "ownerOrg": { "description": "", "type": "string" },
+    "lastModifiedDate": { "minimum": 1, "type": "number" },
+    "sharedWith": {
+      "type": "object"
+    },
+    "entities": {
+      "description": "",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

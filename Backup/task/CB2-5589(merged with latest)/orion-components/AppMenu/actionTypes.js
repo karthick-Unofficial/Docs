@@ -1,0 +1,19 @@
+"use strict";
+
+var _Object$defineProperty = require("@babel/runtime-corejs3/core-js-stable/object/define-property");
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.REQUEST_LOGOUT = exports.LOGIN_SUCCESS = exports.LOGIN_REQUEST = exports.LOGIN_FAILURE = exports.IDENTITY_INVALIDATED = exports.HYDRATE_USER_SUCCESS = void 0;
+var HYDRATE_USER_SUCCESS = "HYDRATE_USER_SUCCESS";
+exports.HYDRATE_USER_SUCCESS = HYDRATE_USER_SUCCESS;
+var REQUEST_LOGOUT = "REQUEST_LOGOUT";
+exports.REQUEST_LOGOUT = REQUEST_LOGOUT;
+var IDENTITY_INVALIDATED = "IDENTITY_INVALIDATED";
+exports.IDENTITY_INVALIDATED = IDENTITY_INVALIDATED;
+var LOGIN_REQUEST = "LOGIN_REQUEST";
+exports.LOGIN_REQUEST = LOGIN_REQUEST;
+var LOGIN_FAILURE = "LOGIN_FAILURE";
+exports.LOGIN_FAILURE = LOGIN_FAILURE;
+var LOGIN_SUCCESS = "LOGIN_SUCCESS";
+exports.LOGIN_SUCCESS = LOGIN_SUCCESS;

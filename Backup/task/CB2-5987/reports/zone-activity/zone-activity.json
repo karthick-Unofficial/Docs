@@ -1,0 +1,116 @@
+{
+	"name": "mainpage.list.zoneTitle",
+	"id": "zone-activity",
+	"queryScript": "zoneActivity.js",
+	"desc": "mainpage.list.zoneDesc",
+	"category": "vessel-report",
+	"groupedResults": true,
+	"fields": [
+		{
+			"name": "zones",
+			"type": "drop-down-menu",
+			"desc": "mainpage.reports.zone",
+			"endpoint": {
+				"basePath": "ecosystem/api/shapes/by-geo-type/polygon",
+				"template": null,
+				"debounce": false
+			}
+		},
+		{
+			"name": "entities",
+			"type": "type-ahead-search",
+			"typeAheadClear": true,
+			"desc": "mainpage.reports.entities",
+			"endpoint": {
+				"basePath": "ecosystem/api/feedEntities",
+				"params": {
+					"q": "term"
+				},
+				"template": "q",
+				"debounce": true
+			}
+		},
+		{
+			"name": "startDate",
+			"type": "date-picker",
+			"desc": "Start Date"
+		},
+		{
+			"name": "endDate",
+			"type": "date-picker",
+			"desc": "End Date"
+		}
+	],
+	"type": {
+		"table": {
+			"columns": [
+				{
+					"property": "name",
+					"width": 1,
+					"displayName": "vesselName",
+					"sortable": true
+				},
+				{
+					"property": "mmsid",
+					"width": 1,
+					"displayName": "mmsid",
+					"sortable": false
+				},
+				{
+					"property": "imo",
+					"width": 1,
+					"displayName": "imo",
+					"sortable": false
+				},
+				{
+					"property": "callsign",
+					"width": 1,
+					"displayName": "callSign",
+					"sortable": false
+				},
+				{
+					"property": "timestamp",
+					"width": 2,
+					"displayName": "positionDateTime",
+					"sortable": true
+				},
+				{
+					"property": "speed",
+					"width": 1,
+					"displayName": "speed",
+					"sortable": true
+				},
+				{
+					"property": "hdg",
+					"width": 1,
+					"displayName": "heading",
+					"sortable": false
+				},
+				{
+					"property": "course",
+					"width": 1,
+					"displayName": "course",
+					"sortable": false
+				},
+				{
+					"property": "lat",
+					"width": 1,
+					"displayName": "latitude",
+					"sortable": false
+				},
+				{
+					"property": "lng",
+					"width": 1,
+					"displayName": "longitude",
+					"sortable": false
+				},
+				{
+					"property": "event",
+					"width": 1,
+					"displayName": "event",
+					"sortable": false
+				}
+			]
+		}
+	}
+}

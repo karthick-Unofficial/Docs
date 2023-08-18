@@ -1,0 +1,236 @@
+import { userService, entityCollection } from "client-app-core";
+import * as t from "../../actionTypes";
+import union from "lodash/union";
+import { createUserFeedback } from "orion-components/Dock/Actions/index.js";
+import { selectFloorPlan } from "../FacilityProfile/facilityProfileActions";
+
+export function addedToMyItems(ids) {
+	return {
+		type: t.ADDED_TO_MY_ITEMS,
+		ids
+	};
+}
+
+// No Longer used
+export function removedFromMyItems(ids) {
+	return {
+		type: t.REMOVED_FROM_MY_ITEMS,
+		ids
+	};
+}
+
+export const selectFloorPlanOn = (floorplan, feedId) => {
+	return (dispatch) => {
+		dispatch(selectFloorPlan(floorplan, feedId));
+	};
+};
+
+export function removeFromMyItems(entityIds, undoing) {
+	return (dispatch, getState) => {
+		// Result of save isn't consequential enough for us to care so we go ahead and update locally here
+		dispatch(removedFromMyItems(entityIds));
+
+		const state = getState();
+
+		// Get copy of current dock items
+		const dockItems = state.appState.dockItems.slice();
+
+		// Append if not present
+		const newDockItems = dockItems.filter((id) => {
+			return entityIds.map((entity) => {
+				return id !== entity.id;
+			});
+		});
+
+		const app = "map-app";
+		const keyVal = { dockItems: newDockItems };
+		userService.setAppState(app, keyVal, (err, result) => {
+			if (err) {
+				console.log(err);
+			} else {
+				if (!undoing) {
+					const undo = true;
+					const undoFunc = () => {
+						// entityName = null as number of items vary on removal
+						dispatch(addAllToMyItems(entityIds, null, undo));
+					};
+
+					const messageBody =
+						entityIds.length > 1
+							? " items removed from "
+							: " item removed from ";
+
+					dispatch(
+						createUserFeedback(
+							entityIds.length + messageBody + "My Items.",
+							undoFunc
+						)
+					);
+				}
+			}
+		});
+	};
+}
+
+export function addAllToMyItems(entityIds, entityName, undoing) {
+	return function (dispatch, getState) {
+		const state = getState();
+		const dockItems = state.appState.dockItems || [];
+		const app = "map-app";
+		const keyVal = { dockItems: union(dockItems, entityIds) };
+		userService.setAppState(app, keyVal, (err, result) => {
+			if (err) {
+				console.log(err);
+			} else {
+				if (!undoing) {
+					const undo = true;
+
+					const undoFunc = () => {
+						dispatch(removeFromMyItems(entityIds, undo));
+					};
+
+					dispatch(
+						createUserFeedback(
+							entityName + " added to My Items.",
+							undoFunc
+						)
+					);
+				}
+				dispatch(addedToMyItems(entityIds));
+			}
+		});
+	};
+}
+
+// Only used to undo the below removeFromCollection action
+export function addToCollection(
+	collectionName,
+	collectionId,
+	members,
+	entityName,
+	undoing
+) {
+	return function (dispatch) {
+		entityCollection.addMembers(collectionId, members, (err, response) => {
+			if (err) {
+				console.log(err);
+			} else {
+				if (!undoing) {
+					const undo = true;
+					const undoFunc = () => {
+						dispatch(
+							removeFromCollection(
+								collectionName,
+								collectionId,
+								members,
+								undo
+							)
+						);
+					};
+
+					dispatch(
+						createUserFeedback(
+							entityName + " added to " + collectionName + ".",
+							undoFunc
+						)
+					);
+				}
+			}
+		});
+	};
+}
+
+export function removeFromCollection(
+	collectionName,
+	collectionId,
+	members,
+	undoing
+) {
+	return function (dispatch) {
+		entityCollection.removeMembers(
+			collectionId,
+			members,
+			(err, response) => {
+				if (err) {
+					console.log(err);
+				} else {
+					if (!undoing) {
+						const undo = true;
+						const undoFunc = () => {
+							// entityName = null as number of items vary on removal
+							dispatch(
+								addToCollection(
+									collectionName,
+									collectionId,
+									members,
+									null,
+									undo
+								)
+							);
+						};
+
+						const messageBody =
+							members.length > 1
+								? " items removed from "
+								: " item removed from ";
+
+						dispatch(
+							createUserFeedback(
+								members.length +
+									messageBody +
+									collectionName +
+									".",
+								undoFunc
+							)
+						);
+					}
+				}
+			}
+		);
+	};
+}
+
+export function shareCollectionToOrg(collectionId, orgId) {
+	const shares = {
+		[orgId]: "VIEW/EDIT"
+	};
+	return (dispatch) => {
+		entityCollection.shareCollection(
+			collectionId,
+			shares,
+			(err, result) => {
+				if (err) {
+					console.log(err);
+				}
+			}
+		);
+	};
+}
+
+export function unshareCollectionToOrg(collectionId, orgId) {
+	const shares = {
+		[orgId]: "VIEW/EDIT"
+	};
+	return (dispatch) => {
+		entityCollection.unshareCollection(
+			collectionId,
+			shares,
+			(err, result) => {
+				if (err) {
+					console.log(err);
+				}
+			}
+		);
+	};
+}
+
+// Undoing a rename must be done in the component, as an action cannot call itself.
+export function renameCollection(collectionId, name) {
+	return (dispatch) => {
+		entityCollection.updateCollection(collectionId, name, (err, result) => {
+			if (err) {
+				console.log(err);
+			}
+		});
+	};
+}

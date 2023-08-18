@@ -1,0 +1,90 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "http://commandbridge.com/ecosystem/statusCard.json",
+    "type": "object",
+    "required": [
+        "name",
+        "owner",
+        "ownerOrg",
+        "isPublic",
+        "createdDate",
+        "lastModifiedDate",
+        "sharedWith",
+        "data"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "entityType": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "owner": {
+            "type": "string"
+        },
+        "ownerOrg": {
+            "type": "string"
+        },
+        "isPublic": {
+            "type": "boolean"
+        },
+        "isDeleted": {
+            "type": "boolean"
+        },
+        "createdDate": {
+            "minimum": 1,
+            "date": true
+        },
+        "lastModifiedDate": {
+            "minimum": 1,
+            "date": true
+        },
+        "lastUpdateDate": {
+            "minimum": 1,
+            "date": true
+        },
+        "lastUpdatedBy": {
+            "type": "string"
+        },
+        "sharedWith": {
+            "type": "array"
+        },
+        "template": {
+            "type": "boolean",
+            "description": "Marks the status card as a template. Templates cannot be edited and can be used to create other cards."
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "type",
+                    "attachments"
+                ],
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "selectedIndex": {
+                        "type": "number"
+                    },
+                    "attachments": {
+                        "type": "array"
+                    },
+                    "items": {
+                        "type": "array",
+                        "description": "Stores individual card items. Only used with 'selector' and 'slides' types"
+                    },
+                    "body": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "description": "Stores text body. Only used with 'text' type."
+                    }
+                }
+            }
+        }
+    }
+}

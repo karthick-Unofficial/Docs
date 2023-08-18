@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DockItemTarget renders 1`] = `
+<a
+  className="target"
+  onMouseLeave={[Function]}
+>
+  <Memo(ForwardRef(GpsNotFixedIcon))
+    onMouseEnter={[Function]}
+  />
+</a>
+`;

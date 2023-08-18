@@ -1,0 +1,40 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"id": "http://commandbridge.com/ecosystem/cameraGroup.json",
+	"type": "object",
+	"required": ["cameras", "name", "owner", "ownerOrg", "sharedWith"],
+	"additionalProperties": false,
+	"properties": {
+		"createdDate": {
+			"minimum": 1,
+			"type": "number"
+		},
+		"isDeleted": {
+			"description": "",
+			"type": "boolean"
+		},
+		"name": {
+			"description": "",
+			"type": "string"
+		},
+		"owner": {
+			"description": "",
+			"type": "string"
+		},
+		"ownerOrg": {
+			"description": "",
+			"type": "string"
+		},
+		"lastModifiedDate": {
+			"minimum": 1,
+			"type": "number"
+		},
+		"sharedWith": {
+			"type": "object"
+		},
+		"cameras": {
+			"description": "",
+			"type": "object"
+		}
+	}
+}

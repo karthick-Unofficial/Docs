@@ -1,0 +1,68 @@
+Latest Status(07-02-2022):
+-------------------------------------------------------------------------------------------------------
+Karthick (phase 2):
+Completed:
+1) CB2-5127 - Rules app - Arabic locale - Time condition dialog - 'days' word displayed in english - (Completed)
+2) CB2-5124 - Rules app - Arabic locale - Arrow overlaps on the hint text - (Completed)
+3) CB2-5123 - Rules app - Arabic locale - Speed is displayed in english - (Completed)
+4) CB2-5122 - Rules app - Arabic locale - The data on the create rules page is not translated. - (Completed)
+5) CB2-5121 - Rules app - Arabic locale - Checkboxes in the notification list should be center aligned. - (Completed)
+6) CB2-5118 - Rules app - Arabic locale - UI Issue - Overlapping content - (Completed)
+7) CB2-5129 - System health - Arabic locale - Data is not right aligned. - (Completed / Need to test)
+8) CB2-5163 - Settings - Arabic - Edit Org page - (Completed)
+9) CB2-5162 - Settings - Arabic - 'Last changed on' is displayed in english - (Completed)
+10) CB2-5154 - Settings - Arabic locale - Data is not right aligned on the Manage feed sharing policies page - (Completed)
+11) CB2-5153 - Settings - Arabic locale - Connections shared to your org section has cancel incorrectly placed. - (Completed)
+12) CB2-5155 --->Settings - Arabic locale - The alignment of section header and the contents on the manage feed sharing page needs to be corrected - (Completed)
+13) CB2-5105 - LE Search - Arabic - Word 'Person' is shown in english - (Completed)
+14) CB2-5165 --> Berth - Arabic - The heading of 'Additional Information' is incorrectly aligned - (Completed)
+15) CB2-5164 --> Berth - Arabic - The data in the dropdown is left aligned.- (Completed)
+16) CB2-5100 --> Facilities app - Camera does not show up on the floor plan - (Completed/Need to test)
+17) CB2-5116 Map app - Arabic locale - Create polygon - Stroke type is displayed in english - (Completed) 
+18) CB2-5111 Map app - Arabic locale - Post message is not set to RTL - (Completed) 
+19) CB2-5106 Map app - Arabic locale - Collection count is not translated. - (Completed) 
+20) CB2-5102 Map app - Arabic locale - The units in the path still shows in english - (Completed) 
+21) CB2-5113 Map app - Arabic locale - Pin to, Edit, Delete and Hide is not displayed in Summary widget - (Completed) 
+22) CB2-5112 Map app - Arabic locale - Widget names in edit layout are displayed in english - (Completed)
+
+
+Pending:
+1) CB2-5128 - Rules app - Arabic locale - Unable to set the time duration in the Time constraint dialog
+2) CB2-5119 - Rules app - Arabic locale - Rules statement shows up in English
+
+
+Clarifications:
+1) CB2-5099 - Camera - Wiper on/off switch issue - (Need more clarifications/testing instructions)
+2) CB2-5098 - {Intermittent} Camera app - profile entity of camera does not load - (Not repeating)
+3) CB2-5061 --> Facitlities - App Crashing - (Not repeating)
+4) CB2-5110 Map app - Unlink camera fails with error - (Need clarification/instructions)
+5) CB2-5108 Map app - Arabic locale - Translation in activity timeline filter - (Assigned to scott)
+6) CB2-5107 Map app - Arabic locale - Translation of date on the events tab - (Need clarification)
+
+
+Pull Requests:
+-------------
+map app completed items:
+Branch : CB2-5116,
+Completed Jira Id's: CB2-5116, CB2-5111, CB2-5106, CB2-5102, CB2-5113, CB2-5112
+--------------------------------------------------------------------------------
+rules app completed items:
+Branch : CB2-5128,
+Completed Jira Id's: CB2-5127, CB2-5124, CB2-5123, CB2-5122, CB2-5121, CB2-5118
+--------------------------------------------------------------------------------
+settings app completed items:
+Branch: CB2-5155
+Completed Jira Id's: CB2-5163, CB2-5162, CB2-5154, CB2-5153, CB2-5155
+--------------------------------------------------------------------------------
+orion-component completed items:
+Branch: CB2-5129
+Completed Jira Id's: CB2-5129
+--------------------------------------------------------------------------------
+law-enforcement completed items:
+Branch: CB2-5105
+Completed Jira Id's: CB2-5105
+--------------------------------------------------------------------------------
+Berth-schedule completed items:
+Branch: CB2-5165
+Completed Jira Id's: CB2-5165, CB2-5164
+--------------------------------------------------------------------------------

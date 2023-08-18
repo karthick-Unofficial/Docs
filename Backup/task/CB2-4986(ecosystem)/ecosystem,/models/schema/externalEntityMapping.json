@@ -1,0 +1,21 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"id": "http://commandbridge.com/ecosystem/externalEntityMapping.json",
+	"type": "object",
+	"required": ["targetId", "targetType", "sourceId", "additionalProperties"],
+	"additionalProperties": false,
+	"properties": {
+		"targetId": {
+			"type": "string"
+		},
+		"targetType": {
+			"type": "string"
+		},
+		"sourceId": {
+			"type": "string"
+		},
+		"additionalProperties": {
+			"type": "object"
+		}
+	}
+}

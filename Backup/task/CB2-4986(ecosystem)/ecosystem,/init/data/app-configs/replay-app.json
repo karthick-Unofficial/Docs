@@ -1,0 +1,19 @@
+{
+	"clientConfig": {
+		"app": "replay-app",
+		"supportEmail": {
+			"address": "c2support@aressecuritycorp.com",
+			"subject": "Avert C2 Support Issue",
+			"body": "Correct app?"
+		},
+		"durationOptions": [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60],
+		"mapSettings": {
+			"AERIS_API_KEY": "cq4vb4g7DW4d3H6pbWGSG_Hc2AQ3xUuCjOoqJMahZuCeZfbKtoJFLbqPkt4M8n",
+			"zoom": 3,
+			"center": [
+				-98.2015,
+				39.4346
+			]
+		}
+	}
+}

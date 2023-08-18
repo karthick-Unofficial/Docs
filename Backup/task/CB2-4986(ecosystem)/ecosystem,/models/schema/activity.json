@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/activity.json",
+  "type": "object",
+  "required": [
+    "app",
+    "published",
+    "type",
+    "summary"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "actor": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "url": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "app": {
+      "description": "",
+      "type": "string"
+    },
+    "object": {
+      "type": "object",
+      "properties": {
+        "feedId": {
+          "description": "",
+          "type": "string"
+        },
+        "id": {
+          "description": "",
+          "type": "string"
+        },
+        "filename": {
+          "description": "",
+          "type": "string"
+        },
+        "url": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "published": {
+      "minimum": 1,
+      "date": true
+    },
+    "summary": {
+      "description": "",
+      "type": "string"
+    },
+    "target": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "",
+          "type": "string"
+        },
+        "name": {
+          "description": "",
+          "type": "string"
+        },
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "url": {
+          "description": "",
+          "type": "string"
+        }
+      }
+    },
+    "to": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "description": "",
+            "type": "boolean"
+          },
+          "pushNotification": {
+            "description": "",
+            "type": "boolean"
+          },
+          "system": {
+            "description": "",
+            "type": "boolean"
+          },
+          "token": {
+            "description": "",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "type": {
+      "description": "",
+      "type": "string"
+    },
+    "contextEntities": {
+      "type": "array",
+      "description": "Entities are in context of activity, i.e. nearby cameras",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "entity type id",
+            "type": "string"
+          },
+          "type": {
+            "description": "entity type, i.e. shape, track",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "description": "Geospatial coords of Activity in GeoJSON format",
+      "properties": {
+        "type": {
+          "description": "",
+          "type": "string"
+        },
+        "coordinates": {
+          "type": "array",
+          "description": "2 element array first is decimal longitude, second is decimal longitude",
+          "items": {
+            "description": "",
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

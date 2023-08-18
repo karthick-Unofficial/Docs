@@ -1,0 +1,109 @@
+{
+  "appId": "events-app",
+  "id": "26b0d117-a881-429b-bcf1-fd9880aa0c96",
+  "locales": "en",
+  "translations": {
+    "ar": {
+      "appBar": {
+        "optionsDrawer": {
+          "baseMap": "الخريطة الأساسية",
+          "mapLabels": "تسميات الخريطة",
+          "mapOverlays": "تراكبات الخريطة",
+          "nauticalCharts": "المخططات البحرية",
+          "roadsLabel": "الطرق ولتسميات",
+          "tileOptions": {
+            "mapThumbnails": "خريطة مصغرات",
+            "mapThumbnailselected": "تم تحديد صورة الخريطة المصغرة"
+          },
+          "weatherRadar": "رادار الطقس"
+        },
+        "title": "الأحداث"
+      },
+      "eventListPanel": {
+        "filterDialog": {
+          "active": "نشيط",
+          "byStatus": "حسب الحالة",
+          "byTemplate": "حسب القالب",
+          "cancel": "إلغاء",
+          "closed": "مغلق",
+          "filter": "فلتر %{count}",
+          "save": "حفظ",
+          "upcoming": "القادمة"
+        },
+        "main": {
+          "clickToCreate": "انقر فوق حدث جديد أعلاه لإنشاء حدث",
+          "clickToCreateTemplate": "انقر فوق قالب جديد أعلاه لإنشاء نموذج حدث",
+          "eventTemplates": "قوالب الحدث",
+          "events": "الأحداث",
+          "eventsShared": "الأحداث المشتركة معي",
+          "myEvents": "أحداثي",
+          "newEvent": "حدث جديد",
+          "newTemplate": "قالب جديد",
+          "searchItems": "البحث في الأحداث ...",
+          "searchTemplates": "قوالب البحث ...",
+          "templates": "القوالب",
+          "templatesShared": "القوالب المشتركة معي"
+        }
+      },
+      "eventView": {
+        "addList": "إضافة قائمة",
+        "cancel": "إلغاء",
+        "createProxZone": "إنشاء منطقة القرب",
+        "mapPlanner": "مخطط الخريطة",
+        "pinItem": "دبوس البند",
+        "save": "حفظ"
+      }
+    },
+    "en": {
+      "appBar": {
+        "optionsDrawer": {
+          "baseMap": "BASE MAP",
+          "mapLabels": "Map Labels",
+          "mapOverlays": "MAP OVERLAYS",
+          "nauticalCharts": "Nautical Charts",
+          "roadsLabel": "Roads and Labels",
+          "tileOptions": {
+            "mapThumbnails": "mapThumbnails",
+            "mapThumbnailselected": "mapThumbnailselected"
+          },
+          "weatherRadar": "Weather Radar"
+        },
+        "title": "Events"
+      },
+      "eventListPanel": {
+        "filterDialog": {
+          "active": "Active",
+          "byStatus": "By Status",
+          "byTemplate": "By Template",
+          "cancel": "Cancel",
+          "closed": "Closed",
+          "filter": "Filter %{count}",
+          "save": "Save",
+          "upcoming": "Upcoming"
+        },
+        "main": {
+          "clickToCreate": "Click New Event above to create an event",
+          "clickToCreateTemplate": "Click New Template above to create an event template",
+          "eventTemplates": "Event Templates",
+          "events": "Events",
+          "eventsShared": "Events Shared with Me",
+          "myEvents": "My Events",
+          "newEvent": "New Event",
+          "newTemplate": "New Template",
+          "searchItems": "Search Events...",
+          "searchTemplates": "Search Templates...",
+          "templates": "Templates",
+          "templatesShared": "Templates Shared with Me"
+        }
+      },
+      "eventView": {
+        "addList": "Add List",
+        "cancel": "Cancel",
+        "createProxZone": "Create Proximity Zone",
+        "mapPlanner": "Map Planner",
+        "pinItem": "Pin Item",
+        "save": "Save"
+      }
+    }
+  }
+}

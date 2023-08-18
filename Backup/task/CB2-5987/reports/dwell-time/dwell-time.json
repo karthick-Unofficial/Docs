@@ -1,0 +1,86 @@
+{
+	"name": "mainpage.list.dwellTitle",
+	"id": "dwell-time",
+	"queryScript": "dwellTime.js",
+	"desc": "mainpage.list.dwellDesc",
+	"category": "vessel-report",
+	"groupedResults": true,
+	"fields": [
+		{
+			"name": "zones",
+			"type": "drop-down-menu",
+			"desc": "mainpage.reports.zone",
+			"endpoint": {
+				"basePath": "ecosystem/api/shapes/by-geo-type/polygon",
+				"template": null,
+				"debounce": false
+			}
+		},
+		{
+			"name": "entities",
+			"typeAheadClear": true,
+			"type": "type-ahead-search",
+			"desc": "mainpage.reports.entities",
+			"endpoint": {
+				"basePath": "ecosystem/api/feedEntities",
+				"params": {
+					"q": "term"
+				},
+				"template": "q",
+				"debounce": true
+			}
+		},
+		{
+			"name": "startDate",
+			"type": "date-picker",
+			"desc": "Start Date"
+		},
+		{
+			"name": "endDate",
+			"type": "date-picker",
+			"desc": "End Date"
+		}
+	],
+	"type": {
+		"table": {
+			"columns": [
+				{
+					"property": "name",
+					"width": 1,
+					"displayName": "vesselName",
+					"sortable": true
+				},
+				{
+					"property": "mmsid",
+					"width": 1,
+					"displayName": "mmsid",
+					"sortable": false
+				},
+				{
+					"property": "imo",
+					"width": 1,
+					"displayName": "imo",
+					"sortable": false
+				},
+				{
+					"property": "callsign",
+					"width": 1,
+					"displayName": "callSign",
+					"sortable": false
+				},
+				{
+					"property": "entered",
+					"width": 1,
+					"displayName": "entryTime",
+					"sortable": true
+				},
+				{
+					"property": "duration",
+					"width": 1,
+					"displayName": "dwellDuration",
+					"sortable": false
+				}
+			]
+		}
+	}
+}

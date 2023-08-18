@@ -1,0 +1,11 @@
+Today's Task:
+CB2-5277
+- Worked on below items in orion-components:
+   - DistanceTool
+      - Worked on sorting out ways to handle prop and state value updation issues in most of the functions.
+      - Worked on replacing state as a single parent object instead of individual state values.
+      - Added separate Ref variables for props and state and replaced state values with ref values.
+- Added equivalent steps to implement componentWillMount in below files.
+   - AccessPointProfile
+   - EntityProfile
+   - EventProfile     

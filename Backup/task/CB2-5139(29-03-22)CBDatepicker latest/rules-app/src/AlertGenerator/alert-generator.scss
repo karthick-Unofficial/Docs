@@ -1,0 +1,21 @@
+.rule-attributes {
+  height: 500px;
+}
+  .rule-attributes span.selected,
+  .rule-attributes .selected,
+  .generic-attribute span.selected,
+  .generic-attribute .selected {
+    background-color: #35b7f3 !important; }
+
+.targetSelectionScroll {
+  // scrollbar display for different browsers
+  overflow-y: scroll;
+  @media (max-width: 1023px) {
+    padding-left: 12px;
+  }
+  }
+  
+  ::-webkit-scrollbar {
+  // <---- revents jump when collection list is opened
+  display: none;
+  }

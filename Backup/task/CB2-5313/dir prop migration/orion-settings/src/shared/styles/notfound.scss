@@ -1,0 +1,36 @@
+.not-found-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	.not-found-message {
+		display: flex;
+		flex-direction: column;
+		max-width: 1260px;
+		width: 75vw;
+		background-color: #343537;
+		padding: 3rem;
+		margin: 2.5rem;
+		h2 {
+			color: #fff;
+			font-size: 1.75rem;
+			font-family: 'Roboto';
+			padding: 0 16px 1rem 16px;
+
+		}
+		h4 {
+			color: #828283;
+			font-size: 1rem;
+			font-weight: 300;
+			padding: 0 16px 2rem 16px;
+
+		}
+		hr {
+			background-color: #777 !important;
+		}
+		button {
+			align-self: center;
+		}
+	}
+}
+

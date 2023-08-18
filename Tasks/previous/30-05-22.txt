@@ -1,0 +1,12 @@
+Today's Task:
+CB2-5334 - Rules - Can't add a line to a track crossing rule
+- Worked on sorting out main cause of selected Line not updating issues in rules-app/track-movement.
+- Sorted out the mismatched state varible and replaced them as fixes.
+
+CB2-5324 - Rules - Select track is not highlighting
+- Worked on replacing individual state objects as single parent state object in rules-app/SubjectDialog.
+- Worked on adding Test Data and testing workflow of Select Track not highlighting issues in SubjectDialog.
+
+CB2-5346 - Camera - Spotlight flickering issue
+CB2-5343 - Camera app - UI issue when Weather radar overlay is turned on
+- Working on sorting out causes for flickering issues observed in camerasMapLayer in cameras-app.

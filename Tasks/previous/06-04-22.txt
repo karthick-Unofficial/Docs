@@ -1,0 +1,4 @@
+Today's Task:
+- Worked on CB2-5272 - Comments show "in a few seconds" and the date in english.
+- Worked on CB2-5272 - All widget names are displayed in English when in full-screen view (lists, pinned items, etc)
+- Worked on forming translations object and implementing localization to System Health's static texts and error messages in ecosystem.

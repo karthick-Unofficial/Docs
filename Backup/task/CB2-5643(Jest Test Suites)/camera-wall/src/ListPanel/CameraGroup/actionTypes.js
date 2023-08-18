@@ -1,0 +1,2 @@
+export const ADD_CAMERA_BATCH = "ADD_CAMERA_BATCH";
+export const CLEAR_CAMERAS = "CLEAR_CAMERAS";

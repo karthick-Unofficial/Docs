@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppMenuWrapper renders 1`] = `
+<div>
+  <Connect(AudioAlertPlayer) />
+  <IconButton
+    disableTouchRipple={false}
+    disabled={false}
+    iconStyle={Object {}}
+    onClick={[Function]}
+    tooltipPosition="bottom-center"
+    touch={false}
+  >
+    <NavigationApps />
+  </IconButton>
+</div>
+`;

@@ -1,0 +1,1094 @@
+version: "3.4"
+
+services:
+  redis-master:
+    image: redis:4.0.11
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+      - ./redis/conf/redis.conf:/usr/local/etc/redis/redis.conf
+    networks:
+      - default
+
+  redis-commander:
+    container_name: redis-commander
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    restart: always
+    environment:
+      - REDIS_HOSTS=local:redis-master:6379
+    labels:
+      - "traefik.docker.network=cbnet"
+      - "traefik.enable=true"
+      - "traefik.basic.frontend.entryPoints=redis-commander"
+      - "traefik.basic.frontend.rule=PathPrefix: /"
+      - "traefik.basic.port=8081"
+      - "traefik.basic.protocol=http"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  # etcd:
+  #   image: "bitnami/etcd:latest"
+  #   user: root
+  #   environment:
+  #     - ALLOW_NONE_AUTHENTICATION=yes
+  #     - ETCDCTL_API=3
+  #     - ETCD_DATA_DIR=/etcd-data
+  #     - ETCD_ADVERTISE_CLIENT_URLS=http://etcd:2379
+  #   ports:
+  #     - 2379:2379
+  #     - 2380:2380
+  #   labels:
+  #     - "traefik.docker.network=cbnet"
+  #     - "traefik.enable=true"
+  #     - "traefik.basic.frontend.entryPoints=etcd"
+  #     - "traefik.basic.frontend.rule=Host:localhost,traefik"
+  #     - "traefik.basic.port=2379"
+  #     - "traefik.basic.protocol=http"
+  #   volumes:
+  #     - etcd-data:/etcd-data
+  #   networks:
+  #     - default
+
+  # elastic-curator:
+  #   build:
+  #     context: "../elastic-curator"
+  #     dockerfile: Dockerfile-dev
+  #   container_name: elastic-curator
+  #   #entrypoint: "curator --config /config/config.yml /config/actions.yml"
+  #   environment:
+  #       ES_HOST: traefik
+  #       LOGGING_RETENTION_DAYS: 3
+  #       ENTITY_ARCHIVE_RETENTION_DAYS: 7
+  #       APP_METRICS_RETENTION_DAYS: 3
+  #       METRICBEAT_RETENTION_DAYS: 3
+  #   volumes:
+  #   - ../elastic-curator/config:/config
+
+  # rethinkdb-backup:
+  #   build:
+  #     context: "../rethinkdb-backup"
+  #     dockerfile: Dockerfile
+  #   user: root
+  #   # entrypoint: ["tail", "-f", "/dev/null"]
+  #   entrypoint: ["rethinkdb_nightly"]
+  #   volumes:
+  #     - ../rethinkdb-backup/config.json:/config.json
+  #   working_dir: "/"
+  # environment:docker ps -a
+
+  #   - AWS_ACCESS_KEY_ID=SOME_ACCESS_KEY
+  #   - AWS_SECRET_ACCESS_KEY=SOME_SECRET
+  #   - S3_BUCKET=rethinkdb-backup
+  #   - RETHINK_LOC=phoenix-rethinkdb:28015
+
+  # scheduler:
+  #   image: mcuadros/ofelia:latest
+  #   volumes:
+  #     - ./cron:/etc/ofelia
+  #     - /var/run/docker.sock:/var/run/docker.sock
+
+  # rethinkdb-backup:
+  #   build:
+  #     context: "../rethinkdb-backup"
+  #     dockerfile: Dockerfile
+  #   container_name: rethinkdb-backup
+  #   entrypoint: []
+  #   command: ["tail", "-f", "/dev/null"]
+  #   environment:
+  #       RETHINKDB_HOST: phoenix-rethinkdb
+  #       RETHINKDB_PORT: 28015
+  #       INIT_BACKUP: "true"
+  #       MAX_BACKUPS: 3
+  #   volumes:
+  #     - ./rethinkdb-backups:/backups
+  #     - ../rethinkdb-backup/backup.sh:/backup.sh
+  #     - ../rethinkdb-backup/config:/config
+  #   working_dir: "/"
+
+  # nginx:
+  #   build:
+  #     context: "../nginx"
+  #     dockerfile: Dockerfile-dev
+  #   container_name: nginx
+  #   ports:
+  #   - '80:80'
+  #   - '8082:8082'
+  #   - '443:443'
+  #   - '9200:9200'
+  #   - '8222:8222'
+  #   # - '8080:8080'
+  #   volumes:
+  #     - ../nginx/etc/nginx/:/etc/nginx/
+
+  traefik:
+    image: traefik:1.7.5
+    # restart: always
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+        mode: host
+      - target: 443
+        published: 443
+        protocol: tcp
+        mode: host
+      - 8081:8081
+      - 8082:8082
+      - 8222:8222
+      - 8223:8223
+      - 9001:9001
+      - 9200:9200
+      # - 8222:8222
+    networks:
+      - default
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./traefik/traefik.toml:/traefik.toml
+      - ./traefik/certs/server.crt:/server.crt
+      - ./traefik/certs/server.key:/server.key
+    container_name: traefik
+    deploy:
+      mode: global
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  smtp:
+    image: "mwader/postfix-relay"
+    container_name: smtp
+    ports:
+      - 25:25
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  elasticsearch1:
+    build:
+      context: "../elasticsearch"
+      dockerfile: Dockerfile
+    container_name: elasticsearch1
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms1024m -Xmx1024m"
+      - "xpack.security.enabled=false"
+      - "xpack.monitoring.enabled=false"
+      - "xpack.watcher.enabled=false"
+      - "xpack.ml.enabled=false"
+      - "xpack.graph.enabled=false"
+    labels:
+      - "traefik.docker.network=cbnet"
+      - "traefik.enable=true"
+      - "traefik.basic.frontend.entryPoints=elasticsearch"
+      # - "traefik.basic.frontend.rule=Host:localhost,traefik"
+      - "traefik.basic.frontend.rule=PathPrefix: /"
+      - "traefik.basic.port=9200"
+      - "traefik.basic.protocol=http"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    # volumes:
+    #   - "./es-data:/usr/share/elasticsearch/data"
+    # ports:
+    #   - 9200:9200
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.14.0
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_URL=https://localhost:9200
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  apm-server:
+    image: docker.elastic.co/apm/apm-server:7.14.0
+    cap_add: ["CHOWN", "DAC_OVERRIDE", "SETGID", "SETUID"]
+    cap_drop: ["ALL"]
+    ports:
+    - 8200:8200
+    # -E apm-server.aggregation.transactions.enabled=true
+    command: >
+        apm-server -e
+          -E logging.level=debug
+          -E apm-server.rum.enabled=true
+          -E setup.kibana.host=kibana:5601
+          -E setup.template.settings.index.number_of_replicas=0
+          -E apm-server.kibana.enabled=true
+          -E apm-server.kibana.host=kibana:5601
+          -E output.elasticsearch.hosts=["elasticsearch1:9200"]
+          -E apm-server.register.ingest.pipeline.enabled=true
+    # volumes:
+    #   - "./conf/apm-server.yml:/usr/share/apm-server/apm-server.yml:ro"
+    healthcheck:
+      interval: 10s
+      retries: 12
+      test: curl --write-out 'HTTP %{http_code}' --fail --silent --output /dev/null http://localhost:8200/
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+      
+  phoenix-rethinkdb:
+    image: rethinkdb:2.3.5
+    ports:
+      - 8080:8080
+      - 28015:28015
+      - 29015:29015
+    volumes:
+      - "rdb-data:/data"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  # rethinkdb-2:
+  #   image: rethinkdb:2.3.5
+  #   command: ["rethinkdb", "--bind", "all", "--join", phoenix-rethinkdb]
+  #   volumes:
+  #   - "./rethinkdb-data2:/data"
+  #   logging:
+  #     driver: "json-file"
+  #     options:
+  #       max-size: "1m"
+
+  # phoenix-nats:
+  #   build: "../nats"
+  #   container_name: phoenix-nats
+  #   ports:
+  #   - 4222:4222
+  #   - 6222:6222
+  #   - 8222:8222
+
+  phoenix-nats:
+    image: "nats:latest"
+    container_name: phoenix-nats
+    ports:
+      - 4222:4222
+    # - 6222:6222
+    # - 8222:8222
+    volumes:
+      - ./conf/gnatsd.conf:/gnatsd.conf
+    labels:
+      - "traefik.docker.network=cbnet"
+      - "traefik.enable=true"
+      - "traefik.basic.frontend.entryPoints=nats"
+      # - "traefik.basic.frontend.rule=Host:localhost,traefik"
+      - "traefik.basic.frontend.rule=PathPrefix: /"
+      - "traefik.basic.port=8222"
+      - "traefik.basic.protocol=http"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  nats-streaming-1:
+    image: nats-streaming:0.11.2
+    container_name: nats-streaming-1
+    command:
+      [
+        "-store",
+        "file",
+        "-dir",
+        "store-1",
+        "-cluster_log_path",
+        "store-1",
+        "-cluster_id",
+        "nats-streaming-cluster",
+        "-m",
+        "8223",
+        "-nats_server",
+        "nats://phoenix-nats:4222",
+      ]
+    volumes:
+      - ns-file-store:/store-1
+    labels:
+      - "traefik.docker.network=cbnet"
+      - "traefik.enable=true"
+      - "traefik.basic.frontend.entryPoints=nats-streaming"
+      # - "traefik.basic.frontend.rule=Host:localhost,traefik"
+      - "traefik.basic.frontend.rule=PathPrefix: /"
+      - "traefik.basic.port=8223"
+      - "traefik.basic.protocol=http"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  minio-1:
+    image: minio/minio:RELEASE.2021-06-07T21-40-51Z
+    container_name: minio-1
+    labels:
+    - "traefik.docker.network=cbnet"
+    - "traefik.enable=true"
+    - "traefik.basic.frontend.entryPoints=minio"
+    # - "traefik.basic.frontend.rule=Host:localhost"
+    - "traefik.basic.frontend.rule=PathPrefix: /"
+    - "traefik.basic.port=9000"
+    - "traefik.basic.protocol=http"
+    ports:
+      - 9000:9000
+    volumes:
+      - ./minio-1:/export
+    environment:
+      - "MINIO_ACCESS_KEY=SOME_ACCESS_KEY"
+      - "MINIO_SECRET_KEY=SOME_SECRET"
+    command: server /export
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  ecosystem:
+    build:
+      context: "../ecosystem"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    depends_on:
+      - phoenix-rethinkdb
+      - elasticsearch1
+      - app-gateway
+    labels:
+      - "avert-c2.app.route=ecosystem"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "REDIS_SERVER=redis://redis-master:6379"
+      - "CB_APP_DEBUG_PORT=5870"
+      - "CB_APP_CLIENT_ID=c027a743-327b-4eff-9961-7537ff7f0f12"
+      - "CB_APP_CLIENT_SECRET=8a4a273f-e351-4ec3-9efe-2221d2d8f394"
+      # - "RETHINKDB_SERVERS=phoenix-rethinkdb:28015"
+      - "RETHINKDB_SERVERS=phoenix-rethinkdb:28015"
+      - "ES_SERVER=elasticsearch1:9200"
+      - "BASE_INSTALLATION_ADDRESS=https://localhost"
+      - "APM_ENABLED=false"
+      # - "CB_APP_STATIC=true"
+      # - "CB_APP_REST=true"
+      # - "CB_APP_REALTIME=true"
+      # - "CB_APP_REST_INCLUDE_ROUTES=*"
+      # - "CB_APP_REST_EXCLUDE_ROUTES=POST /feeds/:feedId/entities"
+    # ports:
+    #   - target: 5870
+    #     published: 5870
+    #     protocol: tcp
+    #     mode: host
+    volumes:
+      - "../ecosystem:/ecosystem"
+      - "../node-app-core:/ecosystem/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/ecosystem"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  integration-app-transform:
+    build:
+      context: ../integration-app
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js transform"
+    # ports:
+    # - 5878:5878
+    # - 5001:5001
+    labels:
+      - "avert-c2.app.route=integration-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5878"
+      - "CB_APP_CLIENT_ID=df516f60-190f-4e70-9520-9c12c121475a"
+      - "CB_APP_CLIENT_SECRET=363b4412-2f68-4769-8f49-c3606071a74c"
+      - "APM_ENABLED=false"
+    volumes:
+      - "../integration-app:/integration-app"
+      - "../node-app-core:/integration-app/node_modules/node-app-core"
+      - "../integration-app/app-config.json:/integration-app/app-config.json"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/integration-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  integration-app-edge:
+    build:
+      context: "../integration-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js edge"
+    # configs:
+    #   - source: edge-process-config
+    #     target: /integration-app/app-config.json
+    ports:
+      - 5879:5879
+      - 5001:5001
+      - 1776:1776
+    labels:
+      - "avert-c2.app.route=edge-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5879"
+      - "CB_APP_CLIENT_ID=35fa77c7-3af1-4ff8-a308-052c4aba73bf"
+      - "CB_APP_CLIENT_SECRET=194c6aed-21f5-43dd-baaa-310af30b9a91"
+      - "APM_ENABLED=false"
+    volumes:
+      - "../integration-app:/integration-app"
+      - "../node-app-core:/integration-app/node_modules/node-app-core"
+      - "../integration-app/app-config-edge.json:/integration-app/app-config.json"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/integration-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  map-app:
+    build:
+      context: "../map-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=map-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5893"
+      - "CB_APP_CLIENT_ID=aae8e912-db8a-4501-a065-84445d72c4d6"
+      - "CB_APP_CLIENT_SECRET=3b64a308-55b6-4d6e-9a06-3078b138e376"
+      - "STATIC_SERVER_BASE_URL=/map-app"
+      - "APM_ENABLED=false"
+    ports:
+      - 5893:5893
+    volumes:
+      - "../map-app:/map-app"
+      - "../node-app-core:/map-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/map-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  rules-app:
+    build:
+      context: "../rules-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=rules-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5896"
+      - "CB_APP_CLIENT_ID=b78360a7-5512-4f1b-a3aa-35e594ae8074"
+      - "CB_APP_CLIENT_SECRET=94881efe-146b-4e6a-a15b-9a28e192af89"
+      - "STATIC_SERVER_BASE_URL=/rules-app"
+      - "APM_ENABLED=false"
+    ports:
+      - 5896:5896
+    volumes:
+      - "../rules-app:/rules-app"
+      - "../node-app-core:/rules-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/rules-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  facilities-app:
+    build:
+      context: "../facilities-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5945"
+      - "CB_APP_CLIENT_ID=dd363b8e-bbd1-49f0-b988-446cbe20dea2"
+      - "CB_APP_CLIENT_SECRET=c2f52b55-0385-4600-b178-43afb8cbe8a8"
+      - "STATIC_SERVER_BASE_URL=/facilities-app"
+      - "APM_ENABLED=false"
+    ports:
+      - 5999:5999
+    volumes:
+      - "../facilities-app:/facilities-app"
+      - "../node-app-core:/facilities-app/node_modules/node-app-core"
+    working_dir: "/facilities-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  settings-app:
+    build:
+      context: "../orion-settings"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=settings-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5897"
+      - "CB_APP_CLIENT_ID=4db14457-7993-4f6a-a822-ca51dba20f72"
+      - "CB_APP_CLIENT_SECRET=024eaa3d-f963-4427-a0b2-0fba6579f3a9"
+      - "STATIC_SERVER_BASE_URL=/"
+      - "APM_ENABLED=false"
+    ports:
+      - 5897:5897
+    volumes:
+      - "../orion-settings:/orion-settings"
+      - "../node-app-core:/orion-settings/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/orion-settings"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  reports-app:
+    build:
+      context: "../reports-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=reports-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5895"
+      - "CB_APP_CLIENT_ID=1f284649-4160-4dd9-a913-58cdcc175216"
+      - "CB_APP_CLIENT_SECRET=2322f61b-15f0-4001-b891-88cc7ffbd129"
+      - "STATIC_SERVER_BASE_URL=/reports-app"
+      - "APM_ENABLED=false"
+    ports:
+      - 5895:5895
+    volumes:
+      - "../reports-app:/reports-app"
+      - "../node-app-core:/reports-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/reports-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  app-gateway:
+    build:
+      context: "../app-gateway"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:5861 server.js"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "REDIS_SERVER=redis://redis-master:6379"
+      - "PORT=8001"
+    # ports:
+    # - 8001:8001
+    # - 5861:5861
+    labels:
+      - "traefik.docker.network=cbnet"
+      - "traefik.enable=true"
+      - "traefik.basic.frontend.entryPoints=https"
+      # - "traefik.basic.frontend.rule=Host:localhost,traefik"
+      - "traefik.basic.frontend.rule=PathPrefix: /"
+      - "traefik.basic.port=8001"
+      - "traefik.basic.protocol=http"
+      - "traefik.backend.loadbalancer.stickiness=true"
+      - "APM_ENABLED=false"
+    volumes:
+      - "../app-gateway:/app-gateway"
+      - "../node-app-core:/app-gateway/node_modules/node-app-core"
+    working_dir: "/app-gateway"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  health-app:
+    build:
+      context: "../health-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5899"
+      - "CB_APP_CLIENT_ID=57abe6da-afae-457a-8401-ef05d9768372"
+      - "CB_APP_CLIENT_SECRET=e148399a-6c11-4b40-bb82-f937a6aef49a"
+      - "APM_ENABLED=false"
+    ports:
+      - 5899:5899
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "../health-app:/health-app"
+      - "../node-app-core:/health-app/node_modules/node-app-core"
+    working_dir: "/health-app"
+
+  gis-app:
+    build:
+      context: "../gis-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=gis-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5890"
+      - "CB_APP_CLIENT_ID=fd4a8dbd-04df-452d-a02e-1c7d6692750a"
+      - "CB_APP_CLIENT_SECRET=63eefb09-bf32-4948-b07f-efa67d3b9255"
+      - "APM_ENABLED=false"
+    ports:
+      - 5890:5890
+    volumes:
+      - "../gis-app:/gis-app"
+      - "../node-app-core:/gis-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/gis-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  events-app:
+    build:
+      context: "../events-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=events-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5990"
+      - "CB_APP_CLIENT_ID=15bb78bf-de83-4a65-a58f-06aa044ed29d"
+      - "CB_APP_CLIENT_SECRET=5bf5dda8-f192-4b3d-9fdb-384c76d5add3"
+      - "STATIC_SERVER_BASE_URL=/events-app"
+      - "APM_ENABLED=false"
+    # ports:
+    #   - 5990:5990
+    volumes:
+      - "../events-app:/events-app"
+      - "../node-app-core:/events-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/events-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  lists-app:
+    build:
+      context: "../lists-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=lists-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5991"
+      - "CB_APP_CLIENT_ID=71862e90-5e9e-4734-b586-866a2759665a"
+      - "CB_APP_CLIENT_SECRET=2ba5dcf5-35ea-4b72-91d2-cdf575b503eb"
+      - "STATIC_SERVER_BASE_URL=/lists-app"
+      - "APM_ENABLED=false"
+    ports:
+      - 5991:5991
+    volumes:
+      - "../lists-app:/lists-app"
+      - "../node-app-core:/lists-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/lists-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  cameras-app:
+    build:
+      context: "../cameras-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=cameras-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5892"
+      - "CB_APP_CLIENT_ID=350441e0-d44a-422c-bd6e-032fd85ae513"
+      - "CB_APP_CLIENT_SECRET=a0259d8b-0539-42e2-be47-5f83660b3a88"
+      - "STATIC_SERVER_BASE_URL=/cameras-app"
+      - "APM_ENABLED=false"
+      # - "CB_APP_CLIENT_ID=5c791016-8580-47cb-9742-07882167d519"
+      # - "CB_APP_CLIENT_SECRET=f1dcae14-6d62-42ee-8b5f-dbf687aef038"
+    ports:
+      - 5892:5892
+    volumes:
+      - "../cameras-app:/cameras-app"
+      - "../node-app-core:/cameras-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/cameras-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  camera-wall-app:
+    build:
+      context: "../camera-wall-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=camera-wall-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5992"
+      - "CB_APP_CLIENT_ID=fffafff5-fd08-4e17-a25a-06b47e6c4863"
+      - "CB_APP_CLIENT_SECRET=4020d5b5-1ed7-4b43-b3e5-aefcd923ca54"
+      - "STATIC_SERVER_BASE_URL=/camera-wall-app"
+      - "APM_ENABLED=false"
+    ports:
+      - 5992:5992
+    volumes:
+      - "../camera-wall-app:/camera-wall-app"
+      - "../node-app-core:/camera-wall-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/camera-wall-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  law-enforcement-search-app:
+    build:
+      context: "../law-enforcement-search-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=law-enforcement-search-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5993"
+      - "CB_APP_CLIENT_ID=a42be0d9-ebfe-4e05-b4fb-7ffe8dee6480"
+      - "CB_APP_CLIENT_SECRET=f96a2334-a0ea-485d-a4ee-c88aab8a2044"
+      - "STATIC_SERVER_BASE_URL=/law-enforcement-search-app"
+      - "APM_ENABLED=false"
+    ports:
+      - 5993:5993
+    volumes:
+      - "../law-enforcement-search-app:/law-enforcement-search-app"
+      - "../node-app-core:/law-enforcement-search-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/law-enforcement-search-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  berth-schedule-app:
+    build:
+      context: "../berth-schedule-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=berth-schedule-app"
+    volumes:
+      - "../berth-schedule-app:/berth-schedule-app"
+      - "../node-app-core:/berth-schedule-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - "BASE_INSTALLATION_ADDRESS=http://localhost"
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "RETHINKDB_SERVERS=phoenix-rethinkdb"
+      # - "CB_APP_DEBUG_PORT=5892"
+      - "CB_APP_CLIENT_ID=83570a15-dd74-4eee-862d-8e2aa98f6400"
+      - "CB_APP_CLIENT_SECRET=6ee1c2c7-9ef2-4b8f-bc28-6c3f5ac41ce8"
+      - "config_timezone=America/Chicago"
+      - "STATIC_SERVER_BASE_URL=/berth-schedule-app"
+      - "APM_ENABLED=false"
+    working_dir: "/berth-schedule-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  berth-request-app:
+    build:
+      context: "../berth-request-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=berth-request-app"
+    volumes:
+      - "../berth-request-app:/berth-request-app"
+      - "../node-app-core:/berth-request-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - "BASE_INSTALLATION_ADDRESS=http://localhost"
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "RETHINKDB_SERVERS=phoenix-rethinkdb"
+      # - "CB_APP_DEBUG_PORT=5892"
+      - "CB_APP_CLIENT_ID=c1a7f58f-8d7a-4ef4-b4c9-5da68760f054"
+      - "CB_APP_CLIENT_SECRET=b5a2ad9f-a9f1-4325-807c-b1fcb5396f9b"
+      - "config_timezone=America/Chicago"
+      - "STATIC_SERVER_BASE_URL=/berth-request-app"
+      - "APM_ENABLED=false"
+    working_dir: "/berth-request-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  status-board-app:
+    build:
+      context: "../status-board-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5945"
+      - "CB_APP_CLIENT_ID=5cf1e925-cab2-4b4b-a3f0-d06ef4dab96d"
+      - "CB_APP_CLIENT_SECRET=299611ad-6c47-4062-b4a5-18d87658dea4"
+      - "STATIC_SERVER_BASE_URL=/status-board-app"
+      - "APM_ENABLED=false"
+    volumes:
+      - "../status-board-app:/status-board-app"
+      - "../node-app-core:/status-board-app/node_modules/node-app-core"
+    working_dir: "/status-board-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  replay-app:
+    build:
+      context: "../replay-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=6000"
+      - "CB_APP_CLIENT_ID=cedb0570-171c-475f-a955-d068c4d7cdf3"
+      - "CB_APP_CLIENT_SECRET=789ff077-9ab2-4df7-b0ea-f0477c21dc2f"
+      - "STATIC_SERVER_BASE_URL=/replay-app"
+      - "APM_ENABLED=false"
+    ports:
+    - 6000:6000 # the same 4 digit number (twice) unused by other apps
+    volumes:
+      - "../replay-app:/replay-app"
+      - "../node-app-core:/replay-app/node_modules/node-app-core"
+    working_dir: "/replay-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  champ-app:
+    build:
+      context: "../champ-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    labels:
+      - "avert-c2.app.route=champ-app"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=5898"
+      - "CB_APP_CLIENT_ID=c21110e0-3e9c-4612-acd5-63b1d81112af"
+      - "CB_APP_CLIENT_SECRET=2ffce49a-bb65-4ae1-b1e4-359ff65ccf81"
+      - "STATIC_SERVER_BASE_URL=/champ-app"
+      - "APM_ENABLED=false"
+    ports:
+      - 5898:5898
+    volumes:
+      - "./conf/NATS_CREDS:/run/secrets/NATS_CREDS:ro"
+      - "../champ-app:/champ-app"
+      - "../node-app-core:/champ-app/node_modules/node-app-core"
+      - /var/run/docker.sock:/var/run/docker.sock
+    working_dir: "/champ-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  # cb-load-tester:
+  #   build:
+  #     context: "../cb-load-tester"
+  #     dockerfile: Dockerfile-dev
+  #   entrypoint: "node --inspect=0.0.0.0:0 server.js"
+  #   environment:
+  #     - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+  #     # - "CB_APP_DEBUG_PORT=6001"
+  #     - "CB_APP_CLIENT_ID=ac2535e6-ca2a-4add-834e-5761219ef80a"
+  #     - "CB_APP_CLIENT_SECRET=50d4b246-0cf4-4f05-ab95-a5cebb2b3bb0"
+  #   # ports:
+  #   #   - 6001:6001
+  #   volumes:
+  #   - "../cb-load-tester:/cb-load-tester"
+  #   - "../node-app-core:/cb-load-tester/node_modules/node-app-core"
+  #   working_dir: "/cb-load-tester"
+
+  # cb-test-app:
+  #   build:
+  #     context: "../cb-test-app"
+  #     dockerfile: Dockerfile-dev
+  #   entrypoint: "node --inspect=0.0.0.0:0 server.js"
+  #   environment:
+  #     - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+  #     - "CB_APP_DEBUG_PORT=6001"
+  #     - "CB_APP_CLIENT_ID=01ea65a0-13d2-4038-81b3-ce294a9838f3"
+  #     - "CB_APP_CLIENT_SECRET=e3fdb410-399f-4d12-a28a-8482abeb74e5"
+  #   ports:
+  #     - 6001:6001
+  #   volumes:
+  #   - "../cb-test-app:/cb-test-app"
+  #   - "../node-app-core:/cb-test-app/node_modules/node-app-core"
+  #   working_dir: "/cb-test-app"
+
+  filebeat:
+    hostname: filebeat
+    container_name: filebeat
+    user: root
+    image: docker.elastic.co/beats/filebeat:7.14.0
+    volumes:
+      - ./conf/filebeat.yml:/usr/share/filebeat/filebeat.yml
+      # needed to persist filebeat tracking data :
+      - filebeat-data:/usr/share/filebeat/data:rw
+      # needed to access all docker logs (read only) :
+      # - "./docker-logs:/usr/share/dockerlogs/data"
+      - /var/lib/docker/containers:/usr/share/dockerlogs/data:rw
+      # needed to access additional informations about containers
+      - /var/run/docker.sock:/var/run/docker.sock
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  # mpo-app:
+  #   build:
+  #     context: "../mpo-app"
+  #     dockerfile: Dockerfile-dev
+  #   entrypoint: "node --inspect=0.0.0.0:0 server.js"
+  #   labels:
+  #     - "avert-c2.app.route=mpo-app"
+  #   environment:
+  #     - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+  #     - "CB_APP_DEBUG_PORT=6011"
+  #     - "CB_APP_CLIENT_ID=720ad3bc-fd9e-4b78-879e-8014d79f9c26"
+  #     - "CB_APP_CLIENT_SECRET=0b667c64-7c3b-4791-b446-dbbfd07fcebb"
+  #     - "STATIC_SERVER_BASE_URL=/mpo-app"
+  #   ports:
+  #     - 6011:6011
+  #   volumes:
+  #     - "../mpo-app:/mpo-app"
+  #     - "../node-app-core:/mpo-app/node_modules/node-app-core"
+  #   working_dir: "/mpo-app"
+  #   logging:
+  #     driver: "json-file"
+  #     options:
+  #       max-size: "1m"
+
+  # terminal-app:
+  #   build:
+  #     context: "../terminal-app"
+  #     dockerfile: Dockerfile-dev
+  #   entrypoint: "node --inspect=0.0.0.0:0 server.js"
+  #   labels:
+  #     - "avert-c2.app.route=terminal-app"
+  #   environment:
+  #     - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+  #     - "CB_APP_DEBUG_PORT=6100"    
+  #     - "CB_APP_CLIENT_ID=5a34ed7c-6e7f-429c-bceb-6ba37afc31b0"
+  #     - "CB_APP_CLIENT_SECRET=03c06006-608a-430d-a2be-0e44317b0469"
+  #     - "STATIC_SERVER_BASE_URL=/terminal-app"
+  #   ports:
+  #     - 6100:6100
+  #   volumes:
+  #     - "../terminal-app:/terminal-app"
+  #     - "../node-app-core:/terminal-app/node_modules/node-app-core"
+  #   working_dir: "/terminal-app"
+  #   logging:
+  #     driver: "json-file"
+  #     options:
+  #       max-size: "1m"
+  
+  translation-app:
+    build:
+      context: "../translation-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=6197"
+      - "CB_APP_CLIENT_ID=72a371ef-7722-429c-aa51-907b88e9878f"
+      - "CB_APP_CLIENT_SECRET=87bc6aa8-773e-40d6-a6f3-d106d062bcaa"
+      - "STATIC_SERVER_BASE_URL=/translation-app"      
+    ports:
+    - 6197:6197 # the same 4 digit number (twice) unused by other apps
+    volumes:
+      - "../translation-app:/translation-app"
+      - "../node-app-core:/translation-app/node_modules/node-app-core"
+    working_dir: "/translation-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  units-app:
+    build:
+      context: "../units-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=6198"
+      - "CB_APP_CLIENT_ID=b1e65776-a67e-4beb-9fd4-6b5eafdacfd5"
+      - "CB_APP_CLIENT_SECRET=5c30b309-5359-4e7c-82a9-44ffbd418908"
+      - "STATIC_SERVER_BASE_URL=/units-app"      
+    ports:
+      - 6198:6198
+    volumes:
+      - "../units-app:/units-app"
+      - "../node-app-core:/units-app/node_modules/node-app-core"
+    working_dir: "/units-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+  brc-app:
+    build:
+      context: "../brc-app"
+      dockerfile: Dockerfile-dev
+    entrypoint: "node --inspect=0.0.0.0:0 server.js"
+    environment:
+      - "CB_APP_MESSAGING_SERVERS=nats://phoenix-nats:4222"
+      - "CB_APP_DEBUG_PORT=6199"
+      - "CB_APP_CLIENT_ID=da609ce6-28aa-485c-80f4-0d2e712612b7"
+      - "CB_APP_CLIENT_SECRET=9925fa6d-3858-4867-b000-43515fcb259a"
+      - "STATIC_SERVER_BASE_URL=/brc-app"      
+    ports:
+      - 6199:6199
+    volumes:
+      - "../brc-app:/brc-app"
+      - "../node-app-core:/brc-app/node_modules/node-app-core"
+    working_dir: "/brc-app"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1m"
+
+volumes:
+ rdb-data:  null
+ ns-file-store:  null
+ redis-data:  null
+ filebeat-data:  null
+
+configs:
+  edge-process-config:
+    external: true
+
+networks:
+  default:
+    external:
+      name: cb

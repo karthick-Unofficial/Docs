@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsWidget renders 1`] = `
+<WithStyles(BaseWidget)
+  dir="ltr"
+  order={0}
+  title="title"
+>
+  <ForwardRef(Grid)
+    alignContent="center"
+    container={true}
+    justifyContent="space-around"
+    spacing={3}
+    style={
+      Object {
+        "margin": "10px -12px",
+      }
+    }
+  />
+  <ForwardRef(Collapse)
+    className="list-body-wrapper"
+    in={false}
+    style={
+      Object {
+        "overflowX": "scroll",
+      }
+    }
+  >
+    <WithStyles(SimpleTable)
+      dir="ltr"
+      rows={Array []}
+    />
+  </ForwardRef(Collapse)>
+  <ForwardRef(Button)
+    onClick={[Function]}
+  >
+    <Translator
+      value="global.profiles.widgets.details.showMore"
+    />
+    <Memo(ForwardRef(ExpandMoreIcon)) />
+  </ForwardRef(Button)>
+</WithStyles(BaseWidget)>
+`;

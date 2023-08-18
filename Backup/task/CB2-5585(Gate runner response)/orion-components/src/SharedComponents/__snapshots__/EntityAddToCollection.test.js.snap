@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EntityAddToCollection renders 1`] = `
+<Dialog
+  actions={
+    Array [
+      <FlatButton
+        disabled={false}
+        fullWidth={false}
+        label="Cancel"
+        labelPosition="after"
+        labelStyle={Object {}}
+        onClick={[Function]}
+        onKeyboardFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onTouchStart={[Function]}
+        primary={true}
+        secondary={false}
+      />,
+      <FlatButton
+        disabled={true}
+        fullWidth={false}
+        keyboardFocused={true}
+        label="Submit"
+        labelPosition="after"
+        labelStyle={Object {}}
+        onClick={[Function]}
+        onKeyboardFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onTouchStart={[Function]}
+        primary={true}
+        secondary={false}
+      />,
+    ]
+  }
+  autoDetectWindowHeight={true}
+  autoScrollBodyContent={false}
+  className="collection-dialog"
+  contentStyle={
+    Object {
+      "maxWidth": 500,
+    }
+  }
+  modal={false}
+  repositionOnUpdate={true}
+  title="Copy to New Collection"
+>
+  <div>
+    <p>
+      Create a new Collection:
+    </p>
+    <TextField
+      autoFocus={true}
+      disabled={false}
+      floatingLabelFixed={true}
+      floatingLabelStyle={
+        Object {
+          "color": "#828283",
+        }
+      }
+      floatingLabelText="New Collection"
+      fullWidth={false}
+      hintStyle={
+        Object {
+          "color": "#828283",
+        }
+      }
+      hintText="Enter New Collection title"
+      multiLine={false}
+      onChange={[Function]}
+      rows={1}
+      type="text"
+      underlineShow={true}
+      value=""
+    />
+  </div>
+</Dialog>
+`;

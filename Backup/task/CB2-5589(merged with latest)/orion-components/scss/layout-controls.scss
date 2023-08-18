@@ -1,0 +1,30 @@
+.layout-control-button {
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem 0;
+	background-color: $darkGray;
+	margin-bottom: 0.12rem;
+	border-radius: 0 0 5px 5px;
+	a {
+		text-decoration: none;
+		font-size: 0.8rem;
+	}
+}
+
+body > div:last-of-type {
+	z-index: 999999 !important; // force selected list item to move in front of entity profile
+}
+
+// Added for popover menu patch: (CB2-904)
+.layout-control-popover {
+	left: 3000px;
+}
+
+// Added for popover menu patch: (CB2-904)
+.layout-control-popover > div > div > div {
+	width: 100% !important;
+}
+
+.layout-button-wrapper {
+	margin: 1rem 0.5rem 0.5rem 0.5rem;
+}

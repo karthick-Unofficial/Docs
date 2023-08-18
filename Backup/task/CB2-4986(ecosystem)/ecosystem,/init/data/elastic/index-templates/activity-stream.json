@@ -1,0 +1,62 @@
+{
+    "index_patterns": "activity-stream-*",
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 0,
+        "refresh_interval": "1s",
+        "sort.field": "published",
+        "sort.order": "desc"
+    },
+    "mappings": {
+        "dynamic": false,
+        "properties": {
+            "id": {
+                "type": "keyword"
+            },
+            "published": {
+                "type": "date"
+            },
+            "activityDate": {
+                "type": "date"
+            },
+            "geometry": {
+                "type": "geo_shape"
+            },
+            "object": {
+                "properties": {
+                    "feedId": {
+                        "type": "keyword"
+                    },
+                    "id": {
+                        "type": "keyword"
+                    },
+                    "name": {
+                        "type": "keyword"
+                    },
+                    "type": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "target": {
+                "properties": {
+                    "feedId": {
+                        "type": "keyword"
+                    },
+                    "id": {
+                        "type": "keyword"
+                    },
+                    "name": {
+                        "type": "keyword"
+                    },
+                    "type": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "type": {
+                "type": "keyword"
+            }
+        }
+    }
+}

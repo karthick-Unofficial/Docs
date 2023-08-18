@@ -1,0 +1,287 @@
+entityCollectons:
+  /entityCollections:
+    get:
+      description: Get entity collections
+      operationId: getById
+      tags:
+        - Entity Collections
+      reponses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                # Do this
+        '401':
+          description: Unauthorized
+    post:
+      description: Create an entity collection
+      operationId: create
+      tags:
+        - Entity Collections
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                app:
+                  type: string
+                entities:
+                  type: array
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+  /entityCollections?id={entityCollectionId}:
+    get:
+      description: Get entity collections by ID
+      operationId: getById
+      tags:
+        - Entity Collections
+      parameters:
+        - name: entityCollectionId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+  /entityCollections/{entityCollectionId}:
+    put:
+      description: Update entity by ID
+      operationId: update
+      tags:
+        - Entity Collections
+      parameters:
+        - name: entityCollectionId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                app:
+                  type: string
+                entities:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+    delete:
+      description: Update entity collection as deleted by ID
+      operationId: delete
+      tags:
+        - Entity Collections
+      parameters:
+        - name: entityCollectionId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+  /entityCollections/hasMember/{entityCollectionId}?entityId={entityId}:
+    get:
+      description: Check if entity collection contains a member by members and collection ID
+      operationId: hasMember
+      tags:
+        - Entity Collections
+      parameters:
+        - name: entityCollectionId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hasMember:
+                    type: boolean
+  /entityCollections/{entityCollectionId}/addMembers:
+    put:
+      description: Add members to an entity collection
+      operationId: addMembers
+      tags:
+        - Entity Collections
+      parameters:
+        - name: entityCollectionId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                entityIds:
+                  type: array
+                  items:
+                    type: string
+      responses: 
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+  /entityCollections/{entityCollectionId}/removeMembers:
+    put:
+      description: Remove members from an entity collection
+      operationId: removeMembers
+      tags:
+        - Entity Collections
+      parameters:
+        - name: entityCollectionId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                entityIds:
+                  type: array
+                  items:
+                    type: string
+      responses: 
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+  /entityCollection/{entityCollectionId}/share:
+    put:
+      description: Share an entity collection
+      operationId: share
+      tags:
+        - Entity Collections
+      parameters:
+        - name: entityCollectionId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+  /entityCollection/{entityCollectionId}/unshare:
+    put:
+      description: Unshare an entity collection
+      operationId: unshare
+      tags:
+        - Entity Collections
+      parameters:
+        - name: entityCollectionId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number

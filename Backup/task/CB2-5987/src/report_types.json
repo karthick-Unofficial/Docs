@@ -1,0 +1,46 @@
+{
+	"reports": [
+		{
+			"name": "Vessel Position Report",
+			"id": "vessel_position_report",
+			"descr": "Look up the position history for any vessel in the Great Lakes. For each position report for the selected vessel, the report provides coordinates, zone activity, and other vessel particulars for the specified period of time.",
+			"icon": "static/report-icons/vsl_pos.png",
+			"link": "https://shipmoves.commandbridge.com/Reports/ReportViewer?id=vessel_position_report"
+		},
+		{
+			"name": "Dwell Time Report",
+			"id": "dwell_time_report",
+			"descr": "Report on vessel dwell time within any zone in the Great Lakes. The report provides the duration of each vessel within a zone for the selected period of time.",
+			"icon": "static/report-icons/dwell_time.png",
+			"link": "https://shipmoves.commandbridge.com/Reports/ReportViewer?id=dwell_time_report"
+		},
+		{
+			"name": "Zone Activity Report",
+			"id": "zone_activity_report",
+			"descr": "Report on zone activity in any established reporting area in the Great Lakes. The report provides comprehensive zone activities within the selected reporting area for the specified period of time.",
+			"icon": "static/report-icons/vsl_act.png",
+			"link": "https://shipmoves.commandbridge.com/Reports/ReportViewer?id=zone_activity_report"
+		},
+		{
+			"name": "CF1400 - Vessels in Foreign Trade (Entrances)",
+			"id": "CF1400_Entrances",
+			"descr": "Report on all foreign flagged vessels that entered the Great Lakes. The report is updated weekly from the Customs and Border Protection automated manifest system.",
+			"icon": "static/report-icons/1400.png",
+			"link": "https://shipmoves.commandbridge.com/Reports/ReportViewer?id=CF1400_Entrances"
+		},
+		{
+			"name": "CF1401 - Vessels in Foreign Trade (Clearances)",
+			"id": "CF1401_Clearances",
+			"descr": "Look up the position history for any vessel in the Great Lakes. For each position report for the selected vessel, the report provides coordinates, zone activity, and other vessel particulars for the specified period of time.",
+			"icon": "static/report-icons/1401.png",
+			"link": "https://shipmoves.commandbridge.com/Reports/ReportViewer?id=CF1401_Clearances"
+		},
+		{
+			"name": "Trip Wire Activity",
+			"id": "trip_wire_activity",
+			"descr": "Report on trip wire activity in any established area in the Great Lakes. The report provides comprehensive trip wire activities within the selected reporting area for the specified period of time.",
+			"icon": "static/report-icons/tripwire_act.png",
+			"link": "https://shipmoves.commandbridge.com/Reports/ReportViewer?id=trip_wire_activity"
+		}
+	]
+}

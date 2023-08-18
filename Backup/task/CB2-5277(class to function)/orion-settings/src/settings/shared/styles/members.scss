@@ -1,0 +1,21 @@
+.members-list {
+	h3 {
+		display: inline;
+		margin-right: 34px;
+		margin-left: 3px;
+	}
+
+	p {
+		color: $textGray;
+		margin-top: 12px;
+	}
+	> div {
+		display: flex;
+		flex-direction: column;
+		width: auto !important;
+		> a {
+			width: 100%;
+		}
+	}
+
+}

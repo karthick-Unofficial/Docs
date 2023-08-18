@@ -1,0 +1,189 @@
+notifications:
+  /notifications:
+    get:
+      description: Get notifications by active user
+      operationId: getActiveByUser
+      tags:
+        - Notifications
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+    post:
+      description: Add notification to queue
+      operationId: queueNotification
+      tags:
+        - Notifications
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                activityId:
+                  type: string
+                actor:
+                  type: string
+                summary:
+                  type: string
+                message:
+                  type: string
+                to:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      token:
+                        type: string
+                      system:
+                        type: boolean
+                      email: 
+                        type: boolean
+                      sms:
+                        type: boolean
+      responses:
+        '200':
+          description: OK
+  /notifications/{notificationId}/close:
+    put:
+      description: Close notification by ID
+      operationId: markClosed
+      tags:
+        - Notifications
+      parameters:
+        - name: notificationId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+  /notifications/{notificationId}/reopen:
+    put:
+      description: Reopen notification by ID
+      operationId: markOpen
+      tags:
+        - Notifications
+      parameters:
+        - name: notificationId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+  /notifications/closebulk:
+    put:
+      description: Bulk close notifications
+      operationId: markClosedBulk
+      tags:
+        - Notifications
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ids:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+        '500':
+          description: Internal Server Error from no ID
+  /notifications/reopenbulk:
+    put:
+      description: Bulk open notifications
+      operationId: markOpenBulk
+      tags:
+        - Notifications
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ids:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+        '500':
+          description: Internal Server Error from no ID
+  /notifications?since={since}:
+    get:
+      description: Get notifications since a certain time
+      operationId: getActiveByUser
+      tags:
+        - Notifications
+      parameters:
+        - name: since
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    activityId:
+                      type: string
+  /notifications/archive/{page}:
+    get:
+      description: Get notifications by page
+      operationId: getArchived
+      tags:
+        - Notifications
+      parameters:
+        - name: page
+          in: query
+          required: true
+          schema:
+            type: number
+      responses:
+        '200':
+          description: OK

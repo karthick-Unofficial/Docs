@@ -1,0 +1,30 @@
+@import "node_modules/orion-components/scss/vars.scss";
+@import "node_modules/orion-components/scss/fonts.scss";
+@import "node_modules/orion-components/scss/orion-base-styles.scss";
+@import "node_modules/orion-components/scss/app-menu.scss";
+@import "node_modules/orion-components/scss/alert-sidebar.scss";
+@import "node_modules/orion-components/scss/dock-control.scss";
+@import "node_modules/orion-components/scss/pinned-items.scss";
+@import "node_modules/orion-components/scss/widgets.scss";
+@import "node_modules/orion-components/scss/activities.scss";
+@import "node_modules/orion-components/scss/summary-widget.scss";
+@import "node_modules/orion-components/scss/layout-controls.scss";
+@import "node_modules/orion-components/scss/activity-widget.scss";
+@import "node_modules/orion-components/scss/rules-widget.scss";
+@import "node_modules/orion-components/scss/alert-widget.scss";
+@import "node_modules/orion-components/scss/file-widget.scss";
+@import "node_modules/orion-components/scss/entity-profile.scss";
+@import "node_modules/orion-components/scss/ptz-controls.scss";
+@import "node_modules/orion-components/scss/camera-dock.scss";
+@import "node_modules/orion-components/scss/cb-components.scss";
+@import "../node_modules/orion-components/scss/globalMui.scss";
+@import "node_modules/orion-components/scss/options-drawer.scss";
+
+@import "shared/styles/base.scss";
+@import "shared/styles/scaffold-info.scss";
+
+@import "CamerasListPanel/cameras-list-panel.scss";
+@import "CamerasListPanel/CameraCollection/camera-collection.scss";
+@import "CameraView/camera-view.scss";
+
+@import "CamerasMap/CamerasMapLayers/map.scss";

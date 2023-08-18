@@ -1,0 +1,6 @@
+Today's Task:
+- Worked on adding AccessPoint Layer in orion-component/Map to support AccessPoint implementation in maps.
+- Worked on creating a new list card "AccessPointCard" component in orion-components.
+- Worked on implementing AccessPoint Layer and AccessPoint Card in facilities-app.
+- Worked on Jira Bug fixes:
+    - CB2-5224: List app - Arabic locale - No padding. Incorrect alignment.

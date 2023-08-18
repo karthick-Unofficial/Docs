@@ -1,0 +1,748 @@
+@keyframes slideOutButton {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(360px);
+	}
+}
+
+@keyframes slideOutButtonRTL {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-360px);
+	}
+}
+
+@keyframes slideOutDock {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-300px);
+	}
+}
+
+@keyframes slideOutDockRTL {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(300px);
+	}
+}
+
+@keyframes slideInDock {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInDockRTL {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInPanel {
+	0% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(166%);
+	}
+}
+
+@keyframes slideInPanelShort {
+	0% {
+		transform: translateX(0%);
+	}
+
+	50% {
+		transform: translateX(0%);
+	}
+
+	100% {
+		transform: translateX(216%);
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(calc(100% - 48px));
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes rotateClose {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-180deg);
+	}
+}
+
+@keyframes rotateOpen {
+	0% {
+		transform: rotate(-180deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+$dock-control-width: 360px;
+$hide-dock-button-width: 30px;
+
+.dock-control {
+	width: 360px;
+	height: 100%;
+	background-color: $darkGray2;
+	z-index: 99;
+	position: absolute;
+	top: 0px;
+	left: 0;
+
+	@media only screen and (min-width: 1024px) {
+		box-shadow: -63px 71px 10px 67px rgba(0, 0, 0, 0.75);
+	}
+
+	&.closed {
+		animation: 0.51s ease-in-out 0s 1 slideOutDock;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideDown;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.open {
+		animation: 0.5s ease-in-out 0.55s 1 slideInDock;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideUp;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.hide {
+		animation: 0.5s ease-in-out 0s 1 slideOutDock;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideDown;
+			animation-fill-mode: both;
+		}
+	}
+
+	@media only screen and (max-width: 1023px) {
+		position: absolute;
+		padding: 0;
+		width: 100%;
+		padding: 0;
+		top: 0;
+		z-index: 99;
+		height: calc(100vh - 48px);
+	}
+
+	.dock-control-inner {
+		background-color: $darkGray2;
+		position: relative;
+		min-height: 100px; // --< This is what close-arrow hides behind.
+	}
+}
+
+.dock-controlRTL {
+	width: 360px;
+	height: 100%;
+	background-color: $darkGray2;
+	z-index: 99;
+	position: absolute;
+	top: 0px;
+	right: 0;
+
+	@media only screen and (min-width: 1024px) {
+		box-shadow: 63px 71px 10px 67px rgba(0, 0, 0, 0.75);
+	}
+
+	&.closed {
+		animation: 0.51s ease-in-out 0s 1 slideOutDockRTL;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideDown;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.open {
+		animation: 0.5s ease-in-out 0.55s 1 slideInDockRTL;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideUp;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.hide {
+		animation: 0.5s ease-in-out 0s 1 slideOutDockRTL;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideDown;
+			animation-fill-mode: both;
+		}
+	}
+
+	@media only screen and (max-width: 1023px) {
+		position: absolute;
+		padding: 0;
+		width: 100%;
+		padding: 0;
+		top: 0;
+		z-index: 99;
+		height: calc(100vh - 48px);
+	}
+
+	.dock-controlRTL-inner {
+		background-color: $darkGray2;
+		position: relative;
+		min-height: 100px; // --< This is what close-arrow hides behind.
+	}
+}
+
+@keyframes slideOutSidebar {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes slideInSidebar {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.dock-control-sidebar {
+	display: none;
+
+	@media (min-width: 1024px) {
+		width: 60px;
+		height: 100vh;
+		top: 0px;
+		left: 0;
+		background: $darkGray;
+		z-index: 99;
+		padding-top: 2rem;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		button:hover {
+			background-color: $mediumGray  !important;
+		}
+
+		&.closed {
+			display: none;
+		}
+
+		&.open {
+			box-shadow: -63px 71px 10px 67px rgba(0, 0, 0, 0.75);
+		}
+	}
+}
+
+.dock-controlRTL-sidebar {
+	display: none;
+
+	@media (min-width: 1024px) {
+		width: 60px;
+		height: 100vh;
+		top: 0px;
+		right: 0;
+		background: $darkGray;
+		z-index: 99;
+		padding-top: 2rem;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		button:hover {
+			background-color: $mediumGray  !important;
+		}
+
+		&.closed {
+			display: none;
+		}
+
+		&.open {
+			box-shadow: 63px 71px 10px 67px rgba(0, 0, 0, 0.75);
+		}
+	}
+}
+
+button.hide-dock {
+	position: absolute !important; // <---- override mat ui styles
+	left: $dock-control-width;
+	top: 0px;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	z-index: -90 !important; // <--- override mat ui styles so it slips under list panel
+	background-color: $darkGray  !important;
+	width: 30px !important;
+
+	&:hover {
+		background-color: $mediumGray  !important;
+	}
+
+	&.profile-open {
+		animation: 0.5s ease-in-out 0.55s 1 slideOutButton;
+		animation-fill-mode: both;
+	}
+
+	div>svg {
+		position: relative;
+		left: -150%;
+	}
+
+	@media (max-width: 1023px) {
+		display: none !important;
+	}
+}
+
+button.hide-dockRTL {
+	position: absolute !important; // <---- override mat ui styles
+	right: $dock-control-width;
+	border-radius: 5px;
+	padding: 10px;
+	top: 0px;
+	color: white;
+	z-index: -90 !important; // <--- override mat ui styles so it slips under list panel
+	background-color: $darkGray  !important;
+	width: 30px !important;
+
+	&:hover {
+		background-color: $mediumGray  !important;
+	}
+
+	&.profile-open {
+		animation: 0.5s ease-in-out 0.55s 1 slideOutButtonRTL;
+		animation-fill-mode: both;
+	}
+
+	div>svg {
+		position: relative;
+		right: -150%;
+	}
+
+	@media (max-width: 1023px) {
+		display: none !important;
+	}
+}
+
+button.hide-dock {
+	&.profile-closed.arrow-removed {
+		visibility: hidden !important;
+	}
+
+	&.profile-open.arrow-removed {
+		visibility: hidden !important;
+	}
+}
+
+button.hide-dock {
+	&.profile-closed.arrow-expanded {
+		left: 360px;
+	}
+}
+
+button.hide-dock {
+	&.arrow-expanded {
+		left: 600px;
+	}
+}
+
+button.hide-dockRTL {
+	&.profile-closed.arrow-removed {
+		visibility: hidden !important;
+	}
+
+	&.profile-open.arrow-removed {
+		visibility: hidden !important;
+	}
+}
+
+button.hide-dockRTL {
+	&.profile-closed.arrow-expanded {
+		right: 360px;
+	}
+}
+
+button.hide-dockRTL {
+	&.arrow-expanded {
+		right: 600px;
+	}
+}
+
+svg.close-arrow.close-arrow-removed {
+	visibility: hidden !important;
+}
+
+button.show-dock-up,
+button.hide-dock-down {
+	position: relative;
+	right: 1rem;
+}
+
+@keyframes slideOutProfile {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-200%);
+	}
+}
+
+@keyframes slideOutProfileRTL {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(200%);
+	}
+}
+
+@keyframes slideInProfile {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes slideInProfileRTL {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes slideOverProfile {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(60px); // Width of collapsed list panel
+	}
+}
+
+@keyframes slideOverProfileRTL {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(-60px); // Width of collapsed list panel
+	}
+}
+
+@keyframes slideBackProfile {
+	0% {
+		transform: translateX(360px);
+	}
+
+	100% {
+		transform: translateX(-200%);
+	}
+}
+
+.secondary-panel {
+	background-color: $mediumGray;
+	position: absolute;
+	width: 100%;
+	z-index: 98; // List panel is 99, must be less than that in order to slide out from behind it
+	padding: 3rem 10px 10px 10px; // space for back navigation
+	overflow: auto;
+	top: 0;
+	box-shadow: inset 1px 4px 9px -6px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	animation: 0.5s ease-in-out 0s 1 slideInProfile;
+	animation-fill-mode: both;
+	font: initial;
+	font-family: "Roboto";
+
+	@media only screen and (max-width: 1023px) {
+		animation: 0.5s ease-in-out 0s 1 slideUp;
+		animation-fill-mode: both;
+		z-index: 100;
+	}
+
+	&.list-closed.open {
+		animation: 0.5s ease-in-out 0s 1 slideOverProfile;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			left: 0;
+			animation: 0.5s ease-in-out 0s 1 slideUp;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.list-open {
+		animation: 0.5s ease-in-out 0.55s 1 slideInProfile;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			left: 0;
+			animation: 0.5s ease-in-out 0s 1 slideUp;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.list-closed.secondary-expanded {
+		width: 600px;
+	}
+
+	&.list-open.secondary-expanded {
+		width: 600px;
+		left: -240px;
+	}
+
+	&.mobile {
+		height: calc(100vh - 96px) !important;
+		top: 48px;
+	}
+
+	&.closed {
+		// animation: 0.25s ease-in-out 0s 1 slideBackProfile;
+		display: none;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideDown;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.hide {
+		animation: 0.5s ease-in-out 0s 1 slideOutProfile;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideDown;
+			animation-fill-mode: both;
+		}
+	}
+
+	@media only screen and (max-width: 1023px) {
+		left: 0;
+	}
+
+	@media only screen and (min-width: 1024px) {
+		background-color: #41454a;
+		top: 0;
+		width: 360px;
+		// z-index: -3;
+		margin-left: 0px;
+		height: calc(100vh - 48px);
+
+		&.closed {
+			top: 0;
+			position: absolute;
+		}
+	}
+}
+
+.secondary-panelRTL {
+	background-color: $mediumGray;
+	position: absolute;
+	width: 100%;
+	z-index: 98; // List panel is 99, must be less than that in order to slide out from behind it
+	padding: 3rem 10px 10px 10px; // space for back navigation
+	overflow: auto;
+	top: 0;
+	box-shadow: inset 1px 4px 9px -6px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	animation: 0.5s ease-in-out 0s 1 slideInProfileRTL;
+	animation-fill-mode: both;
+	font: initial;
+	font-family: "Roboto";
+	direction: ltr;
+
+	@media only screen and (max-width: 1023px) {
+		animation: 0.5s ease-in-out 0s 1 slideUp;
+		animation-fill-mode: both;
+		z-index: 100;
+	}
+
+	&.list-closed.open {
+		animation: 0.5s ease-in-out 0s 1 slideOverProfileRTL;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			right: 0;
+			animation: 0.5s ease-in-out 0s 1 slideUp;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.list-open {
+		animation: 0.5s ease-in-out 0.55s 1 slideInProfileRTL;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			right: 0;
+			animation: 0.5s ease-in-out 0s 1 slideUp;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.list-closed.secondary-expanded {
+		width: 600px;
+	}
+
+	&.list-open.secondary-expanded {
+		width: 600px;
+		right: -240px;
+	}
+
+	&.mobile {
+		height: calc(100vh - 96px) !important;
+		top: 48px;
+	}
+
+	&.closed {
+		// animation: 0.25s ease-in-out 0s 1 slideBackProfile;
+		display: none;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideDown;
+			animation-fill-mode: both;
+		}
+	}
+
+	&.hide {
+		animation: 0.5s ease-in-out 0s 1 slideOutProfileRTL;
+		animation-fill-mode: both;
+
+		@media only screen and (max-width: 1023px) {
+			animation: 0.5s ease-in-out 0s 1 slideDown;
+			animation-fill-mode: both;
+		}
+	}
+
+	@media only screen and (max-width: 1023px) {
+		right: 0;
+	}
+
+	@media only screen and (min-width: 1024px) {
+		background-color: #41454a;
+		top: 0;
+		width: 360px;
+		// z-index: -3;
+		margin-right: 0px;
+		height: calc(100vh - 48px);
+
+		&.closed {
+			top: 0;
+			position: absolute;
+		}
+	}
+}
+
+.profile-wrapper {
+	overflow: scroll;
+	height: 100%;
+
+	.profile-close-button {
+		position: absolute;
+		top: 0rem;
+		right: 0rem;
+	}
+
+	.profile-expand-button {
+		position: absolute;
+		top: 0rem;
+		right: 3rem;
+	}
+}
+
+#profile-navigation {
+	position: absolute;
+	z-index: 99;
+	top: 0.45rem;
+	align-items: center;
+	width: 70%;
+
+	button>div {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+#toggle-mobile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 48px;
+	background-color: $darkGray;
+}

@@ -1,0 +1,173 @@
+{
+	"appId": "lists-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "القوائم"
+			},
+			"listPanel": {
+				"categoryManager": {
+					"cancel": "إلغاء",
+					"fieldLabel": {
+						"addCategory": "إضافة فئة جديدة"
+					},
+					"ok": "حسنا",
+					"remove": "إزالة"
+				},
+				"createList": {
+					"dialog": {
+						"cancel": "إلغاء",
+						"create": "إنشاء",
+						"textFooter": "ستتم إضافة جميع المحتويات إلى قائمتك الجديدة."
+					},
+					"fieldLabel": {
+						"addCategory": "إضافة فئة جديدة",
+						"chooseCategory": "اختر فئة القائمة (اختياري)",
+						"generateRow": "توليد صف أنشطة",
+						"listName": "اسم القائمة",
+						"paginate": "ترقيم"
+					}
+				},
+				"main": {
+					"clickToCreate": "ليس لديك حاليا أي قوائم متاحة. انقر فوق الزر أعلاه لإنشاء واحدة جديدة.",
+					"fieldLabel": {
+						"searchList": "قوائم البحث ..."
+					},
+					"items": "العناصر",
+					"item": "بند",
+					"list": "قائمة",
+					"lists": "القوائم}",
+					"listsShared": "القوائم المشتركة معي",
+					"manage": "إدارة الفئات",
+					"myLists": "قوائمي",
+					"newList": "قائمة جديدة",
+					"noItems": "0 العناصر",
+					"oneItem": "1 البند",
+					"showPanel": "إظهار لوحة القائمة",
+					"showPinned": "إظهار القوائم المثبتة",
+					"uncategorized": "قوائم غير مصنفة"
+				}
+			},
+			"listView": {
+				"columnAdd": {
+					"choice1": "الاختيار 1",
+					"choice2": "الاختيار 2",
+					"choice3": "الاختيار 3",
+					"dialog": {
+						"cancel": "إلغاء",
+						"create": "إنشاء"
+					},
+					"fieldLabel": {
+						"chooseColumnType": "اختر نوع العمود",
+						"chooseLookupType": "اختر نوع البحث",
+						"columnAlreadyExist": "العمود موجود بالفعل",
+						"columnName": "اسم العمود",
+						"defaultValue": "القيمة الافتراضية",
+						"showTime": "موعد العرض؟",
+						"showUser": "إظهار المستخدم؟",
+						"user": "مستخدم"
+					},
+					"menuItem": {
+						"checkbox": "خانة اختيار",
+						"choice": "خيار",
+						"dateTime": "التاريخ و الوقت",
+						"lookup": "ابحث عن",
+						"notes": "ملحوظات",
+						"text": "نص",
+						"user": "مستخدم"
+					}
+				},
+				"columnDelete": {
+					"dialog": {
+						"cancel": "إلغاء",
+						"deleteSelected": "حذف الأعمدة المحددة",
+						"title": "اختر العمود (الأعمدة) المراد حذفها."
+					}
+				},
+				"columnOrder": {
+					"dialog": {
+						"cancel": "إلغاء",
+						"ok": "حسنا"
+					}
+				},
+				"editList": {
+					"dialog": {
+						"cancel": "إلغاء",
+						"save": "حفظ"
+					},
+					"fieldLabel": {
+						"addCategory": "إضافة فئة جديدة",
+						"chooseColumn": "اختر العمود",
+						"defaultValue": "القيمة الافتراضية",
+						"generateRow": "توليد صف أنشطة",
+						"listCategory": "فئة القائمة",
+						"listName": "اسم القائمة",
+						"name": "الاسم",
+						"paginate": "ترقيم"
+					}
+				},
+				"listCard": {
+					"add": "أضف",
+					"cancel": "إلغاء",
+					"item": "%{count} البند",
+					"items": "%{count} البنود",
+					"remove": "إزالة"
+				},
+				"listMenu": {
+					"menuItem": {
+						"addColumn": "أضف عمود",
+						"columnOrder": "ترتيب العمود",
+						"deleteColumns": "حذف الأعمدة",
+						"deleteList": "قائمة الحذف",
+						"duplicateList": "قائمة مكررة",
+						"editList": "تحرير القائمة"
+					}
+				},
+				"listOrder": {
+					"dialog": {
+						"cancel": "إلغاء",
+						"ok": "حسنا"
+					}
+				},
+				"main": {
+					"changeOrder": "تغيير الترتيب",
+					"dialog": {
+						"cancel": "إلغاء",
+						"delete": "حذف",
+						"textContent": "سيتم إزالة كافة المحتويات بشكل دائم",
+						"title": "هل أنت متأكد أنك تريد حذف هذه القائمة؟"
+					},
+					"emptyMessage": "لم يتم تحديد أي قائمة. اختر من اللوحة اليمنى",
+					"removeAll": "إزالة الكل"
+				}
+			},
+			"listcard": {
+				"item": "العنصر",
+				"items": "أغراض"
+			},
+			"shared": {
+				"choiceColumn": {
+					"fieldLabel": {
+						"addNewChoice": "أضف خيارًا جديدًا",
+						"defaultValue": "القيمة الافتراضية",
+						"none": "لا شيء",
+						"remove": "إزالة",
+						"unableToEdit": "تعذر تحرير الاختيارات المعينة بالفعل للصفوف"
+					}
+				},
+				"dateTimeColumn": {
+					"fieldLabel": {
+						"example": "مثال:",
+						"includeTime": "تضمين الوقت؟"
+					}
+				},
+				"textColumn": {
+					"fieldLabel": {
+						"defaultValue": "القيمة الافتراضية"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.menuItems {
+	max-height: 400px;
+    overflow: scroll;
+}
+.addButton {
+	padding-left: 16px;
+    padding-right: 16px;
+	button{
+		width: 100%;
+		background: #4DB5F4;
+		color: white;
+		border-radius: 8px;
+		border: none;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		text-align: center;
+		&:hover{
+			background: #378ABC;
+		}
+	}
+}
+.noAgents {
+	padding: 0px 10px;
+    font-size: 12px;
+}
+
+body{
+	height: 100vh;;
+}

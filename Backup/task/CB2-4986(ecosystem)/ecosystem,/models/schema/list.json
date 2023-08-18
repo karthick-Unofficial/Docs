@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "",
+    "type": "object",
+    "required": [ ],
+    "additionalProperties": false,
+    "properties": {
+        "category": {"type": ["string", "null"]},
+        "createdDate": {"date": true},
+        "deleted": {"type": "boolean"},
+        "id": {"type": "string"},
+        "isPublic": {"type": "boolean"},
+        "lastModifiedDate": {"date": true},
+        "name": {"type": "string"},
+        "owner": {"type": "string"},
+        "ownerOrg": {"type": "string"},
+        "targetId": {"type": "string"},
+        "targetType": {"type": "string"},
+        "rows": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "data": {"type": "object"},
+                    "order": {"type": "number"}
+                }
+            }
+        },
+        "columns": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        }
+    }
+}

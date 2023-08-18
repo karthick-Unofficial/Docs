@@ -1,0 +1,138 @@
+{
+	"appId": "map-app",
+	"locales": "en",
+	"translations": {
+		"ar_kw": {
+			"listPanel": {
+				"entityCollection": {
+					"entityCollectionEdit": {
+						"copytoNew": "نسخ إلى مجموعة جديدة",
+						"deleteDialog": {
+							"confirmText": "هل أنت متأكد أنك تريد حذف هذه المجموعة؟",
+							"title": "حذف مجموعة؟"
+						},
+						"dockItemLabel": "بلدي البنود",
+						"emptyColl": "المجموعة فارغة",
+						"flatButtonLabel": {
+							"cancel": "إلغاء",
+							"confirm": "تأكيد",
+							"delete": "تحذف"
+						}
+					},
+					"item": "%{count} عنصر",
+					"items": "%{count} البنود",
+					"manage": "إدارة",
+					"sharedWithMe": "شارك معي"
+				},
+				"entityProfile": {
+					"phoenixDropzone": {
+						"addFilesBtn": "إضافة ملفات"
+					}
+				},
+				"hiddenEntityDialog": {
+					"cancel": "إلغاء",
+					"event": "حدث",
+					"save": "حفظ",
+					"title": "العناصر المخفية"
+				},
+				"listPanel": {
+					"collectionsShared": "المجموعات المشتركة معي",
+					"eventsShared": "الأحداث المشتركة معي",
+					"hiddenItems": "العناصر المخفية",
+					"item": "1 عنصر",
+					"items": "%{count} البنود",
+					"manageBtn": "يدير",
+					"myCollections": "مجموعاتي",
+					"myEvents": "أحداثي",
+					"placeholder": {
+						"searchColl": "مجموعات البحث ...",
+						"searchEvents": "البحث في الأحداث ...",
+						"wantToFind": "انا اريد ان اجد..."
+					},
+					"tabLabel": {
+						"collections": "التحصيلات",
+						"events": "الأحداث",
+						"search": "بحث"
+					},
+					"eventFilters": {
+						"active": "نشيط",
+						"scheduled": "المقرر",
+						"closed": "مغلق",
+						"noActive": "لا توجد أحداث نشطة.",
+						"noScheduled": "لا توجد أحداث مجدولة.",
+						"noClosed": "لا توجد أحداث مغلقة.",
+						"noResults": "لم يتم العثور على نتائج."
+					}
+				},
+				"listPanelMobileToggle": {
+					"openlistPanel": "فتح لوحة القائمة",
+					"viewMap": "إعرض الخريطة"
+				},
+				"searchResults": {
+					"matchingResult": "٪{count} نتيجة المطابقة",
+					"matchingResults": "%{count} نتائج المطابقة",
+					"unknown": "غير معروف"
+				}
+			},
+			"mapAppBar": {
+				"listItem": {
+					"cameraFOV": "كاميرا فوف",
+					"events": "الأحداث",
+					"lines": "خطوط",
+					"mapLabels": "تسميات الخريطة",
+					"nauticalCharts": "مخططات بحرية",
+					"points": "نقاط",
+					"polygons": "المضلعات",
+					"roadsLabels": "الطرق والتسميات",
+					"ssrRadar": "الرادار SSR",
+					"weatherRadar": "رادار الطقس"
+				},
+				"subHeader": {
+					"baseMap": "الخريطة الأساسية",
+					"feeds": "الأعلاف",
+					"mapOverlays": "تراكبات الخريطة"
+				},
+				"tileHeader": {
+					"color": "اللون",
+					"grayScale": "تدرج الرمادي",
+					"night": "ليل",
+					"satellite": "الساتل"
+				},
+				"title": "خريطة"
+			},
+			"mapBase": {
+				"contextMenu": {
+					"appContextMenu": {
+						"createEvent": "انشاء حدث",
+						"initiateSpotlight": "بدء الأضواء",
+						"toggleHistory": "تبديل التاريخ"
+					},
+					"newEventContextMenu": {
+						"newEvent": "حدث جديد",
+						"noTemplate": "حدث جديد (لا يوجد نموذج)"
+					}
+				}
+			},
+			"shared": {
+				"dockItemAdd": {
+					"addBox": "إضافة مربع",
+					"check": "تحقق"
+				},
+				"dockItemRemove": {
+					"close": "أغلق"
+				}
+			},
+			"spotLight": {
+				"resumeSpotlightDialog": {
+					"close": "إغلاق",
+					"spotlight": "%{count} أضواء كاشفة",
+					"textContent": "تم العثور على أضواء كاشفة نشطة. الرجاء تحديد أي أضواء موضعية ترغب في استئنافها.",
+					"title": "استئناف الأضواء (ق)"
+				},
+				"spotLightWindow": {
+					"spotlight": "أضواء كاشفة"
+				}
+			}
+		}
+	}
+}

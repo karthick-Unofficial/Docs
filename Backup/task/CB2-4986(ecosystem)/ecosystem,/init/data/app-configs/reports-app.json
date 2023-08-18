@@ -1,0 +1,54 @@
+{
+    "name": "Reports App",
+    "clientId": "1f284649-4160-4dd9-a913-58cdcc175216",
+    "clientSecret": "2322f61b-15f0-4001-b891-88cc7ffbd129",
+    "debugPort": 5895,
+    "minioClient": {
+        "endPoint": "minio-1",
+        "secure": false,
+        "port": 9000,
+        "accessKey": "SOME_ACCESS_KEY",
+        "secretKey": "SOME_SECRET"
+    },
+    "attachmentBucket": {
+        "region": "us-east-1",
+        "name": "cb2-attachment"
+    },
+    "properties": {
+        "natsServer": "nats://phoenix-nats:4222"
+    },
+    "clientConfig": {
+        "supportEmail": {
+          "address": "c2support@aressecuritycorp.com",
+          "subject": "Avert C2 Support Issue",
+          "body": "[Use this space to describe the issue you are experiencing.]"
+        }
+    },
+    "timezone": "America/New_York",
+    "processes": [
+        {
+            "id": "zone-activity",
+            "name": "Zone Activity Collector",
+            "entrypoint": "zone-activity-collector.js",
+            "args": {}
+        },
+        {
+            "id": "tripwire-activity",
+            "name": "Tripwire Activity Collector",
+            "entrypoint": "tripwire-activity-collector.js",
+            "args": {}
+        },
+        {
+            "id": "dwell-time",
+            "name": "Dwell Time Collector",
+            "entrypoint": "dwell-time-collector.js",
+            "args": {}
+        },
+        {
+            "id": "feed-history",
+            "name": "Feed History Collector",
+            "entrypoint": "feed-history-collector.js",
+            "args": {}
+        }
+    ]
+}

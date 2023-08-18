@@ -1,0 +1,110 @@
+{
+    "appId": "champ-app",
+    "locales": "en",
+    "translations": {
+      "ar": {
+        "appBar": {
+          "title": "بطل"
+        },
+        "customers": {
+          "instanceCard": {
+            "disconnected": "انقطع الاتصال"
+          },
+          "instanceProfile": {
+            "activeUsers": "المستخدمين النشطين",
+            "buttons": {
+              "restartEco": "أعد تشغيل النظام البيئي",
+              "restartInt": "إعادة تشغيل التكامل",
+              "restartOther": "أعد تشغيل خدمة أخرى"
+            },
+            "dialog": {
+              "title": "إعادة تشغيل الخدمة"
+            },
+            "disconnected": "(انقطع الاتصال) ",
+            "good": "جيد",
+            "healthChecks": "الفحوصات الصحية",
+            "invalidInstance": "مثيل غير صالح",
+            "lastUpdate": "آخر تحديث:",
+            "quickFix": "إصلاح سريع",
+            "systems": "الأنظمة"
+          },
+          "manageCustomers": {
+            "clickCustomer": "انقر فوق أحد العملاء لمعرفة التفاصيل",
+            "systemHealth": "صحة النظام"
+          },
+          "userManagement": {
+            "active": "(الجلسات %{count}) نشيط",
+            "adminTooltip": "مستخدم إداري",
+            "dialog": {
+              "cancel": "إلغاء",
+              "confirm": "تأكيد",
+              "confirmation": "هل أنت متأكد أنك تريد تسجيل خروج المستخدم:",
+              "title": "تسجيل خروج المستخدم"
+            },
+            "inactive": "غير نشط",
+            "instance": "مثيل",
+            "logOut": "تسجيل خروج",
+            "userMangtitle": "إدارةالمستخدم",
+            "users": "المستخدمون"
+          }
+        },
+        "sideNav": {
+          "configManagement": "إدارة التكوين",
+          "deploymentManagement": "إدارة النشر",
+          "systemHealth": "صحة النظام"
+        }
+      },
+      "en": {
+        "appBar": {
+          "title": "CHAMP"
+        },
+        "customers": {
+          "instanceCard": {
+            "disconnected": "Disconnected"
+          },
+          "instanceProfile": {
+            "activeUsers": "Active Users",
+            "buttons": {
+              "restartEco": "Restart Ecosystem",
+              "restartInt": "Restart Integration",
+              "restartOther": "Restart Other Service"
+            },
+            "dialog": {
+              "title": "Restart Service"
+            },
+            "disconnected": " (Disconnected)",
+            "good": "Good",
+            "healthChecks": "Health Checks",
+            "invalidInstance": "Invalid Instance",
+            "lastUpdate": "Last Update:",
+            "quickFix": "Quick Fix",
+            "systems": "Systems"
+          },
+          "manageCustomers": {
+            "clickCustomer": "Click a customer to see details",
+            "systemHealth": "System Health"
+          },
+          "userManagement": {
+            "active": "Active (%{count} sessions)",
+            "adminTooltip": "Admin User",
+            "dialog": {
+              "cancel": "CANCEL",
+              "confirm": "CONFIRM",
+              "confirmation": "Are you sure you want to log out user:",
+              "title": "Log Out User"
+            },
+            "inactive": "Inactive",
+            "instance": "Instance",
+            "logOut": "Log Out",
+            "userMangtitle": "User Management",
+            "users": "Users"
+          }
+        },
+        "sideNav": {
+          "configManagement": "Configuration Management",
+          "deploymentManagement": "Deployment Management",
+          "systemHealth": "System Health"
+        }
+      }
+    }
+  }

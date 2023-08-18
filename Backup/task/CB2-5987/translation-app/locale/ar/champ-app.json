@@ -1,0 +1,71 @@
+{
+	"appId": "champ-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "بطل"
+			},
+			"customers": {
+				"instanceCard": {
+					"disconnected": "انقطع الاتصال",
+					"sslExpirationBadge": {
+						"expiredDaysAgo": "انتهت صلاحية شهادة SSL قبل %{count} يومًا!",
+						"expiresToday": "شهادة SSL تنتهي اليوم!",
+						"expiresInDays": "تنتهي صلاحية شهادة SSL في %{count} يومًا."
+					}
+				},
+				"instanceProfile": {
+					"activeUsers": "المستخدمين النشطين",
+					"buttons": {
+						"restartEco": "أعد تشغيل النظام البيئي",
+						"restartInt": "إعادة تشغيل التكامل",
+						"restartOther": "أعد تشغيل خدمة أخرى"
+					},
+					"dialog": {
+						"title": "إعادة تشغيل الخدمة"
+					},
+					"disconnected": "(انقطع الاتصال) ",
+					"good": "جيد",
+					"healthChecks": "الفحوصات الصحية",
+					"invalidInstance": "مثيل غير صالح",
+					"lastUpdate": "آخر تحديث:",
+					"quickFix": "إصلاح سريع",
+					"systems": "الأنظمة",
+					"sslExpiration": {
+						"header": "انتهاء SSL",
+						"day": "يوم",
+						"days": "أيام",
+						"daysAgo": "أيام مضت",
+						"unavailable": "غير متوفره"
+					}
+				},
+				"manageCustomers": {
+					"clickCustomer": "انقر فوق أحد العملاء لمعرفة التفاصيل",
+					"customerDashboard": "لوحة تحكم العميل",
+					"systemHealth": "صحة النظام"
+				},
+				"userManagement": {
+					"active": "(الجلسات %{count}) نشيط",
+					"adminTooltip": "مستخدم إداري",
+					"dialog": {
+						"cancel": "إلغاء",
+						"confirm": "تأكيد",
+						"confirmation": "هل أنت متأكد أنك تريد تسجيل خروج المستخدم:",
+						"title": "تسجيل خروج المستخدم"
+					},
+					"inactive": "غير نشط",
+					"instance": "مثيل",
+					"logOut": "تسجيل خروج",
+					"userMangtitle": "إدارةالمستخدم",
+					"users": "المستخدمون"
+				}
+			},
+			"sideNav": {
+				"configManagement": "إدارة التكوين",
+				"deploymentManagement": "إدارة النشر",
+				"systemHealth": "صحة النظام"
+			}
+		}
+	}
+}

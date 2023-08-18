@@ -1,0 +1,9 @@
+Today's Task:
+CB2-5301 - Facilities app crashing on clicking Add floor plan
+- Worked on figuring out the main cause of issue causing app-crash while adding a floorPlan in facilities-app.
+- Added react-dropzone package to facilities/app-src node_modules as a resolve.
+
+CB2-5280 - Equipment & Resources are not showing up in reports app
+- Went through exact scenarios to reproduce the issue in local env and working on sorting out ways to add fixes.
+
+- Worked on installing node_modules and adding client-app build to docker image.

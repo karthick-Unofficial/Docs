@@ -1,0 +1,4 @@
+Today's Task:
+- Worked on accessPoints PUT api issues and updated fixes in ecosystem.
+- Worked on replacing FeedModal.getFeedByEntityType method with existing userPolicyCache method to fetch Feeds by entityType.
+- Worked on Events-app accessPoints Implementations and updated fixes for issues faced in accessPointProfile.

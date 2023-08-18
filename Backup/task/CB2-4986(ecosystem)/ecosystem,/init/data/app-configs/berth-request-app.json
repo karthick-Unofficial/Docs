@@ -1,0 +1,85 @@
+{
+	"clientConfig": {
+		"timezone": "America/Chicago",
+		"organizationId": "ares_security_corporation",
+		"berthRequestHeader": "<div style=\"text-align: center; font-size: 16px; margin-top: 15px;\"><img alt=\"\" src=\"https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/0_l4855bv6/def_height/500/def_width/500/version/100012/type/1\"><h2 style=\"color: black;\">Berth Request</h2><h4 style=\"color: black;\">1934 Old Gallows Rd, Suite 410</h4><h4 style=\"color: black;\">Vienna, VA 22182</h4><h4 style=\"color: black;\">Phone - Main Office (571) 351-1260</h4></div>",
+		"vesselReportHeader": "<div style=\"text-align: center; font-size: 16px; margin-top: 15px;\"><img alt=\"\" src=\"https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/0_l4855bv6/def_height/500/def_width/500/version/100012/type/1\"><h2 style=\"color: black;\">ARES Security Corporation</h2><h4 style=\"color: black;\">1934 Old Gallows Rd, Suite 410</h4><h4 style=\"color: black;\">Vienna, VA 22182</h4><h4 style=\"color: black;\">Phone - Main Office (571) 351-1260</h4></div>",
+		"agentOwner": {
+			"enabled": true,
+			"required": true
+		},
+		"requestingCompany": {
+			"enabled": true,
+			"required": true
+		},
+		"voyageNumber": {
+			"enabled": true,
+			"required": true
+		},
+		"cargoDirectionLevel": "assignment",
+		"imoRequired": false,
+		"servicesConfig": [
+			{
+				"property": "crewChange",
+				"label": "Crew Change",
+				"subLabel": "Mark this for crew changes."
+			},
+			{
+				"property": "storesDeliveries",
+				"label": "Stores/Deliveries",
+				"subLabel": ""
+			},
+			{
+				"property": "shoreCranes",
+				"label": "Shore Cranes",
+				"subLabel": ""
+			},
+			{
+				"property": "inspection",
+				"label": "Inspection",
+				"subLabel": ""
+			},
+			{
+				"property": "waterHookup",
+				"label": "Water Hookup",
+				"subLabel": ""
+			},
+			{
+				"property": "security",
+				"label": "Security",
+				"subLabel": ""
+			},
+			{
+				"property": "other",
+				"label": "Other",
+				"subLabel": ""
+			}
+		],
+		"submitDialog": {
+			"enabled": true
+		},
+		"timeFormat": "24-hour"
+	},
+	"agentOwner": {
+		"enabled": true,
+		"required": true
+	},
+	"requestingCompany": {
+		"enabled": true,
+		"required": true
+	},
+	"imoRequired": false,
+	"emails": {
+		"departure": true,
+		"newAssignment": true,
+		"updatedAssignment": true,
+		"requestConfirmation": true,
+		"approvedAssignment": true,
+		"vesselReport": true
+	},
+	"vesselReportRecipients": [
+		"email@domain.com"
+	],
+	"pdfHeader": "<div style=\"margin-bottom: 20px; text-align: center;\"><img style=\"width: 150px;\" alt=\"\" src=\"https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/0_l4855bv6/def_height/500/def_width/500/version/100012/type/1\"><h4 class=\"center fields\">ARES Security Corporation</h4><p class=\"center fields text\">1934 Old Gallows Rd, Suite 410 -- Vienna, VA 22182</p><p class=\"center fields text\">Phone - Main Office (571) 351-1260</p></div>",
+	"timezone": "America/Chicago"
+}

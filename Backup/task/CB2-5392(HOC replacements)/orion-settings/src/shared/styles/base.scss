@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-weight: normal; // Prevents extra bolding on links and headers in safari and firefox
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
+
+.cf:after {
+	clear: both;
+}
+
+body {
+	background-color: $darkGray2;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto";
+}
+
+main {
+	width: 100%;
+	height: 900px;
+	padding: 0 9%;
+}
+
+// .profile-wrapper a {
+// 	text-decoration: none;
+// 	font-size: .9em;
+// 	color: $link;
+// 	font-family: "robotobold";
+// 	cursor: pointer;
+// 	font-weight: normal; 
+// }
+
+a:hover {
+	text-decoration: none;
+}
+
+// input styling
+.field {
+	background-color: #1F1F21;
+	width: 100%;
+	border: none;
+	height: 42px;
+	padding: 3px 16px;
+	margin: 2px 0;
+	outline: none;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #555555;
+  border: 0px none #ffffff;
+  border-radius: 10px;
+}
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #ffffff;
+// }
+// ::-webkit-scrollbar-thumb:active {
+//   background: #ffffff;
+// }
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+  border: 0px none #ffffff;
+  border-radius: 20px;
+}
+// ::-webkit-scrollbar-track:hover {
+//   background: #666666;
+// }
+// ::-webkit-scrollbar-track:active {
+//   background: #333333;
+// }
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  9% {
+	  opacity: 1;
+  }
+
+  70% {
+	  opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.save-indicator {
+		.saved-message {
+			background-color: #4CAF50;
+			font-size: 24px;
+			border-radius: 50%;
+			animation-duration: 4s;
+			animation-fill-mode: both;
+			// animation-delay: 3s;
+  		animation-name: fadeInOut;
+		}
+		.error {
+			animation: none;
+			background-color:red;
+			cursor: pointer;
+		}
+
+		.hover-error {
+			width: 200px;
+			background-color: black;
+			color: white;
+			position: absolute;
+			margin-left: -210px;
+			margin-top: -12px;
+			font-size: 11px;
+			text-align: center;
+		}
+
+		.flex {
+			display: flex;
+		}
+
+		.long-error {
+			background-color: black;
+			color: white;
+			padding: 3px;
+			margin-right: 14px;
+			align-self: center;
+			font-size: 12px;
+			margin-top: 0px;
+		}
+}
+
+// This is to correct the background color of the home screen. There may be a better way, but this seems to work for now.
+// Color was originally set on the <HTML> element, with other screens changing the color of the body tag, but due to 
+// combining the code for home and settings, this can't be done the same way. 
+
+.home-app {
+	background: #252526;
+}
+
+@media (min-width:1025px) {
+
+	.app {
+		height: 100vh;
+	}
+	
+}

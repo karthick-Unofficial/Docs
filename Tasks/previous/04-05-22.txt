@@ -1,0 +1,6 @@
+Today's Task:
+CB2-5277
+- Worked on testing Functional Component Implementation workflow in rules-app and also worked on fixing minor issues in EditRule, SystemHealth etc.
+- Worked on converting class component to functional component in cameras-app/CamerasMapLayer.
+- Worked on sorting out and fixing mapbox "styledata" event rendering issues in CamerasMapLayer.
+

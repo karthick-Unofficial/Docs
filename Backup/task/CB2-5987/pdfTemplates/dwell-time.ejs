@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		* {
+			margin: 0px;
+			/* font-size: 0.67em; */
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Roboto'
+		}
+
+		body {
+			margin: 20px;
+		}
+
+		#pageFooter {
+			width: 100%;
+			margin-top: 40px;
+
+		}
+
+		#pageFooter>div {
+			font-size: 0.67em;
+			float: right;
+			width: 50%;
+			margin: 0 auto;
+			margin-right: 40px;
+			padding-bottom: 20px;
+		}
+
+		#pageHeader-first {
+			margin-bottom: 20px;
+		}
+
+		.pdf-header-labels,
+		.pdf-header-data {
+			-webkit-justify-content: space-between;
+			-ms-flex-align: baseline;
+			-webkit-align-items: baseline;
+			-webkit-box-align: baseline;
+			align-items: baseline;
+			justify-content: space-between;
+		}
+
+		.pdf-header-data {
+			-webkit-justify-content: flex-end;
+			justify-content: flex-end;
+		}
+
+		.date-label {
+			margin-right: 37px;
+		}
+
+		.pdf-header-labels {
+			margin-bottom: 5px;
+		}
+
+		.pdf-header-labels>h4 {
+			margin-top: 20px;
+			margin-bottom: 5px;
+		}
+
+		.pdf-header-data>* {
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+
+		/* .pdf-body {
+			margin-top: 20px;
+		} */
+
+		.sitrep-long-field {
+			width: 100%
+		}
+
+		div {
+			display: block;
+		}
+
+		h6 {
+			display: block;
+			font-size: 0.67em;
+			-webkit-margin-before: 2.33em;
+			-webkit-margin-after: 2.33em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+			font-weight: bold;
+		}
+
+		span {
+			font-size: 0.67em;
+			-webkit-margin-before: 2.33em;
+			-webkit-margin-after: 2.33em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+		}
+
+		.field-header {
+			margin-bottom: 0
+		}
+
+		.flex {
+			display: -webkit-box;
+			display: -webkit-flex;
+			-webkit-flex-wrap: wrap;
+			/* -webkit-justify-content: space-between; */
+			display: flex;
+			flex-wrap: wrap;
+			/* justify-content: space-between; */
+		}
+
+		.sitrep-field {
+			margin: 0 60px 0px 0;
+		}
+
+		.sitrep-field>span,
+		.sitrep-long-field>span {
+			font-size: 0.80em;
+			-webkit-margin-before: 2.33em;
+			-webkit-margin-after: 2.33em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+		}
+
+		.tables {
+			margin-top: 40px;
+		}
+
+		.table-container {
+			margin-bottom: 40px;
+
+		}
+
+		.table-container>h4 {
+			color: black;
+			margin-bottom: 10px;
+			margin-left: 10px;
+			font-size: 12px;
+			/* font-family: 'Roboto'; */
+		}
+
+		.table-data-container {
+			color: rgba(0, 0, 0, 0.87);
+			background-color: rgb(255, 255, 255);
+			transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+			box-sizing: border-box;
+			font-family: 'Roboto', sans-serif;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+			-moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+			box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+			border: 1px solid rgb(224, 224, 224);
+			border-radius: 2px;
+		}
+
+		table {
+			background-color: rgb(255, 255, 255);
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0px;
+			table-layout: fixed;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		thead {
+			display: table-header-group;
+			vertical-align: middle;
+			border-color: inherit;
+
+			border-bottom: 1px solid rgb(224, 224, 224);
+			background-color: rgb(204, 204, 204);
+			padding: 0px 1rem;
+		}
+
+		tr {
+			display: table-row;
+			vertical-align: inherit;
+			border-color: inherit;
+			border-bottom: 1px solid rgb(224, 224, 224);
+			color: rgba(0, 0, 0, 0.87);
+			height: 35px;
+		}
+
+		th {
+			font-weight: normal;
+			font-size: 8px;
+			padding-left: 10px;
+			padding-right: 10px;
+			/* height: 56px; */
+			/* text-align: left;
+			white-space: nowrap;
+			text-overflow: ellipsis; */
+			color: rgb(0, 0, 0);
+			position: relative;
+			background-color: inherit;
+		}
+
+		td {
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			text-align: left;
+			font-size: 8px;
+			word-break: break-all;
+			background-color: inherit;
+		}
+
+		td,
+		th {
+			display: table-cell;
+			vertical-align: inherit;
+		}
+
+		.svg-cell {
+			width: 74px;
+		}
+
+		.rightAlign {
+			text-align: right;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="pageFooter">
+		<div>
+			{{page}}-{{pages}} pages
+		</div>
+	</div>
+
+	<div id="pageHeader-first">
+		<div class="container">
+			<div class="pdf-header">
+				<div class="pdf-header-labels flex">
+					<h4>
+						Dwell Time Report
+					</h4>
+					<h4 class="date-label">
+						Report Date
+					</h4>
+				</div>
+				<div class="pdf-header-data flex">
+					<span>
+						<%= moment.tz(data.creationTime, data.timezone).locale(data.locale).format(`MM/DD/YYYY
+							${data.timeFormatPreference==="24-hour" ? "HH:mm z" : "hh:mm A z" }`) %>
+					</span>
+				</div>
+			</div>
+			<hr style="margin-top:10px;">
+		</div>
+	</div>
+
+	<div id="pageHeader">
+	</div>
+	<div class="pdf-body">
+		<div class="tables">
+			<%- include('vessel-templates/tables', {data: data}); %>
+		</div>
+	</div>
+
+</body>
+
+</html>

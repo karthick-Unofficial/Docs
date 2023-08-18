@@ -1,0 +1,10 @@
+{
+  "config": {},
+  "feedOwnerOrg": "ares_security_corporation_494ec52f-e5ca-4a1e-8aa2-6a89558ab846",
+  "id": "ares_security_corporation_494ec52f-e5ca-4a1e-8aa2-6a89558ab846_accessPoint",
+  "intId": "accessPoint",
+  "orgId": "ares_security_corporation_494ec52f-e5ca-4a1e-8aa2-6a89558ab846",
+  "policy": {
+    "type": "owner"
+  }
+}

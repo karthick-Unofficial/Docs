@@ -1,0 +1,325 @@
+events:
+  /events:
+    post:
+      description: create event
+      operationId: create
+      tags:
+        - events
+      responses:
+        '200':
+          description: OK
+        '401':
+          description: Unauthorized
+    post:
+      description: Create new event
+      operationId: create
+      tags:
+        - events
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                event:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    desc:
+                      type: string
+                    startDate:
+                      type: string
+                    endDate:
+                      type: string
+                    isPublic:
+                      type: boolean
+                    owner:
+                      type: string
+                    ownerOrg:
+                      type: string
+                    sharedWith:
+                      type: array
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+    get:
+      description: get all events
+      operationId: getAll
+      tags:
+        - events
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+  /events/{eventId}:
+    get:
+      description: Get event by ID
+      operationId: getevent
+      tags:
+        - events
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+    put:
+      description: Update an entity by id
+      operationId: update
+      tags:
+        - Entities
+      requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+              desc:
+                type: string
+              startDate:
+                type: string
+              endDate:
+                type: string
+              tags:
+                type: array
+                items:
+                  type: string
+      parameters:
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      reponses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: string
+                  errors:
+                    type: string
+    delete:
+      description: delete an entity by id
+      operationId: delete
+      tags:
+        - Entities
+      parameters:
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      reponses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: string
+                  errors:
+                    type: string
+  /events/{eventId}/entities/{entityId}:
+    put:
+      description: pin entity to event
+      operationId: pinEntity
+      tags:
+        - events
+      requestBody:
+        required: false
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+    delete:
+      description: Unpin an entity by id
+      operationId: unpinEntity
+      tags:
+        - events
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      reponses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: string
+                  errors:
+                    type: string
+  /events/{eventId}/feedEntities/{entityId}:
+    put:
+      description: pin feed entity to event
+      operationId: pinFeedEntity
+      tags:
+        - events
+      requestBody:
+        required: false
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+    delete:
+      description: Unpin a feed entity by id
+      operationId: unpinFeedEntity
+      tags:
+        - events
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      reponses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: string
+                  errors:
+                    type: string
+  
+  /events/{eventId}/public:
+    put:
+      description: Make event public
+      operationId: makePublic
+      tags:
+        - events
+      requestBody:
+        required: false
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /events/{eventId}/share:
+    put:
+      description: Share event
+      operationId: shareEvent
+      tags:
+        - events
+      requestBody:
+        required: true
+        content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              orgIds:
+                type: array
+              
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /events/{eventId}/comment:
+    put:
+      description: Add comment message to event
+      operationId: addComment
+      tags:
+        - events
+        - activities
+      requestBody:
+        required: true
+        content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+              
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK

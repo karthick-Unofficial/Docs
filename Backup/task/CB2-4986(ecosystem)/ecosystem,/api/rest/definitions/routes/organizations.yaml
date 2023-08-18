@@ -1,0 +1,409 @@
+organizations:
+  /organizations:
+    get:
+      description: Get all organizations
+      operationId: getAll
+      tags:
+        - Organizations
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: 
+                  type: object
+                  properties:
+                    description:
+                      type: string
+                    name:
+                      type: string
+                    orgId:
+                      type: string
+        '401':
+          description: Unauthorized
+    post:
+      description: Create an organization
+      operationId: create
+      tags:
+        - Organizations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                organization:
+                  type: object
+                  properties:
+                    description:
+                      type: string
+                    name:
+                      type: string
+                    orgId:
+                      type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+  /organizations/{orgId}:
+    put:
+      description: Update an organization by ID
+      operationId: update
+      tags:
+        - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                organization:
+                  type: object
+                  properties:
+                    description:
+                      type: string
+                    name:
+                      type: string
+                    orgId:
+                      type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+                  changes:
+                    type: array
+                    items:
+                      type: object
+    delete:
+      description: Delete an organization by ID
+      operationId: update
+      tags:
+        - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+  /organizations/{orgId}/users:
+    get:
+      description: Get all users by organization ID
+      operationId: getOrgUsers
+      tags:
+        - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: 
+                type: array
+                items:
+                  type: object
+  /organizations/{orgId}/applications/{appId}:
+    post:
+      description: Add an application to an organization by ID
+      operationId: upsertApplication
+      tags:
+       - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+    put:
+      description: Update an application to an organization by ID
+      operationId: upsertApplication
+      tags:
+       - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+    delete:
+      description: Delete an application to an organization by ID
+      operationId: removeApplication
+      tags:
+       - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  deleted:
+                    type: number
+                  errors:
+                    type: number
+  /organizations/{orgId}/integrations/{intId}:
+    post:
+      description: Add an integration to an organization by ID
+      operationId: upsertIntegration
+      tags:
+        - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: intId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+    put:
+      description: Update an integration to an organization by ID
+      operationId: upsertIntegration
+      tags:
+        - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: intId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+    delete:
+      description: Delete an integration from an organization by ID
+      operationId: removeIntegration
+      tags:
+        - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: intId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  deleted:
+                    type: number
+                  errors:
+                    type: number
+  /orgApplications:
+    get:
+      description: Get all organization applications
+      operationId: getAllOrgApps
+      tags:
+        - Organizations
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    orgId:
+                      type: string
+  /organizations/{orgId}/image:
+    post:
+      description: Upload an organization image
+      operationId: setOrgProfileImage
+      tags:
+        - Organizations
+      parameters:
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                filehandle:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number

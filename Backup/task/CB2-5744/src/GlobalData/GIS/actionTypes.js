@@ -1,0 +1,1 @@
+export const GIS_DATA_RECEIVED = "GIS_DATA_RECEIVED";

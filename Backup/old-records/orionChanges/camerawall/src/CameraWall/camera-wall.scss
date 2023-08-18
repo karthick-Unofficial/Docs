@@ -1,0 +1,11 @@
+.sidebar-open .camera-wall-grid-item {
+  @media only screen and (max-width: 1090px) {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  
+  @media only screen and (min-width: 1280px) and (max-width: 1410px) {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+}

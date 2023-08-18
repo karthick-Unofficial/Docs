@@ -1,0 +1,16 @@
+{
+	"config": {
+	  "canView": true,
+	  "role": "viewer"
+	},
+	"feedOwnerOrg": "ares_security_corporation_367682d1-4add-4ec7-94c7-e5ff0c6aa144",
+	"id": "39729ea2-c409-4d1d-b652-003d21b758fd",
+	"intId": "accessPoint",
+	"lastModifiedDate": "2022-03-08T05:41:04.146Z",
+	"orgIntId": "ares_security_corporation_367682d1-4add-4ec7-94c7-e5ff0c6aa144_accessPoint",
+	"permissions": [
+	  "manage",
+	  "control"
+	],
+	"roleId": "ares_security_corporation_org_admin"
+  }

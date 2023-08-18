@@ -1,0 +1,159 @@
+.org-details-wrapper {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	min-height: 310px;
+	width: auto;
+	padding-bottom: 30px;
+	.org-details-left {
+		display: flex;
+		margin-right: -30px;
+		margin-left: 30px;
+		flex-direction: column;
+		justify-content: flex-start;
+		h2 { 
+			margin-bottom: 2px;
+		}
+		@media (max-width: 670px) {
+			margin-right: 0px;
+			margin-left: 0px;
+			width: 100%;
+			text-align: center;
+		}
+		.org-details {
+			display: block;
+			width: 100%;
+			p {
+				margin: 0 0 2.6rem 0;
+			}
+
+		}
+	}
+}
+
+.org-icon {
+	display: flex;
+	justify-content: center;
+	max-width: 150px;
+	min-width: 150px;
+	min-height: 100px;
+	max-height: 100px;
+	text-align: center;
+	background-color: #000;
+	&.org-profile-image {
+		background-color: transparent;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	img {
+		width: 150px;
+		height: 100px;
+	}
+	span {			
+		align-self: center;
+		font-size: 4rem;
+		color: #fff;
+	}
+	@media (max-width: 670px) {
+		margin: 0 auto 1rem auto
+	}
+}
+
+.eco-admin-controls {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+	.create-org {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h4 {
+			margin-left: 1rem;
+			@media (max-width: 607px) {
+				display: none;
+			}
+		}
+	}
+}
+
+.admin-list {
+	font-weight: 300;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	min-width: 48%;
+	@media (max-width: 1550px) {
+		width: 100%;
+		margin-top: 30px;
+	}
+	.admin-list-header {
+		display: flex;
+    	align-items: center;
+		color: #fff;
+		font-size: 1.25rem;
+		margin-bottom: .75rem;
+		a {
+			margin-left: 1rem;
+		}
+	}
+	.admin-list-group {
+		.admin-list-item {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			width: 100%;
+			.admin-name {
+				@media (max-width: 550px) {
+					min-width: auto !important;
+				}
+			}
+			svg:hover {
+				fill: #fff !important;
+			}
+			* {
+				// font-family: 'robotolight';
+				// font-size: 12px;
+				text-overflow: ellipsis;
+			}
+			.admin-contact {
+				display: flex;
+				justify-content:flex-start;
+				width: 100%;
+				margin: 0 auto;
+				overflow: hidden;
+				margin-bottom: 2px;
+				@media (max-width: 550px) {
+					display: none;
+				}
+				a {
+					text-overflow: ellipsis;
+					overflow: hidden;
+					padding-right: .5rem;
+					@media (max-width: 550px) {
+						display: none;
+					}
+				}
+				p {
+					margin-left: 1rem;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					@media (max-width: 1266px) {
+						margin: 0 0 0 2rem;
+					}
+					@media (max-width: 750px) {
+						display: none;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+
+
+
+
+

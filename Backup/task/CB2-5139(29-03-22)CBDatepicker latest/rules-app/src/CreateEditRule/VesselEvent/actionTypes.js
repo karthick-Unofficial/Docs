@@ -1,0 +1,1 @@
+export const BERTHS_RECEIVED = "BERTHS_RECEIVED";

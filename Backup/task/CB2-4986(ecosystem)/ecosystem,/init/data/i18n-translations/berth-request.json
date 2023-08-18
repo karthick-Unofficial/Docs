@@ -1,0 +1,264 @@
+{
+    "appId": "berth-request-app",
+    "locales": "en",
+    "translations": {
+      "ar": {
+        "berthRequestForm": {
+          "CBDialog": {
+            "confirmDel": "تأكيد الحذف"
+          },
+          "bargeFields": {
+            "addBargeBtn": "إضافة بارج",
+            "fieldLabel": {
+              "bargeIMO": "المركب / الرقم الرسمي",
+              "bargeName": "اسم البارجة",
+              "bargeType": "نوع البارجة",
+              "loa": "لو (قدم)"
+            }
+          },
+          "cargoTable": {
+            "addCargoBtn": "أضف البضائع",
+            "fieldLabel": {
+              "inward": "إلى الداخل",
+              "outward": "الخارج"
+            },
+            "table": {
+              "head": {
+                "cargo": "الشحن *",
+                "delete": "حذف",
+                "direction": "اتجاه",
+                "shipper": "الشاحن / المتلقي",
+                "weight": "الوزن (رطل)"
+              }
+            }
+          },
+          "main": {
+            "dialog": {
+              "cancel": "إلغاء",
+              "confirm": "تأكيد",
+              "textContent": "يجب أن يشكل استخدام المرافق الخاضعة للولاية القضائية لـ Galveston Wharves موافقة على شروط وأحكام هذه التعريفة ويدل على وجود اتفاق من جانب جميع السفن ومالكيها ووكلائها و مستخدمي هذه المرافق الآخرين لدفع جميع الرسوم المحددة في هذه التعرفة ، يجب أن تحكمها جميع القواعد واللوائح الواردة في هذه الوثيقة ، للالتزام بالقواعد واللوائح المحلية على النحو المنصوص عليه من قبل مجلس أمناء Galveston Wharves وأن تكون مسؤولاً عن تأديب أي مخالفات لها من قبل هذه شخص و / أو هذه الشركات وموظفيها ، وجميع المطالبات والأضرار… وآخرون. cetera.",
+              "title": "الموافقة على شروط التعرفة (ن) البند 107"
+            },
+            "fieldLabel": {
+              "agentEmail": "البريد الإلكتروني للوكيل *",
+              "agentName": "اسم العميل*",
+              "agentPhone": "هاتف الوكيل",
+              "berthName": "اسم الرصيف",
+              "company": "شركة",
+              "contactEmail": "البريد الالكتروني*",
+              "contactPhone": "هاتف الاتصال",
+              "draft": "المسودة (قدم)",
+              "imoNumber": "IMO / الرقم الرسمي",
+              "inward": "إلى الداخل",
+              "loa": "لو (قدم)",
+              "mmsiNumber": "رقم مم",
+              "outward": "الخارج",
+              "primaryActivity": "نشاط السفينة الأساسية",
+              "requestedBy": "طلب من قبل*",
+              "selectAgent": "الرجاء تحديد وكيل *",
+              "selectRequestor": "الرجاء تحديد مقدم الطلب*",
+              "vesselName": "اسم السفينة أو القاطرة",
+              "vesselType": "نوع السفينة",
+              "voyageNumber": "رقم الرحلة"
+            },
+            "submitReq": "تقديم الطلب",
+            "title": {
+              "additionalInfo": "معلومة اضافية",
+              "agent": "وكيلات",
+              "bargeInfo": "معلومات البارجة",
+              "berth": "رصيف",
+              "cargo": "البضائع",
+              "requestedBy": "طلب من قبل",
+              "schedule": "برنامج",
+              "services": "خدمات",
+              "vesselInfo": "معلومات السفينة"
+            }
+          },
+          "notesField": {
+            "fieldLabel": {
+              "additionalInfo": "معلومة اضافية"
+            }
+          },
+          "servicesField": {
+            "comments": "تعليقات"
+          },
+          "typeAhead": {
+            "noResults": "لا نتائج"
+          }
+        },
+        "vesselReport": {
+          "main": {
+            "certifyStmt": "أقر بموجبه أن البيان أعلاه صحيح وصحيح.",
+            "fieldLabel": {
+              "agent": "وكيلات:",
+              "arrivalDate": "تاريخ الوصول:",
+              "berth": "مرسى:",
+              "date": "تاريخ:",
+              "departureDate": "تاريخ المغادرة:",
+              "length": "طول (قدم):",
+              "nationality": "الجنسية / العلم:",
+              "owner": "صاحب:",
+              "phone": "رقم الهاتف.*:",
+              "registryNum": "رقم التسجيل:",
+              "steveadore": "تحميل وتفريغ:",
+              "submittedBy": "مقدم من *:",
+              "title": "عنوان*:",
+              "vessel": "إناء:",
+              "vesselType": "نوع السفينة:",
+              "voyageNum": "رقم الرحلة:"
+            },
+            "submitRequest": "تقديم الطلب",
+            "vesselManifest": "بيان السفينة",
+            "vesselReceived": "شكرا لك ، لقد تم استلام تقرير سفينتك.",
+            "vesselReport": "تقرير السفينة"
+          },
+          "vesselReportCargoTable": {
+            "addCargoBtn": "أضف البضائع",
+            "fieldLabel": {
+              "inward": "إلى الداخل",
+              "outward": "الخارج"
+            },
+            "table": {
+              "head": {
+                "cargo": "البضائع",
+                "delete": "حذف",
+                "inboundOutbound": "واردة / صادرة",
+                "totalCargoWeight": "الوزن الإجمالي للبضائع",
+                "weight": "الوزن (رطل)"
+              }
+            },
+            "totalPounds": "مجموع الجنيهات"
+          }
+        }
+      },
+      "en": {
+        "berthRequestForm": {
+          "CBDialog": {
+            "confirmDel": "Confirm Delete"
+          },
+          "bargeFields": {
+            "addBargeBtn": "Add Barge",
+            "fieldLabel": {
+              "bargeIMO": "Barge IMO / Official Num",
+              "bargeName": "Barge Name",
+              "bargeType": "Barge Type",
+              "loa": "LOA (ft)"
+            }
+          },
+          "cargoTable": {
+            "addCargoBtn": "Add Cargo",
+            "fieldLabel": {
+              "inward": "Inward",
+              "outward": "Outward"
+            },
+            "table": {
+              "head": {
+                "cargo": "Cargo*",
+                "delete": "Delete",
+                "direction": "Direction",
+                "shipper": "Shipper / Receiver",
+                "weight": "Weight (Lb)"
+              }
+            }
+          },
+          "main": {
+            "dialog": {
+              "cancel": "Cancel",
+              "confirm": "Confirm",
+              "textContent": "The use of the facilities under the jurisdiction of the Galveston Wharves shall constitute a consent to the terms and conditions of this Tariff and evidences an agreement on the part of all vessels, their owners, agents and other “users” of such facilities to pay all charges specified in this Tariff, to be governed by all rules and regulations herein contained, to abide by the local rules and regulations as set forth by the Board of Trustees of the Galveston Wharves and to be responsible for the disciplining of any infractions thereof by such person and / or such firms and their employees, and all claims, damages …et. cetera.",
+              "title": "Consent to the Terms of the Tariff (N) Item 107"
+            },
+            "fieldLabel": {
+              "agentEmail": "Agent Email*",
+              "agentName": "Agent Name*",
+              "agentPhone": "Agent Phone",
+              "berthName": "Berth Name",
+              "company": "Company",
+              "contactEmail": "Contact Email*",
+              "contactPhone": "Contact Phone",
+              "draft": "Draft (ft)",
+              "imoNumber": "IMO / Official Number",
+              "inward": "Inward",
+              "loa": "LOA (ft)",
+              "mmsiNumber": "MMSI Number",
+              "outward": "Outward",
+              "primaryActivity": "Primary Vessel Activity",
+              "requestedBy": "Requested By*",
+              "selectAgent": "Please select an Agent*",
+              "selectRequestor": "Please select a Requester*",
+              "vesselName": "Vessel or Tug Name",
+              "vesselType": "Vessel Type",
+              "voyageNumber": "Voyage Number"
+            },
+            "submitReq": "Submit Request",
+            "title": {
+              "additionalInfo": "Additional Information",
+              "agent": "Agent",
+              "bargeInfo": "Barge Information",
+              "berth": "Berth",
+              "cargo": "Cargo",
+              "requestedBy": "Requested By",
+              "schedule": "Schedule",
+              "services": "Services",
+              "vesselInfo": "Vessel Information"
+            }
+          },
+          "notesField": {
+            "fieldLabel": {
+              "additionalInfo": "Additional Information"
+            }
+          },
+          "servicesField": {
+            "comments": "Comments"
+          },
+          "typeAhead": {
+            "noResults": "No Results"
+          }
+        },
+        "vesselReport": {
+          "main": {
+            "certifyStmt": "I hereby certify that the above statement is true and correct.",
+            "fieldLabel": {
+              "agent": "Agent:",
+              "arrivalDate": "Arrival Date:",
+              "berth": "Berth:",
+              "date": "Date:",
+              "departureDate": "Departure Date:",
+              "length": "Length (in feet):",
+              "nationality": "Nationality/Flag:",
+              "owner": "Owner:",
+              "phone": "Phone No.*:",
+              "registryNum": "Registry No.:",
+              "steveadore": "Stevedore:",
+              "submittedBy": "Submitted by*:",
+              "title": "Title*:",
+              "vessel": "Vessel:",
+              "vesselType": "Vessel Type:",
+              "voyageNum": "Voyage Number:"
+            },
+            "submitRequest": "Submit Request",
+            "vesselManifest": "VESSEL MANIFEST",
+            "vesselReceived": "Thank you, your vessel report has been received.",
+            "vesselReport": "VESSEL REPORT"
+          },
+          "vesselReportCargoTable": {
+            "addCargoBtn": "Add Cargo",
+            "fieldLabel": {
+              "inward": "Inward",
+              "outward": "Outward"
+            },
+            "table": {
+              "head": {
+                "cargo": "Cargo",
+                "delete": "Delete",
+                "inboundOutbound": "Inbound/Outbound",
+                "totalCargoWeight": "TOTAL CARGO WEIGHT",
+                "weight": "Weight (Lb)"
+              }
+            },
+            "totalPounds": "TOTAL POUNDS"
+          }
+        }
+      }
+    }
+  }

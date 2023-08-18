@@ -1,0 +1,13 @@
+"use strict";
+
+var _Object$defineProperty = require("@babel/runtime-corejs3/core-js-stable/object/define-property");
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.STATUS_CARD_UPDATE_RECEIVED = exports.STATUS_CARD_REMOVED = exports.INITIAL_STATUS_CARDS_RECEIVED = void 0;
+var INITIAL_STATUS_CARDS_RECEIVED = "INITIAL_STATUS_CARDS_RECEIVED";
+exports.INITIAL_STATUS_CARDS_RECEIVED = INITIAL_STATUS_CARDS_RECEIVED;
+var STATUS_CARD_UPDATE_RECEIVED = "STATUS_CARD_UPDATE_RECEIVED";
+exports.STATUS_CARD_UPDATE_RECEIVED = STATUS_CARD_UPDATE_RECEIVED;
+var STATUS_CARD_REMOVED = "STATUS_CARD_REMOVED";
+exports.STATUS_CARD_REMOVED = STATUS_CARD_REMOVED;

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/accessPoints.json",
+  "type": "object",
+  "required": [ "entityData", "entityType", "ownerOrg" ],
+  "additionalProperties": true,
+  "properties": {
+    "entityData": { "type": "object" },
+    "entityType": { "type": "string" },
+    "feedId": { "type": "string" },
+    "isDeleted": { "type": "boolean" },
+    "isPublic": { "type": "boolean" },
+    "lastModifiedBy": { "type": "string" },
+    "createdDate": { "date": true },
+    "lastModifiedDate": { "date": true },
+    "ownerOrg": { "type": "string" },
+    "displayType": { "type": "string" },
+    "displayTargetId": { "type": "string" },
+    "sourceId": { "type": "string" }
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "appId": "berth-schedule-app",
+  "locales": "en",
+  "translations": {
+    "ar": {
+      "appBar": {
+        "title": "الجدول الزمني للرصيف"
+      },
+      "berthGroup": {
+        "berthTimeline": {
+          "clickHere": "انقر هنا",
+          "noData": "لا توجد بيانات متاحة عن الرصيف.",
+          "toManage": "لإدارة berths"
+        }
+      },
+      "berthSchedule": {
+        "clickHere": "انقر هنا",
+        "noData": "لا توجد بيانات متاحة عن الرصيف.",
+        "toManage": "لإدارة berths"
+      },
+      "berthToolbar": {
+        "btnLabel": {
+          "berthSchedule": "الجدول الزمني للرصيف",
+          "dailyAgendaList": "قائمة الأجندة اليومية",
+          "hideMap": "إخفاء Berth خريطة",
+          "showMap": "عرض Berth خريطة"
+        },
+        "fieldLabel": {
+          "search": "بحث"
+        },
+        "newEvent": "حدث جديد"
+      },
+      "dailyAgenda": {
+        "dailyAgendaTtl": "الأجندة اليومية",
+        "inPortVessel": "السفن داخل الميناء"
+      },
+      "date": {
+        "long": "MMMM D، YYYY",
+        "min": "MMM D",
+        "short": "MMM D، YYYY"
+      },
+      "dateControls": {
+        "todayLbl": "اليوم"
+      },
+      "days": {
+        "long": {
+          "Friday": "جمعة",
+          "Monday": "الاثنين",
+          "Saturday": "السبت",
+          "Sunday": "الأحد",
+          "Thursday": "يوم الخميس",
+          "Tuesday": "يوم الثلاثاء",
+          "Wednesday": "الأربعاء"
+        },
+        "short": {
+          "Fri": "جمعة",
+          "Mon": "الاثنين",
+          "Sat": "السبت",
+          "Sun": "الأحد",
+          "Thu": "يوم الخميس",
+          "Tue": "يوم الثلاثاء",
+          "Wed": "الأربعاء"
+        }
+      },
+      "formPanel": {
+        "agentInfo": {
+          "fieldLabel": {
+            "agentName": "الوكيل / اسم المالك",
+            "contactPersonEmail": "البريد الإلكتروني لشخص الاتصالl",
+            "contactPersonName": "اسم شخص الاتصال",
+            "contactPersonPhone": "هاتف شخص الاتصال"
+          },
+          "title": "معلومات الوكيل / المالك"
+        },
+        "assignmentForm": {
+          "assignmentTooltip": "لم يتم حفظ بيانات الواجب",
+          "buttonLabels": {
+            "approveBerth": "يوافق Berth طلب",
+            "approvedBerth": "تمت الموافقة على الطلب Berth",
+            "cancel": "إلغاء",
+            "delete": "حذف",
+            "printExport": "طباعة / تصدير",
+            "save": "حفظ"
+          }
+        },
+        "bargeInfo": {
+          "addBargeBtn": "إضافة بارج",
+          "clickToAdd": "انقر فوق الزر لإضافة معلومات المداخلة",
+          "fieldLabel": {
+            "bargeIMO": "Barge IMO / Official Num",
+            "bargeName": "اسم البارجة",
+            "bargeType": "نوع البارجة",
+            "grt": "GRT",
+            "loa": "LOA (قدم)"
+          },
+          "title": "معلومات البارجة"
+        },
+        "cargoBerthAssg": {
+          "addCargoBtn": "أضف البضائع",
+          "clickToAdd": "انقر فوق الزر لإضافة معلومات الشحن",
+          "fieldLabel": {
+            "berth": "رصيف",
+            "footmark": "خط القدم (قدم)",
+            "footmarkAssg": "احالة خط القدم"
+          },
+          "helperText": {
+            "and": "و",
+            "betweenValues": "يجب ان يكون وسطا",
+            "mustBeNumber": "يجب أن يكون Footmark رقم"
+          },
+          "table": {
+            "head": {
+              "cargo": "البضائع",
+              "delete": "حذف",
+              "direction": "الاتجاه",
+              "shipper": "الشاحن / المستقبل",
+              "weight": "الوزن (S / T)"
+            }
+          },
+          "title": "تخصيص البضائع والرصيف"
+        },
+        "notes": {
+          "fieldLabel": {
+            "additionalInfo": "معلومة اضافية"
+          },
+          "title": "معلومة اضافية"
+        },
+        "requestingCompanyInfo": {
+          "fieldLabel": {
+            "contactPersonEmail": "البريد الإلكتروني لشخص الاتصالl",
+            "contactPersonName": "اسم شخص الاتصال",
+            "contactPersonPhone": "هاتف شخص الاتصال",
+            "reqCompany": "الشركة الطالبة"
+          },
+          "title": "طلب معلومات الشركة"
+        },
+        "schedule": {
+          "title": "الجدول الزمني"
+        },
+        "services": {
+          "fieldLabel": {
+            "comments": "تعليقات"
+          },
+          "title": "خدمات"
+        },
+        "vesselInfo": {
+          "fieldLabel": {
+            "draft": "المسودة (قدم)",
+            "inward": "إلى الداخل",
+            "loa": "LOA (قدم)",
+            "mmsiNumber": "رقم MMSI",
+            "officialNumber": "IMO / الرقم الرسمي",
+            "outward": "الخارج",
+            "primaryActivity": "نشاط السفينة الأساسية",
+            "vesselName": "اسم السفينة أو القاطرة",
+            "vesselType": "نوع السفينة",
+            "voyageNumber": "رقم الرحلة"
+          },
+          "title": "معلومات السفينة"
+        }
+      },
+      "groupSorter": {
+        "dialog": {
+          "Cancel": "إلغاء",
+          "ok": "حسنا"
+        }
+      },
+      "lookupManager": {
+        "berthSettings": {
+          "addBerthGroup": "إضافة مجموعة مرسى جديد",
+          "berthForm": {
+            "addBerth": "إضافة رصيف جديد",
+            "berthGroup": "مجموعة مرسى",
+            "delete": "حذف",
+            "dialog": {
+              "cancelBtn": "إلغاء",
+              "confirmBtn": "تأكيد",
+              "textContent": "هل أنت متأكد أنك تريد حذف مجموعة الرصيف هذه؟ سيؤدي القيام بذلك إلى حذف جميع الولادات المرتبطة.",
+              "title": "حذف مجموعة Berth"
+            },
+            "save": "حفظ",
+            "table": {
+              "head": {
+                "beginingFT": "بداية خط القدم (قدم) *",
+                "berthName": "اسم الرصيف *",
+                "delete": "حذف",
+                "endFT": "نهاية الحاشية (قدم) *",
+                "zone": "المنطقة*"
+              }
+            }
+          },
+          "title": "إعدادات الرصيف"
+        },
+        "fieldLabel": {
+          "barge": {
+            "imoNumber": "IMO / الرقم الرسمي",
+            "loa": "LOA (قدم)",
+            "name": "الاسم",
+            "type": "نوع"
+          },
+          "contactFields": {
+            "companyName": "اسم الشركة",
+            "email": "بريد الالكتروني",
+            "firstName": "الاسم الأول",
+            "lastName": "اسم العائلة",
+            "phone": "هاتف"
+          },
+          "shipperReceiver": {
+            "companyName": "اسم الشركة"
+          },
+          "vessel": {
+            "draft": "المسودة (قدم)",
+            "imoNumber": "IMO / الرقم الرسمي",
+            "loa": "LOA (قدم)",
+            "mmsiNumber": "رقم MMSI",
+            "name": "الاسم",
+            "type": "نوع"
+          },
+          "vesselActivity": {
+            "activity": "نشاط"
+          },
+          "vesselType": {
+            "name": "الاسم"
+          }
+        },
+        "listItemText": {
+          "agent": "وكيل / مالك",
+          "bargeInfo": "معلومات البارجة",
+          "berthSettings": "إعدادات الرصيف",
+          "lookupTables": "جداول البحث",
+          "manage": "يدير",
+          "requestor": "الطالب",
+          "shipperReceiver": "جهاز استقبال الشاحن",
+          "stevedores": "تحميل والتفريغ",
+          "vesselActivity": "نشاط السفينة",
+          "vesselInfo": "السفينة المعلومات",
+          "vesselType": "نوع السفينة"
+        },
+        "lookUp": {
+          "addRecord": "يسجل %{count} اضف جديد",
+          "delete": "حذف",
+          "manageType": "يدير %{count}",
+          "requiredFields": "* الحقول المطلوبة",
+          "searchBy": "البحث عن طريق"
+        }
+      },
+      "pendingAssignment": {
+        "pendingPlural": "الطلبات المعلقة %{count}",
+        "pendingSingular": "طلب معلق %{count}"
+      }
+    },
+    "en": {
+      "appBar": {
+        "title": "Berth Schedule"
+      },
+      "berthGroup": {
+        "berthTimeline": {
+          "clickHere": "Click here",
+          "noData": "No berth data available.",
+          "toManage": "to manage berths."
+        }
+      },
+      "berthSchedule": {
+        "clickHere": "Click here",
+        "noData": "No berth data available.",
+        "toManage": "to manage berths."
+      },
+      "berthToolbar": {
+        "btnLabel": {
+          "berthSchedule": "Berth Schedule",
+          "dailyAgendaList": "Daily Agenda List",
+          "hideMap": "Hide Berth Map",
+          "showMap": "Show Berth Map"
+        },
+        "fieldLabel": {
+          "search": "Search"
+        },
+        "newEvent": "New Event"
+      },
+      "dailyAgenda": {
+        "dailyAgendaTtl": "Daily Agenda",
+        "inPortVessel": "In-Port Vessels"
+      },
+      "date": {
+        "long": "MMMM D, YYYY",
+        "min": "MMM D",
+        "short": "MMM D YYYY"
+      },
+      "dateControls": {
+        "todayLbl": "Today"
+      },
+      "days": {
+        "long": {
+          "Friday": "Friday",
+          "Monday": "Monday",
+          "Saturday": "Saturday",
+          "Sunday": "Sunday",
+          "Thursday": "Thursday",
+          "Tuesday": "Tuesday",
+          "Wednesday": "Wednesday"
+        },
+        "short": {
+          "Fri": "Fri",
+          "Mon": "Mon",
+          "Sat": "Sat",
+          "Sun": "Sun",
+          "Thu": "Thu",
+          "Tue": "Tue",
+          "Wed": "Wed"
+        }
+      },
+      "formPanel": {
+        "agentInfo": {
+          "fieldLabel": {
+            "agentName": "Agent / Owner Name",
+            "contactPersonEmail": "Contact Person Email",
+            "contactPersonName": "Contact Person Name",
+            "contactPersonPhone": "Contact Person Phone"
+          },
+          "title": "Agent / Owner Information"
+        },
+        "assignmentForm": {
+          "assignmentTooltip": "Assignment Data Not Saved",
+          "buttonLabels": {
+            "approveBerth": "Approve Berth Request",
+            "approvedBerth": "Berth Request Approved",
+            "cancel": "Cancel",
+            "delete": "Delete",
+            "printExport": "Print/Export",
+            "save": "Save"
+          }
+        },
+        "bargeInfo": {
+          "addBargeBtn": "Add Barge",
+          "clickToAdd": "Click button to add barge information",
+          "fieldLabel": {
+            "bargeIMO": "Barge IMO / Official Num",
+            "bargeName": "Barge Name",
+            "bargeType": "Barge Type",
+            "grt": "GRT",
+            "loa": "LOA (ft)"
+          },
+          "title": "Barge Information"
+        },
+        "cargoBerthAssg": {
+          "addCargoBtn": "Add Cargo",
+          "clickToAdd": "Click button to add cargo information",
+          "fieldLabel": {
+            "berth": "Berth",
+            "footmark": "Footmark (ft)",
+            "footmarkAssg": "Footmark Assignment"
+          },
+          "helperText": {
+            "and": "and",
+            "betweenValues": "Must be between",
+            "mustBeNumber": "Footmark must be a number"
+          },
+          "table": {
+            "head": {
+              "cargo": "Cargo",
+              "delete": "Delete",
+              "direction": "Direction",
+              "shipper": "Shipper / Receiver",
+              "weight": "Weight (S/T)"
+            }
+          },
+          "title": "Cargo and Berth Assignment"
+        },
+        "notes": {
+          "fieldLabel": {
+            "additionalInfo": "Additional Information"
+          },
+          "title": "Additional Information"
+        },
+        "requestingCompanyInfo": {
+          "fieldLabel": {
+            "contactPersonEmail": "Contact Person Email",
+            "contactPersonName": "Contact Person Name",
+            "contactPersonPhone": "Contact Person Phone",
+            "reqCompany": "Requesting Company"
+          },
+          "title": "Requesting Company Information"
+        },
+        "schedule": {
+          "title": "Schedule"
+        },
+        "services": {
+          "fieldLabel": {
+            "comments": "Comments"
+          },
+          "title": "Services"
+        },
+        "vesselInfo": {
+          "fieldLabel": {
+            "draft": "Draft (ft)",
+            "inward": "Inward",
+            "loa": "LOA (ft)",
+            "mmsiNumber": "MMSI Number",
+            "officialNumber": "IMO / Official Number",
+            "outward": "Outward",
+            "primaryActivity": "Primary Vessel Activity",
+            "vesselName": "Vessel or Tug Name",
+            "vesselType": "Vessel Type",
+            "voyageNumber": "Voyage Number"
+          },
+          "title": "Vessel Information"
+        }
+      },
+      "groupSorter": {
+        "dialog": {
+          "Cancel": "Cancel",
+          "ok": "OK"
+        }
+      },
+      "lookupManager": {
+        "berthSettings": {
+          "addBerthGroup": "Add New Berth Group",
+          "berthForm": {
+            "addBerth": "Add New Berth",
+            "berthGroup": "Berth Group",
+            "delete": "Delete",
+            "dialog": {
+              "cancelBtn": "Cancel",
+              "confirmBtn": "Confirm",
+              "textContent": "Are you sure you want to delete this berth group? Doing so will delete all associated berths.",
+              "title": "Delete Berth Group"
+            },
+            "save": "Save",
+            "table": {
+              "head": {
+                "beginingFT": "Beginning Footmark (ft)*",
+                "berthName": "Berth Name*",
+                "delete": "Delete",
+                "endFT": "End Footmark (ft)*",
+                "zone": "Zone*"
+              }
+            }
+          },
+          "title": "Berth Settings"
+        },
+        "fieldLabel": {
+          "barge": {
+            "imoNumber": "IMO / Official Number",
+            "loa": "LOA (ft)",
+            "name": "Name",
+            "type": "Type"
+          },
+          "contactFields": {
+            "companyName": "Company Name",
+            "email": "Email",
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "phone": "Phone"
+          },
+          "shipperReceiver": {
+            "companyName": "Company Name"
+          },
+          "vessel": {
+            "draft": "Draft (ft)",
+            "imoNumber": "IMO / Official Number",
+            "loa": "LOA (ft)",
+            "mmsiNumber": "MMSI Number",
+            "name": "Name",
+            "type": "Type"
+          },
+          "vesselActivity": {
+            "activity": "Activity"
+          },
+          "vesselType": {
+            "name": "Name"
+          }
+        },
+        "listItemText": {
+          "agent": "Agent / Owner",
+          "bargeInfo": "Barge Information",
+          "berthSettings": "Berth Settings",
+          "lookupTables": "Lookup Tables",
+          "manage": "Manage",
+          "requestor": "Requestor",
+          "shipperReceiver": "Shipper Receiver",
+          "stevedores": "Stevedores",
+          "vesselActivity": "Vessel Activity",
+          "vesselInfo": "Vessel Information",
+          "vesselType": "Vessel Type"
+        },
+        "lookUp": {
+          "addRecord": "Add New %{count} Record",
+          "delete": "Delete",
+          "manageType": "Manage %{count}",
+          "requiredFields": "* Required fields",
+          "searchBy": "Search by"
+        }
+      },
+      "pendingAssignment": {
+        "pendingPlural": "%{count} Pending Requests",
+        "pendingSingular": "%{count} Pending Request"
+      }
+    }
+  }
+}

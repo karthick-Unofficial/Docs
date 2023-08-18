@@ -1,0 +1,106 @@
+applications:
+  /applications:
+    get:
+      description: Gets applications 
+      operationId: getAll
+      tags:
+        - Applications
+      responses:
+        '200':
+          description: OK
+          content: 
+            application/json:
+              schema:
+                type: object
+                properties:
+                  appId:
+                    type: string
+                  icon:
+                    type: string
+                  id:
+                    type: string
+                  name:
+                    type: string
+        '401':
+          description: Unauthorized
+    post:
+      description: Create new application
+      operationId: create
+      tags:
+        - Applications
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                appId:
+                  type: string
+                icon:
+                  type: string
+                filename:
+                  type: string
+                name:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted: 
+                    type: string
+                  errors:
+                    type: string
+                  # NEED MORE HERE
+  /applications/{appId}:
+    get:
+      description: Get an application by its ID
+      operationId: getApplicationProfile
+      tags:
+        - Applications
+      parameters:
+        - name: appId
+          in: path                  #options: query, header, path, cookie
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  appId: string
+  /applications/{appId}/orgProfile/{orgId}:
+    get:
+      description: Get an application by its ID and orgId
+      operationId: getApplicationOrgProfile
+      tags:
+        - Applications
+      parameters:
+        - name: appId
+          in: path                  #options: query, header, path, cookie
+          required: true
+          schema:
+            type: string
+        - name: orgId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  appId: string
+                  name: string

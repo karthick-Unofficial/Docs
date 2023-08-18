@@ -1,0 +1,2018 @@
+{
+	"appId": "global",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"berth-schedule-app": {
+				"activities": {
+					"berthAssignmentModel": {
+						"approve": {
+							"summary": {
+								"approvedBy": "approved by",
+								"at": "at",
+								"berthApproved": "A berth assignment has been approved.",
+								"berthAssignmentFor": "Berth assignment for"
+							}
+						},
+						"create": {
+							"summary": {
+								"at": "at",
+								"berthAssignmentFor": "Berth assignment for",
+								"createdBy": "created by"
+							}
+						},
+						"internalCreate": {
+							"summary": {
+								"at": "at",
+								"berthAssignmentFor": "Berth assignment for",
+								"createdBy": "created by Berth Request App."
+							}
+						},
+						"update": {
+							"summary": {
+								"at": "at",
+								"berthAssignmentFor": "Berth assignment for",
+								"updatedBy": "updated by"
+							}
+						}
+					},
+					"vesselBerthingEventProcessor": {
+						"summary": {
+							"arrivedAt": "arrived at",
+							"committed": "committed a security violation by entering",
+							"departed": "departed"
+						}
+					}
+				},
+				"pdfTemplates": {
+					"vesselBerthReports": {
+						"pdfBody": {
+							"additionalInformation": "Additional Information",
+							"additionalNotes": "Additional Notes",
+							"agentOwnerInformation": {
+								"agentOwnerInformation": "Agent / Owner Information",
+								"fieldKeyRow": {
+									"contactPerson": "Contact Person",
+									"contactPersonEmail": "Contact Person Email",
+									"contactPersonPhone": "Contact Person Phone",
+									"requestingCompany": "Requesting Company"
+								}
+							},
+							"barge": {
+								"bargeInformation": "Barge Information",
+								"fieldKeyRow": {
+									"bargeIMOorOfficialNumber": "Barge IMO or Official Number",
+									"bargeName": "Barge Name",
+									"bargeType": "Barge Type",
+									"grt": "GRT",
+									"loa ": "LOA (ft)"
+								}
+							},
+							"cargo": {
+								"fieldKeyRow": {
+									"cargo": "Cargo",
+									"inboundOutbound": "Inbound/Outbound",
+									"shipperReceiver": "Shipper / Receiver",
+									"weightST": "Weight S/T"
+								}
+							},
+							"cargoAndBerth": {
+								"berth": "Berth",
+								"bow": "Bow",
+								"cargoAndBerthAssignment": "Cargo and Berth Assignment",
+								"footmark": "Footmark (ft)",
+								"stern": "Stern"
+							},
+							"schedule": {
+								"fieldKey": {
+									"ATA": "ATA",
+									"ATD": "ATD",
+									"ETA": "ETA",
+									"ETD": "ETD"
+								},
+								"schedule": "Schedule"
+							},
+							"vessel": {
+								"checkboxContainer": {
+									"inward": "Inward",
+									"outward": "Outward"
+								},
+								"fieldKeyRow": {
+									"IMOOfficialNumber": "IMO/Official Number",
+									"MMSINumber": "MMSI Number",
+									"draft": "Draft (ft)",
+									"grt": "GRT",
+									"loa": "LOA (ft)",
+									"primaryVesselActivity": "Primary Vessel Activity",
+									"vesselOrTugName": "Vessel or Tug Name",
+									"vesselType": "Vessel Type",
+									"voyageNumber": "Voyage Number"
+								},
+								"vesselInformation": "Vessel Information"
+							}
+						},
+						"vesselBerthReport": "Vessel Berth Report"
+					}
+				}
+			},
+			"ecosystem": {
+				"activities": {
+					"accessPointModel": {
+						"update": {
+							"summary": {
+								"updated": "updated"
+							}
+						}
+					},
+					"activityModel": {
+						"addComment": {
+							"summary": {
+								"commentedOn": "commented on"
+							}
+						}
+					},
+					"attachmentModel": {
+						"create": {
+							"summary": {
+								"uploaded": "uploaded"
+							}
+						},
+						"delete": {
+							"summary": {
+								"removed": "removed"
+							}
+						},
+						"remove": {
+							"summary": {
+								"removed": "removed"
+							}
+						}
+					},
+					"cameraGroupModel": {
+						"create": {
+							"summary": {
+								"created": "created"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "updated"
+							}
+						}
+					},
+					"cameraModel": {
+						"releaseSlewLock": {
+							"summary": {
+								"updated": "updated"
+							}
+						},
+						"setSlewLock": {
+							"summary": {
+								"updated": "updated"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "updated"
+							}
+						}
+					},
+					"dailyBriefModel": {
+						"create": {
+							"summary": {
+								"inDailyBrief": "in Daily Brief",
+								"posted": "posted"
+							}
+						},
+						"update": {
+							"summary": {
+								"inDailyBrief": "in Daily Brief",
+								"updated": "updated"
+							}
+						}
+					},
+					"entityCollectionModel": {
+						"addMembers": {
+							"summary": {
+								"added": "added",
+								"anEntity": "an entity",
+								"entities": "entities",
+								"to": "to",
+								"toCollection": "to collection:"
+							}
+						},
+						"create": {
+							"summary": {
+								"added": "added",
+								"anEntity": "an entity",
+								"entities": "entities",
+								"to": "to",
+								"toCollection": "to collection:"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "updated"
+							}
+						},
+						"delete": {
+							"summary": {
+								"deleted": "deleted"
+							}
+						},
+						"restore": {
+							"summary": {
+								"restored": "restored"
+							}
+						},
+						"removeMembers": {
+							"summary": {
+								"anEntity": "an entity",
+								"entities": "entities",
+								"from": "from",
+								"removed": "removed",
+								"fromCollection": "from collection:"
+							}
+						}
+					},
+					"entityModel": {
+						"addComment": {
+							"summary": {
+								"commentedOn": "commented on"
+							}
+						}
+					},
+					"eventsModel": {
+						"addComment": {
+							"summary": {
+								"commentedOn": "commented on"
+							}
+						},
+						"addProximity": {
+							"summary": {
+								"addedNew": "added new proximity"
+							}
+						},
+						"create": {
+							"summary": {
+								"created": "created."
+							}
+						},
+						"deleteList": {
+							"summary": {
+								"removedFrom": "removed from this event"
+							}
+						},
+						"deleteProximity": {
+							"summary": {
+								"delete": "deleted proximity"
+							}
+						},
+						"enableEvent": {
+							"summary": {
+								"updated": "updated"
+							}
+						},
+						"pinEntities": {
+							"summary": {
+								"addedToEvent": "added to event:"
+							}
+						},
+						"pinList": {
+							"summary": {
+								"addedToEvent": "added to event:"
+							}
+						},
+						"unpinEntity": {
+							"summary": {
+								"removedEvent": "removed from event:"
+							}
+						},
+						"update": {
+							"summary": {
+								"update": "updated"
+							}
+						},
+						"updateList": {
+							"summary": {
+								"renameList": "renamed the list",
+								"to": "to"
+							}
+						},
+						"updateProximity": {
+							"summary": {
+								"updated": "updated proximity"
+							}
+						}
+					},
+					"facilitiesModel": {
+						"create": {
+							"summary": {
+								"added": "added",
+								"created": "created",
+								"floorPlan": "floor plan",
+								"to": "to"
+							}
+						},
+						"createFloorplan": {
+							"summary": {
+								"addFloorPlan": "added floor plan",
+								"toFacility": "to facility"
+							}
+						},
+						"delete": {
+							"summary": {
+								"deleted": "deleted",
+								"removed": "removed"
+							}
+						},
+						"deleteFloorplan": {
+							"summary": {
+								"fromFacility": "from facility",
+								"removedFloorPlan": "removed floor plan"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "updated"
+							}
+						},
+						"updateFloorPlan": {
+							"summary": {
+								"onFacility": "on facility",
+								"updatedFloorPlan": "updated floor plan"
+							}
+						},
+						"updateFloorplanOrders": {
+							"summary": {
+								"updatedFloorPlan": "updated floor plan order for facility"
+							}
+						}
+					},
+					"linkedEntitiesModel": {
+						"create": {
+							"created": "created"
+						},
+						"delete": {
+							"deleted": "deleted"
+						},
+						"update": {
+							"updated": "updated"
+						}
+					},
+					"shapeModel": {
+						"create": {
+							"summary": {
+								"created": "created"
+							}
+						},
+						"delete": {
+							"summary": {
+								"deleted": "deleted"
+							}
+						},
+						"restore": {
+							"summary": {
+								"restored": "restored"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "updated"
+							}
+						}
+					}
+				},
+				"email": {
+					"activeDirectoryPasswordReset": {
+						"htmlpug": {
+							"contactSupport": "contact support",
+							"emailBody1": "You or someone else requested to change your AVERT C2 password, however your account is tied to an Active Directory account. If you would like to change your password, you'll need to change it on your Active Directory account.",
+							"emailBody2": "If you need further assistance, please contact support.",
+							"emailHeader": "Password Reset",
+							"help": " so we can help.",
+							"issues": "Having issues? Please ",
+							"titleHead": "Reset Email"
+						},
+						"subject": "Reset your password."
+					},
+					"passwordExpiringSoon": {
+						"htmlpug": {
+							"contactSupport": "contact support",
+							"day": "day",
+							"emailBody": "you are receiving this email because your AVERT C2 password is expiring in ",
+							"help": " so we can help.",
+							"issues": "Having issues? Please ",
+							"loginReset": "Please login and reset your password before it expires.",
+							"passwordExpiring": "Password Expiring Soon",
+							"titleHead": "Password Expiring Soon Email"
+						},
+						"subject": "Password expiring soon"
+					},
+					"passwordReset": {
+						"htmlpug": {
+							"contactSupport": "contact support",
+							"emailBody1": "You are receiving this email because you (or someone else) have requested the reset of the password for your account.",
+							"emailBody2": "Click the button below to complete the process.",
+							"emailHeader": "Password Reset",
+							"help": " so we can help.",
+							"instructions": "Follow the instructions at the link to reset your password.",
+							"issues": "Having issues? Please ",
+							"reset": "Reset",
+							"titleHead": "Reset Email"
+						},
+						"subject": "Reset your password."
+					},
+					"setEmail": {
+						"htmlpug": {
+							"Congratulations": "Congratulations",
+							"congrats": "Congratulations!",
+							"contactSupport": "contact support",
+							"emailBody": "on your new AVERT C2 account! Click the button below to complete your registration. Your",
+							"havingIssues": "Having issues? Please ",
+							"help": " so we can help.",
+							"instructions": "Follow the instructions at the link to set your password.",
+							"setPassword": "Set Password",
+							"title": "Set Email",
+							"userNameIs": "username is"
+						},
+						"subject": "Congratulations on your new AVERT C2 account!"
+					},
+					"systemNotification": {
+						"htmlpug": {
+							"contactSupport": "contact support",
+							"havingIssues": "Having issues? Please ",
+							"help": " so we can help.",
+							"newNotification": "New Notification",
+							"title": "Notification Email",
+							"viewDetails": "View Details"
+						},
+						"subject": "You have a new notification!"
+					}
+				},
+				"health": {
+					"cpu": {
+						"averageCPUof": "Average CPU of",
+						"averageCPUover": "Avg CPU over last",
+						"minsBelowCPU": "minutes is below CPU threshold of",
+						"minsExceedCPU": "minutes exceeds CPU threshold of",
+						"noCurrentStats": "No current CPU statistics available",
+						"overLast": "over last",
+						"serverCPU": "Server CPU",
+						"unableToFetchCPU": "Unable to fetch CPU statitics"
+					},
+					"customAverage": {
+						"average": "average",
+						"forFeed": "for feed",
+						"last": "last",
+						"metricsCheck": "No current feed metrics available",
+						"minsAbove": "minutes is above the allowed minimum of",
+						"minsBelow": "minutes is below the allowed maximum of",
+						"minsClimbed": "minutes climbed above the allowed maximum of",
+						"minsDropped": "minutes dropped below the allowed minimum of",
+						"minsForFeed": "minutes for feed",
+						"minsNeed": "minutes needs to stay below max of",
+						"of": "of",
+						"overLast": "over last",
+						"sysProcessorCheck": "check if external system processor is running and if metrics-* index is available",
+						"unableToFetch": "Unable to fetch feed metrics"
+					},
+					"customCount": {
+						"atLeast": "at least",
+						"atMost": "at most",
+						"inLast": "in last",
+						"max": "maximum",
+						"metricBeatCheck": "check if metricbeat is running and if metrics-* index is available",
+						"metricsCheck": "No current feed metrics available",
+						"min": "minimum",
+						"minsAbove": "minutes is above allowed minimum of",
+						"minsBelow": "minutes is below allowed maximum of",
+						"minsDropped": "minutes dropped below allowed minimum of",
+						"minsRose": "minutes rose above allowed maximum of",
+						"minutes": "minutes",
+						"mustProcess": "must process",
+						"of": "of",
+						"unableToFetch": "Unable to fetch feed metrics"
+					},
+					"didNotRespond": "database did not respond to ping request",
+					"elasticSearch": {
+						"elasticSearchAvail": "Elasticsearch Availablility",
+						"elasticSearchDesc": "Indicates whether elasticsearch is available or not"
+					},
+					"feed": "Feed",
+					"feedLatency": {
+						"avgLatInLast": "average latency in the last",
+						"avgLatencyLast": "average latency last",
+						"avgLatencyOf": "average latency of",
+						"metricBeatCheck": "check if external system processor is running and if metrics-* index is available",
+						"minsBelow": "minutes is below the allowed maximum of",
+						"minsClimbed": "minutes climbed above the allowed maximum of",
+						"minsForFeed": "minutes for feed",
+						"minsToStay": "minutes needs to stay below max latency of",
+						"ms": "ms",
+						"msForFeed": "ms for feed",
+						"msOverLast": "ms over last",
+						"noCurrentLatency": "No current feed metrics available for feed",
+						"unableToFetch": "Unable to fetch feed metrics for feed"
+					},
+					"fileSystem": {
+						"belowThreshold": "is below threshold of",
+						"diskUtilsOf": "Disk utilization of",
+						"exceedsThresholdOf": "exceeds threshold of",
+						"lastReportedDisk": "Last reported disk utilization",
+						"noCurrentFileSystem": "No current filesystem statistics available",
+						"serverFileSystem": "Server Filesystem",
+						"unableToFetchFile": "Unable to fetch filesystem statitics"
+					},
+					"inTheLast": "in the last",
+					"memory": {
+						"averagedOver": "averaged over last",
+						"avgMemoryOver": "Avg Memory over last",
+						"currentMemoryOf": "Current memory usage of",
+						"minsBelowThreshold": "minutes is below threshold of",
+						"minsExceedThreshold": "minutes exceed threshold of",
+						"noCurrentMemory": "No current Memory statistics available",
+						"serverMemory": "Server Memory",
+						"unableToFetchMemory": "Unable to fetch Memory statitics"
+					},
+					"metricbeatCheck": "check if metricbeat is running and if index is available",
+					"minutes": "minute(s)",
+					"redisHealth": {
+						"didNotRespond": "REDIS did not respond to info request",
+						"redisAvail": "REDIS Availablility",
+						"redisDesc": "Indicates whether REDIS is available or not"
+					},
+					"rethink": {
+						"rethinkAvailability": "RethinkDB Availability",
+						"rethinkDesc": "Indicates whether RethinkDB is available or not"
+					},
+					"snapshot": {
+						"name": "Snapshot Health",
+						"desc": "Confirms replay snapshots are being generated on expected schedule",
+						"esError": "Unexpected error querying elasticsearch",
+						"noSnapshotData": "No snapshot data available",
+						"pm2Suggestion": "Ensure pm2 snapshot job is running",
+						"snapshotOlder": "Most recent snapshot is older than allowed max of",
+						"snapshotLess": "Most recent snapshot age is less than allowed max of",
+						"minutes": "minutes"
+					},
+					"totalTxn": {
+						"inLast": "in last",
+						"metricBeatCheck": "check if metricbeat is running and if metrics-* index is available",
+						"min": "minimum",
+						"mins": "minutes",
+						"minsAbove": "minutes is above allowed minimum of",
+						"minsDropped": "minutes dropped below allowed minimum of",
+						"mustProcess": "must process at least",
+						"noCurrentFeed": "No current feed metrics available for feed",
+						"totalTxnCount": "total transaction count of",
+						"totalTxnsCount": "total transactions count of",
+						"transactions": "Transactions",
+						"txnsInLast": "txn(s) in the last",
+						"unableToFetch": "Unable to fetch feed metrics for feed"
+					},
+					"transRateCheck": {
+						"currentTxnPerSec": "Current txns/sec",
+						"currentTxnRate": "Current Transaction Rate",
+						"currentTxnRateOf": "current txn rate of",
+						"droppedBelow": "/sec dropped below allowed minimum of",
+						"metricBeatCheck": "check if metricbeat is running and if metrics-* index is available",
+						"noCurrentFeedsAvail": "No current feed metrics available for feed",
+						"transAbove": "/sec is above or at the allowed minimum of",
+						"transPerSec": "txns/sec",
+						"unableToFetch": "Unable to fetch feed metrics for feed"
+					}
+				}
+			},
+			"orion-components": {
+				"CBComponents": {
+					"CBAppMenu": {
+						"logOut": "Log Out",
+						"settings": "Settings",
+						"support": "Support"
+					},
+					"CBDialog": {
+						"confirmDelete": "Confirm Delete"
+					},
+					"CBCollection": {
+						"active": "ACTIVE",
+						"scheduled": "SCHEDULED",
+						"closed": "CLOSED",
+						"sharedBy": "Shared By"
+					},
+					"CBDock": {
+						"drawer": "DRAWER!"
+					},
+					"CBFileLink": {
+						"dialog": {
+							"cancel": "Cancel",
+							"delete": "Delete",
+							"textContent": "Are you sure you want to delete this attachment?",
+							"title": "DELETE ATTACHMENT"
+						},
+						"downloadImg": "Download Image"
+					},
+					"CBList": {
+						"helpers": {
+							"nameNotFound": "Name not found"
+						}
+					},
+					"CBNewWindow": {
+						"newWindow": "New Window"
+					},
+					"CBSearchField": {
+						"searchField": {
+							"clear": "(%{count}) Clear"
+						},
+						"searchSelectField": {
+							"noResults": "No Results"
+						}
+					},
+					"CBTable": {
+						"attachments": "Attachments",
+						"setNow": "Set Now",
+						"viewNotes": "View Notes"
+					},
+					"DateTime": {
+						"cancel": "CANCEL",
+						"clear": "CLEAR",
+						"ok": "OK"
+					},
+					"icons": {
+						"target": {
+							"targettingIcon": "targeting-icon"
+						}
+					},
+					"video": {
+						"videoPlayer": {
+							"camInDock": "Camera in Dock",
+							"camInModal": "Camera in Modal"
+						},
+						"webRTCPlayer": {
+							"camProblem": "The camera has encountered a problem.",
+							"unableToAccess": "Unable to access camera stream. The provided URL is invalid."
+						},
+						"wsImagePlayer": {
+							"encounteredText": "The camera has encountered a problem."
+						}
+					}
+				},
+				"appMenu": {
+					"main": {
+						"ecoAdmin": "Ecosystem Administrator",
+						"emailSupport": "Email Support",
+						"home": "Home",
+						"logOut": "Log Out",
+						"orgAdmin": "Organization Administrator",
+						"settings": "Settings",
+						"support": "Support"
+					}
+				},
+				"appBar": {
+					"optionsDrawer": {
+						"camera": "Camera FOVs",
+						"baseMap": "BASE MAP",
+						"mapLabels": "Map Labels",
+						"mapOverlays": "MAP OVERLAYS",
+						"nauticalCharts": "Nautical Charts",
+						"roadsLabels": "Roads and Labels",
+						"spotlightProx": {
+							"defaultProx": "Default Proximity",
+							"errorText": {
+								"invalidProx": "Invalid proximity value",
+								"limitedValue": "Value must be limited to 3 decimal places"
+							},
+							"km": "km",
+							"mi": "mi",
+							"title": "SPOTLIGHT PROXIMITY"
+						},
+						"weatherRadar": "Weather Radar",
+						"coordsOnCursor": "Coordinates on cursor"
+					}
+				},
+				"contextPanel": {
+					"openListPanel": "OPEN LIST PANEL",
+					"openProfile": "OPEN PROFILE",
+					"viewMap": "VIEW MAP"
+				},
+				"date": {
+					"full": "MM/DD/YYYY hh:mm A z",
+					"full24-hour": "MM/DD/YYYY HH:mm z",
+					"long": "MMMM D, YYYY",
+					"mid": "MM/DD/YYYY",
+					"min": "MMM D",
+					"short": "MMM D YYYY"
+				},
+				"dock": {
+					"cameras": {
+						"camDockModule": {
+							"addDynamic": "Add %{primaryValue} %{secondaryValue}",
+							"addStatic": "Add %{primaryValue} Camera",
+							"replaceWith": "Replace with %{count}"
+						},
+						"dockedCam": {
+							"hideControls": "Hide Controls",
+							"showControls": "Show Controls"
+						},
+						"dockedControls": {
+							"mapLocation": "Choose Nearest Camera to Map Location",
+							"or": "OR",
+							"searchForCam": "Search for camera",
+							"selectNearestCam": "Click on map to select nearest camera"
+						}
+					},
+					"dockWrapper": {
+						"accept": "Accept",
+						"acknowledge": "Acknowledge",
+						"alerts": "Alerts",
+						"decline": "Decline",
+						"ok": "OK",
+						"redirectLogin": "Your session has expired. You will be redirected to the login page.",
+						"sessionExpired": "Session Expired",
+						"userAgreement": "User Agreement"
+					},
+					"notifications": {
+						"main": {
+							"archiveEmpty": "Your archive is empty",
+							"checkNetConn": "Please check your network connection.",
+							"dismissAll": "Dismiss All",
+							"errorOcc": "An error has occurred.",
+							"loading": "Loading...",
+							"noNotifications": "You currently have no notifications.",
+							"viewActive": "View Active",
+							"viewArchive": "View Archive"
+						}
+					},
+					"shared": {
+						"newNotificationItem": {
+							"cancelled": "Canceled",
+							"undo": "Undo"
+						}
+					},
+					"statusBoard": {
+						"title": "Operational Status Board"
+					},
+					"systemHealth": {
+						"errorCard": {
+							"errorText": "An error occurred retrieving system health"
+						},
+						"server": {
+							"coreSystem": {
+								"databases": {
+									"elasticSearchAvail": "Elasticsearch Availability",
+									"rethinkAvail": "RethinkDB Availability",
+									"title": "Databases"
+								},
+								"ecoCore": {
+									"ecoAvail": "Ecosystem Availability",
+									"extSystem": "External System Entity Processor",
+									"redisAvail": "Redis Availability",
+									"shapeActivity": "Shape Activity Generator",
+									"title": "Ecosystem/Core"
+								},
+								"title": "Core System"
+							},
+							"linkedEco": {
+								"all": "All",
+								"linkedEcoAvail": "Linked Ecosystem Availability",
+								"title": "Linked Ecosystems"
+							},
+							"myApps": {
+								"agentPortal": "Agent Portal Availability",
+								"appAvail": "App Availability",
+								"apps": {
+									"berthSchedule": "Berth Schedule App",
+									"cameraWall": "Camera Wall App",
+									"camerasApp": "Cameras App",
+									"eventsApp": "Events App",
+									"lawEnforcement": "Law Enforcement Search App",
+									"listsApp": "Lists App",
+									"mapApp": "Map App",
+									"reportsApp": "Reports App",
+									"rulesApp": "Rules App",
+									"settingsApp": "Settings App"
+								},
+								"berthingEvent": "Berthing Event Processor",
+								"dwellTime": "Dwell Time Processor",
+								"feedHistory": "Feed History Processor",
+								"gisAvail": "GIS Service Availability",
+								"loiterActivity": "Loiter Activity Generator",
+								"ruleAnalyzer": "Rule Analyzer",
+								"slewLock": "Slew Lock Manager",
+								"title": "My Apps",
+								"tripWire": "Tripwire Activity Processor",
+								"zoneActivity": "Zone Activity Processor"
+							},
+							"myFeeds": {
+								"averageLatency": "Average Latency",
+								"recentTransactions": "Recent Transactions",
+								"title": "My Feeds"
+							},
+							"noReportMsg": "No matching health check report found.",
+							"serverHealth": {
+								"serverCPU": "Server CPU",
+								"serverFileSys": "Server Filesystem",
+								"serverMemory": "Server Memory",
+								"title": "Server Health"
+							}
+						},
+						"systemHealthCard": {
+							"hide": "hide",
+							"linkedecosystems": "Linked Ecosystems",
+							"more": "more",
+							"myapps": "My Apps",
+							"serverhealth": "Server Health"
+						},
+						"systemHealthItem": {
+							"error": "Error",
+							"lastUpdate": "Last update ",
+							"passed": "Passed"
+						},
+						"title": "System Health"
+					},
+					"wavCam": {
+						"main": {
+							"selectWavCam": "Select WavCam",
+							"wavCamLabels": "WavCam Labels",
+							"wavCamOptions": "WavCam Options"
+						}
+					},
+					"unitsPanel": {
+						"title": "Unit Status"
+					}
+				},
+				"errorBoundary": {
+					"errorOccurred": "An error has occurred displaying this component."
+				},
+				"events": {
+					"closed": "Closed ",
+					"started": "Started ",
+					"starts": "Starts ",
+					"today": " Today"
+				},
+				"map": {
+					"contextMenu": {
+						"main": {
+							"AccessPoints": "Access Points",
+							"Cameras": "Cameras",
+							"Shapes": "Shapes",
+							"Tracks": "Tracks",
+							"noActions": "No actions available"
+						},
+						"copyCoords": {
+							"label": "Copy Coordinates",
+							"feedback": "Copied!"
+						}
+					},
+					"controls": {
+						"gisControl": {
+							"gisCollection": {
+								"layer": "%{count} Layer",
+								"layers": "%{count} Layers",
+								"manage": "Manage"
+							},
+							"gisDialog": {
+								"add": "Add",
+								"cancel": "Cancel",
+								"fieldLabel": {
+									"authType": "Authentication Type",
+									"esriServiceEndpoint": "ESRI Service Endpoint",
+									"password": "Password",
+									"serviceName": "Service Name",
+									"token": "Token",
+									"username": "Username"
+								},
+								"helperText": {
+									"exampleURL": "Example URL: %{count}"
+								},
+								"menuItem": {
+									"login": "Login",
+									"none": "None",
+									"token": "Token"
+								},
+								"retry": "Retry"
+							},
+							"gisManagement": {
+								"cancel": "Cancel",
+								"confirm": "Confirm",
+								"delete": "Delete",
+								"deleteConfirmation": "Are you sure you want to delete this GIS Service?",
+								"fieldLabel": {
+									"authType": "Authentication Type",
+									"esriServiceEndpoint": "ESRI Service Endpoint",
+									"password": "Password",
+									"serviceName": "Service Name",
+									"token": "Token",
+									"username": "Username"
+								},
+								"helperText": {
+									"exampleURL": "Example URL: %{count}"
+								},
+								"menuItem": {
+									"login": "Login",
+									"none": "None",
+									"token": "Token"
+								},
+								"save": "Save"
+							},
+							"main": {
+								"addNewService": "Add New Service",
+								"gisServices": "You have yet to add any GIS Services",
+								"title": "GIS"
+							}
+						}
+					},
+					"helper": {
+						"toast": "Shapes should not have intersecting lines. Please update the shape to remove any overlapping paths."
+					},
+					"tools": {
+						"coordsOnCursor": {
+							"lat": "Lat",
+							"long": "Long"
+						},
+						"distanceTool": {
+							"km": "km",
+							"mi": "mi",
+							"nm": "nm",
+							"path": "Path "
+						},
+						"shapeSelect": {
+							"line": "Line",
+							"point": "Point",
+							"polygon": "Polygon"
+						},
+						"spotlightTool": {
+							"spotlightChip": {
+								"spotlight": "Spotlight %{count}"
+							}
+						},
+						"unitSelect": {
+							"kilometers": "Kilometers",
+							"miles": "Miles",
+							"nauticalMiles": "Nautical Miles"
+						}
+					},
+					"layers": {
+						"trackHistoryInfo": {
+							"heading": "Heading:",
+							"lat": "Lat:",
+							"lon": "Lon:",
+							"speed": "Speed:"
+						}
+					}
+				},
+				"profiles": {
+					"accessPointProfile": {
+						"Dialog": {
+							"accId": "Access Point ID",
+							"accName": "Access Point Name",
+							"cancel": "Cancel",
+							"confirm": "Confirm",
+							"desc": "Description (optional)",
+							"editAcc": "Edit Access Point",
+							"errorText": {
+								"lessThanFifty": "Access Point names must be 50 characters or less",
+								"noName": "Access Point must have a name"
+							},
+							"type": "Type"
+						},
+						"accessControlWidget": {
+							"close": "CLOSE",
+							"lock": "LOCK",
+							"open": "OPEN",
+							"statusHeader": "Status: Closed/Locked",
+							"title": "Controls",
+							"unlock": "UNLOCK"
+						},
+						"activities": "Activities",
+						"cameras": "Cameras",
+						"edit": "Edit",
+						"editProfileLayout": "Edit Profile Layout",
+						"facility": "Facility",
+						"files": "Files",
+						"hide": "Hide",
+						"hideFOV": "Hide FOV",
+						"linkedItems": "Linked Items",
+						"liveCam": "Live Camera",
+						"map": "Map",
+						"mapLocationFOV": "Map Location and FOV",
+						"pinTo": "Pin To",
+						"showFOV": "Show FOV"
+					},
+					"alertProfile": {
+						"activeSpotlightsTxt": "Only 3 Spotlights may be active at one time",
+						"close": "Close",
+						"escalate": "Escalate",
+						"spotlight": "Spotlight"
+					},
+					"cameraProfile": {
+						"activities": "Activities",
+						"cameraDialog": {
+							"camId": "Camera ID",
+							"camName": "Camera Name",
+							"cancel": "Cancel",
+							"confirm": "Confirm",
+							"desc": "Description (optional)",
+							"editCam": "Edit Camera",
+							"errorText": {
+								"lessThanFifty": "Camera names must be 50 characters or less",
+								"noName": "Cameras must have a name"
+							},
+							"systemName": "System Name",
+							"type": "Type"
+						},
+						"edit": "Edit",
+						"editProfileLayout": "Edit Profile Layout",
+						"facility": "Facility",
+						"files": "Files",
+						"hide": "Hide",
+						"hideFOV": "Hide FOV",
+						"launch": "Launch",
+						"linkedItems": "Linked Items",
+						"liveCam": "Live Camera",
+						"map": "Map",
+						"mapLocationFOV": "Map Location and FOV",
+						"pinTo": "Pin To",
+						"showFOV": "Show FOV"
+					},
+					"entityProfile": {
+						"entityDelete": {
+							"cancel": "Cancel",
+							"confirmationText": "Are you sure you want to delete this entity? ",
+							"delete": "Delete"
+						},
+						"entityEdit": {
+							"edit": "Edit"
+						},
+						"entityShare": {
+							"cancel": "Cancel",
+							"confirmationText": "Are you sure you want to share this item? Sharing this item will make it available to your organization and to any organization in the ecosystem with an active sharing policy enabled. Any organization user with appropriate permissions can view, contribute, and edit this item.",
+							"share": "Share",
+							"unshare": "Unshare",
+							"unshareEntity": "Unshare this entity with your organization?"
+						},
+						"main": {
+							"activities": "Activities",
+							"alerts": "Alerts",
+							"cameras": "Cameras",
+							"delete": "Delete",
+							"details": "Details",
+							"edit": "Edit",
+							"editLayout": "Edit Profile Layout",
+							"files": "Files",
+							"hide": "Hide",
+							"marineTraffic": "Marine Traffic Particulars",
+							"ok": "Ok",
+							"pinTo": "Pin To",
+							"problemOccurred": "A problem occurred while checking data associated with this shape. It cannot be unshared at this time.",
+							"rules": "Rules",
+							"trackHistory": "Track History",
+							"droneAssociation": "Drone Association"
+						},
+						"shapeAssoc": {
+							"cannotBeHidden": "This shape cannot be hidden. It is actively associated with the following rules:",
+							"cannotDelete": "This shape cannot be deleted. It is actively associated with the following rules:",
+							"ok": "Ok"
+						}
+					},
+					"eventProfile": {
+						"eventDialog": {
+							"cancel": "Cancel",
+							"create": "Create",
+							"fieldLabel": {
+								"description": "Description",
+								"endDate": "End Date",
+								"endTime": "End Time",
+								"endTimeText": "End time must come after start time.",
+								"eventName": "Event Name",
+								"none": "None",
+								"startDate": "Start Date *",
+								"startTime": "Start Time *",
+								"template": "Template",
+								"templateName": "Template Name"
+							},
+							"update": "Update"
+						},
+						"eventShareDialog": {
+							"cancel": "Cancel",
+							"confirm": "Confirm",
+							"noOrganizations": "There are no additional organizations in the ecosystem.",
+							"sharePromptEvent": "Are you sure you want to share this event? Sharing this event will make it permanently available to your organization.",
+							"sharePromptTemplate": "Are you sure you want to share this template? Sharing this template will make it permanently available to your organization.",
+							"shareTitle": "Share %{count} with other organizations in the ecosystem?"
+						},
+						"main": {
+							"activities": "Activity Timeline",
+							"cadDetails": "CAD Details",
+							"cameras": "Cameras",
+							"cancel": "Cancel",
+							"confirm": "Confirm",
+							"confirmationText": "Are you sure you want to delete this event?",
+							"delete": "Delete",
+							"edit": "Edit",
+							"editProfileLayout": "Edit Profile Layout",
+							"equipment": "Equipment",
+							"eventLists": "Event Lists",
+							"favorite": "Favorite",
+							"files": "Files",
+							"launch": "Launch",
+							"map": "Map Planner",
+							"mapPlanner": "Map Planner",
+							"notes": "Notes",
+							"pinnedItems": "Pinned Items",
+							"proximity": "Proximity",
+							"report": "Report",
+							"resources": "Resources",
+							"respondingUnits": "Responding Units",
+							"secureShare": "SecureShare",
+							"share": "Share",
+							"shared": "Shared",
+							"gateRunnerResponse": "Gate Runner Response"
+						},
+						"components": {
+							"eventReopenAndClose": {
+								"reopen": "Re-open",
+								"close": "Close"
+							}
+						}
+					},
+					"facilityProfile": {
+						"main": {
+							"accessPoints": "Access Points",
+							"activities": "Activities",
+							"cameras": "Cameras",
+							"cancel": "Cancel",
+							"cantDelete": "Facilities with cameras cannot be deleted.",
+							"cantDeleteAccessPoint": "Facilities with access points cannot be deleted.",
+							"close": "Close",
+							"confirm": "Confirm",
+							"confirmationText": "Are you sure you want to delete this facility?",
+							"delete": "Delete",
+							"edit": "Edit",
+							"editProfileLayout": "Edit Profile Layout",
+							"files": "Files",
+							"floorPlans": "FloorPlans",
+							"hide": "Hide",
+							"launch": "Launch",
+							"pinTo": "Pin To",
+							"facilityCondition": "Facility Conditions"
+						}
+					},
+					"layoutControls": {
+						"activityTimeLine": "Activity Timeline"
+					},
+					"robotDogProfile": {
+						"activities": "Activities",
+						"alerts": "Alerts",
+						"cameras": "Cameras",
+						"editProfileLayout": "Edit Profile Layout",
+						"errorText": "A problem occurred while checking data associated with this shape. It cannot be unshared at this time.",
+						"files": "Files",
+						"hide": "Hide",
+						"missionControl": "Mission Control",
+						"ok": "Ok",
+						"pinTo": "Pin To",
+						"robotCams": "Robot Cameras",
+						"trackHistory": "Track History"
+					},
+					"widgets": {
+						"accessPoint": {
+							"accessPointOnFloorPlan": {
+								"title": "Access Points",
+								"noAcpAvailable": "No access points available"
+							}
+						},
+						"CADDetails": {
+							"address": "Address",
+							"title": "CAD Details"
+						},
+						"activities": {
+							"activity": {
+								"posted": "%{count} posted "
+							},
+							"main": {
+								"accessPoints": "AccessPoint",
+								"activityTimeline": "Activity Timeline",
+								"activityTimelineFilters": "Choose Activity Timeline filters:",
+								"camera": "Camera",
+								"cancel": "Cancel",
+								"confirm": "Confirm",
+								"errorText": {
+									"commentsTxt": "Comments must be 280 characters or less"
+								},
+								"event": "Event",
+								"loadMore": "Load More",
+								"noActivities": "No activities available",
+								"post": "Post",
+								"postToTimeline": "Post message to timeline",
+								"postedMessages": "Posted Messages",
+								"shapes": "Shapes",
+								"updates": "%{count} Updates"
+							}
+						},
+						"cameras": {
+							"camCard": {
+								"addToDock": "Add to Dock",
+								"back": "Back",
+								"noPresets": "No presets available",
+								"presets": "Presets",
+								"removeFromDock": "Remove from Dock",
+								"slew": "Slew",
+								"unlinkCam": "Unlink Camera"
+							},
+							"main": {
+								"linkCamera": "Link Camera",
+								"linkCams": "Link Cameras",
+								"noCamsAvailable": "No cameras available",
+								"slewAll": "Slew All",
+								"title": "Cameras"
+							}
+						},
+						"details": {
+							"showLess": "Show Less",
+							"showMore": "Show More",
+							"title": "Details"
+						},
+						"droneTrackAssociation": {
+							"title": "WhiteFox Drone Detection",
+							"noAssociatedTracks": "No associated tracks found"
+						},
+						"facilityCondition": {
+							"title": "Facility Conditions",
+							"criticalTarget": "Critical Target",
+							"prioritySchedules": "Define target priority schedules",
+							"addNew": "Add New",
+							"defaultPriorityLabel": "All Day / Every Day",
+							"priority": "Priority",
+							"remove": "Remove",
+							"allDay": "All Day",
+							"priorityValues": [
+								"1",
+								"2",
+								"3",
+								"4",
+								"5"
+							],
+							"weekDays": [
+								"Sun",
+								"Mon",
+								"Tue",
+								"Wed",
+								"Thu",
+								"Fri",
+								"Sat"
+							],
+							"setScheduleLabel": "Set Schedule",
+							"setSchedule": {
+								"title": "Set Schedule",
+								"dateRange": "DATE RANGE :",
+								"indefinite": "Indefinite",
+								"setRange": "Set Range",
+								"cancel": "Cancel",
+								"save": "Save",
+								"update": "Update",
+								"to": "To",
+								"days": "DAYS:",
+								"timePeriod": "TIME PERIOD:",
+								"allDay": "All Day",
+								"setPeriod": "Set Period",
+								"dialogError": {
+									"atLeastOneDay": "You must select at least one day of the week for the condition to be active.",
+									"fallAfterStart": "Your end date must fall after your selected start date.",
+									"atLeastOneLimitingFactor": "Your condition must have at least one limiting factor.",
+									"startBeforeEndTime": "The start time must be before the end time.",
+									"startEndTimeDiff": "The start time and end time must be different.",
+									"validTimeValue": "Please enter a valid time value."
+								}
+							},
+							"removeDialog": {
+								"title": "Delete Priority Schedule",
+								"confirm": "CONFIRM",
+								"cancel": "CANCEL",
+								"confirmationText": "Are you sure you want to delete this priority schedule? "
+							}
+						},
+						"files": {
+							"noAssocFiles": "No associated files",
+							"phoenixDropzone": {
+								"uploadFiles": "Upload Files"
+							},
+							"title": "Files",
+							"dropFiles": "Drop files here"
+						},
+						"floorPlanWidget": {
+							"floorPlans": "Floor Plans"
+						},
+						"gateRunnerWidget": {
+							"main": {
+								"title": "Gate Runner Response"
+							},
+							"activityCard": {
+								"elapsedTime": "Elapsed Time"
+							},
+							"activityHotList": {
+								"chooseAlert": "Choose from LPR Alert Hot List"
+							},
+							"timeline": {
+								"title": "Timeline",
+								"targetObserved": "Target Observed"
+							},
+							"timelineCard": {
+								"notify": "Notify",
+								"notifyAll": "Notify All",
+								"generatingRec": "Generating Recommendations...",
+								"targetObserved": "Target observed at selected map location"
+							}
+						},
+						"hrms": {
+							"equipmentsWidget": {
+								"equipment": "Equipment",
+								"manage": "Manage",
+								"noEquipment": "No equipment available"
+							},
+							"lookupTable": {
+								"cancel": "Cancel",
+								"category": "Category",
+								"count": "Count",
+								"done": "Done",
+								"location": "Location",
+								"name": "Name",
+								"rank": "Rank",
+								"shiftEnding": "Shift Ending",
+								"unit": "Unit"
+							},
+							"manageModal": {
+								"noDataErrorEquipment": "There was an error fetching available equipment.",
+								"noDataErrorResources": "There was an error fetching available resources.",
+								"search": "Search",
+								"select": "Select %{count}",
+								"showAssigned": "Show assigned",
+								"showAvail": "Show available"
+							},
+							"resourcesWidget": {
+								"manage": "Manage",
+								"noResources": "No resources available",
+								"resources": "Resources"
+							},
+							"widgetTable": {
+								"category": "Category",
+								"location": "Location",
+								"name": "Name",
+								"rank": "Rank",
+								"unit": "Unit"
+							}
+						},
+						"layoutControls": {
+							"accessPoint": "Access Point",
+							"camera": "Camera",
+							"event": "Event",
+							"entity": "Entity",
+							"facility": "Facility",
+							"robot": "Robot",
+							"title": "Edit %{count} Profile Layout",
+							"explanation": "Toggle widgets on/off. Drag to change vertical order.",
+							"note": "Note: any changes will apply to all %{count} Profiles.",
+							"autoExpand": "Automatically expand profile to wide view",
+							"done": "Done"
+						},
+						"linkedItems": {
+							"linkItem": "Link Item",
+							"linkItems": "Link Items",
+							"title": "Linked Items"
+						},
+						"list": {
+							"listCard": {
+								"cancel": "Cancel",
+								"confirmationText": "Are you sure you want to delete this list?",
+								"delete": "Delete"
+							},
+							"listToolbar": {
+								"add": "Add",
+								"cancel": "Cancel",
+								"deleteList": "Delete List",
+								"remove": "Remove",
+								"renameList": "Rename List",
+								"save": "Save"
+							},
+							"main": {
+								"addList": "Add List",
+								"addSelected": "Add Selected Lists (%{count})",
+								"cancel": "Cancel",
+								"chooseToAdd": "Choose a list to add:",
+								"eventLists": "Event Lists",
+								"list": "%{count} List",
+								"lists": "%{count} Lists",
+								"listsSharedWithMe": "Lists Shared With Me",
+								"myLists": "My Lists",
+								"noListsAvail": "No lists available",
+								"searchLists": "Search lists...",
+								"uncategorizedLists": "Uncategorized Lists"
+							}
+						},
+						"liveCam": {
+							"title": "Live Camera"
+						},
+						"lradControls": {
+							"beam": "Beam",
+							"playAudio": "Play Audio",
+							"strobe": "Strobe",
+							"title": "LRAD Controls",
+							"volume": "Volume"
+						},
+						"marineTrafficParticulars": {
+							"noParticulars": "No particulars available",
+							"title": "Marine Traffic Particulars"
+						},
+						"missionControl": {
+							"charging": "CHARGING",
+							"ftPerSec": "ft/sec",
+							"inMotion": "IN MOTION",
+							"missionControl": "Mission Control",
+							"onMission": "ON MISSION",
+							"standby": "STANDBY",
+							"stationary": "STATIONARY",
+							"stopped": "STOPPED",
+							"waypointDynamic": "Waypoint %{count}",
+							"waypointStatic": "Waypoint 1 (Start)"
+						},
+						"notes": {
+							"cancel": "Cancel",
+							"confirm": "Confirm",
+							"conflictingChanges": "Conflicting changes",
+							"save": "Save",
+							"textContent1": "Saving your changes will overwrite %{count}'s recent changes.",
+							"textContent2": "Saving your changes will overwrite multiple users' recent changes.",
+							"title": "Notes",
+							"uploading": "Uploading",
+							"uploadingNewImages": "Uploading new images."
+						},
+						"pinnedItems": {
+							"main": {
+								"noAssocEntities": "No associated entities",
+								"pinItem": "Pin Item",
+								"title": "Pinned Items"
+							},
+							"pinnedItemsDialog": {
+								"cancel": "Cancel",
+								"confirm": "Confirm",
+								"errorText": {
+									"errorOcc": "An error occurred.",
+									"noItems": "No items found."
+								},
+								"wantToFind": "I want to find..."
+							}
+						},
+						"proximity": {
+							"main": {
+								"createProxZone": "Create Proximity Zone",
+								"noAssocProx": "No associated proximities",
+								"title": "Proximity"
+							},
+							"proximityCard": {
+								"edit": "Edit",
+								"noEntities": "No entities within this proximity zone"
+							},
+							"proximityDialog": {
+								"cancel": "Cancel",
+								"create": "Create",
+								"fillColor": "Fill Color",
+								"kilometers": "Kilometers",
+								"miles": "Miles",
+								"feet": "Feet",
+								"meters": "Meters",
+								"name": "Name",
+								"radius": "Radius",
+								"stroke": "Stroke",
+								"strokeColor": "Stroke Color",
+								"unit": "Unit",
+								"update": "Update"
+							},
+							"transparencySlider": {
+								"fill": "Fill Transparency %{count}%"
+							}
+						},
+						"respondingUnits": {
+							"title": "Responding Units"
+						},
+						"robotCams": {
+							"main": {
+								"arm": "Arm",
+								"audio": "Audio",
+								"cameras": "Cameras",
+								"lights": "Lights"
+							},
+							"robotCamDock": {
+								"addToDock": "Add to Dock",
+								"back": "Back",
+								"noPresetsAvailable": "No presets available",
+								"presets": "Presets",
+								"removeFromDock": "Remove from Dock"
+							}
+						},
+						"rules": {
+							"createdBy": "Created by %{count}",
+							"newRule": "New Rule",
+							"priority": "priority",
+							"title": "Rules",
+							"viewRule": "View Rule"
+						},
+						"shieldGroup": {
+							"editView": {
+								"audiences": "Audiences",
+								"cancel": "Cancel",
+								"departments": "Departments",
+								"disableNotifications": "Disable Notifications",
+								"districts": "Districts",
+								"fieldLabel": {
+									"bulletinZone": "Bulletin Zone",
+									"none": "None",
+									"pointOfContact": "Points Of Contact",
+									"predefinedLocation": "Predefined Location"
+								},
+								"groups": "Groups",
+								"individuals": "Individuals",
+								"notifyOnEntry": "Notify on Entry",
+								"save": "Save",
+								"searchForIndividuals": "Search for individuals...",
+								"shareToCMS": "Share to CMS",
+								"threadId": "Thread ID: %{count}",
+								"visibleToAll": "Visible to All Users"
+							},
+							"main": {
+								"secureShare": "SecureShare Settings"
+							},
+							"profileView": {
+								"audiences": "Audiences",
+								"bulletinZone": "Bulletin Zone",
+								"departments": "Departments (%{count})",
+								"disableNotifications": "Disable Notifications",
+								"districts": "Districts (%{count})",
+								"groups": "Groups (%{count})",
+								"individuals": "Individuals (%{count})",
+								"no": "No",
+								"none": "None",
+								"notifyOnEntry": "Notify on Entry",
+								"pointsOfContact": "Points of Contact (%{count})",
+								"predefinedLocation": "Predefined Location",
+								"sharedToCMS": "Shared to CMS",
+								"threadId": "Thread ID",
+								"visibleToAll": "Visible to All Users",
+								"yes": "Yes"
+							}
+						},
+						"summary": {
+							"Camera": "Camera",
+							"Facility": "Facility",
+							"Line": "Line",
+							"Polygon": "Polygon",
+							"Track": "Track",
+							"Template": "Template",
+							"Planned": "Planned event",
+							"Emergent": "Emergent event",
+							"createdBy": "%{primaryValue} created by %{secondaryValue}"
+						},
+						"shared": {
+							"widgetMenu": {
+								"title": "Widget Settings",
+								"header": "Widget Settings: %{count}",
+								"note": "Note: any changes you make will apply to all instances of this widget",
+								"displayText": "Display uploaded image as:",
+								"thumbnails": "Thumbnails",
+								"slideShow": "Slide show",
+								"upload": "Upload files",
+								"ok": "Ok",
+								"cancel": "Cancel",
+								"timelineFilters": "Timeline Filters",
+								"cameraWallLoad": "Load In Camera Wall",
+								"autoExpand": "Auto expand widget when opening profile",
+								"newRule": "New Rule"
+							}
+						}
+					}
+				},
+				"ruleBuilder": {
+					"alarm": {
+						"alarmRule": "Alarm Rule",
+						"alertMe": "Alert me when %{count} fires %{primaryValue} %{secondaryValue} alarm."
+					},
+					"conditionBuilder": {
+						"Friday": "Friday",
+						"Monday": "Monday",
+						"Saturday": "Saturday",
+						"Sunday": "Sunday",
+						"Thursday": "Thursday",
+						"Tuesday": "Tuesday",
+						"Wednesday": "Wednesday",
+						"and": " AND ",
+						"betweenValues": " it is between %{primaryValue} and %{secondaryValue}",
+						"dateIs": " the date is %{count}",
+						"duringPeriod": " is during the period of %{primaryValue} and %{secondaryValue}",
+						"inCollection": " is in the collection %{count} ",
+						"itIs": " it is",
+						"longerThanMin": " for longer than %{count} minute",
+						"longerThanMins": " for longer than %{count} minutes",
+						"notInCollection": " is not in the collection %{count} ",
+						"or": " or ",
+						"travelingFaster": " is traveling faster than %{primaryValue} %{secondaryValue}",
+						"travelingSlower": " is traveling slower than %{primaryValue} %{secondaryValue}",
+						"heading": " heading %{count}",
+						"direction": {
+							"north": "North",
+							"northEast": "North East",
+							"east": "East",
+							"southEast": "South East",
+							"south": "South",
+							"southWest": "South West",
+							"west": "West",
+							"northWest": "North West"
+						}
+					},
+					"createEvent": {
+						"alertMe": "Alert me when %{primaryValue} is created%{secondaryValue}",
+						"templateString": " using the %{count} template"
+					},
+					"systemHealthBuilder": {
+						"alertMe": "Alert me when a system health change occurs in ",
+						"anySystem": "Any system",
+						"or": " or "
+					},
+					"trackMovementBuilder": {
+						"alertMe": "Alert me when ",
+						"anyLine": "any line",
+						"anyPolygon": "any polygon",
+						"anyTrack": "any track",
+						"or": " or "
+					},
+					"vesselEvent": {
+						"alertMe": "Alert me when %{count}",
+						"arrival": "there is an arrival",
+						"assignmentUpdated": "an assignment is updated",
+						"at": " at ",
+						"berthApproved": "a berth request is approved",
+						"departure": "there is a departure",
+						"for": " for ",
+						"newBerthCreated": "a new berth request is created",
+						"or": " or ",
+						"securityViolation": "there is a security violation"
+					}
+				},
+				"sharedComponents": {
+					"attachmentDialog": {
+						"close": "Close",
+						"title": "Attachments"
+					},
+					"entityAddToColl": {
+						"cancel": "Cancel",
+						"createNewColl": "Create a new Collection:",
+						"enterCollTitle": "Enter New Collection title",
+						"newColl": "New Collection",
+						"submit": "Submit",
+						"title": "Copy to New Collection"
+					},
+					"linkDialog": {
+						"cancel": "Cancel",
+						"continue": "Continue",
+						"errorText": {
+							"errorOccured": "An error occurred.",
+							"noItemsFound": "No items found."
+						},
+						"wantToFind": "I want to find..."
+					},
+					"pinToDialog": {
+						"addToColl": "Add to New Collection",
+						"cancel": "Cancel",
+						"collections": "Collections",
+						"enterName": "Enter a name for the new collection",
+						"errorText": {
+							"enterValidName": "Please enter a valid name for the collection"
+						},
+						"events": "Events",
+						"pinItem": "Pin Item",
+						"submit": "Submit"
+					},
+					"rowEdit": {
+						"addAttachments": "Add attachments",
+						"cancel": "Cancel",
+						"none": "None",
+						"save": "Save"
+					},
+					"shapeEdit": {
+						"alwaysShow": "Always show",
+						"cancel": "Cancel",
+						"chooseStyles": "Choose Styles",
+						"chooseSymbol": "Choose Symbol",
+						"createPoint": "Create Point",
+						"createShape": "Create Shape",
+						"description": "Description",
+						"errorText": {
+							"shapesErr": "Shapes should not have intersecting lines. Please update the shape to remove any overlapping paths."
+						},
+						"fillColor": "Fill Color",
+						"line": "Line",
+						"lineColor": "Line Color",
+						"mapApp": "Map App Display Options",
+						"name": "Name",
+						"save": "Save",
+						"searchLib": "Search library...",
+						"showWhenActive": "Only show when Event is Active",
+						"stroke": "Stroke",
+						"strokeColor": "Stroke Color",
+						"strokeProps": {
+							"Dashed": "Dashed",
+							"Dotted": "Dotted",
+							"Solid": "Solid",
+							"point": "%{count} Point",
+							"lineType": "Line Type",
+							"strokeType": "Stroke Type",
+							"strokeThickness": "Stroke Thickness",
+							"lineThickness": "Line Thickness"
+						},
+						"transparencySlider": {
+							"fill": "Fill Transparency %{count}%"
+						}
+					},
+					"statusCard": {
+						"StatusCardDialog": {
+							"cancel": "Cancel",
+							"delete": "Delete",
+							"editSlide": {
+								"fieldLabel": {
+									"atleastOne": "Must have at least one slide",
+									"text": "Text"
+								},
+								"newSlide": "New Slide"
+							},
+							"editText": {
+								"ordered": "ordered",
+								"unordered": "unordered"
+							},
+							"fieldLabel": {
+								"cardName": "Card Name"
+							},
+							"save": "Save",
+							"global": "Global"
+						},
+						"main": {
+							"by": "by %{count}",
+							"changed": "Changed %{count} ",
+							"edit": "Edit",
+							"sharedFrom": "Shared from %{count}",
+							"share": "Share",
+							"editCard": "Edit Card"
+						},
+						"shareStatusCardDialog": {
+							"cancel": "Cancel",
+							"save": "Save",
+							"title": "Share with Organizations"
+						},
+						"statusControls": {
+							"selector": "Selector"
+						}
+					}
+				},
+				"units": {
+					"main": {
+						"title": "UNITS",
+						"newUnit": "+ New unit",
+						"unassigned": "Unassigned"
+					},
+					"components": {
+						"collectionsCard": {
+							"chooseCollection": "Choose collection"
+						},
+						"collections": {
+							"noTargetLocation": "Target location not available",
+							"noInterdictionLocations": "Interdiction location not available"
+						},
+						"dialog": {
+							"newUnit": {
+								"title": "New Unit",
+								"unitName": "Unit Name",
+								"chooseMembers": "Choose unit members",
+								"unitNameError": "Unit name cannot be empty"
+							},
+							"renameUnit": {
+								"title": "Rename Unit",
+								"unitName": "Unit Name",
+								"unitNameError": "Unit name cannot be empty"
+							},
+							"settings": {
+								"title": "Settings",
+								"name": "Name / Call Sign (Assigned by TAK device)",
+								"Phone": "Device Phone Number",
+								"chooseUnit": "Choose Unit",
+								"unAssign": "Unassign",
+								"person": "Person",
+								"vehicle": "Vehicle",
+								"equipmentSkills": "Equipment / Skills",
+								"chooseRole": "Choose Role"
+							},
+							"template": {
+								"cancel": "Cancel",
+								"save": "Save"
+							}
+						},
+						"assignedUnitsCard": {
+							"active": "Active",
+							"edit": "Rename Unit",
+							"delete": "Delete Unit",
+							"deleteUnit": "Delete Unit",
+							"deleteConfirmationText": "Are you sure do you want to delete this unit?",
+							"confirm": "Confirm",
+							"cancel": "Cancel"
+						},
+						"unitMemberRows": {
+							"settings": "Settings"
+						}
+					}
+				}
+			},
+			"replay-app": {
+				"portable": {
+					"email": {
+						"sendErrorEmail": {
+							"body": {
+								"html": {
+									"error": "error",
+									"errorLoading": "There was a problem generating your replay. Please try again later or contact support."
+								},
+								"subject": "Your Replay Encountered a Problem"
+							}
+						},
+						"sendReplayDownloadNotification": {
+							"body": {
+								"html": {
+									"clickHere": "Click here.",
+									"download": "Your replay is ready for download"
+								},
+								"subject": "Replay Available for download"
+							}
+						}
+					}
+				}
+			},
+			"reports-app": {
+				"emailTemplates": {
+					"availableForDownload": "Report Available for download",
+					"generateErrorHTML": {
+						"content": "There was a problem generating your report. Please try again later or contact support.",
+						"error": "ERROR"
+					},
+					"generateHtml": {
+						"clickHere": "Click here",
+						"content": "Your report is ready for download"
+					},
+					"sendError": {
+						"subject": "Your Report Encountered a Problem"
+					}
+				},
+				"health": {
+					"transRateCheck": {
+						"currentTxnPerSec": "Current txns/sec",
+						"currentTxnRate": "Current Transaction Rate",
+						"currentTxnRateOf": "current txn rate of",
+						"droppedBelow": "/sec dropped below allowed minimum of",
+						"metricBeatCheck": "check if metricbeat is running and if metrics-* index is available",
+						"noCurrentFeedsAvail": "No current feed history metrics available",
+						"transAbove": "/sec is above or at the allowed minimum of",
+						"transPerSec": "txns/sec",
+						"unableToFetch": "Unable to fetch feed history metrics"
+					}
+				},
+				"pdfTemplates": {
+					"siterep": {
+						"header": {
+							"headerLabel": "Event SITREP",
+							"reportDate": "Report Date"
+						},
+						"pageFooter": {
+							"pages": "pages"
+						}
+					},
+					"threadReport": {
+						"header": {
+							"headerLabel": "Thread Report",
+							"reportDate": "Report Date"
+						},
+						"pageFooter": {
+							"pages": "pages"
+						}
+					},
+					"tripwireActivity": {
+						"header": {
+							"headerLabel": "Tripwire Activity Report",
+							"reportDate": "Report Date"
+						},
+						"pageFooter": {
+							"pages": "pages"
+						}
+					},
+					"vesselPosition": {
+						"header": {
+							"headerLabel": "Vessel Position Report",
+							"reportDate": "Report Date"
+						},
+						"pageFooter": {
+							"pages": "pages"
+						}
+					},
+					"zoneActivity": {
+						"header": {
+							"headerLabel": "Zone Activity Report",
+							"reportDate": "Report Date"
+						},
+						"pageFooter": {
+							"pages": "pages"
+						}
+					},
+					"eventLog": {
+						"header": {
+							"headerLabel": "Event Log Report",
+							"reportDate": "Report Date"
+						}
+					}
+				},
+				"mainpage": {
+					"list": {
+						"events": "Events",
+						"eventCreatedBy": "Event Created By",
+						"eventSharing": "Event Sharing",
+						"startDate": "Start Date",
+						"startTime": "Start Time",
+						"closeDate": "Close Date",
+						"closeTime": "Close Time",
+						"eventDescription": "Event Description",
+						"notes": "Notes",
+						"pinnedItems": "Pinned Items",
+						"activities": "Activities",
+						"lists": "Lists",
+						"files": "Files"
+					}
+				},
+				"reportBuilder_reports": {
+					"report": {
+						"displayName": {
+							"vesselName": "Vessel Name",
+							"mmsid": "MMSID",
+							"imo": "IMO",
+							"callSign": "Callsign",
+							"entryTime": "Entry Time",
+							"dwellDuration": "Dwell Duration",
+							"positionDateTime": "Position Date/Time",
+							"speed": "Speed",
+							"heading": "Heading",
+							"course": "Course",
+							"latitude": "Latitude",
+							"longitude": "Longitude",
+							"event": "Event",
+							"eventName": "Event Name",
+							"desc": "Description",
+							"start": "Start",
+							"end": "End",
+							"template": "Template",
+							"createdBy": "Created By",
+							"status": "Status",
+							"checkListProgress": "Checklist Progress",
+							"posted": "Posted",
+							"postedBy": "Posted by",
+							"name": "Name",
+							"type": "Type"
+						}
+					}
+				}
+			},
+			"rules-app": {
+				"health": {
+					"totalTxn": {
+						"inLast": "in last",
+						"metricBeatCheck": "check if metricbeat is running and if metrics-* index is available",
+						"min": "minimum",
+						"mins": "minutes",
+						"minsAbove": "minutes is above allowed minimum of",
+						"minsDropped": "minutes dropped below allowed minimum of",
+						"mustProcess": "must process at least",
+						"noCurrentMetrics": "No current metrics available",
+						"totalTxnCount": "total transaction count of",
+						"totalTxnsCount": "total transactions count of",
+						"transactions": "Transactions",
+						"txnsInLast": "txn(s) in the last",
+						"unableToFetch": "Unable to fetch metrics"
+					}
+				},
+				"trackMovement": {
+					"heading": "heading",
+					"direction": {
+						"north": "North",
+						"northEast": "North East",
+						"east": "East",
+						"southEast": "South East",
+						"south": "South",
+						"southWest": "South West",
+						"west": "West",
+						"northWest": "North West"
+					}
+				}
+			}
+		}
+	}
+}

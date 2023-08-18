@@ -1,0 +1,45 @@
+@import "../node_modules/orion-components/scss/vars.scss";
+@import "../node_modules/orion-components/scss/fonts.scss";
+@import "../node_modules/orion-components/scss/orion-base-styles.scss";
+@import "../node_modules/orion-components/scss/dock-control.scss";
+@import "../node_modules/orion-components/scss/alert-sidebar.scss";
+@import "../node_modules/orion-components/scss/app-menu.scss";
+@import "../node_modules/orion-components/scss/activity-widget.scss";
+@import "../node_modules/orion-components/scss/alert-widget.scss";
+@import "../node_modules/orion-components/scss/file-widget.scss";
+@import "../node_modules/orion-components/scss/layout-controls.scss";
+@import "../node_modules/orion-components/scss/rules-widget.scss";
+@import "../node_modules/orion-components/scss/event-card.scss";
+@import "../node_modules/orion-components/scss/activities.scss";
+@import "../node_modules/orion-components/scss/file-widget.scss";
+@import "../node_modules/orion-components/scss/list-widget.scss";
+@import "../node_modules/orion-components/scss/pinned-items.scss";
+@import "../node_modules/orion-components/scss/summary-widget.scss";
+@import "../node_modules/orion-components/scss/widgets.scss";
+@import "../node_modules/orion-components/scss/ptz-controls.scss";
+@import "../node_modules/orion-components/scss/camera-dock.scss";
+@import "../node_modules/orion-components/scss/entity-profile.scss";
+@import "../node_modules/orion-components/scss/notes-widget.scss";
+@import "../node_modules/orion-components/scss/proximity-widget.scss";
+@import "../node_modules/orion-components/scss/robot-cameras-widget.scss";
+@import "node_modules/orion-components/scss/cb-components.scss";
+@import "../node_modules/orion-components/scss/globalMui.scss";
+
+
+@import "shared/styles/mixins.scss";
+@import "shared/styles/base.scss";
+@import "shared/styles/icons.scss";
+@import "shared/styles/dialog.scss";
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+@import "MapBase/mapbox-gl-draw.scss";
+@import "MapBase/mapbox-gl-navigation.scss";
+@import "MapBase/map.scss";
+// @import "ListPanel/EntityProfile/entity-profile.scss";
+@import "ListPanel/list-panel.scss";
+@import "MapAppBar/app-bar.scss";
+@import "MapBase/TrackHistoryInfo/track-history-info.scss";
+
+@import "../node_modules/flag-icon-css/sass/flag-icon.scss";

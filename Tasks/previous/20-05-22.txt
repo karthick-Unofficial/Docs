@@ -1,0 +1,7 @@
+Today's Task:
+CB2-5293:
+- Worked on below items in orion-settings router-dom:
+    - Went through react-router-dom v6 official doc and sorted out possibilities to fix router params issues in orion-settings app.
+    - Added a new function withRouter to wrap components with ownProps using useParams hooks.
+    - Worked on fixing username prop condition mismatch issues in mapStateToProps in UserAccountContainer.
+- Worked on adding fixes to reqlPro deprecated node-saas issues faced while upgrading node.

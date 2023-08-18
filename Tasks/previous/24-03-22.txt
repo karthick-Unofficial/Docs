@@ -1,0 +1,4 @@
+Today's Task:
+- Went through RethinkDB documentation to figure out ReqlOpFailedError causes and fixing methods.
+- Also went though other online sources to sort out error fixes faced in getAll method.
+- Worked on fixing Index issues faced on getAll accessPoints API request in ecosystem.

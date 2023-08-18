@@ -1,0 +1,5 @@
+Today's Task:
+- Worked on Jira Bug fixes:
+   - CB2-5223 - List app - Arabic locale - Date/time not converted 
+- Worked on checking possibilities on fixing CB2-5141 Jira Id.
+- Worked on sorting out access point implementation in AccessPoint Layer in orion-components.

@@ -1,0 +1,82 @@
+.events-list-panel {
+  .button-create-new {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: lighten($darkGray, 2%);
+    p {
+      margin-left: 1rem;
+    }
+  }
+  .events-list,
+  .templates-list {
+    padding: 0.5rem 1rem;
+    height: calc(100% - 72px);
+    .list-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      i {
+        color: $transWhite;
+        font-size: 24px;
+        margin-left: 0.5rem;
+      }
+    }
+    .list-header {
+      padding: 1rem 0 0.5rem 0;
+    }
+  }
+
+  .event-list,
+  .template-list {
+    height: calc(100% - 60px);
+    overflow: scroll;
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+
+#filter-toggles {
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 675px) {
+    flex-direction: column;
+  }
+}
+
+#search-field::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  i {
+    color: $transWhite;
+    font-size: 24px;
+    margin-left: 0.5rem;
+  }
+}
+
+.targetingLine {
+  position: fixed;
+  top: 0;
+  left: 6px; // <--- accounting for padding...
+  pointer-events: none;
+  z-index: 9999999999999999999; // always on top of everything...
+}
+
+/* .tabWrapper {
+  padding-left: 12px;
+} */
+
+.tabBottomBorder {
+  display: block;
+  height: 24px;
+
+  margin-right: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,5 @@
+Today's Task:
+- Worked on removeAccessPointFromFacility functionality to remove added accessPoint in floorPlans UI.
+- Worked on adding PUT call for removeAccessPointFromFacility changes in client-app-core/accessPointService.
+- Worked on implementing Backend service to support removeAccessPointFromFacility functionality in ecosystem.
+- Worked on replacing camera prop with entity prop in CameraGeoMenu and supporting containers in cameras-app.

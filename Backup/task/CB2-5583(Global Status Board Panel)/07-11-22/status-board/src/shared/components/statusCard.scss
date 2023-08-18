@@ -1,0 +1,8 @@
+.status-card-header-div:hover::-webkit-scrollbar {
+	display: block !important;
+	width: 2px;
+}
+
+.status-card-header-div::-webkit-scrollbar-thumb {
+    border: solid 2px #B5B9BE;
+}

@@ -1,0 +1,68 @@
+attachments:
+  /attachments:
+    post:
+      description: Create an attachment
+      operationId: create
+      tags:
+        - Attachments
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                app:
+                  type: string
+                targetType:
+                  type: string
+                targetId:
+                  type: string
+                files:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      handle: 
+                        type: string
+                      name:
+                        type: string
+                      type:
+                        type: string
+                notify:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success: boolean
+        '401':
+          description: Access denied
+  /attachments/{handle}:
+    delete:
+      description: Delete an attachment by ID
+      operationId: delete
+      tags:
+        - Attachments
+      parameters:
+        - name: appId
+          in: path                  #options: query, header, path, cookie
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced: 
+                    type: number
+                  changes: 
+                    type: object

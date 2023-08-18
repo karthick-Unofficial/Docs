@@ -1,0 +1,73 @@
+{
+	"appId": "camera-wall-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"appBar": {
+				"title": "Camera Wall"
+			},
+			"cameraWall": {
+				"cameraSlot": {
+					"cameraControls": {
+						"hideControls": "Hide Controls",
+						"showControls": "Show Controls"
+					},
+					"emptySlot": {
+						"noResult": "No Results",
+						"placeholder": "Search for camera"
+					}
+				},
+				"toolBar": {
+					"copy": "Copy To My Camera Groups",
+					"copyDialog": {
+						"cancel": "Cancel",
+						"create": "Create",
+						"fieldLabel": {
+							"cameraGroup": "Camera Group Name"
+						}
+					},
+					"edit": "Edit",
+					"editGroupDialog": {
+						"cancel": "Cancel",
+						"confirm": "Confirm",
+						"fieldLabel": {
+							"cameraGroup": "Camera Group Name"
+						},
+						"removeCameraGrp": "Remove Camera Group",
+						"save": "Save",
+						"textContent": "The saved group layout will be removed",
+						"title": "Are you sure you want to remove this group?"
+					},
+					"newGroupDialog": {
+						"cancel": "Cancel",
+						"fieldLabel": {
+							"cameraGroup": "Camera Group Name"
+						},
+						"save": "Save"
+					},
+					"pin": "Pin to My Items",
+					"save": "Save"
+				}
+			},
+			"listPanel": {
+				"cameraGroup": {
+					"cameraPlural": "%{count} Cameras",
+					"cameraSingular": "%{count} Camera"
+				},
+				"myCamGroups": "My Camera Groups",
+				"newCamGroup": "New Camera Group",
+				"noGroupText": "You currently have no camera groups. Click the button above to create a new one, or search for a contextual group.",
+				"pinnedItemJSX": {
+					"cameraPlural": "%{primaryValue} - %{secondaryValue} Cameras",
+					"cameraSingular": "%{primaryValue} - %{secondaryValue} Camera"
+				},
+				"pinnedItems": "Pinned Items",
+				"searchField": {
+					"noResults": "No Results",
+					"recentlySelected": "Recently Selected",
+					"search": "Search..."
+				}
+			}
+		}
+	}
+}

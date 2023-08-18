@@ -1,0 +1,7 @@
+Today's Task:
+- Worked on KNG Advancement fixes on below items:
+  - Replay-app: “title” and “description” in replay type box localization missing
+  - Lists-app: Time displaying EST before time
+  - Reports-app: Localization( Vessel Reports and Event Reports, “Tripwire” and “SITREP” )
+  - Reports-app: Datepicker Days needs localization
+  - Reports-app: Dwell Time Report( TimePicker localization along with labels) 

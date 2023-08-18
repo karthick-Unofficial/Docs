@@ -1,0 +1,9 @@
+// mixins
+
+// Dock item hover color change
+@mixin setBgColorHover($initialColor) {
+	background-color: $initialColor;
+	&:hover {
+		background-color: darken($initialColor, 5%);
+	}
+}

@@ -1,0 +1,1300 @@
+{
+	"Area_Command_Post": {
+		"keywords": ["Incident", "Command", "Area", "ICS", "NIMS", "Post", "CP"],
+		"height": 82,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 81,
+		"x": 10,
+		"y": 517,
+		"forPoints": "true"
+	},
+	"Command_Post_Plain": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Post", "CP", "Plain"],
+		"height": 82,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 81,
+		"x": 96,
+		"y": 517,
+		"forPoints": "true"
+	},
+	"Command_Post": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Post", "CP"],
+		"height": 82,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 182,
+		"y": 517,
+		"forPoints": "true"
+	},
+	"Emergency_Operations_Center": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Emergency", "Operations", "Center"],
+		"height": 82,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 268,
+		"y": 517,
+		"forPoints": "true"
+	},
+	"Incident_Command_Post": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Post", "CP"],
+		"height": 82,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 354,
+		"y": 517,
+		"forPoints": "true"
+	},
+	"Agency_Coordination_Center": {
+		"height": 82,
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Multi", "Agency", "Coordination", "Center"],
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 81,
+		"x": 441,
+		"y": 517,
+		"forPoints": "true"
+	},
+	"Joint_Operations_Center": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Joint", "Operations", "Center"],
+		"height": 82,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 527,
+		"y": 517,
+		"forPoints": "true"
+	},
+	"EMS_Plain": {
+		"keywords": [
+			"Incident",
+			"Command",
+			"ICS",
+			"NIMS",
+			"EMS",
+			"Emergency",
+			"Medical",
+			"Service",
+			"Ambulance",
+			"Plain"
+		],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 83,
+		"x": 612,
+		"y": 518,
+		"forPoints": "true"
+	},
+	"Treatment_Plain": {
+		"keywords": [
+			"Incident",
+			"Command",
+			"ICS",
+			"NIMS",
+			"EMS",
+			"Emergency",
+			"Medical",
+			"Service",
+			"Ambulance",
+			"Treatment",
+			"Plain"
+		],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 83,
+		"x": 697,
+		"y": 518,
+		"forPoints": "true"
+	},
+	"Water_Point_Vehicle": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Water", "Point", "Vehicle"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 783,
+		"y": 518,
+		"forPoints": "true"
+	},
+	"LZ_Helibase": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "LZ", "Landing", "Zone", "Helibase"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 868,
+		"y": 518,
+		"forPoints": "true"
+	},
+	"Responder_First_Aid": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Responder", "First", "Aid"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 10,
+		"y": 612,
+		"forPoints": "true"
+	},
+	"Bomb_Containment": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Bomb", "Containment"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 96,
+		"y": 612,
+		"forPoints": "true"
+	},
+	"Water_Point_General": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Water", "Point", "General"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 83,
+		"x": 181,
+		"y": 612,
+		"forPoints": "true"
+	},
+	"Base": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Base"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 82,
+		"x": 268,
+		"y": 612,
+		"forPoints": "true"
+	},
+	"Water_Point_Helicopter": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Water", "Point", "Helicopter"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 83,
+		"x": 354,
+		"y": 612,
+		"forPoints": "true"
+	},
+	"Staging_Family_Reunification": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Civilian", "Staging", "Family", "Reunification"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 83,
+		"x": 440,
+		"y": 612,
+		"forPoints": "true"
+	},
+	"Water_Point_Retardent": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Water", "Point", "Retardent"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 83,
+		"x": 526,
+		"y": 612,
+		"forPoints": "true"
+	},
+	"Civilian_Staging_Not_Specfic": {
+		"keywords": ["Incident", "Command", "ICS", "NIMS", "Civilian", "Staging", "Not", "Specfic"],
+		"height": 83,
+		"pixelRatio": 2,
+		"group": "Incident",
+		"width": 83,
+		"x": 612,
+		"y": 612,
+		"forPoints": "true"
+	},
+	"aircraft_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 812,
+		"y": 0
+	},
+	"aircraft_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 844,
+		"y": 0
+	},
+	"aircraft_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 876,
+		"y": 0
+	},
+	"aircraft_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 908,
+		"y": 0
+	},
+	"alert": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 940,
+		"y": 0
+	},
+	"Camera_gray": {
+		"forPoints": "true",
+		"height": 80,
+		"width": 80,
+		"pixelRatio": 2,
+		"x": 11,
+		"y": 710
+	},
+	"Camera_blue": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 99,
+		"y": 709
+	},
+	"Camera_green": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 187,
+		"y": 709
+	},
+	"Camera_yellow": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 275,
+		"y": 709
+	},
+	"Camera_red": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 363,
+		"y": 709
+	},
+	"drone_fixed_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 972,
+		"y": 0
+	},
+	"drone_fixed_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 512,
+		"y": 128
+	},
+	"drone_fixed_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 544,
+		"y": 128
+	},
+	"drone_fixed_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 576,
+		"y": 128
+	},
+	"drone_rotor_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 608,
+		"y": 128
+	},
+	"drone_rotor_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 640,
+		"y": 128
+	},
+	"drone_rotor_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 672,
+		"y": 128
+	},
+	"drone_rotor_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 704,
+		"y": 128
+	},
+	"Flag_gray": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 798
+	},
+	"Flag_blue": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 99,
+		"y": 799
+	},
+	"Flag_green": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 187,
+		"y": 799
+	},
+	"Flag_yellow": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 275,
+		"y": 799
+	},
+	"Flag_red": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 363,
+		"y": 799
+	},
+	"Marker_gray": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 888
+	},
+	"Marker_blue": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 99,
+		"y": 889
+	},
+	"Marker_green": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 187,
+		"y": 899
+	},
+	"Marker_yellow": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 275,
+		"y": 889
+	},
+	"Marker_red": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 363,
+		"y": 889
+	},
+	"Medical_gray": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 978
+	},
+	"Medical_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 99,
+		"y": 978
+	},
+	"Medical_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 187,
+		"y": 978
+	},
+	"Medical_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 275,
+		"y": 978
+	},
+	"Medical_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 363,
+		"y": 978
+	},
+	"Shield_gray": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1068
+	},
+	"Shield_blue": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 99,
+		"y": 1068
+	},
+	"Shield_green": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 187,
+		"y": 1068
+	},
+	"Shield_yellow": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 275,
+		"y": 1068
+	},
+	"Shield_red": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 363,
+		"y": 1068
+	},
+	"Incident_gray": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1157
+	},
+	"Incident_blue": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 99,
+		"y": 1158
+	},
+	"Incident_green": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 187,
+		"y": 1158
+	},
+	"Incident_yellow": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 275,
+		"y": 1158
+	},
+	"Incident_red": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 363,
+		"y": 1158
+	},
+	"Fire_gray": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1247
+	},
+	"Fire_blue": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 99,
+		"y": 1248
+	},
+	"Fire_green": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 187,
+		"y": 1248
+	},
+	"Fire_yellow": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 275,
+		"y": 1248
+	},
+	"Fire_red": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 363,
+		"y": 1248
+	},
+	"Biohazard_gray": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1337
+	},
+	"Biohazard_blue": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 99,
+		"y": 1338
+	},
+	"Biohazard_green": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 187,
+		"y": 1338
+	},
+	"Biohazard_yellow": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 275,
+		"y": 1338
+	},
+	"Biohazard_red": {
+		"forPoints": "true",
+		"height": 81,
+		"width": 81,
+		"pixelRatio": 2,
+		"x": 363,
+		"y": 1338
+	},
+	"Person_gray": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1427
+	},
+	"Person_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 1427
+	},
+	"Person_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 1427
+	},
+	"Person_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 1427
+	},
+	"Person_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 1427
+	},
+	"People_gray": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1517
+	},
+	"People_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 1517
+	},
+	"People_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 1517
+	},
+	"People_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 1517
+	},
+	"People_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 1517
+	},
+	"Civilian_gray": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1607
+	},
+	"Civilian_blue": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 1607
+	},
+	"Civilian_green": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 1607
+	},
+	"Civilian_yellow": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 1607
+	},
+	"Civilian_red": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 1607
+	},
+	"Sensor_gray": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1697
+	},
+	"Sensor_blue": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 1697
+	},
+	"Sensor_green": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 1697
+	},
+	"Sensor_yellow": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 1697
+	},
+	"Sensor_red": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 1697
+	},
+	"Car_gray": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1787
+	},
+	"Car_blue": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 1787
+	},
+	"Car_green": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 1787
+	},
+	"Car_yellow": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 1787
+	},
+	"Car_red": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 1787
+	},
+	"Police_Car_gray": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1877
+	},
+	"Police_Car_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 1877
+	},
+	"Police_Car_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 1877
+	},
+	"Police_Car_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 1877
+	},
+	"Police_Car_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 1877
+	},
+	"Connected_Car_gray": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 1966
+	},
+	"Connected_Car_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 1967
+	},
+	"Connected_Car_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 1967
+	},
+	"Connected_Car_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 1967
+	},
+	"Connected_Car_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 1967
+	},
+	"Boat_gray": {
+		"forPoints": "true",
+		"height": 83,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 2056
+	},
+	"Boat_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 2057
+	},
+	"Boat_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 2057
+	},
+	"Boat_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 2057
+	},
+	"Boat_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 2057
+	},
+	"Bus_gray": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 2146
+	},
+	"Bus_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 2146
+	},
+	"Bus_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 2146
+	},
+	"Bus_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 2146
+	},
+	"Bus_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 2146
+	},
+	"Fire_Truck_gray": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 2236
+	},
+	"Fire_Truck_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 2236
+	},
+	"Fire_Truck_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 2236
+	},
+	"Fire_Truck_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 2236
+	},
+	"Fire_Truck_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 2236
+	},
+	"Helo_gray": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 10,
+		"y": 2326
+	},
+	"Helo_blue": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 98,
+		"y": 2326
+	},
+	"Helo_green": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 186,
+		"y": 2326
+	},
+	"Helo_yellow": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 274,
+		"y": 2326
+	},
+	"Helo_red": {
+		"forPoints": "true",
+		"height": 82,
+		"width": 82,
+		"pixelRatio": 2,
+		"x": 362,
+		"y": 2326
+	},
+	"helicopter_clear": {
+		"height": 39,
+		"pixelRatio": 1,
+		"width": 43,
+		"x": 640,
+		"y": 0
+	},
+	"helicopter_friendly": {
+		"height": 39,
+		"pixelRatio": 1,
+		"width": 43,
+		"x": 683,
+		"y": 0
+	},
+	"helicopter_hostile": {
+		"height": 39,
+		"pixelRatio": 1,
+		"width": 43,
+		"x": 726,
+		"y": 0
+	},
+	"helicopter_unknown": {
+		"height": 39,
+		"pixelRatio": 1,
+		"width": 43,
+		"x": 769,
+		"y": 0
+	},
+	"marker": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 736,
+		"y": 128,
+		"forPoints": true,
+		"textOffset": [1, 0],
+		"iconOffset": [0, -10]
+	},
+	"person_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 768,
+		"y": 128
+	},
+	"person_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 800,
+		"y": 128
+	},
+	"person_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 832,
+		"y": 128
+	},
+	"person_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 864,
+		"y": 128
+	},
+	"train_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 896,
+		"y": 128
+	},
+	"train_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 928,
+		"y": 128
+	},
+	"train_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 960,
+		"y": 128
+	},
+	"train_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 992,
+		"y": 128
+	},
+	"unknown_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 512,
+		"y": 256
+	},
+	"unknown_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 544,
+		"y": 256
+	},
+	"unknown_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 576,
+		"y": 256
+	},
+	"unknown_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 608,
+		"y": 256
+	},
+	"vehicle_big_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 640,
+		"y": 256
+	},
+	"vehicle_big_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 672,
+		"y": 256
+	},
+	"vehicle_big_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 704,
+		"y": 256
+	},
+	"vehicle_big_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 736,
+		"y": 256
+	},
+	"vehicle_sm_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 768,
+		"y": 256
+	},
+	"vehicle_sm_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 800,
+		"y": 256
+	},
+	"vehicle_sm_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 832,
+		"y": 256
+	},
+	"vehicle_sm_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 864,
+		"y": 256
+	},
+	"vessel_big_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 896,
+		"y": 256
+	},
+	"vessel_big_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 928,
+		"y": 256
+	},
+	"vessel_big_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 960,
+		"y": 256
+	},
+	"vessel_big_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 992,
+		"y": 256
+	},
+	"vessel_sm_clear": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 512,
+		"y": 384
+	},
+	"vessel_sm_friendly": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 544,
+		"y": 384
+	},
+	"vessel_sm_hostile": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 576,
+		"y": 384
+	},
+	"vessel_sm_unknown": {
+		"height": 32,
+		"pixelRatio": 1,
+		"width": 32,
+		"x": 608,
+		"y": 384
+	}
+}

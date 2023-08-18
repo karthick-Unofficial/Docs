@@ -1,0 +1,175 @@
+import React, { useEffect, useState } from "react";
+
+// material-ui
+import FlatButton from "material-ui/FlatButton";
+import List, { ListItem } from "material-ui/List";
+import Dialog from "material-ui/Dialog";
+
+// misc
+import _ from "lodash";
+
+//virtualized list
+import { List as VirtList, AutoSizer } from "react-virtualized";
+import { Translate, getTranslation } from "orion-components/i18n/I18nContainer";
+
+const html = document.getElementsByTagName("html")[0];
+
+const SubjectFeedDialog = ({ addSubjects, toggleDialog, styles, subject, userTrackFeeds, isOpen }) => {
+	const [selectedFeeds, setSelectedFeeds] = useState([]);
+	const [searchValue, setSearchValue] = useState([]);
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+		return () => {
+			// Allow background scrolling on dialog close
+			html.style.position = "static";
+			html.style.width = "auto";
+		};
+	}, []);
+
+	if(!mounted) {
+		// Prevent background scrolling when dialog is open.
+		html.style.position = "fixed";
+		html.style.width = "100%";
+		document.addEventListener("keydown", _handleKeyDown);
+		setMounted(true);
+	}
+	// Enter to submit
+	const _handleKeyDown = (event) => {
+		if (event.key === "Enter" && isOpen) {
+			handleSaveClick();
+		}
+	};
+
+	const handleUpdateSearch = value => {
+		setSearchValue(value);
+	};
+
+	const handleSaveClick = () => {
+		const trimmedFeeds = selectedFeeds.map((feed) => {
+			return {
+				id: feed.feedId,
+				entityType: "feed",
+				name: feed.name || feed.feedId,
+				feedId: feed.feedId
+			};
+		});
+		addSubjects(trimmedFeeds);
+		setSelectedFeeds([]);
+		document.removeEventListener("keydown", _handleKeyDown);
+		toggleDialog();
+	};
+
+	const handleCancelClick = () => {
+		setSelectedFeeds([]);
+		document.removeEventListener("keydown", _handleKeyDown);
+		toggleDialog();
+	};
+
+	const _capitalize = (string) => {
+		return string.slice(0, 1).toUpperCase() + string.slice(1, string.length);
+	};
+
+	const handleEntitySelect = (feed) => {
+		const tArray = selectedFeeds;
+		const index = tArray.indexOf(feed);
+		tArray.indexOf(feed) > -1 ?
+			tArray.splice(index, 1)
+			:
+			tArray.push(feed);
+		setSelectedFeeds(tArray);
+	};
+
+	const feedsAddActions = [
+		<FlatButton
+			style={styles.buttonStyles}
+			label={getTranslation("createEditRule.subject.subjectFeedDialog.cancel")}
+			onClick={handleCancelClick}
+			primary={true}
+		/>,
+		<FlatButton
+			style={styles.buttonStyles}
+			label={getTranslation("createEditRule.subject.subjectFeedDialog.addItem")}
+			onClick={() => handleSaveClick()}
+			primary={true}
+		/>
+	];
+
+
+	const subjectIds = subject.map((feed) => feed.feedId);
+
+	const dialogFeeds = userTrackFeeds.filter((feed) => {
+		if (searchValue === "" || feed.name.includes(searchValue)) {
+			return !subjectIds.includes(feed.feedId);
+		}
+	});
+
+	// react-virtualized
+	// We are virtualized rendered lists of tracks so they don't slow down the app
+	// this is a conditional because the map is a huge hit on performance when the dialog isn't open
+
+	let renderedFeeds;
+	if (isOpen) {
+		renderedFeeds = dialogFeeds.map((feed) => {
+			return (
+				<ListItem
+					className={`${selectedFeeds.indexOf(feed) > -1 ? "selected" : "unselected"}`}
+					style={styles.listItemStyles}
+					key={feed.feedId}
+					primaryText={feed.name}
+					onClick={() => handleEntitySelect(feed)}
+				/>
+			);
+		}
+		);
+	}
+
+	const rowRenderer = ({
+		key,
+		index,
+		isScrolling,
+		isVisible,
+		style
+	}) => {
+		return (
+			<div key={key} style={style}>
+				{renderedFeeds[index]}
+			</div>
+		);
+	};
+
+	return (
+		<Dialog
+			paperClassName='rule-dialog'
+			open={isOpen}
+			onRequestClose={handleCancelClick}
+			actions={feedsAddActions}
+		>
+			<List
+				className='rule-attributes-list'
+			>
+				{dialogFeeds.length > 0 ?
+					<AutoSizer disableHeight>
+						{({ width }) => (
+							<VirtList
+								rowCount={dialogFeeds.length}
+								autoContainerWidth={true}
+								rowHeight={68}
+								width={width}
+								height={700}
+								rowRenderer={rowRenderer}
+								overscanRowCount={1}
+							/>
+						)}
+					</AutoSizer>
+					:
+					<p>{userTrackFeeds.length > 0 ? <Translate value="createEditRule.subject.subjectFeedDialog.noAdditional" /> : <Translate value="createEditRule.subject.subjectFeedDialog.noFeeds" />}</p>
+				}
+
+			</List>
+		</Dialog>
+	);
+};
+
+export default SubjectFeedDialog;

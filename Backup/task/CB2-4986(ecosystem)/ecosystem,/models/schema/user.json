@@ -1,0 +1,87 @@
+
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/user.json",
+  "type": "object",
+  "required": [ "admin", "ecoAdmin", "email", "name", "orgId", "username", "role"],
+  "additionalProperties": false,
+  "properties": {
+    "admin": { "description": "", "type": "boolean" },
+    "firstUseAck" : {
+      "description": "",
+      "type": "boolean"
+    },
+    "appSettings": {
+      "type": "object",
+      "properties": {
+        "trackHistory": {
+          "type": "object",
+          "properties": {
+            "duration": { "description": "", "type": "number" }
+          }
+        },
+        "tts": {
+          "type": "object",
+          "properties": {
+            "enabled": { "description": "", "type": "boolean" },
+            "type": { "description": "", "type": [ "string", "null" ] }
+          }
+        },
+        "locale": {"description":"", "type" : ["string","null" ] },
+        "timeFormat": { "description": "", "type": "string"}
+       
+      }
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "address": { "description": "", "type": [ "string", "null" ] },
+        "cellPhone": { "description": "", "type": [ "string", "null" ] },
+        "city": { "description": "", "type": [ "string", "null" ] },
+        "officePhone": { "description": "", "type": [ "string", "null" ] },
+        "state": { "description": "", "type": [ "string", "null" ] },
+        "zip": { "description": "", "type": [ "string", "null" ] }
+      }
+    },
+    "deleted": { "description": "", "type": "boolean" },
+    "disabled": { "description": "", "type": "boolean" },
+    "ecoAdmin": { "description": "", "type": "boolean" },
+    "email": { "description": "", "type": "string"},
+    "name": { "description": "", "type": "string" },
+    "orgId": { "description": "", "type": "string" },
+    "orgRole": {
+      "type": "object",
+      "properties": {
+        "organization": {
+          "type": "object",
+          "properties": {
+            "canShare": { "description": "", "type": "boolean" },
+            "canContribute": { "description": "", "type": "boolean" },
+            "canEdit": { "description": "", "type": "boolean" },
+            "canView": { "description": "", "type": "boolean" }
+          }
+        },
+        "roleId": { "description": "", "type": [ "string", "null" ] },
+        "ecosystem": {
+          "type": "object",
+          "properties": {
+            "canShare": { "description": "", "type": "boolean" },
+            "canContribute": { "description": "", "type": "boolean" },
+            "canView": { "description": "", "type": "boolean" }
+          }
+        },
+        "title": { "description": "", "type": [ "string", "null" ] }
+      }
+    },
+    "password": { "description": "", "type": "string" },
+    "role": { "description": "", "type": "string" },
+    "roleId": { "description": "", "type": [ "string", "null" ] },
+    "setPasswordToken": { "description": "", "type": [ "string", "null" ] },
+    "username": { "description": "", "type": "string" },
+    "createdDate": { "minimum": 1, "date": true },
+    "lastModifiedDate": { "minimum": 1, "date": true },
+    "passwordChangedDate": { "minimum": 1, "date": true},
+    "authProviderId": { "description": "", "type": "string" }
+  }
+}
+

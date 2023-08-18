@@ -1,0 +1,12 @@
+Today's Task:
+CB2-5277
+- Worked on below changes in rules-app
+  - Added fixes to state initialization issues in TrackMovement and relevant files.
+  - Removed unused methods in vesselEvents, EscalationAttributes and TrackMovement.
+  - Worked on sorting out and added fixes to getDerivedStateFromProps lifecycle issue in ViewRule.
+  - Worked on adding relevant hook to replace componentWillMount in rules-app.
+  - Worked on testing CB2-5277 workflow throughout rules-app and added minor fixes.
+
+  
+
+  

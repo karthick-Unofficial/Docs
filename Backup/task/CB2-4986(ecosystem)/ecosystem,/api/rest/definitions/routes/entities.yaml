@@ -1,0 +1,232 @@
+entities:
+  /entities:
+    post:
+      description: Add an entity
+      operationId: create
+      tags:
+        - Entities
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                feedId:
+                  type: string
+                app:
+                  type: string
+                entityType:
+                  type: string
+                entityData:
+                  type: object
+                  properties:
+                    properties:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        type:
+                          type: string
+                tags:
+                  type: array
+                  items:
+                    type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+  /entities/{entityId}:
+    get:
+      description: Get an entity by ID
+      operationId: getById
+      tags:
+        - Entities
+      parameters:
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  # DO THIS
+    put:
+      description: Update an entity by ID
+      operationId: update
+      tags:
+        - Entities
+      parameters:
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+    delete:
+      description: Update an entity as Deleted by ID
+      operationId: delete
+      tags:
+        - Entities
+      parameters:
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      reponses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: string
+                  errors:
+                    type: string
+  /entities?et={entityId}&app={appId}&filter={filter}:
+    get:
+      description: Filter by entityType, appId, and optional filter
+      operationId: getByEntityType
+      tags:
+        - Entities
+      parameters:
+        - name: entityId
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: filter
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  appId:
+                    type: string
+                  entityType:
+                    type: string
+  /entities/{entityId}/share:
+    put:
+      description: Share entity
+      operationId: shareEntity
+      tags:
+        - Entities
+      parameters:
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                shares:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            appliation/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: string
+                  errors:
+                    type: string
+                  changes:
+                    type: array
+                    items:
+                      type: object
+  /entities/{entityId}/unshare:
+    put:
+      description: Share entity
+      operationId: shareEntity
+      tags:
+        - Entities
+      parameters:
+        - name: entityId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                shares:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            appliation/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: string
+                  errors:
+                    type: string 
+  /entities/shapes/singleSegmentLines:
+    get:
+      description: Returns all single-segment lines for user
+      operationId: getSingleSegmentLines
+      tags:
+        - Entities
+      responses:
+        '200':
+          description: OK
+          content:
+            appliation/json:
+              schema:
+                type: array
+                items:
+                  type: object

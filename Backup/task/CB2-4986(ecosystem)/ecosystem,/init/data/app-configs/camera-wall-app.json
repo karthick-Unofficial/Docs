@@ -1,0 +1,9 @@
+{
+  "clientConfig": {
+    "supportEmail": {
+      "address": "c2support@aressecuritycorp.com",
+      "subject": "Avert C2 Support Issue",
+      "body": "[Use this space to describe the issue you are experiencing.]"
+    }
+  }
+}

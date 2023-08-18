@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListPanelMobileToggle renders correctly when closed 1`] = `ShallowWrapper {}`;
+
+exports[`ListPanelMobileToggle renders correctly when open 1`] = `ShallowWrapper {}`;

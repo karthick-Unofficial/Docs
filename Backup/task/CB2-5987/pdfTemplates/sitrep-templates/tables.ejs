@@ -1,0 +1,44 @@
+<% data.formatData.forEach(function(component, index){%>
+	<% if (component.type==="table" ) { %>
+		<% if (data[component.property]) {%>
+			<% if (component.property==="lists" && data["lists"].value) {%>
+				<%- include('lists', {lists: data[component.property].value, timezone: data.timezone,
+					timeFormatPreference: data.timeFormatPreference }); %>
+					<% } else if (data[component.property].value.rows !==null &&
+						data[component.property].value.rows.length> 0){ %>
+						<% const groups=data[component.property].value; %>
+							<div class="table-container">
+								<h4>
+									<%= data.mainpage.list[component.header] %>
+								</h4>
+								<div class="table-data-container">
+									<table>
+										<thead>
+											<tr>
+												<% component.columns.map(column=> { %>
+													<th class="<%= data.locale === 'ar' ? 'rightAlign' : '' %>">
+														<%= data.reportBuilder_reports.report.displayName[column.displayName]
+															%>
+													</th>
+													<% }) %>
+											</tr>
+										</thead>
+										<tbody>
+											<% if (groups.rows) { %>
+												<% groups.rows.forEach((row, index)=> { %>
+													<% const handle=data[component.property].handles ?
+														data[component.property].handles[index] : "" ; %>
+														<%- include('rows', {row: row, moment: moment, component:
+															component, index: index, handle: handle, timezone:
+															data.timezone, timeFormatPreference:
+															data.timeFormatPreference, locale: data.locale }); %>
+															<% }); %>
+																<% } %>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<% } %>
+								<% } %>
+									<% } %>
+										<% }) %>

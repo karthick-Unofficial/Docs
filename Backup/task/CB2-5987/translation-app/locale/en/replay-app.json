@@ -1,0 +1,138 @@
+{
+	"appId": "replay-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"newReplay": {
+				"newEventReplay": {
+					"cancel": "Cancel",
+					"loadReplay": "Load Replay",
+					"search": "Search Events",
+					"title": "Search and select Event"
+				},
+				"newMapReplay": {
+					"minutes": "minutes",
+					"hours": "hours",
+					"cancel": "Cancel",
+					"clipDuration": "Clip Duration",
+					"contextMenu": {
+						"noActions": "No actions available"
+					},
+					"duration": "Duration",
+					"endDate": "End Date/Time",
+					"loadReplay": "Load Replay",
+					"replayFrame": "Replay Frame",
+					"startDate": "Start Date/Time",
+					"title": "Choose time parameters. Zoom/Pan map to set Replay selection area",
+					"replayTitle": "Map Selection",
+					"description": "Generate new Replay from map area selection."
+				},
+				"newTrackReplay": {
+					"cancel": "Cancel",
+					"clipDuration": "Clip Duration",
+					"duration": "Duration",
+					"end": "End Date/Time",
+					"loadReplay": "Load Replay",
+					"replay": "Replay Frame",
+					"params": "Enter time parameters",
+					"search": "Search",
+					"start": "Start Date/Time",
+					"timeParams": "Enter time parameters",
+					"trackDistance": "Track distance buffer",
+					"dateRange": "Date Range",
+					"title": "Select track and set distance buffer",
+					"replayTitle": "Track",
+					"description": "Generate new Replay from any current or historical track."
+				},
+				"newZoneReplay": {
+					"minutes": "minutes",
+					"hours": "hours",
+					"cancel": "Cancel",
+					"clip": "Clip Duration",
+					"duration": "Duration",
+					"load": "Load Replay",
+					"params": "Enter time parameters",
+					"replay": "Replay Frame",
+					"search": "Search",
+					"start": "Start Date/Time",
+					"title": "Select zone and set time parameters",
+					"replayTitle": "Map Zone",
+					"description": "Generate new Replay from an existing map zone."
+				},
+				"replayArchive": {
+					"searchArchive": "Search Archive",
+					"delete": "Delete Items",
+					"download": "Download",
+					"load": "Load",
+					"manage": "Manage and view saved Replays.",
+					"replay": "Replay Archive",
+					"saved": "No Saved Replays Found",
+					"cancel": "CANCEL",
+					"confirm": "CONFIRM",
+					"ok": "Ok",
+					"clear": "Clear",
+					"tableHeaders": {
+						"type": "Type",
+						"name": "Name",
+						"created": "Created",
+						"createdBy": "Created by"
+					},
+					"deleteReplay": {
+						"title": {
+							"areYouSure": "Are you sure you want to delete the ",
+							"selectedReplay": "selected replay",
+							"s": "s"
+						}
+					},
+					"downloadReplay": "It may take some time to complete your request. You will receive a notification with a link to download when the replay is available."
+				},
+				"replay": {
+					"newReplay": "New Replay",
+					"startingPoint": "Choose starting point to generate new Replay or search archived Replay files."
+				}
+			},
+			"replay": {
+				"replayToBar": {
+					"edit": "Edit",
+					"save": "Save",
+					"saveReplay": "Save the Replay",
+					"name": "Name",
+					"cancel": "Cancel",
+					"replayHelperText": "The Replay must have a name",
+					"title": "Replay",
+					"to": "to",
+					"mins": "mins"
+				},
+				"replayCamera": {
+					"replayCamera": "Replay Cameras",
+					"loadAudio": "Load Audio",
+					"loading": "Loading Audio...",
+					"unmute": "Unmute Audio",
+					"mute": "Mute Audio",
+					"noVideoPlayback": "Replay length exceeds maximum video replay length. In order to playback video try a replay length less than or equal to %{count} minutes."
+				},
+				"settingsMenu": {
+					"TileOptions": {
+						"base": "BASE MAP"
+					},
+					"settings": {
+						"map": "Map Labels",
+						"camera": "Camera FOVs",
+						"overlays": "MAP OVERLAYS",
+						"charts": "Nautical Charts",
+						"road": "Roads and Labels",
+						"feeds": "FEEDS",
+						"events": "Events",
+						"points": "Points",
+						"polygons": "Polygons",
+						"lines": "Lines"
+					}
+				},
+				"replayScreen": {
+					"ok": "Ok",
+					"transactionErrorMessage": "Sorry, we were unable to find any data for this replay. If you believe this is an error, please contact support."
+				}
+			}
+		}
+	}
+}

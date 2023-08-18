@@ -1,0 +1,10 @@
+Today's Task:
+CB2-4531 - Manage User - Back Button
+- Went through exact scenarios to reproduce the issues in local env. Seems the issue has been fixed and working good.
+
+CB2-4532 - Manage Org - Edit Profile
+- Worked on wrapping EditUserContainer with withRouter to pass params as ownProps.
+- Worked on fixing username prop condition mismatch issues in mapStateToProps in EditUserContainer.
+
+CB2-5298 - Replay - Play button is not functional
+- Worked on sorting out the main cause of issue and also worked on adding locale to moment values in PlayBar/setPlayBarValue.

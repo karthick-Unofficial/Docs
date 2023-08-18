@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsWidget renders 1`] = `
+<WithStyles(BaseWidget)
+  order={0}
+  title="Details"
+>
+  <WithStyles(ForwardRef(Collapse))
+    className="list-body-wrapper"
+    in={true}
+    style={
+      Object {
+        "overflowX": "scroll",
+      }
+    }
+  >
+    <WithStyles(SimpleTable)
+      rows={Array []}
+    />
+  </WithStyles(ForwardRef(Collapse))>
+</WithStyles(BaseWidget)>
+`;

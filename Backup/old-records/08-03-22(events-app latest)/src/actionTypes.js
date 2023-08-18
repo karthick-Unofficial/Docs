@@ -1,0 +1,40 @@
+// App
+export const MAP_APP_STATE_RECEIVED = "MAP_APP_STATE_RECEIVED";
+
+// OptionsDrawer
+export const TOGGLE_ENTITY_LABELS = "TOGGLE_ENTITY_LABELS";
+
+// EventsListPanel
+export const UPDATE_SEARCH = "UPDATE_SEARCH";
+export const CLOSE_PUBLISH_DIALOG = "CLOSE_PUBLISH_DIALOG";
+export const VIEW_LAST_PROFILE = "VIEW_LAST_PROFILE";
+
+// EventProfile
+export const SELECT_WIDGET = "SELECT_WIDGET";
+export const OPEN_PUBLISH_DIALOG = "OPEN_PUBLISH_DIALOG";
+export const OPEN_SHARE_DIALOG = "OPEN_SHARE_DIALOG";
+export const OPEN_DELETE_DIALOG = "OPEN_DELETE_DIALOG";
+export const SET_WIDGET_ORDER = "SET_WIDGET_ORDER";
+export const EVENT_ATTACHMENT_DELETE_SUCCESS =
+	"EVENT_ATTACHMENT_DELETE_SUCCESS";
+export const UPDATE_EVENT_CARD = "UPDATE_EVENT_CARD";
+
+// EventMap
+export const SET_MAP_POSITION_SUCCESS = "SET_MAP_POSITION_SUCCESS";
+
+// EventList Async Action
+export const UPDATE_LIST_CHECKBOX = "UPDATE_LIST_CHECKBOX";
+
+// EntityProfile
+export const UPDATE_VIEWING_HISTORY = "UPDATE_VIEWING_HISTORY";
+export const ADDED_TO_MY_ITEMS = "ADDED_TO_MY_ITEMS";
+export const REMOVED_FROM_MY_ITEMS = "REMOVED_FROM_MY_ITEMS";
+
+// Camera Related
+export const CAMERA_UPDATED = "CAMERA_UPDATED";
+
+// Camera Widget for Camera Dock
+export const CAMERA_TO_DOCK_MODE = "CAMERA_TO_DOCK_MODE";
+
+// Widget Launch
+export const SET_WIDGET_LAUNCH_DATA = "SET_WIDGET_LAUNCH_DATA";

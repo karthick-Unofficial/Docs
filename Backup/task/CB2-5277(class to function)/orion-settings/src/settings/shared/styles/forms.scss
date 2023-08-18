@@ -1,0 +1,227 @@
+.error-message {
+	color: $alert !important;
+}
+
+// .edit-form.new-org,
+// .edit-form.new-user {
+//   @media (min-width: 600px) {
+// 		padding: 52px 25px 30px 25px;
+// 	}
+
+// }
+
+.new-org {
+	display: block;
+	margin: 0 auto;
+	max-width: 900px;
+}
+
+.org-edit-form {
+	display: flex;
+	margin-bottom: 0px;
+	flex-grow: 1;
+	@media (max-width: 670px) {
+		flex-direction: column;
+	} 
+	.details-fields {
+		width: 50%;
+		margin-bottom: 0;
+		@media (max-width: 1023px) {
+			width: 100%;
+		}
+		.buttons {
+			margin: 1rem 0;
+		}
+	}
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.edit-user-form {
+	// max-width: 500px;
+	@media (max-width: 795px) {
+		max-width: 100%;
+		margin-bottom: 1rem;
+	}
+	
+}
+
+.edit-user-buttons {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	// @media (min-width: 796px) {
+	// 	margin: -10px 1rem 20px 1rem;
+	// 	// margin-bottom: 1rem; // margin from wrapper wasnt being detect above breakpoint
+	// }
+}
+
+.widgets-columns {
+  	width: 100%; // from 66%
+}
+
+
+
+.edit-form {
+
+	flex-grow: 1;
+	
+	textarea.field {
+		padding: 10px 16px;
+		height: 130px;
+		resize: none;
+		overflow: hidden;
+	}
+
+	.textarea-wrapper {
+		min-height: 130px;
+		margin-top: 6px;
+		background-color: #1F1F21;
+		position: relative;
+	}
+
+	.character-counter {
+		color: $textGray;
+		position: absolute;
+		bottom: 5px;
+		right: 10px;
+	}
+
+	.arrow-up {
+		position: relative;
+		float: right;
+		top: -30px;
+		right: 75%;
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom: 10px solid $widgetGray2;
+	}
+
+	.heading {
+		display: flex;
+		align-items: center;
+		margin-bottom: 8px;
+		margin-right: 52px;
+		.name-inputs {
+			width: 100%;
+		}
+	}
+
+	.heading-icon {
+		margin-right: 1rem;
+		min-width: 56px;
+		@media (max-width: 809px) {
+			display: flex !important;
+		}
+		@media (max-width: 350px) {
+			display: none !important;
+		}
+	}
+
+	.org-field {
+		background-color: #28282A;
+		color: $textGray;
+		border: 1px $transWhite;
+		line-height: 35px;
+		border: 1px solid $mediumGray;
+		// margin-bottom: 22px;
+	}
+
+	.org-selection {
+		margin-bottom: 10px;
+		margin-right: 52px;
+		.role-selector {
+			padding: 14px 6px;
+
+			.picker-clicker-wrapper {
+				position: relative;
+				height: 20px;
+				top: 0px;
+			}
+
+			.picker-wrapper { 
+				top: 0px;
+					position: absolute;
+					left: 20px;
+					right: 0px;
+					width: 120px;
+
+					i {
+						right: 0;
+					}
+
+					span {
+						font-size: 17px;
+						font-weight: bold;
+					}
+			}
+		}
+
+		h4 {
+			font-size: .9em;
+		}
+
+		p {
+			color: $textGray;
+			font-size: .95em;
+		}
+	}
+
+	.details-fields {
+		// margin-bottom: 24px;
+		@media(min-width:670px) {
+			// margin: 0 52px;
+			// width: 90%;
+			width: 460px;
+		}
+		.wrapper-city {
+			width: 70%;
+			display: inline-flex;
+			flex-direction: column
+		}
+		.input-city {
+			display: inline;
+			width: 100%;
+		}
+		.wrapper-state {
+			display: inline;
+			width: 28%;
+			margin-left: 2%;
+		}
+		.input-state {
+			// display: inline;
+			width: 28%;
+		}
+		.new-admin-form {
+			margin-top: 2rem;
+			p {
+				margin-bottom: 1rem;
+			}
+		}
+
+	}
+
+}
+
+.password-change-wrapper {
+	padding: 300px 10%;
+	@media(min-width: 670px) {
+		padding: 300px 25%;
+	}
+	.input-wrapper {
+		margin-bottom: 20px;	
+	}
+	.edit-user-buttons {
+		text-align: right;
+	}
+	.error-message {
+		color: #cc0000;
+	}
+}
+
+
+

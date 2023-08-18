@@ -1,0 +1,30 @@
+{
+	"appId": "status-board-app",
+	"locales": "en",
+	"translations": {
+		"ar_kw": {
+			"appBar": {
+				"title": "مجلس الحالة"
+			},
+			"listPanel": {
+				"dialog": {
+					"cancel": "إلغاء",
+					"fieldLabel": {
+						"cardName": "اسم البطاقة",
+						"cardType": "نوع البطاقة",
+						"slides": "الشرائح",
+						"text": "نص"
+					},
+					"save": "حفظ"
+				},
+				"main": {
+					"newCard": "بطاقة الحالة الجديدة",
+					"organization": "منظمة"
+				}
+			},
+			"searchField": {
+				"searchStatusCard": "بطاقات حالة البحث ..."
+			}
+		}
+	}
+}

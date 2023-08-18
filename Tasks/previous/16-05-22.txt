@@ -1,0 +1,9 @@
+Today's Task:
+CB2-5277
+- Worked on Functional Component Conversion Implementation in below files of orion-components:
+    - Authenticate\index.js
+    - CheckAppAccess\index.js
+    - Dock\WavCam\WavCamHelper.js
+    - Profiles\Widgets\Hrms\ResourceWidget.jsx
+- Went through CB2-5277 code implementations in orion-components and worked on adding minor fixes as well.
+- Worked on testing Functional component Implementation in orion-components Dock and Profiles.

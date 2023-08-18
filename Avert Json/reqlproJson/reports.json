@@ -1,0 +1,448 @@
+{
+  "appId": "node-birth",
+  "id": "de261659-053a-4198-b108-0e227672985f",
+  "translations": {
+    "ar": {
+      "appBar": {
+        "title": "إعدادات"
+      },
+      "changePassword": {
+        "errorMessage": {
+          "chooseNew": "الرجاء اختيار كلمة مرور جديدة",
+          "notMatch": "كلمات المرور المقدمة غير متطابقة",
+          "required": "هذه الخانة مطلوبه."
+        },
+        "formField": {
+          "cancelBtn": "إلغاء",
+          "confirmPass": "تأكيد كلمة المرور الجديدة",
+          "newPass": "كلمة مرور جديدة",
+          "oldPass": "كلمة سر قديمة",
+          "saveBtn": "حفظ"
+        }
+      },
+      "login": {
+        "backToLogin": "العودة إلى تسجيل الدخول",
+        "click": "انقر",
+        "copyright": "كل الحقوق محفوظة. حقوق النشر 2020",
+        "emailAddress": "عنوان البريد الإلكتروني",
+        "emailHintText": "اسم المستخدم أو البريد الالكتروني",
+        "errorMessage": {
+          "emptyPassword": "الرجاء إدخال كلمة المرور",
+          "emptyUser": "الرجاءادخال اسم مستخدم صحيح",
+          "expiredText": "رابط إعادة التعيين هذا غير صالح أو انتهت صلاحيته",
+          "forgotErrText": "الرجاء إدخال عنوان البريد الإلكتروني",
+          "invalidLogin": "معلومات تسجيل الدخول غير صالحة"
+        },
+        "forgotPassword": "نسيت كلمة المرور الخاصة بك ؟",
+        "here": "هنا",
+        "loginButton": "تسجيل الدخول",
+        "passwordHintText": "كلمه السر",
+        "recoveryText": "نسيت رقمك السري؟ الرجاء إدخال عنوان بريدك الإلكتروني أدناه لتلقي بريد إلكتروني مخصص للطوارئ.",
+        "sendButton": "إرسال",
+        "sentText": "لقد أرسلنا بريدًا إلكترونيًا يحتوي على تعليمات لإعادة تعيين كلمة المرور الخاصة بك.",
+        "toReturn": "للعودة إلى صفحة تسجيل الدخول.",
+        "version": "%{count} الإصدار"
+      },
+      "mainContent": {
+        "accountSettings": {
+          "profile": {
+            "cellPhone": "الهاتف الخلوي",
+            "editProfile": "تعديل الملف الشخصي",
+            "email": "بريد الالكتروني",
+            "name": "اسم",
+            "officePhone": "هاتف المكتب",
+            "organization": "منظمة",
+            "password": "كلمه السر",
+            "photo": "صورة فوتوغرافية",
+            "photoText": "أ ساعد الصورة في تخصيص حسابك",
+            "profileText": "معلومات الحساب والملف الشخصي الأساسية.",
+            "title": "مظهر جانبي",
+            "userRole": "دور المستخدم"
+          },
+          "settings": {
+            "alertAudio": "صوت التنبيه",
+            "alertAudioText": "تفضيلات الصوت لإخطارات التنبيه.",
+            "coordinateSystem": "نظام الإحداثيات",
+            "duration": "المدة الزمنية",
+            "groundSpeed": "المسافة / السرعة على الأرض",
+            "hourFormat1": "12 ساعة",
+            "hourFormat2": "24 ساعة",
+            "localeLabel": "لغة",
+            "localeText": "قم بتعيين تفضيل لغة المستخدم.",
+            "off": "إيقاف",
+            "on": "على",
+            "settingsText": "الإعدادات والتفضيلات الشخصية.",
+            "timeFormat": "تنسيق الوقت",
+            "timeFormatText": "تعيين تنسيق الوقت على مستوى النظام.",
+            "title": "إعدادات",
+            "trackHistory": "تتبع التاريخ",
+            "units": "وحدات القياس",
+            "unitsText": "تعيين وحدات القياس لعروض الخريطة.",
+            "userLocale": "لغة المستخدم"
+          },
+          "titleText": "المعلومات الشخصية الأساسية وإدارة كلمات المرور والوصول وتفضيلات النظام."
+        },
+        "manageEcosystem": {
+          "AddOrgForm": {
+            "cancelBtn": "إلغاء",
+            "cellPhone": "الهاتف الخلوي",
+            "changeProfile": "تغيير صورة الملف الشخصي",
+            "doneBtn": "تم",
+            "email": "بريد الالكتروني",
+            "firstName": "الاسم الأول",
+            "initialAdmin": "إدارة المنظمة الأولية",
+            "lastName": "اسم العائلة",
+            "officePhone": "هاتف المكتب",
+            "orgDescription": "50/ %{count} وصف المنظمة",
+            "orgNameLabel": "اسم المنظمة",
+            "title": "أضف مؤسسة جديدة"
+          },
+          "active": "نشط",
+          "addnewBtn": "إضافة منظمة جديدة",
+          "editEcosystem": {
+            "appsTitle": "تطبيقات",
+            "email": "بريد الالكتروني",
+            "orgAdminTitle": "مسؤولو المؤسسة",
+            "titleText": "تحرير اتصالات مشاركة المؤسسة والوصول إلى التطبيق."
+          },
+          "errorMessage": {
+            "descTooLong": "الوصف طويل جدًا",
+            "emptyField": "يجب أن يحتوي أحد حقول الاسم على بيانات.",
+            "emptyOrg": "يجب أن يكون للمنظمة اسم",
+            "formatText": "يجب أن يكون بتنسيق (XXX) -XXX-XXXX",
+            "validEmail": "يرجى إدخال البريد الإلكتروني الصحيح"
+          },
+          "formTitle": "منظمات النظام البيئي",
+          "hideDisabled": "إخفاء المعوقين",
+          "title": "إدارة النظام البيئي",
+          "titleText": "تزويد المؤسسات الجديدة بأذونات التطبيق والمشاركة."
+        },
+        "manageOrganization": {
+          "errorMessage": {
+            "connError": "تعذر الاتصال. يرجى التحقق من اسم المستخدم وكلمة المرور والاتصال.",
+            "requestProblem": "كانت هناك مشكلة مع طلبك."
+          },
+          "orgProfile": {
+            "description": "الوصف",
+            "editOrganization": {
+              "changeProfile": "تغيير صورة الملف الشخصي",
+              "errorMessage": {
+                "descTooLong": "الوصف طويل جدًا",
+                "emptyName": "يجب أن يكون للمنظمة اسم"
+              },
+              "formTitle": "تحرير ملف تعريف المؤسسة",
+              "orgDescription": "50/ %{count} وصف المنظمة",
+              "orgName": "اسم المنظمة",
+              "titleDesc": "قم بتحرير ملف تعريف مؤسستك."
+            },
+            "organization": "منظمة",
+            "photo": "صورة فوتوغرافية",
+            "photoText": "شعار أو صورة",
+            "title": "الملف التعريفي للمنظمة",
+            "titleText": "معلومات الملف التعريفي التنظيمي الأساسية."
+          },
+          "orgSettings": {
+            "activeDir": {
+              "authLabel": "المصادقة",
+              "autosyncLabel": "المزامنة تلقائيًا",
+              "cancelBtn": "إلغاء",
+              "emptyUsersText": "لا تحتوي المجموعة على مستخدمين. سيتم إنشاء المستخدمين عند إضافتهم إلى المجموعة.",
+              "formTitle": "إعدادات الدليل النشط",
+              "groupLabel": "أسم المجموعة",
+              "hostLabel": "مضيف",
+              "passLabel": "كلمه السر",
+              "portLabel": "ميناء",
+              "saveBtn": "حفظ",
+              "subText": "تكوين واختبار إعدادات Active Directory",
+              "testconLabel": "اتصال الاختبار",
+              "title": "الدليل النشط",
+              "titleText": "إدارة إعدادات الدليل النشط.",
+              "userLabel": "اسم االمستخدم",
+              "usersLabel": "المستخدمون"
+            },
+            "manageFeedSharing": {
+              "policies": {
+                "deactivate": "قم بإلغاء تنشيط الكل",
+                "endDatePickerError": "لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ البدء.",
+                "startDatePickerError": "لا يمكن أن يكون تاريخ البدء بعد تاريخ الانتهاء.",
+                "titleDesc": "قم بتعيين سياسات المشاركة لكل موجز بيانات للمنظمات الشريكة."
+              },
+              "subText": "قم بتعيين سياسات المشاركة لكل موجز بيانات للمنظمات الشريكة.",
+              "title": "إدارة سياسات مشاركة الأعلاف",
+              "titleText": "إدارة سياسات مشاركة خلاصة المؤسسة إلى المؤسسة."
+            },
+            "manageUserRoles": {
+              "addnewBtn": "أضف دورًا جديدًا",
+              "applyToUsers": "تنطبق على المستخدمين",
+              "appsTitle": "تطبيقات",
+              "deleteRole": "حذف الدور",
+              "feedsTitle": "يغذي",
+              "formTitle": "إنشاء أو تحديد قالب دور",
+              "manage": "تدبير",
+              "roleLabel": "حدد دور",
+              "share": "نصيب",
+              "title": "إدارة أدوار المستخدم",
+              "titleText": "قم بإنشاء وتطبيق أدوار مخصصة مع أذونات الوصول."
+            },
+            "manageUsers": {
+              "active": "نشط",
+              "addUserBtn": "إضافة مستخدم جديد",
+              "admin": "مشرف",
+              "formTitle": "المستخدمون",
+              "formTitleLink": "إدارة الأدوار هنا.",
+              "formTitleText": "إدارة المستخدمين وتطبيق الأدوار لكل مستخدم.",
+              "hideUsers": "إخفاء المستخدمين غير النشطين",
+              "title": "ادارة المستخدمين",
+              "titleText": "إنشاء وإدارة المستخدمين.",
+              "userRoleLabel": "دور المستخدم"
+            },
+            "sharingConn": {
+              "activeConn": "اتصالات نشطة",
+              "addConnButton": "إضافة اتصال",
+              "formTitle1": "اتصالات مشتركة مع المنظمات الأخرى",
+              "formTitle1Text": "رموز الاتصال التي قدمتها للمنظمات الأخرى. انسخ وقدم رمزًا مميزًا نشطًا لشريك المشاركة.",
+              "formTitle2": "اتصالات مشتركة لمؤسستك",
+              "formTitle2Text": "رموز الاتصال التي قمت باستيرادها من مؤسسات أخرى.",
+              "importBtn": "رمز الاستيراد",
+              "title": "اتصالات تقاسم",
+              "titleText": "إدارة تبادل الرموز مع المنظمات الأخرى."
+            },
+            "title": "إعدادات المنظمة",
+            "titleText": "معلومات الملف التعريفي التنظيمي الأساسية."
+          },
+          "title": "إدارة المنظمة",
+          "titleText": "تكوين إعدادات المنظمة العالمية وإدارة المستخدمين وأذونات الوصول."
+        }
+      },
+      "sideBar": {
+        "option1": {
+          "variant1": "إعدادات حسابي",
+          "variant2": "إعدادات حساب المستخدم"
+        },
+        "option2": "إدارة المنظمة",
+        "option3": "إدارة النظام البيئي"
+      }
+    },
+    "en": {
+      "appBar": {
+        "title": "Settings"
+      },
+      "changePassword": {
+        "errorMessage": {
+          "chooseNew": "Please choose a new password",
+          "notMatch": "The provided passwords do not match",
+          "required": "This field is required."
+        },
+        "formField": {
+          "cancelBtn": "CANCEL",
+          "confirmPass": "Confirm New Password",
+          "newPass": "New Password",
+          "oldPass": "Old Password",
+          "saveBtn": "SAVE"
+        }
+      },
+      "login": {
+        "backToLogin": "Back To Login",
+        "click": "Click",
+        "copyright": "All Rights Reserved. Copyright 2020",
+        "emailAddress": "Email Address",
+        "emailHintText": "Username or Email Address",
+        "errorMessage": {
+          "emptyPassword": "Please enter a password",
+          "emptyUser": "Please enter a valid username",
+          "expiredText": "This Reset Link is not Valid or Has Expired",
+          "forgotErrText": "Please enter an email address",
+          "invalidLogin": "Invalid login info"
+        },
+        "forgotPassword": "Forgot Password?",
+        "here": "here",
+        "loginButton": "Login",
+        "passwordHintText": "Password",
+        "recoveryText": "Forgot your password? Please enter your email address below for a recovery email.",
+        "sendButton": "Send",
+        "sentText": "We've sent an email containing instructions for resetting your password.",
+        "toReturn": "to return to the login page.",
+        "version": "Version %{count}"
+      },
+      "mainContent": {
+        "accountSettings": {
+          "profile": {
+            "cellPhone": "CELL PHONE",
+            "editProfile": "EDIT PROFILE",
+            "email": "EMAIL",
+            "name": "NAME",
+            "officePhone": "OFFICE PHONE",
+            "organization": "ORGANIZATION",
+            "password": "PASSWORD",
+            "photo": "PHOTO",
+            "photoText": "A photo helps personalize your account",
+            "profileText": "Basic account and profile information.",
+            "title": "Profile",
+            "userRole": "USER ROLE"
+          },
+          "settings": {
+            "alertAudio": "Alert Audio",
+            "alertAudioText": "Audio preferences for alert notifications.",
+            "coordinateSystem": "Coordinate System",
+            "duration": "Duration",
+            "groundSpeed": "Ground Distance/Speed",
+            "hourFormat1": "12 Hour",
+            "hourFormat2": "24 Hour",
+            "localeLabel": "Locale",
+            "localeText": "Set user language preference.",
+            "off": "Off",
+            "on": "On",
+            "settingsText": "Personal Settings and preferences.",
+            "timeFormat": "Time Format",
+            "timeFormatText": "Set system-wide time format.",
+            "title": "Settings",
+            "trackHistory": "Track History",
+            "units": "Units of Measure",
+            "unitsText": "Set measurement units for map displays.",
+            "userLocale": "User Locale"
+          },
+          "titleText": "Basic personal information, password management, access and system preferences."
+        },
+        "manageEcosystem": {
+          "AddOrgForm": {
+            "cancelBtn": "CANCEL",
+            "cellPhone": "Cell Phone",
+            "changeProfile": "Change Profile Image",
+            "doneBtn": "DONE",
+            "email": "Email",
+            "firstName": "First Name",
+            "initialAdmin": "Initial Organization Admin",
+            "lastName": "Last Name",
+            "officePhone": "Office Phone",
+            "orgDescription": "Organization Description %{count}/50",
+            "orgNameLabel": "Organization Name",
+            "title": "Add New Organization"
+          },
+          "active": "Active",
+          "addnewBtn": "ADD NEW ORGANIZATION",
+          "editEcosystem": {
+            "appsTitle": "Apps",
+            "email": "EMAIL",
+            "orgAdminTitle": "Org Administrators",
+            "titleText": "Edit organization sharing connections and app access."
+          },
+          "errorMessage": {
+            "descTooLong": "Description is too long",
+            "emptyField": "One of the name fields must have data.",
+            "emptyOrg": "Organization must have a name",
+            "formatText": "Must be in the format (XXX)-XXX-XXXX",
+            "validEmail": "Please enter a valid email"
+          },
+          "formTitle": "Ecosystem Organizations",
+          "hideDisabled": "Hide Disabled",
+          "title": "Manage Ecosystem",
+          "titleText": "Provision new Organizations with app and sharing permissions."
+        },
+        "manageOrganization": {
+          "errorMessage": {
+            "connError": "Could not connect. Please verify username, password, and connection.",
+            "requestProblem": "There was a problem with your request."
+          },
+          "orgProfile": {
+            "description": "DESCRIPTION",
+            "editOrganization": {
+              "changeProfile": "Change Profile Image",
+              "errorMessage": {
+                "descTooLong": "Description is too long",
+                "emptyName": "Organization must have a name"
+              },
+              "formTitle": "Edit Organization Profile",
+              "orgDescription": "Organization Description %{count}/50",
+              "orgName": "Organization Name",
+              "titleDesc": "Edit your organization profile."
+            },
+            "organization": "ORGANIZATION",
+            "photo": "PHOTO",
+            "photoText": "A logo or image",
+            "title": "Organization Profile",
+            "titleText": "Basic organizational profile information."
+          },
+          "orgSettings": {
+            "activeDir": {
+              "authLabel": "Authentication",
+              "autosyncLabel": "Automatically sync",
+              "cancelBtn": "CANCEL",
+              "emptyUsersText": "Group contains no users. Users will be created as they are added to the group.",
+              "formTitle": "Active Directory Settings",
+              "groupLabel": "Group Name",
+              "hostLabel": "Host",
+              "passLabel": "Password",
+              "portLabel": "Port",
+              "saveBtn": "SAVE",
+              "subText": "Configure and test Active Directory Settings.",
+              "testconLabel": "Test Connection",
+              "title": "Active Directory",
+              "titleText": "Manage Active Directory settings.",
+              "userLabel": "Username",
+              "usersLabel": "Users"
+            },
+            "manageFeedSharing": {
+              "policies": {
+                "deactivate": "Deactivate All",
+                "endDatePickerError": "Ending date cannot be before the starting date.",
+                "startDatePickerError": "Starting date cannot be after the ending date.",
+                "titleDesc": "Set sharing policies for each data feed to partner organizations."
+              },
+              "subText": "Set sharing policies for each data feed to partner organizations.",
+              "title": "Manage Feed Sharing Policies",
+              "titleText": "Manage Org to Org feed sharing policies."
+            },
+            "manageUserRoles": {
+              "addnewBtn": "ADD NEW ROLE",
+              "applyToUsers": "Apply to Users",
+              "appsTitle": "Apps",
+              "deleteRole": "Delete Role",
+              "feedsTitle": "Feeds",
+              "formTitle": "Create or Select Role Template",
+              "manage": "Manage",
+              "roleLabel": "Select Role",
+              "share": "Share",
+              "title": "Manage User Roles",
+              "titleText": "Create and apply custom roles with access permissions."
+            },
+            "manageUsers": {
+              "active": "Active",
+              "addUserBtn": "ADD NEW USER",
+              "admin": "Admin",
+              "formTitle": "Users",
+              "formTitleLink": "Manage Roles here.",
+              "formTitleText": "Manage users and apply roles for each user.",
+              "hideUsers": "Hide Inactive Users",
+              "title": "Manage Users",
+              "titleText": "Create and manage users.",
+              "userRoleLabel": "User Role"
+            },
+            "sharingConn": {
+              "activeConn": "Active Connections",
+              "addConnButton": "ADD CONNECTION",
+              "formTitle1": "Shared Connections to Other Organizations",
+              "formTitle1Text": "Connection tokens you have provided to other Organizations. Copy and provide active token to sharing partner.",
+              "formTitle2": "Connections shared to your Organization",
+              "formTitle2Text": "Connection tokens you have imported from other Organizations.",
+              "importBtn": "IMPORT TOKEN",
+              "title": "Sharing Connections",
+              "titleText": "Manage sharing tokens with other organizations."
+            },
+            "title": "Organization Settings",
+            "titleText": "Basic organizational profile information."
+          },
+          "title": "Manage Organization",
+          "titleText": "Configure global organization settings and manage users and access permissions."
+        }
+      },
+      "sideBar": {
+        "option1": {
+          "variant1": "My Account Settings",
+          "variant2": "User Account Settings"
+        },
+        "option2": "Manage Organization",
+        "option3": "Manage Ecosystem"
+      }
+    }
+  }
+}

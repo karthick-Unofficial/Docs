@@ -1,0 +1,12 @@
+Today's Task:
+CB2-5346 - Camera - Spotlight flickering issue
+- Went through sources to sort out possibilities to fix component rerendering issues in camerasMapLayer.
+- Worked on figuring out alternate approaches to fix weather and spotlight flickering issues in camerasMap.
+
+CB2-5347 - Dismiss all alerts shows error in Alert widget
+- Went through exact scenarios to reproduce the issue in Alert Widget.
+- Seems like this issues is'nt repeating anymore.
+
+CB2-5333 - Map - Events - Slew slow to respond
+- Went through the exact scenarios and worked on testing camera slew workflow in cameras-app.
+- Seems the issues is'nt repeating anymore.

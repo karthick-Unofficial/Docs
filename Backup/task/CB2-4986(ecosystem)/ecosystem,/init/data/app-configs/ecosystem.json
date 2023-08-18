@@ -1,0 +1,132 @@
+{
+    "name": "Ecosystem",
+    "clientId": "c027a743-327b-4eff-9961-7537ff7f0f12",
+    "clientSecret": "8a4a273f-e351-4ec3-9efe-2221d2d8f394",
+    "debugPort": 5870,
+    "properties": {
+      "natsServer": "nats://phoenix-nats:4222",
+      "rethinkServer": "phoenix-rethinkdb:28015"
+    },
+    "elasticsearch": {
+      "host": "elasticsearch1:9200",
+      "apiVersion": "6.x"
+    },
+    "cameraContextCache": {
+      "cacheCleanupInterval": 30
+    },
+    "clientConfig": {
+      "firstUseText": "You are about to access CommandBridge, which is a restricted information distribution system. Usage may be monitored, recorded, and subject to audit. Unauthorized use of the system is prohibited and may be subject to criminal and/or civil penalties. By continuing, you are indicating your consent to monitoring and recording."
+    },
+    "minio": {
+      "connection": {
+        "endPoint": "traefik",
+        "port": 9001,
+        "useSSL": false,
+        "accessKey": "SOME_ACCESS_KEY",
+        "secretKey": "SOME_SECRET"
+      },
+      "buckets": {
+        "attachmentBucket": {
+          "region": "us-east-1",
+          "name": "cb2-attachment"
+        },
+        "notesAttachmentBucket": {
+          "region": "us-east-1",
+          "name": "cb2-notes-attachment"
+        }
+      }
+    },
+    "mapbox": {
+      "mapThumbnailsEnabled": false,
+      "accessToken": "pk.eyJ1IjoiZ3JpY2hhcmRzb24iLCJhIjoiY2l0eG02NTRmMDFhZDJvbXVkbWtyd3dnOSJ9.PIeQnoB-sd5DHFAoPag71A",
+      "staticAPIBaseUrl": "https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/static/geojson",
+      "thumbnailWidth": 300,
+      "thumbnailHeight": 200,
+      "attachmentIdentity": {
+        "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3"
+      }
+    },
+    "processes": [
+      {
+        "id": "shape-activity-generator",
+        "name": "Shape Activity Generator",
+        "entrypoint": "shapeActivityGenerator.js",
+        "args": {}
+      },
+      {
+        "id": "external-system-processor",
+        "name": "External System Entity Processor",
+        "entrypoint": "externalSystemProcessor.js",
+        "args": {
+          "subscriptions": [
+            {
+              "entityType": "external_event",
+              "type": "DURABLE_SEQUENTIAL"
+            },
+            {
+              "entityType": "external_activity",
+              "type": "DURABLE"
+            },
+            {
+              "entityType": "external_notification",
+              "type": "DURABLE"
+            },
+            {
+              "entityType": "track",
+              "type": "TRANSIENT"
+            }
+          ]
+        }
+      },
+      {
+        "id": "activity-processor",
+        "name": "Activity Processor",
+        "entrypoint": "activityProcessor.js",
+        "args": {}
+      },
+      {
+        "id": "notification-processor",
+        "name": "Notification Processor",
+        "entrypoint": "notificationProcessor.js",
+        "args": {}
+      },
+      {
+        "id": "email-processor",
+        "name": "Email Processor",
+        "entrypoint": "emailProcessor.js",
+        "args": {}
+      },
+      {
+        "id": "feed-monitor",
+        "name": "Feed Monitor",
+        "entrypoint": "feedMonitor.js",
+        "args": {}
+      },
+      {
+        "id": "thumbnailer",
+        "name": "Thumbnailer",
+        "entrypoint": "thumbnailer.js",
+        "args": {}
+      },
+      {
+        "id": "user-sync-processor",
+        "name": "User Sync Processor",
+        "entrypoint": "userSyncProcessor.js",
+        "args": {}
+      },
+      {
+        "id": "camera-context-generator",
+        "name": "Camera Context Generator",
+        "entrypoint": "cameraContextGenerator.js",
+        "args": {}
+      },
+      {
+        "id": "event-monitor",
+        "name": "Event Monitor",
+        "entrypoint": "eventMonitor.js",
+        "args": {
+          "pollFreq": 5000
+        }
+      }
+    ]
+  }

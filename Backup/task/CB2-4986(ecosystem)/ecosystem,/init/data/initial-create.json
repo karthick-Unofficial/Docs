@@ -1,0 +1,872 @@
+{
+  "sys_user": [
+    {
+      "ecoAdmin": false,
+      "admin": true,
+      "contact": {
+        "address": "1501 Main Street, Suite 120 Columbia, SC 29201",
+        "email": "orgadmin@aressecuritycorp.com",
+        "phone": "803-339-0697"
+      },
+      "appSettings":  {"locale":null},
+      "disabled": false,
+      "username": "orgadmin@aressecuritycorp.com",
+      "email": "orgadmin@aressecuritycorp.com",
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3",
+      "name": "Org Admin",
+      "orgId": "ares_security_corporation",
+      "password": "$2a$10$X311tOzGKS7WuRlmPYfXy.khXx/TZ23hNZo56xqqJupPaEmpTO.jK",
+      "role": "org-admin",
+      "roleId": "ares_security_corp_org_admin"
+    },
+    {
+      "ecoAdmin": true,
+      "admin": true,
+      "contact": {
+        "address": "1501 Main Street, Suite 120 Columbia, SC 29201",
+        "email": "ecoadmin@aressecuritycorp.com",
+        "phone": "803-339-0697"
+      },
+      "appSettings":  {"locale":null},
+      "disabled": false,
+      "username": "ecoadmin@aressecuritycorp.com",
+      "email": "ecoadmin@aressecuritycorp.com",
+      "id": "bc6c9ca9-9e32-487b-b7b8-22b03d24ce13",
+      "name": "Support Admin",
+      "orgId": "ares_security_corporation",
+      "password": "$2a$10$X311tOzGKS7WuRlmPYfXy.khXx/TZ23hNZo56xqqJupPaEmpTO.jK",
+      "role": "eco-admin",
+      "roleId": "ares_security_corp_org_admin"
+    }
+  ],
+  "sys_organization": [
+    {
+      "description": "Worldwide leader in situational awareness.",
+      "id": "958338df-c3b8-4f88-98a7-c9846fd34e74",
+      "name": "Ares Security Corporation",
+      "orgId": "ares_security_corporation",
+      "authProviderId": "active-directory"
+    }
+  ],
+  "sys_application": [
+    {
+      "appId": "map-app",
+      "icon": "",
+      "id": "670af127-41c8-4b39-a420-d71d092e00d4",
+      "name": "Map"
+    },
+    {
+      "appId": "rules-app",
+      "icon": "",
+      "id": "9b12d045-df09-492c-bc0d-83c346369654",
+      "name": "Rules"
+    },
+    {
+      "appId": "reports-app",
+      "icon": "",
+      "id": "94654045-df09-49ac-bc0d-83334636fdl4",
+      "name": "Reports"
+    },
+    {
+      "appId": "events-app",
+      "icon": "",
+      "id": "4c4ee61b-c3f9-4709-9b11-ac610b766b55",
+      "name": "Events"
+    },
+    {
+      "appId": "cameras-app",
+      "icon": "",
+      "id": "e0c0483d-0cf5-4c3d-849d-e17e3928d5c2",
+      "name": "Cameras"
+    },
+    {
+      "appId": "tabletop-app",
+      "icon": "",
+      "id": "b169f053-7122-46f0-839c-4d47a1a98fd9",
+      "name": "Tabletop"
+    }
+  ],
+  "sys_entityType": [
+    {
+      "id": "ab2fa1a1-8de9-4d41-8500-ec834811aab5",
+      "name": "track",
+      "sourceTable": "sys_feedEntities"
+    },
+    {
+      "id": "2193c904-caf0-49c5-8241-6ab0bf486b48",
+      "name": "shape",
+      "sourceTable": "sys_shape"
+    },
+    {
+      "id": "3c113c05-59fa-44d5-a6e9-536ff6c6aae2",
+      "name": "shapes",
+      "sourceTable": "sys_shape"
+    },
+    {
+      "id": "77687994-d415-4739-8b96-708bdf543ad4",
+      "name": "event",
+      "sourceTable": "sys_event"
+    },
+    {
+      "id": "72f2b95b-fc7a-4c3c-84de-3b83eb5fc8d1",
+      "name": "camera",
+      "refProperties": [
+        {
+          "entityType": "shape",
+          "name": "fov"
+        }
+      ],
+      "sourceTable": "sys_camera"
+    }
+  ],
+  "sys_feedTypes": [
+    {
+      "appId": "vessels-app",
+      "displayProperties": {
+        "callsign": "Call Sign",
+        "destination": "Destination",
+        "draught": "Draft",
+        "imo": "IMO",
+        "length": "Length",
+        "mmsi": "MMSI",
+        "navstatusname": "Navigation Status",
+        "timestamp": "Last Updated",
+        "width": "Width"
+      },
+      "streamProperties": [
+        {
+          "alwaysSend": false,
+          "batch": "globalData",
+          "properties": {
+            "compare": [
+              "entityData_properties_disposition",
+              "entityData_properties_name"
+            ],
+            "initial": [
+              "entityData_properties_disposition",
+              "entityData_properties_name",
+              "entityData_properties_iconType",
+              "entityData_properties_imo",
+              "entityData_properties_mmsi",
+              "entityData_properties_callsign",
+              "entityData_properties_type",
+              "entityData_properties_id",
+              "entityType",
+              "feedId",
+              "ownerOrg",
+              "sourceId",
+              "isPublic"
+            ],
+            "update": [
+              "entityData_properties_disposition",
+              "entityData_properties_name",
+              "isPublic",
+              "sourceId",
+              "feedId"
+            ]
+          }
+        },
+        {
+          "alwaysSend": true,
+          "batch": "globalGeo",
+          "properties": {
+            "compare": [
+              "entityData_geometry",
+              "entityData_properties_course"
+            ],
+            "initial": [
+              "entityData_geometry",
+              "entityData_properties_course",
+              "feedId",
+              "isPublic"
+            ],
+            "update": [
+              "entityData_geometry",
+              "entityData_properties_course",
+              "isPublic",
+              "feedId"
+            ]
+          }
+        }
+      ],
+      "entityType": "track",
+      "feedId": "aishub",
+      "id": "3dc30971-46f0-477f-8c82-ddd5080bc00d",
+      "isShareable": false,
+      "labels": {
+        "displayName": [
+          {
+            "prefix": "",
+            "property": "name"
+          },
+          {
+            "prefix": "mmsi:",
+            "property": "mmsi"
+          },
+          {
+            "prefix": "callsign:",
+            "property": "callsign"
+          }
+        ]
+      },
+      "metadata": {
+        "for": "integration server"
+      },
+      "name": "AISHUB",
+      "ownerOrg": "ares_security_corporation",
+      "source": "int",
+      "ttl": 600
+    },
+    {
+      "appId": "map-app",
+      "entityType": "shapes",
+      "feedId": "shapes",
+      "isShareable": true,
+      "metadata": {
+        "for": "integration server"
+      },
+      "streamProperties": [
+        {
+          "alwaysSend": false,
+          "batch": "globalData",
+          "properties": {
+            "compare": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "entityData_properties_symbol",
+              "isPublic"
+            ],
+            "initial": [
+              "createdDate",
+              "entityData_properties",
+              "entityData_type",
+              "entityType",
+              "feedId",
+              "id",
+              "isPublic",
+              "owner",
+              "ownerOrg"
+            ],
+            "update": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "entityData_properties_symbol",
+              "entityData_properties_type",
+              "entityType",
+              "feedId",
+              "owner",
+              "ownerOrg",
+              "isPublic"
+            ]
+          }
+        },
+        {
+          "alwaysSend": true,
+          "batch": "globalGeo",
+          "properties": {
+            "compare": [
+              "entityData_geometry"
+            ],
+            "initial": [
+              "entityData_geometry",
+              "isPublic",
+              "owner",
+              "feedId"
+            ],
+            "update": [
+              "entityData_geometry",
+              "isPublic",
+              "owner",
+              "feedId"
+            ]
+          }
+        }
+      ],
+      "name": "Shapes",
+      "source": "app"
+    },
+    {
+      "appId": "map-app",
+      "entityType": "shapes",
+      "feedId": "ares_security_corporation_shapes",
+      "id": "fc979d32-a76a-4b24-a0cd-2de207fdf49b",
+      "isShareable": true,
+      "metadata": {
+        "for": "integration server"
+      },
+      "streamProperties": [
+        {
+          "alwaysSend": false,
+          "batch": "globalData",
+          "properties": {
+            "compare": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "entityData_properties_symbol",
+              "isPublic"
+            ],
+            "initial": [
+              "createdDate",
+              "entityData_properties",
+              "entityData_type",
+              "entityType",
+              "feedId",
+              "id",
+              "isPublic",
+              "owner",
+              "ownerOrg"
+            ],
+            "update": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "entityData_properties_symbol",
+              "entityData_properties_type",
+              "entityType",
+              "feedId",
+              "owner",
+              "ownerOrg",
+              "isPublic"
+            ]
+          }
+        },
+        {
+          "alwaysSend": true,
+          "batch": "globalGeo",
+          "properties": {
+            "compare": [
+              "entityData_geometry"
+            ],
+            "initial": [
+              "entityData_geometry",
+              "isPublic",
+              "owner"
+            ],
+            "update": [
+              "entityData_geometry",
+              "isPublic",
+              "owner"
+            ]
+          }
+        }
+      ],
+      "name": "Ares Security Corporation Shapes",
+      "source": "app"
+    },
+    {
+      "appId": "facilities-app",
+      "entityType": "facility",
+      "feedIcon": "Facilities",
+      "feedId": "ares_security_corporation_facilities",
+      "id": "8305388e-4126-4faa-9889-47411c633644",
+      "isShareable": true,
+      "metadata": {
+        "for": "integration server"
+      },
+      "name": "Ares Security Corporation Facilities",
+      "ownerOrg": "ares_security_corporation",
+      "source": "app",
+      "streamProperties": [
+        {
+          "alwaysSend": false,
+          "batch": "globalData",
+          "properties": {
+            "compare": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "isPublic"
+            ],
+            "initial": [
+              "createdDate",
+              "entityData_properties",
+              "entityType",
+              "feedId",
+              "id",
+              "isPublic",
+              "owner",
+              "ownerOrg"
+            ],
+            "update": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "entityData_properties_type",
+              "entityType",
+              "feedId",
+              "owner",
+              "ownerOrg",
+              "isPublic"
+            ]
+          }
+        },
+        {
+          "alwaysSend": true,
+          "batch": "globalGeo",
+          "properties": {
+            "compare": [
+              "entityData_geometry"
+            ],
+            "initial": [
+              "entityData_geometry",
+              "isPublic",
+              "owner",
+              "feedId"
+            ],
+            "update": [
+              "entityData_geometry",
+              "isPublic",
+              "owner",
+              "feedId"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "appId": "facilities-app",
+      "entityType": "facility",
+      "feedIcon": "Facilities",
+      "feedId": "facilities",
+      "id": "173a48a9-d89b-452c-b0c8-14cd1cfe1d80",
+      "isShareable": true,
+      "metadata": {
+        "for": "integration server"
+      },
+      "source": "app",
+      "streamProperties": [{
+          "alwaysSend": false,
+          "batch": "globalData",
+          "properties": {
+            "compare": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "isPublic"
+            ],
+            "initial": [
+              "createdDate",
+              "entityData_properties",
+              "entityType",
+              "feedId",
+              "id",
+              "isPublic",
+              "owner",
+              "ownerOrg"
+            ],
+            "update": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "entityData_properties_type",
+              "entityType",
+              "feedId",
+              "owner",
+              "ownerOrg",
+              "isPublic"
+            ]
+          }
+        },
+        {
+          "alwaysSend": true,
+          "batch": "globalGeo",
+          "properties": {
+            "compare": [
+              "entityData_geometry"
+            ],
+            "initial": [
+              "entityData_geometry",
+              "isPublic",
+              "owner",
+              "feedId"
+            ],
+            "update": [
+              "entityData_geometry",
+              "isPublic",
+              "owner",
+              "feedId"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "appId": "archive-app",
+      "entityType": "track",
+      "feedId": "track-generator",
+      "id": "9cc64849-deb4-4e04-9997-d4030a0a0999",
+      "isShareable": false,
+      "metadata": {
+        "for": "integration server"
+      },
+      "labels": {
+        "displayName": [
+          {
+            "prefix": "",
+            "property": "name"
+          },
+          {
+            "prefix": "mmsi:",
+            "property": "mmsi"
+          },
+          {
+            "prefix": "callsign:",
+            "property": "callsign"
+          }
+        ]
+      },
+      "name": "Test Track Feed",
+      "ownerOrg": "ares_security_corporation",
+      "source": "int",
+      "ttl": 60
+    },
+    {
+      "appId": "tracker-app",
+      "entityType": "track",
+      "feedId": "mobile-tracker",
+      "id": "6e699df0-b8c4-411b-97b5-7dcabdce6a00",
+      "isShareable": false,
+      "metadata": {
+        "for": "integration server"
+      },
+      "labels": {
+        "displayName": [
+          {
+            "prefix": "",
+            "property": "name"
+          },
+          {
+            "prefix": "deviceId:",
+            "property": "deviceId"
+          }
+        ]
+      },
+      "name": "CB Mobile Tracker",
+      "ownerOrg": "ares_security_corporation",
+      "source": "int"
+    },
+    {
+      "appId": "cameras-app",
+      "entityType": "camera",
+      "feedId": "cameras",
+      "id": "807ad39a-a0ef-4806-85b3-4e78132761c9",
+      "isShareable": true,
+      "metadata": {
+        "for": "integration server"
+      },
+      "streamProperties": [
+        {
+          "alwaysSend": false,
+          "batch": "globalData",
+          "properties": {
+            "compare": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "fov",
+              "isPublic"
+            ],
+            "initial": [
+              "entityData_properties_description",
+              "entityData_properties_deviceType",
+              "entityData_properties_id",
+              "entityData_properties_name",
+              "entityData_properties_type",
+              "entityData_properties_id",
+              "cameraSystem",
+              "connection",
+              "controls",
+              "entityType",
+              "feedId",
+              "fov",
+              "id",
+              "isPublic",
+              "owner",
+              "ownerOrg",
+              "video"
+            ],
+            "update": [
+              "entityData_properties_description",
+              "entityData_properties_name",
+              "fov",
+              "owner",
+              "isPublic",
+              "feedId"
+
+            ]
+          }
+        },
+        {
+          "alwaysSend": true,
+          "batch": "globalGeo",
+          "properties": {
+            "compare": [
+              "entityData_geometry"
+            ],
+            "initial": [
+			  "entityData_geometry",
+			  "entityData_properties_id",
+			  "entityData_properties_name",
+			  "controls",			  
+              "isPublic",
+              "owner"
+            ],
+            "update": [
+              "entityData_geometry",
+              "isPublic",
+              "owner"
+            ]
+          }
+        }
+      ],
+      "name": "Cameras",
+      "source": "app"
+    }
+  ],
+  "sys_orgApplication": [
+    {
+      "appId": "map-app",
+      "id": "ares_security_corporation_map-app",
+      "orgId": "ares_security_corporation"
+    },
+    {
+      "appId": "rules-app",
+      "id": "ares_security_corporation_rules-app",
+      "orgId": "ares_security_corporation"
+    },
+    {
+      "appId": "reports-app",
+      "id": "ares_security_corporation_reports-app",
+      "orgId": "ares_security_corporation"
+    },
+    {
+      "appId": "events-app",
+      "id": "ares_security_corporation_events-app",
+      "orgId": "ares_security_corporation"
+    },
+    {
+      "appId": "cameras-app",
+      "id": "ares_security_corporation_cameras-app",
+      "orgId": "ares_security_corporation"
+    },
+    {
+      "appId": "tabletop-app",
+      "id": "ares_security_corporation_tabletop-app",
+      "orgId": "ares_security_corporation"
+    }
+  ],
+  "sys_orgIntegration": [
+    {
+      "config": {},
+      "id": "ares_security_corporation_shapes",
+      "intId": "ares_security_corporation_shapes",
+      "orgId": "ares_security_corporation",
+      "policy": {
+        "type": "owner"
+      },
+      "feedOwnerOrg": "ares_security_corporation"
+    },
+    {
+      "config": {},
+      "id": "ares_security_corporation_aishub",
+      "intId": "aishub",
+      "orgId": "ares_security_corporation",
+      "policy": {
+        "type": "owner"
+      },
+      "feedOwnerOrg": "ares_security_corporation"
+    },
+    {
+      "config": {},
+      "id": "ares_security_corporation_track-generator",
+      "intId": "track-generator",
+      "orgId": "ares_security_corporation",
+      "policy": {
+        "type": "owner"
+      },
+      "feedOwnerOrg": "ares_security_corporation"
+    },
+    {
+      "config": {},
+      "feedOwnerOrg": "ares_security_corporation",
+      "id": "ares_security_corporation_cameras",
+      "intId": "cameras",
+      "orgId": "ares_security_corporation",
+      "policy": {
+        "type": "owner"
+      }
+    }
+  ],
+  "sys_userApplication": [
+    {
+      "appId": "map-app",
+      "config": {
+        "canView": true,
+        "role": "collaborator"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_map-app",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3"
+    },
+    {
+      "appId": "rules-app",
+      "config": {
+        "canView": true,
+        "role": "collaborator"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_rules-app",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3"
+    },
+    {
+      "appId": "reports-app",
+      "config": {
+        "canView": true,
+        "role": "collaborator"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_reports-app",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3"
+    },
+    {
+      "appId": "events-app",
+      "config": {
+        "canView": true,
+        "role": "collaborator"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_events-app",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3"
+    },
+    {
+      "appId": "cameras-app",
+      "config": {
+        "canView": true,
+        "role": "collaborator"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_cameras-app",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3"
+    },
+    {
+      "appId": "tabletop-app",
+      "config": {
+        "canView": true,
+        "role": "collaborator"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_tabletop-app",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3"
+    }
+  ],
+  "sys_userIntegration": [
+    {
+      "config": {
+        "canView": true,
+        "role": "viewer"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_aishub",
+      "intId": "aishub",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3",
+      "policy": {
+        "type": "owner"
+      },
+      "feedOwnerOrg": "ares_security_corporation",
+      "orgIntId": "ares_security_corporation_aishub"
+    },
+    {
+      "config": {
+        "canView": true,
+        "role": "viewer"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_ares_security_corporation_shapes",
+      "intId": "ares_security_corporation_shapes",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3",
+      "policy": {
+        "type": "owner"
+      },
+      "feedOwnerOrg": "ares_security_corporation",
+      "orgIntId": "ares_security_corporation_shapes"
+    },
+    {
+      "config": {
+        "canView": true,
+        "role": "viewer"
+      },
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_track-generator",
+      "intId": "track-generator",
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3",
+      "policy": {
+        "type": "owner"
+      },
+      "feedOwnerOrg": "ares_security_corporation",
+      "orgIntId": "ares_security_corporation_track-generator"
+    },
+    {
+      "config": {
+        "canView": true,
+        "role": "viewer"
+      },
+      "feedOwnerOrg": "ares_security_corporation",
+      "id": "2c9c0362-345b-4f33-9976-219a4566b9c3_cameras",
+      "intId": "cameras",
+      "orgIntId": "ares_security_corporation_cameras",
+      "policy": {
+        "type": "owner"
+      },
+      "userId": "2c9c0362-345b-4f33-9976-219a4566b9c3"
+    },
+    {
+      "config": {
+        "canView": true,
+        "role": "viewer"
+      },
+      "id": "bc6c9ca9-9e32-487b-b7b8-22b03d24ce13_ares_security_corporation_shapes",
+      "intId": "ares_security_corporation_shapes",
+      "userId": "bc6c9ca9-9e32-487b-b7b8-22b03d24ce13",
+      "policy": {
+        "type": "owner"
+      },
+      "feedOwnerOrg": "ares_security_corporation",
+      "orgIntId": "ares_security_corporation_shapes"
+    },
+    {
+      "config": {
+        "canView": true,
+        "role": "viewer"
+      },
+      "feedOwnerOrg": "ares_security_corporation",
+      "id": "bc6c9ca9-9e32-487b-b7b8-22b03d24ce13_aishub",
+      "intId": "aishub",
+      "orgIntId": "ares_security_corporation_aishub",
+      "policy": {
+        "type": "owner"
+      },
+      "userId": "bc6c9ca9-9e32-487b-b7b8-22b03d24ce13"
+    },
+    {
+      "config": {
+        "canView": true,
+        "role": "viewer"
+      },
+      "feedOwnerOrg": "ares_security_corporation",
+      "id": "bc6c9ca9-9e32-487b-b7b8-22b03d24ce13_cameras",
+      "intId": "cameras",
+      "orgIntId": "ares_security_corporation_cameras",
+      "policy": {
+        "type": "owner"
+      },
+      "userId": "bc6c9ca9-9e32-487b-b7b8-22b03d24ce13"
+    }
+  ],
+  "sys_orgRoles": [
+    {
+      "id": "ares_security_corp_org_admin",
+      "organization": {
+        "canShare": true,
+        "canContribute": true,
+        "canEdit": true,
+        "canView": true
+      },
+      "lastModified": "null",
+      "lastModifiedDate": "Tue Aug 29 2017 14:26:31 GMT+00:00",
+      "orgId": "ares_security_corporation",
+      "roleId": "org_admin",
+      "ecosystem": {
+        "canShare": true,
+        "canContribute": true,
+        "canView": true
+      },
+      "title": "Org Admin"
+    }
+  ]
+}
+

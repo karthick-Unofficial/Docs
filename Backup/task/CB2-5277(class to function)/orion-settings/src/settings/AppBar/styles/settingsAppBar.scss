@@ -1,0 +1,32 @@
+.settings-app-bar-title {
+	display: flex;
+	height: 100%;
+	h3 {
+		width: 80%;
+	}
+
+	div {
+		width: 20%
+	}
+	@media (min-width: 600px) {
+		h3 {
+			width: 40%;
+		}
+		div {
+			width: 60%
+		}
+	}
+}
+
+.options-drawer {
+	.subheader {
+		color: #fff !important; // <--- overide mat ui styles
+		font-size: 16px !important;
+	}
+	.option-label.toggle-on {
+		color: #fff !important;
+	}
+	.option-label.toggle-off {
+		color: $textGray !important;
+	}
+}

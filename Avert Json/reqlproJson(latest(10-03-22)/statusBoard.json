@@ -1,0 +1,129 @@
+{
+  "appId": "status-board-app",
+  "id": "f095381d-79e8-401d-a54b-c706224a41cf",
+  "locales": "en",
+  "translations": {
+    "ar": {
+      "appBar": {
+        "title": "مجلس الحالة"
+      },
+      "listPanel": {
+        "dialog": {
+          "cancel": "إلغاء",
+          "fieldLabel": {
+            "cardName": "اسم البطاقة",
+            "cardType": "نوع البطاقة",
+            "slides": "الشرائح",
+            "text": "نص"
+          },
+          "save": "حفظ"
+        },
+        "main": {
+          "newCard": "بطاقة الحالة الجديدة",
+          "organization": "منظمة"
+        }
+      },
+      "searchField": {
+        "searchStatusCard": "بطاقات حالة البحث ..."
+      },
+      "shared": {
+        "statusCard": {
+          "StatusCardDialog": {
+            "cancel": "إلغاء",
+            "delete": "حذف",
+            "editSlide": {
+              "fieldLabel": {
+                "atleastOne": "يجب أن تحتوي على شريحة واحدة على الأقل",
+                "text": "نص"
+              },
+              "newSlide": "شريحة جديدة"
+            },
+            "editText": {
+              "ordered": "أمر",
+              "unordered": "غير مرتبة"
+            },
+            "fieldLabel": {
+              "cardName": "اسم البطاقة"
+            },
+            "save": "حفظ"
+          },
+          "main": {
+            "by": "بواسطة %{count}",
+            "changed": "تغير %{count} ",
+            "edit": "حرر",
+            "sharedFrom": "مشترك من %{count}"
+          },
+          "shareStatusCardDialog": {
+            "cancel": "إلغاء",
+            "save": "حفظ",
+            "title": "شارك مع المنظمات"
+          },
+          "statusControls": {
+            "selector": "محدد"
+          }
+        }
+      }
+    },
+    "en": {
+      "appBar": {
+        "title": "Status Board"
+      },
+      "listPanel": {
+        "dialog": {
+          "cancel": "Cancel",
+          "fieldLabel": {
+            "cardName": "Card Name",
+            "cardType": "Card Type",
+            "slides": "Slides",
+            "text": "Text"
+          },
+          "save": "Save"
+        },
+        "main": {
+          "newCard": "New Status Card",
+          "organization": "Organization"
+        }
+      },
+      "searchField": {
+        "searchStatusCard": "Search Status Cards..."
+      },
+      "shared": {
+        "statusCard": {
+          "StatusCardDialog": {
+            "cancel": "Cancel",
+            "delete": "Delete",
+            "editSlide": {
+              "fieldLabel": {
+                "atleastOne": "Must have at least one slide",
+                "text": "Text"
+              },
+              "newSlide": "New Slide"
+            },
+            "editText": {
+              "ordered": "ordered",
+              "unordered": "unordered"
+            },
+            "fieldLabel": {
+              "cardName": "Card Name"
+            },
+            "save": "Save"
+          },
+          "main": {
+            "by": "by %{count}",
+            "changed": "Changed %{count} ",
+            "edit": "Edit",
+            "sharedFrom": "Shared from %{count}"
+          },
+          "shareStatusCardDialog": {
+            "cancel": "Cancel",
+            "save": "Save",
+            "title": "Share with Organizations"
+          },
+          "statusControls": {
+            "selector": "Selector"
+          }
+        }
+      }
+    }
+  }
+}

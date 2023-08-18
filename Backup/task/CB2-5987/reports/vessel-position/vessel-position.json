@@ -1,0 +1,102 @@
+{
+	"name": "mainpage.list.vesselTitle",
+	"id": "vessel-position",
+	"queryScript": "vesselPosition.js",
+	"desc": "mainpage.list.vesselDesc",
+	"category": "vessel-report",
+	"groupedResults": false,
+	"downloadOnly": true,
+	"fields": [
+		{
+			"name": "entities",
+			"type": "type-ahead-search",
+			"typeAheadClear": true,
+			"desc": "mainpage.reports.entities",
+			"noMultiple": true,
+			"endpoint": {
+				"basePath": "ecosystem/api/feedEntities",
+				"params": {
+					"q": "term"
+				},
+				"template": "q",
+				"debounce": true
+			}
+		},
+		{
+			"name": "startDate",
+			"type": "date-picker",
+			"desc": "Start Date"
+		},
+		{
+			"name": "endDate",
+			"type": "date-picker",
+			"desc": "End Date"
+		}
+	],
+	"type": {
+		"table": {
+			"columns": [
+				{
+					"property": "name",
+					"displayName": "vesselName",
+					"width": 1,
+					"sortable": true
+				},
+				{
+					"property": "mmsid",
+					"displayName": "mmsid",
+					"width": 1,
+					"sortable": false
+				},
+				{
+					"property": "imo",
+					"displayName": "imo",
+					"width": 1,
+					"sortable": false
+				},
+				{
+					"property": "callsign",
+					"displayName": "callSign",
+					"width": 1,
+					"sortable": false
+				},
+				{
+					"property": "acquisitionTime",
+					"displayName": "positionDateTime",
+					"width": 2,
+					"sortable": true
+				},
+				{
+					"property": "speed",
+					"displayName": "speed",
+					"width": 1,
+					"sortable": true
+				},
+				{
+					"property": "hdg",
+					"displayName": "heading",
+					"width": 1,
+					"sortable": false
+				},
+				{
+					"property": "course",
+					"displayName": "course",
+					"width": 1,
+					"sortable": false
+				},
+				{
+					"property": "lat",
+					"displayName": "latitude",
+					"width": 1,
+					"sortable": false
+				},
+				{
+					"property": "lng",
+					"displayName": "longitude",
+					"width": 1,
+					"sortable": false
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,24 @@
+// TODO: Move all list panel/profile styles to orion-components
+.list-panel {
+    height: 100%
+}
+
+.list-panel-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-panel-contents {
+    padding: 0.5rem 1rem;
+    height: calc(100% - 72px);
+    display: flex;
+    flex-direction: column;
+}
+
+.lists-wrapper {
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}

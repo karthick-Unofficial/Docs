@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "http://commandbridge.com/ecosystem/feedEntities.json",
+    "type": "object",
+    "required": [ "feedId", "entityType", "appId", "sourceId", "ownerOrg", "entityData", "isActive" ],
+    "additionalProperties": false,
+    "properties": {
+      "appId": { "description": "", "type": "string" },
+      "entityType": { "description": "", "type": "string" },
+      "feedId": { "description": "", "type": "string"},
+      "id": { "description": "", "type": "string"},
+      "isActive": { "description": "", "type": "boolean"},
+      "ownerOrg": { "description": "", "type": "string"},
+      "sourceId": { "description": "", "type": "string"},
+      "timestamp": { "minimum": 1, "date": true },
+      "entityData": { "description": "", "type": "object" }
+    }
+  }
+  

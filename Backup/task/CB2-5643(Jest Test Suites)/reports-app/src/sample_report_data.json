@@ -1,0 +1,351 @@
+{
+	"reportTypes": [
+		{
+			"name": "Zone Activity Report",
+			"category": "vessel-report",
+			"id": "123123",
+			"desc":
+				"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.",
+			"icon": "static/report-icons/vsl_act.png",
+			"fields": [
+				{
+					"name": "zones",
+					"type": "SelectField",
+					"desc": "Choose your zone(s)",
+					"endpoint": "ecosystem/api/zones"
+				},
+				{
+					"name": "startDate",
+					"type": "DatePicker",
+					"desc": "Start Date"
+				},
+				{
+					"name": "endDate",
+					"type": "DatePicker",
+					"desc": "End Date"
+				}
+			],
+			"type": {
+				"table": {
+					"columns": [
+						{ "property": "name", "displayName": "Name", "sortable": true },
+						{ "property": "mmsid", "displayName": "MMSID", "sortable": false },
+						{ "property": "imo", "displayName": "IMO", "sortable": false },
+						{
+							"property": "callsign",
+							"displayName": "Callsign",
+							"sortable": false
+						},
+						{
+							"property": "timestamp",
+							"displayName": "Position Date/Time",
+							"sortable": true
+						},
+						{ "property": "speed", "displayName": "Speed", "sortable": true },
+						{ "property": "hdg", "displayName": "Heading", "sortable": false },
+						{
+							"property": "course",
+							"displayName": "Course",
+							"sortable": false
+						},
+						{
+							"property": "lat",
+							"displayName": "Latitude",
+							"sortable": false
+						},
+						{
+							"property": "lng",
+							"displayName": "Longitude",
+							"sortable": false
+						},
+						{
+							"property": "event",
+							"displayName": "Event",
+							"sortable": false
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "Dwell Time Report",
+			"id": "123123",
+			"desc":
+				"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede."
+		}
+	],
+
+	"response": {
+		"requestId": 456456,
+		"reports": [
+			{
+				"type": "zone-activity",
+				"id": "321321",
+				"groups": [
+					{
+						"name": "Zone 1",
+						"id": "2123kjasdf8923",
+						"rows": [
+							{
+								"name": "JACKFROST",
+								"mmsid": 303174162,
+								"imo": 303174162,
+								"callsign": "CWD1165",
+								"timestamp": 123123123,
+								"speed": 123,
+								"hdg": 100,
+								"course": 111,
+								"lat": 12.7,
+								"lng": 12.7,
+								"event": "N/A"
+							},
+							{
+								"name": "MR. DUCK",
+								"mmsid": 303176783,
+								"imo": 303176783,
+								"callsign": "CWD22354",
+								"timestamp": 123123123,
+								"speed": 123,
+								"hdg": 100,
+								"course": 111,
+								"lat": 12.7,
+								"lng": 12.7,
+								"event": "N/A"
+							}
+						]
+					},
+					{
+						"name": "Zone 2",
+						"id": "213kjasdfasdf8",
+						"rows": [
+							{
+								"name": "MR. DUCK",
+								"mmsid": 303176783,
+								"imo": 303176783,
+								"callsign": "CWD22354",
+								"timestamp": 123123123,
+								"speed": 123,
+								"hdg": 100,
+								"course": 111,
+								"lat": 12.7,
+								"lng": 12.7,
+								"event": "N/A"
+							},
+							{
+								"name": "JACKFROST",
+								"mmsid": 303174162,
+								"imo": 303174162,
+								"callsign": "CWD1165",
+								"timestamp": 123123123,
+								"speed": 123,
+								"hdg": 100,
+								"course": 111,
+								"lat": 12.7,
+								"lng": 12.7,
+								"event": "N/A"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+
+	"zones": [
+		{
+			"appId": "map-app",
+			"createdDate": 1514386553.69,
+			"entityData": {
+				"geometry": {
+					"coordinates": [
+						[
+							[-94.62677680337787, 30.697474735934946],
+							[-94.09410827848808, 28.814848808314665],
+							[-91.2373562491839, 28.433560879993976],
+							[-90.08007046594513, 30.498245604172794],
+							[-92.63244048102887, 30.754711275004524],
+							[-94.62677680337787, 30.697474735934946]
+						]
+					],
+					"type": "Polygon"
+				},
+				"properties": {
+					"description": "",
+					"name": "Test",
+					"type": "Polygon"
+				},
+				"type": "Polygon"
+			},
+			"entityType": "shapes",
+			"feedId": "shapes",
+			"id": "80dd3181-1842-4e33-bc44-ecb9b98f7c9b",
+			"isDeleted": true,
+			"isShareable": true,
+			"lastModifiedDate": 1514386777.351,
+			"owner": "2c9c0362-345b-4f33-9976-219a4566b9c3",
+			"ownerOrg": "ares_security_corporation"
+		},
+		{
+			"appId": "map-app",
+			"createdDate": 1515425473.795,
+			"entityData": {
+				"geometry": {
+					"coordinates": [
+						[
+							[-91.18135700257423, 29.663870757775882],
+							[-91.16469407012784, 29.675533842271975],
+							[-91.1554368854396, 29.66009001946297],
+							[-91.18135700257423, 29.663870757775882]
+						]
+					],
+					"type": "Polygon"
+				},
+				"properties": {
+					"description": "",
+					"name": "test edit 18",
+					"type": "Polygon"
+				},
+				"type": "Polygon"
+			},
+			"entityType": "shapes",
+			"feedId": "shapes",
+			"id": "e22af28f-d270-4af7-9ef0-c9d7e7e942b5",
+			"isDeleted": false,
+			"isShareable": true,
+			"lastModifiedDate": 1515425473.795,
+			"owner": "2c9c0362-345b-4f33-9976-219a4566b9c3",
+			"ownerOrg": "ares_security_corporation"
+		},
+		{
+			"appId": "map-app",
+			"createdDate": 1514386426.618,
+			"entityData": {
+				"geometry": {
+					"coordinates": [
+						[
+							[-90.82468540332756, 29.897083672541385],
+							[-90.52877099169649, 29.899437174566557],
+							[-90.54234504727675, 29.734557943035412],
+							[-90.86088288487493, 29.751843750932437],
+							[-90.82468540332756, 29.897083672541385]
+						]
+					],
+					"type": "Polygon"
+				},
+				"properties": {
+					"description": "",
+					"name": "A Place In Lousinana",
+					"type": "Polygon"
+				},
+				"type": "Polygon"
+			},
+			"entityType": "shapes",
+			"feedId": "shapes",
+			"id": "27344eff-14fd-48b2-9e80-b3053306a02e",
+			"isDeleted": true,
+			"isShareable": true,
+			"lastModifiedDate": 1514403021.939,
+			"owner": "2c9c0362-345b-4f33-9976-219a4566b9c3",
+			"ownerOrg": "ares_security_corporation"
+		},
+		{
+			"appId": "map-app",
+			"createdDate": 1514565821.605,
+			"entityData": {
+				"geometry": {
+					"coordinates": [
+						[
+							[-90.82449994692128, 29.989084538108358],
+							[-90.82218336504508, 29.98921942469329],
+							[-90.82342925782076, 29.98785368951637],
+							[-90.82449994692128, 29.989084538108358]
+						]
+					],
+					"type": "Polygon"
+				},
+				"properties": {
+					"description": "Using this shape for snaptest",
+					"name": "Snap Test Shape",
+					"type": "Polygon"
+				},
+				"type": "Polygon"
+			},
+			"entityType": "shapes",
+			"feedId": "shapes",
+			"id": "2042ea0c-b435-47b5-b0d7-f7573a5ea8ef",
+			"isDeleted": false,
+			"isShareable": true,
+			"lastModifiedDate": 1514565821.605,
+			"owner": "4b9052dc-56ee-491a-9390-ba4eaee1e83a",
+			"ownerOrg": "ares_security_corporation"
+		},
+		{
+			"appId": "map-app",
+			"createdDate": 1514478370.839,
+			"entityData": {
+				"geometry": {
+					"coordinates": [
+						[
+							[-90.8383213747843, 30.020356748240957],
+							[-90.8218527022575, 30.020414358788443],
+							[-90.82409724196603, 29.993220644723223],
+							[-90.83612334907761, 29.99327117715056],
+							[-90.8383213747843, 30.020356748240957]
+						]
+					],
+					"type": "Polygon"
+				},
+				"properties": {
+					"description": "",
+					"name": "321",
+					"type": "Polygon"
+				},
+				"type": "Polygon"
+			},
+			"entityType": "shapes",
+			"feedId": "shapes",
+			"id": "f4fe5d1f-8b5a-43d8-a5ee-dd2d7f7fd711",
+			"isDeleted": false,
+			"isShareable": true,
+			"lastModifiedDate": 1514478493.838,
+			"owner": "4b9052dc-56ee-491a-9390-ba4eaee1e83a",
+			"ownerOrg": "ares_security_corporation",
+			"sharedWith": {
+				"ares_security_corporation": "VIEW/EDIT"
+			}
+		},
+		{
+			"appId": "map-app",
+			"createdDate": 1514902424.398,
+			"entityData": {
+				"geometry": {
+					"coordinates": [
+						[
+							[-91.19778487229205, 29.681604201367293],
+							[-91.19648681198171, 29.680516729481226],
+							[-91.20103912144698, 29.67201567602862],
+							[-91.2003346335985, 29.679348691028252],
+							[-91.19778487229205, 29.681604201367293]
+						]
+					],
+					"type": "Polygon"
+				},
+				"properties": {
+					"description": "",
+					"name": "Restricted Zone",
+					"type": "Polygon"
+				},
+				"type": "Polygon"
+			},
+			"entityType": "shapes",
+			"feedId": "shapes",
+			"id": "2ae4acb2-32f4-4901-9420-0c5659cf080c",
+			"isDeleted": false,
+			"isShareable": true,
+			"lastModifiedBy": "65ed614d-e800-444d-ac4e-bf2c69c3e0f9",
+			"lastModifiedDate": 1514924186.703,
+			"owner": "65ed614d-e800-444d-ac4e-bf2c69c3e0f9",
+			"ownerOrg": "ares_security_corporation"
+		}
+	]
+}

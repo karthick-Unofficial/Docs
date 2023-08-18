@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "http://commandbridge.com/ecosystem/shape.json",
+    "type": "object",
+    "required": [ "owner", "ownerOrg", "entityData" ],
+    "additionalProperties": false,
+    "properties": {
+      "entityType": { "description": "", "type": "string" },
+      "feedId": { "description": "", "type": "string" },
+      "owner": { "description": "", "type": "string" },
+      "createdDate": { "minimum": 1,"date": true },
+      "entityData": { "Description": "Variable Data", "type": "object"},
+      "isDeleted": { "description": "", "type": "boolean" },
+      "isPublic": { "description": "", "type": "boolean" },
+      "inScope": { "description": "", "type": "boolean" },
+      "ownerOrg": { "description": "", "type": "string" },
+      "parentEntity": { "description": "", "type": "string" },
+      "lastModifiedDate": { "minimum": 1, "date": true }
+    }
+  }
+  

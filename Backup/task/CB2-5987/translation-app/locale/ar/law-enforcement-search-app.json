@@ -1,0 +1,43 @@
+{
+	"appId": "law-enforcement-search-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "البحث عن تطبيق القانون"
+			},
+			"personSearch": {
+				"person": "شخص",
+				"saveSearch": "حفظ البحث",
+				"search": "بحث"
+			},
+			"searchForm": {
+				"forms": {
+					"all": "الكل",
+					"black": "أسود",
+					"dob": "تاريخ الولادة",
+					"female": "أنثى",
+					"firstName": "الاسم الاول",
+					"keyword": "الكلمة الرئيسية",
+					"lastName": "اسم العائلة",
+					"male": "ذكر",
+					"race": "العنصر",
+					"reset": "إعادة ضبط",
+					"search": "بحث",
+					"sex": "الجنس",
+					"white": "أبيض"
+				}
+			},
+			"searchPanel": {
+				"clearAll": "امسح الكل",
+				"mySearches": "عمليات البحث الخاصة بي",
+				"newSearch": "بحث جديد"
+			},
+			"searchResults": {
+				"personCard": {
+					"copyResult": "نتيجة النسخ"
+				}
+			}
+		}
+	}
+}

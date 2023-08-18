@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style>
+		* {
+			margin: 0px;
+			/* font-size: 1em; */
+			box-sizing: border-box;
+			font-family: 'Roboto'
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Roboto-Bold";
+		}
+
+		body {
+			margin: 20px;
+		}
+
+		#pageFooter {
+			width: 100%;
+			margin-top: 40px;
+
+		}
+
+		#pageFooter>div {
+			font-size: 0.67em;
+			float: right;
+			width: 50%;
+			margin: 0 auto;
+			margin-right: 40px;
+			padding-bottom: 20px;
+		}
+
+		#pageHeader-first {
+			margin-bottom: 20px;
+		}
+
+		.pdf-header-labels,
+		.pdf-header-data {
+			-webkit-justify-content: space-between;
+			-ms-flex-align: baseline;
+			-webkit-align-items: baseline;
+			-webkit-box-align: baseline;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		.date-label {
+			margin-right: 10px;
+		}
+
+		.pdf-header-labels {
+			margin-bottom: 5px;
+		}
+
+		.pdf-header-labels>h4 {
+			margin-top: 20px;
+			margin-bottom: 5px;
+		}
+
+		.pdf-header-data>* {
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+
+		/* .pdf-body {
+				margin-top: 20px;
+			} */
+
+		.sitrep-long-field {
+			width: 100%
+		}
+
+		div {
+			display: block;
+		}
+
+		h6 {
+			display: block;
+			font-size: 0.67em;
+			-webkit-margin-before: 2.33em;
+			-webkit-margin-after: 2.33em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+			font-weight: bold;
+		}
+
+		span {
+			font-size: 0.67em;
+			-webkit-margin-before: 2.33em;
+			-webkit-margin-after: 2.33em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+		}
+
+
+
+		.field-header {
+			margin-bottom: 0
+		}
+
+		.sitrep-field {
+			margin: 0 60px 0px 0;
+		}
+
+		.sitrep-field span,
+		.sitrep-long-field span {
+			font-size: 0.80em;
+			-webkit-margin-before: 2.33em;
+			-webkit-margin-after: 2.33em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+		}
+
+		.tables {
+			margin-top: 40px;
+		}
+
+		.table-container {
+			margin-bottom: 40px;
+
+		}
+
+		.table-container>h4 {
+			color: black;
+			margin-bottom: 10px;
+			margin-left: 10px;
+			font-size: 12px;
+			/* font-family: 'Roboto'; */
+		}
+
+		.table-data-container {
+			color: rgba(0, 0, 0, 0.87);
+			background-color: rgb(255, 255, 255);
+			transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+			box-sizing: border-box;
+			font-family: 'Roboto', sans-serif;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			-webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+			-moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+			box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px;
+			border: 1px solid rgb(224, 224, 224);
+			border-radius: 2px;
+		}
+
+		table {
+			background-color: rgb(255, 255, 255);
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0px;
+			table-layout: fixed;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		thead {
+			display: table-header-group;
+			vertical-align: middle;
+			border-color: inherit;
+
+			border-bottom: 1px solid rgb(224, 224, 224);
+			background-color: rgb(204, 204, 204);
+			padding: 0px 1rem;
+		}
+
+		tr {
+			display: table-row;
+			vertical-align: inherit;
+			border-color: inherit;
+			border-bottom: 1px solid rgb(224, 224, 224);
+			color: rgba(0, 0, 0, 0.87);
+			height: 35px;
+		}
+
+		th {
+			font-weight: normal;
+			font-size: 10px;
+			padding-left: 24px;
+			padding-right: 24px;
+			text-align: left;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			color: rgb(0, 0, 0);
+			position: relative;
+			background-color: inherit;
+		}
+
+		td {
+			padding-left: 24px;
+			padding-right: 24px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			text-align: left;
+			font-size: 10px;
+			background-color: inherit;
+		}
+
+		td,
+		th {
+			display: table-cell;
+			vertical-align: inherit;
+		}
+
+		.svg-cell {
+			padding-left: 38px;
+		}
+
+		.notes {
+			width: 100%;
+		}
+
+		.notes p,
+		.notes p img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		.notes h1,
+		.notes h2,
+		.notes h3,
+		.notes h4,
+		.notes h5,
+		.notes h6 {
+			color: black;
+			padding: 0;
+			margin: 0;
+		}
+
+		b,
+		strong {
+			font-family: Roboto-Bold;
+		}
+
+		em {
+			font-family: Roboto-Italic;
+		}
+
+		.notes p,
+		.notes em,
+		.notes strong {
+			font-size: 12px;
+		}
+
+		.ql-editor {
+			padding-top: 0 !important;
+			margin-top: 0 !important;
+			line-height: 1 !important;
+		}
+
+		.flex {
+			display: -webkit-box;
+			display: -webkit-flex;
+			-webkit-flex-wrap: wrap;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.rightAlign {
+			text-align: right;
+		}
+	</style>
+	<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="pageFooter">
+		<div>
+			{{page}}-{{pages}}
+			<%= data.pdfTemplates.siterep.pageFooter.pages%>
+		</div>
+	</div>
+
+	<div id="pageHeader-first">
+		<div class="container">
+			<div class="pdf-header">
+				<div class="pdf-header-labels flex">
+					<h4>
+						<%= data.pdfTemplates.siterep.header.headerLabel%>
+					</h4>
+					<h4 class="date-label">
+						<%= data.pdfTemplates.siterep.header.reportDate%>
+					</h4>
+				</div>
+				<div class="pdf-header-data flex">
+					<h3 style="font-weight: normal">
+						<%= data.eventName%>
+					</h3>
+					<span>
+						<%= moment.tz(data.creationTime, data.timezone).locale(data.locale).format(`MM/DD/YYYY
+							${data.timeFormatPreference==="24-hour" ? "HH:mm z" : "hh:mm A z" }`) %>
+					</span>
+				</div>
+			</div>
+			<hr style="margin-top:10px;">
+		</div>
+	</div>
+
+	<div id="pageHeader">
+	</div>
+
+	<div class="pdf-body">
+		<div class="fields flex" style="width: 100%;">
+			<% data.formatData.forEach(function(component, index){%>
+				<% if(component.type==="field" ) { %>
+					<% if (data[component.property] && data[component.property].value) { %>
+						<% let time="" ; %>
+							<% if (component.property.toLowerCase().includes("time")) { %>
+								<% time=moment.tz(data[component.property].value,
+									data.timezone).locale(data.locale).format(`${data.timeFormatPreference==="24-hour"
+									? "H:mm z" : "h:mm A z" }`) %>
+									<% } %>
+										<% if (component.property.toLowerCase().includes("date")) { %>
+											<% time=moment.tz(data[component.property].value,
+												data.timezone).locale(data.locale).format("L") %>
+												<% } %>
+													<% const returnValue=time ? time : data[component.property].value;
+														%>
+														<div class="sitrep-field">
+															<h6 class="field-header">
+																<%= data.mainpage.list[component.header] %>
+															</h6>
+															<span>
+																<%= returnValue %>
+															</span>
+														</div>
+														<% } %>
+															<% } %>
+																<% }) %>
+		</div>
+		<div class="long-fields">
+			<% data.formatData.forEach(function(component, index){%>
+				<% if(component.type==="long-field" ) { %>
+					<% if (data[component.property] && data[component.property].value) { %>
+						<div class="sitrep-long-field">
+							<h6 class="field-header">
+								<%= component.header %>
+							</h6>
+							<%if (component.property==="notes" ) { %>
+								<div class="notes ql-editor">
+									<%- data[component.property].value %>
+								</div>
+								<% } else {%>
+									<span>
+										<%= data[component.property].value %>
+									</span>
+									<%}%>
+						</div>
+						<% } %>
+							<% } %>
+								<% }) %>
+		</div>
+		<div class="tables">
+			<%- include('sitrep-templates/tables', {data: data}); %>
+		</div>
+
+	</div>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+.summary-wrapper {
+  background-color: $darkGray;
+  // padding: 10px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.12rem;
+  &.scrolled-up {
+    position: absolute;
+    width: calc(100% - 20px); // padding
+    z-index: 99;
+  }
+  .summary-info {
+    display: flex;
+    .summary-icon {
+      font-size: 2.5rem;
+      display: flex;
+      .material-icons {
+        font-size: 2.5rem !important; // force icon to be correct size on map app
+      }
+    }
+    .summary-target {
+      align-self: center;
+      margin-right: 0.75rem;
+    }
+    .summary-text {
+      align-self: center;
+      width: 80%;
+      margin-left: 0.5rem;
+      .summary-title {
+        word-wrap: break-word;
+        font-size: 18px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .summary-subtitle {
+        word-wrap: break-word;
+        font-size: 14px;
+        color: #ffffff4d;
+        margin-top: 2px;
+      }
+    }
+  }
+  .summary-description {
+    word-wrap: break-word;
+    font-size: 14px;
+    padding-left: 6px;
+    margin: 0.75rem 0;
+  }
+  .summary-options {
+    color: $transWhite2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    .summary-option {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      margin: 0.25rem;
+      height: 4.5rem;
+      min-width: 50px;
+      border-radius: 3px;
+      i {
+        color: $transWhite2;
+        font-size: 1.5rem;
+      }
+      p {
+        padding-top: 0.25rem;
+        font-size: 0.75rem;
+      }
+      &:hover {
+        background-color: $mediumGray;
+      }
+      &.toggled {
+        color: #35b7f3;
+        i {
+          color: #35b7f3;
+        }
+      }
+      &.disabled {
+        cursor: default;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

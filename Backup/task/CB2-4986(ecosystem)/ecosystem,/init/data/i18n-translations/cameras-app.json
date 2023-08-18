@@ -1,0 +1,181 @@
+{
+    "appId": "cameras-app",
+    "locales": "en",
+    "translations": {
+      "ar": {
+        "appBar": {
+          "optionDrawer": {
+            "baseMap": "الخريطة الأساسية",
+            "mapLabels": "تسميات الخريطة",
+            "mapOverlays": "تراكبات الخريطة",
+            "nauticalCharts": "مخططات بحرية",
+            "roadsLabels": "الطرق والتسميات",
+            "spotlightProx": {
+              "defaultProx": "القرب الافتراضي",
+              "errorText": {
+                "invalidProx": "قيمة القرب غير صالحة",
+                "limitedValue": "يجب أن تقتصر القيمة على 3 منازل عشرية"
+              },
+              "km": "كيلومتر",
+              "mi": "ميل",
+              "title": "قرب الضوء"
+            },
+            "weatherRadar": "رادار الطقس"
+          },
+          "title": "كاميرات"
+        },
+        "cameraView": {
+          "linkItems": "عناصر الارتباط",
+          "mapLocation": "الموقع على الخريطة ومجال الرؤية",
+          "pinItem": "دبوس البند"
+        },
+        "camerasListPanel": {
+          "allCams": "جميع الكاميرات",
+          "allAccessPoints": "جميع نقاط الوصول",
+          "cameraCollection": {
+            "item": "البند ",
+            "items": "البنود "
+          },
+          "noCamerasAvailable": "لا توجد كاميرات متاحة",
+          "noAccessPointsAvailable": "لا توجد نقاط وصول متاحة",
+          "placeholder": {
+            "searchColl": "مجموعات البحث ..."
+          }
+        },
+        "camerasMapLayers": {
+          "facilityCamDialog": {
+            "cancel": "إلغاء",
+            "continue": "تابع",
+            "continuingText": "سيؤدي الاستمرار إلى إزالة الكاميرا من مخطط الأرضية هذا.",
+            "hiddenText": "يقع في منشأة مخفية حاليًا %{count}",
+            "locatedText": "يقع في %{count}",
+            "title": "كاميرا منشأة"
+          },
+          "listItemText": {
+            "deleteFOV": "حذف مجال الرؤية بالكاميرا",
+            "drawFOV": "ارسم مجال الرؤية بالكاميرا",
+            "editFOV": "تحرير مجال الرؤية الخاص بالكاميرا",
+            "editLocation": "تحرير موقع الكاميرا",
+            "editSpotlight": "تحرير أضواء الكاميرا",
+            "resetSpotlight": "إعادة تعيين أضواء الكاميرا"
+          },
+          "stageDeleteDialog": {
+            "cancel": "إلغاء",
+            "confirm": "تأكيد",
+            "textContent": "?%{secondaryValue} هذه الكاميرا %{primaryValue} هل أنت متأكد أنك تريد",
+            "title": {
+              "deleteFOV": "حذف مجال الرؤية",
+              "resetSpotlight": "إعادة تعيين الأضواء"
+            }
+          }
+        },
+        "accessPointMapLayers": {
+          "facilityAPDialog": {
+            "cancel": "إلغاء",
+            "continue": "تابع",
+            "hiddenText": "يقع في منشأة مخفية حاليًا %{count}",
+            "locatedText": "يقع في %{count}",
+            "continuingText": "ستؤدي المتابعة إلى إزالة نقطة الوصول من مخطط المبنى هذا.",
+            "title": "نقطة وصول المنشأة"
+          },
+          "listItemText": {
+            "editLocation": "تحرير موقع نقطة الوصول"
+          },
+          "stageDeleteDialog": {
+            "textContent": "هل أنت متأكد من أنك تريد %{primaryValue} نقطة الوصول هذه %{secondaryValue}?"
+          }
+        }
+      },
+      "en": {
+        "appBar": {
+          "optionDrawer": {
+            "baseMap": "BASE MAP",
+            "mapLabels": "Map Labels",
+            "mapOverlays": "MAP OVERLAYS",
+            "nauticalCharts": "Nautical Charts",
+            "roadsLabels": "Roads and Labels",
+            "spotlightProx": {
+              "defaultProx": "Default Proximity",
+              "errorText": {
+                "invalidProx": "Invalid proximity value",
+                "limitedValue": "Value must be limited to 3 decimal places"
+              },
+              "km": "km",
+              "mi": "mi",
+              "title": "SPOTLIGHT PROXIMITY"
+            },
+            "weatherRadar": "Weather Radar"
+          },
+          "title": "Cameras"
+        },
+        "cameraView": {
+          "linkItems": "Link Items",
+          "mapLocation": "Map Location and FOV",
+          "pinItem": "Pin Item"
+        },
+        "camerasListPanel": {
+          "allCams": "All Cameras",
+          "allAccessPoints": "All Access Points",
+          "cameraCollection": {
+            "item": " item",
+            "items": " items"
+          },
+          "noCamerasAvailable": "No cameras available",
+          "noAccessPointsAvailable": "No access points available",
+          "placeholder": {
+            "searchColl": "Search Collections..."
+          }
+        },
+        "camerasMapLayers": {
+          "facilityCamDialog": {
+            "cancel": "Cancel",
+            "continue": "Continue",
+            "continuingText": "Continuing will remove the camera from this floor plan.",
+            "hiddenText": "%{count} is located on a facility that is currently hidden",
+            "locatedText": "%{count} is located on",
+            "title": "Facility Camera"
+          },
+          "listItemText": {
+            "deleteFOV": "Delete camera's FOV",
+            "drawFOV": "Draw camera's FOV",
+            "editFOV": "Edit camera's FOV",
+            "editLocation": "Edit camera location",
+            "editSpotlight": "Edit camera's Spotlight",
+            "resetSpotlight": "Reset camera's Spotlight"
+          },
+          "stageDeleteDialog": {
+            "cancel": "Cancel",
+            "confirm": "Confirm",
+            "delete": "delete",
+            "fov": "FOV",
+            "reset": "reset",
+            "spotlight": "Spotlight",
+            "textContent": "Are you sure you want to %{primaryValue} this camera's %{secondaryValue}?",
+            "title": {
+              "deleteFOV": "Delete FOV",
+              "resetSpotlight": "Reset Spotlight"
+            }
+          }
+        },
+        "accessPointMapLayers": {
+          "facilityAPDialog": {
+            "cancel": "Cancel",
+            "continue": "Continue",
+            "continuingText": "Continuing will remove the accessPoint from this floor plan.",
+            "hiddenText": "%{count} is located on a facility that is currently hidden",
+            "locatedText": "%{count} is located on",
+            "title": "Facility Access Point"
+          },
+          "listItemText": {
+            "editLocation": "Edit access point location"
+          },
+          "stageDeleteDialog": {
+            "cancel": "Cancel",
+            "confirm": "Confirm",
+            "delete": "delete",
+            "textContent": "Are you sure you want to %{primaryValue} this access point's %{secondaryValue}?"
+          }
+        }
+      }
+    }
+  }

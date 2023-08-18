@@ -1,0 +1,22 @@
+{
+  "sys_eventTypes": [
+    {
+      "eventTypeId": "cb_event",
+      "name": "CommandBridge Event",
+      "subtypes": [],
+      "widgets": []
+    },
+    {
+      "eventTypeId": "superion_cad_event",
+      "name": "Superion CAD Event",
+      "subtypes": [],
+      "widgets": ["cad_details", "responding_units"]
+    },
+    {
+      "eventTypeId": "sc_thread",
+      "name": "SecureCommand Thread",
+      "subtypes": [],
+      "widgets": ["secure_share"]
+    }
+  ]
+}

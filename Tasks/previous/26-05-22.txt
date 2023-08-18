@@ -1,0 +1,12 @@
+Today's Task:
+CB2-5296 - Camera lock button displayed in Alert profile
+- Worked on removing lockButton from CameraCard in Alert Profile by passing a new Prop disableLock.
+- Added a condition to remove lock button from cameraCard when disableLock is true.
+
+CB2-5236 - List app - Arabic locale - Incorrect date/time format when adding a date/time column
+- Worked on sorting out the main causes of issues and worked on adding fixes as well.
+- Replaced defaultValue of date-time with moment() to handle Invalid Date issues in ColumnAdd.
+
+CB2-5328 - Access Point - Shouldn't Have Spotlight Area in Cameras App
+CB2-5326 - Access point - Unable to set the location of Access points from within camera app
+- Added a condition to ignore spotlight for accessPoint entityType in CamerasMapLayers.

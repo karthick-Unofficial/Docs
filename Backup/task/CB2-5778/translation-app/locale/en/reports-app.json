@@ -1,0 +1,94 @@
+{
+	"appId": "reports-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"components": {
+				"notFound": {
+					"errorMessage": "Resource not found",
+					"goBack": "Go Back",
+					"pageError": "The requested page is not available or does not exist"
+				}
+			},
+			"mainpage": {
+				"list": {
+					"vessel-report": "vessel reports",
+					"event-report": "event reports",
+					"dwellDesc": "Dwell time duration for vessels in zones.",
+					"dwellTitle": "Dwell Time Report",
+					"eventDesc": "Situation report for events.",
+					"eventTitle": "Event SITREP",
+					"tripDesc": "Data of vessels crossing tripwires.",
+					"tripTitle": "Tripwire Report",
+					"vesselDesc": "All positional data for a selection of entities.",
+					"vesselTitle": "Vessel Position Report",
+					"zoneDesc": "Entry/Exit data of vessels traveling through zones.",
+					"zoneTitle": "Zone Activity Report"
+				},
+				"reports": {
+					"entities": "Choose your entities",
+					"event": "Choose an event",
+					"lines": "Choose your line(s)",
+					"zone": "Choose your zone(s)"
+				}
+			},
+			"reportBuilder": {
+				"components": {
+					"field": {
+						"search": "Search...",
+						"selectAll": "Select All"
+					},
+					"multiReport": {
+						"downloadPdf": "DOWNLOAD PDF",
+						"list": "List"
+					}
+				},
+				"reportBuilder_reports": {
+					"report": {
+						"cancel": "Cancel",
+						"close": "Close",
+						"downloadCsv": "DOWNLOAD CSV",
+						"downloadPdf": "DOWNLOAD PDF",
+						"errorMessage": "Your request has been received. You should receive an email shortly.",
+						"noResult": "No Results",
+						"reportMessage": "This report is too large to download. You may request that it be processed and emailed to you. This could take up to an hour.",
+						"request": "Request",
+						"requestCsv": "Request CSV",
+						"requestPdf": "REQUEST PDF",
+						"displayName": {
+							"vesselName": "Vessel Name",
+							"mmsid": "MMSID",
+							"imo": "IMO",
+							"callSign": "Callsign",
+							"entryTime": "Entry Time",
+							"dwellDuration": "Dwell Duration",
+							"positionDateTime": "Position Date/Time",
+							"speed": "Speed",
+							"heading": "Heading",
+							"course": "Course",
+							"latitude": "Latitude",
+							"longitude": "Longitude",
+							"event": "Event"
+						}
+					}
+				},
+				"reportBuilders": {
+					"loading": "Loading",
+					"requestCsv": "Request CSV",
+					"requestMessage": "This report is download only. Select the vessel(s) and the time frame for the report. A download link to the report will be emailed to your account after submitting the request. This process may take up to an hour to complete.",
+					"submit": "Submit",
+					"submitMessage": "Submitting Request",
+					"submitQuery": "Please submit a report query.",
+					"completeAllFields": "Please complete all fields",
+					"validTimeRange": "Please select a valid time range"
+				}
+			},
+			"reports": {
+				"typeAhead": {
+					"cancel": "cancel",
+					"search": "search"
+				}
+			}
+		}
+	}
+}

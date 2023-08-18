@@ -1,0 +1,122 @@
+{
+  "clientConfig": {
+    "supportEmail": {
+      "address": "c2support@aressecuritycorp.com",
+      "subject": "Avert C2 Support Issue",
+      "body": "[Use this space to describe the issue you are experiencing.]"
+    },
+    "mapSettings": {
+      "zoom": 14.5,
+      "bearing": -90,
+      "center": [
+        -91.2015,
+        30.4346
+      ]
+    },
+    "mapFeedIds": [
+      "aishub"
+    ],
+    "mapInclusionZone": {
+      "coordinates": [
+        [
+          [
+            -91.25138564076504,
+            30.4940252827664
+          ],
+          [
+            -91.1463635669389,
+            30.495258715463777
+          ],
+          [
+            -91.14410047863437,
+            30.36511827910914
+          ],
+          [
+            -91.25323442238617,
+            30.36413227285803
+          ],
+          [
+            -91.25138564076504,
+            30.4940252827664
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "agentOwner": {
+      "enabled": true,
+      "required": false
+    },
+    "requestingCompany": {
+      "enabled": true,
+      "required": false
+    },
+    "voyageNumber": {
+      "enabled": true,
+      "required": true
+    },
+    "cargoDirectionLevel": "assignment",
+    "imoRequired": true,
+    "servicesConfig": [
+      {
+        "property": "crewChange",
+        "label": "Crew Change",
+        "subLabel": "Mark this for crew changes."
+      },
+      {
+        "property": "storesDeliveries",
+        "label": "Stores/Deliveries",
+        "subLabel": ""
+      },
+      {
+        "property": "shoreCranes",
+        "label": "Shore Cranes",
+        "subLabel": ""
+      },
+      {
+        "property": "inspection",
+        "label": "Inspection",
+        "subLabel": ""
+      },
+      {
+        "property": "waterHookup",
+        "label": "Water Hookup",
+        "subLabel": ""
+      },
+      {
+        "property": "security",
+        "label": "Security",
+        "subLabel": ""
+      },
+      {
+        "property": "other",
+        "label": "Other",
+        "subLabel": ""
+      }
+    ]
+  },
+  "cargoDirectionLevel": "assignment",
+  "emails": {
+    "departure": true,
+    "newAssignment": true,
+    "updatedAssignment": true,
+    "requestConfirmation": true,
+    "approvedAssignment": true,
+    "vesselReportRequest": true,
+    "vesselReport": true
+  },
+  "vesselReportFormRecipients": [
+    "email@domain.com"
+  ],
+  "autoSetAtaAtd": true,
+  "processes": [
+    {
+      "id": "vessel-berthing-event-processor",
+      "name": "Vessel Berthing Event Processor",
+      "entrypoint": "vesselBerthingEventProcessor.js",
+      "args": {
+        "departureUpdateThreshold": 10
+      }
+    }
+  ]
+}

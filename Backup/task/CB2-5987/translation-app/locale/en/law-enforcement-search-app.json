@@ -1,0 +1,43 @@
+{
+	"appId": "law-enforcement-search-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"appBar": {
+				"title": "Law Enforcement Search"
+			},
+			"personSearch": {
+				"person": "person",
+				"saveSearch": "Save Search",
+				"search": "Search"
+			},
+			"searchForm": {
+				"forms": {
+					"all": "All",
+					"black": "Black",
+					"dob": "DOB",
+					"female": "Female",
+					"firstName": "First Name",
+					"keyword": "Keyword",
+					"lastName": "Last Name",
+					"male": "Male",
+					"race": "Race",
+					"reset": "Reset",
+					"search": "Search",
+					"sex": "Sex",
+					"white": "White"
+				}
+			},
+			"searchPanel": {
+				"clearAll": "Clear All",
+				"mySearches": "My Searches",
+				"newSearch": "New Search"
+			},
+			"searchResults": {
+				"personCard": {
+					"copyResult": "Copy Result"
+				}
+			}
+		}
+	}
+}

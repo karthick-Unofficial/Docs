@@ -1,0 +1,118 @@
+{
+	"appId": "facilities-app",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "الكاميرات"
+			},
+			"drawingPanel": {
+				"accessPointForm": {
+					"accessPoints": "نقطة وصول",
+					"addAccessPoint": "أضف نقطة الوصول إلى %{count}",
+					"cancel": "إلغاء",
+					"clickToPlaceAP": "انقر على الخريطة لوضع نقطة الوصول",
+					"createAP": "أنشئ نقطة وصول",
+					"editAP": "تحرير نقطة الوصول",
+					"fieldLabel": {
+						"desc": "الوصف",
+						"name": "الاسم"
+					},
+					"save": "حفظ",
+					"searchAP": "نقاط الوصول البحث..."
+				},
+				"cameraForm": {
+					"addCamera": "%{count} أضف الكاميرا إلى",
+					"cameras": "الكاميرات",
+					"cancel": "إلغاء",
+					"clickToPlaceCam": "انقر على الخريطة لوضع الكاميرا",
+					"noCameras": "لا الكاميرات المتاحة.",
+					"save": "حفظ",
+					"searchCameras": "كاميرات البحث..."
+				},
+				"facilityForm": {
+					"cancel": "إلغاء",
+					"clickToPlaceFac": "انقر على الخريطة لوضع المرفق",
+					"createFacility": "إنشاء مرفق",
+					"editFacility": "تحرير مرفق",
+					"fieldLabel": {
+						"desc": "الوصف",
+						"name": "الاسم"
+					},
+					"save": "حفظ"
+				},
+				"floorPlanForm": {
+					"cancel": "إلغاء",
+					"createFloorPlan": "إنشاء مخطط الطابق",
+					"delete": "حذف",
+					"dialog": {
+						"cancel": "إلغاء",
+						"confirm": "تأكيد",
+						"confirmationText": "هل أنت متأكد أنك تريد حذف مخطط المبنى هذا؟ أي عنصر يتم وضعه في مخطط الطابق هذا سيفقد موقعه."
+					},
+					"editFloorPlan": "تحرير مخطط الطابق",
+					"fieldLabel": {
+						"name": "الاسم"
+					},
+					"save": "حفظ",
+					"uploadFloorPlan": "تحميل مخطط الطابق"
+				}
+			},
+			"facilityMap": {
+				"mapControls": {
+					"facilityMenu": {
+						"addAccessPointToFloor": "أضف نقطة وصول إلى مخطط الطابق",
+						"addCamToFloor": "أضف الكاميرا إلى مخطط الأرضية",
+						"addFloorPlan": "أضف مخطط المبنى",
+						"addNewFac": "إضافة منشأة جديدة",
+						"editFacLocation": "تحرير موقع المنشأة",
+						"editFloorPlan": "تعديل مخطط الطابق"
+					}
+				}
+			},
+			"listPanel": {
+				"importFac": {
+					"dialog": {
+						"cancel": "إلغاء",
+						"close": "إغلاق",
+						"title": "تسهيلات الاستيراد",
+						"uploadFile": "تحميل ملف الاستيراد"
+					},
+					"errorMessage": {
+						"imageNotFound": "خطأ: لم يتم العثور على صورة مخطط الطابق في القطران",
+						"malformed": "خطأ: كائن المنشأة مشوه",
+						"missingFloorPlanGeo": "خطأ: هندسة مخطط الطوابق مفقودة",
+						"missingFloorPlanImgName": "خطأ: اسم صورة مخطط الطابق مفقود في التكوين",
+						"missingFloorPlanName": "خطأ: اسم مخطط الطابق مفقود",
+						"missingFloorPlanOrder": "خطأ: طلب مخطط الطابق مفقود",
+						"missingGeo": "خطأ: هندسة المرفق مفقودة",
+						"missingName": "خطأ: اسم المرفق مفقود"
+					}
+				},
+				"main": {
+					"fieldLabel": {
+						"searchFac": "تسهيلات البحث ..."
+					},
+					"importFac": "تسهيلات الاستيراد",
+					"myFac": "مرافق بلدي",
+					"sharedFac": "المرافق المشتركة معي",
+					"newFac": "منشأة جديدة",
+					"noFacAvail": "لا توجد مرافق متاحة. انقر فوق الزر + أعلاه أو على الخريطة لإضافة منشأة."
+				}
+			},
+			"settingsMenu": {
+				"main": {
+					"fieldLabel": {
+						"mapLabels": "تسميات الخريطة",
+						"nauticalChart": "مخططات بحرية",
+						"roadsLabel": "الطرق ولتسميات",
+						"weatherRadar": "رادار الطقس"
+					}
+				},
+				"tileOptions": {
+					"baseMap": "الخريطة الأساسية"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,101 @@
+.collection-dialog,
+.confirm-dialog {
+	.confirm-dialog-text {
+		margin-bottom: 0;
+		color: $textGray;
+		font-size: 1.15rem;
+		&.dialog-error {
+			color: tomato;
+			font-size: 1rem;
+		}
+	}
+}
+
+.add-to-new {
+	display: flex;
+	align-items: center;
+	svg {
+		margin-right: 0.5rem;
+		background-color: #fff;
+		border-radius: 100px;
+	}
+}
+
+.collection-dialog > div > div > div,
+.confirm-dialog > div > div > div,
+// .image-dialog > div > div > div,
+.share-dialog > div > div > div {
+	background-color: $darkGray !important;
+	display: flex;
+	flex-direction: column;
+}
+
+.collection-select {
+	background-color: transparent;
+}
+
+// .image-dialog {
+// 	padding-top: 0 !important; // <--- override mat ui styles
+	// @media (max-width: 750px) {
+	// 	> div > div {
+	// 		width: 90% !important;
+	// 		> div {
+	// 			background-color: transparent !important;
+	// 		}
+	// 	}
+	// }
+	// > div > div > div > div {
+// 		position: relative;
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: space-between;
+// 		max-width: 90vh;
+// 		padding: 0 48px 48px 48px !important;
+// 		@media (max-width: 750px) {
+// 			padding: 0 !important;
+// 			max-height: 90vh !important;
+// 			overflow-y: visible !important;
+// 		}
+// 		button {
+// 			align-self: flex-end;
+// 			right: -48px;
+// 			@media (max-width: 750px) {
+// 				top: 35px;
+// 				right: 5px;
+// 				background-color: $alert !important;
+// 				border-radius: 100% !important;
+// 				height: 30px !important;
+// 				width: 30px !important;
+// 				padding: 0 !important;
+// 				div > svg {
+// 					position: relative;
+// 					top: 3px;
+// 				}
+// 			}
+// 		}
+// 		div {
+// 			background-color: #121212;
+// 			height: 100%;
+// 			background-size: contain;
+// 			background-position: center center;
+// 			background-repeat: no-repeat;s
+// 			@media (max-width: 750px) {
+// 				background-color: transparent;
+// 			}
+// 		}
+// 		img {
+// 			width: 100%;
+// 			align-self: center;
+// 		}
+// 		a {
+// 			align-self: center;
+// 			text-decoration: none;
+// 			position: relative;
+// 			bottom: -12px;
+// 			@media (max-width: 750px) {
+// 				bottom: -10px;
+// 				font-size: 20px;
+// 			}
+// 		}
+// 	}
+// }

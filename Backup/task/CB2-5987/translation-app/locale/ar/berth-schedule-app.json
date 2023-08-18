@@ -1,0 +1,290 @@
+{
+	"appId": "berth-schedule-app",
+	"locales": "ar",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "الجدول الزمني للرصيف"
+			},
+			"berthGroup": {
+				"berthTimeline": {
+					"clickHere": "انقر هنا",
+					"noData": "لا توجد بيانات متاحة عن الرصيف.",
+					"toManage": "لإدارة berths"
+				}
+			},
+			"berthSchedule": {
+				"clickHere": "انقر هنا",
+				"noData": "لا توجد بيانات متاحة عن الرصيف.",
+				"toManage": "لإدارة berths"
+			},
+			"berthToolbar": {
+				"btnLabel": {
+					"berthSchedule": "الجدول الزمني للرصيف",
+					"dailyAgendaList": "قائمة الأجندة اليومية",
+					"hideMap": "إخفاء رصيف خريطة",
+					"showMap": "عرض رصيف خريطة"
+				},
+				"fieldLabel": {
+					"search": "بحث"
+				},
+				"newEvent": "حدث جديد"
+			},
+			"dailyAgenda": {
+				"dailyAgendaTtl": "الأجندة اليومية",
+				"inPortVessel": "السفن داخل الميناء",
+				"timeDiffString": {
+					"ago": {
+						"minutes": "%{count} دقائق مضت",
+						"days": "%{count} منذ أيام",
+						"hours": "%{count} منذ ساعات"
+					},
+					"in": {
+						"minutes": "في %{count} الدقائق",
+						"days": "في %{count} أيام",
+						"hours": "في %{count} ساعات"
+					}
+				},
+				"arrivalString": {
+					"minutes": "وصل %{count} دقائق مضت",
+					"years": "وصل %{count} منذ سنوات",
+					"days": "وصل %{count} منذ أيام",
+					"hours": "وصل %{count} منذ أيام"
+				},
+				"departedAgo": {
+					"minutes": "غادر %{count} دقائق مضت",
+					"years": "غادر %{count} منذ سنوات",
+					"days": "غادر %{count} منذ أيام",
+					"hours": "غادر %{count} منذ أيام"
+				},
+				"departingIn": {
+					"minutes": "المغادرة في %{count} الدقائق",
+					"years": "المغادرة في %{count} سنوات",
+					"days": "المغادرة في %{count} أيام",
+					"hours": "المغادرة في %{count} ساعات"
+				}
+			},
+			"date": {
+				"long": "MMMM D، YYYY",
+				"min": "MMM D",
+				"short": "MMM D، YYYY"
+			},
+			"dateControls": {
+				"todayLbl": "اليوم"
+			},
+			"days": {
+				"long": {
+					"Friday": "جمعة",
+					"Monday": "الاثنين",
+					"Saturday": "السبت",
+					"Sunday": "الأحد",
+					"Thursday": "يوم الخميس",
+					"Tuesday": "يوم الثلاثاء",
+					"Wednesday": "الأربعاء"
+				},
+				"short": {
+					"Fri": "جمعة",
+					"Mon": "الاثنين",
+					"Sat": "السبت",
+					"Sun": "الأحد",
+					"Thu": "يوم الخميس",
+					"Tue": "يوم الثلاثاء",
+					"Wed": "الأربعاء"
+				}
+			},
+			"formPanel": {
+				"agentInfo": {
+					"fieldLabel": {
+						"agentName": "الوكيل / اسم المالك",
+						"contactPersonEmail": "البريد الإلكتروني لشخص الاتصالl",
+						"contactPersonName": "اسم شخص الاتصال",
+						"contactPersonPhone": "هاتف شخص الاتصال"
+					},
+					"title": "معلومات الوكيل / المالك"
+				},
+				"assignmentForm": {
+					"assignmentTooltip": "لم يتم حفظ بيانات الواجب",
+					"buttonLabels": {
+						"approveBerth": "يوافق Berth طلب",
+						"approvedBerth": "تمت الموافقة على الطلب Berth",
+						"cancel": "إلغاء",
+						"delete": "حذف",
+						"printExport": "طباعة / تصدير",
+						"save": "حفظ"
+					}
+				},
+				"bargeInfo": {
+					"addBargeBtn": "إضافة بارج",
+					"clickToAdd": "انقر فوق الزر لإضافة معلومات المداخلة",
+					"fieldLabel": {
+						"bargeIMO": "Barge IMO / Official Num",
+						"bargeName": "اسم البارجة",
+						"bargeType": "نوع البارجة",
+						"grt": "GRT",
+						"loa": "LOA (قدم)"
+					},
+					"title": "معلومات البارجة"
+				},
+				"cargoBerthAssg": {
+					"addCargoBtn": "أضف البضائع",
+					"clickToAdd": "انقر فوق الزر لإضافة معلومات الشحن",
+					"fieldLabel": {
+						"berth": "رصيف",
+						"footmark": "خط القدم (قدم)",
+						"footmarkAssg": "احالة خط القدم",
+						"bow": "ينحني",
+						"stern": "صارم"
+					},
+					"helperText": {
+						"and": "و",
+						"betweenValues": "يجب ان يكون وسطا",
+						"mustBeNumber": "يجب أن يكون Footmark رقم"
+					},
+					"table": {
+						"head": {
+							"cargo": "البضائع",
+							"delete": "حذف",
+							"direction": "الاتجاه",
+							"shipper": "الشاحن / المستقبل",
+							"weight": "الوزن (S / T)"
+						}
+					},
+					"title": "تخصيص البضائع والرصيف"
+				},
+				"notes": {
+					"fieldLabel": {
+						"additionalInfo": "معلومة اضافية"
+					},
+					"title": "معلومة اضافية"
+				},
+				"requestingCompanyInfo": {
+					"fieldLabel": {
+						"contactPersonEmail": "البريد الإلكتروني لشخص الاتصالl",
+						"contactPersonName": "اسم شخص الاتصال",
+						"contactPersonPhone": "هاتف شخص الاتصال",
+						"reqCompany": "الشركة الطالبة"
+					},
+					"title": "طلب معلومات الشركة"
+				},
+				"schedule": {
+					"title": "الجدول الزمني",
+					"ETA": "إيتا *",
+					"ETD": "هتيد *",
+					"ATA": "أتيأ",
+					"ATD": "أتيأ"
+				},
+				"services": {
+					"fieldLabel": {
+						"comments": "تعليقات"
+					},
+					"title": "خدمات"
+				},
+				"vesselInfo": {
+					"fieldLabel": {
+						"draft": "المسودة (قدم)",
+						"inward": "إلى الداخل",
+						"loa": "لوأ (قدم)",
+						"mmsiNumber": "رقم ممسأنا",
+						"officialNumber": "أناا / الرقم الرسمي",
+						"outward": "الخارج",
+						"primaryActivity": "نشاط السفينة الأساسية",
+						"vesselName": "اسم السفينة أو القاطرة",
+						"vesselType": "نوع السفينة",
+						"voyageNumber": "رقم الرحلة",
+						"grt": "جيصتي"
+					},
+					"title": "معلومات السفينة"
+				}
+			},
+			"groupSorter": {
+				"dialog": {
+					"Cancel": "إلغاء",
+					"ok": "حسنا"
+				}
+			},
+			"lookupManager": {
+				"berthSettings": {
+					"addBerthGroup": "إضافة مجموعة مرسى جديد",
+					"berthForm": {
+						"addBerth": "إضافة رصيف جديد",
+						"berthGroup": "مجموعة مرسى",
+						"delete": "حذف",
+						"dialog": {
+							"cancelBtn": "إلغاء",
+							"confirmBtn": "تأكيد",
+							"textContent": "هل أنت متأكد أنك تريد حذف مجموعة الرصيف هذه؟ سيؤدي القيام بذلك إلى حذف جميع الولادات المرتبطة.",
+							"title": "حذف مجموعة Berth"
+						},
+						"save": "حفظ",
+						"table": {
+							"head": {
+								"begininngFT": "بداية خط القدم (قدم) *",
+								"berthName": "اسم الرصيف *",
+								"delete": "حذف",
+								"endFT": "نهاية الحاشية (قدم) *",
+								"zone": "المنطقة*"
+							}
+						}
+					},
+					"title": "إعدادات الرصيف"
+				},
+				"fieldLabel": {
+					"barge": {
+						"imoNumber": "IMO / الرقم الرسمي",
+						"loa": "LOA (قدم)",
+						"name": "الاسم",
+						"type": "نوع"
+					},
+					"contactFields": {
+						"companyName": "اسم الشركة",
+						"email": "بريد الالكتروني",
+						"firstName": "الاسم الأول",
+						"lastName": "اسم العائلة",
+						"phone": "هاتف"
+					},
+					"shipperReceiver": {
+						"companyName": "اسم الشركة"
+					},
+					"vessel": {
+						"draft": "المسودة (قدم)",
+						"imoNumber": "IMO / الرقم الرسمي",
+						"loa": "LOA (قدم)",
+						"mmsiNumber": "رقم MMSI",
+						"name": "الاسم",
+						"type": "نوع"
+					},
+					"vesselActivity": {
+						"activity": "نشاط"
+					},
+					"vesselType": {
+						"name": "الاسم"
+					}
+				},
+				"listItemText": {
+					"agent": "وكيل / مالك",
+					"bargeInfo": "معلومات البارجة",
+					"berthSettings": "إعدادات الرصيف",
+					"lookupTables": "جداول البحث",
+					"manage": "يدير",
+					"requestor": "الطالب",
+					"shipperReceiver": "جهاز استقبال الشاحن",
+					"stevedores": "تحميل والتفريغ",
+					"vesselActivity": "نشاط السفينة",
+					"vesselInfo": "السفينة المعلومات",
+					"vesselType": "نوع السفينة"
+				},
+				"lookUp": {
+					"addRecord": "يسجل %{count} اضف جديد",
+					"delete": "حذف",
+					"manageType": "يدير %{count}",
+					"requiredFields": "* الحقول المطلوبة",
+					"searchBy": "البحث عن طريق"
+				}
+			},
+			"pendingAssignment": {
+				"pendingPlural": "الطلبات المعلقة %{count}",
+				"pendingSingular": "طلب معلق %{count}"
+			}
+		}
+	}
+}

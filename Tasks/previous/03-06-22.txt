@@ -1,0 +1,15 @@
+CB2-5372 - Access Point - Right Click Cluster
+- Went through ContextMenu codeflow implementation and sorted out ways to add accessPoint cluster.
+- Added new property "accessPoint" to config object in order to load accessPoint clusters in map.
+- Worked on adding "mdiAccessPoint" from @mdi/js to display accessPoint icon in contextMenu.
+- Worked on adding translations for accessPoint label in global json.
+
+CB2-5370 - Arabic - Map Markers
+- Went through react-mapbox-gl/mapbox official docs and sorted out ways to implement RTL Styling support in Mapbox arabic labels.
+- Worked on adding "setRTLTextPlugin" in Mapbase to apply RTL styling for arabic texts and tested workflow for below apps:
+    - events-app
+    - cameras-app
+    - facilities-app
+    - map-app
+    - replay-app
+    - berth-schedule

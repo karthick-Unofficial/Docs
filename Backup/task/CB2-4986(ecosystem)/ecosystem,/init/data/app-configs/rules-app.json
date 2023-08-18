@@ -1,0 +1,65 @@
+{
+    "name": "Rules App",
+    "clientId": "b78360a7-5512-4f1b-a3aa-35e594ae8074",
+    "clientSecret": "94881efe-146b-4e6a-a15b-9a28e192af89",
+    "debugPort": 5896,
+    "properties": {
+        "natsServer": "nats://phoenix-nats:4222",
+        "rethinkServer": "phoenix-rethinkdb:28015"
+    },
+    "clientConfig": {
+        "supportEmail": {
+            "address": "c2support@aressecuritycorp.com",
+            "subject": "Avert C2 Support Issue",
+            "body": "[Use this space to describe the issue you are experiencing.]"
+        },
+        "alertGeneratorConfig": {
+            "types": [
+                {
+                    "id": "enter",
+                    "label": "Zone Entry",
+                    "summary": "[track] entered [shape]."
+                },
+                {
+                    "id": "exit",
+                    "label": "Zone Exit",
+                    "summary": "[track] exited [shape]."
+                },
+                {
+                    "id": "demo",
+                    "label": "Demo Alert",
+                    "summary": "Something crazy happened."
+                },
+                {
+                    "id": "test",
+                    "label": "Test Rule",
+                    "summary": "Some kind of testing rule happened."
+                },
+                {
+                    "id": "loiter",
+                    "label": "Loiter Rule",
+                    "summary": "[track] loitered in [shape] for longer than 5 minutes."
+                },
+                {
+                    "id": "security",
+                    "label": "Security Violation",
+                    "summary": "Some kind of security violation."
+                }
+            ]
+        }
+    },
+    "processes": [
+        {
+            "id": "rule-analyzer",
+            "name": "Rule Analyzer",
+            "entrypoint": "ruleAnalyzer.js",
+            "args": {}
+        },
+        {
+            "id": "loiter-activity-generator",
+            "name": "Loiter Activity Generator",
+            "entrypoint": "loiterActivityGenerator.js",
+            "args": {}
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+Today's Task:
+- Went through Lists app code flow implementation to figure out adding attachment workflow in Lists Feed.
+- Worked on adding Shared Facilities list under My Facilities to split shared facilities and my Facilities in facilities-app. 
+- Went through spotlight implementation in map-gl app to figure out issues faced while resuming spotlight and also tested worflow.

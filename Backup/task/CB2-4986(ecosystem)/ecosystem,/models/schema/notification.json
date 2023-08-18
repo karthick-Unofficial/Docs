@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "http://commandbridge.com/ecosystem/notification.json",
+    "type": "object",
+    "required": [
+        "activityId",
+        "closed",
+        "isPriority",
+        "message",
+        "userId"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "activityId": {
+            "description": "",
+            "type": "string"
+        },
+        "closed": {
+            "description": "",
+            "type": "boolean"
+        },
+        "createdDate": {
+            "description": "",
+            "date": true
+        },
+        "id": {
+            "description": "",
+            "type": "string"
+        },
+        "isPriority": {
+            "description": "",
+            "type": "boolean"
+        },
+        "lastModifiedDate": {
+            "description": "",
+            "date": true
+        },
+        "message": {
+            "description": "",
+            "type": "string"
+        },
+        "userId": {
+            "description": "",
+            "type": "string"
+        },
+        "viewed": {
+            "description": "",
+            "type": "boolean"
+        },
+        "escalationEvent": {
+            "description": "",
+            "type": "string"
+        },
+        "audioSettings": {
+            "description": "",
+            "type": "object"
+        },
+        "dismissId": {
+            "description": "",
+            "type": "string"
+        },
+        "history": {
+            "description": "",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "closed": {
+                        "type": "boolean"
+                    },
+                    "type": {
+                        "date": true
+                    }
+                }
+            }
+        }
+    }
+}

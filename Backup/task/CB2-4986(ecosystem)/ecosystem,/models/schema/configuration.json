@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/configuration.json",
+  "type": "object",
+  "required": [ "appId", "config" ],
+  "additionalProperties": false,
+  "properties": {
+    "appId": { "description": "", "type": "string" },
+    "config": { "description": "", "type": "object" }
+  }
+}

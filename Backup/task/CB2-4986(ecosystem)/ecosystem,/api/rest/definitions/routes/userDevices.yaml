@@ -1,0 +1,123 @@
+userDevices:
+  /userDevices:
+    post:
+      description: Create a new user device
+      operationId: create
+      tags:
+        - User Devices
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                deviceId:
+                  type: string
+                settings:
+                  type: object
+                  properties:
+                    pushNotificationsEnabled:
+                      type: boolean
+                token:
+                  type: string
+                userId:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  userId:
+                    type: string
+  /userDevices/{deviceId}:
+    get:
+      description: Get a user device by ID
+      operationId: getByDeviceId
+      tags:
+        - User Devices
+      parameters:
+        - name: deviceId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  deviceId:
+                    type: string
+                  userId:
+                    type: string
+    put:
+      description: Update a device by ID
+      operationId: update
+      tags:
+        - User Devices
+      parameters:
+        - name: deviceId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                deviceId:
+                  type: string
+                settings:
+                  type: object
+                  properties:
+                    pushNotificationsEnabled:
+                      type: boolean
+                token:
+                  type: string
+                userId:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                  deviceId:
+                    type: string
+    delete:
+      description: Delete a device by ID
+      operationId: delete
+      tags:
+        - User Devices
+      parameters:
+        - name: deviceId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  deleted:
+                    type: string
+                  errors:
+                    type: string

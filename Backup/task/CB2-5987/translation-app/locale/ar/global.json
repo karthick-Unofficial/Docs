@@ -1,0 +1,2018 @@
+{
+	"appId": "global",
+	"locales": "ar",
+	"translations": {
+		"ar": {
+			"berth-schedule-app": {
+				"activities": {
+					"berthAssignmentModel": {
+						"approve": {
+							"summary": {
+								"approvedBy": "تمت الموافقة عليه من قبل",
+								"at": "في",
+								"berthApproved": "تمت الموافقة على تخصيص الرصيف.",
+								"berthAssignmentFor": "مهمة مرسى لr"
+							}
+						},
+						"create": {
+							"summary": {
+								"at": "في",
+								"berthAssignmentFor": "مهمة مرسى لr",
+								"createdBy": "انشأ من قبل"
+							}
+						},
+						"internalCreate": {
+							"summary": {
+								"at": "في",
+								"berthAssignmentFor": "مهمة مرسى لr",
+								"createdBy": "تم إنشاؤه بواسطة Berth Request App."
+							}
+						},
+						"update": {
+							"summary": {
+								"at": "في",
+								"berthAssignmentFor": "مهمة مرسى لr",
+								"updatedBy": "updated by"
+							}
+						}
+					},
+					"vesselBerthingEventProcessor": {
+						"summary": {
+							"arrivedAt": "وصل في",
+							"committed": "ارتكب انتهاكًا أمنيًا عن طريق الدخول",
+							"departed": "الراحل"
+						}
+					}
+				},
+				"pdfTemplates": {
+					"vesselBerthReports": {
+						"pdfBody": {
+							"additionalInformation": "معلومة اضافية",
+							"additionalNotes": "ملاحظات إضافية",
+							"agentOwnerInformation": {
+								"agentOwnerInformation": "معلومات الوكيل / المالك",
+								"fieldKeyRow": {
+									"contactPerson": "الشخص الذي يمكن الاتصال به",
+									"contactPersonEmail": "البريد الإلكتروني لجهة الاتصال",
+									"contactPersonPhone": "هاتف جهة الاتصال",
+									"requestingCompany": "الشركة الطالبة"
+								}
+							},
+							"barge": {
+								"bargeInformation": "معلومات البارجة",
+								"fieldKeyRow": {
+									"bargeIMOorOfficialNumber": "Barge IMO أو الرقم الرسمي",
+									"bargeName": "اسم البارجة",
+									"bargeType": "نوع البارجة",
+									"grt": "جيصتي",
+									"loa": "لوأ"
+								}
+							},
+							"cargo": {
+								"fieldKeyRow": {
+									"cargo": "شحن",
+									"inboundOutbound": "واردة / صادرة",
+									"shipperReceiver": "الشاحن / المتلقي",
+									"weightST": "الوزن S / T."
+								}
+							},
+							"cargoAndBerth": {
+								"berth": "رصيف",
+								"bow": "قوس",
+								"cargoAndBerthAssignment": "تخصيص البضائع والرصيف",
+								"footmark": "خط القدم (قدم)",
+								"stern": "صارم"
+							},
+							"schedule": {
+								"fieldKeyRow": {
+									"ATA": "فيأ",
+									"ATD": "فيد",
+									"ETA": "إيتا",
+									"ETD": "هتيد"
+								},
+								"schedule": "برنامج"
+							},
+							"vessel": {
+								"checkboxContainer": {
+									"inward": "إلى الداخل",
+									"outward": "الخارج"
+								},
+								"fieldKeyRow": {
+									"IMOOfficialNumber": "IMO / الرقم الرسمي",
+									"MMSINumber": "رقم MMSI",
+									"draft": "المسودة (قدم)",
+									"grt": "جيصتي",
+									"loa": "LOA (قدم)",
+									"primaryVesselActivity": "نشاط السفينة الأساسية",
+									"vesselOrTugName": "اسم السفينة أو القاطرة",
+									"vesselType": "نوع السفينة",
+									"voyageNumber": "رقم الرحلة"
+								},
+								"vesselInformation": "معلومات السفينة"
+							}
+						},
+						"vesselBerthReport": "تقرير رصيف السفينة"
+					}
+				}
+			},
+			"ecosystem": {
+				"activities": {
+					"accessPointModel": {
+						"update": {
+							"summary": {
+								"updated": "محدث"
+							}
+						}
+					},
+					"activityModel": {
+						"addComment": {
+							"summary": {
+								"commentedOn": "علق على"
+							}
+						}
+					},
+					"attachmentModel": {
+						"create": {
+							"summary": {
+								"uploaded": "تم الرفع"
+							}
+						},
+						"delete": {
+							"summary": {
+								"removed": "إزالة"
+							}
+						},
+						"remove": {
+							"summary": {
+								"removed": "إزالة"
+							}
+						}
+					},
+					"cameraGroupModel": {
+						"create": {
+							"summary": {
+								"created": "خلقت"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "محدث"
+							}
+						}
+					},
+					"cameraModel": {
+						"releaseSlewLock": {
+							"summary": {
+								"updated": "محدث"
+							}
+						},
+						"setSlewLock": {
+							"summary": {
+								"updated": "محدث"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "محدث"
+							}
+						}
+					},
+					"dailyBriefModel": {
+						"create": {
+							"summary": {
+								"inDailyBrief": "في موجز يومي",
+								"posted": "نشر"
+							}
+						},
+						"update": {
+							"summary": {
+								"inDailyBrief": "في موجز يومي",
+								"updated": "محدث"
+							}
+						}
+					},
+					"entityCollectionModel": {
+						"addMembers": {
+							"summary": {
+								"added": "مضاف",
+								"anEntity": "كيان",
+								"entities": "جهات",
+								"to": "ل",
+								"toCollection": "للمجموعة:"
+							}
+						},
+						"create": {
+							"summary": {
+								"added": "مضاف",
+								"anEntity": "كيان",
+								"entities": "جهات",
+								"to": "ل",
+								"toCollection": "للمجموعة:"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "تحديث"
+							}
+						},
+						"delete": {
+							"summary": {
+								"deleted": "محذوف"
+							}
+						},
+						"restore": {
+							"summary": {
+								"restored": "استعاده"
+							}
+						},
+						"removeMembers": {
+							"summary": {
+								"anEntity": "كيان",
+								"entities": "جهات",
+								"from": "من",
+								"removed": "إزالة",
+								"fromCollection": "من المجموعة:"
+							}
+						}
+					},
+					"entityModel": {
+						"addComment": {
+							"summary": {
+								"commentedOn": "علق على"
+							}
+						}
+					},
+					"eventsModel": {
+						"addComment": {
+							"summary": {
+								"commentedOn": "علق على"
+							}
+						},
+						"addProximity": {
+							"summary": {
+								"addedNew": "وأضاف القرب الجديد"
+							}
+						},
+						"create": {
+							"summary": {
+								"created": "خلقت."
+							}
+						},
+						"deleteList": {
+							"summary": {
+								"removedFrom": "تمت إزالته من هذا الحدث"
+							}
+						},
+						"deleteProximity": {
+							"summary": {
+								"delete": "القرب المحذوف"
+							}
+						},
+						"enableEvent": {
+							"summary": {
+								"updated": "محدث"
+							}
+						},
+						"pinEntities": {
+							"summary": {
+								"addedToEvent": "أضيفت إلى الحدث:"
+							}
+						},
+						"pinList": {
+							"summary": {
+								"addedToEvent": "أضيفت إلى الحدث:"
+							}
+						},
+						"unpinEntity": {
+							"summary": {
+								"removedEvent": "تمت إزالته من الحدث:"
+							}
+						},
+						"update": {
+							"summary": {
+								"update": "محدث"
+							}
+						},
+						"updateList": {
+							"summary": {
+								"renameList": "أعاد تسمية القائمة",
+								"to": "ل"
+							}
+						},
+						"updateProximity": {
+							"summary": {
+								"updated": "القرب المحدث"
+							}
+						}
+					},
+					"facilitiesModel": {
+						"create": {
+							"summary": {
+								"added": "مضاف",
+								"created": "خلقت",
+								"floorPlan": "مخطط الطابق",
+								"to": "ل"
+							}
+						},
+						"createFloorplan": {
+							"summary": {
+								"addFloorPlan": "وأضاف خطة الكلمة",
+								"toFacility": "لمنشأة"
+							}
+						},
+						"delete": {
+							"summary": {
+								"deleted": "تم الحذف",
+								"removed": "إزالة"
+							}
+						},
+						"deleteFloorplan": {
+							"summary": {
+								"fromFacility": "من المنشأة",
+								"removedFloorPlan": "خطة الكلمة التي تمت إزالتها"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "محدث"
+							}
+						},
+						"updateFloorPlan": {
+							"summary": {
+								"onFacility": "في المنشأة",
+								"updatedFloorPlan": "خطة الكلمة المحدثة"
+							}
+						},
+						"updateFloorplanOrders": {
+							"summary": {
+								"updatedFloorPlan": "طلب مخطط الطابق المحدث للمنشأة"
+							}
+						}
+					},
+					"linkedEntitiesModel": {
+						"create": {
+							"created": "خلقت"
+						},
+						"delete": {
+							"deleted": "تم الحذف"
+						},
+						"update": {
+							"updated": "محدث"
+						}
+					},
+					"shapeModel": {
+						"create": {
+							"summary": {
+								"created": "خلقت"
+							}
+						},
+						"delete": {
+							"summary": {
+								"deleted": "تم الحذف"
+							}
+						},
+						"restore": {
+							"summary": {
+								"restored": "رمم"
+							}
+						},
+						"update": {
+							"summary": {
+								"updated": "محدث"
+							}
+						}
+					}
+				},
+				"email": {
+					"activeDirectoryPasswordReset": {
+						"htmlpug": {
+							"contactSupport": "اتصل بالدعم.",
+							"emailBody1": "طلبت أنت أو أي شخص آخر تغيير كلمة مرور AVERT C2 الخاصة بك ، ولكن حسابك مرتبط بحساب Active Directory. إذا كنت ترغب في تغيير كلمة المرور الخاصة بك ، فستحتاج إلى تغييرها في حساب Active Directory الخاص بك.",
+							"emailBody2": "إذا كنت بحاجة إلى مزيد من المساعدة ، يرجى الاتصال بالدعم.",
+							"emailHeader": "إعادة تعيين كلمة المرور ",
+							"help": "حتى نتمكن من المساعدة.",
+							"issues": "هل تواجه مشكلات؟ لو سمحت ",
+							"titleHead": "إعادة تعيين البريد الإلكتروني"
+						},
+						"subject": "اعد ضبط كلمه السر."
+					},
+					"passwordExpiringSoon": {
+						"htmlpug": {
+							"contactSupport": "اتصل بالدعم.",
+							"day": "يوم ",
+							"emailBody": "أنت تتلقى هذا البريد الإلكتروني لأن كلمة مرور AVERT C2 تنتهي صلاحيتها في ",
+							"help": "حتى نتمكن من المساعدة.",
+							"issues": "هل تواجه مشكلات؟ لو سمحت ",
+							"loginReset": "يرجى تسجيل الدخول وإعادة تعيين كلمة المرور الخاصة بك قبل انتهاء صلاحيتها.",
+							"passwordExpiring": "تنتهي صلاحية كلمة المرور قريبًا ",
+							"titleHead": "تنتهي صلاحية كلمة المرور قريبًا البريد الإلكتروني "
+						},
+						"subject": "تنتهي صلاحية كلمة المرور قريبًا "
+					},
+					"passwordReset": {
+						"htmlpug": {
+							"contactSupport": "اتصل بالدعم.",
+							"emailBody1": "أنت تتلقى هذا البريد الإلكتروني لأنك (أو أي شخص آخر) طلبت إعادة تعيين كلمة المرور لحسابك.",
+							"emailBody2": "انقر فوق الزر أدناه لإكمال العملية.",
+							"emailHeader": "إعادة تعيين كلمة المرور ",
+							"help": "حتى نتمكن من المساعدة.",
+							"instructions": "اتبع التعليمات الموجودة على الرابط لإعادة تعيين كلمة المرور الخاصة بك.",
+							"issues": "هل تواجه مشكلات؟ لو سمحت ",
+							"reset": "إعادة ضبط",
+							"titleHead": "إعادة تعيين البريد الإلكتروني"
+						},
+						"subject": "اعد ضبط كلمه السر."
+					},
+					"setEmail": {
+						"htmlpug": {
+							"Congratulations": "تهانينا",
+							"congrats": "تهانينا!",
+							"contactSupport": "اتصل بالدعم",
+							"emailBody": "على حساب AVERT C2 الجديد الخاص بك! انقر فوق الزر أدناه لإكمال التسجيل الخاص بك. لك",
+							"havingIssues": "هل تواجه مشكلات؟ لو سمحت",
+							"help": "حتى نتمكن من المساعدة.",
+							"instructions": "اتبع التعليمات الموجودة على الرابط لتعيين كلمة المرور الخاصة بك.",
+							"setPassword": "ضبط كلمة السر",
+							"title": "تعيين البريد الإلكتروني",
+							"userNameIs": "اسم المستخدم هو"
+						},
+						"subject": "تهانينا على حساب AVERT C2 الجديد الخاص بك!"
+					},
+					"systemNotification": {
+						"email": {
+							"contactSupport": "اتصل بالدعم",
+							"havingIssues": "هل تواجه مشكلات؟ لو سمحت",
+							"help": "حتى نتمكن من المساعدة.",
+							"newNotification": "إعلام جديد",
+							"title": "البريد الإلكتروني الإخطار",
+							"viewDetails": "عرض التفاصيل"
+						},
+						"subject": "لديك إشعار جديد!"
+					}
+				},
+				"health": {
+					"cpu": {
+						"averageCPUof": "متوسط ​​وحدة المعالجة المركزية",
+						"averageCPUover": "متوسط ​​CPU خلال الماضي",
+						"minsBelowCPU": "الدقائق أقل من حد CPU البالغ",
+						"minsExceedCPU": "دقيقة تتجاوز حد CPU البالغ",
+						"noCurrentStats": "لا توجد إحصاءات وحدة المعالجة المركزية الحالية المتاحة",
+						"overLast": "خلال الماضي",
+						"serverCPU": "وحدة المعالجة المركزية للخادم",
+						"unableToFetchCPU": "تعذر جلب إحصائيات وحدة المعالجة المركزية"
+					},
+					"customAverage": {
+						"average": "معدل",
+						"forFeed": "للتغذية",
+						"last": "الاخير",
+						"metricsCheck": "لا توجد مقاييس الخلاصة الحالية المتاحة",
+						"minsAbove": "الدقائق أعلى من الحد الأدنى المسموح به وهو",
+						"minsBelow": "الدقائق أقل من الحد الأقصى المسموح به وهو",
+						"minsClimbed": "صعدت الدقائق فوق الحد الأقصى المسموح به وهو",
+						"minsDropped": "انخفضت الدقائق إلى أقل من الحد الأدنى المسموح به وهو",
+						"minsForFeed": "دقائق للتغذية",
+						"minsNeed": "تحتاج الدقائق إلى البقاء أقل من الحد الأقصى",
+						"of": "من",
+						"overLast": "خلال الماضي",
+						"sysProcessorCheck": "تحقق مما إذا كان معالج النظام الخارجي قيد التشغيل وما إذا كان فهرس المقاييس متاحًا",
+						"unableToFetch": "تعذر جلب مقاييس الخلاصة"
+					},
+					"customCount": {
+						"atLeast": "على الاكثر",
+						"atMost": "في الغالب",
+						"inLast": "في الختام",
+						"max": "أقصى",
+						"metricBeatCheck": "تحقق مما إذا كان metricbeat قيد التشغيل وما إذا كان مؤشر metrics- * متاحًا",
+						"metricsCheck": "لا توجد مقاييس الخلاصة الحالية المتاحة",
+						"min": "الحد الأدنى",
+						"minsAbove": "دقيقة فوق الحد الأدنى المسموح به",
+						"minsBelow": "الدقائق أقل من الحد الأقصى المسموح به",
+						"minsDropped": "انخفضت الدقائق أقل من الحد الأدنى المسموح به وهو",
+						"minsRose": "ارتفع دقيقة فوق الحد الأقصى المسموح به",
+						"minutes": "الدقائق",
+						"mustProcess": "يجب معالجة",
+						"of": "من",
+						"unableToFetch": "تعذر جلب مقاييس الخلاصة"
+					},
+					"didNotRespond": "قاعدة البيانات لا تستجيب لطلب ping",
+					"elasticSearch": {
+						"elasticSearchAvail": "توافر Elasticsearch",
+						"elasticSearchDesc": "يشير إلى ما إذا كان البحث المطاطي متاحًا أم لا"
+					},
+					"feed": "يطعم",
+					"feedLatency": {
+						"avgLatInLast": "متوسط ​​زمن الوصول في الماضي",
+						"avgLatencyLast": "متوسط وقت الاستجابة الأخير",
+						"avgLatencyOf": "متوسط زمن الوصول",
+						"metricBeatCheck": "تحقق مما إذا كان معالج النظام الخارجي قيد التشغيل وما إذا كان فهرس المقاييس متاحًا",
+						"minsBelow": "الدقائق أقل من الحد الأقصى المسموح به وهو",
+						"minsClimbed": "صعدت الدقائق فوق الحد الأقصى المسموح به وهو",
+						"minsForFeed": "دقائق للتغذية",
+						"minsToStay": "يجب أن تظل الدقائق أقل من وقت الاستجابة الأقصى البالغ",
+						"ms": "آنسة",
+						"msForFeed": "مللي للتغذية",
+						"msOverLast": "مللي على مدى الماضي",
+						"noCurrentLatency": "لا تتوفر مقاييس الخلاصة الحالية للخلاصة",
+						"unableToFetch": "تعذر جلب مقاييس الخلاصة للخلاصة"
+					},
+					"fileSystem": {
+						"belowThreshold": "أقل من عتبة",
+						"diskUtilsOf": "استخدام القرص من",
+						"exceedsThresholdOf": "يتجاوز عتبة",
+						"lastReportedDisk": "آخر استخدام للقرص تم الإبلاغ عنه",
+						"noCurrentFileSystem": "لا توجد إحصاءات نظام الملفات الحالية المتاحة",
+						"serverFileSystem": "نظام ملفات الخادم",
+						"unableToFetchFile": "تعذر إحضار إحصاءات نظام الملفات"
+					},
+					"inTheLast": "في الاخير",
+					"memory": {
+						"averagedOver": "متوسط ​​خلال الماضي",
+						"avgMemoryOver": "متوسط ​​الذاكرة على مدى الماضي",
+						"currentMemoryOf": "استخدام الذاكرة الحالية لـ",
+						"minsBelowThreshold": "الدقائق أقل من عتبة",
+						"minsExceedThreshold": "دقيقة تتجاوز عتبة",
+						"noCurrentMemory": "لا توجد إحصاءات الذاكرة الحالية المتاحة",
+						"serverMemory": "ذاكرة الخادم",
+						"unableToFetchMemory": "تعذر جلب إحصائيات الذاكرة"
+					},
+					"metricbeatCheck": "تحقق مما إذا كان metricbeat قيد التشغيل وما إذا كان الفهرس متاحًا",
+					"minutes": "الدقائق)",
+					"redisHealth": {
+						"didNotRespond": "لم يستجب REDIS لطلب المعلومات",
+						"redisAvail": "توافر REDIS",
+						"redisDesc": "يشير إلى ما إذا كان REDIS متاحًا أم لا"
+					},
+					"rethink": {
+						"rethinkAvailability": "إعادة التفكير في توافر ديسيب",
+						"rethinkDesc": "يشير إلى ما إذا كان RethinkDB متاحًا أم ل"
+					},
+					"snapshot": {
+						"name": "لقطة الصحة",
+						"desc": "يؤكد أنه يتم إنشاء لقطات إعادة التشغيل وفقا للجدول الزمني المتوقع",
+						"esError": "خطأ غير متوقع في الاستعلام عن البحث المرن",
+						"noSnapshotData": "لا تتوفر بيانات لقطة",
+						"pm2Suggestion": "تأكد من تشغيل مهمة لقطة pm2",
+						"snapshotOlder": "أحدث لقطة أقدم من الحد الأقصى المسموح به",
+						"snapshotLess": "أحدث عمر لقطة أقل من الحد الأقصى المسموح به",
+						"minutes": "محضر"
+					},
+					"totalTxn": {
+						"inLast": "في الختام",
+						"metricBeatCheck": "تحقق مما إذا كان metricbeat قيد التشغيل وما إذا كان مؤشر metrics- * متاحًا",
+						"min": "الحد الأدنى",
+						"mins": "الدقائق",
+						"minsAbove": "دقيقة فوق الحد الأدنى المسموح به",
+						"minsDropped": "انخفضت الدقائق أقل من الحد الأدنى المسموح به وهو",
+						"mustProcess": "يجب معالجة على الأقل",
+						"noCurrentFeed": "لا تتوفر مقاييس الخلاصة الحالية للخلاصة",
+						"totalTxnCount": "إجمالي عدد المعاملات",
+						"totalTxnsCount": "إجمالي عدد المعاملات",
+						"transactions": "المعاملات",
+						"txnsInLast": "txn (s) في الماضي",
+						"unableToFetch": "تعذر جلب مقاييس الخلاصة للخلاصة"
+					},
+					"transRateCheck": {
+						"currentTxnPerSec": "txns الحالية / ثانية",
+						"currentTxnRate": "معدل المعاملة الحالية",
+						"currentTxnRateOf": "معدل TXN الحالي",
+						"droppedBelow": "انخفض / ثانية إلى أقل من الحد الأدنى المسموح به وهو",
+						"metricBeatCheck": "تحقق مما إذا كان metricbeat قيد التشغيل وما إذا كان مؤشر metrics- * متاحًا",
+						"noCurrentFeedsAvail": "لا تتوفر مقاييس الخلاصة الحالية للخلاصة",
+						"transAbove": "/ ثانية أعلى أو بالحد الأدنى المسموح به من",
+						"transPerSec": "txns / ثانية",
+						"unableToFetch": "تعذر جلب مقاييس الخلاصة للخلاصة"
+					}
+				}
+			},
+			"orion-components": {
+				"CBComponents": {
+					"CBAppMenu": {
+						"logOut": "تسجيل الخروج",
+						"settings": "إعدادات",
+						"support": "الدعم"
+					},
+					"CBDialog": {
+						"confirmDelete": "تأكيد الحذف"
+					},
+					"CBCollection": {
+						"active": "نشيط",
+						"scheduled": "المقرر",
+						"closed": "مغلق",
+						"sharedBy": "نشر بواسطة"
+					},
+					"CBDock": {
+						"drawer": "الدرج!"
+					},
+					"CBFileLink": {
+						"dialog": {
+							"cancel": "إلغاء",
+							"delete": "حذف",
+							"textContent": "هل أنت متأكد أنك تريد حذف هذا المرفق؟",
+							"title": "احذف المرفق"
+						},
+						"downloadImg": "تنزيل الصورة"
+					},
+					"CBList": {
+						"helpers": {
+							"nameNotFound": "الاسم غير موجود"
+						}
+					},
+					"CBNewWindow": {
+						"newWindow": "نافذة جديدة"
+					},
+					"CBSearchField": {
+						"searchField": {
+							"clear": "(%{count}) مسح"
+						},
+						"searchSelectField": {
+							"noResults": "لا نتائج"
+						}
+					},
+					"CBTable": {
+						"attachments": "المرفقات",
+						"setNow": "تعيين الآن",
+						"viewNotes": "عرض الملاحظات"
+					},
+					"DateTime": {
+						"cancel": "إلغاء",
+						"clear": "واضح",
+						"ok": "حسنا"
+					},
+					"icons": {
+						"target": {
+							"targettingIcon": "الهدف أيقونة"
+						}
+					},
+					"video": {
+						"videoPlayer": {
+							"camInDock": "الكاميرا في قفص الاتهام",
+							"camInModal": "الكاميرا في مشروط"
+						},
+						"webRTCPlayer": {
+							"camProblem": "واجهت الكاميرا مشكلة.",
+							"unableToAccess": "تعذر الوصول إلى دفق الكاميرا. عنوان URL المقدم غير صالح."
+						},
+						"wsImagePlayer": {
+							"encounteredText": "واجهت الكاميرا مشكلة."
+						}
+					}
+				},
+				"appMenu": {
+					"main": {
+						"ecoAdmin": "مسؤول النظام البيئي",
+						"emailSupport": "دعم البريد الإلكتروني",
+						"home": "منزل",
+						"logOut": "تسجيل الخروج",
+						"orgAdmin": "مدير منظمة",
+						"settings": "إعدادات",
+						"support": "الدعم"
+					}
+				},
+				"appBar": {
+					"optionsDrawer": {
+						"camera": "FOVs الكاميرا",
+						"baseMap": "الخريطة الأساسية",
+						"mapLabels": "تسميات الخريطة",
+						"mapOverlays": "تراكبات الخريطة",
+						"nauticalCharts": "مخططات بحرية",
+						"roadsLabels": "الطرق والتسميات",
+						"spotlightProx": {
+							"defaultProx": "القرب الافتراضي",
+							"errorText": {
+								"invalidProx": "قيمة القرب غير صالحة",
+								"limitedValue": "يجب أن تقتصر القيمة على 3 منازل عشرية"
+							},
+							"km": "كيلومتر",
+							"mi": "ميل",
+							"title": "قرب الضوء"
+						},
+						"weatherRadar": "رادار الطقس",
+						"coordsOnCursor": "ينسق على المؤشر"
+					}
+				},
+				"contextPanel": {
+					"openListPanel": "فتح لوحة القائمة",
+					"openProfile": "فتح ملف التعريف",
+					"viewMap": "إعرض الخريطة"
+				},
+				"date": {
+					"full": "MM/DD/YYYY hh:mm A z",
+					"full24-hour": "MM/DD/YYYY HH:mm z",
+					"long": "MMMM D، YYYY",
+					"mid": "MM/DD/YYYY",
+					"min": "MMM D",
+					"short": "MMM D، YYYY"
+				},
+				"dock": {
+					"cameras": {
+						"camDockModule": {
+							"addDynamic": "إضافة %{primaryValue} %{secondaryValue}",
+							"addStatic": "إضافة %{primaryValue} كاميرا",
+							"replaceWith": "استبدل ب %{count}"
+						},
+						"dockedCam": {
+							"hideControls": "إخفاء الضوابط",
+							"showControls": "إظهار الضوابط"
+						},
+						"dockedControls": {
+							"mapLocation": "اختر أقرب كاميرا إلى خريطة الموقع",
+							"or": "أو",
+							"searchForCam": "البحث عن الكاميرا",
+							"selectNearestCam": "انقر على الخريطة لتحديد أقرب كاميرا"
+						}
+					},
+					"dockWrapper": {
+						"accept": "قبول",
+						"acknowledge": "يقر",
+						"alerts": "التنبيهات",
+						"decline": "رفض",
+						"ok": "حسنا",
+						"redirectLogin": "انتهت صلاحية جلسة العمل الخاصة بك. ستتم إعادة توجيهك إلى صفحة تسجيل الدخول.",
+						"sessionExpired": "انتهت الجلسة",
+						"userAgreement": "اتفاقية المستخدم"
+					},
+					"notifications": {
+						"main": {
+							"archiveEmpty": "أرشيفك فارغ",
+							"checkNetConn": "يرجى التحقق من اتصال الشبكة الخاص بك.",
+							"dismissAll": "رفض جميع",
+							"errorOcc": "حدث خطأ.",
+							"loading": "جار التحميل...",
+							"noNotifications": "ليس لديك حاليا أي إخطارات.",
+							"viewActive": "عرض نشط",
+							"viewArchive": "عرض الأرشيف"
+						}
+					},
+					"shared": {
+						"newNotificationItem": {
+							"cancelled": "ألغيت",
+							"undo": "تراجع"
+						}
+					},
+					"statusBoard": {
+						"title": "مجلس حالة التشغيل"
+					},
+					"systemHealth": {
+						"errorCard": {
+							"errorText": "حدث خطأ أثناء استرداد سلامة النظام"
+						},
+						"server": {
+							"coreSystem": {
+								"databases": {
+									"elasticSearchAvail": "توافر Elasticsearch",
+									"rethinkAvail": "إعادة التفكير في توافر ديسيبل",
+									"title": "قواعد بيانات"
+								},
+								"ecoCore": {
+									"ecoAvail": "توافر النظام البيئي",
+									"extSystem": "معالج كيان النظام الخارجي",
+									"redisAvail": "توافر Redis",
+									"shapeActivity": "مولد نشاط الشكل",
+									"title": "النظام البيئي / الأساسية"
+								},
+								"title": "النظام الأساسي"
+							},
+							"linkedEco": {
+								"all": "الكل",
+								"linkedEcoAvail": "توافر النظام البيئي المرتبط",
+								"title": "النظم البيئية المرتبطة"
+							},
+							"myApps": {
+								"agentPortal": "توفر بوابة الوكيل",
+								"appAvail": "توفر التطبيق",
+								"apps": {
+									"berthSchedule": "تطبيق رصيف الجدول",
+									"cameraWall": "تطبيق جدار الكاميرا",
+									"camerasApp": "تطبيق الكاميرات",
+									"eventsApp": "تطبيق الأحداث",
+									"lawEnforcement": "تطبيق البحث عن تطبيق القانون",
+									"listsApp": "يسرد التطبيق",
+									"mapApp": "تطبيق الخرائط",
+									"reportsApp": "تطبيق التقارير",
+									"rulesApp": "قواعد التطبيق",
+									"settingsApp": "تطبيق الإعدادات"
+								},
+								"berthingEvent": "معالج حدث الرسو",
+								"dwellTime": "معالج الوقت يسكن",
+								"feedHistory": "معالج محفوظات التغذية",
+								"gisAvail": "توافر خدمة نظم المعلومات الجغرافية",
+								"loiterActivity": "مولد نشاط Loiter",
+								"ruleAnalyzer": "محلل القاعدة",
+								"slewLock": "مدير قفل عدد كبير",
+								"title": "تطبيقاتي",
+								"tripWire": "معالج نشاط Tripwire",
+								"zoneActivity": "معالج نشاط المنطقة"
+							},
+							"myFeeds": {
+								"averageLatency": "متوسط ​​وقت الاستجابة",
+								"recentTransactions": "التحويلات الاخيرة",
+								"title": "موجز ويب الخاص بي"
+							},
+							"noReportMsg": "لم يتم العثور على تقرير فحص صحي مطابق.",
+							"serverHealth": {
+								"serverCPU": "وحدة المعالجة المركزية للخادم",
+								"serverFileSys": "نظام ملفات الخادم",
+								"serverMemory": "ذاكرة الخادم",
+								"title": "صحة الخادم"
+							}
+						},
+						"systemHealthCard": {
+							"hide": "يخفي",
+							"linkedecosystems": "النظم البيئية المرتبطة",
+							"more": "أكثر",
+							"myapps": "تطبيقاتي",
+							"serverhealth": "سلامة الخادم"
+						},
+						"systemHealthItem": {
+							"error": "خطأ",
+							"lastUpdate": "آخر تحديث ",
+							"passed": "مرت"
+						},
+						"title": "صحة النظام"
+					},
+					"wavCam": {
+						"main": {
+							"selectWavCam": "حدد WavCam",
+							"wavCamLabels": "تسميات WavCam",
+							"wavCamOptions": "خيارات WavCam"
+						}
+					},
+					"unitsPanel": {
+						"title": "حالة الوحدة"
+					}
+				},
+				"errorBoundary": {
+					"errorOccurred": "حدث خطأ أثناء عرض هذا المكون."
+				},
+				"events": {
+					"closed": "مغلق ",
+					"started": "بدأت ",
+					"starts": "يبدأ ",
+					"today": " اليوم"
+				},
+				"map": {
+					"contextMenu": {
+						"main": {
+							"AccessPoints": "نقطة وصول",
+							"Cameras": "الكاميرات",
+							"Shapes": "الأشكال",
+							"Tracks": "المسارات",
+							"noActions": "لا توجد إجراءات متاحة"
+						},
+						"copyCoords": {
+							"label": "نسخ الإحداثيات",
+							"feedback": "نسخ!"
+						}
+					},
+					"controls": {
+						"gisControl": {
+							"gisCollection": {
+								"layer": "%{count} طبقة",
+								"layers": "٪{count} طبقات",
+								"manage": "يدير"
+							},
+							"gisDialog": {
+								"add": "يضيف",
+								"cancel": "إلغاء",
+								"fieldLabel": {
+									"authType": "نوع المصادقة",
+									"esriServiceEndpoint": "نقطة نهاية خدمة ESRI",
+									"password": "كلمة المرور",
+									"serviceName": "اسم الخدمة",
+									"token": "توكن",
+									"username": "اسم المستخدم"
+								},
+								"helperText": {
+									"exampleURL": "مثال URL: %{count}"
+								},
+								"menuItem": {
+									"login": "تسجيل الدخول",
+									"none": "لا شيء",
+									"token": "توكن"
+								},
+								"retry": "أعد المحاولة"
+							},
+							"gisManagement": {
+								"cancel": "إلغاء",
+								"confirm": "تأكيد",
+								"delete": "حذف",
+								"deleteConfirmation": "هل أنت متأكد أنك تريد حذف خدمة GIS هذه؟",
+								"fieldLabel": {
+									"authType": "نوع المصادقة",
+									"esriServiceEndpoint": "نقطة نهاية خدمة ESRI",
+									"password": "كلمة المرور",
+									"serviceName": "اسم الخدمة",
+									"token": "توكن",
+									"username": "اسم المستخدم"
+								},
+								"helperText": {
+									"exampleURL": "مثال URL: %{count}"
+								},
+								"menuItem": {
+									"login": "تسجيل الدخول",
+									"none": "لا شيء",
+									"token": "توكن"
+								},
+								"save": "حفظ"
+							},
+							"main": {
+								"addNewService": "أضف خدمة جديدة",
+								"gisServices": "لا يزال يتعين عليك إضافة أي خدمات GIS",
+								"title": "نظم المعلومات الجغرافية"
+							}
+						}
+					},
+					"helper": {
+						"toast": "يجب ألا تحتوي الأشكال على خطوط متقاطعة. يرجى تحديث الشكل لإزالة أي مسارات متداخلة."
+					},
+					"tools": {
+						"coordsOnCursor": {
+							"lat": "خط العرض",
+							"long": "خط الطول"
+						},
+						"distanceTool": {
+							"km": "كيلومتر",
+							"mi": "ميل",
+							"nm": "ميل بحري",
+							"path": " المسار"
+						},
+						"shapeSelect": {
+							"line": "خط",
+							"point": "نقطة",
+							"polygon": "مضلع"
+						},
+						"spotlightTool": {
+							"spotlightChip": {
+								"spotlight": "أضواء كاشفة %{count}"
+							}
+						},
+						"unitSelect": {
+							"kilometers": "كيلومترات",
+							"miles": "اميال",
+							"nauticalMiles": "أميال بحرية"
+						}
+					},
+					"layers": {
+						"trackHistoryInfo": {
+							"heading": "العنوان:",
+							"lat": "خط العرض:",
+							"lon": "خط الطول:",
+							"speed": "سرعة:"
+						}
+					}
+				},
+				"profiles": {
+					"accessPointProfile": {
+						"Dialog": {
+							"accId": "معرف نقطة الوصول",
+							"accName": "اسم نقطة الوصول",
+							"cancel": "يلغي",
+							"confirm": "يتأكد",
+							"desc": "وصف (اختياري)",
+							"editAcc": "تحرير نقطة الوصول",
+							"errorText": {
+								"lessThanFifty": "يجب أن تتكون أسماء نقاط الوصول من 50 حرفًا أو أقل",
+								"noName": "يجب أن يكون لنقطة الوصول اسم"
+							},
+							"type": "اكتب"
+						},
+						"accessControlWidget": {
+							"close": "إغلاق",
+							"lock": "قفل",
+							"open": "فتح",
+							"statusHeader": "الحالة: مغلق / مغلق",
+							"title": "الضوابط",
+							"unlock": "فتح"
+						},
+						"activities": "أنشطة",
+						"cameras": "الكاميرات",
+						"edit": "حرر",
+						"editProfileLayout": "تحرير تخطيط الملف الشخصي",
+						"facility": "امكانية",
+						"files": "الملفات",
+						"hide": "إخفاء",
+						"hideFOV": "إخفاء مجال الرؤية",
+						"linkedItems": "العناصر المرتبطة",
+						"liveCam": "الكاميرا الحية",
+						"map": "خريطة",
+						"mapLocationFOV": "الموقع على الخريطة ومجال الرؤية",
+						"pinTo": "دبوس ل",
+						"showFOV": "إظهار مجال الرؤية"
+					},
+					"alertProfile": {
+						"activeSpotlightsTxt": "قد يتم تنشيط 3 إضاءات فقط في وقت واحد",
+						"close": "إغلاق",
+						"escalate": "تصعيد",
+						"spotlight": "أضواء كاشفة"
+					},
+					"cameraProfile": {
+						"activities": "أنشطة",
+						"cameraDialog": {
+							"camId": "معرف الكاميرا",
+							"camName": "اسم الكاميرا",
+							"cancel": "إلغاء",
+							"confirm": "تأكيد",
+							"desc": "وصف (اختياري)",
+							"editCam": "تحرير الكاميرا",
+							"errorText": {
+								"lessThanFifty": "يجب أن تتكون أسماء الكاميرا من 50 حرفًا أو أقل",
+								"noName": "يجب أن يكون للكاميرات اسم"
+							},
+							"systemName": "اسم النظام",
+							"type": "نوع"
+						},
+						"edit": "حرر",
+						"editProfileLayout": "تحرير تخطيط الملف الشخصي",
+						"facility": "امكانية",
+						"files": "الملفات",
+						"hide": "إخفاء",
+						"hideFOV": "إخفاء مجال الرؤية",
+						"launch": "إطلاق",
+						"linkedItems": "العناصر المرتبطة",
+						"liveCam": "الكاميرا الحية",
+						"map": "خريطة",
+						"mapLocationFOV": "الموقع على الخريطة ومجال الرؤية",
+						"pinTo": "دبوس ل",
+						"showFOV": "إظهار مجال الرؤية"
+					},
+					"entityProfile": {
+						"entityDelete": {
+							"cancel": "إلغاء",
+							"confirmationText": "هل أنت متأكد أنك تريد حذف هذا الكيان؟",
+							"delete": "حذف"
+						},
+						"entityEdit": {
+							"edit": "حرر"
+						},
+						"entityShare": {
+							"cancel": "إلغاء",
+							"confirmationText": "هل أنت متأكد أنك تريد مشاركة هذا العنصر؟ ستؤدي مشاركة هذا العنصر إلى إتاحته لمؤسستك وأي منظمة في النظام البيئي مع تمكين نهج مشاركة نشط. يمكن لأي مستخدم مؤسسة لديه أذونات مناسبة عرض هذا العنصر والمساهمة فيه وتحريره.",
+							"share": "مشاركة",
+							"unshare": "عدم المشاركة",
+							"unshareEntity": "هل تريد عدم مشاركة هذا الكيان مع منظمتك؟"
+						},
+						"main": {
+							"activities": "أنشطة",
+							"alerts": "تنبيهات",
+							"cameras": "الكاميرات",
+							"delete": "حذف",
+							"details": "تفاصيل",
+							"edit": "حرر",
+							"editLayout": "تحرير تخطيط الملف الشخصي",
+							"files": "الملفات",
+							"hide": "إخفاء",
+							"marineTraffic": "تفاصيل حركة المرور البحرية",
+							"ok": "حسنا",
+							"pinTo": "دبوس ل",
+							"problemOccurred": "حدثت مشكلة أثناء التحقق من البيانات المرتبطة بهذا الشكل. لا يمكن إلغاء مشاركته في هذا الوقت.",
+							"rules": "قواعد",
+							"trackHistory": "تتبع التاريخ",
+							"droneAssociation": "جمعية الطائرات بدون طيار"
+						},
+						"shapeAssoc": {
+							"cannotBeHidden": "لا يمكن إخفاء هذا الشكل. يرتبط بشكل نشط بالقواعد التالية:",
+							"cannotDelete": "لا يمكن حذف هذا الشكل. يرتبط بشكل نشط بالقواعد التالية:",
+							"ok": "حسنا"
+						}
+					},
+					"eventProfile": {
+						"eventDialog": {
+							"cancel": "إلغاء",
+							"create": "إنشاء",
+							"fieldLabel": {
+								"description": "الوصف",
+								"endDate": "تاريخ الانتهاء",
+								"endTime": "وقت النهاية",
+								"endTimeText": "يجب أن يأتي وقت الانتهاء بعد وقت البدء.",
+								"eventName": "اسم الحدث",
+								"none": "لا شيء",
+								"startDate": "تاريخ البدء *",
+								"startTime": "وقت البدء *",
+								"template": "قالب",
+								"templateName": "اسم القالب"
+							},
+							"update": "تحديث"
+						},
+						"eventShareDialog": {
+							"cancel": "إلغاء",
+							"confirm": "تأكيد",
+							"noOrganizations": "لا توجد منظمات إضافية في النظام البيئي.",
+							"sharePromptEvent": "هل أنت متأكد أنك تريد مشاركة هذا الحدث؟ ستؤدي مشاركة هذا الحدث إلى جعله متاحًا بشكل دائم لمؤسستك.",
+							"sharePromptTemplate": "هل أنت متأكد أنك تريد مشاركة هذا النموذج؟ ستؤدي مشاركة هذا القالب إلى جعله متاحًا بشكل دائم لمؤسستك.",
+							"shareTitle": "مع المنظمات الأخرى في النظام البيئي؟ %{count} مشاركة"
+						},
+						"main": {
+							"activities": "الجدول الزمني للنشاط",
+							"cadDetails": "تفاصيل CAD",
+							"cameras": "الكاميرات",
+							"cancel": "إلغاء",
+							"confirm": "تأكيد",
+							"confirmationText": "هل أنت متأكد من حذف هذا الحدث؟",
+							"delete": "حذف",
+							"edit": "حرر",
+							"editProfileLayout": "تحرير تخطيط الملف الشخصي",
+							"equipment": "المعدات",
+							"eventLists": "قوائم الأحداث",
+							"files": "الملفات",
+							"launch": "إطلاق",
+							"favorite": "المفضلة",
+							"map": "مخطط الخريطة",
+							"mapPlanner": "مخطط الخريطة",
+							"notes": "ملحوظات",
+							"pinnedItems": "العناصر المثبتة",
+							"proximity": "القرب",
+							"report": "نقل",
+							"resources": "موارد",
+							"respondingUnits": "وحدات الاستجابة",
+							"secureShare": "المشاركة الآمنة",
+							"share": "مشاركة",
+							"shared": "مشترك",
+							"gateRunnerResponse": "استجابة عداء البوابة"
+						},
+						"components": {
+							"eventReopenAndClose": {
+								"reopen": "إعادة الفتح",
+								"close": "إغلاق"
+							}
+						}
+					},
+					"facilityProfile": {
+						"main": {
+							"accessPoints": "نقطة وصول",
+							"activities": "أنشطة",
+							"cameras": "الكاميرات",
+							"cancel": "إلغاء",
+							"cantDelete": "لا يمكن حذف المرافق مع الكاميرات.",
+							"cantDeleteAccessPoint": "لا يمكن حذف المرافق مع نقاط الوصول.",
+							"close": "إغلاق",
+							"confirm": "تأكيد",
+							"confirmationText": "هل أنت متأكد أنك تريد حذف هذا الفصيل؟",
+							"delete": "حذف",
+							"edit": "حرر",
+							"editProfileLayout": "تحرير تخطيط الملف الشخصي",
+							"files": "الملفات",
+							"floorPlans": "خطط المبنى",
+							"hide": "إخفاء",
+							"launch": "إطلاق",
+							"pinTo": "دبوس ل",
+							"facilityCondition": "حالة المنشأة"
+						}
+					},
+					"layoutControls": {
+						"activityTimeLine": "الجدول الزمني للنشاط"
+					},
+					"robotDogProfile": {
+						"activities": "أنشطة",
+						"alerts": "تنبيهات",
+						"cameras": "الكاميرات",
+						"editProfileLayout": "تحرير تخطيط الملف الشخصي",
+						"errorText": "حدثت مشكلة أثناء التحقق من البيانات المرتبطة بهذا الشكل. لا يمكن إلغاء مشاركته في هذا الوقت.",
+						"files": "الملفات",
+						"hide": "إخفاء",
+						"missionControl": "مراقبة المهمة",
+						"ok": "حسنا",
+						"pinTo": "دبوس ل",
+						"robotCams": "كاميرات الروبوت",
+						"trackHistory": "تتبع التاريخ"
+					},
+					"widgets": {
+						"accessPoint": {
+							"accessPointOnFloorPlan": {
+								"title": "نقطة وصول",
+								"noAcpAvailable": "لا توجد نقاط وصول متاحة"
+							}
+						},
+						"CADDetails": {
+							"address": "العنوان",
+							"title": "تفاصيل CAD"
+						},
+						"activities": {
+							"activity": {
+								"posted": "%{count} نشر "
+							},
+							"main": {
+								"accessPoints": "نقطةالوصول",
+								"activityTimeline": "الجدول الزمني للنشاط",
+								"activityTimelineFilters": "اختر فلاتر الجدول الزمني للنشاط:",
+								"camera": "الة تصوير",
+								"cancel": "إلغاء",
+								"confirm": "تأكيد",
+								"errorText": {
+									"commentsTxt": "يجب أن تتكون التعليقات من 280 حرفًا أو أقل"
+								},
+								"event": "حدث",
+								"loadMore": "تحميل المزيد",
+								"noActivities": "لا توجد أنشطة متاحة",
+								"post": "بوست",
+								"postToTimeline": "نشر رسالة إلى الجدول الزمني",
+								"postedMessages": "الرسائل المرسلة",
+								"shapes": "الأشكال",
+								"updates": "%{count} التحديثات"
+							}
+						},
+						"cameras": {
+							"camCard": {
+								"addToDock": "أضف إلى Dock",
+								"back": "عودة",
+								"noPresets": "لا توجد إعدادات مسبقة متاحة",
+								"presets": "الإعدادات المسبقة",
+								"removeFromDock": "إزالة من قفص الاتهام",
+								"slew": "ذبح",
+								"unlinkCam": "فك ارتباط الكاميرا"
+							},
+							"main": {
+								"linkCamera": "ربط الكاميرا",
+								"linkCams": "ربط الكاميرات",
+								"noCamsAvailable": "لا توجد كاميرات متاحة",
+								"slewAll": "ذبح كل شيء",
+								"title": "الكاميرات"
+							}
+						},
+						"details": {
+							"showLess": "عرض أقل",
+							"showMore": "أظهر المزيد",
+							"title": "تفاصيل"
+						},
+						"droneTrackAssociation": {
+							"title": "الكشف عن طائرة بدون طيار WhiteFox",
+							"noAssociatedTracks": "لم يتم العثور على مسارات مرتبطة"
+						},
+						"facilityCondition": {
+							"title": "حالة المنشأة",
+							"criticalTarget": "الهدف الحرج",
+							"prioritySchedules": "تحديد جداول الأولوية المستهدفة",
+							"addNew": "اضف جديد",
+							"priority": "أولوية",
+							"remove": "إزالة",
+							"allDay": "طوال اليوم",
+							"priorityValues": [
+								"واحد",
+								"إثنان",
+								"ثلاثة",
+								"أربعة",
+								"خمسة"
+							],
+							"weekDays": [
+								"الشمس",
+								"الإثنين",
+								"الثلاثاء",
+								"تزوج",
+								"خميس",
+								"الجمعة",
+								"جلس"
+							],
+							"defaultPriorityLabel": "طوال اليوم كل يوم",
+							"setScheduleLabel": "جدول زمني محدد",
+							"setSchedule": {
+								"title": "جدول زمني محدد",
+								"dateRange": "نطاق الموعد:",
+								"indefinite": "غير محدد",
+								"setRange": "مجموعة مجموعة",
+								"cancel": "إلغاء",
+								"save": "حفظ",
+								"update": "تحديث",
+								"to": "إلى",
+								"days": "أيام:",
+								"timePeriod": "فترة زمنية:",
+								"allDay": "طوال اليوم",
+								"setPeriod": "تعيين الفترة",
+								"dialogError": {
+									"atLeastOneDay": "يجب تحديد يوم واحد على الأقل من الأسبوع حتى تكون الحالة نشطة.",
+									"fallAfterStart": "يجب أن يقع تاريخ الانتهاء بعد تاريخ البدء المحدد.",
+									"atLeastOneLimitingFactor": "يجب أن يكون لحالتك عامل مقيد واحد على الأقل.",
+									"startBeforeEndTime": "يجب أن يكون وقت البدء قبل وقت الانتهاء.",
+									"startEndTimeDiff": "يجب أن يكون وقت البدء ووقت الانتهاء مختلفين.",
+									"validTimeValue": "الرجاء إدخال قيمة وقت صالحة."
+								}
+							},
+							"removeDialog": {
+								"title": "حذف جدول الأولوية",
+								"confirm": "تؤكد",
+								"cancel": "إلغاء",
+								"confirmationText": "هل أنت متأكد أنك تريد حذف جدول الأولوية هذا؟"
+							}
+						},
+						"files": {
+							"noAssocFiles": "لا توجد ملفات مرتبطة",
+							"phoenixDropzone": {
+								"uploadFiles": "تحميل الملفات"
+							},
+							"title": "الملفات",
+							"dropFiles": "قم بوضع الملفات هنا"
+						},
+						"floorPlanWidget": {
+							"floorPlans": "خطط المبنى"
+						},
+						"gateRunnerWidget": {
+							"main": {
+								"title": "استجابة عداء البوابة"
+							},
+							"activityCard": {
+								"elapsedTime": "الوقت المنقضي"
+							},
+							"activityHotList": {
+								"chooseAlert": "اختر من قائمة التنبيه الساخنة LPR"
+							},
+							"timeline": {
+								"title": "الجدول الزمني",
+								"targetObserved": "الهدف لوحظ"
+							},
+							"timelineCard": {
+								"notify": "يخطر",
+								"notifyAll": "يخطر الكل",
+								"generatingRec": "توليد التوصيات...",
+								"targetObserved": "الهدف لوحظ في موقع الخريطة المحدد"
+							}
+						},
+						"hrms": {
+							"equipmentsWidget": {
+								"equipment": "المعدات",
+								"manage": "يدير",
+								"noEquipment": "لا توجد معدات متاحة"
+							},
+							"lookupTable": {
+								"cancel": "إلغاء",
+								"category": "فئة",
+								"count": "عدد",
+								"done": "تم",
+								"location": "موقع",
+								"name": "الاسم",
+								"rank": "مرتبة",
+								"shiftEnding": "التحول إنهاء",
+								"unit": "وحدة"
+							},
+							"manageModal": {
+								"noDataErrorEquipment": "حدث خطأ أثناء إحضار المعدات المتاحة.",
+								"noDataErrorResources": "حدث خطأ أثناء جلب الموارد المتاحة.",
+								"search": "بحث",
+								"select": "يختار %{count}",
+								"showAssigned": "إظهار المعينة",
+								"showAvail": "تظهر المتاحة"
+							},
+							"resourcesWidget": {
+								"manage": "يدير",
+								"noResources": "لا توجد موارد متاحة",
+								"resources": "موارد"
+							},
+							"widgetTable": {
+								"category": "فئة",
+								"location": "موقع",
+								"name": "الاسم",
+								"rank": "مرتبة",
+								"unit": "وحدة"
+							}
+						},
+						"layoutControls": {
+							"accessPoint": "نقطة دخول",
+							"camera": "آلة تصوير",
+							"event": "حدث",
+							"entity": "كيان",
+							"facility": "منشأة",
+							"robot": "إنسان آلي",
+							"title": "تحرير %{count} تخطيط الملف الشخصي",
+							"explanation": "تبديل الحاجيات تشغيل/إيقاف. اسحب لتغيير الترتيب الرأسي.",
+							"note": "ملاحظة: سيتم تطبيق أي تغييرات على كافة ملفات تعريف %{count}.",
+							"autoExpand": "توسيع ملف التعريف تلقائيا إلى عرض واسع",
+							"done": "تم"
+						},
+						"linkedItems": {
+							"linkItem": "عنصر الارتباط",
+							"linkItems": "عناصر الارتباط",
+							"title": "العناصر المرتبطة"
+						},
+						"list": {
+							"listCard": {
+								"cancel": "إلغاء",
+								"confirmationText": "هل أنت متأكد أنك تريد حذف هذه القائمة؟",
+								"delete": "حذف"
+							},
+							"listToolbar": {
+								"add": "يضيف",
+								"cancel": "إلغاء",
+								"deleteList": "قائمة الحذف",
+								"remove": "إزالة",
+								"renameList": "إعادة تسمية القائمة",
+								"save": "حفظ"
+							},
+							"main": {
+								"addList": "اضف قائمة",
+								"addSelected": "أضف القوائم المختارة (%{count})",
+								"cancel": "إلغاء",
+								"chooseToAdd": "اختر قائمة لإضافتها:",
+								"eventLists": "قوائم الأحداث",
+								"list": "%{count} قائمة",
+								"lists": "%{count} القوائم",
+								"listsSharedWithMe": "القوائم المشتركة معي",
+								"myLists": "قوائمي",
+								"noListsAvail": "لا توجد قوائم متاحة",
+								"searchLists": "قوائم البحث ...",
+								"uncategorizedLists": "قوائم غير مصنفة"
+							}
+						},
+						"liveCam": {
+							"title": "الكاميرا الحية"
+						},
+						"lradControls": {
+							"beam": "شعاع",
+							"playAudio": "تشغيل الصوت",
+							"strobe": "ستروب",
+							"title": "ضوابط LRAD",
+							"volume": "الحجم"
+						},
+						"marineTrafficParticulars": {
+							"noParticulars": "لا توجد تفاصيل متاحة",
+							"title": "تفاصيل حركة المرور البحرية"
+						},
+						"missionControl": {
+							"charging": "الشحن",
+							"ftPerSec": "قدم / ثانية",
+							"inMotion": "في الحركة",
+							"missionControl": "مراقبة المهمة",
+							"onMission": "في مهمة",
+							"standby": "الاستعداد",
+							"stationary": "قرطاسية",
+							"stopped": "توقف",
+							"waypointDynamic": "إحداثية %{count}",
+							"waypointStatic": "نقطة الطريق 1 (بداية)"
+						},
+						"notes": {
+							"cancel": "إلغاء",
+							"confirm": "تأكيد",
+							"conflictingChanges": "تغييرات متضاربة",
+							"save": "حفظ",
+							"textContent1": "سيؤدي حفظ التغييرات إلى الكتابة فوقها %{count} التغييرات الأخيرة.",
+							"textContent2": "سيؤدي حفظ التغييرات إلى استبدال التغييرات الأخيرة التي أجراها العديد من المستخدمين.",
+							"title": "ملحوظات",
+							"uploading": "تحميل",
+							"uploadingNewImages": "تحميل صور جديدة."
+						},
+						"pinnedItems": {
+							"main": {
+								"noAssocEntities": "لا توجد كيانات مرتبطة",
+								"pinItem": "دبوس البند",
+								"title": "العناصر المثبتة"
+							},
+							"pinnedItemsDialog": {
+								"cancel": "إلغاء",
+								"confirm": "تأكيد",
+								"errorText": {
+									"errorOcc": "حدث خطأ.",
+									"noItems": "لم يتم العثور على العناصر."
+								},
+								"wantToFind": "انا اريد ان اجد..."
+							}
+						},
+						"proximity": {
+							"main": {
+								"createProxZone": "إنشاء منطقة قريبة",
+								"noAssocProx": "لا تقارب مرتبطة",
+								"title": "القرب"
+							},
+							"proximityCard": {
+								"edit": "حرر",
+								"noEntities": "لا توجد كيانات داخل منطقة القرب هذه"
+							},
+							"proximityDialog": {
+								"cancel": "إلغاء",
+								"create": "إنشاء",
+								"fillColor": "لون التعبئة",
+								"kilometers": "كيلومترات",
+								"miles": "اميال",
+								"feet": "قدم",
+								"meters": "متر",
+								"name": "الاسم",
+								"radius": "نصف القطر",
+								"stroke": "السكتة الدماغية",
+								"strokeColor": "لون السكتة الدماغية",
+								"unit": "وحدة",
+								"update": "تحديث"
+							},
+							"transparencySlider": {
+								"fill": "ملء الشفافية %%{count}"
+							}
+						},
+						"respondingUnits": {
+							"title": "وحدات الاستجابة"
+						},
+						"robotCams": {
+							"main": {
+								"arm": "ذراع",
+								"audio": "الصوت",
+								"cameras": "الكاميرات",
+								"lights": "أضواء"
+							},
+							"robotCamDock": {
+								"addToDock": "أضف إلى Dock",
+								"back": "عودة",
+								"noPresetsAvailable": "لا توجد إعدادات مسبقة متاحة",
+								"presets": "الإعدادات المسبقة",
+								"removeFromDock": "إزالة من قفص الاتهام"
+							}
+						},
+						"rules": {
+							"createdBy": "تم إنشاؤها بواسطة %{count}",
+							"newRule": "قانون جديد",
+							"priority": "أفضلية",
+							"title": "قواعد",
+							"viewRule": "عرض القاعدة"
+						},
+						"shieldGroup": {
+							"editView": {
+								"audiences": "الجمهور",
+								"cancel": "إلغاء",
+								"departments": "الإدارات",
+								"disableNotifications": "أوقف التنبيهات",
+								"districts": "المقاطعات",
+								"fieldLabel": {
+									"bulletinZone": "منطقة النشرة",
+									"none": "لا شيء",
+									"pointOfContact": "نقاط الاتصال",
+									"predefinedLocation": "موقع محدد مسبقا"
+								},
+								"groups": "مجموعات",
+								"individuals": "الأفراد",
+								"notifyOnEntry": "يخطر عند الدخول",
+								"save": "حفظ",
+								"searchForIndividuals": "البحث عن أفراد ...",
+								"shareToCMS": "شارك في CMS",
+								"threadId": "معرف الموضوع: %{count}",
+								"visibleToAll": "مرئي لجميع المستخدمين"
+							},
+							"main": {
+								"secureShare": "إعدادات SecureShare"
+							},
+							"profileView": {
+								"audiences": "الجمهور",
+								"bulletinZone": "منطقة النشرة",
+								"departments": "الإدارات (%{count})",
+								"disableNotifications": "أوقف التنبيهات",
+								"districts": "المقاطعات (%{count})",
+								"groups": "مجموعات (%{count})",
+								"individuals": "الأفراد (%{count})",
+								"no": "لا",
+								"none": "لا شيء",
+								"notifyOnEntry": "يخطر عند الدخول",
+								"pointsOfContact": "نقاط الاتصال (%{count})",
+								"predefinedLocation": "موقع محدد مسبقا",
+								"sharedToCMS": "مشترك في CMS",
+								"threadId": "معرف الموضوع",
+								"visibleToAll": "مرئي لجميع المستخدمين",
+								"yes": "نعم"
+							}
+						},
+						"summary": {
+							"Camera": "الة تصوير",
+							"Facility": "منشأة",
+							"Line": "خط",
+							"Polygon": "مضلع",
+							"Track": "المسار",
+							"Template": "نموذج",
+							"Planned": "حدث مخطط",
+							"Emergent": "حدث ناشئ",
+							"createdBy": "%{primaryValue} تم إنشاؤها بواسطة %{secondaryValue}"
+						},
+						"shared": {
+							"widgetMenu": {
+								"title": "إعدادات القطعة",
+								"header": "إعدادات القطعة: %{count}",
+								"note": "ملاحظة: سيتم تطبيق أي تغييرات تجريها على جميع مثيلات هذه الأداة",
+								"displayText": "عرض الصورة التي تم تحميلها على النحو التالي:",
+								"thumbnails": "المصغرات",
+								"slideShow": "عرض الشرائح",
+								"upload": "تحميل الملفات",
+								"ok": "تمام",
+								"cancel": "إلغاء",
+								"timelineFilters": "مرشحات الخط الزمني",
+								"cameraWallLoad": "تحميل في جدار الكاميرا",
+								"autoExpand": "توسيع عنصر واجهة المستخدم تلقائيًا عند فتح الملف الشخصي",
+								"newRule": "قانون جديد"
+							}
+						}
+					}
+				},
+				"ruleBuilder": {
+					"alarm": {
+						"alarmRule": "قاعدة التنبيه",
+						"alertMe": "تنبيه لي عندما %{count} حرائق %{primaryValue} %{secondaryValue} إنذار."
+					},
+					"conditionBuilder": {
+						"Friday": "جمعة",
+						"Monday": "الاثنين",
+						"Saturday": "السبت",
+						"Sunday": "الأحد",
+						"Thursday": "يوم الخميس",
+						"Tuesday": "يوم الثلاثاء",
+						"Wednesday": "الأربعاء",
+						"and": " و ",
+						"betweenValues": " فمن بين %{primaryValue} و %{secondaryValue}",
+						"dateIs": " التاريخ هو %{count}",
+						"duringPeriod": " خلال فترة  %{primaryValue} و %{secondaryValue}",
+						"inCollection": " موجود في المجموعة %{count} ",
+						"itIs": " إنه",
+						"longerThanMin": " لفترة أطول من %{count} دقيقة",
+						"longerThanMins": " لفترة أطول من %{count} الدقائق",
+						"notInCollection": " ليس في المجموعة %{count} ",
+						"or": " أو ",
+						"travelingFaster": " أسرع من %{primaryValue} %{secondaryValue}",
+						"travelingSlower": " أبطأ من %{primaryValue} %{secondaryValue}",
+						"heading": " السفر %{count}",
+						"direction": {
+							"north": "شمال",
+							"northEast": "الشمال الشرقي",
+							"east": "شرق",
+							"southEast": "الجنوب الشرقي",
+							"south": "جنوب",
+							"southWest": "جنوب غرب",
+							"west": "الغرب",
+							"northWest": "الشمال الغربي"
+						}
+					},
+					"createEvent": {
+						"alertMe": "تنبيه لي عندما %{primaryValue} يتم إنشاؤه%{secondaryValue}",
+						"templateString": " باستخدام ال %{count} قالب"
+					},
+					"systemHealthBuilder": {
+						"alertMe": "تنبيهي عند حدوث تغيير في صحة النظام في ",
+						"anySystem": "أي نظام",
+						"or": " أو "
+					},
+					"trackMovementBuilder": {
+						"alertMe": "تنبيهي عندما ",
+						"anyLine": "أي خط",
+						"anyPolygon": "أي مضلع",
+						"anyTrack": "أي مسار",
+						"or": " أو "
+					},
+					"vesselEvent": {
+						"alertMe": "تنبيهي عندما %{count}",
+						"arrival": "هناك وصول",
+						"assignmentUpdated": "يتم تحديث مهمة",
+						"at": " في ",
+						"berthApproved": "تمت الموافقة على طلب الرصيف",
+						"departure": "هناك رحيل",
+						"for": " ل ",
+						"newBerthCreated": "تم إنشاء طلب رصيف جديد",
+						"or": " أو ",
+						"securityViolation": "هناك انتهاك أمني"
+					}
+				},
+				"sharedComponents": {
+					"attachmentDialog": {
+						"close": "إغلاق",
+						"title": "المرفقات"
+					},
+					"entityAddToColl": {
+						"cancel": "إلغاء",
+						"createNewColl": "إنشاء مجموعة جديدة:",
+						"enterCollTitle": "أدخل عنوان مجموعة جديدة",
+						"newColl": "مجموعة جديدة",
+						"submit": "إرسال",
+						"title": "نسخ إلى مجموعة جديدة"
+					},
+					"linkDialog": {
+						"cancel": "إلغاء",
+						"continue": "تابع",
+						"errorText": {
+							"errorOccured": "حدث خطأ.",
+							"noItemsFound": "لم يتم العثور على العناصر."
+						},
+						"wantToFind": "انا اريد ان اجد..."
+					},
+					"pinToDialog": {
+						"addToColl": "أضف إلى المجموعة الجديدة",
+						"cancel": "إلغاء",
+						"collections": "المجموعات",
+						"enterName": "أدخل اسما للمجموعة الجديدة",
+						"errorText": {
+							"enterValidName": "الرجاء إدخال اسم صالح للمجموعة"
+						},
+						"events": "الأحداث",
+						"pinItem": "دبوس البند",
+						"submit": "إرسال"
+					},
+					"rowEdit": {
+						"addAttachments": "إضافة مرفقات",
+						"cancel": "إلغاء",
+						"none": "لا شيء",
+						"save": "حفظ"
+					},
+					"shapeEdit": {
+						"alwaysShow": "تظهر دائما",
+						"cancel": "إلغاء",
+						"chooseStyles": "اختر الأنماط",
+						"chooseSymbol": "اختر الرمز",
+						"createPoint": "إنشاء نقطة",
+						"createShape": "إنشاء الشكل",
+						"description": "الوصف",
+						"errorText": {
+							"shapesErr": "يجب ألا تحتوي الأشكال على خطوط متقاطعة. يرجى تحديث الشكل لإزالة أي مسارات متداخلة."
+						},
+						"fillColor": "لون التعبئة",
+						"line": "خط",
+						"lineColor": "لون الخط",
+						"mapApp": "خيارات عرض تطبيق الخريطة",
+						"name": "الاسم",
+						"save": "حفظ",
+						"searchLib": "مكتبة البحث...",
+						"showWhenActive": "تظهر فقط عندما يكون الحدث نشطا",
+						"stroke": "السكتة الدماغية",
+						"strokeColor": "لون السكتة الدماغية",
+						"strokeProps": {
+							"Dashed": "متقطع",
+							"Dotted": "منقط",
+							"Solid": "صلب",
+							"point": "%{count} نقطة",
+							"lineType": "نوع الخط",
+							"strokeType": " نوع الخط الخارجي",
+							"strokeThickness": " سماكة الخط الخارجي",
+							"lineThickness": "سمك الخط"
+						},
+						"transparencySlider": {
+							"fill": "ملء الشفافية %%{count}"
+						}
+					},
+					"statusCard": {
+						"StatusCardDialog": {
+							"cancel": "إلغاء",
+							"delete": "حذف",
+							"editSlide": {
+								"fieldLabel": {
+									"atleastOne": "يجب أن تحتوي على شريحة واحدة على الأقل",
+									"text": "نص"
+								},
+								"newSlide": "شريحة جديدة"
+							},
+							"editText": {
+								"ordered": "أمر",
+								"unordered": "غير مرتبة"
+							},
+							"fieldLabel": {
+								"cardName": "اسم البطاقة"
+							},
+							"save": "حفظ",
+							"global": "عالمي"
+						},
+						"main": {
+							"by": "بواسطة %{count}",
+							"changed": "تغير %{count} ",
+							"edit": "حرر",
+							"sharedFrom": "مشترك من %{count}",
+							"share": "مشاركة",
+							"editCard": "تحرير البطاقة"
+						},
+						"shareStatusCardDialog": {
+							"cancel": "إلغاء",
+							"save": "حفظ",
+							"title": "شارك مع المنظمات"
+						},
+						"statusControls": {
+							"selector": "محدد"
+						}
+					}
+				},
+				"units": {
+					"main": {
+						"title": "الوحدات",
+						"newUnit": "+ وحدة جديدة",
+						"unassigned": "غير معين"
+					},
+					"components": {
+						"collectionsCard": {
+							"chooseCollection": "اختر المجموعة"
+						},
+						"collections": {
+							"noTargetLocation": "الموقع المستهدف غير متوفر",
+							"noInterdictionLocations": "موقع المنع غير متوفر"
+						},
+						"dialog": {
+							"newUnit": {
+								"title": "وحدة جديدة",
+								"unitName": "إسم الوحدة",
+								"chooseMembers": "اختر أعضاء الوحدة",
+								"unitNameError": "لا يمكن أن يكون اسم الوحدة فارغًا"
+							},
+							"renameUnit": {
+								"title": "إعادة تسمية الوحدة",
+								"unitName": "إسم الوحدة",
+								"unitNameError": "لا يمكن أن يكون اسم الوحدة فارغًا"
+							},
+							"settings": {
+								"title": "إعدادات",
+								"name": "الاسم / تسجيل المكالمة (تم تعيينه بواسطة جهاز TAK)",
+								"Phone": "رقم هاتف الجهاز",
+								"chooseUnit": "اختر الوحدة",
+								"unAssign": "إلغاء التخصيص",
+								"person": "شخص",
+								"vehicle": "عربة",
+								"equipmentSkills": "المعدات / المهارات",
+								"chooseRole": "اختر الدور"
+							},
+							"template": {
+								"cancel": "يلغي",
+								"save": "يحفظ"
+							}
+						},
+						"assignedUnitsCard": {
+							"active": "نشيط",
+							"edit": "إعادة تسمية الوحدة",
+							"delete": "حذف الوحدة",
+							"deleteUnit": "حذف الوحدة",
+							"deleteConfirmationText": "هل أنت متأكد أنك تريد حذف هذه الوحدة؟",
+							"confirm": "يتأكد",
+							"cancel": "يلغي"
+						},
+						"unitMemberRows": {
+							"settings": "Settings"
+						}
+					}
+				}
+			},
+			"replay-app": {
+				"portable": {
+					"email": {
+						"sendErrorEmail": {
+							"body": {
+								"html": {
+									"error": "خطأ",
+									"errorLoading": "كانت هناك مشكلة في توليد إعادة الخاص بك. يرجى المحاولة مرة أخرى في وقت لاحق أو الاتصال بالدعم."
+								},
+								"subject": "واجهت إعادتك مشكلة"
+							}
+						},
+						"sendReplayDownloadNotification": {
+							"body": {
+								"html": {
+									"clickHere": "انقر هنا.",
+									"download": "إعادتك جاهزة للتنزيل"
+								},
+								"subject": "الإعادة متاحة للتنزيل"
+							}
+						}
+					}
+				}
+			},
+			"reports-app": {
+				"emailTemplates": {
+					"availableForDownload": "التقرير متاح للتنزيل",
+					"generateErrorHTML": {
+						"content": "كانت هناك مشكلة في إنشاء التقرير الخاص بك. يرجى المحاولة مرة أخرى في وقت لاحق أو الاتصال بالدعم.",
+						"error": "خطأ"
+					},
+					"generateHtml": {
+						"clickHere": "انقر هنا",
+						"content": "تقريرك جاهز للتحميل "
+					},
+					"sendError": {
+						"subject": "واجه تقريرك مشكلة"
+					}
+				},
+				"health": {
+					"transRateCheck": {
+						"currentTxnPerSec": "txns الحالية / ثانية",
+						"currentTxnRate": "معدل المعاملة الحالية",
+						"currentTxnRateOf": "معدل TXN الحالي",
+						"droppedBelow": "انخفض / ثانية إلى أقل من الحد الأدنى المسموح به وهو",
+						"metricBeatCheck": "تحقق مما إذا كان metricbeat قيد التشغيل وما إذا كان مؤشر metrics- * متاحًا",
+						"noCurrentFeedsAvail": "لا تتوفر مقاييس حالية لسجل الخلاصات",
+						"transAbove": "/ ثانية أعلى أو بالحد الأدنى المسموح به من",
+						"transPerSec": "txns / ثانية",
+						"unableToFetch": "تعذر جلب مقاييس سجل الخلاصات"
+					}
+				},
+				"pdfTemplates": {
+					"siterep": {
+						"header": {
+							"headerLabel": "حدث SITREP",
+							"reportDate": "تاريخ التقرير"
+						},
+						"pageFooter": {
+							"pages": "الصفحات"
+						}
+					},
+					"threadReport": {
+						"header": {
+							"headerLabel": "تقرير الموضوع",
+							"reportDate": "Report Date"
+						},
+						"pageFooter": {
+							"pages": "pages"
+						}
+					},
+					"tripwireActivity": {
+						"header": {
+							"headerLabel": "تقرير نشاط Tripwire",
+							"reportDate": "تاريخ التقرير"
+						},
+						"pageFooter": {
+							"pages": "الصفحات"
+						}
+					},
+					"vesselPosition": {
+						"header": {
+							"headerLabel": "تقرير موقف السفينة",
+							"reportDate": "تاريخ التقرير"
+						},
+						"pageFooter": {
+							"pages": "الصفحات"
+						}
+					},
+					"zoneActivity": {
+						"header": {
+							"headerLabel": "تقرير نشاط المنطقة",
+							"reportDate": "تاريخ التقرير"
+						},
+						"pageFooter": {
+							"pages": "الصفحات"
+						}
+					},
+					"eventLog": {
+						"header": {
+							"headerLabel": "تقرير سجل الأحداث",
+							"reportDate": "تاريخ التقرير"
+						}
+					}
+				},
+				"mainpage": {
+					"list": {
+						"events": "الأحداث",
+						"eventCreatedBy": "الحدث الذي أنشأه",
+						"eventSharing": "مشاركة الحدث",
+						"startDate": "تاريخ البدء",
+						"startTime": "وقت البدء",
+						"closeDate": "تاريخ قريب",
+						"closeTime": "وقت الاغلاق",
+						"eventDescription": "وصف الحدث",
+						"notes": "ملحوظات",
+						"pinnedItems": "العناصر المثبتة",
+						"activities": "أنشطة",
+						"lists": "القوائم",
+						"files": "الملفات"
+					}
+				},
+				"reportBuilder_reports": {
+					"report": {
+						"displayName": {
+							"vesselName": "اسم السفينة",
+							"mmsid": "م م س أنا د",
+							"imo": "أنامۆ",
+							"callSign": "علامة إتصال",
+							"entryTime": "وقت دخول",
+							"dwellDuration": "مدة الإقامة",
+							"positionDateTime": "موضع التاريخ / الوقت",
+							"speed": "السرعة",
+							"heading": "العنوان",
+							"course": "الدورة",
+							"latitude": "خط العرض",
+							"longitude": "خط الطول",
+							"event": "حدث",
+							"eventName": "اسم الحدث",
+							"desc": "وصف",
+							"start": "يبدأ",
+							"end": "نهاية",
+							"template": "قالب",
+							"createdBy": "انشأ من قبل",
+							"status": "حالة",
+							"checkListProgress": "تقدم قائمة التحقق",
+							"posted": "تم النشر",
+							"postedBy": "منشور من طرف",
+							"name": "اسم",
+							"type": "يكتب"
+						}
+					}
+				}
+			},
+			"rules-app": {
+				"health": {
+					"totalTxn": {
+						"inLast": "في الختام",
+						"metricBeatCheck": "تحقق مما إذا كان metricbeat قيد التشغيل وما إذا كان مؤشر metrics- * متاحًا",
+						"min": "الحد الأدنى",
+						"mins": "الدقائق",
+						"minsAbove": "دقيقة فوق الحد الأدنى المسموح به",
+						"minsDropped": "انخفضت الدقائق أقل من الحد الأدنى المسموح به وهو",
+						"mustProcess": "يجب معالجة على الأقل",
+						"noCurrentMetrics": "لا توجد مقاييس حالية متاحة",
+						"totalTxnCount": "إجمالي عدد المعاملات",
+						"totalTxnsCount": "إجمالي عدد المعاملات",
+						"transactions": "المعاملات",
+						"txnsInLast": "txn (s) في الماضي",
+						"unableToFetch": "غير قادر على جلب المقاييس"
+					}
+				},
+				"trackMovement": {
+					"heading": "السفر",
+					"direction": {
+						"north": "شمال",
+						"northEast": "الشمال الشرقي",
+						"east": "شرق",
+						"southEast": "الجنوب الشرقي",
+						"south": "جنوب",
+						"southWest": "جنوب غرب",
+						"west": "الغرب",
+						"northWest": "الشمال الغربي"
+					}
+				}
+			}
+		}
+	}
+}

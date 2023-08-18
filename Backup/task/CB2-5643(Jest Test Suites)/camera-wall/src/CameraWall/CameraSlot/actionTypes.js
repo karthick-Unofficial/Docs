@@ -1,0 +1,1 @@
+export const REMOVE_CAMERA = "REMOVE_CAMERA";

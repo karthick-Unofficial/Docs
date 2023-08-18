@@ -1,0 +1,70 @@
+.sidebar-open {
+	width: calc(100vw - 360px);
+	left: 360px;
+}
+.sidebar-closed {
+	width: calc(100vw - 60px);
+	left: 60px;
+}
+
+.sidebarRTL-open {
+	width: calc(100vw - 360px);
+	right: 360px;
+}
+.sidebarRTL-closed {
+	width: calc(100vw - 60px);
+	right: 60px;
+}
+
+.grid-list-wrapper {
+	display:  grid;
+	grid-template-columns: repeat(auto-fill, minmax(calc(100% - 40px), 1fr));
+	grid-gap: 10px;
+	grid-auto-rows: 226px;
+	// small
+	@media only screen and (min-width: 600px) and (max-width: 1199px) {
+		grid-template-columns: repeat(auto-fill, minmax(calc(50% - 20px), 1fr));
+	}
+	// medium
+	@media only screen and (min-width: 1200px) {
+    grid-template-columns: repeat(auto-fill, minmax(calc((100% / 3) - 20px), 1fr));
+	}
+}
+// allow for 300 more pixels
+.sidebar-closed .grid-list-wrapper {
+	// medium
+	@media only screen and (min-width: 900px) and (max-width: 1199px) {
+		grid-template-columns: repeat(auto-fill, minmax(calc((100% / 3) - 20px), 1fr));
+	}
+	// large
+	@media only screen and (min-width: 1200px) {
+		grid-template-columns: repeat(auto-fill, minmax(calc(25% - 20px), 1fr));
+	}
+}
+
+.sidebarRTL-closed .grid-list-wrapper {
+	// medium
+	@media only screen and (min-width: 900px) and (max-width: 1199px) {
+		grid-template-columns: repeat(auto-fill, minmax(calc((100% / 3) - 20px), 1fr));
+	}
+	// large
+	@media only screen and (min-width: 1200px) {
+		grid-template-columns: repeat(auto-fill, minmax(calc(25% - 20px), 1fr));
+	}
+}
+
+// default is sidebar-open
+.grid-list-item {
+	list-style: none;
+
+	&.type-slides { grid-row-end: span 1; } // height: 190px;
+	&.type-text { grid-row-end: span 2; } // height: 400px;
+}
+// prevent title bar text from appearing selected after moving card
+.status-card-top-bar { user-select: none; }
+// prevent nested elements within buttons from intercepting clicks
+.status-card-button > *,
+.status-card-slider-control > * { pointer-events: none; }
+/*  Asterisk above is for span, SVG and descendant PATH elements.
+		If some future descendant does need to receive a click, just 
+		add a statement for it with a different pointer-events value */

@@ -1,0 +1,408 @@
+{
+	"appId": "rules-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"alertGenerator": {
+				"alertFields": {
+					"summary": "Summary*"
+				},
+				"alertTable": {
+					"emails": "Emails",
+					"priority": "Priority",
+					"system": "System",
+					"whoGetsAlert": "Who gets alerts?"
+				},
+				"escalationEvent": {
+					"title": "Escalation Event"
+				},
+				"locationSelection": {
+					"lat": "Lat",
+					"location": "Location",
+					"lon": "Lon"
+				},
+				"main": {
+					"demoAlert": "Demo Alert",
+					"loiterRule": "Loiter Rule",
+					"zoneEntry": "Zone Entry",
+					"zoneExit": "Zone Exit"
+				},
+				"objectSelection": {
+					"object": "Object"
+				},
+				"searchField": {
+					"search": "Search..."
+				},
+				"submitControls": {
+					"generate": "Generate",
+					"reset": "Reset"
+				},
+				"targetSelection": {
+					"target": "Target"
+				}
+			},
+			"appBar": {
+				"title": "Rules"
+			},
+			"createEditRule": {
+				"alarm": {
+					"chooseAlarmSubType": "Choose an alarm sub-type to filter by. (optional)",
+					"chooseAlarmType": "Choose an alarm type to filter by.",
+					"chooseFeed": "Choose a feed to monitor.",
+					"ruleStates": "The rule states..."
+				},
+				"components": {
+					"alertTable": {
+						"emails": "Emails",
+						"priority": "Priority",
+						"system": "System",
+						"whoGetsAlert": "Who gets alerts?"
+					},
+					"audioSettings": {
+						"example": "Example: Alert, Alert: A violation has occurred in Main Security Zone.",
+						"note": "Note: If both above options are selected the entire alert notification text will be appended to the user entered alert text.",
+						"selectingThisRule": "Selecting this option will speak entire alert notification text from alarm rule above.",
+						"speakAlertNotification": "Speak alert notification text",
+						"speakAlertText": "Speak alert text"
+					},
+					"dismissSettings": {
+						"dismissAlertsForAll": "Dismiss alerts for all users in the Organization",
+						"dismissAlertsUser": "Dismiss alerts by user",
+						"useForEntireOrg": "Use this option to allow any subscribed user to dismiss Priority or System alerts for the entire organization.",
+						"useToSubscIndividually": "Use this option to allow any subscribed user to dismiss Priority or System alerts individually."
+					},
+					"ruleFields": {
+						"descNotes": "Description/Notes (optional)",
+						"ruleName": "Rule name*"
+					},
+					"submitControls": {
+						"cancel": "Cancel",
+						"save": "Save"
+					}
+				},
+				"conditions": {
+					"conditionDialog": {
+						"add": "Add",
+						"addCondition": "ADD CONDITION",
+						"allDay": "All Day",
+						"cancel": "Cancel",
+						"dateRange": "DATE RANGE :",
+						"days": "DAYS :",
+						"dialogError": {
+							"atleastOneDay": "You must select at least one day of the week for the condition to be active.",
+							"atLeastOneLimitingFactor": "Your condition must have at least one limiting factor.",
+							"fallAfterStart": "Your end date must fall after your selected start date.",
+							"fasterThanGreater": "Traveling faster than speed must be greater than traveling slower than speed",
+							"onlyOneAllowed": "Only one time condition is allowed per rule.",
+							"onlyOneDuration": "Only one duration condition is allowed per rule.",
+							"selectAColl": "Please select a collection.",
+							"slowerFasterThanVal": "Please enter either a traveling slower than speed or traveling faster than speed value",
+							"startBeforeEndTime": "The start time must be before the end time.",
+							"startEndTimeDiff": "The start time and end time must be different.",
+							"validTimeValue": "Please enter a valid time value."
+						},
+						"duration": "Duration",
+						"inCollection": "In Collection...",
+						"indefinite": "Indefinite",
+						"kn": "kn",
+						"kph": "kph",
+						"minute": "minute",
+						"minutes": "minutes",
+						"mph": "mph",
+						"notInCollection": "Not In Collection...",
+						"selectCollection": "Select a Collection",
+						"selectCondition": "Select a Condition",
+						"setPeriod": "Set Period",
+						"setRange": "Set Range",
+						"speed": "Speed",
+						"time": "Time",
+						"timeAllowed": "Time Allowed",
+						"timePeriod": "TIME PERIOD :",
+						"to": "to",
+						"travelingFasterThan": "Traveling faster than:",
+						"travelingSlowerThan": "Traveling slower than:",
+						"unit": "Unit",
+						"update": "Update",
+						"direction": {
+							"title": "Direction",
+							"tripwireDirection": "Tripwire Direction"
+						}
+					},
+					"main": {
+						"addACondition": "Add a condition...",
+						"addAnother": "Add another...",
+						"addCondition": "Add condition",
+						"cancel": "Cancel",
+						"condition": "%{count} Condition",
+						"inCollection": "In Collection (%{count})",
+						"notInCollection": "Not In Collection (%{count})",
+						"title": "Conditions"
+					}
+				},
+				"createEvent": {
+					"eventSubType": "Choose an event subtype to monitor.",
+					"eventTemplate": "Choose an event template to monitor.",
+					"eventType": "Choose an event type to monitor.",
+					"ruleStates": "The rule states..."
+				},
+				"escalations": {
+					"chooseTemp": "Choose a Template...",
+					"escalationDialog": {
+						"add": "Add",
+						"cancel": "Cancel",
+						"noEventTemp": "You do not have any event templates. Please create an event template to select.",
+						"wantToFind": "I want to find..."
+					},
+					"title": "Escalation Event"
+				},
+				"genericAttribute": {
+					"multiSelection": {
+						"addAnother": "Add another...",
+						"addDynamic": "Add %{count}...",
+						"multiSelectionDialog": {
+							"addItem": "Add item",
+							"cancel": "Cancel",
+							"wantToFind": "I want to find..."
+						}
+					},
+					"singleSelection": {
+						"addDynamic": "Add %{count}...",
+						"singleSelectionDialog": {
+							"addItem": "Add item",
+							"cancel": "Cancel",
+							"wantToFind": "I want to find..."
+						}
+					},
+					"type": {
+						"feed": "FEED",
+						"filterType": "FILTER TYPE",
+						"filterSubType": "FILTER SUB TYPE",
+						"conditions": "CONDITIONS",
+						"template": "TEMPLATE",
+						"type": "TYPE",
+						"subType": "SUBTYPE",
+						"berthSelection": "BERTH SELECTION",
+						"none": "None"
+					}
+				},
+				"main": {
+					"errorText": {
+						"alertTextReq": "Alert text is required if the speak alert text option is selected.",
+						"atLeastTwo": "At least one of the 2 options must be selected."
+					}
+				},
+				"subject": {
+					"subjectAttributes": {
+						"addAnother": "Add another...",
+						"addEntity": "Add an entity...",
+						"addFeed": "Add feed filter",
+						"anyTrack": "Any track",
+						"editFeed": "Edit feed filter",
+						"selectTracks": "Select track(s)",
+						"title": "Subject",
+						"tracks": "Track(s) that can commit the trigger."
+					},
+					"subjectDialog": {
+						"addItem": "Add item(s)",
+						"cancel": "Cancel",
+						"errorOccurred": "An error has occurred.",
+						"searchField": {
+							"searchTracks": "Search tracks..."
+						},
+						"wantToFind": "I want to find..."
+					},
+					"subjectFeedDialog": {
+						"addItem": "Add item(s)",
+						"cancel": "Cancel",
+						"noAdditional": "No additional feeds available.",
+						"noFeeds": "No feeds available."
+					}
+				},
+				"systemHealth": {
+					"ruleStates": "The rule states..."
+				},
+				"trackMovement": {
+					"ruleStates": "The rule states..."
+				},
+				"trigger": {
+					"actionThatFires": "The action that fires the alert.",
+					"addAnother": "Add another...",
+					"any": {
+						"polygon": "Any polygon",
+						"system": "Any system"
+					},
+					"anyDots": {
+						"polygon": "Any polygon...",
+						"system": "Any system..."
+					},
+					"anyDynamic": "Any %{count}",
+					"anyDynamicdots": "Any %{count}...",
+					"anyLine": "Any line",
+					"select": {
+						"polygon": "Select polygon(s)",
+						"system": "Select system(s)"
+					},
+					"selectDynamic": "Select %{count}(s)",
+					"selectLine": "Select line",
+					"title": "Trigger",
+					"triggerDialog": {
+						"addItem": "Add item(s)",
+						"cancel": "Cancel",
+						"errorOccurred": "An error has occurred.",
+						"wantToFind": "I want to find..."
+					}
+				},
+				"vesselEvents": {
+					"ruleStates": "The rule states...",
+					"selectBerth": "Select berths.",
+					"selectRuleType": "Select a rule type.",
+					"newReq": "New Request",
+					"requestApproval": "Request Approval",
+					"berthUpdates": "Berth Updates",
+					"arrivals": "Arrivals",
+					"departures": "Departures",
+					"secViolation": "Security Violations"
+				}
+			},
+			"main": {
+				"components": {
+					"ruleItem": {
+						"actions": {
+							"label": {
+								"cancel": "Cancel",
+								"unsubscribe": "Unsubscribe"
+							}
+						},
+						"ruleItem": {
+							"priority": "priority"
+						},
+						"unsubscribeTarget": {
+							"dialog": {
+								"children": "Are you sure you want to unsubscribe from %{count}?",
+								"title": "UNSUBSCRIBE?"
+							},
+							"unsubscribe": "UNSUBSCRIBE"
+						}
+					}
+				},
+				"mainJsx": {
+					"actions": {
+						"label": {
+							"cancel": "Cancel",
+							"delete": "Yes, Delete"
+						}
+					},
+					"createButton": {
+						"createNewRule": "Create New Rule ⏷"
+					},
+					"rulesFilters": {
+						"dialog": {
+							"content": "Are you sure you want to delete this rule?",
+							"title": "DELETE RULE"
+						},
+						"filterBy": "Filter By...",
+						"listItem": {
+							"createdBy": {
+								"primaryText": "Created By"
+							},
+							"triggerList": {
+								"nestedItems": {
+									"checkbox": {
+										"label": {
+											"arrivals": "Arrivals",
+											"berthUpdates": "Berth Updates",
+											"cross": "Cross",
+											"departures": "Departures",
+											"enter": "Enter",
+											"exit": "Exit",
+											"loiter": "Loiter",
+											"newRequest": "New Request",
+											"requestApproval": "Request Approval",
+											"securityViolations": "Security Violations"
+										}
+									}
+								},
+								"primaryText": "Trigger"
+							}
+						},
+						"rulesAreas": {
+							"TypeAheadFilterContainer": {
+								"placeholder": "I want to find..."
+							},
+							"rulesSectionWrapper": {
+								"noRules": "There are no rules subscriptions shared with you at the moment.",
+								"ruleSectionTitle": "Rule I created (%{count})",
+								"ruleShared": "Rule shared with me (%{count})",
+								"rulesContainer": "There are no rules subscriptions shared with you at the moment.",
+								"rulesSectionTitle": "Rules I created (%{count})",
+								"rulesShared": "Rules shared with me (%{count})"
+							}
+						}
+					},
+					"rulesOptions": {
+						"label": {
+							"alarmRule": "Alarm Rule",
+							"eventCreated": "Event Created",
+							"trackMovement": "Track Movement",
+							"vesselEventRule": "Vessel Event Rule"
+						}
+					}
+				}
+			},
+			"viewRule": {
+				"actions": {
+					"flatButtonLabel": {
+						"cancel": "Cancel",
+						"yesDelete": "Yes, Delete"
+					}
+				},
+				"alertAudio": {
+					"alert": "Alert Alert",
+					"followedBy": "followed by alert notification text.",
+					"speak": "Speak ",
+					"speakAlert": "Speak alert notification text."
+				},
+				"alertTable": {
+					"alertAudio": "Alert Audio",
+					"alertDismissRule": "Alert Dismiss Rule",
+					"raisedButton": {
+						"save": "Save"
+					},
+					"tbody": {
+						"unsharedRuleMessage": {
+							"rule": "This rule is not currently being shared with other users.",
+							"whoGetsAlerts": "Who gets alerts?"
+						}
+					},
+					"thead": {
+						"emails": "Emails",
+						"priority": "Priority",
+						"system": "System",
+						"whoGetsAlerts": "Who gets alerts?"
+					}
+				},
+				"dialog": {
+					"content": "Are you sure you want to delete this rule?",
+					"title": "DELETE RULE"
+				},
+				"dismissText": {
+					"dismissAlertsOrg": "Dismiss alerts for all users in the Organization.",
+					"dismissAlertsUser": "Dismiss alerts by user."
+				},
+				"ruleOperations": {
+					"delete": "Delete",
+					"edit": "Edit"
+				},
+				"ruleStates": {
+					"theRuleStates": "The rule states..."
+				},
+				"viewRuleAttribute": {
+					"alertDismissRule": "Alert Dismiss Rule"
+				},
+				"viewTitling": {
+					"createdBy": "Created by %{count}"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/organization.json",
+  "type": "object",
+  "required": [ "name", "orgId" ],
+  "additionalProperties": false,
+  "properties": {
+    "description": { "description": "", "type": "string" },
+    "name": { "description": "", "type": "string" },
+    "orgId": { "description": "", "type": "string" },
+    "authProviderId": { "description": "", "type": "string" },
+    "createdDate": { "minimum": 1, "date": true },
+    "lastModifiedDate":  { "minimum": 1, "date": true },
+    "maxSharingConnections": { 
+      "description": "For SAAS installations, the maximum number of sharing policies an organization may set",
+      "type": "number"
+    },
+    "supportURL": { "description": "", "type": "string" }
+  }
+}

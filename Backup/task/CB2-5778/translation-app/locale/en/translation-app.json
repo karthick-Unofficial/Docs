@@ -1,0 +1,12 @@
+{
+	"appId": "translation-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"appJSX": {
+				"title": "Translation App",
+				"textContent": "Translation App"
+			}
+		}
+	}
+}

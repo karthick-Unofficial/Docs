@@ -1,0 +1,10 @@
+{
+    "title": "AISHUB Metrics",
+    "visState": "{\"type\":\"timelion\",\"title\":\"AISHUB Metrics\",\"params\":{\"expression\":\".es(q='name:\\\"integration-app-receive-aishub\\\"', index='metrics-*', timefield='@timestamp', metric='max:m1_rate').label('AIS Message Received/sec'), .es(q='name:\\\"integration-app-parse-success-aishub\\\"',   index='metrics-*', timefield='@timestamp', metric='max:m1_rate').label('AIS Message Parse Success/sec'), .es(q='name:\\\"integration-app-parse-partial-aishub\\\"', index='metrics-*', timefield='@timestamp',   metric='max:m1_rate').label('AIS Message Parse Partial/sec'), .es(q='name:\\\"integration-app-parse-error-aishub\\\"', index='metrics-*', timefield='@timestamp', metric='max:m1_rate').label('AIS Message Parse   Error/sec'), .es(q='name:\\\"integration-app-parse-ignore-aishub\\\"', index='metrics-*', timefield='@timestamp', metric='max:m1_rate').label('AIS Message Parse Ignore/sec'), .es(q='name:\\\"api-transaction-POST-  feeds-aishub-entities-system\\\"', index=metrics-*, timefield='@timestamp', metric='max:m1_rate').label('Ecosystem Feed Entity Upsert/sec')\",\"interval\":\"auto\"}}",
+    "uiStateJSON": "{}",
+    "description": "",
+    "version": 1,
+    "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+    }
+}

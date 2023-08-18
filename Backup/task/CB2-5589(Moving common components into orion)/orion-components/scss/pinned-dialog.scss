@@ -1,0 +1,27 @@
+#search-result {
+	i {
+		font-size: 2.5rem;
+		color: $transWhite;
+	}
+}
+
+.circular-progress {
+	display: flex;
+	align-items: center;
+
+	div {
+		margin: 20px auto;
+	}
+}
+
+.error-message {
+	display: flex;
+	align-items: center;
+	color: tomato !important; // <---- override mat ui styles
+			font-family: 'roboto';
+			text-align: center;
+
+	p {
+		margin: 20px auto;
+	}
+}

@@ -1,0 +1,154 @@
+lists:
+  /list:
+    get:
+      description: Get all lists the user has access to
+      operationId: getAll
+      tags:
+        - Lists
+      parameters:
+        - name: userId
+          in: cookies
+          required: true
+          schema: 
+            type: string
+        - name: orgId
+          in: cookies
+          required: true
+          schema:
+    responses:
+      '200':
+        description: OK
+    post:
+      description: Create a list
+      operationId: create
+      tags:
+        - Lists
+      parameters:
+        - name: userId
+          in: cookies
+          required: true
+          schema: 
+            type: string
+        - name: orgId
+          in: cookies
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+    responses:
+      '200':
+        description: OK
+      '404':
+        description: There was a problem creating the list
+  /list/{id}:
+    get:
+      description: get list by ID
+      operationId: getById
+      tags:
+        - Lists
+      parameters:
+        - name: userId
+          in: cookies
+          required: true
+          schema: 
+            type: string
+        - name: orgId
+          in: cookies
+          required: true
+          schema:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Could not find post by ID
+    put:
+      description: Update post by ID
+      operationId: update
+      tags:
+        - Lists
+      parameters:
+        - name: userId
+          in: cookies
+          required: true
+          schema: 
+          type: string
+        - name: orgId
+          in: cookies
+          required: true
+          schema:
+        - name: id
+          in: path
+          required: true
+          schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+    delete:
+      description: Update list as deleted
+      operationId: delete
+      tags:
+        - Lists
+      parameters:
+        - name: userId
+          in: cookies
+          required: true
+          schema: 
+          type: string
+        - name: orgId
+          in: cookies
+          required: true
+          schema:
+        - name: id
+          in: path
+          required: true
+          schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Could not find post to delete by ID
+  /list/{id}/share:
+    put:
+      description: Share list with organizations
+      opertaionId: share
+      tags:
+        - Lists
+      parameters:
+        - name: userId
+          in: cookies
+          required: true
+          schema: 
+          type: string
+        - name: orgId
+          in: cookies
+          required: true
+          schema:
+        - name: id
+          in: path
+          required: true
+          schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Could not find list by ID to share
+
+
+
+    

@@ -1,0 +1,6 @@
+export const IMAGE_ADD = "IMAGE_ADD";
+export const FLOOR_PLAN_CLEAR = "FLOOR_PLAN_CLEAR";
+export const FLOOR_PLAN_ADD = "FLOOR_PLAN_ADD";
+export const CREATING_FLOORPLAN = "CREATING_FLOORPLAN";
+export const FLOOR_PLAN_REMOVE = "FLOOR_PLAN_REMOVE";
+export const CLEAR_IMAGE = "CLEAR_IMAGE";

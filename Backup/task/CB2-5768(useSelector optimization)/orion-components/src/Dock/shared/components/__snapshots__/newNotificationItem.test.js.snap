@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewNotificationItem renders 1`] = `
+<div
+  className="new-alert-item notification-item"
+  id=""
+>
+  <div
+    className="icon-container"
+  >
+    <div
+      className="info-icon-wrapper"
+    >
+      <Memo(ForwardRef(InfoIcon))
+        className="info-icon"
+        style={
+          Object {
+            "color": "//",
+            "height": "30px",
+            "width": "30px",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="text-wrapper"
+  >
+    <p
+      className="message"
+    >
+      Test User posted Post Test E in Daily Brief
+    </p>
+    <p
+      className="time"
+    >
+      a few seconds ago
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,4 @@
+Today's Task:
+- Worked on adding a new component "AccessPointForm" to Drawing Panel in facilities app.
+- Went through feedService, roleService and cameraService components in client-app-core and understood implementation.
+- Working on retreiving accessPoint feed types in cameras app using integrations api.

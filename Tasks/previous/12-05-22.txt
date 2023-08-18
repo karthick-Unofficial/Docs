@@ -1,0 +1,13 @@
+Today's Task:
+CB2-5277
+- Worked on Functional Component Conversion Implementation in below files of orion-components:
+- CBComponents/CBAppMenu/AppMenu.jsx
+- CBComponents/CBCanvas/Portal.jsx
+- CBComponents/CBDock/Dock.jsx
+- CBComponents/CBList/NestedList.jsx
+- CBComponents/CBNewWindow/WindowPortal.jsx
+- Map/Controls/GISControl/GISControl.jsx
+- Map/Controls/GISControl/components/GISCollection.jsx
+- Map/Controls/GISControl/components/GISDialog.jsx
+- Map/Controls/GISControl/components/GISManagement.jsx
+

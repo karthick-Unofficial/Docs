@@ -1,0 +1,341 @@
+.camera-layout-container {
+  position: relative;
+  width: 320px;
+  height: 215px;
+  margin: auto;
+
+  .blueprint-image {
+    width: 100%;
+    padding: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .blueprint-camera {
+    height: 2.1875rem;
+    cursor: pointer;
+    position: absolute;
+    color: #FFFFFF;
+
+    .camera-cone {
+      position: absolute;
+      top: -10px;
+      left: -35px;
+      transform: rotate(90deg);
+      z-index: 0;
+    }
+
+    .camera-double-cone {
+      position: absolute;
+      top: -41px;
+      left: -14px;
+      z-index: 0;
+    }
+
+    .camera-icon {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .camera-icon.off {
+      opacity: 0.5;
+    }
+
+    p {
+      z-index: 3;
+    }
+  }
+
+  .blueprint-camera.click-handler {
+    width: 2.1875rem;
+    z-index: 4;
+  }
+  
+  .blueprint-camera.front-left-camera {
+    top: 75px;
+    right: 3px;
+
+    p {
+      position: absolute;
+      top: 11px;
+      left: 7px;
+      color: #434343;
+      font-size: 0.75rem;
+    }
+  }
+  
+  .blueprint-camera.front-left-camera.outside {
+    top: 40px;
+  }
+
+  .blueprint-camera.front-right-camera {
+    top: 97px;
+    right: 3px;
+
+    p {
+      position: absolute;
+      top: 11px;
+      left: 7px;
+      color: #434343;
+      font-size: 0.75rem;
+    }
+  }
+
+  .blueprint-camera.front-right-camera.outside {
+    top: 134px;
+  }
+
+  .blueprint-camera.right-camera {
+    bottom: 40px;
+    left: 131px;
+
+    transform: rotate(90deg);
+
+    p {
+      position: absolute;
+      top: 10px;
+      left: 11px;
+      color: #434343;
+      font-size: 0.75rem;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .blueprint-camera.back-camera {
+    top: 84px;
+    left: 21px;
+
+    transform: rotate(180deg);
+
+    p {
+      position: absolute;
+      top: 10px;
+      left: 11px;
+      color: #434343;
+      font-size: 0.75rem;
+      transform: rotate(-180deg);
+    }
+  }
+
+  .blueprint-camera.top-camera {
+    top: 84px;
+    left: 133px;
+
+    p {
+      position: absolute;
+      top: 10px;
+      left: 11px;
+      color: #434343;
+      font-size: 0.75rem;
+    }
+  }
+
+  .blueprint-camera.left-camera {
+    top: 31px;
+    left: 133px;
+
+    transform: rotate(270deg);
+
+    p {
+      position: absolute;
+      top: 11px;
+      left: 10px;
+      color: #434343;
+      font-size: 0.75rem;
+      transform: rotate(-270deg);
+    }
+  }
+}
+
+.sensors-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin: 10px;
+
+  .disabled {
+    opacity: 0.5;
+  }
+
+  .enabled {
+    opacity: 1;
+  }
+
+  .icon-container {
+    width: "25%";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    .icon {
+      width: 15px;
+      height: 13px;
+    }
+
+    .icon-label {
+      height: 13px;
+      margin:0px;
+      margin-top: 10px ;
+      margin-left: 6px;
+    }
+  }
+}
+
+#camera-list {
+  .camera-list-item {
+    padding-left: 0;
+    cursor: pointer;
+
+    .camera-icon {
+      min-width: 0;
+      padding-right: 12px;
+      color: #FFFFFF;
+      position: relative;
+
+      .camera-svg {
+        width: 35px;
+        height: 35px;
+        padding: 4px;
+      }
+
+      p {
+        position: absolute;
+        top: 11px;
+        left: 7px;
+        width: 16px;
+        height: 16px;
+        color: #434343;
+        font-size: 0.75rem;
+        text-align: center;
+      }
+    }
+    
+    .camera-icon.disabled {
+      opacity: 0.5;
+    }
+
+    .camera-icon.enabled {
+      opacity: 1;
+    }
+  }
+}
+
+.status-panel-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 66px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: default;
+
+  .status-panel-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      color: #D3815C;
+    }
+  }
+
+  .details-container {
+    display: flex;
+    justify-content: space-around;
+
+    .detail {
+      display: flex;
+      align-items: flex-end;
+      // -- Switched so the font size is always large (expanded or not), but leaving in here in case we want to revert - CD
+      // font-size: 12px;
+      font-size: 16px;
+
+      .detail-icon {
+        // margin-right: 2px;
+        // height: 12px
+        margin-right: 6px;
+        height: 16px;
+      }
+
+      .detail-icon.battery {
+        margin-bottom: -2px;
+      }
+
+      .detail-content {
+			  // margin-right: 2px;
+        margin-right: 6px;
+      }
+
+      .detail-content.attribute {
+        // font-size: 8px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.status-panel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 66px;
+  margin-left: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.secondary-expanded {
+  .status-panel-container {
+    height: 93px;
+
+    .detail {
+      font-size: 16px;
+
+      .detail-icon {
+        margin-right: 6px;
+        height: 16px;
+      }
+
+      .detail-content {
+        margin-right: 6px;
+      }
+
+      .detail-content.attribute {
+        font-size: 10px;
+      }
+    }
+  }
+  .status-panel-button {
+    width: 138px;
+    height: 93px;
+    font-size: 16px;
+  }
+}
+
+.waypoint-icon {
+  position: relative;
+
+  .vl.solid {
+    position: absolute;
+    bottom: -20px;
+    left: 11px;
+    height: 24px;
+    border-left: 1px solid white;
+  }
+  .vl.dashed {
+    position: absolute;
+    bottom: -20px;
+    left: 11px;
+    height: 24px;
+    border-left: 1px dashed white;
+    opacity: 0.5;
+  }
+}

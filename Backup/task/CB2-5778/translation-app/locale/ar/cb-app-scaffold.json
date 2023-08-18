@@ -1,0 +1,15 @@
+{
+	"appId": "cb-app-scaffold",
+	"locales": "en",
+	"translations": {
+		"ar": {
+			"appBar": {
+				"title": "سقالة التطبيق"
+			},
+			"appJSX": {
+				"textContent": "يرجى الرجوع إلى README للحصول على إرشادات خطوة بخطوة حول كيفية إعداد تطبيق جديد.",
+				"title": "سقالة التطبيق"
+			}
+		}
+	}
+}

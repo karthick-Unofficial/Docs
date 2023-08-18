@@ -1,0 +1,55 @@
+// TODO: Move style overrides to theme when time allotted
+
+.cb-table-pagination {
+	:not(button) {
+		color: $textGray;
+	}
+
+	button path {
+		color: #fff;
+	}
+}
+
+.cb-select-field-list {
+	li {
+		color: #fff;
+		font-size: 14px;
+	}
+}
+
+.MuiPickersCalendarHeader-switchHeader {
+	direction: ltr;
+}
+
+
+
+/* targeting toolbar datecontainer */
+.cbDateTimePicker,
+.lightcbDateTimePicker,
+.MuiDialog-container .MuiPaper-root .MuiDialogContent-root .MuiDateTimePickerToolbar-dateContainer .MuiTypography-root {
+	color: #fff;
+}
+
+/* targeting toolbar timecontainer */
+.cbDateTimePicker,
+.lightcbDateTimePicker,
+.MuiDialog-container .MuiPaper-root .MuiDialogContent-root .MuiDateTimePickerToolbar-timeContainer .MuiTypography-root {
+	color: #fff;
+}
+
+/* targeting toolbar datecontainer  selected vals*/
+.cbDateTimePicker,
+.lightcbDateTimePicker {
+	.Mui-selected {
+		color: #ACDAF5 !important;
+	}
+}
+
+/* targeting clock  picker clock numbers */
+.cbDateTimePicker .MuiDialog-container .MuiClockPicker-root .css-eziifo span {
+	color: #fff !important;
+}
+
+.lightcbDateTimePicker .MuiDialog-container .MuiPaper-root .MuiDialogContent-root .MuiPickersToolbar-content .MuiSvgIcon-root {
+	color: #fff !important;
+}

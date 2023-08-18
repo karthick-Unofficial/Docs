@@ -1,0 +1,1019 @@
+.sessionDock {
+  display: flex;
+  height: 100%; }
+  .sessionDock .iconBar {
+    height: 100%;
+    width: 60px;
+    background: #1f1f21; }
+    .sessionDock .iconBar .iconContainer {
+      opacity: 0.5; }
+      .sessionDock .iconBar .iconContainer .icon {
+        height: 24px;
+        width: 24px;
+        margin: 16px 18px 13px 18px;
+        cursor: pointer; }
+    .sessionDock .iconBar .iconContainer:first-of-type {
+      margin-top: 54px; }
+    .sessionDock .iconBar .iconContainer.selected {
+      background: #292b30;
+      opacity: 1; }
+  .sessionDock .dockArea {
+    flex-grow: 1;
+    background: #292b30; }
+    .sessionDock .dockArea .dockHeader {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 0px 25px; }
+      .sessionDock .dockArea .dockHeader .title {
+        font-weight: normal;
+        flex-grow: 1; }
+      .sessionDock .dockArea .dockHeader .moveToDockIcon {
+        height: 24px;
+        width: 28px;
+        margin-right: 20px;
+        cursor: pointer; }
+      .sessionDock .dockArea .dockHeader .close {
+        height: 24px;
+        width: 24px;
+        margin-right: 20px;
+        cursor: pointer; }
+    .sessionDock .dockArea .dockContent {
+      margin: 0px 20px 0px 25px; }
+
+.sessionDockRTL {
+  display: flex;
+  height: 100%; }
+  .sessionDockRTL .iconBar {
+    height: 100%;
+    width: 60px;
+    background: #1f1f21; }
+    .sessionDockRTL .iconBar .iconContainer {
+      opacity: 0.5; }
+      .sessionDockRTL .iconBar .iconContainer .icon {
+        height: 24px;
+        width: 24px;
+        margin: 16px 18px 13px 18px;
+        cursor: pointer; }
+    .sessionDockRTL .iconBar .iconContainer:first-of-type {
+      margin-top: 54px; }
+    .sessionDockRTL .iconBar .iconContainer.selected {
+      background: #292b30;
+      opacity: 1; }
+  .sessionDockRTL .dockArea {
+    flex-grow: 1;
+    background: #292b30; }
+    .sessionDockRTL .dockArea .dockHeader {
+      height: 68px;
+      display: flex;
+      align-items: center;
+      margin: 0px 25px 0px 0px; }
+      .sessionDockRTL .dockArea .dockHeader .title {
+        font-weight: normal;
+        flex-grow: 1; }
+      .sessionDockRTL .dockArea .dockHeader .moveToDockIcon {
+        height: 24px;
+        width: 28px;
+        margin-left: 20px;
+        cursor: pointer; }
+      .sessionDockRTL .dockArea .dockHeader .close {
+        height: 24px;
+        width: 24px;
+        margin-left: 20px;
+        cursor: pointer; }
+    .sessionDockRTL .dockArea .dockContent {
+      margin: 0px 25px 0px 20px; }
+
+.exerciseSettingsContainer {
+  background-color: transparent;
+  margin: 10px 47px 0px 5px; }
+  .exerciseSettingsContainer .row {
+    display: flex;
+    align-items: center; }
+  .exerciseSettingsContainer .symbolSizer {
+    margin-top: 26px;
+    margin-bottom: 17px; }
+  .exerciseSettingsContainer .leftSpacing {
+    margin-left: 51px;
+    width: 100%; }
+  .exerciseSettingsContainer .noSpacing {
+    width: 37%; }
+
+.exerciseSettingsContainerRTL {
+  background-color: transparent;
+  margin: 10px 5px 0px 47px; }
+  .exerciseSettingsContainerRTL .row {
+    display: flex;
+    align-items: center; }
+  .exerciseSettingsContainerRTL .symbolSizer {
+    margin-top: 26px;
+    margin-bottom: 17px; }
+  .exerciseSettingsContainerRTL .leftSpacing {
+    margin-right: 51px;
+    width: 100%; }
+  .exerciseSettingsContainerRTL .noSpacing {
+    width: 37%; }
+
+.tabletopHeader {
+  position: absolute;
+  display: flex;
+  height: 59px;
+  top: 0px;
+  z-index: 100; }
+
+.simulationTree {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  position: relative; }
+  .simulationTree .icon {
+    margin-left: 20px;
+    height: 32px;
+    width: 30px;
+    cursor: pointer;
+    color: #fff; }
+  .simulationTree .nameContainer {
+    margin-left: 15px; }
+  .simulationTree .simName {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .simulationTree .popoverBtn {
+    cursor: pointer;
+    color: #fff;
+    margin-left: 25px; }
+  .simulationTree .rightPortionContainer {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 25px; }
+
+.simulationTreeRTL {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  position: relative; }
+  .simulationTreeRTL .icon {
+    margin-right: 20px;
+    height: 32px;
+    width: 30px;
+    cursor: pointer;
+    color: #fff; }
+  .simulationTreeRTL .nameContainer {
+    margin-right: 15px; }
+  .simulationTreeRTL .simName {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .simulationTreeRTL .popoverBtn {
+    cursor: pointer;
+    color: #fff;
+    margin-right: 25px; }
+  .simulationTreeRTL .rightPortionContainer {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 25px; }
+
+.simTreePopoverContainer {
+  min-width: 400px; }
+  .simTreePopoverContainer .contentContainer {
+    margin-left: 35px; }
+    .simTreePopoverContainer .contentContainer .headerContainer {
+      display: flex;
+      align-items: center;
+      margin-top: 19px;
+      margin-bottom: 31px; }
+      .simTreePopoverContainer .contentContainer .headerContainer .headerLabel {
+        flex-grow: 1; }
+      .simTreePopoverContainer .contentContainer .headerContainer .closeBtn {
+        color: #fff;
+        cursor: pointer;
+        margin-right: 23px;
+        width: 14px;
+        height: 14px; }
+    .simTreePopoverContainer .contentContainer .entriesContainer {
+      max-height: calc(100vh - 150px);
+      overflow: scroll; }
+    .simTreePopoverContainer .contentContainer .divider {
+      background-color: #6c7079;
+      opacity: 0.5;
+      margin-left: -35px;
+      height: 1px;
+      width: calc(100% + 35px); }
+    .simTreePopoverContainer .contentContainer .simEntry {
+      height: 56px;
+      display: flex;
+      align-items: center; }
+      .simTreePopoverContainer .contentContainer .simEntry .simEntryContent {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin-right: 30px; }
+        .simTreePopoverContainer .contentContainer .simEntry .simEntryContent .icon {
+          width: 34px;
+          margin-left: 10px;
+          text-align: center; }
+        .simTreePopoverContainer .contentContainer .simEntry .simEntryContent .error {
+          color: #c35550 !important; }
+        .simTreePopoverContainer .contentContainer .simEntry .simEntryContent .modExerciseLink {
+          margin-left: 15px;
+          font-size: 14px;
+          font-family: 'roboto';
+          cursor: pointer; }
+        .simTreePopoverContainer .contentContainer .simEntry .simEntryContent .loadSimLink {
+          margin-left: 15px;
+          font-size: 14px;
+          font-family: 'roboto';
+          cursor: pointer;
+          visibility: hidden; }
+        .simTreePopoverContainer .contentContainer .simEntry .simEntryContent .loadingText {
+          margin-left: 15px;
+          font-weight: bold; }
+      .simTreePopoverContainer .contentContainer .simEntry .deleteBtn {
+        color: #fff;
+        cursor: pointer;
+        margin-right: 8px;
+        width: 16px; }
+      .simTreePopoverContainer .contentContainer .simEntry .expandCollapseBtn {
+        color: #fff;
+        cursor: pointer;
+        margin-right: 23px;
+        width: 16px; }
+    .simTreePopoverContainer .contentContainer .simEntry:hover {
+      background-color: #6c7079; }
+      .simTreePopoverContainer .contentContainer .simEntry:hover .simEntryContent .error {
+        color: #982721 !important; }
+      .simTreePopoverContainer .contentContainer .simEntry:hover .simEntryContent .loadSimLink {
+        visibility: visible; }
+    .simTreePopoverContainer .contentContainer .simEntry.current {
+      background-color: #3c4656; }
+
+.simTreePopoverContainerRTL {
+  min-width: 400px; }
+  .simTreePopoverContainerRTL .contentContainer {
+    margin-right: 35px; }
+    .simTreePopoverContainerRTL .contentContainer .headerContainer {
+      display: flex;
+      align-items: center;
+      margin-top: 19px;
+      margin-bottom: 31px; }
+      .simTreePopoverContainerRTL .contentContainer .headerContainer .headerLabel {
+        flex-grow: 1; }
+      .simTreePopoverContainerRTL .contentContainer .headerContainer .closeBtn {
+        color: #fff;
+        cursor: pointer;
+        margin-left: 23px;
+        width: 14px;
+        height: 14px; }
+    .simTreePopoverContainerRTL .contentContainer .entriesContainer {
+      max-height: calc(100vh - 150px);
+      overflow: scroll; }
+    .simTreePopoverContainerRTL .contentContainer .divider {
+      background-color: #6c7079;
+      opacity: 0.5;
+      margin-right: -35px;
+      height: 1px;
+      width: calc(100% + 35px); }
+    .simTreePopoverContainerRTL .contentContainer .simEntry {
+      height: 56px;
+      display: flex;
+      align-items: center; }
+      .simTreePopoverContainerRTL .contentContainer .simEntry .simEntryContent {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        margin-left: 30px; }
+        .simTreePopoverContainerRTL .contentContainer .simEntry .simEntryContent .icon {
+          width: 34px;
+          margin-right: 10px;
+          text-align: center; }
+        .simTreePopoverContainerRTL .contentContainer .simEntry .simEntryContent .error {
+          color: #c35550 !important; }
+        .simTreePopoverContainerRTL .contentContainer .simEntry .simEntryContent .modExerciseLink {
+          margin-right: 15px;
+          font-size: 14px;
+          font-family: 'roboto';
+          cursor: pointer; }
+        .simTreePopoverContainerRTL .contentContainer .simEntry .simEntryContent .loadSimLink {
+          margin-right: 15px;
+          font-size: 14px;
+          font-family: 'roboto';
+          cursor: pointer;
+          visibility: hidden; }
+        .simTreePopoverContainerRTL .contentContainer .simEntry .simEntryContent .loadingText {
+          margin-right: 15px;
+          font-weight: bold; }
+      .simTreePopoverContainerRTL .contentContainer .simEntry .deleteBtn {
+        color: #fff;
+        cursor: pointer;
+        margin-left: 8px;
+        width: 16px; }
+      .simTreePopoverContainerRTL .contentContainer .simEntry .expandCollapseBtn {
+        color: #fff;
+        cursor: pointer;
+        margin-right: 23px;
+        width: 16px; }
+    .simTreePopoverContainerRTL .contentContainer .simEntry:hover {
+      background-color: #6c7079; }
+      .simTreePopoverContainerRTL .contentContainer .simEntry:hover .simEntryContent .error {
+        color: #982721 !important; }
+      .simTreePopoverContainerRTL .contentContainer .simEntry:hover .simEntryContent .loadSimLink {
+        visibility: visible; }
+    .simTreePopoverContainerRTL .contentContainer .simEntry.current {
+      background-color: #3c4656; }
+
+.userBanner {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 35px; }
+  .userBanner .playerIcon {
+    margin-left: 26px;
+    width: 35px;
+    height: 35px; }
+  .userBanner .playerName {
+    margin-left: 36px; }
+  .userBanner .displayAgentsIcon {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 50px; }
+
+.userBannerRTL {
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+  padding-left: 35px; }
+  .userBannerRTL .playerIcon {
+    margin-right: 26px;
+    width: 35px;
+    height: 35px; }
+  .userBannerRTL .playerName {
+    margin-right: 36px; }
+  .userBannerRTL .displayAgentsIcon {
+    color: #fff;
+    cursor: pointer;
+    margin-right: 50px; }
+
+.userBannerPopper {
+  background: #292b30;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.playbackContainer {
+  position: absolute;
+  bottom: 0;
+  min-height: 80px;
+  z-index: 100;
+  pointer-events: none; }
+
+.playbackPanel {
+  width: 100%;
+  position: relative;
+  display: flex;
+  background: #161617e5;
+  pointer-events: all; }
+  .playbackPanel .playbackControlsPanel {
+    position: absolute;
+    z-index: 200;
+    top: 0px;
+    left: 0px;
+    width: 130px;
+    height: 40px;
+    background: #161619;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .playbackPanel .playbackControlsPanel .stepButton {
+      margin: 5px;
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      color: #fff; }
+    .playbackPanel .playbackControlsPanel .playPauseButton {
+      margin: 5px;
+      cursor: pointer; }
+    .playbackPanel .playbackControlsPanel .playStatusText {
+      font-size: 10px;
+      font-style: italic;
+      color: #fff;
+      margin: 5px; }
+  .playbackPanel .playbackControlClose {
+    position: absolute;
+    z-index: 200;
+    top: 8px;
+    right: 8px; }
+    .playbackPanel .playbackControlClose .closeBtn {
+      color: #888a8a;
+      width: 20px;
+      height: 20px;
+      cursor: pointer; }
+    .playbackPanel .playbackControlClose .closeBtn:hover {
+      color: #fff; }
+
+.playbackSettingsContainer .fieldContainer {
+  display: flex; }
+  .playbackSettingsContainer .fieldContainer .teamContainer {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin-top: 24px; }
+    .playbackSettingsContainer .fieldContainer .teamContainer .control {
+      width: 170px; }
+    .playbackSettingsContainer .fieldContainer .teamContainer .teamIconContainer {
+      margin-right: 10px;
+      margin-left: 5px; }
+
+.playbackSettingsContainer .stepCheckContainer {
+  margin-top: 30px;
+  margin-left: -12px;
+  display: flex;
+  align-items: center; }
+
+.playbackSettingsContainer .divider {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  left: -24px;
+  width: 120%; }
+
+.playbackSettingsContainer .cancelBtn {
+  width: 74px;
+  margin-left: 10px;
+  margin-right: 20px; }
+
+.playbackSettingsContainer .saveBtn {
+  width: 74px;
+  margin-left: 0px;
+  margin-right: 10px; }
+
+.timelineCanvas {
+  position: absolute;
+  left: 0px;
+  top: 0px; }
+
+.timelinePopoverEvent {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .timelinePopoverEvent .eventText {
+    margin: 10px;
+    width: 330px; }
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #2653B2;
+  border-radius: 50%;
+  display: inline-block; }
+
+.newEventBar {
+  background-color: green;
+  position: absolute;
+  width: 7px;
+  min-height: 90px;
+  height: 100%;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-bottom: -15px; }
+
+.newEventBarRTL {
+  background-color: green;
+  position: absolute;
+  width: 7px;
+  min-height: 90px;
+  height: 100%;
+  margin-right: -15px;
+  margin-top: -15px;
+  margin-bottom: -15px; }
+
+.mapPopup .mapboxgl-popup-tip {
+  border-top-color: #3c4656 !important; }
+
+.mapPopup .mapboxgl-popup-content {
+  background: #3c4656; }
+
+.mapFloorPlanEntry {
+  height: 58px;
+  min-width: 147px;
+  margin-top: 10px;
+  background: #161617bf;
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 4px #00000029;
+  border-radius: 10px; }
+  .mapFloorPlanEntry .facilityName {
+    text-transform: uppercase;
+    text-align: center; }
+  .mapFloorPlanEntry .floorPlan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px; }
+    .mapFloorPlanEntry .floorPlan .eyeIcon {
+      height: 12px;
+      width: 12px;
+      margin-right: 5px; }
+    .mapFloorPlanEntry .floorPlan .eyeIconRTL {
+      height: 12px;
+      width: 12px;
+      margin-left: 5px; }
+
+.mapFloorPlanEntrySettings {
+  background: #000;
+  width: 208px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 4px #00000099;
+  border-radius: 10px; }
+  .mapFloorPlanEntrySettings .header {
+    display: flex; }
+    .mapFloorPlanEntrySettings .header .facilityName {
+      margin-top: 15px;
+      text-transform: uppercase;
+      flex-grow: 1;
+      text-align: center; }
+    .mapFloorPlanEntrySettings .header .closeBtn {
+      cursor: pointer;
+      margin-top: 12px;
+      margin-right: 10px;
+      height: 20px;
+      width: 20px;
+      color: #fff; }
+  .mapFloorPlanEntrySettings .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mapFloorPlanEntrySettings .content .floorPlanEntry {
+      margin: 5px; }
+      .mapFloorPlanEntrySettings .content .floorPlanEntry .container {
+        cursor: pointer; }
+        .mapFloorPlanEntrySettings .content .floorPlanEntry .container .icon {
+          height: 12px;
+          width: 12px;
+          margin-right: 5px;
+          color: #b5b9be; }
+        .mapFloorPlanEntrySettings .content .floorPlanEntry .container .icon.selected {
+          color: #fff; }
+      .mapFloorPlanEntrySettings .content .floorPlanEntry .container:hover {
+        color: #fff; }
+      .mapFloorPlanEntrySettings .content .floorPlanEntry .container.selected {
+        cursor: default; }
+
+.mapFloorPlanControl {
+  height: 58px;
+  width: 68px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  background: #161617bf;
+  justify-content: space-around;
+  pointer-events: all;
+  box-shadow: 0px 0px 4px #00000029;
+  border-radius: 10px; }
+  .mapFloorPlanControl .closeBtn {
+    cursor: pointer;
+    color: #888a8a;
+    width: 22px;
+    height: 22px; }
+  .mapFloorPlanControl .closeBtn:hover {
+    color: #fff; }
+
+@media only screen and (min-width: 750px) {
+  .mapFloorPlanSettingsContainer {
+    width: 420px; } }
+
+.mapFloorPlanSettingsContainer .dockLayoutContainer {
+  background: #5e6571;
+  height: 118px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px; }
+  .mapFloorPlanSettingsContainer .dockLayoutContainer .buttonContainer {
+    position: relative;
+    height: 60px; }
+    .mapFloorPlanSettingsContainer .dockLayoutContainer .buttonContainer .btn {
+      position: absolute;
+      color: #fff;
+      cursor: pointer; }
+    .mapFloorPlanSettingsContainer .dockLayoutContainer .buttonContainer .btnTop {
+      top: 0px;
+      left: 20px;
+      height: 18px;
+      width: 16px; }
+    .mapFloorPlanSettingsContainer .dockLayoutContainer .buttonContainer .btnLeft {
+      top: 20px;
+      left: 0px;
+      height: 16px;
+      width: 18px; }
+    .mapFloorPlanSettingsContainer .dockLayoutContainer .buttonContainer .btnRight {
+      top: 20px;
+      left: 38px;
+      height: 16px;
+      width: 18px; }
+    .mapFloorPlanSettingsContainer .dockLayoutContainer .buttonContainer .btnBottom {
+      top: 38px;
+      left: 20px;
+      height: 18px;
+      width: 16px; }
+    .mapFloorPlanSettingsContainer .dockLayoutContainer .buttonContainer .btnSelected {
+      color: #4db5f4;
+      cursor: default; }
+
+.mapFloorPlanSettingsContainer .divider {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  left: -24px;
+  width: 120%; }
+
+.mapFloorPlanSettingsContainer .facilitiesContainer {
+  margin-top: 15px; }
+  .mapFloorPlanSettingsContainer .facilitiesContainer .facilityEntry {
+    display: flex;
+    align-items: center; }
+    .mapFloorPlanSettingsContainer .facilitiesContainer .facilityEntry .facilityName {
+      margin-left: 15px; }
+
+.mapFloorPlanSettingsContainer .cancelBtn {
+  width: 74px;
+  margin-left: 10px;
+  margin-right: 20px; }
+
+.mapFloorPlanSettingsContainer .saveBtn {
+  width: 74px;
+  margin-left: 0px;
+  margin-right: 10px; }
+
+.mapContextMenu .headerMenuItem {
+  background-color: #494d53;
+  cursor: default;
+  height: 40px; }
+  .mapContextMenu .headerMenuItem .container {
+    display: flex;
+    width: 100%; }
+    .mapContextMenu .headerMenuItem .container .backBtn {
+      cursor: pointer; }
+    .mapContextMenu .headerMenuItem .container .caption {
+      flex-grow: 1;
+      color: #fff;
+      font-size: 14px;
+      text-align: center; }
+
+.mapContextMenu .divider {
+  height: 2px;
+  width: 100%;
+  background-color: #8b8d91; }
+
+.mapContextMenu .icon {
+  color: #fff;
+  min-width: 42px; }
+
+.mapContextMenu .entityListContainer {
+  overflow-y: scroll;
+  max-height: calc(100vh - 72px); }
+
+.shareEquipment, .shareEquipmentSelected {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #606570;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: grey;
+  background-color: #414449; }
+
+.shareEquipmentSelected {
+  color: white;
+  background-color: #B5B9BE; }
+
+.shareEquipmentSelected:hover, .shareEquipment:hover {
+  color: white;
+  background-color: #B5B9BE;
+  cursor: pointer;
+  columns: #87877f; }
+
+.lineMod {
+  background-color: #E54E52; }
+
+.grayBorderedContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #606570;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  color: grey;
+  background-color: transparent; }
+
+.playerNotificationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: white;
+  background-color: #5C6A81;
+  margin: 5px;
+  padding: 0px;
+  height: 69;
+  max-width: 450; }
+
+.modificationItemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  border: 0px solid #292B30;
+  border-radius: 5px;
+  color: white;
+  background-color: #3C4656;
+  margin: 5px;
+  padding: 5px;
+  min-height: 70; }
+
+.modificationActionsRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 5px;
+  background-color: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.modificationflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: transparent;
+  margin-top: 10px;
+  padding-left: 0; }
+
+.modificationflexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: stretch; }
+
+.modificationHistoryflex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: stretch; }
+  .modificationHistoryflex .nameContainer {
+    margin-left: 5px;
+    width: 70%; }
+
+.modificationflexColumn input {
+  border: 1px solid #56657C;
+  background: #303946 0% 0% no-repeat padding-box;
+  padding: 4px;
+  font-size: 12px; }
+  .modificationflexColumn input:focus {
+    z-index: 10; }
+
+.modificationflexColumn .modificationCommentsField .MuiFormControl-root {
+  width: 100%; }
+
+.modificationCommentsField ::-webkit-input-placeholder {
+  color: #828283;
+  font-size: 12px; }
+
+.modificationTimer {
+  position: absolute;
+  right: 30px; }
+  .modificationTimer .showTimeBox, .modificationTimer .timeAddBox {
+    display: inline-block; }
+  .modificationTimer .showTimeBoxLabel {
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    text-align: center; }
+  .modificationTimer .showTimeBoxValue {
+    font-size: 22px;
+    line-height: 25px;
+    color: #ffffff; }
+  .modificationTimer .addMinutesInTimer {
+    padding-left: 15px;
+    position: relative;
+    display: inline-block; }
+    .modificationTimer .addMinutesInTimer .MuiSvgIcon-root {
+      fill: #fff;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      vertical-align: super; }
+      .modificationTimer .addMinutesInTimer .MuiSvgIcon-root:hover {
+        fill: #4DB5F4; }
+    .modificationTimer .addMinutesInTimer .addModifierTimes {
+      top: 25px;
+      display: block;
+      position: absolute;
+      min-width: 116px;
+      right: 0px; }
+      .modificationTimer .addMinutesInTimer .addModifierTimes ul li {
+        list-style: none;
+        padding: 15px;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 16px;
+        background: #2D2E2F;
+        cursor: pointer; }
+        .modificationTimer .addMinutesInTimer .addModifierTimes ul li:hover {
+          background: #707070; }
+  .modificationTimer .redFont {
+    color: #B14033; }
+  .modificationTimer .endModificationsButton {
+    display: inline-block;
+    background: #2D2E2F;
+    border-top: 1px solid white; }
+    .modificationTimer .endModificationsButton button {
+      font-size: 12px;
+      line-height: 14px;
+      background-color: transparent;
+      color: #ffffff;
+      letter-spacing: 0;
+      text-align: left;
+      align-items: self-start;
+      justify-content: left;
+      padding: 10px 10px 10px 0px; }
+    .modificationTimer .endModificationsButton:hover {
+      background: #707070; }
+
+.resetModificationsButton {
+  display: inline-block; }
+  .resetModificationsButton button {
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #54AC5C;
+    box-shadow: 0px 2px 3px #00000029;
+    border: 1px solid #FFFFFF;
+    color: #ffffff;
+    letter-spacing: 0; }
+    .resetModificationsButton button:hover {
+      background-color: #3E8644; }
+
+.userMappingsList {
+  border-bottom: 1px solid #828283;
+  margin-bottom: 10px; }
+  .userMappingsList .usersList {
+    padding: 10px 0 10px 10px; }
+  .userMappingsList .selfAgentsBox, .userMappingsList .controlAgentsBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .userMappingsList .selfAgentsBox .userMappingChips, .userMappingsList .controlAgentsBox .userMappingChips {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      background-color: #5F6571;
+      margin: 10px;
+      border-radius: 15px; }
+      .userMappingsList .selfAgentsBox .userMappingChips .MuiIconButton-root, .userMappingsList .controlAgentsBox .userMappingChips .MuiIconButton-root {
+        padding-left: 0;
+        padding: 5px; }
+  .userMappingsList .userName {
+    margin: 10px 0;
+    padding-left: 11px; }
+    .userMappingsList .userName .playerIcon {
+      vertical-align: middle;
+      margin-right: 10px; }
+  .userMappingsList:last-of-type {
+    border-bottom: none; }
+
+.Toastify__toast-container .toast-notifications {
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  background: #5F6571;
+  min-height: 60px;
+  z-index: 9999;
+  padding: 20px;
+  right: 10px;
+  border-radius: 8px;
+  top: 10px; }
+
+.Toastify__toast-container .Toastify__close-button {
+  position: absolute;
+  top: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  font-size: .7rem;
+  right: 5px;
+  top: 1px; }
+
+.selectAllTeam {
+  padding-right: 20px; }
+  .selectAllTeam .MuiIconButton-root {
+    padding-top: 0px;
+    vertical-align: -webkit-baseline-middle; }
+
+.popperForDisplayingTimeNonFacilitators {
+  background: #5E6571; }
+  .popperForDisplayingTimeNonFacilitators tr:hover {
+    background-color: rgba(255, 255, 255, 0.08); }
+  .popperForDisplayingTimeNonFacilitators tr td {
+    border-bottom: none; }
+
+.popperForDisplayingTime {
+  background: #292b30; }
+
+.viewTimeLink .viewTimes {
+  font-size: 14px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  padding: 13px; }
+  .viewTimeLink .viewTimes:hover {
+    background-color: rgba(255, 255, 255, 0.08); }
+
+.MuiMenuItem-root.viewRecipientsList {
+  font-size: 12px;
+  line-height: 1.43;
+  cursor: default; }
+
+.divToExport [data-html2canvas-ignore="true"] {
+  display: none; }
+
+.divToExport .modificationItemContainer {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #fff;
+  min-height: 30px !important;
+  height: 30px !important;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #F2F2F2 !important; }
+  .divToExport .modificationItemContainer .MuiTypography-body1 {
+    color: #000 !important;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    font-size: 10px;
+    font-family: "Roboto" !important;
+    letter-spacing: normal; }
+
+.divToExport .modificationHistoryflex {
+  background-color: #F2F2F2 !important;
+  padding-bottom: 5px;
+  padding-top: 5px; }
+
+.divToExport .nameContainer .b2-bright-gray {
+  color: #000 !important;
+  font-size: 10px;
+  font-family: "Roboto" !important;
+  letter-spacing: normal; }
+
+.divToExport .b1-white {
+  color: #000 !important;
+  font-size: 10px;
+  font-family: "Roboto" !important;
+  letter-spacing: normal; }
+
+.divToExport .agentIconDiv {
+  min-width: 25px !important;
+  margin: 0 !important; }
+  .divToExport .agentIconDiv .agentIcon {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important; }
+    .divToExport .agentIconDiv .agentIcon svg {
+      width: 20px;
+      height: 20px; }
+    .divToExport .agentIconDiv .agentIcon img {
+      width: 15px !important;
+      height: 15px !important; }
+
+.divToExport .modificationflexColumn {
+  margin: 0; }
+
+#report-title {
+  display: none;
+  color: #9C9C9C;
+  font-size: 12px;
+  font-family: "Roboto" !important;
+  letter-spacing: normal;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  margin-top: 0; }
+  #report-title .pdfHeading {
+    font-size: 16px;
+    color: #000 !important;
+    font-weight: bold; }

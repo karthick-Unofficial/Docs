@@ -1,0 +1,3 @@
+export const BERTH_RECEIVED = "BERTH_RECEIVED";
+export const BERTH_REMOVED = "BERTH_REMOVED";
+export const BERTH_UPDATED = "BERTH_UPDATED";

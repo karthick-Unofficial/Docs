@@ -1,0 +1,117 @@
+{
+	"name": "mainpage.list.driveCamTitle",
+	"id": "drive-cam",
+	"queryScript": "drive-cam.js",
+	"disablePDF": true,
+	"desc": "mainpage.list.driveCamDesc",
+	"category": "event-report",
+	"groupedResults": false,
+	"fields": [
+		{
+			"name": "entities",
+			"type": "drop-down-menu",
+			"singleSelection": true,
+			"desc": "Choose your entities",
+			"endpoint": {
+				"basePath": "reports-app/api/selectValuesFromConfig/driveCamEntitiesURL",
+				"template": null,
+				"debounce": true
+			}
+		},
+		{
+			"name": "event type",
+			"type": "drop-down-menu",
+			"desc": "Choose an event type",
+			"endpoint": {
+				"basePath": "reports-app/api/selectValuesFromConfig/driveCamEventTypes",
+				"template": null,
+				"debounce": false
+			}
+		},
+		{
+			"name": "startDate",
+			"type": "date-picker",
+			"desc": "Start Date"
+		},
+		{
+			"name": "endDate",
+			"type": "date-picker",
+			"desc": "End Date"
+		}
+	],
+	"type": {
+		"multi": [
+			{
+				"type": "section",
+				"property": "event",
+				"rows": [
+					{
+						"property": "id",
+						"display": "Event ",
+						"width": 1,
+						"header": true
+					},
+					{
+						"property": "time",
+						"display": "Recorded On ",
+						"width": 1
+					},
+					{
+						"property": "driver",
+						"display": "Driver: ",
+						"width": 1
+					},
+					{
+						"property": "vehicle",
+						"display": "Vehicle: ",
+						"width": 1
+					},
+					{
+						"property": "group",
+						"display": "Group: ",
+						"width": 1
+					}
+				]
+			},
+			{
+				"type": "section",
+				"property": "analysis",
+				"rows": [
+					{
+						"property": "",
+						"display": "Event Analysis",
+						"width": 1,
+						"header": true
+					},
+					{
+						"property": "behaviors",
+						"display": "",
+						"width": 1
+					}
+				]
+			},
+			{
+				"type": "section",
+				"property": "notes",
+				"rows": [
+					{
+						"property": "",
+						"display": "Comments",
+						"width": 1,
+						"header": true
+					},
+					{
+						"property": "formattedNotes",
+						"display": "",
+						"width": 1
+					}
+				]
+			},
+			{
+				"type": "long-field",
+				"property": "driveCamVid",
+				"header": ""
+			}
+		]
+	}
+}

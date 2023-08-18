@@ -1,0 +1,256 @@
+June 2023:
+CB2-6048 Profiles - Widget Order
+CB2-5971 Aeris Weather - Image Quality(Frontend)(Feature)
+CB2-5831 List App - Redo completed by/time(Frontend)(Backend)(Feature)
+CB2-6131 Reports - Replace HTML-PDF Library for PDF Reports(Frontend)(Feature)
+CB2-6150 Events - Infinite Save State Calls In Events App
+CB2-6160 Reports - Sitrep PDF Issues
+CB2-6161 Tripwire report: Your Report Encountered a Problem is displayed in Emailed PDF report
+CB2-6162 Zone activity report: Your Report Encountered a Problem is displayed in Emailed PDF report
+________________________________________________________________________________
+July 2023:
+CB2-5964 Reports app crashing when user tries to update the selection criteria again
+CB2-5959 Notes widget is getting removed from edit profile layout when notes panel is expanded and toggle switch is disappeared
+CB2-5965 Reports app - Unable to navigate to the next page in the report
+CB2-5968 All entities under proximity zone are not getting displayed in widget (only facility is displayed)
+CB2-5942 Map is getting crashed on change of base map in Zone replay / Track replay
+CB2-5958 Details widget not displayed for ADSB track
+CB2-5933 Facility condition widget is not displayed
+CB2-5983 Report app - 'Unauthorized' error is displayed
+CB2-5940 Track replay - All the layers get turned off in the replay
+CB2-5995 Replay app - Title of the replay on loading an existing replay
+CB2-6000 Settings app - Turning off any app for any org turns it off for other orgs
+CB2-6006 Save and cancel button is not getting enabled on notes 
+CB2-5993 Lists - Too Many Category API Requests
+CB2-6034 Replay archive : Multiple UI Issues
+CB2-6030 MAP App: Expand option is not getting displayed for Notes widget-User is not able to add notes
+CB2-6031 The auto-expand option is not getting saved per profile
+CB2-5951 Berth assignment email issue
+CB2-5917 Map app - Events - Shared events icon is displayed when event is shared with other org
+CB2-5987 Event log report: Arabic language multiple issues
+CB2-5976 Map app/Facilities app - Floor plan is not displayed
+CB2-5975 Map app crashes when changing the base map from Satellite to Dyess
+CB2-5778 Add Unsubscribe link for emailed alert notifications(Frontend)(Feature)
+CB2-6036: Replay archive : Replay is not getting loaded on click of 'Load' button for Map zone,Map selection and Track replay 
+CB2-5778 Add Unsubscribe link for emailed alert notifications
+CB2-6046 Security Vulnerability - Pug
+CB2-6047 Security Vulnerability - D3 Color
+CB2-6010 Map Overlays: Live traffic is displayed over the map labels
+CB2-6011 Map Overlays: Nautical charts are displayed below traffic layer
+CB2-6013 Map Overlays: Facilities/shapes/points are displayed not displayed above traffic layer
+CB2-6014 Map Overlays: Weather is not displayed above traffic layer
+CB2-6012 Map Overlays: Layers are not displayed in alphabetical order
+CB2-6012 Map Overlays: Layers are not displayed in alphabetical order
+CB2-6037 Events - App Performance Slow
+CB2-6073 List Panel - Add Virtualization(Frontend)(Feature)
+CB2-6040 Reports - Move Files To Separate Bucket(Backend)(Task)
+CB2-6041 Replay - Move Files to Separate Bucket(Backend)(Task)
+CB2-6079 Facilities - Pin To Collection
+CB2-6077 Alert Panel - Image Tab
+CB2-6078 Alert Card - New Alert Tab Crash
+CB2-6080 Facility Icon - Not Clustering
+________________________________________________________________________________
+June 2023:
+CB2-5835 Edit Profile Layout - New UI(Frontend)(Feature)
+CB2-4322 Events - Deleting files is not recorded in the activity log
+CB2-5881 Flickering issue in the entity profile on scrolling
+CB2-5890 Rules - App Bar Scrolling Issue
+CB2-5888 Track Replay - Multiple UI Issues
+CB2-5410 Map - Configurable Map Overlays(Frontend)(Feature)
+CB2-5787 Lists - Can't name a new category while creating a new list
+CB2-5912 Track Replay - Load Replay button is enabled after the track is
+CB2-5943 Map is getting crashed when user enables Nautical charts in Zone replay / Track replay
+CB2-5946 Details widget is not getting displayed for tracks in MAP app
+CB2-5939 Track replay - Search is not working intermittently
+CB2-5953 Map - Live Traffic Overlay Throwing Errors
+CB2-5924 Edit Profile Layout - If user clicks Normal view of one entity profile and click on another entity profile it is not getting displayed in expanded (wide) view
+CB2-5948 Vessel Report - Stevedore lookup does not display any values
+CB2-5928 Proximity Widget UI: Entries of Tracks are not in alphabetical order
+CB2-4261 Reports - Event Files / images(Frontend)(Feature)
+________________________________________________________________________________
+May 2023:
+CB2-4324 Text Box - Cursor(Feature)(Frontend)
+CB2-5838 Map - Eyeball Feature Keeps Updating
+CB2-5470 Map app - Search collection should search on the collection name and not the entities within the collection(Feature)(Frontend)
+CB2-5785 Facilities App - Add search to Camera and Access point panels(Feature)(Frontend)
+CB2-1346 Directional Support for Trip Wires(Feature)(Frontend)(Backend)
+CB2-5845 Upgrade Material UI(Task)(Frontend)
+CB2-5786 Facility - Right click on Icon/Floorplan(Feature)(Frontend)
+CB2-5843 Security Vulnerability - Fetch-mock
+CB2-5836 Apps - Remove BRC & Units Apps From Apps Menu
+CB2-5849 Replay app - Cannot turn off 'Co-ordinates on cursor' setting
+CB2-5853 Map app - On clicking 'Launch' for any event, the event app opens in the same tab and not in a new tab
+________________________________________________________________________________
+April 2023:
+CB2-5806 New Org admin login - Language is not set to default value
+CB2-5807 Logging into a disabled organization displays a blank page
+CB2-5757 Events - pinned tracks rearrange themselves periodically
+CB2-5769 Events - point shape - symbol search function isn't working
+CB2-5776 Map - Events Panel Filtering(Feature)(Frontend)
+CB2-5825 Map - Limit Closed Events to 1 Month(Feature)(Backend)
+CB2-5815 Proximity Widget - Radius options(Feature)(Frontend)
+CB2-5752 Facility condition widget - Set schedule - Date control does not have 'OK' button
+CB2-4866 Collections Disable Alert Targeting
+CB2-5767 Events - Camera Wall link doesn't open the linked cameras
+CB2-5768 Profile & Widget Component Refactoring(Task)(Frontend)
+________________________________________________________________________________
+March 2023:
+CB2-5734 Arabic Translations - Calendar Control 
+CB2-5650 Status board - Negative scenario - The UI is distorted when the text entered in the card is very long 
+CB2-5589 - Move Common Components to Orion-Components(Feature)(Frontend)
+CB2-5747 Profiles - Unable to Rearrange Widgets
+CB2-5744 Units - Targeting Icons Missing With Map Filters
+CB2-5745 Units - Targeting Icon Crashing Widget
+CB2-5760 Map app - Units panel - On transferring a member from one unit to another, UI does not refresh unless the panel is closed n reopened
+CB2-5759 Event - pinned camera can't open camera app 
+CB2-5746 Map - Alert Icons Only Show After Map Move
+CB2-5764 Map app - Units panel - Unable to edit the data of the Inactive unit member
+________________________________________________________________________________
+February 2023:
+CB2-5663 Berth - Requestor lookup table - Title issue
+CB2-5716 High Security Alert - JPEG-JS
+CB2-5711 Critical Security Alert - Nodemailer
+CB2-5643 Jest - Add New Tests for Components(Feature)(Frontend)(In development)
+CB2-5721 WhiteFox Drone Detection Widget in Shape Profile
+CB2-5713 Critical Security Alert - JWT Library
+CB2-5657 Units panel - Target locations and Interdication locations shows incorrect data
+CB2-5625 Updates to Facility priority widget are not logged in activity timeline
+CB2-5693 Weather Overlay Flashing
+CB2-5564 Implement Map Layer Ordering Everywhere
+________________________________________________________________________________
+January 2023:
+CB2-5396 Loiter Rule Duration Condition not populated in Editor
+CB2-5655 Events - Add to specfic list is causeing the list to crash
+CB2-5662 UI - Berth lookup -  Save link is not highlighted when data is valid
+CB2-5655 Events - Add to specfic list is causeing the list to crash
+CB2-5673 Replay App- Track history details not appearing on fetch points
+CB2-5675 Replay app - Entity profile crashing on deselecting Track history 
+CB2-5676 Events Widget - Target Observed button should be disabled if the event is closed/ended
+CB2-5544 Map app - Clear link in the left panel is non functional
+CB2-5667 Settings - Unable to upload user profile image
+CB2-4279 Camera app - Weather Radar opacity slider jumpy
+CB2-5691 UI Issue - Activity timeline in Alert notification
+CB2-5692 Activity timeline - Alert notification - On clicking close all the data posted in the activity timeline is deleted/does not show on UI
+CB2-5690 Rules app - Performance issue - On clicking the rule, the rule details page takes a noticeable time to load
+CB2-5689 UI Issue - Rules app - The time allowed field in the duration condition does not limit the input
+CB2-5694 Units - Phone Number Not Including Country Code
+
+________________________________________________________________________________
+December 2022:
+CB2-5585 Dyess AI - Event Widget(Feature)(Frontend)
+CB2-4530 Replay - Country Flag Icon
+CB2-5594 Status Board - Move Global Filtering to Server
+________________________________________________________________________________
+November 2022:
+CB2-5583 Dyess AI - Global Status Board Panel(Feature)(Frontend)
+CB2-5582 Dyess AI - Facility Priority Widget(Feature)(Backend)
+________________________________________________________________________________
+October 2022:
+CB2-5535 Lists - Attachments aren't loading
+CB2-5547 Eco admin - Total connections can be decreased to less than 0.
+CB2-5557 Login - On logging in as Ecoadmin, error is displayed in console
+CB2-5428 Refactor RTL and LTR Styles(Task)(Frontend)
+CB2-5559 Remove Locale-Specific Code in CBTable
+CB2-5491 Events - Activity timeline - not logging deletion of pinned items
+CB2-5565 Use More Specific Imports(Task)(Frontend)
+CB2-4530 Replay - Country Flag Icon
+CB2-4537 Replay - Time Selection
+CB2-5553 Settings app - Manage feed sharing selections show delayed update on UI
+CB2-5578 Move Common Actions to Orion-Components(Task)(Frontend)
+________________________________________________________________________________
+September 2022:
+CB2-5432 Generic (all apps) - Unable to link any entity
+CB2-5434 Unable to delete any entity due to UI issue
+CB2-5435 UI issue on Berth request app
+CB2-5438 Camera app - Unable to Hide/Unhide camera FOV. Error in console
+CB2-5429 List - checkbox timestamp completeded before checked
+CB2-5453 Events - Notes Widget crashes (Not able to reproduce this issue)
+CB2-5448 Generic - Styling issue
+CB2-5464 Facilities app - Create new facility - Facility is created but does not display on Map without manual refresh
+CB2-5465 Facilities app  - Delete facility - Facility shows on the Map after deletion till user refreshes the page
+CB2-5466 Facilities - Edit profile layout - Access Point option UI Issue (16-09-22)
+CB2-5462 Map app - Copy to new collection - New collection is displayed after manual refresh (Not able to reproduce this issue)
+CB2-5460 Unable to draw point/line/polygon on map (Does not repeat anymore)
+CB2-5458-Entity profile of 'Kamera' does not load(Needs clarification)(Moved to Feature Testing)
+CB2-5483 Cameras - Full Screen Styling
+CB2-5450 Map app - Unable to upload file 
+CB2-5476 Facilities app  - When the entity profile of one facility is open , other facilities don't go away from map
+CB2-5486 Type ahead search not working in camera dock
+CB2-5477 Berth app - On clicking the Vessel report form link opens a blank page, error in console
+CB2-5489 Replay App- Track history details not appearing
+CB2-5494 Facilities app - Access points icon don't show up on the floor plan
+CB2-5469 Files Widget - Order Keeps Changing (Seems not to be repeating anymore)(Changes not Deployed)
+CB2-5498 Map app - SSR entity profile - Type shows as Access point 
+CB2-5499 Map app - SSR entity profile -  Activity Timeline filter shows AccessPoint Updates
+CB2-5500 Map app - SSR Radar - Control widget is displayed when feed does not have the 'Control' permission
+CB2-5503 Camera app - UI Issue - Label issue on the Wiper on/off on the buttons in the preset section for a camera added to camera dock(Table Data issue)
+CB2-5495 Generic - Styling issues - 3
+CB2-5504 Camera app - Clicking on map to add the nearest camera to the dock is not working
+CB2-5431 Rules - Condition Dialog Styling(Moved to feature testing)
+CB2-5525 Rules app - Clicking on Cancel on the Unsubscribe dialog does not close the dialog
+CB2-5529 Rules app - UI Issue- On selecting the recipient, the selection is displayed after a delay
+CB2-5528 {Intermittent} Rules app - Blank page shows up with error in console
+CB2-5516 Generic - Styling issues - 4
+CB2-5535 Lists - Attachments aren't loading
+CB2-5521 Map app - Unable to add New rules from the Line entity profile- rules widget
+CB2-5512 SSR Radar - Shows up in the list when the Manage permission is turned off
+CB2-5543 Map app - Clicking on 'eye' icon for own collection crashes the left panel 
+CB2-5546 Rules app - Edit rule is failing, error in console
+CB2-5514 Berth app - Vessel report form data issue 
+CB2-5515 Camera app - Refresh issue on camera app
+CB2-5552 Rules app - When 'New Rule' is clicked from within the rules widget in a line, the  data is not default to Cross/Line name in rules app
+CB2-5554 Generic - Styling/UI issues in Arabic locale 
+CB2-5468 Events - Notes Widget Focus & Conflict
+________________________________________________________________________________
+August 2022:
+CB2-5311 SSR - Health Checks & Control - (Feature)(Frontend)(Backend)
+CB2-5419 Replay - Map Overlays Not Working
+CB2-5313 Upgrade Material-UI(Feature)(Frontend)
+________________________________________________________________________________
+July 2022:
+CB2-5392 Upgrade React Components to leverage new architecture - (Feature)(Frontend)
+CB2-5376 Events - Pinned faclities doesn't show the camera widget
+CB2-5402 Apps Not Redirecting to Login
+CB2-5400 Map - Alerts Without Object Crash Map
+________________________________________________________________________________
+June 2022:
+CB2-5382 Map - Selected Base Map Not Translated
+CB2-5388 Replay app - Access point entity profile does not show Files and Camera widget
+CB2-5333 Map - Events - Slew slow to respond
+CB2-5371 Events  - User without Manage permission have manage on equip. and resources
+CB2-5343 Cameras-app Zoom Functionality issues.
+CB2-5352 Reports - UI Issue
+CB2-5343 Camera app - UI issue when Weather radar overlay is turned on
+CB2-5381 Map - Repeatedly Calling For Floor Plans
+CB2-5374 Events - Edits to proximaty zones not recorded in the activity log
+CB2-5346 Camera - Spotlight flickering issue
+CB2-5347 Dismiss all alerts shows error in Alert widget
+CB2-5370 Arabic - Map Markers
+CB2-5372 Access Point - Right Click Cluster
+CB2-5336 Events - List - Rows not added to the list
+CB2-5373 Events - User with permission doesnt't see share button on the template
+CB2-5367 Change password is not responding
+CB2-5368 New account email shows 'Undefined'
+CB2-5348 Rules - Add TIME condition - UI Issue , Calendar looks disabled
+CB2-5343 Camera app - UI issue when Weather radar overlay is turned on
+CB2-5383 Map - Option To Remove Weather & Nautical Charts - (Feature)(Frontend)
+CB2-5332 Events - UI issue - Resources/Equipment heading alignment issue
+
+________________________________________________________________________________
+April 2022 - May 2022:
+CB2-4986 Ecosystem - Async/Await(Feature)(Backend)
+CB2-5277 Convert Class Components To Functional Components(Task)(Frontend)
+________________________________________________________________________________
+March 2022:
+CB2-5096 Cameras - Access Point Placement Workflow(Feature)(Frontend)
+
+________________________________________________________________________________
+February 2022:
+CB2-4965 Facilities - Access Point Placement Workflow(Feature)(Frontend)
+________________________________________________________________________________
+January 2022:
+CB2-4964 Access Point Entity & Profile(Feature)(Frontend)
+________________________________________________________________________________
+November 2021 - Decemember 2021:
+CB2-4954 Internationalization(Feature)(Frontend)
+CB2-4956 Internationalization - Right-to-Left Support(Feature)(Frontend)

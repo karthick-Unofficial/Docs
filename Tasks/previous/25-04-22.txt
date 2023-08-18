@@ -1,0 +1,13 @@
+Today's Task:
+CB2-4986
+- Worked on testing ecosystem workflow in addition to async/await implementations.
+CB2-5277
+- Worked on converting class components to functional components in below files of rules-app.
+  - AlertGenerator/AlertTable
+  - AlertGenerator/SearchField
+  - AlertGenerator/SubmitControl
+  - CreateEditRule/AlertTable
+  - CreateEditRule/AudioSettings
+  - CreateEditRule/DismissSettings
+  - CreateEditRule/RuleFields
+  - CreateEditRule/SubmitControls

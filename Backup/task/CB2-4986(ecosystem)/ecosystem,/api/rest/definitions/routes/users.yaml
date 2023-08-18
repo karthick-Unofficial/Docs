@@ -1,0 +1,611 @@
+users:
+  /users:
+    get:
+      description: Get all users
+      operationId: getAll
+      tags:
+        - Users
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+        '401':
+          description: Unauthorized
+    post:
+      description: Create a user
+      operationId: create
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    admin:
+                      type: boolean
+                    contact:
+                      type: object
+                      properties:
+                        address:
+                          type: string
+                        cellPhone:
+                          type: string
+                        city:
+                          type: string
+                        officePhone:
+                          type: string
+                        state:
+                          type: string
+                        zip:
+                          type: string
+                    deleted:
+                      type: boolean
+                    ecoAdmin:
+                      type: boolean
+                    email:
+                      type: string
+                    name:
+                      type: string
+                    orgId:
+                      type: string
+                    orgRole:
+                      type: object
+                      properties:
+                        organization:
+                          type: object
+                          properties:
+                            canShare: 
+                              type: boolean
+                            canContribute:
+                              type: boolean
+                            canEdit:
+                              type: boolean
+                            canView:
+                              type: boolean
+                        roleId:
+                          type: string
+                        ecosystem:
+                          type: object
+                          properties:
+                            canShare:
+                              type: boolean
+                            canContribute:
+                              type: boolean
+                            canView:
+                              type: boolean
+                        title:
+                          type: string      
+                    role:
+                      type: string
+                    roleId:
+                      type: string
+                    username:
+                      type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+  /users/myProfile:
+    get:
+      description: Return logged in user profile
+      operationId: getProfile
+      tags:
+        - Users  
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+  /users/{userId}:
+    get: 
+      description: Get user profile by ID
+      operationId: getProfile
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+    post:
+      description: Update user profile by ID
+      operationId: update
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: object
+                  properties:
+                    admin:
+                      type: boolean
+                    contact:
+                      type: object
+                      properties:
+                        address:
+                          type: string
+                        cellPhone:
+                          type: string
+                        city:
+                          type: string
+                        officePhone:
+                          type: string
+                        state:
+                          type: string
+                        zip:
+                          type: string
+                    deleted:
+                      type: boolean
+                    ecoAdmin:
+                      type: boolean
+                    email:
+                      type: string
+                    name:
+                      type: string
+                    orgId:
+                      type: string
+                    orgRole:
+                      type: object
+                      properties:
+                        organization:
+                          type: object
+                          properties:
+                            canShare:
+                              type: boolean
+                            canContribute:
+                              type: boolean
+                            canEdit:
+                              type: boolean
+                            canView:
+                              type: boolean
+                        roleId:
+                          type: string
+                        ecosystem:
+                          type: object
+                          properties:
+                            canShare:
+                              type: boolean
+                            canContribute:
+                              type: boolean
+                            canView:
+                              type: boolean
+                        title:
+                          type: string
+                    role:
+                      type: string
+                    roleId:
+                      type: string
+                    username:
+                      type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+    delete: 
+      description: Delete user profile by ID
+      operationId: delete
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+  /users/{userId}/applications/{appId}:
+    post:
+      description: Create user application by Id and appId
+      operationId: create
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+    put:
+      description: Update user application by Id and appId
+      operationId: update
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+    delete:
+      description: Delete user application by Id and appId
+      operationId: delete
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  deleted:
+                    type: number
+                  errors:
+                    type: number
+  /users/{userId}/integrations/{intId}:
+    post:
+      description: Create user integration by ID
+      operationId: upsertIntegration
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: intId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+    put:
+      description: Update user integration by ID
+      operationId: upsertIntegration
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: intId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                config:
+                  type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+    delete:
+      description: delete user integration by ID
+      operationId: deleteIntegration
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: intId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  deleted:
+                    type: number
+                  errors:
+                    type: number
+  /users/{userId}/applications/{appId}/state:
+    get:  
+      description: Get user application state
+      operationId: getAppState
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  appId:
+                    type: string
+                  user:
+                    type: string
+    put:  
+      description: Set user application state
+      operationId: setAppState
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                collectionsExpanded:
+                  type: object
+                disabledFeeds:
+                  type: array
+                isOpen:
+                  type: boolean
+                mapCenter:
+                  type: array
+                mapZoom:
+                  type: number
+                selectedEntityId:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+  /users/{userId}/image:
+    post:
+      description: Set user image by userId
+      operationId: setProfileImage
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content: 
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+  /users/{userId}/role:
+    put:
+      description: Update a user role by ID
+      operationId: updateRole
+      tags:
+        - Users
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                role:
+                  type: string
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  errors:
+                    type: number
+  /users/{appId}/access:
+    get:
+      description: Get user access to app by ID
+      operationId: asAccessToApp
+      operationId: updateRole
+      tags:
+        - Users
+      parameters:
+        - name: appId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  canView:
+                    type: boolean
+        '500':
+          description: Server Error

@@ -1,0 +1,6 @@
+
+Today's Task:
+- Worked on implementing updated AccessPointForm in facilities app.
+- Worked on getting Sensor_gray icon in AccessPointLayer in facilities app.
+- Worked on adding AccessPointProfile to facilities app ListPanel.
+- Worked on sorting out and fixing accessPointProfile loading issues in facilities app.

@@ -1,0 +1,162 @@
+auth:
+  /auth/token:
+    post:
+      description: Receive an authorization token with correct username and password
+      operationId: getByUsername
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                  refresh_token:
+                    type: string
+        '404':
+          description: Unauthorized
+  /auth/{email}/forgot:
+    get:
+      description: Reset password
+      operationId: requestReset
+      tags:
+        - Auth
+      parameters:
+        - name: email
+          in: path                  #options: query, header, path, cookie
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '401':
+          description: Unauthorized
+  /auth/initial/{token}: 
+    get:
+      description: Get initial password token
+      operationId: verifyInitialSetPassword
+      tags:
+        - Auth
+      parameters:
+        - name: token
+          in: path                  #options: query, header, path, cookie
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: number
+                  message:
+                    type: string
+        '401':
+          description: Unauthorized
+    put:
+      description: Update password with token
+      operationId: verifyInitialSetPassword
+      tags:
+        - Auth
+      parameters:
+        - name: token
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                password:
+                  type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            applicaton/json:
+              schema:
+                type: object
+                properties:
+                  replaced:
+                    type: number
+                  errors:
+                    type: number
+  /auth/{email}/forgot:
+    get:
+      description: Get password reset token
+      operationId: requestReset
+      tags:
+        - Auth
+      parameters:
+        - name: email
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+  /auth/reset/{token}:
+    put:
+      description: Allow password reset
+      operationId: verifyReset
+      tags:
+        - Auth
+      parameters:
+        - name: token
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                password:
+                  type: string
+      responses: 
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced: 
+                    type: number
+                  errors:
+                    type: number

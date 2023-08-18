@@ -1,0 +1,179 @@
+$darkGray: #1f1f21;
+$darkGray2: #2c2d2f;
+$mediumGray: #41454a;
+
+.user-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid $mediumGray;
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    align-self: center;
+    div {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    span {
+      font-size: 0.7em;
+      color: rgb(130, 130, 131);
+    }
+  }
+  .user-detailsRTL {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    align-self: center;
+    div {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+    span {
+      font-size: 0.7em;
+      color: rgb(130, 130, 131);
+    }
+  }
+  button span {
+    color: #29b6f6;
+    height: 42px;
+    font-size: 14px !important; // insure consistent font-size styles across apps
+    font-weight: bold;
+  }
+}
+
+.mobile-link {
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  img {
+    width: 48px;
+    height: 48px;
+  }
+  p {
+    font-family: "Roboto";
+    font-size: 1rem;
+    padding: 0 15px;
+    color: #29b6f6;
+    letter-spacing: 0.1rem;
+  }
+  @media (min-width: 751px) {
+    display: none;
+  }
+}
+
+.app-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: $darkGray;
+  max-height: 663px;
+
+  hr {
+    opacity: 0.3;
+    @media (min-width: 751px) {
+      display: none;
+    }
+  }
+}
+
+
+.apps-menu {
+  width: 336px;
+  overflow-y: auto;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    //padding-bottom: 3rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      &:hover {
+        background-color: rgba($mediumGray, 0.65);
+      }
+      @media (min-width: 751px) {
+        flex-basis: 33%;
+      }
+      a {
+        font-size: 14px;
+        font-family: "Roboto";
+        width: 112px;
+        height: 117px;
+        // margin: 15px 15px 30px 15px;
+        color: $white;
+        display: block;
+        text-decoration: none;
+        border-radius: 3px;
+        padding: 0px;
+        transition: all 0.2s ease-in-out;
+        background-color: rgba($darkGray, 0);
+
+        div {
+          padding: 15px 15px 0 15px;
+
+          @media (max-width: 750px) {
+            padding: 8px;
+          }
+        }
+      }
+      .app-icon {
+        width: 64px;
+        height: 64px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
+        margin: 0 auto 4px auto;
+        padding-bottom: 10px;
+      }
+    }
+    @media (min-width: 751px) {
+      justify-content: flex-start;
+    }
+    @media (max-width: 750px) {
+      flex-direction: column;
+      margin: 1rem;
+      .app-link {
+        display: flex;
+        width: 75%;
+        height: auto;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+        .mobile-icon {
+          margin: 0 8px 0 0;
+          height: 64px;
+          width: 64px;
+        }
+        .app-icon {
+          margin: 0 8px 0 0;
+        }
+        .label {
+          font-size: 1rem;
+          text-align: left;
+          margin-right: auto;
+          height: 64px;
+          line-height: 64px;
+        }
+      }
+    }
+  }
+}
+
+.app-icon {
+  width: 64px;
+  height: 64px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

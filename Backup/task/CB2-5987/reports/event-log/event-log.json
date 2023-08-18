@@ -1,0 +1,81 @@
+{
+	"name": "mainpage.list.eventLogTitle",
+	"id": "event-log",
+	"queryScript": "event-log.js",
+	"desc": "mainpage.list.eventDesc",
+	"category": "event-report",
+	"groupedResults": false,
+	"fields": [
+		{
+			"name": "startDate",
+			"type": "date-picker",
+			"desc": "Start Date"
+		},
+		{
+			"name": "endDate",
+			"type": "date-picker",
+			"desc": "End Date"
+		}
+	],
+	"type": {
+		"multi": [
+			{
+				"type": "table",
+				"property": "events",
+				"header": "events",
+				"columns": [
+					{
+						"property": "name",
+						"width": 2,
+						"displayName": "eventName",
+						"sortable": false
+					},
+					{
+						"property": "desc",
+						"width": 2,
+						"displayName": "desc",
+						"sortable": false
+					},
+					{
+						"property": "startDateTime",
+						"width": 1,
+						"displayName": "start",
+						"sortable": false,
+						"type": "date"
+					},
+					{
+						"property": "endDateTime",
+						"width": 1,
+						"displayName": "end",
+						"sortable": false,
+						"type": "date"
+					},
+					{
+						"property": "templateName",
+						"width": 1,
+						"displayName": "template",
+						"sortable": false
+					},
+					{
+						"property": "owner",
+						"width": 1,
+						"displayName": "createdBy",
+						"sortable": true
+					},
+					{
+						"property": "status",
+						"width": 1,
+						"displayName": "status",
+						"sortable": true
+					},
+					{
+						"property": "checklistProgress",
+						"width": 1,
+						"displayName": "checkListProgress",
+						"sortable": true
+					}
+				]
+			}
+		]
+	}
+}

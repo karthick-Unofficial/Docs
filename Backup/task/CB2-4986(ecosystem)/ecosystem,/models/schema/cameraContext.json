@@ -1,0 +1,17 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"id": "http://commandbridge.com/ecosystem/cameraContext.json",
+	"type": "object",
+	"required": ["entityId", "cameraId"],
+	"additionalProperties": false,
+	"properties": {
+		"entityId": {
+			"description": "",
+			"type": "string"
+		},
+		"cameraId": {
+			"Description": "",
+			"type": "string"
+		}
+	}
+}

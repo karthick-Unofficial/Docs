@@ -1,0 +1,374 @@
+{
+	"appId": "settings-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"appBar": {
+				"title": "Settings"
+			},
+			"changePassword": {
+				"errorMessage": {
+					"chooseNew": "Please choose a new password",
+					"notMatch": "The provided passwords do not match",
+					"required": "This field is required."
+				},
+				"formField": {
+					"cancelBtn": "CANCEL",
+					"confirmPass": "Confirm New Password",
+					"newPass": "New Password",
+					"oldPass": "Old Password",
+					"saveBtn": "SAVE"
+				}
+			},
+			"login": {
+				"Reset": {
+					"changePassBtn": "Change Password",
+					"successMsg": "Your password has been successfully reset. You will be redirected to the login page momentarily.",
+					"title": "To complete password reset, please enter a new password below."
+				},
+				"backToLogin": "Back To Login",
+				"click": "Click ",
+				"copyright": "All Rights Reserved. Copyright 2023",
+				"emailAddress": "Email Address",
+				"emailHintText": "Username or Email Address",
+				"errorMessage": {
+					"bothPassText": "Both password fields must match.",
+					"emptyPassword": "Please enter a password",
+					"emptyUser": "Please enter a valid username",
+					"expiredText": "This Reset Link is not Valid or Has Expired",
+					"forgotErrText": "Please enter an email address",
+					"invalidLogin": "Invalid login info"
+				},
+				"forgotPassword": "Forgot Password?",
+				"here": "here",
+				"hintText": {
+					"confirmPass": "Confirm New Password",
+					"newPass": "New Password"
+				},
+				"loginButton": "Login",
+				"passwordHintText": "Password",
+				"recoveryText": "Forgot your password? Please enter your email address below for a recovery email.",
+				"sendButton": "Send",
+				"sentText": "We've sent an email containing instructions for resetting your password.",
+				"setInitial": {
+					"setPassBtn": "Set Password",
+					"successMsg": "Your password has been successfully set. You will be redirected to the login page momentarily.",
+					"title": "To complete account creation, please choose a password below."
+				},
+				"toReturn": " to return to the login page.",
+				"version": "Version %{count}"
+			},
+			"mainContent": {
+				"accountSettings": {
+					"editUser": {
+						"cancelBtn": "CANCEL",
+						"cellPhone": "Cell Phone",
+						"confirmBtn": "CONFIRM",
+						"confirmPass": "Confirm New Password",
+						"deleteUser": "Delete User",
+						"dialog": {
+							"confirmText": "Are you sure that you want to delete this user?",
+							"title": "Delete user?"
+						},
+						"doneBtn": "DONE",
+						"editProfile": "Edit Profile",
+						"email": "Email",
+						"errorMessage": {
+							"currentPass": "Enter your current password.",
+							"emptyFieldErr": "One of the name fields must have data.",
+							"formatText": "Must be in the format (XXX)-XXX-XXXX",
+							"passNotMatch": "Passwords must match",
+							"setNewPass": "Please set a new password.",
+							"validEmail": "Please enter a valid email"
+						},
+						"firstName": "First Name",
+						"lastName": "Last Name",
+						"newPass": "New Password",
+						"officePhone": "Office Phone",
+						"oldPass": "Old Password",
+						"title1": "My Account Settings",
+						"title2": "User Account Settings",
+						"titleText1": "Edit your profile",
+						"titleText2": "Edit user profile"
+					},
+					"profile": {
+						"cellPhone": "CELL PHONE",
+						"editProfile": "EDIT PROFILE",
+						"email": "EMAIL",
+						"name": "NAME",
+						"officePhone": "OFFICE PHONE",
+						"organization": "ORGANIZATION",
+						"password": "PASSWORD",
+						"photo": "PHOTO",
+						"photoText": "A photo helps personalize your account",
+						"profileText": "Basic account and profile information.",
+						"title": "Profile",
+						"userRole": "USER ROLE",
+						"lastChanged": "Last changed on %{count}",
+						"clearPasswordLockout": "CLEAR PASSWORD LOCKOUT"
+					},
+					"settings": {
+						"alertAudio": "Alert Audio",
+						"alertAudioText": "Audio preferences for alert notifications.",
+						"coordinateSystem": "Coordinate System",
+						"duration": "Duration",
+						"groundSpeed": "Ground Distance/Speed",
+						"helperText": {
+							"metric": "M (meters), KM (kilometers), KPH (kilometers per hour)",
+							"nonMetric": "FT (feet), MI (miles), MPH (miles per hour)"
+						},
+						"hourFormat1": "12 Hour",
+						"hourFormat2": "24 Hour",
+						"localeLabel": "Language",
+						"localeText": "Set language preferences.",
+						"menuItem": {
+							"day": "24 hours",
+							"decimalDegrees": "Decimal Degrees",
+							"degreesDecimalMins": "Degrees, Decimal Minutes",
+							"degreesMinsSecs": "Degrees, Minutes, Seconds",
+							"halfDay": "12 hours",
+							"halfMin": "30 min",
+							"hour": "1 hour",
+							"imperial": "Imperial",
+							"metric": "Metric",
+							"quarterDay": "6 hours",
+							"quarterMin": "15 min"
+						},
+						"off": "Off",
+						"on": "On",
+						"settingsText": "Personal Settings and preferences.",
+						"timeFormat": "Time Format",
+						"timeFormatText": "Set system-wide time format.",
+						"title": "Settings",
+						"trackHistory": "Track History",
+						"units": "Units of Measure",
+						"unitsText": "Set measurement units for map displays.",
+						"userLocale": "User Locale"
+					},
+					"titleText": "Basic personal information, password management, access and system preferences.",
+					"userApps": {
+						"title": "Apps",
+						"titleText": "Permissions for Apps you have been granted access to."
+					},
+					"userIntegrations": {
+						"title": "Feeds",
+						"titleText": "Data feeds that you have been granted access to."
+					}
+				},
+				"manageEcosystem": {
+					"AddOrgForm": {
+						"cancelBtn": "CANCEL",
+						"cellPhone": "Cell Phone",
+						"changeProfile": "Change Profile Image",
+						"doneBtn": "DONE",
+						"email": "Email",
+						"firstName": "First Name",
+						"initialAdmin": "Initial Organization Admin",
+						"lastName": "Last Name",
+						"officePhone": "Office Phone",
+						"orgDescription": "Organization Description %{count}/50",
+						"orgNameLabel": "Organization Name",
+						"title": "Add New Organization"
+					},
+					"active": "Active",
+					"addNewBtn": "ADD NEW ORGANIZATION",
+					"editEcosystem": {
+						"appsTitle": "Apps",
+						"email": "EMAIL",
+						"orgAdminTitle": "Org Administrators",
+						"sharingConn": "Sharing Connections",
+						"titleText": "Edit organization sharing connections and app access.",
+						"total": "Total",
+						"used": "Used"
+					},
+					"errorMessage": {
+						"descTooLong": "Description is too long",
+						"emptyField": "One of the name fields must have data.",
+						"emptyOrg": "Organization must have a name",
+						"formatText": "Must be in the format (XXX)-XXX-XXXX",
+						"validEmail": "Please enter a valid email"
+					},
+					"formTitle": "Ecosystem Organizations",
+					"hideDisabled": "Hide Disabled",
+					"title": "Manage Ecosystem",
+					"titleText": "Provision new Organizations with app and sharing permissions."
+				},
+				"manageOrganization": {
+					"errorMessage": {
+						"connError": "Could not connect. Please verify username, password, and connection.",
+						"requestProblem": "There was a problem with your request."
+					},
+					"orgProfile": {
+						"description": "DESCRIPTION",
+						"editOrganization": {
+							"changeProfile": "Change Profile Image",
+							"errorMessage": {
+								"descTooLong": "Description is too long",
+								"emptyName": "Organization must have a name"
+							},
+							"formTitle": "Edit Organization Profile",
+							"orgDescription": "Organization Description %{count}/50",
+							"orgName": "Organization Name",
+							"titleDesc": "Edit your organization profile."
+						},
+						"organization": "ORGANIZATION",
+						"photo": "PHOTO",
+						"photoText": "A logo or image",
+						"title": "Organization Profile",
+						"titleText": "Basic organizational profile information."
+					},
+					"orgSettings": {
+						"activeDir": {
+							"authLabel": "Authentication",
+							"autoSyncLabel": "Automatically sync",
+							"cancelBtn": "CANCEL",
+							"emptyUsersText": "Group contains no users. Users will be created as they are added to the group.",
+							"formTitle": "Active Directory Settings",
+							"groupLabel": "Group Name",
+							"hostLabel": "Host",
+							"passLabel": "Password",
+							"portLabel": "Port",
+							"saveBtn": "SAVE",
+							"subText": "Configure and test Active Directory Settings.",
+							"testConLabel": "Test Connection",
+							"title": "Active Directory",
+							"titleText": "Manage Active Directory settings.",
+							"toolTip": {
+								"addTip": "User will be added.",
+								"disableTip": "User will be disabled.",
+								"enableTip": "User will be enabled.",
+								"removeTip": "User will be removed."
+							},
+							"userLabel": "Username",
+							"usersLabel": "Users"
+						},
+						"manageFeedSharing": {
+							"policies": {
+								"alwaysHaveAccess": "Always has access to this feed.",
+								"deactivate": "Deactivate All",
+								"endDatePickerError": "Ending date cannot be before the starting date.",
+								"onlyWhenAdded": "Has access only when added to a shared event.",
+								"startDatePickerError": "Starting date cannot be after the ending date.",
+								"titleDesc": "Set sharing policies for each data feed to partner organizations."
+							},
+							"radioLabel": {
+								"allowedPerm": "Allowed Permissions",
+								"always": "Always",
+								"event": "Event",
+								"never": "Never",
+								"policyTerm": "Policy Term",
+								"unlimited": "Unlimited",
+								"to": "to"
+							},
+							"subText": "Set sharing policies for each data feed to partner organizations.",
+							"title": "Manage Feed Sharing Policies",
+							"titleText": "Manage Org to Org feed sharing policies."
+						},
+						"manageUserRoles": {
+							"addNewBtn": "ADD NEW ROLE",
+							"applyToUsers": "Apply to Users",
+							"appsTitle": "Apps",
+							"cancelBtn": "CANCEL",
+							"confirmText": "Are you sure you want to delete role",
+							"deleteBtn": "DELETE",
+							"deleteRole": "Delete Role",
+							"dialog": {
+								"addBtn": "ADD",
+								"applyRole": "Apply Role",
+								"roleDesc": "Role Description",
+								"search": "Search",
+								"selectRole": "Select Role",
+								"title": "Add New Role"
+							},
+							"feedsTitle": "Feeds",
+							"formTitle": "Create or Select Role Template",
+							"manage": "Manage",
+							"note": "Note: Deletion is disabled while there are users still assigned to the role",
+							"roleLabel": "Select Role",
+							"share": "Share",
+							"title": "Manage User Roles",
+							"titleText": "Create and apply custom roles with access permissions."
+						},
+						"manageUsers": {
+							"active": "Active",
+							"addUserBtn": "ADD NEW USER",
+							"admin": "Admin",
+							"dialog": {
+								"cancelBtn": "CANCEL",
+								"cellPhone": "Cell Phone",
+								"doneBtn": "DONE",
+								"email": "Email",
+								"errorMessage": {
+									"emptyFieldErr": "One of the name fields must have data.",
+									"formatText": "Must be in the format (XXX)-XXX-XXXX",
+									"selectRoleErr": "Must select a role for the new user",
+									"validEmail": "Please enter a valid email"
+								},
+								"firstName": "First Name",
+								"lastName": "Last Name",
+								"officePhone": "Office Phone",
+								"title": "Create New User",
+								"userRole": "User Role"
+							},
+							"formTitle": "Users",
+							"formTitleLink": "Manage Roles here.",
+							"formTitleText": "Manage users and apply roles for each user.",
+							"hideUsers": "Hide Inactive Users",
+							"title": "Manage Users",
+							"titleText": "Create and manage users.",
+							"userRoleLabel": "User Role"
+						},
+						"sharingConn": {
+							"activeConn": "Active Connections",
+							"addConnButton": "ADD CONNECTION",
+							"cancelBtn": "CANCEL",
+							"clipboardText": "Copied to clipboard!",
+							"formTitle1": "Shared Connections to Other Organizations",
+							"formTitle1Text": "Connection tokens you have provided to other Organizations. Copy and provide active token to sharing partner.",
+							"formTitle2": "Connections shared to your Organization",
+							"formTitle2Text": "Connection tokens you have imported from other Organizations.",
+							"import": "IMPORT",
+							"importBtn": "IMPORT TOKEN",
+							"title": "Sharing Connections",
+							"titleText": "Manage sharing tokens with other organizations.",
+							"tokenPlaceholder": "Paste token here"
+						},
+						"title": "Organization Settings",
+						"titleText": "Basic organizational profile information."
+					},
+					"title": "Manage Organization",
+					"titleText": "Configure global organization settings and manage users and access permissions."
+				},
+				"shared": {
+					"articleContainer": {
+						"defaultHeader": "This is a header title"
+					},
+					"errorIcon": {
+						"errorText": "There's been an error saving your preferences. Please check your network connection and try again."
+					},
+					"notAuthorized": {
+						"backBtn": "Go Back",
+						"title": "Not Authorized.",
+						"titleText": "You do not have the proper permissions level to access this page."
+					},
+					"notFound": {
+						"backBtn": "Go Back",
+						"title": "Resource not found.",
+						"titleText": "The requested user or organization page is not available or does not exist."
+					},
+					"profileDropzone": {
+						"uploadBtn": "Upload Image"
+					}
+				}
+			},
+			"sideBar": {
+				"option1": {
+					"variant1": "My Account Settings",
+					"variant2": "User Account Settings"
+				},
+				"option2": "Manage Organization",
+				"option3": "Manage Ecosystem"
+			}
+		}
+	}
+}

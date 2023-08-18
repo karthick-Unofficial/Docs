@@ -1,0 +1,268 @@
+.mapPanelWrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: black;
+  @media only screen and (min-width: 1024px) {
+    width: auto;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+  }
+  .global-loader-progress {
+    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+    p {
+      text-align: center;
+      color: white;
+    }
+    @media (max-width: 1023px) {
+      position: relative;
+      top: 30vh;
+    }
+  }
+}
+
+.map {
+  background-color: black;
+  max-height: calc(100vh - 48px);
+  @media only screen and (min-width: 1024px) {
+    flex-grow: 1;
+  }
+}
+
+.mapChild {
+  height: calc(100vh - 48px);
+  background-color: black;
+}
+
+.entityEditWindowWrapper {
+  &.hide {
+    display: none;
+  }
+  position: relative;
+  .chooseSymbol {
+    height: 81%;
+  }
+  .entityEditWindow {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 700;
+    background-color: $darkGray2;
+    padding: 10px;
+    width: 350px;
+    h3 {
+      color: white;
+      padding: 0;
+      margin: 6px 0 12px 6px;
+      font-size: 18px;
+    }
+    h4 {
+      color: white;
+      padding: 0;
+      margin: 12px 0 12px;
+      font-size: 14px;
+    }
+    p {
+      color: white;
+      padding: 0;
+      margin: 12px 0 12px;
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .buttons {
+      text-align: right;
+      margin: 24px 0 12px 0;
+      button {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+.mapLabel {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  width: 100px;
+  text-align: center;
+  white-space: normal;
+  word-wrap: normal;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  height: auto;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+  &.hide {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+.createNew {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  // background-color: $link;
+  // width: 60px;
+  // height: 60px;
+  // line-height: 60px;
+  // text-align: left;
+  // border-radius: 50%;
+  // margin: 38px 15px;
+  // box-shadow:
+  // 	0 0 5px 2px rgba(0,0,0,0.35),
+  // 	inset 0 0 0 0 rgba(255,255,255,0);
+  // &:hover {
+  // 	box-shadow:
+  // 	0 0 0 0 rgba(0,0,0,0),
+  // 	inset 0 0 0 5px rgba(255,255,255,0.35);
+  // }
+  // > button {
+  // 	border-radius: 50% !important; // <--- prevent ripple from being square instead of circle on click
+  // }
+  @media only screen and (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.leaflet-control-attribution.leaflet-control {
+  display: none;
+}
+
+.trackRotate {
+  rotation-point: 50% 50%;
+  rotation: 180deg;
+}
+
+.targetingLine {
+  position: fixed;
+  top: 0;
+  left: 6px; // <--- accounting for padding...
+  pointer-events: none;
+  z-index: 9999999999999999999; // always on top of everything...
+}
+
+// tweak for targeting line on entity profile
+.ep-targetingLine .targetingLine {
+  top: 47.5px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  to {
+    transform: rotate(359deg);
+    transform-origin: 50% 50%;
+  }
+}
+
+// Mock default Mapbox button styles
+#layer-opacity-button-wrapper {
+  position: absolute;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  top: 88px;
+  right: 10px;
+  bottom: auto;
+  left: auto;
+  #layer-opacity-button {
+    background-color: rgb(249, 249, 249);
+    opacity: 0.95;
+    transition: background-color 0.16s ease-out 0s;
+    cursor: pointer;
+    border-width: 0px 0px 1px;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-bottom-style: solid;
+    border-left-style: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-left-color: initial;
+    border-image: initial;
+    height: 26px;
+    width: 26px;
+    outline: 0px;
+    padding: 3px;
+    border-radius: 2px;
+    svg {
+      height: 20px !important;
+      width: 20px !important;
+    }
+  }
+}
+
+.layer-opacity-slider {
+  > div {
+    margin-bottom: 0 !important;
+  }
+}
+
+.layer-opacity-overlay {
+  opacity: 0 !important;
+}
+
+.distance-tool-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.dt-path-info-wrapper {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 9.75rem;
+  display: flex;
+  width: calc(100% - 230px);
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); // Added a transparent background to prevent unintentional zooming when focused on scrolling chips
+  height: auto;
+  overflow-x: scroll;
+  padding: 0.5rem 1rem;
+  &.mobile {
+    bottom: 3.5rem;
+    width: calc(100% - 60px);
+    right: 70px;
+  }
+  .dt-path-info-tray {
+    width: 100%;
+    display: flex;
+    &.dock-open,
+    &.profile-open {
+      width: calc(100% - 290px); // offsets for ListPanel/EntityProfile
+    }
+    &.dock-open.profile-open {
+      width: calc(100% - 700px); // offsets for ListPanel/EntityProfile
+    }
+  }
+  &.dock-open {
+    width: calc(100% - 535px);
+    // offsets for ListPanel/EntityProfile
+  }
+  &.profile-open {
+    width: calc(100% - 580px); // offsets for ListPanel/EntityProfile
+  }
+  &.dock-open.profile-open {
+    width: calc(100% - 895px); // offsets for ListPanel/EntityProfile
+  }
+}

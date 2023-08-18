@@ -1,0 +1,15 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"id": "http://commandbridge.com/ecosystem/orgEventType.json",
+	"type": "object",
+	"required": ["eventTypeId", "orgId"],
+	"additionalProperties": false,
+	"properties": {
+		"eventTypeId": {
+			"type": "string"
+		},
+		"orgId": {
+			"type": "string"
+		}
+	}
+}

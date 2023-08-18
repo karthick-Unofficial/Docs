@@ -1,0 +1,444 @@
+{
+    "clientConfig": {
+      "supportEmail": {
+        "address": "c2support@aressecuritycorp.com",
+        "subject": "Avert C2 Support Issue",
+        "body": "[Use this space to describe the issue you are experiencing.]"
+      }
+    },
+    "searchGroups": [
+      {
+        "id": "le-learn-api",
+        "label": "Number plate Search on learn Database",
+        "type": "learn-query-template",
+        "connection": {
+          "baseURL": "https://learndev.vigilantsolutions.com/webwsi60/",
+          "userName": "LEARN_API@aressecuritycorp.com",
+          "password": "695e71259e982a3f8551d4083add4abe16ed68d7736bac9421b6c810c607b9375641281b8be03fe86e66bec54961aae9b0e21297a8e5baa8070df525b5a01ef2",
+          "contentType": "application/xml"
+        },
+        "logonquery": {
+          "url": "LogonSimple.aspx?",
+          "q": "credential=LEARN_API@aressecuritycorp.com;695e71259e982a3f8551d4083add4abe16ed68d7736bac9421b6c810c607b9375641281b8be03fe86e66bec54961aae9b0e21297a8e5baa8070df525b5a01ef2",
+          "method": "get"
+        },
+        "queryPlate": {
+          "url": "QueryPlate.aspx?auth=",
+          "q": "<QueryParameters><PlateNumber>{{{numberplate}}}</PlateNumber><LastRecord></LastRecord><FromDate>{{{fromdate}}}</FromDate><ToDate>{{{todate}}}</ToDate><GeoZone></GeoZone></QueryParameters>",
+          "method": "post"
+        },
+        "resultTemplate": {
+          "id": "{{{Plate}}}-{{{EventID}}}",
+          "properties": [
+            {
+              "id": "plate",
+              "label": "Plate",
+              "value": "{{{Plate}}}"
+            },
+            {
+              "id": "date",
+              "label": "Date",
+              "value": "{{{Date}}}"
+            },
+            {
+              "id": "time",
+              "label": "Time",
+              "value": "{{{Time}}}"
+            },
+            {
+              "id": "scannedBy",
+              "label": "ScannedBy",
+              "value": "{{{ScannedBy}}}"
+            },
+            {
+              "id": "system",
+              "label": "System",
+              "value": "{{{System}}}"
+            },
+            {
+              "id": "agency",
+              "label": "Agency",
+              "value": "{{{Agency}}}"
+            },
+            {
+              "id": "camera",
+              "label": "Camera",
+              "value": "{{{Camera}}}"
+            },
+            {
+              "id": "latitude",
+              "label": "Latitude",
+              "value": "{{{Latitude}}}"
+            },
+            {
+              "id": "longitude",
+              "label": "Longitude",
+              "value": "{{{Longitude}}}"
+            },
+            {
+              "id": "eventID",
+              "label": "EventID",
+              "value": "{{{EventID}}}"
+            },
+            {
+              "id": "dRNSource",
+              "label": "DRNSource",
+              "value": "{{{DRNSource}}}"
+            }
+          ],
+          "type": "plate-card"
+        }
+      },
+      {
+        "id": "le-clear-api",
+        "label": "Person Search on Clear Database",
+        "type": "clear-query-template",
+        "maxResponseTime": 20000,
+        "connection": {
+          "baseURL": "https://s2s.beta.thomsonreuters.com/",
+          "userName": "3535418",
+          "password": "DWDXF9",
+          "contentType": "application/xml"
+        },
+        "personSearchQuery": {
+          "url": "api/v2/person/searchResults",
+          "method": "post",
+          "q": "<?xml version=\"1.0\"?><ps:PersonSearchRequest xmlns:ps=\"http://clear.thomsonreuters.com/api/search/2.0\"><PermissiblePurpose><GLB>L</GLB><DPPA>1</DPPA><VOTER>7</VOTER></PermissiblePurpose><Reference>S2S Person Search</Reference><Criteria><p1:PersonCriteria xmlns:p1=\"com/thomsonreuters/schemas/search\"><NameInfo><AdvancedNameSearch><LastSecondaryNameSoundSimilarOption>false</LastSecondaryNameSoundSimilarOption><SecondaryLastNameOption>OR</SecondaryLastNameOption><FirstNameBeginsWithOption>false</FirstNameBeginsWithOption><FirstNameSoundSimilarOption>false</FirstNameSoundSimilarOption><FirstNameExactMatchOption> false</FirstNameExactMatchOption></AdvancedNameSearch><LastName>{{{lastname}}}</LastName><FirstName>{{{firstname}}}</FirstName><MiddleInitial></MiddleInitial><SecondaryLastName></SecondaryLastName></NameInfo><AddressInfo><Street></Street><City></City><State></State><County></County><ZipCode></ZipCode><Province></Province><Country></Country></AddressInfo><EmailAddress></EmailAddress><NPINumber></NPINumber><SSN></SSN><PhoneNumber></PhoneNumber><AgeInfo><PersonBirthDate>{{{dob}}}</PersonBirthDate><PersonAgeTo></PersonAgeTo><PersonAgeFrom></PersonAgeFrom></AgeInfo><DriverLicenseNumber></DriverLicenseNumber><WorldCheckUniqueId></WorldCheckUniqueId></p1:PersonCriteria></Criteria><Datasources><PublicRecordPeople>true</PublicRecordPeople><NPIRecord>true</NPIRecord><RealTimeIncarcerationAndArrests>true</RealTimeIncarcerationAndArrests><WorldCheckRiskIntelligence>true</WorldCheckRiskIntelligence></Datasources></ps:PersonSearchRequest>"
+        },
+        "resultTemplate": {
+          "id": "{{{PersonEntityId}}}",
+          "imageSrc": "{{{IMAGE_URL}}}",
+          "properties": [
+            {
+              "id": "name",
+              "label": "Name",
+              "value": "{{{Name.FullName}}}"
+            },
+            {
+              "id": "sex",
+              "label": "Sex",
+              "value": "{{{PersonProfile.PersonSex}}}"
+            },
+            {
+              "id": "dob",
+              "label": "DOB",
+              "value": "{{{PersonProfile.PersonBirthDate}}}"
+            },
+            {
+              "id": "weight",
+              "label": "Weight",
+              "value": "{{{PersonProfile.PersonWeight}}}"
+            },
+            {
+              "id": "height",
+              "label": "Height",
+              "value": "{{{PersonProfile.PersonHeight}}}"
+            },
+            {
+              "id": "address-line1",
+              "label": "Address ({{{KnownAddresses.[0].Address.ReportedDate}}})",
+              "value": "{{{KnownAddresses.[0].Address.Street}}}"
+            },
+            {
+              "id": "address-city",
+              "label": "City",
+              "value": "{{{KnownAddresses.[0].Address.City}}}"
+            },
+            {
+              "id": "address-state",
+              "label": "State",
+              "value": "{{{KnownAddresses.[0].Address.State}}}"
+            },
+            {
+              "id": "address-zipcode",
+              "label": "Zip Code",
+              "value": "{{{KnownAddresses.[0].Address.ZipCode}}}"
+            },
+            {
+              "id": "address-county",
+              "label": "County",
+              "value": "{{{KnownAddresses.[0].Address.County}}}"
+            },
+            {
+              "id": "phone-number",
+              "label": "Phone Number",
+              "value": "{{{AdditionalPhoneNumbers.PhoneNumber}}}"
+            }
+          ],
+          "type": "person-card"
+        }
+      },
+      {
+        "id": "web-search-results",
+        "label": "Web Search Results",
+        "type": "querystring-template",
+        "resultTemplate": [
+          {
+            "id": "google",
+            "iconSrc": "https://image.flaticon.com/teams/slug/google.jpg",
+            "label": "Google Results",
+            "endpoint": "https://www.google.com/search?q={{{firstname}}}+{{{lastname}}}+{{{keyword}}}",
+            "type": "external-link"
+          },
+          {
+            "id": "bing",
+            "iconSrc": "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/bing-512.png",
+            "label": "Bing Results",
+            "endpoint": "https://www.bing.com/search?q={{{firstname}}}+{{{lastname}}}+{{{keyword}}}",
+            "type": "external-link"
+          },
+          {
+            "id": "property",
+            "iconSrc": "https://cmgpalmbeachposteyeonpbc.files.wordpress.com/2016/05/pao_logojpg.jpg",
+            "label": "Property Appraiser Results",
+            "endpoint": "https://www.pbcgov.org/papa/Asps/GeneralAdvSrch/NewSearchResults.aspx?srchtype=ADV&owner={{{lastname}}}+{{{firstname}}}",
+            "type": "external-link"
+          },
+          {
+            "id": "inmate-population",
+            "iconSrc": "http://www.dc.state.fl.us/images/transparent-seal.png",
+            "label": "Inmate Population Results",
+            "endpoint": "http://www.dc.state.fl.us/OffenderSearch/list.aspx?Page=List&TypeSearch=AI&DataAction=Filter&lastname={{{lastname}}}&firstname={{{firstname}}}&SearchAliases=1&photosonly=0&nophotos=1&matches=50",
+            "type": "external-link"
+          },
+          {
+            "id": "inmate-release",
+            "iconSrc": "http://www.dc.state.fl.us/images/transparent-seal.png",
+            "label": "Inmate Release Results",
+            "endpoint": "http://www.dc.state.fl.us/OffenderSearch/list.aspx?Page=List&TypeSearch=IR&DataAction=Filter&lastname={{{lastname}}}&firstname={{{firstname}}}&SearchAliases=1&photosonly=0&nophotos=1&matches=50",
+            "type": "external-link"
+          },
+          {
+            "id": "inmate-escape",
+            "iconSrc": "http://www.dc.state.fl.us/images/transparent-seal.png",
+            "label": "Inmate Escape Results",
+            "endpoint": "http://www.dc.state.fl.us/OffenderSearch/list.aspx?Page=List&TypeSearch=EI&DataAction=Filter&lastname={{{lastname}}}&firstname={{{firstname}}}&SearchAliases=1&photosonly=0&nophotos=1&matches=50",
+            "type": "external-link"
+          },
+          {
+            "id": "supervised-population",
+            "iconSrc": "http://www.dc.state.fl.us/images/transparent-seal.png",
+            "label": "Supervised Population Results",
+            "endpoint": "http://www.dc.state.fl.us/OffenderSearch/list.aspx?Page=List&TypeSearch=AO&DataAction=Filter&lastname={{{lastname}}}&firstname={{{firstname}}}&SearchAliases=1&photosonly=0&nophotos=1&matches=50",
+            "type": "external-link"
+          },
+          {
+            "id": "absconder-fugitive",
+            "iconSrc": "http://www.dc.state.fl.us/images/transparent-seal.png",
+            "label": "Absconder/Fugitive Results",
+            "endpoint": "http://www.dc.state.fl.us/OffenderSearch/list.aspx?Page=List&TypeSearch=AB&DataAction=Filter&lastname={{{lastname}}}&firstname={{{firstname}}}&SearchAliases=1&photosonly=0&nophotos=1&matches=50",
+            "type": "external-link"
+          }
+        ]
+      },
+      {
+        "id": "sex-offender-database",
+        "label": "Sex Offenders Database",
+        "type": "es-query-template",
+        "connection": {
+          "host": "elasticsearch1:9200",
+          "apiVersion": "5.6"
+        },
+        "q": {
+          "index": "fso-data",
+          "from": 0,
+          "size": 100,
+          "body": {
+            "query": {
+              "bool": {
+                "must": [
+                  {
+                    "regexp": {
+                      "FIRST_NAME": ".*{{{toLowerCase firstname}}}.*"
+                    }
+                  },
+                  {
+                    "regexp": {
+                      "LAST_NAME": ".*{{{toLowerCase lastname}}}.*"
+                    }
+                  },
+                  {
+                    "range": {
+                      "BIRTH_DATE": {
+                        "gte": "{{{toESDateRangeField dob}}}",
+                        "lt": "{{{toESDateRangeField dob end=true}}}"
+                      }
+                    }
+                  },
+                  {
+                    "regexp": {
+                      "SEX": ".*{{{toLowerCase sex}}}.*"
+                    }
+                  },
+                  {
+                    "regexp": {
+                      "RACE": ".*{{{toLowerCase race}}}.*"
+                    }
+                  }
+                ]
+              }
+            },
+            "sort": [
+              {
+                "LAST_NAME.keyword": {
+                  "order": "asc"
+                }
+              }
+            ]
+          }
+        },
+        "resultTemplate": {
+          "id": "{{{PERSON_NBR}}}",
+          "imageSrc": "{{{IMAGE_URL}}}",
+          "properties": [
+            {
+              "id": "first-name",
+              "label": "First Name",
+              "value": "{{{FIRST_NAME}}}"
+            },
+            {
+              "id": "middle-name",
+              "label": "Middle Name",
+              "value": "{{{MIDDLE_NAME}}}"
+            },
+            {
+              "id": "last-name",
+              "label": "Last Name",
+              "value": "{{{LAST_NAME}}}"
+            },
+            {
+              "id": "suffix",
+              "label": "Suffix",
+              "value": "{{{SUFFIX_NAME}}}"
+            },
+            {
+              "id": "dob",
+              "label": "DOB",
+              "value": "{{{BIRTH_DATE}}}"
+            },
+            {
+              "id": "status",
+              "label": "Status",
+              "value": "{{{STATUS}}}"
+            },
+            {
+              "id": "subject-type",
+              "label": "Type",
+              "value": "{{{SUBJECT_TYPE}}}"
+            },
+            {
+              "id": "victim-minor",
+              "label": "Victim minor?",
+              "value": "{{{VICTIM_MINOR}}}"
+            },
+            {
+              "id": "race",
+              "label": "Race",
+              "value": "{{{RACE}}}"
+            },
+            {
+              "id": "sex",
+              "label": "Sex",
+              "value": "{{{SEX}}}"
+            },
+            {
+              "id": "eye-color",
+              "label": "Eye Color",
+              "value": "{{{EYE_COLOR}}}"
+            },
+            {
+              "id": "hair",
+              "label": "Hair",
+              "value": "{{{HAIR}}}"
+            },
+            {
+              "id": "weight",
+              "label": "Weight",
+              "value": "{{{WEIGHT}}}"
+            },
+            {
+              "id": "height",
+              "label": "Height",
+              "value": "{{{HEIGHT}}}"
+            },
+            {
+              "id": "perm-address-added",
+              "label": "Perm Address Added",
+              "value": "{{{PERM_ADDRESS_ADDED}}}"
+            },
+            {
+              "id": "perm-address-line-1",
+              "label": "Perm Address Line 1",
+              "value": "{{{PERM_ADDRESS_LINE_1}}}"
+            },
+            {
+              "id": "perm-city",
+              "label": "Perm City",
+              "value": "{{{PERM_CITY}}}"
+            },
+            {
+              "id": "perm-state",
+              "label": "Perm State",
+              "value": "{{{PERM_STATE}}}"
+            },
+            {
+              "id": "perm-zip",
+              "label": "Perm Zip",
+              "value": "{{{PERM_ZIP5}}}"
+            },
+            {
+              "id": "temp-address-added",
+              "label": "Temp Address Added",
+              "value": "{{{TEMP_ADDRESS_ADDED}}}"
+            },
+            {
+              "id": "temp-address-line-1",
+              "label": "Temp Address Line 1",
+              "value": "{{{TEMP_ADDRESS_LINE_1}}}"
+            },
+            {
+              "id": "temp-city",
+              "label": "Temp City",
+              "value": "{{{TEMP_CITY}}}"
+            },
+            {
+              "id": "temp-state",
+              "label": "Temp State",
+              "value": "{{{TEMP_STATE}}}"
+            },
+            {
+              "id": "temp-zip",
+              "label": "Temp Zip",
+              "value": "{{{TEMP_ZIP5}}}"
+            },
+            {
+              "id": "trans-address-added",
+              "label": "Trans Address Added",
+              "value": "{{{TRANS_ADDRESS_ADDED}}}"
+            },
+            {
+              "id": "trans-address-line-1",
+              "label": "Trans Address Line 1",
+              "value": "{{{TRANS_ADDRESS_LINE_1}}}"
+            },
+            {
+              "id": "trans-city",
+              "label": "Trans City",
+              "value": "{{{TRANS_CITY}}}"
+            },
+            {
+              "id": "trans-state",
+              "label": "Trans State",
+              "value": "{{{TRANS_STATE}}}"
+            },
+            {
+              "id": "trans-zip",
+              "label": "Trans Zip",
+              "value": "{{{TRANS_ZIP5}}}"
+            }
+          ],
+          "type": "person-card"
+        }
+      }
+    ]
+  }

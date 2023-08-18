@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "http://commandbridge.com/ecosystem/floorplan.json",
+    "type": "object",
+    "required": [ "name", "facilityId", "order" ],
+    "additionalProperties": false,
+    "properties": {
+        "name": { "type": "string" },
+        "attachmentId": { "type": "string" },
+        "facilityId": { "type": "string" },
+        "order": { "type": "number" },
+        "geometry": {
+            "type": "object",
+            "properties": {
+                "coordinates": {"type": "array"},
+                "type": {"type": "string"}
+            }
+		},
+		"altitude": {"type": "number"},
+		"boundingPolygon": {
+			"type": "object",
+            "properties": {
+                "coordinates": {"type": "array"},
+                "type": {"type": "string"}
+            }
+		},
+        "properties": { "type": "object" },
+        "createdBy": { "type": "string" },
+        "createdDate": { "minimum": 1, "date": true },
+        "lastModifiedDate": { "minimum": 1, "date": true }
+    }
+}
+  

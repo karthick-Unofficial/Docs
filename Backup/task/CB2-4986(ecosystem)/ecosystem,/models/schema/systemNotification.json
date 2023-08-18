@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "http://commandbridge.com/ecosystem/systemNotification.json",
+    "type": "object",
+    "required": [
+        "title",
+        "content",
+        "interrupt"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "title": {
+            "description": "",
+            "type": "string"
+        },
+        "content": {
+            "description": "",
+            "type": "string"
+        },
+        "interrupt": {
+            "description": "",
+            "type": "boolean"
+        },
+        "exp": {
+            "description": "",
+            "date": true
+        },
+        "timestamp": {
+            "description": "",
+            "date": true
+        },
+        "id": {
+            "description": "",
+            "type": "string"
+        },
+        "type": {
+            "description": "",
+            "type": "string"
+        },
+        "notify": {
+            "description": "",
+            "type": [ "object", "null" ],
+            "properties": {
+                "users": { "description": "", "type": [ "array", "null" ] },
+                "orgs": { "description": "", "type": [ "array", "null" ] }
+            }
+        }
+    }
+}

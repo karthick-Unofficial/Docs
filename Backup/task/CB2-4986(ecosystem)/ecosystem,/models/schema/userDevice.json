@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/userDevice.json",
+  "type": "object",
+  "required": [ "deviceId", "userId", "token" ],
+  "additionalProperties": false,
+  "properties": {
+    "deviceId": { "description": "", "type": "string" },
+    "displayName": { "description": "", "type": "string" }, 
+    "settings": {
+      "type": "object",
+      "properties": {
+        "pushNotificationsEnabled": { "description": "", "type": "boolean" }
+      },
+      "default": { "pushNotificationsEnabled": true }
+    },
+    "token": { "description": "", "type": "string" },
+    "userId": { "description": "", "type": "string" },
+    "createdDate": { "minimum": 1, "date": true },
+    "lastModifiedDate": { "minimum": 1, "date": true }
+  }
+}

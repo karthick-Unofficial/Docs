@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+	// color: $white;
+}
+
+.appBarWrapperRight button svg {
+	color: white !important;
+}
+
+.cf:before,
+.cf:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+body {
+	background-color: $darkGray2;
+	overflow: hidden;
+}
+
+.content-wrapper {
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+.empty-message {
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 45%;
+}
+
+.dialog-text {
+	color: white;
+	padding-bottom: 1rem;
+}
+
+// fixes for entity profile styling inconsistencies
+button {
+	cursor: pointer;
+}
+
+a {
+	color: #35b7f3;
+	cursor: pointer;
+	.material-icons {
+		font-size: 24px;
+	}
+}

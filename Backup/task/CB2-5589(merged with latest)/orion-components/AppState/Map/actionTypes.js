@@ -1,0 +1,21 @@
+"use strict";
+
+var _Object$defineProperty = require("@babel/runtime-corejs3/core-js-stable/object/define-property");
+_Object$defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.TOGGLE_MAP_VISIBLE = exports.TOGGLE_DISTANCE_TOOL = exports.SET_MAP_REFERENCE = exports.SET_MAP_OFFSET = exports.SET_MAP_ENTITIES = exports.SET_IN_EDIT_GEO = exports.CLEAR_MAP_REFERENCE = void 0;
+var TOGGLE_MAP_VISIBLE = "TOGGLE_MAP_VISIBLE";
+exports.TOGGLE_MAP_VISIBLE = TOGGLE_MAP_VISIBLE;
+var TOGGLE_DISTANCE_TOOL = "TOGGLE_DISTANCE_TOOL";
+exports.TOGGLE_DISTANCE_TOOL = TOGGLE_DISTANCE_TOOL;
+var SET_MAP_REFERENCE = "SET_MAP_REFERENCE";
+exports.SET_MAP_REFERENCE = SET_MAP_REFERENCE;
+var SET_MAP_ENTITIES = "SET_MAP_ENTITIES";
+exports.SET_MAP_ENTITIES = SET_MAP_ENTITIES;
+var SET_MAP_OFFSET = "SET_MAP_OFFSET";
+exports.SET_MAP_OFFSET = SET_MAP_OFFSET;
+var SET_IN_EDIT_GEO = "SET_IN_EDIT_GEO";
+exports.SET_IN_EDIT_GEO = SET_IN_EDIT_GEO;
+var CLEAR_MAP_REFERENCE = "CLEAR_MAP_REFERENCE";
+exports.CLEAR_MAP_REFERENCE = CLEAR_MAP_REFERENCE;

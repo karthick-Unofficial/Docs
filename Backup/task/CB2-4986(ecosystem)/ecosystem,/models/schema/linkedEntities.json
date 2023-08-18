@@ -1,0 +1,37 @@
+{
+	"$schema": "http://json-schema.org/draft-06/schema#",
+	"id": "http://commandbridge.com/ecosystem/linkedEntities.json",
+	"type": "object",
+	"required": [
+		"created",
+		"createdBy",
+		"type"
+	],
+	"additionalProperties": false,
+	"properties": {
+		"created": {
+			"minimum": 1,
+			"date": true
+		},
+		"createdBy": {
+			"type": "string"
+		},
+		"type": {
+			"type": "string"
+		},
+		"entities": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string"
+					},
+					"type": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	}
+}

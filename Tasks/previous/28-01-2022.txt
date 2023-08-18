@@ -1,0 +1,5 @@
+Today's Task:
+- Had an overview on Access Point Entity and Profile task Description and understood requirements.
+- Went through mapbox js and understood basic implementations using Layers and Sources.
+- Understood feed types implementations in settings app from DB and orion-sprites in facilities Layer.
+- Analyzed organizations api response to understand facilities layer geometry co-ordinates workflow in mapbox.

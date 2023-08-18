@@ -1,0 +1,94 @@
+dailyBrief:
+  /dailyBrief:
+    post:
+      description: Create a daily brief
+      operationId: create
+      tags:
+        - Daily Brief
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                post:
+                  type: object
+                  properties:
+                    author:
+                      type: string
+                    authorId:
+                      type: string
+                    endDate:
+                      type: string
+                    endTime:
+                      type: string
+                    orgId:
+                      type: string
+                    startDate:
+                      type: string
+                    startTime:
+                      type: string
+                    title:
+                      type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  inserted:
+                    type: number
+                  errors:
+                    type: number
+  /dailybrief/{dailyBriefId}:
+    delete:
+      description: Delete a daily brief by ID
+      operationId: delete
+      tags:
+        - Daily Brief
+      parameters:
+        - name: dailyBriefId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced: 
+                    type: number
+                  errors:
+                    type: number
+    put:
+      description: Update a daily brief by ID
+      operationId: update
+      tags:
+        - Daily Brief
+      parameters:
+        - name: dailyBriefId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  replaced: 
+                    type: number
+                  errors:
+                    type: number
+                  changes:
+                    type: array

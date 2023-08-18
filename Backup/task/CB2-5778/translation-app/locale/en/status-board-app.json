@@ -1,0 +1,30 @@
+{
+	"appId": "status-board-app",
+	"locales": "en",
+	"translations": {
+		"en": {
+			"appBar": {
+				"title": "Status Board"
+			},
+			"listPanel": {
+				"dialog": {
+					"cancel": "Cancel",
+					"fieldLabel": {
+						"cardName": "Card Name",
+						"cardType": "Card Type",
+						"slides": "Slides",
+						"text": "Text"
+					},
+					"save": "Save"
+				},
+				"main": {
+					"newCard": "New Status Card",
+					"organization": "Organization"
+				}
+			},
+			"searchField": {
+				"searchStatusCard": "Search Status Cards..."
+			}
+		}
+	}
+}

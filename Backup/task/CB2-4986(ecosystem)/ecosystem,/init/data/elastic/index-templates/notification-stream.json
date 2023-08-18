@@ -1,0 +1,49 @@
+{
+    "index_patterns": "notification-stream-*",
+    "settings": {
+        "number_of_shards": 1,
+        "number_of_replicas": 0,
+        "refresh_interval": "1s"
+    },
+    "mappings": {
+        "dynamic": false,
+        "properties": {
+            "id": {
+                "type": "keyword"
+            },
+            "dismissId": {
+                "type": "keyword"
+            },
+            "createdDate": {
+                "type": "date"
+            },
+            "lastModifiedDate": {
+                "type": "date"
+            },
+            "userId": {
+                "type": "keyword"
+            },
+            "viewed": {
+                "type": "boolean"
+            },
+            "closed": {
+                "type": "boolean"
+            },
+            "isPriority": {
+                "type": "boolean"
+            },
+            "history": {
+                "type": "nested",
+                "properties": {
+                  "closed": {
+                      "type": "boolean"
+                  },
+                  "timestamp": {
+                    "type": "date"
+                  }
+                }
+
+            }
+        }
+    }
+}

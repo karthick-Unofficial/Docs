@@ -1,0 +1,1 @@
+export const GET_ALL_FLOORPLANS = "GET_ALL_FLOORPLANS";

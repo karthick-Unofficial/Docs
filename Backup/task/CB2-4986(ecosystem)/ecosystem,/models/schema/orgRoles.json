@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "http://commandbridge.com/ecosystem/orgRoles.json",
+  "type": "object",
+  "required": [ "organization", "orgId", "roleId" ],
+  "additionalProperties": true,
+  "properties": {
+    "orgId": { "description": "", "type": "string" },
+    "roleId": { "description": "", "type": "string" },
+    "title": { "description": "", "type": "string"},
+    "createdDate": { "minimum": 1, "date": true },
+    "lastModifiedDate": { "minimum": 1, "date": true }
+  }
+}

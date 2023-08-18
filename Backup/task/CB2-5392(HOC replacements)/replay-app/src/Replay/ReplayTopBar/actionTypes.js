@@ -1,0 +1,1 @@
+export const SETTINGS_MENU_OPEN = "SETTINGS_MENU_OPEN";
